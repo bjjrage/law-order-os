@@ -1,0 +1,1 @@
+function e(e=new Date){let t=new Intl.DateTimeFormat(`en-CA`,{timeZone:`America/Asuncion`,year:`numeric`,month:`2-digit`,day:`2-digit`}).formatToParts(e);return[`year`,`month`,`day`].map(e=>t.find(t=>t.type===e).value).join(`-`)}export{e as t};
