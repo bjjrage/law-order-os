@@ -1,0 +1,105 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P01-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La propuesta actual pone PYG 600.000.000 como precio neto para el vendedor y agrega tributos",
+      "explanation": "Distingue el precio neto del borrador del presupuesto y de la oferta anterior con impuestos incluidos, y recomienda aclarar un tope y escalar cualquier exceso al comité."
+    },
+    {
+      "reference_id": "P01-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Maroma respondió que solo estudiaría la continuidad",
+      "explanation": "Aplica la exigencia contractual de consentimiento previo escrito y reconoce expresamente que el correo no aprueba la cesión ni constituye contrato con Cedro; también conserva la alternativa de proveedores y su efecto económico."
+    },
+    {
+      "reference_id": "P01-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "la suma de PYG 9.000.000 es aritmética de los registros, no una liquidación ni prueba concluyente de saldo exigible",
+      "explanation": "Separa el registro de comisiones de su pago y cuantía jurídicamente exigible, y propone conciliar comisiones, vacaciones y otros conceptos sin convertir la aritmética en liquidación."
+    },
+    {
+      "reference_id": "P01-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Si jurídicamente hay sustitución patronal",
+      "explanation": "Explica condicionalmente la regla del artículo 28 y sus efectos temporales, reconoce que su aplicación a esta venta requiere análisis laboral y no trata la indemnidad como liberación frente a terceros."
+    },
+    {
+      "reference_id": "P01-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "la impresión verbal del contador del vendedor de que no habría IVA por no vender acciones no está sustentada",
+      "explanation": "Contrasta la opinión privada con las definiciones de enajenación y derechos patrimoniales de los artículos 80-81 de la Ley 6380, pero abstiene de calcular o afirmar una tasa sin caracterización y soporte fiscal."
+    },
+    {
+      "reference_id": "P01-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no hay análisis que funde su transferencia",
+      "explanation": "Distingue el saldo interno de Naranjal de un crédito disponible para Cedro y recomienda excluirlo salvo respaldo; no lo suma a los activos ni al precio."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "El memo no analiza la posible aplicación del artículo 13 de la Ley 6380: si la transferencia se caracteriza como transferencia de establecimiento comercial, el acto cierra el ejercicio económico del enajenante y el adquirente mantiene el valor fiscal de los bienes al adquirirlos. Conviene determinar si la operación propuesta alcanza ese supuesto y qué documentación y asignación fiscal exige; el expediente no permite concluirlo."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "Las fuentes jurídicas recibidas están marcadas NOT_ATTESTED respecto de su revisión temporal, y el brief advierte que el corpus no acredita consolidación normativa al 19/10/2026; el memo reconoce esta limitación y pide confirmación antes del cierre.",
+    "La evaluación se limita a los documentos privados y fuentes comunes aportados; no acredita búsquedas registrales, situación oficial tributaria, registros completos de aportes ni consentimiento definitivo de Maroma."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "48f3ace32ceb46c89ea5316f70fea936",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H01",
+      "quote": "La propuesta actual pone PYG 600.000.000 como precio neto para el vendedor y agrega tributos",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H02",
+      "quote": "Maroma respondió que solo estudiaría la continuidad",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H03",
+      "quote": "la suma de PYG 9.000.000 es aritmética de los registros, no una liquidación ni prueba concluyente de saldo exigible",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H04",
+      "quote": "Si jurídicamente hay sustitución patronal",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H05",
+      "quote": "la impresión verbal del contador del vendedor de que no habría IVA por no vender acciones no está sustentada",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H06",
+      "quote": "no hay análisis que funde su transferencia",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 0,
+  "missing_required_quote_count": 0
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "live-smoke-preflight-v1",
+  "scenario_id": "phase2-one-question-one-source",
+  "status": "BLOCKED",
+  "blockers": [
+    "CONFIGURATION_MISSING_JEV",
+    "CONFIGURATION_MISSING_LUNA",
+    "CONFIGURATION_MISSING_SOL",
+    "CONFIGURATION_MISSING_GEMINI",
+    "EXACT_MODEL_CONFIGURATION_REQUIRED_JEV",
+    "EXACT_MODEL_CONFIGURATION_REQUIRED_LUNA",
+    "EXACT_MODEL_CONFIGURATION_REQUIRED_SOL",
+    "EXACT_MODEL_CONFIGURATION_REQUIRED_GEMINI",
+    "SOL_REQUIRES_EXPLICIT_MEDIUM",
+    "ACCOUNT_MODEL_METADATA_REQUIRED_JEV",
+    "ACCOUNT_MODEL_METADATA_REQUIRED_LUNA",
+    "ACCOUNT_MODEL_METADATA_REQUIRED_SOL",
+    "ACCOUNT_MODEL_METADATA_REQUIRED_GEMINI",
+    "FROZEN_AUTHORIZED_EVIDENCE_REQUIRED"
+  ],
+  "inference_status": "NOT_RUN",
+  "paid_inference_usd": 0,
+  "network_used": false,
+  "stages": [
+    {
+      "stage": "jev",
+      "model_id": "jev-1.13.0",
+      "max_calls": 1,
+      "input_token_upper_bound": 24000,
+      "max_output_tokens": 4000,
+      "reserved_cost_ceiling_usd": 0.0010080000000000002,
+      "price_source": "https://docs.typesafe.ai/models"
+    },
+    {
+      "stage": "luna",
+      "model_id": "gpt-6-luna",
+      "max_calls": 1,
+      "input_token_upper_bound": 60000,
+      "max_output_tokens": 16000,
+      "reserved_cost_ceiling_usd": 0.014,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-6-luna"
+    },
+    {
+      "stage": "sol",
+      "model_id": "gpt-6.1-sol",
+      "max_calls": 1,
+      "input_token_upper_bound": 60000,
+      "max_output_tokens": 25000,
+      "reserved_cost_ceiling_usd": 0.37,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+    },
+    {
+      "stage": "gemini",
+      "model_id": "gemini-3.8-flash",
+      "max_calls": 1,
+      "input_token_upper_bound": 100000,
+      "max_output_tokens": 16000,
+      "reserved_cost_ceiling_usd": 0.135,
+      "price_source": "https://ai.google.dev/gemini-api/docs/pricing#gemini-3.8-flash"
+    }
+  ],
+  "total_budget_usd": 0.6,
+  "worst_case_reserved_usd": 0.520008,
+  "timeout_ms": 120000,
+  "max_retries": 0,
+  "frozen_bundle_hash": null,
+  "frozen_evidence_pack_hash": null,
+  "execution_authorized": false,
+  "limitations": [
+    "Metadata availability does not verify inference behavior or legal quality.",
+    "Frozen pack is the complete single-candidate input; Jev generates a separately traced routed pack.",
+    "Prices are public standard text estimates; account billing, taxes and current applicability need operator confirmation."
+  ]
+}

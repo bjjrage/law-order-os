@@ -1,0 +1,84 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“Ese valor es una estimación interna de reposición, no precio de venta; no se aportó acto de venta del propietario”",
+      "explanation": "Distingue correctamente las matrices de propiedad de Sur del Lago y su custodia por Ribera, y advierte que el valor interno no acredita una venta. Recomienda depurar el inventario y documentar el traslado autorizado, sin presentar el valor de PYG 60.000.000 como una reducción de precio ya acordada (P03-D05 v1, P02-P04; P03-D03 v1, P01-P02)."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“La carta del 18/10 acepta la cesión desde el 02/11 solo si antes se entrega acta de las matrices como bienes del cliente, se acredita el plan de trazabilidad y se confirma la permanencia de Tomás Leiva y Nuria Acosta o una sustitución técnicamente aceptada.”",
+      "explanation": "Reconoce que hay aceptación condicionada, no rechazo total ni aprobación incondicionada. Identifica las condiciones pendientes, la inspección aún no aprobada y la necesidad de hacer de su cumplimiento un requisito previo al cierre (P03-D04 v1, P01 y P04; P03-D03 v1, P02)."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“La continuidad propuesta de seis empleados no debe instrumentarse como un simple ‘cierre y reapertura’ de legajos con fecha 02/11.”",
+      "explanation": "Relaciona la continuidad laboral con la condición comercial sobre los operadores, distingue sus manifestaciones condicionadas de un acuerdo y señala la antigüedad registrada. Aplica condicionalmente el art. 28 del Código del Trabajo a una posible sustitución del empleador y propone revisar legajos, saldos y asignación de pasivos (P03-D07 v1, P01-P03; P03-D04 v1, P01; F02-L00118-L00120)."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“La cuenta de cierre debe conciliar esos bienes con el anticipo y la prestación futura.”",
+      "explanation": "Expone que el anticipo de PYG 120.000.000 fue pagado a Ribera y no consta transferido a Fresno, conecta los PYG 90.000.000 en proceso con la prestación pendiente y pide un acuerdo tripartito que evite el doble cobro. No lo presenta como ingreso o crédito ya adquirido por Fresno ni como deuda fiscal de igual importe (P03-D05 v1, P01; P03-D06 v1, P01-P04; P03-D04 v1, P02)."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“El borrador solo permite imputar ciertas obligaciones reconocidas por Ribera o establecidas por decisión firme, pero deja sin definir procedimiento, decisor y garantía adicional.”",
+      "explanation": "Aclara que PYG 240.000.000 son precio diferido dentro del total, no efectivo adicional, y que el mecanismo de imputación aún es incompleto. Advierte que su duración no cubre automáticamente riesgos posteriores ni la prestación futura, y propone negociar procedimiento y respaldo sin afirmar que la suma sea suficiente o insuficiente por sí sola (P03-D02 v3, P02-P03; P03-D08 v1, P01 y P03)."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“El reclamo de PYG 40.000.000 por agosto-7 es distinto: figura como reclamado, sin nota de crédito, y Ribera controvierte causa y monto.”",
+      "explanation": "Lo separa del anticipo de OP-44, evita tratarlo como deuda reconocida o compensación acordada y recomienda preservar la revisión contractual y mantener un interlocutor (P03-D06 v1, P03; P03-D03 v1, P04; P03-D04 v1, P02-P03)."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“Sin clasificación de los elementos, precio definitivo y comprobantes no puede cuantificarse el impuesto ni afirmarse que PYG 900.000.000 sea precio con tributos incluidos.”",
+      "explanation": "Aborda la conexión tributaria con la composición real de los activos y derechos, el precio y la documentación. Usa la Ley 6380 para identificar posibles hechos generadores, base y requisitos de crédito IVA, pero no inventa una tasa aplicable ni una liquidación definitiva. También señala la falta de datos para calcular la renta imponible del vendedor (P03-D02 v3, P01 y P05; P03-D08 v1, P02; F03-L00599-L00614, F03-L00664-L00668 y F03-L00685-L00699)."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“PYG 8.000.000 por vacaciones es un estimado agregado, no liquidación individual ni prueba de pago.”",
+      "explanation": "Distingue el estimado de una deuda liquidada, advierte que los recibos de septiembre no concilian períodos anteriores y que la retención no extingue derechos laborales. Propone verificación individual antes del cierre, sin asumir despidos o indemnizaciones no documentados (P03-D07 v1, P02 y P04; P03-D02 v3, P04)."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MINOR",
+      "category": "UNSUPPORTED_CLAIM",
+      "exact_output_quote": "“F01-F03, metadato `temporal_review: NOT_ATTESTED`.”",
+      "evidence_locator": "Brief, «Condiciones comunes»: “El corpus es acotado y no acredita consolidación normativa a la fecha de corte”; inventario de fuentes F01-F03 aportado, que no contiene el metadato citado.",
+      "explanation": "Es correcto advertir que el corpus no acredita consolidación normativa, pero el memo atribuye a las fuentes un metadato específico que no aparece en el material suministrado. Conviene formular la reserva directamente con base en las condiciones comunes, sin atribuir ese campo al expediente."
+    }
+  ],
+  "novel_valid_findings": [
+    "La recomendación de no comprometer el pago inicial de PYG 660.000.000 antes de resolver condiciones comerciales, activos, transición y cuenta de cierre es coherente con el hecho documentado de que el borrador no está firmado, no hubo entrega de posesión y no existe obligación de compra (P03-D01 v1, P02; P03-D02 v3, encabezado).",
+    "La propuesta distingue razonablemente lo que el comité puede autorizar el 23/10 —negociación condicionada— de las condiciones necesarias para un cierre posterior, y conserva la alternativa de postergar o rechazar."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La valoración se limita a los documentos privados ficticios y las fuentes normativas suministradas; no se acredita una revisión de consolidación normativa al corte indicado.",
+    "No se puede validar una liquidación tributaria concreta ni cuantificar obligaciones laborales con los datos disponibles; el memo identifica estas limitaciones y propone diligencias pertinentes."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "d5e6ac8725e446aaa8d8b27ee7ea96e7",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 233309,
+    "output_tokens_including_reasoning": 2031,
+    "cost_accounted_upper_usd": 0.030179125,
+    "estimated_standard_no_cache_discount_usd": 0.0243464,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 9
+}

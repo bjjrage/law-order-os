@@ -1,0 +1,67 @@
+{
+  "created_at": "2026-10-21T17:14:00.881Z",
+  "method": "production function isolated with synthetic providers; host canary and TCP only",
+  "paid_inferences": 0,
+  "external_provider_requests": 0,
+  "observations": [
+    {
+      "check": "single_interaction_rejects_over_budget",
+      "observed": true
+    },
+    {
+      "check": "unknown_outcome_keeps_reservation_in_memory",
+      "observed": true
+    },
+    {
+      "check": "two_new_ledgers_allow_0_8_despite_hypothetical_global_0_6",
+      "observed": true,
+      "scope": "unit demonstration; no configured global cap exists in this function"
+    },
+    {
+      "check": "concurrent_count_can_oversubscribe_shared_memory_ledger",
+      "observed": true,
+      "final_remaining_usd": -0.2,
+      "scope": "synthetic concurrent calls to production perform()"
+    }
+  ],
+  "isolation": {
+    "scope": "current operator process, not model tool dispatch",
+    "absolute_read": true,
+    "relative_read": true,
+    "symlink_read": "UNAVAILABLE_EPERM",
+    "filesystem_isolation": "FAIL",
+    "production_database_tcp_reachable": false
+  },
+  "hashes": [
+    {
+      "path": "scripts/workspace-ai.mjs",
+      "sha256": "55430eb9cd29f85684c2f41160c13fac0590545446042bdc5d50b7f2285f5f6c"
+    },
+    {
+      "path": "scripts/workspace-bridge.mjs",
+      "sha256": "410726e972f630dac7c70a63b472b93f84b40db018bc490651cf7eb97243c5ee"
+    },
+    {
+      "path": "scripts/workspace-agent.mjs",
+      "sha256": "707e655e855a8490c27a66750593d18a1072cc1d65d88c64a936531d72e77190"
+    },
+    {
+      "path": "scripts/workspace-auditor.mjs",
+      "sha256": "f77040a16c6e6b86163e016cbf0f1317e778451a9c292c31b4dee95ec6bdf72b"
+    },
+    {
+      "path": "scripts/platform-bridge.mjs",
+      "sha256": "ffa8ee70df7884239637a5b7d91a2d4ace788c4b0bc09de2b7f04f7e8411fd25"
+    },
+    {
+      "path": "apps/api/src/workspace.ts",
+      "sha256": "f6e81753f59e1c878c782c0f714e35f524b6a41e2c1bdc882607df1e7a08d45d"
+    }
+  ],
+  "gates": {
+    "references_human_validated": false,
+    "benchmark_os_isolation_verified": false,
+    "durable_global_budget_verified": false,
+    "execution_authorized": false
+  }
+}

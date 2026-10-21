@@ -1,0 +1,121 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P01-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "el vendedor exige tributos adicionales y documentación, mientras que la oferta comercial anterior los incluía",
+      "explanation": "Identifica la discrepancia entre las dos propuestas, la autorización limitada del comité y condiciona el avance a un precio total y a aprobación adicional si se excede. Distingue expresamente el cálculo ilustrativo de una liquidación tributaria."
+    },
+    {
+      "reference_id": "P01-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Maroma solo expresó interés en estudiar continuidad",
+      "explanation": "Explica que no hay consentimiento ni contrato con Cedro, y relaciona esto con la cláusula de cesión y la exclusividad. Conserva la alternativa de proveedores y recomienda verificar márgenes, sin tratar la operación como automáticamente inviable."
+    },
+    {
+      "reference_id": "P01-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "PYG 9.000.000 en comisiones de septiembre registradas como impagas",
+      "explanation": "Separa los registros internos y la falta de comprobantes de pago de una cuantificación definitiva; incluye la actualización de vacaciones y pide conciliación individual y documentación laboral."
+    },
+    {
+      "reference_id": "P01-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Esa continuidad material puede plantear sustitución de empleador",
+      "explanation": "Aplica el artículo 28 a la continuidad propuesta, menciona la responsabilidad solidaria temporal y aclara que la indemnidad entre las empresas no elimina derechos laborales frente a trabajadores. No afirma pérdida automática de antigüedad ni terminación."
+    },
+    {
+      "reference_id": "P01-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no habría IVA por no venderse acciones carece, según su propia nota, de revisión normativa",
+      "explanation": "Contrasta la impresión privada del contador con las reglas de IVA para enajenaciones y derechos patrimoniales, pero deja pendiente clasificar componentes y bases; no declara una exención ni aplica una tasa indiscriminadamente."
+    },
+    {
+      "reference_id": "P01-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no hay base documental para tratarlo como crédito de Cedro",
+      "explanation": "Distingue el saldo registrado a nombre de Naranjal de un activo transferido y señala que la regla de traslado citada corresponde a reorganizaciones. Recomienda excluirlo, sin sumarlo al precio."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MATERIAL",
+      "category": "INCORRECT_SOURCE_APPLICATION",
+      "exact_output_quote": "P01-P02",
+      "evidence_locator": "Memo, recomendación ejecutiva y sección Precio e impuestos; comparar P01-D01-P02 y P01-D02-P02",
+      "explanation": "El memo usa P01-P02 como si fuera un localizador documental, aunque el inventario identifica los originales como P01-D01, P01-D02, etc. La referencia no permite localizar con precisión la evidencia y contradice el formato de cita pedido; conviene corregir los identificadores a los documentos y párrafos concretos."
+    }
+  ],
+  "novel_valid_findings": [
+    "La diferencia de PYG 60.000.000 es un escenario aritmético válido solo si toda la contraprestación integra una base gravada al 10%; el memo lo delimita correctamente y no lo presenta como liquidación.",
+    "El memo reconoce la falta de consolidación normativa a la fecha de corte y condiciona la firma a verificar vigencia y reglamentación, abstención razonable dado el estado de las fuentes."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La revisión se limita a los documentos privados ficticios y a las fuentes jurídicas completas incluidas en el material; no acredita consolidación normativa al 19/10/2026.",
+    "La principal deficiencia detectada es de trazabilidad: aparecen localizadores abreviados o no conformes, como P01-P02, que deben normalizarse para que las conclusiones puedan verificarse."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "dfa259867f844c18aaaaf78afb1f40a6",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H01",
+      "quote": "el vendedor exige tributos adicionales y documentación, mientras que la oferta comercial anterior los incluía",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H02",
+      "quote": "Maroma solo expresó interés en estudiar continuidad",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H03",
+      "quote": "PYG 9.000.000 en comisiones de septiembre registradas como impagas",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H04",
+      "quote": "Esa continuidad material puede plantear sustitución de empleador",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H05",
+      "quote": "no habría IVA por no venderse acciones carece, según su propia nota, de revisión normativa",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H06",
+      "quote": "no hay base documental para tratarlo como crédito de Cedro",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "ERROR",
+      "index": 0,
+      "quote": "P01-P02",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 0,
+  "missing_required_quote_count": 0
+}

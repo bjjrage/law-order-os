@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "ES2023", "module": "NodeNext", "moduleResolution": "NodeNext",
+    "strict": true, "noUncheckedIndexedAccess": true, "esModuleInterop": true,
+    "skipLibCheck": true, "resolveJsonModule": true, "types": ["node", "vitest/globals"]
+  },
+  "include": ["junta-juridica/**/*.ts", "os-core/**/*.ts", "phase2/tests/**/*.ts", "vitest.config.ts"]
+}

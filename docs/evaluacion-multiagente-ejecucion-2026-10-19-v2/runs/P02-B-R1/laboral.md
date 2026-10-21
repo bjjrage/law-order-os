@@ -1,0 +1,33 @@
+## Notas de etapa laboral — Laurel / Delta Azul
+
+### Hallazgos
+
+- **Lo aportado describe ocho empleados de Delta Azul, pero no acredita el cuadro laboral completo.** El informe los identifica como técnicos con fechas de ingreso entre 2015 y 2024, aporta recibos de salarios base de agosto y septiembre y registra horas adicionales de septiembre pendientes de conciliación por un estimado interno de PYG 16.000.000. No se aportan jornadas íntegras ni certificaciones oficiales; el estimado no es una liquidación ni prueba de pago. (P02-D06 v1, P02-D06-P01–P02).
+
+- **En la alternativa de acciones, Delta Azul permanece como empleador.** Esa es también la premisa de la hoja de escenario incluida en el informe. La compra de acciones, por sí sola, no cambia el empleador que figura en la planilla; las obligaciones laborales de la sociedad siguen dentro de ella, y deben revisarse como pasivos de la sociedad objetivo. El expediente no determina el alcance de responsabilidades del accionista comprador más allá de esa continuidad corporativa. (P02-D02 v1, P02-D02-P01; P02-D06 v1, P02-D06-P03).
+
+- **En la alternativa de activos, incorporar a los técnicos a Laurel no debe tratarse como un simple cambio de planilla ni como borrón de antigüedad.** El Código del Trabajo establece que la sustitución del empleador no afecta los contratos vigentes; regula la responsabilidad solidaria del empleador sustituido y el substituyente por obligaciones anteriores durante seis meses desde la sustitución, y después mantiene la responsabilidad del nuevo empleador. Asimismo, los trabajadores tendrán con el nuevo empleador las mismas obligaciones contraídas con el anterior. (F02, Ley 213, art. 28; F02-L00118–L00121). **Queda pendiente la calificación jurídica de una eventual transferencia concreta**: no consta que ya exista sustitución, el hecho de que haya compra de activos no decide por sí solo si se configuraría; se deben analizar la operación y continuidad real de la actividad y de las relaciones laborales.
+
+- **La nota marginal “las antigüedades se ven después” no acredita un acuerdo ni extingue derechos.** No hay renuncias, liquidaciones finales, contratos con Laurel ni sustitución efectuada. Además, el Código dispone que los derechos reconocidos a los trabajadores no pueden ser objeto de renuncia, transacción o limitación convencional, y declara nulo el pacto contrario. (P02-D06 v1, P02-D06-P01, P02-D06-P03; F02, art. 3; F02-L00076). No debe presupuestarse que contratar nuevamente a los técnicos borra su antigüedad o obligaciones pendientes.
+
+- **Las horas adicionales pendientes deben conciliarse antes de fijar precio, indemnidades o capital de trabajo.** El Código establece recargos mínimos para horas extraordinarias, nocturnas y trabajadas en feriados; el porcentaje aplicable depende de la clase de hora y de sus circunstancias. (F02, art. 234; F02-L00768–L00771). El dato interno de PYG 16.000.000 no informa volumen de horas, días, horarios, tasa salarial aplicable ni pagos, por lo que no permite recalcular ni confirmar el monto. (P02-D06 v1, P02-D06-P02).
+
+- **No se puede inferir que no existan pasivos laborales porque no se reporten reclamos o inspecciones.** La administración no aportó registro íntegro de jornadas y advierte que la hoja de personal no asigna valor cero a vacaciones o aportes no revisados. La ausencia de inspección, sentencia o reclamo de terminación en el informe tampoco prueba que no existan otras obligaciones. (P02-D06 v1, P02-D06-P02, P02-D06-P04).
+
+- **La continuidad del servicio y la decisión de Horizonte están conectadas con la planificación de personal.** El contrato exige un equipo de ocho técnicos identificados y requiere autorización para cesión o cambio de control; la solicitud de autorización debe identificar plan de continuidad del personal. (P02-D03 v1, P02-D03-P01–P03). Horizonte pidió precisamente la estructura, el responsable del servicio y el plan de personal; su respuesta no autoriza ninguna alternativa. (P02-D04 v1, P02-D04-P02). No conviene comprometer incorporación, cambios de empleador o continuidad laboral como si el cliente la hubiera aprobado.
+
+### Recomendación provisional
+
+**No aceptar la incorporación de los técnicos en los términos esquemáticos actuales ni valorar las obligaciones laborales en cero.** Diligenciar la nómina trabajador por trabajador y definir para cada estructura quién será empleador, qué continuidad se pretende y cómo se documentaría, sujeto a análisis laboral local y, en lo pertinente, a autorización de Horizonte. La estructura de activos debe contemplar expresamente el riesgo de que la operación configure sustitución patronal y las obligaciones anteriores; la estructura de acciones exige revisar las obligaciones que permanecen en Delta Azul.
+
+La documentación definitiva debería prever asignación y cobertura de pasivos pre-cierre, ajuste o retención de precio, declaraciones y mecanismos de indemnidad negociados; tales protecciones distribuyen el costo entre las partes, pero no deben presentarse como eliminación de derechos del trabajador ni de responsabilidades legales. No autorizar una “liquidación” o renuncia general como condición para desconocer antigüedad sin asesoramiento específico.
+
+### Pendientes y finalidad
+
+1. **Solicitar contratos, legajos, salarios completos, fechas y cargos, recibos, registros íntegros de jornada y liquidaciones de vacaciones/aguinaldo**: reconstruir obligaciones individualizadas y verificar la continuidad pretendida.
+2. **Conciliar las horas adicionales de septiembre y revisar períodos anteriores, recargos y pagos**: validar o corregir el estimado de PYG 16.000.000.
+3. **Obtener documentación de aportes y obligaciones laborales y previsionales**, incluidas constancias y conciliaciones, y consultar el estado de eventuales fiscalizaciones o reclamos: medir contingencias no reflejadas en la planilla privada.
+4. **Definir estructura, funciones, empleador y plan de continuidad de los técnicos**, y analizar si la transferencia concreta calificaría como sustitución patronal: aplicar correctamente el art. 28 y evitar falsas premisas sobre antigüedad.
+5. **Coordinar el plan de personal con la solicitud específica a Horizonte**: la autorización contractual debe referirse a la estructura elegida, y Horizonte no ha aprobado todavía ningún plan. (P02-D03 v1, P02-D03-P02–P04; P02-D04 v1, P02-D04-P02).
+
+**Límite de fuente:** F02 es una extracción auxiliar y no acredita consolidación normativa al 19/10/2026. Los artículos citados identifican reglas relevantes, pero antes de concluir sobre la operación concreta deben verificarse texto y vigencia aplicables y revisarse la situación de los trabajadores.

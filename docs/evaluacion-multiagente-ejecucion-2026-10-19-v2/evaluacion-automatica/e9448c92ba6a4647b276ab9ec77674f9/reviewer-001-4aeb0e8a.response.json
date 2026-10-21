@@ -1,0 +1,217 @@
+{
+  "id": "resp_07d7d67be27bc093016ad5af77241887d18324a5a2f449dba7",
+  "object": "response",
+  "created_at": 1792388983,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792389001,
+  "error": null,
+  "frequency_penalty": 0,
+  "incomplete_details": null,
+  "instructions": "Evaluá este memo de forma ciega y exploratoria, sin inferir su modalidad. No sos un abogado humano ni acreditás superioridad jurídica. Contrastá las afirmaciones con documentos y fuentes completas. La referencia es una propuesta de autor IA: podés disputarla con fundamento. Para cada hallazgo devolvé exactamente un registro. SUFFICIENT exige tratamiento útil, no solo una mención. Conservá alternativas razonables y abstenciones justificadas. No inventes errores para equilibrar notas. exact_output_quote debe ser un fragmento literal del memo, o vacío si se trata de omisión. No uses número de citas, extensión o estilo como indicador de calidad.",
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-6-luna",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_07d7d67be27bc093016ad5af792a7487d1a2798530908eeeda",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq1a-JkBrPyEpIi3WoAwv3bsfSusnD4WXas2FEh9DzCZTevb03HSjp2mjq3lSJwHiQSE2GJQZT0lJ4HTmjkOnl3_jl5qW8gQX4sWnw6YImLU9lmGe-2yoM_7MbKTFAw0MP2scRvSdgRnXtHfS8lFKh93NHfLpfUxzhnWfvmrFUaybocvcnFL90xDLv8YSGURPhUdG7PVkmfO7NyiolYgZmhaPsgS0vhAnvmVw1cdOed26xjfyoDQ-QnLXEwe4ptHsWt4FG4fR8BFUzgEzG3LaeaurtbfQ9CdTGFaPBI6DaBa6eJShNRLZHlgHb50gx5uZA32UPRgk_3Av3TUm0vnYPi4iPeUEmgUiOW4ugr1MTp_8pI1eGCQwsxbzzNqsGnmYbdNujmhVGsuFuAScOMnA0Y5y6Dl_I1BWv6w4ADiAuTxEn2N1xeEDHh0kWNwhonA48Svu-M3vA-uqI_J9Hb6aZAl1fhrQk17vAa-nTq7iEUJMqHEIqWcEhBeosUOdwpfXLpUdsegZDbtQVj1DvNMktnTwfnBoHpIHHdn2KrFTNBv7wOUy4wfA1hXgiahRQ_MUq4qjJuQuWz0P-kMVhB3_XUqCgWg9ZDHshNDAJtmIMm1M1YkeaUdynMeshxo4vEgC6n_ZangDsQ3DK-g011qv20MLt3_sPtiBaI-DXH0oDlribQKyk9raRgBXnXN90OAoeM_rtJo8D0uMizNcz8eTvbgX5UM_zez4RXfpCpxLaOqeprJtl42v-nMRn3KhzQy90Dx27jLIxJACqyQthx9CeTL_82F9rks8U2b1PCsgC6xSnTrB_Ds6ALQm15S3fLrv2R7aG6ef5Fl0xzIAZbdBV61yI1bEKB3NQMKwk4Touh5MkCb7ZyqN3Cus2iEGMRby7d6MIUXOUjjhuU6FkhoOH5qDevfQ0BqfEI5h5y0YcrDXLm1zDMdRFIJ7hy4SB_hMNWPgG-EamonWVeKC50gCEzPxw_SdMEgEcVhWw72ar3aHocCSBV6zV2xncFvSfgYCfWCvvwaSpQwvAy4p4ZNV3TkbqLXYW5ew8ZSWLKXdF8F9Lr4zmjGFAvDwYB3rmmbkmSFYB5d3vmeUO8JaMVmPTtQZg7W686dh0GEGkRgRKj_LLGY6tOW13eomUb7RXB65L_4bLZn2RkU2BzuPuEB6Geiuiwsv1GVwJT1rcnaeXub_qExM1iaJJ4htf30w-3t2v0vUkXyRRCcCutBsw3jgeiWXHpvwHcDib0q1W-Xd4Ix_RD-J-6x07dZYggw8ZJuBdTeg5TLfOLOemvHs6mq78wgsPfjSOg_kSZIIazF_w1S6lwSMThCMqR5DRKZuKowfIicz082h0O_9fl1_MaN_vWUFUh_kAxCb5oTTS_8jJQe8oc8uLDksCnzc-2pn8pX07UZMKbdCpNN1leU3Pu5ChdDJEZBIzo2B4zxVIT6Zbkb2YtqWNETDA4tqsbf8mKgbAPgP4Z67UyrTX0fv668616viLC28far2gag-0SxrtqXq-wfsQZeizudl7A9Wl9-obcuFn2pUZfvTLmovm6Pfdzi-tAA8fFC3NHjSH76grkC7Q8wOdE5lBooI8mteSXe5BPXYZYvt6atffs5WumJ8r3YjY_S4BKOeTs4Hkw66y-2-TCF1OLNIzWGCj5zGPdt0ZjC4Z7J0ZOk-Kz1ajTurMhiYlsdVMS7M_zRJevzVVun7_nCtOxDOe4tPhKR5L3sLQ-l_dEe851poBepyy42AFrHddvlThmMCzGQoBgF2EKArFonQJj3xtIzkBBknTrJHkjCKoZmSG9pRsgOF6YLi_8VUlgO9U2KvejJOJMPwzwPdTlX0RgP-OVDgHbKlQoZuln17cEc37qPBCWRPPCzeV9W9FDJhB4MFhXAwFnP1r-0v_-j_m0ilwbAavdlyQTf_cQcclQV_qYkZ1Gs6B4W7aI78y3GLjRbUsyRA2Y71VEYmZ7jolwA4akUGVknI5j3hh8JYrQUW_2cgia8SNnbBNyUFzRpVVKel_M6Q9c0r5EKCy3--qJOY5NRZJ6uCne1_kq_Ixnk3WJ_q4axjCHEt5p7WrR8Igxt5_I9E7rPLF3e6r3FuZjRp5PpqjxVp2OT-2JlIdEwIPI_9vRYHm-2JroHadydWypu1RSnfRf4H9bh7ANkNhYRr0c-iqwnqIrIMo7fY3-jFCWq-rIYoCqsY6G_GRuEEHY1686BwgUu8PLxgfW1sPkytPkUKUT4kxSeMriQuGiwcffI4ivXjQ7_weLYDyx2VgjCr2BoS-7FzVGi0Wow7PKzcbXu5IPMoQPeTHoqD15dq991QF9ZmJH1IObvj4OAIdVWqKLr6d_Zgv8q16IW_0_42X6onnIe__6_P3_PptZHi9lkiYSy6NB8x9-a5sbahNhruqF8WH-9hXRO22u88L8ubdcIjxDAhjB-Jf5gLbbDkxcn0G7Ut5g1QctFH-L4cHMh0GVCkVTkYZMHjJMrYVzwAX4AtI-YR3V5H03DGLuOdV9Xxu3u_DfnmarBA4jefXLjeJbCRk8sE4ob1PmUM_57OT4O2kCT0VTD6JkmI3jltJFYyDAjhZHjNmfn-yQrjqMoywyDopG9pczApHFDICaXZpAzDNugZF8WjyR9ikL9iZqwftW4PCDnmXwHskGRAiCdp1IhAROxMhBDrbolSLuiisDGhPY3MBV_ErvT-Ob5Hl3rbVdmjcyNN6a9D5TATkKj3vIvxQdpOJBH99Qr6qzHjWZ30rF24_wco9IWWP8b80rrZkvVC2b3vUpWwmg8viLJ3FP6dTT6hR5vxJCKpjFD6gAahFL_2kpdj-KlN3nXJ3VTmsD1giDlSRoNGLVnbYCwd9vWq7L_8buwxsSzPWQ-q2PXo8HtHDlDAO0wspIUMU1NYrdnMr9PR7VUKiKa58MoDG5OlxSYw0VZvuC5Jd4eCMF5iIhIgvsXcLoHdCp3AMmjjuJZhZ_YQnl8AAPmxoaav1sJuN2ZfgKBKoalm0pXWOQfSytfqqvrW2wcasME7C4d3gfoXGcLhMT_Ub2OoyThB8XAMZWlCd-HQVY8GqbNmi8wKz_hZfDSG9dg-k_V2ldwpjuw5eD51qKhFFvnhommzERhCcXIJoSc3gYcr5jD7aRcmKbyOTsZUt_14BxjQ4ncv_H1_1E1b1rhqkCeznuM-iL_JZ6YD7fkydevpzaYbjUquQ3ZDp95YJuf0Fap4jp8LcJ5dNRHX3YczW2sJR6qAjQOPEYggSVOtJgfML4uuMMcQK5NXemf9j5ne_xO261p5eKP6y_ESRmh8WK4WYepuHr_EYickHOhSp8heggGIiFH1JFEHkHo4yk3L9RDJiC8mY50g6OxUPfOUe4E-84R4HEY_hvcYZZgACpXWf_TxY6zFSGQY7tFidvd7Z1cm2JbRidV8qbYeVP5nRV3arIomZQZYJZgfmdh-4ia3k6288HT6tVDGeU9G8a23z83bpPlDpKTs_hUmZ5EZKl2do_YWG0BkkfoiTBe4Br_kir48LD8_tbgHFdmsqjSM3wfmNwvWNL1og5ePaTXoJyjk00jHIc6T69_orH_zSya9CVxaDtHPdIrUkhywcjhcEpmVc4vNqGqMqK4oFxphabgHTMxIW6TZ_ey5wqRvUSUU6goA2V56ezjeg4mdI3qfk3cR6AkSyV-nzm2qV3M1V9MmnEiMxgZsGIWNEPhnz1Lr4Rbip0wsUFIMF9lnYczwYFOXzdardkI_bhM8HiLKbmbKJX3pSrIpoYtLHDJqhjnKWouN8FADSxed9AeaECLkrgaTMklShb6BoMLDTtI0GAM0HmvlL38RnLySi87m1tsT-eWYjD2Z6yIZF1v4FLOMCZQqKMm_a7BkzZ3T8yh84HEVU3-hx1x_lKTjLtscdTkRlqMZFS5RGakNbbSV-knX5sXLp-03Fo3pN_wpx6dzyvVBTYpHvd7WXs66NKDZSTHNktrgZfnQwHuZH0ddOEGGo6MKtZ_sd4DeatXUGI8ltGUdibmiukPBKSK0XBCOVnKg563amofA2jSQ9IbHpUL4viDtS_uoQvzD_BxXTJegL2WpuE4t6uviOWxpO6Flr94KA4vQuakHtVibwVfXzU9MJ_YVe10Em0mGNP6IgIrSbhCsnawh9zaU370OWa1ADq15EbkHV-g8kM1hlSwVGnSy8GsApbaJMBzT-JALIAXa1rXfNsWQPtlX5hR34TlktN_4baZyAJgV4iEl5qPbKlgfeObPXB5yEp059ary8piNk5fe_AfnU1GPlPy7vlfjMB6iGUhQRf9Au2VLEwcKkmA0ZlLIvr7IEmjFTmEtwGzXuB-1avUkESDYMnl0g6DSafTTCwdER1YFoMvTCfj7Kw71lKV8jhq0F6bkGitN-k4qZmUUmfpMH5DKtvXLe8vPYeR3HBBJMotf8VFJubPcWwNOZjwt2dfb2yaJAadjZrAPjJqBD-ITyG7h0yYaatU6qI4R-PV_Oj34MMOsvoKavdSmziOp8tMegvacRpvJM_QDiI8pjBsYTxLs3WmoDEXbnQqhpyFx50NB02J7UYF3A1z_Sa4VjvXzEO4UGF6csf-Q7mW9HUNxnPfP7gz2TJhVf8z8LIUgmaTUhQ83sjrEcR69y_wycb1vmgKiIhM4wch0YKxojnBqC3FmEmg9r5NjnHFXmtUS0L0LRu3Avc5LCBZpEXjr_TDYrodmiFvNahkm1XCXsI2TTBqW7d--ncDj1BIc_h5aWeiqIE8sIVfrOlkNtBL8R9Z278WXJnY9JZ0qradC6nBB-AtRf2asvLdjBrSRIQ8FBCiomg4M2YX5eIW-3dOFJCV1DDYkEsagFD_lksCvi2Tik7RbeN0SN49nWnPeGSauePQlsqQMNItlocrwBpLQhY0a3VuYn1Po8s07FKN8ZuLKB7Pyr9NdD_PyoH8DqDYcAUOdE9Dfo7mMKSjUcD1d7G6SaAK6CQeX_tNcxU3q9_FRdQTWYLtDXFt04p4gAqchEeGvoHReezytBJtrC4fZLxp8EzrHUXM4Og3W7opkjwtsHh49698qtPaIRm45XWmiWye7bRs7om04DW1wfEEsq8iAmaK0_wH_iSbp6CQlrN5GcXtrpp6cmZ0QOe9BCJ_qmxM27r6TrwKni9XlL-TbZ_qC3FEeCAlHcTvURyftRKqgkhU4p4jYjPWZsu5fPiQlbKT54WAkoxAhgRlhqJUHxkmPRoRYilPQhDn0QcqiGBkTh8CH__lqfxJLORktCsA8d2yhkfkTMyVANU-Mm759Njn5b_hHRzzttcAEAd_JZ0crwpdmUPb7tCsfOTfK8-9OgyFuNdKP3NQ-xYCKYxg80aXRoJr6prvqDkTi2fl29EfXA6gJW6YNskFYzqOsT450bfvEIDu5gMQs4U_T1yBBHHQxQxzD-npul1k2lFU4jrN3qfvUT4aESaLJKY2P4z6ztz2NxWR6ZgCoCrb15bCj3GisMP0HC4gRfPyPfQ2REYLiZVd2cKvK9J6LXpnrn95mdHa4NUdTlAkaV3hUglbmnnUxW5cAFqNngXfkI9lLc0B0N4ADqvlVeMxUPhlfKiU-8jM5BSlz5izo2ElnhBDWygA2l8efUfl6C0NaWGP17AHXgNQtoRfPhPEKCJXYFIQ4eXwAuCJtxZiFWxErmrEsxeXot7I3hdC9TguVFIlUOsTzuh_hEfOkZsuxNSXA1NvYTdBBwCaVM-HbMiYHSLiSJpFP4g3R-XEYy93BqZMTC2fvyeLwSgSefZDEA-leIpx-m4J5w2X1rwmgfXwlMAtaLqcAKfdKsVXv5a9mP0D6p3FiQ4o-kPI5yuWBLPjgx0fx_LWHDuUqNtphgLOraKSbLxBx-mmxLM6FTf-uBXiq6Gcpib8NrzPCUKfcMT6YNt6o0frd2fQxCOOO1lamkYNeqa52jiSAj879rvZUFsLdrokNYYhWYcadZLfxoe1a721jI-BZRLCFBupXFvSNBSEXRTknI1EcTwaEhC0xvowv5n2HGAK0eBxlnbYh3a6iJES0GUfr6R1sTZXyCEn72vIQN4T2aE0Av0ZIbzKHLmw9___r_lWPs1mNhKwodK2Ux_mKJwVleGfR5AIXzfC-B4HDInHpdMY-ahWLeLhlP4-v22rZphh9FDx_AT6M0eMn1MAK3Omh5ZE9-TkBlRQeRo5ADpEDnHPBfRSKOkdqZgOP1-B--lwLmlAweBDZsgGfOtwTPKyYkUNgVEtwd114mzh2psud7Je5BUo-xPoLouA==",
+      "summary": []
+    },
+    {
+      "id": "msg_07d7d67be27bc093016ad5af7e5fb487d19606effc91043bf0",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"reference_findings\":[{\"reference_id\":\"P03-H01\",\"treatment\":\"SUFFICIENT\",\"exact_output_quote\":\"“Las matrices ML-1 y ML-2 no deben tratarse como activos propios de Ribera”\",\"explanation\":\"Distingue correctamente la propiedad de Sur del Lago del registro y la estimación interna de reposición, y no convierte esos PYG 60.000.000 en una reducción automática del precio. Propone excluir las matrices de los activos vendidos, coordinar su traslado como bienes del cliente y revisar la asignación.\"},{\"reference_id\":\"P03-H02\",\"treatment\":\"SUFFICIENT\",\"exact_output_quote\":\"“La carta del cliente permite una transición potencial, pero no prueba que esté aprobada”\",\"explanation\":\"Refleja la aceptación condicionada, enumera las condiciones técnicas y de transición, identifica que no existe aprobación técnica y plantea condicionar el cierre a su cumplimiento; conserva la alternativa de postergar o no adquirir.\"},{\"reference_id\":\"P03-H03\",\"treatment\":\"SUFFICIENT\",\"exact_output_quote\":\"“No confiar en ‘cerrar y reabrir legajos’ como mecanismo que extinga continuidad o pasivos.”\",\"explanation\":\"Conecta la condición laboral con la viabilidad técnica y comercial, identifica que los técnicos expresaron interés condicionado y recomienda verificar antigüedad, condiciones y conciliaciones sin presentar la retención del precio como liberación frente a trabajadores.\"},{\"reference_id\":\"P03-H04\",\"treatment\":\"SUFFICIENT\",\"exact_output_quote\":\"“Debe acordarse entre las tres sociedades quién produce y entrega, quién factura, qué efectivo o crédito pasa a Fresno”\",\"explanation\":\"Reconcilia el anticipo de PYG 120.000.000 y el saldo comercial de PYG 80.000.000 con el pedido de PYG 200.000.000; advierte contra el doble cobro y distingue la aritmética de una conclusión sobre propiedad, exigibilidad o impuestos.\"},{\"reference_id\":\"P03-H05\",\"treatment\":\"SUFFICIENT\",\"exact_output_quote\":\"“Los PYG 240.000.000 diferidos forman parte de los PYG 900.000.000; no son además una garantía en efectivo.”\",\"explanation\":\"Identifica el error de duplicación, analiza las limitaciones del mecanismo de imputación y propone negociar garantía o retención con reglas y plazos adecuados, sin asegurar que el saldo cubra toda contingencia.\"},{\"reference_id\":\"P03-H06\",\"treatment\":\"SUFFICIENT\",\"exact_output_quote\":\"“El reclamo de PYG 40.000.000 por agosto-7 está controvertido, no aceptado y no documentado como nota de crédito.”\",\"explanation\":\"Lo distingue del anticipo, recoge que la cesión no queda condicionada al pago de esa cifra y que Ribera no queda liberada por defectos anteriores. Recomienda un procedimiento de revisión y rechaza una compensación automática.\"},{\"reference_id\":\"P03-H07\",\"treatment\":\"PARTIAL\",\"exact_output_quote\":\"“No hay base suficiente en el expediente para cuantificar el impuesto ni concluir el tratamiento de cada derecho o componente.”\",\"explanation\":\"El memo trata adecuadamente la incertidumbre sobre base, precio, documentación, IVA y fabricación pendiente, y evita inventar una tasa o liquidación. Sin embargo, omite una consecuencia fiscal específica potencialmente importante de la transferencia de establecimiento comercial: el art. 13 de F03 dispone el cierre del ejercicio económico para el enajenante y que el adquirente mantenga el mismo valor fiscal de los bienes al momento de adquirirlos. Debía señalarla como cuestión a confirmar, sin asumir que esta estructura necesariamente califica.\"},{\"reference_id\":\"P03-H08\",\"treatment\":\"SUFFICIENT\",\"exact_output_quote\":\"“El estimado de PYG 8.000.000 por vacaciones es grupal, incompleto y no una liquidación”\",\"explanation\":\"No transforma el estimado en deuda definitiva ni considera que los recibos de septiembre prueben la cancelación de todos los saldos. Propone obtener legajos y conciliaciones individuales y distingue la responsabilidad contractual de una liberación frente a trabajadores.\"}],\"errors\":[],\"novel_valid_findings\":[\"La omisión del art. 13 de F03 deja fuera un posible efecto fiscal de la operación como transferencia de establecimiento comercial: cierre del ejercicio del enajenante y continuidad, para el adquirente, de los valores fiscales de los bienes al momento de adquisición. Su aplicación concreta depende de confirmar la calificación jurídica de la transacción y la normativa vigente a la fecha de corte.\"],\"recommendation_coherent\":true,\"limitations\":[\"La valoración de la referencia fiscal añadida se basa en el texto proporcionado de F03; el propio memo reconoce que el corpus no acredita consolidación normativa al 19/10/2026, por lo que corresponde verificar vigencia, modificaciones y reglamentación antes de concluir.\"],\"preliminary_usability\":\"SUBSTANTIVE_CORRECTIONS_NEEDED\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "exploratory_blind_review",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "reference_findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "reference_id": {
+                  "type": "string"
+                },
+                "treatment": {
+                  "type": "string",
+                  "enum": [
+                    "SUFFICIENT",
+                    "PARTIAL",
+                    "OMITTED",
+                    "DISPUTED_REFERENCE"
+                  ]
+                },
+                "exact_output_quote": {
+                  "type": "string"
+                },
+                "explanation": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reference_id",
+                "treatment",
+                "exact_output_quote",
+                "explanation"
+              ]
+            }
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "severity": {
+                  "type": "string",
+                  "enum": [
+                    "CRITICAL",
+                    "MATERIAL",
+                    "MINOR"
+                  ]
+                },
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "FALSE_PROBLEM",
+                    "CONTRADICTION",
+                    "UNSUPPORTED_CLAIM",
+                    "INCORRECT_SOURCE_APPLICATION"
+                  ]
+                },
+                "exact_output_quote": {
+                  "type": "string"
+                },
+                "evidence_locator": {
+                  "type": "string"
+                },
+                "explanation": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "severity",
+                "category",
+                "exact_output_quote",
+                "evidence_locator",
+                "explanation"
+              ]
+            }
+          },
+          "novel_valid_findings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "recommendation_coherent": {
+            "type": "boolean"
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "preliminary_usability": {
+            "type": "string",
+            "enum": [
+              "POTENTIALLY_USABLE",
+              "SUBSTANTIVE_CORRECTIONS_NEEDED",
+              "INSUFFICIENT_EVIDENCE"
+            ]
+          }
+        },
+        "required": [
+          "reference_findings",
+          "errors",
+          "novel_valid_findings",
+          "recommendation_coherent",
+          "limitations",
+          "preliminary_usability"
+        ]
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 233180,
+    "input_tokens_details": {
+      "cache_write_tokens": 233177,
+      "cached_tokens": 0
+    },
+    "output_tokens": 1398,
+    "output_tokens_details": {
+      "reasoning_tokens": 352
+    },
+    "total_tokens": 234578
+  },
+  "user": null,
+  "metadata": {}
+}

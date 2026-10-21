@@ -1,0 +1,24 @@
+{
+  "run_id": "P01-B-R1",
+  "case_id": "P01",
+  "modality": "B",
+  "repetition": 1,
+  "started_at": "2026-10-19T05:06:32.700Z",
+  "status": "FAILED",
+  "model": "gpt-6-luna",
+  "blind_id": "cea60e8823cc4b1cb15e87444ec332db",
+  "paid_inference": true,
+  "error": "INPUT_TOKEN_BUDGET_EXHAUSTED",
+  "finished_at": "2026-10-19T05:07:56.561Z",
+  "elapsed_ms": 83861,
+  "usage": {
+    "calls": 22,
+    "input_tokens": 748496,
+    "output_tokens_including_reasoning": 4620,
+    "cost_accounted_upper_usd": 0.095872,
+    "estimated_standard_no_cache_discount_usd": 0.0771596,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.5
+  }
+}

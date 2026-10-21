@@ -1,0 +1,33 @@
+{
+  "run_id": "P03-A-R2",
+  "case_id": "P03",
+  "modality": "A",
+  "repetition": 2,
+  "started_at": "2026-10-19T05:35:27.456Z",
+  "status": "COMPLETED",
+  "model": "gpt-6-luna",
+  "blind_id": "7e46424f571f401cb0dcedb09822fba9",
+  "paid_inference": true,
+  "output_sha256": "f3984424e9affbf4c56ba541f458f35119688ddc77fc9aa81adb1b3f56e4fe13",
+  "blind_output_sha256": "f3984424e9affbf4c56ba541f458f35119688ddc77fc9aa81adb1b3f56e4fe13",
+  "output_words_including_annex": 1496,
+  "case_locator_mentions": [],
+  "source_locator_mentions": [
+    "F02-L00118",
+    "F03-L00599",
+    "F03-L00664"
+  ],
+  "invalid_case_locators": [],
+  "finished_at": "2026-10-19T05:36:03.582Z",
+  "elapsed_ms": 36127,
+  "usage": {
+    "calls": 9,
+    "input_tokens": 148796,
+    "output_tokens_including_reasoning": 2876,
+    "cost_accounted_upper_usd": 0.0200375,
+    "estimated_standard_no_cache_discount_usd": 0.0163176,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.45
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Con la evidencia aportada, no trataría esa frase como aceptación.",
+      "explanation": "Distingue correctamente las propuestas de negociación de una aceptación y usa los hechos sobre falta de elección, pago y aprobación interna. También evita una conclusión absoluta y reserva la posibilidad de comunicaciones o conductas no aportadas. El tratamiento se apoya en P02-D01-P02, P02-D02-P04 y P02-D05-P01–P02, además de las reglas de consentimiento y reserva expresa de F01."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No evita la intervención de Horizonte: el contrato exige autorización previa y escrita también para un cambio directo o indirecto de control",
+      "explanation": "Aplica directamente la cláusula contractual al escenario de adquisición de acciones y conecta esa condición con la decisión económica. También distingue el escenario de cesión de activos y recoge que la autorización es específica para cada estructura. Véanse P02-D03-P02–P04."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No consta consentimiento. (P02-D04 v1, P02-D04-P01–P04). No hay decisión actual de terminar ni incumplimiento observado",
+      "explanation": "Trata la respuesta de Horizonte como recepción y evaluación pendiente, no como autorización ni rechazo. Reconoce que la reunión del 27/10 no garantiza una decisión ni coincide con el plazo pedido para la reserva. Esto refleja P02-D04-P02–P04 y P02-D02-P03–P04."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Recomendación: no aceptar ni transferirla.",
+      "explanation": "Identifica la asimetría, la falta de excepciones, la cuenta personal no verificada y la ausencia de acuerdo firmado, custodia y autorización interna. Recomienda no pagar, pero conserva la posibilidad de negociar una protección distinta, sin afirmar que una técnica concreta sea obligatoria. P02-D02-P03–P04, P02-D05-P01 y P02-D07-P04 sustentan el análisis."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "A conserva a Delta Azul como empleador en la hoja de escenario; B propone incorporarlos a Laurel.",
+      "explanation": "Separa la situación documentada de los escenarios no ejecutados, identifica el riesgo de sustitución patronal en B y advierte que la antigüedad y los derechos no se eliminan mediante un nuevo contrato. Cita el art. 28 del Código del Trabajo y evita afirmar que la sustitución ya ocurrió. P02-D06-P01/P03 y F02-L00118–L00121 son pertinentes."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "El IVA grava enajenaciones de bienes y servicios (art. 80; F03-L00599–L00603).",
+      "explanation": "El memo acierta al rechazar los PYG 90.000.000 como liquidación acreditada y advierte que faltan bases y clasificación de activos. Pero, al comparar acciones y activos, la formulación general sobre el IVA omite la exoneración expresa de la enajenación de acciones o cuotas del art. 100.1.a de F03 (F03-L00749–L00750), mientras la ley incluye la transferencia de acciones entre los supuestos de enajenación del IVA (F03-L00605–L00609). La omisión puede inducir a no distinguir el tratamiento de ambas estructuras; la exposición no afirma expresamente que ambas paguen IVA."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Conciliar horas y registros es prioritario; la ley fija recargos para horas extraordinarias según sus circunstancias",
+      "explanation": "Diferencia los recibos de salario base del estimado interno de horas adicionales y no convierte los PYG 16.000.000 en deuda liquidada. También señala que faltan registros de jornadas y que vacaciones, aportes y otras obligaciones no se pueden tratar como cero. Usa P02-D06-P02/P04 y F02-L00768–L00771."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MATERIAL",
+      "category": "INCORRECT_SOURCE_APPLICATION",
+      "exact_output_quote": "El IVA grava enajenaciones de bienes y servicios (art. 80; F03-L00599–L00603).",
+      "evidence_locator": "F03-L00605–L00609 y F03-L00749–L00750",
+      "explanation": "En el contexto de comparar una compra de acciones con una compra de activos, citar solo la regla general del hecho gravado sin señalar que la enajenación de acciones está expresamente exonerada puede crear una impresión incompleta sobre el IVA de la alternativa A. La afirmación general es correcta, por lo que el problema es de aplicación incompleta, no una falsedad literal. El memo sí reconoce que la liquidación depende de datos faltantes y no concluye que exista un importe exigible."
+    }
+  ],
+  "novel_valid_findings": [
+    "La observación de que el contrato de Horizonte no garantiza un mínimo de horas fuera de mantenimientos programados fortalece correctamente la advertencia de que el plazo hasta 2028 no equivale a ingresos asegurados.",
+    "El memo incorpora la autorización interna de gastos hasta PYG 12.000.000 y la diferencia entre continuar la diligencia y aprobar la operación, útil para acotar la decisión del comité."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El corpus jurídico aportado no acredita consolidación normativa al 19/10/2026. El memo reconoce esta limitación y propone verificar vigencia y reglamentación antes de firmar.",
+    "No se aportó el acuerdo de reserva, una conciliación completa de pasivos ni una autorización de Horizonte; el memo correctamente condiciona conclusiones sobre esos extremos.",
+    "La conclusión tributaria sobre cada alternativa queda pendiente de identificar vendedor, bienes, bases fiscales, valores y tratamiento reglamentario aplicable."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "a97a962708544bb79ce51ad9ee2432dd",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 232715,
+    "output_tokens_including_reasoning": 1678,
+    "cost_accounted_upper_usd": 0.029928375,
+    "estimated_standard_no_cache_discount_usd": 0.0241105,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 0
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "phase2-benchmark-freeze-v1",
+  "frozen_at": "2026-10-13T10:07:15.474Z",
+  "evaluation_not_yet_executed": true,
+  "dataset_sha256": "10189975fbb17f55f2a593dce0951b74da52a13a56f752097622cda165a98634",
+  "corpus_input_manifest_sha256": "be467f0ac848649c246ea9bc2e903dc069ee64e3583da49060ebd629ce5cd081",
+  "artifact_sha256": {
+    "phase2/benchmark/run.mjs": "91b6144a7615afc24e55c0aa284560d9ba8f27eaddbd0c70a076eb3fe415b2d6",
+    "dist/citation-checker/extraction.js": "45be239c5f18fb8b6fffd0c3fa4b38f14ba76aa09821f0647f76d68740e46068",
+    "dist/citation-checker/index.js": "258c9393ce8269a7126998cb254fd8eaae6a67d9316560ce3fdb30ebdb1965f3",
+    "dist/domain/contracts.js": "9d86ee8930c30773c6eaeb56017c1f320686017c40baec197ee2227a77b46633",
+    "dist/domain/guards.js": "419505c52b85318c4f59a3907537f74c758428090584e18977fec92d5e1f07ef",
+    "dist/retrieval/index.js": "b1437e35e89401e5fc0b126974deb291119dedb6666796c2def4569827245775",
+    "dist/ingestion/provenance.js": "d945bff9f66520fcacaa1fb1923cebda256867a5c23346efd9a485e524e6edff"
+  }
+}

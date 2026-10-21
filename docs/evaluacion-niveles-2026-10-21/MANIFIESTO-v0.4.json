@@ -1,0 +1,402 @@
+{
+  "version": "0.4",
+  "status": "OFFLINE_TECHNICALLY_VERIFIED_PAID_DISABLED",
+  "files": [
+    {
+      "path": "AISLAMIENTO-v0.2.md",
+      "sha256": "9570e56c8319648b2c78dbc82ee5e17e83ddaa52790dc631a95943aa5d96714a"
+    },
+    {
+      "path": "AISLAMIENTO.md",
+      "sha256": "9de1828186ca9e77d6421475e5f595c74e27dace14a00c9dcddf5d6ede313be4"
+    },
+    {
+      "path": "MANIFIESTO-v0.1.json",
+      "sha256": "ca925c163ae182dd638b166b53e8a73fbc1a8efe1e55e38dd1929f842cbb145a"
+    },
+    {
+      "path": "MANIFIESTO-v0.2.json",
+      "sha256": "3bbb961ab5c9ef7ecba85b48dd03c4ab02580ac95f5e0b7bf6870bf6e8c9f695"
+    },
+    {
+      "path": "MANIFIESTO-v0.3.json",
+      "sha256": "d1c209f04e3dfe605fd1a8b45a1b0e99219ac80004d3989c8edced7a7b13a716"
+    },
+    {
+      "path": "PRESUPUESTO.md",
+      "sha256": "31410321ae69827f25e900c6d46573300dc3a5d528d59a3a3af3365ac6cac0f2"
+    },
+    {
+      "path": "PROTOCOLO.md",
+      "sha256": "577d2528f100f0f0df346a7e0e0869270140f99684cb6f8a33dc669d07033240"
+    },
+    {
+      "path": "README.md",
+      "sha256": "87c1735aabc33eab7b4c5404bcde16d825df4af7d61ce55bea5471cc004c9a37"
+    },
+    {
+      "path": "REFERENCIAS_PENDIENTES.csv",
+      "sha256": "f6de8aaf96fd21872afa40c9d7490c1ed9c0a63ca59c1e321268ec396a2476bd"
+    },
+    {
+      "path": "REVISION.md",
+      "sha256": "0196d7c4ba5aeacf5912fc7a23aced89ee4d93ae73818b47d917be68c15fe6b2"
+    },
+    {
+      "path": "VALIDACION_ABOGADO.md",
+      "sha256": "9d25d2904036ad81c38479e283ba408b1a95ec679fe8d938b97af812d3056459"
+    },
+    {
+      "path": "VERIFICACION-v0.2.md",
+      "sha256": "b6033f61efc97726744e1f394519017f8bf2a2f4ff9b8b0a40905b8543a197af"
+    },
+    {
+      "path": "VERIFICACION.md",
+      "sha256": "764886924f37325eb362adfa19f05b5bcbe602954e051ec40cabb4750c8d8044"
+    },
+    {
+      "path": "VIGENCIA.md",
+      "sha256": "c1e7799f739f9845ed134a04bf66125997cba3a563b4cd20cd259d4b8dbcffc5"
+    },
+    {
+      "path": "dossiers/LEEME.md",
+      "sha256": "7ba613f5288752036f4a34d48e46626f3acb4cc95a11e6c071960a1997deca5e"
+    },
+    {
+      "path": "dossiers/N01.md",
+      "sha256": "35521c9ff4694e2987725ed9385e6830795484db2fe733efaa09ac7a501c5a55"
+    },
+    {
+      "path": "dossiers/N02.md",
+      "sha256": "d6ddef003816df47c9b54e3619fd72fca6202e67099ce835a5762f35aec35f58"
+    },
+    {
+      "path": "dossiers/N03.md",
+      "sha256": "29b934459f0f7f3c57bc892ebd4f9bc09635493d1f955aa4ceb5b861618c7e66"
+    },
+    {
+      "path": "dossiers/N04.md",
+      "sha256": "4b53f20808d5886fcfb6496c7a3f4d2c1cc98d5df85f0cf2fd9cf80e38719d21"
+    },
+    {
+      "path": "dossiers/N05.md",
+      "sha256": "a0a501cee07a2166d13e68db994ab3ba637870f5942e308841e4106e13a54d8f"
+    },
+    {
+      "path": "dossiers/N06.md",
+      "sha256": "649aecb197eb3a058ac3d47b6cbfe1f1d524ded973503d7047af133200fab1e5"
+    },
+    {
+      "path": "operacion/AISLAMIENTO_OFFLINE.json",
+      "sha256": "2787ad847017b9aa2dae127e9962bda56c961e31bb76bff4a01206d3a9b3c411"
+    },
+    {
+      "path": "operacion/MATRIZ.csv",
+      "sha256": "3d1132b2ff0cf9f6fb166a5551134c3d651b6d98524921a1b7006041ce7318eb"
+    },
+    {
+      "path": "operacion/MEDICION_CORPUS.csv",
+      "sha256": "369a63c9ebd5ae957bd3c8c7469f2efb38418e5505dc1b9d5f7d2f68ac2179d4"
+    },
+    {
+      "path": "operacion/OFFLINE_TESTS.json",
+      "sha256": "a04d2433d7fe9ff229180a22efa1ae7a2d067512add01c548afa76800534f954"
+    },
+    {
+      "path": "operacion/PRESUPUESTO_DETALLADO.json",
+      "sha256": "ef565ec5892f2411846c9b41efc37654ae77217234de622b2d4bc78ff23753d6"
+    },
+    {
+      "path": "operacion/PRESUPUESTO_ETAPAS.csv",
+      "sha256": "78f72f9c06ca338f346d6e9985e4a899e3da9fa200fc4f292be9adeb349b1965"
+    },
+    {
+      "path": "operacion/PRESUPUESTO_TURNOS.csv",
+      "sha256": "f67cc3aae218dec2d83d989e4d9671d04174d68ebfd8a8856199c2eefbe62e06"
+    },
+    {
+      "path": "operacion/REVISION_DOCUMENTAL_OFFLINE.json",
+      "sha256": "cb9064c06712be6c6b40e3797789134e8aa5f1f72d7e5c811baae8f0fd504743"
+    },
+    {
+      "path": "operacion/REVISION_TESTS.json",
+      "sha256": "45b2fc958bce90d76b85ec1d355cff05adf17e28b86f998a50606cdd21a7cd04"
+    },
+    {
+      "path": "operacion/TARIFAS_PROPUESTAS.json",
+      "sha256": "d970b789832673f8bc68b4ee45a68bdfcb4e5cb325f47b6a314ef8a6032998e6"
+    },
+    {
+      "path": "operacion/VERIFICACION_TECNICA-v0.2.json",
+      "sha256": "c710788ad9fd00e4be38f6d9faa0075bd08f390ec703cce57e798a1d55713f45"
+    },
+    {
+      "path": "operacion/VERIFICACION_TECNICA.json",
+      "sha256": "fd8574f8d3c3e21f85b7fc028f4e3175689d0b34c57c0e2d9fe94d9568ef6054"
+    },
+    {
+      "path": "publico/CASOS.json",
+      "sha256": "2d52cdace7214154e2c70c8eaa26a1c086fe54283d8b10220220819dbabc62a5"
+    },
+    {
+      "path": "publico/fuentes/ADMIN.html",
+      "sha256": "d2e988d31d335eac21d3ad0907a97fb1bc070b6aee114c7febe0c47786918a06"
+    },
+    {
+      "path": "publico/fuentes/ADMIN.txt",
+      "sha256": "b06994bd276859aa7fad729a14c34a9459749ca56a5a461d3f86577704e26b92"
+    },
+    {
+      "path": "publico/fuentes/CC-II.html",
+      "sha256": "0cb2466519ff727969ce04923dec6519ec6c4c2de3016e37fc58d82ef8649949"
+    },
+    {
+      "path": "publico/fuentes/CC-II.txt",
+      "sha256": "df417ffe2b5f54cf2a21cb805a02ec2c35659be06d91ab3b4d1559e1bf754243"
+    },
+    {
+      "path": "publico/fuentes/CC-III.html",
+      "sha256": "9b3c71288f5f31cfe35fb11026a04267e885b8ee00c560d2e1e647eff2840b4d"
+    },
+    {
+      "path": "publico/fuentes/CC-III.txt",
+      "sha256": "9681d8cb6eba2fdfdb24eaa3b8409b6046fa771099b67fd1db28fdbd44c7199a"
+    },
+    {
+      "path": "publico/fuentes/CONSTITUCION.pdf",
+      "sha256": "dda16d040a03cb5f20ad7ae8b091c79d1d288162400e8524e7b0c0efbfa575b4"
+    },
+    {
+      "path": "publico/fuentes/CONSTITUCION.txt",
+      "sha256": "896dc3af1fec3ee3ca09fb73368d30cff1d1509abd21ea87e024a61deabe0131"
+    },
+    {
+      "path": "publico/fuentes/CPC-7663.pdf",
+      "sha256": "2f529243c422c9015fc671cdc87e5c71983bb6551681d555da93ec7512c3c795"
+    },
+    {
+      "path": "publico/fuentes/CPC-7663.txt",
+      "sha256": "aa336179800acd3a7eba8da419a204028093b87c31e4ff01547c50866ba72ec1"
+    },
+    {
+      "path": "publico/fuentes/CPC.html",
+      "sha256": "0544afec337f41e9f29426e0a32a821fff51a6eb0e337aede5c65418bbdfdfb1"
+    },
+    {
+      "path": "publico/fuentes/CPC.txt",
+      "sha256": "856166368ef115e67284a8871e981817c46de5f58c028a1ac287f668aa0f25ff"
+    },
+    {
+      "path": "publico/fuentes/CPP.html",
+      "sha256": "a1cbeefcea58f6b3596b9a20fcfb08427654a4ad3f8fcc0cce137e71721b59e9"
+    },
+    {
+      "path": "publico/fuentes/CPP.txt",
+      "sha256": "9a55e5e7d96885e7f2144cacac10695bfe62c897bebb2569753898a85ea8b87d"
+    },
+    {
+      "path": "publico/fuentes/DESCARGAS.json",
+      "sha256": "8059caa366353eebf90c57e722ba93abc603bb3be7d7424ec86fedf575932c2a"
+    },
+    {
+      "path": "publico/fuentes/FACTURA-6542.html",
+      "sha256": "88b7df5b23e37581af075dcee784ab368980af72993ea18962a410bf3d09a0fe"
+    },
+    {
+      "path": "publico/fuentes/FACTURA-6542.txt",
+      "sha256": "78c63dd06d453dc0312753d00a618dad9f0d4b2ed7f890af2854a4c9fb5e76a5"
+    },
+    {
+      "path": "publico/fuentes/GACETA-2011-2.pdf",
+      "sha256": "93fee19703c8c4a52e7e4a3ea90b12023cc0f7c6f18345c80b31b941470611fe"
+    },
+    {
+      "path": "publico/fuentes/INVENTARIO.json",
+      "sha256": "c7edf198f121619290ebd83ee12a0115afc202f41ce16c59021b17ad6c32267f"
+    },
+    {
+      "path": "publico/fuentes/LEEME.md",
+      "sha256": "6fa0ddc4d91cd31da6c34de740193f1aaced6af7e3e66e8207931dd53f24dacb"
+    },
+    {
+      "path": "publico/fuentes/MUNICIPAL.html",
+      "sha256": "c9e51a9bf27860add3225ce6445acee21ebb2947509ede09ecc2a3bfeb7b532b"
+    },
+    {
+      "path": "publico/fuentes/MUNICIPAL.txt",
+      "sha256": "4357bd8798ea3885195edbf75c1bcd28b1fa67c0e3c8876f190575255ec64af8"
+    },
+    {
+      "path": "publico/fuentes/N06-AS318-2010.txt",
+      "sha256": "a64dd6d0661d2341fde82f36854fa3c2f31340acada66e5bda86b5796c8c465d"
+    },
+    {
+      "path": "publico/fuentes/NINEZ-6083.html",
+      "sha256": "11c7e8adef361165321c20608fde215fcd0e412413a56ce1b951045fcfb84944"
+    },
+    {
+      "path": "publico/fuentes/NINEZ-6083.txt",
+      "sha256": "d3750103a064968586a6472140bb89a29f5e487b9be03be08b3c465f058f0e1c"
+    },
+    {
+      "path": "publico/fuentes/NINEZ.html",
+      "sha256": "51b46b6287807a070814c4cd317d2f4365b8930f73354f826b8d34a6986dd471"
+    },
+    {
+      "path": "publico/fuentes/NINEZ.txt",
+      "sha256": "c73b3e748abcc58e74b366499a804718291d5d136ee160f5a1e1971ee74981a3"
+    },
+    {
+      "path": "publico/fuentes/PENAL-3440.html",
+      "sha256": "85e107f879129953750119f3dd768a17ae3cd0e5e9834f35b3e0211a3055b69e"
+    },
+    {
+      "path": "publico/fuentes/PENAL-3440.txt",
+      "sha256": "1c5cc16572ceb7b198cc8dda255d1309137d3339876486f7b490ffaa43497a56"
+    },
+    {
+      "path": "publico/fuentes/PENAL.html",
+      "sha256": "6b35c7add7a82dd9eed9495fba9eb350dcd75175d70d24a70d364fafd3600646"
+    },
+    {
+      "path": "publico/fuentes/PENAL.txt",
+      "sha256": "5b4bedb7d28f983b807817229e96e092a7b4f65c970c6ded401bf63db9c190da"
+    },
+    {
+      "path": "publico/fuentes/TRABAJO-496.html",
+      "sha256": "4490420d3994b776242f4baab17b6c964638f171744e76bc1ea3b6caa1ecacf9"
+    },
+    {
+      "path": "publico/fuentes/TRABAJO-496.txt",
+      "sha256": "5f1b02a5e11e598d35747398c4220460214a1e4b07d1704aad12ff82bffeacdd"
+    },
+    {
+      "path": "publico/fuentes/TRABAJO.html",
+      "sha256": "2c43d49a578b9c16b1f66d01284f186e0af37ab222492c351bb48b848f6c5c20"
+    },
+    {
+      "path": "publico/fuentes/TRABAJO.txt",
+      "sha256": "39177c847d8c6d44b0f9af084bd93354e49a5c79427b5563f3adfee7053c9622"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/ACCESOS.json",
+      "sha256": "575ee1b5e939673bd862cf4bca74d61b8d22ae171f7bd644521f7eb18e60edda"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/CPP-CSJ.txt",
+      "sha256": "45fc82ce65ab407ea5dbb6beb4b9dd519e330e7f52e0b43bb9e4ea0c770127a9"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/CSJ-ACORDADAS.txt",
+      "sha256": "785c459f1aa41c11de40330117b7228700c45253d13498aba1a4231407db26ce"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/CSJ-NOTA7663.txt",
+      "sha256": "a877044ae70d1d9b90dbfabe820c7c67848774c31aa95e11d706b71683a2a6a8"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/DESCARGAS.json",
+      "sha256": "dd426ddb4f2afcd0b275c3d91fb5621bf58e14673287e96842ebfeb602bff051"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/EXP-CPP74.txt",
+      "sha256": "c0ddaf1a5262fbc2d1aed40e42aae6373053d74046ec88fc1a97d2a6838bd99f"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/EXP-PENAL7102.txt",
+      "sha256": "aee3bdde6c65a80db555288a493172c341f8d5a4b30127775dd167392cb5440f"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/EXP-VACACIONES.txt",
+      "sha256": "20bbb85430a88b02001460f329d301f56617791fb92e313eeb5fb10dc79f2749"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/EXP6715-14.txt",
+      "sha256": "d5d8803ff533edba7e8be7f703f8f9ea589b4622d16de934fee93d1e877fee47"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/EXP6715-69.txt",
+      "sha256": "0c11ec3f3f73ec626071c1a8debe7fb7e6a7c633745575be8592d3aea7b7abc9"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/LEY6470.txt",
+      "sha256": "687e23fdc879dfe19dfc9f75a23119df256e1ec8b723c56878a95e97c39b652f"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/LEY7663.txt",
+      "sha256": "aa336179800acd3a7eba8da419a204028093b87c31e4ff01547c50866ba72ec1"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/PRECIO-DEEPSEEK.txt",
+      "sha256": "52c2aea230fba82584f3a7b901782fc12fac3aaa901c5e42ec4a8671a31875cc"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/PRECIO-GEMINI.txt",
+      "sha256": "0b8d9acd858f5ef391643df2e925f37f57d50db406ace0c553068622860a750f"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/CPP-CSJ.pdf",
+      "sha256": "c33fd09d2368fd79b21a7a05e06db737e6457dfe5f930995f231f337e231bd7f"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/CSJ-ACORDADAS.html",
+      "sha256": "c3f7192bbacbfffc3fc206e5d0e5db314d762fb2f184ffe1c85d68281e56e13c"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/CSJ-NOTA7663.html",
+      "sha256": "90797287e978322ccf41b346f71adfd102e4f16b20f59d02ae643fe815be719d"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/EXP-CPP74.html",
+      "sha256": "a7839a63a711d66548c64fb8e10566febedc4192c67f739a1fcf2e1e2d03a070"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/EXP-PENAL7102.html",
+      "sha256": "e01b843e9a31a0a185624eeb055c94c7f4f8de662c4b65c8d0e1b020e8b65fc4"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/EXP-VACACIONES.html",
+      "sha256": "5134ecf52059c6b0515ec8070286b8fb53afff25fb8633395e77f008c4376d41"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/EXP6715-14.html",
+      "sha256": "507f741149542bd6ef65a1a2d90a90e45bfed643f8619e072d5c5ecd85abe4b9"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/EXP6715-69.html",
+      "sha256": "34c22163e53bcf9d5b1d9ca6cca99c392a3d48b2848b344acff0554728a12669"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/LEY6470.html",
+      "sha256": "d47550231da18ac177d2efa41d0ff032db7fd34c1d1af19ab6fcd2be1342dbe0"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/LEY7663.html",
+      "sha256": "fe90b176b5821f676cf1cf9c3a8e92c852559f0911ad41ff001804ee9ac72705"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/LEY7663.pdf",
+      "sha256": "2f529243c422c9015fc671cdc87e5c71983bb6551681d555da93ec7512c3c795"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/MODELO-LUNA.md",
+      "sha256": "2e4861582095740f5ea84b14bb18fa476a49c426b397b779b964bc144397b451"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/MODELO-SOL.md",
+      "sha256": "acfe91d19882aaf7bb52877898684614035a947de02f2955c9de905a7efb1362"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/PRECIO-DEEPSEEK.html",
+      "sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/PRECIO-GEMINI.html",
+      "sha256": "5e2d9b5ed75c01dadb4d0c16e26736e009d139918817e0295bafe860f5b91ca1"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/originales/PRECIO-OPENAI.md",
+      "sha256": "129d6019819379a6f30edc0811d4631ddb085dcd4b3b1d0012a945cd1af1bfbf"
+    }
+  ]
+}

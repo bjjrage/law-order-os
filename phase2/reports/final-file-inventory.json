@@ -1,0 +1,399 @@
+{
+  "git_available": false,
+  "baseline_manifest": "phase2/baseline-manifest.json",
+  "created_count": 85,
+  "modified_count": 10,
+  "modified": [
+    {
+      "path": "NEXT_STEPS.md",
+      "sha256": "3e149a2f2756b668356ff1e8396dd6be78a8241d911dfb2969d4d42e1e9c20d9"
+    },
+    {
+      "path": "README.md",
+      "sha256": "a44e5e49a93c07e6585a9d3989f5d6e91bcd013508c0e6eed2a580eaa0406539"
+    },
+    {
+      "path": "junta-juridica/src/citation-checker/extraction.ts",
+      "sha256": "b17bc4d8aa529b68418f68dff2355216188b97bc9b993d908bd16b7043bd5295"
+    },
+    {
+      "path": "junta-juridica/src/cli/index.ts",
+      "sha256": "0320519e74aa3668bf8f21164c0d1a0f6bfedd533eda22771fb9a8e3855d7fd9"
+    },
+    {
+      "path": "junta-juridica/src/index.ts",
+      "sha256": "d2974e098788f80e0a14bad9945201350768cea5684586202d99ebf50cd9ec97"
+    },
+    {
+      "path": "junta-juridica/src/orchestration/index.ts",
+      "sha256": "ce65bbced5523e091323d82f4460b94285e100ad9b46fcbebb8205a579945463"
+    },
+    {
+      "path": "junta-juridica/src/providers/live.ts",
+      "sha256": "bec160c7414e798aaf600a19df95ad51b838c87b170c613d8e157a129a51ca38"
+    },
+    {
+      "path": "package.json",
+      "sha256": "0fd25ffb273318cc8188adb379aefb806393b64c8e556537e1dd5428ad4b0e14"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "fd89c3770f4d262a15ea2d84fdb811b9bdb60e7ff18baadf883078a56fb30aa8"
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "7c75a2554be4d7e77bc6d6ccef640e8e14f29e02a7260aac99a0b227beccf18f"
+    }
+  ],
+  "created": [
+    {
+      "path": "BIBLIOGRAPHIC_BENCHMARK_REPORT.md",
+      "sha256": "4aac7462802a070b3cc7cb393bb4bbb2ebb22c3a8876f9ea2ef205dbe1051a79"
+    },
+    {
+      "path": "BLUEPRINT_ROADMAP_RECONCILIATION.md",
+      "sha256": "35ae62dd53ccf5d7b9009abb6fa734a5626484c4b367683904329d3ad2d1b042"
+    },
+    {
+      "path": "LIVE_SMOKE_PLAN.md",
+      "sha256": "6db0a852bd1c8f0def4a623d9a3ebc81712434e348f38fff83cd20ce308021ec"
+    },
+    {
+      "path": "MODEL_CONNECTIVITY_REPORT.md",
+      "sha256": "d0e18698f667ceadf8ad76985ad895e849b5f523a0e71a3692216c40a321d2ef"
+    },
+    {
+      "path": "OFFICIAL_CORPUS_MANIFEST.json",
+      "sha256": "c6e227f38ee723e885d524faa91ae82cc75dd274a0b58bded6626a59724a81ed"
+    },
+    {
+      "path": "OS_CORE_ARCHITECTURE.md",
+      "sha256": "565eff57eb5b82be725031dc1f39f713c2cab34c30c573837bfdaa2e4c43691f"
+    },
+    {
+      "path": "OS_CORE_E2E_REPORT.md",
+      "sha256": "4508c20050c3704f3dd746e29ab81e92d03fc6be6d9023c4fe4e1c0362f41b4a"
+    },
+    {
+      "path": "PHASE2_BLOCKERS.md",
+      "sha256": "0093430c9eb5a0e0801e7b4ca1d8f44b1b586b88fa5ce272cfa14c0db6e7b9c8"
+    },
+    {
+      "path": "PHASE2_IMPLEMENTATION_REPORT.md",
+      "sha256": "139d6c4327c1cc4162695117e7da940bca251570cc204173a6123dfe71f1dbca"
+    },
+    {
+      "path": "PHASE2_SECURITY_REVIEW.md",
+      "sha256": "3f20c9cc26a2ef75d348afbb7326e00fd60f93017a2e8eb6802101ae464082e0"
+    },
+    {
+      "path": "PHASE2_TEST_RESULTS.md",
+      "sha256": "5e7c49ce660106c8b992527168c56583a0af26f47eb1a425c079d16f57f7d03e"
+    },
+    {
+      "path": "junta-juridica/src/providers/preflight.ts",
+      "sha256": "97a7ecd6cabd38fddd3aff6f953e1f17e10f0ee3c0f50470b7d00b62310d2b74"
+    },
+    {
+      "path": "junta-juridica/tests/connectivity-phase2/preflight.test.ts",
+      "sha256": "b9878fc01e59b14f50fb5d0fe9cc15f241c3ceb5c7cce605beff3723df21eb8d"
+    },
+    {
+      "path": "junta-juridica/tests/phase2/junta-audit.test.ts",
+      "sha256": "343dabf0fcb9353fd867d9082300ead945b3608fc47ab7296412df61c036b6ab"
+    },
+    {
+      "path": "os-core/docs/ADR_OS_001_PENDING.md",
+      "sha256": "353bd8dea8fb12c84eec5b7d89f9f55d3105cdef13c9839c6c799b9d680efd7b"
+    },
+    {
+      "path": "os-core/docs/STORAGE_CONTRACT.md",
+      "sha256": "dfdee4418105586e48d3412f6b2c44025f414a9ec050ed4741b2116f4a721e72"
+    },
+    {
+      "path": "os-core/src/authorization.ts",
+      "sha256": "3b9dcdc9f1a4a38d6f3760a1f733aee25684cb4f9d0cb30fe180c7cf187d9999"
+    },
+    {
+      "path": "os-core/src/contracts.ts",
+      "sha256": "8ea590cfecea9e88844d8106d0cb8bc4bdedd606ee11365966bb9c48d38b4cc8"
+    },
+    {
+      "path": "os-core/src/index.ts",
+      "sha256": "2279db4134beb08970381902c7a2d1b84bfb84ce0327fb028e19734916801456"
+    },
+    {
+      "path": "os-core/src/service.ts",
+      "sha256": "b759d8c3b5817c2ff6dc0b122b32a6fe185a9995f9db5ed20c81cdc2620326a2"
+    },
+    {
+      "path": "os-core/test-results.json",
+      "sha256": "6a0b8bf6eff225b9e48d5a437c5e09539399cd7ca0785275d8cf999048554a0a"
+    },
+    {
+      "path": "os-core/testing/memory.ts",
+      "sha256": "8ab293e4c42cff58348094cfe27f3fb6f7ad814ddfa141e66215c16356d54ec2"
+    },
+    {
+      "path": "os-core/tests/core.test.ts",
+      "sha256": "ee7d7b1afa0e5ef771b8604bb5f36300535860af3d4f28330450c93ec7540b4e"
+    },
+    {
+      "path": "os-core/tests/fixtures.ts",
+      "sha256": "9ac0af3eeaf0ffb29fcc12e7ea5fb1747d60174f1176db168921517bee7f83b5"
+    },
+    {
+      "path": "os-core/tests/persistence.test.ts",
+      "sha256": "25311539c3e7c19971adec2262bbc5c56435d8deb71efd6c9904aca5ad7316e1"
+    },
+    {
+      "path": "os-core/tests/review.test.ts",
+      "sha256": "8b82742b7673dd8b838845307d1287825ce186d4dba5e8729d0a2d2130003af3"
+    },
+    {
+      "path": "os-core/tsconfig.build.json",
+      "sha256": "10795c454029177d05cd025777f33f41e7e6bf440ff360993aff4606b6befe5b"
+    },
+    {
+      "path": "os-core/tsconfig.test.json",
+      "sha256": "8f3fd9b230d688f4879b41f158aeac84a0c518f52affb9c5a528216ff3f109d0"
+    },
+    {
+      "path": "os-core/vitest.config.ts",
+      "sha256": "63b6a3c6d0b976376c863ae0ec042a50a1c2d657138d5b8cc7c1f280a46b8398"
+    },
+    {
+      "path": "phase2/baseline-manifest.json",
+      "sha256": "1f55d722ff42977e74f40a9e822116a08ba44c01865d8ae9c8527676160d38b8"
+    },
+    {
+      "path": "phase2/benchmark/cases-v1.json",
+      "sha256": "10189975fbb17f55f2a593dce0951b74da52a13a56f752097622cda165a98634"
+    },
+    {
+      "path": "phase2/benchmark/corpus-input-manifest.json",
+      "sha256": "be467f0ac848649c246ea9bc2e903dc069ee64e3583da49060ebd629ce5cd081"
+    },
+    {
+      "path": "phase2/benchmark/freeze.json",
+      "sha256": "cfabc2784455a45b58c18445c5d3c4466402f91c0ec0d0d238375cd9544acfd2"
+    },
+    {
+      "path": "phase2/benchmark/prepare.mjs",
+      "sha256": "271d2f5bc653581cc652c25353b1dd093486f3467ba5f9f68362c9c1e2819ff4"
+    },
+    {
+      "path": "phase2/benchmark/run.mjs",
+      "sha256": "91b6144a7615afc24e55c0aa284560d9ba8f27eaddbd0c70a076eb3fe415b2d6"
+    },
+    {
+      "path": "phase2/corpus/extracted/csj-civil-1184-2013.json",
+      "sha256": "1e2cb80479d8bb0725ebc643456029c70f937ec2f6161b860c0c322dd10a4025"
+    },
+    {
+      "path": "phase2/corpus/extracted/csj-constitucional-1010-2015.json",
+      "sha256": "a92bd502fa82f5f25b0e13330049bd415e5b4238219a5505160357ec2cce47d8"
+    },
+    {
+      "path": "phase2/corpus/extracted/csj-penal-162-2023.json",
+      "sha256": "1aa13ddb64de9e1fb38a655f37a202be86be4f0878d5e7664d1273bd4d3c27f1"
+    },
+    {
+      "path": "phase2/corpus/originals/csj-civil-1184-2013.pdf",
+      "sha256": "a59ef9e2258e92e3b076fdf37092f4013538d1f91dafea95e2ffdf46fa8d9de1"
+    },
+    {
+      "path": "phase2/corpus/originals/csj-constitucional-1010-2015.pdf",
+      "sha256": "214e4e61a0e62d1b2a57c01c04b660b18ad6110e7dd78aca6d68a9a72f0d8f91"
+    },
+    {
+      "path": "phase2/corpus/originals/csj-penal-162-2023.pdf",
+      "sha256": "e19fd055650eadb537285bce6c1ccdbd3128a0ad8fd94fd37616fc37aa9c5aeb"
+    },
+    {
+      "path": "phase2/corpus/provenance/csj-civil-1184-2013.html",
+      "sha256": "8923c79d0e1f56383e0549dcef53e506c369fdcf9b7fd41e322bf0e9a69abdb5"
+    },
+    {
+      "path": "phase2/corpus/provenance/csj-constitucional-1010-2015.html",
+      "sha256": "f9291b956c06798d3b6315ec8c122a919b19d29f2b534a5ba2252203b0a55a66"
+    },
+    {
+      "path": "phase2/corpus/provenance/csj-penal-162-2023.html",
+      "sha256": "3e8458c165ccf21afacf49610cad6f1dc325a77d5b3572f2fa152da401548520"
+    },
+    {
+      "path": "phase2/corpus/provenance/rights-law-1328.pdf",
+      "sha256": "4c445b2907481c207c80f43bda2b81f8216d7f6eb8f3c872625af9d61bd9fc79"
+    },
+    {
+      "path": "phase2/corpus/provenance/rights-law-evidence.json",
+      "sha256": "27c81592a75638608540d23e233aff81dd5cdbb1e7e4b79d2ae41960f7e21b69"
+    },
+    {
+      "path": "phase2/corpus/retrieval-evidence.json",
+      "sha256": "5eb185adc0584f46039eed981a3d0d0f36b61291da3994a6178a341c21b65c56"
+    },
+    {
+      "path": "phase2/corpus/review-images/csj-civil-1184-2013-p1.png",
+      "sha256": "c35df161651eb20afc86d911dda4f9cff1ac47463d9d11dc25c2483dfdc03e8a"
+    },
+    {
+      "path": "phase2/corpus/review-images/csj-civil-1184-2013-p29.png",
+      "sha256": "b12c580d0a0273d011b92a578cf1f092efb5cd8a863f652974cb066cb2533cd3"
+    },
+    {
+      "path": "phase2/corpus/review-images/csj-constitucional-1010-2015-p1.png",
+      "sha256": "5d91bdd4cc25dbb1fa888f40f133d31d2e55ecb357822025da71cea773e2f403"
+    },
+    {
+      "path": "phase2/corpus/review-images/csj-constitucional-1010-2015-p13.png",
+      "sha256": "7f4fd358b6b2b852c12356e6c9a30ff5992b59122182740021fc9dbb100b48f0"
+    },
+    {
+      "path": "phase2/corpus/review-images/csj-penal-162-2023-p1.png",
+      "sha256": "810b817ba97789e2c6cc6523a4f9907ab628a6c9f46bd3bcfd8a63fa29762f68"
+    },
+    {
+      "path": "phase2/corpus/review-images/csj-penal-162-2023-p7.png",
+      "sha256": "421b1c92acc4d3ec78d2b6d948931fcbe4f4b4e068a9126b6d990602cffba497"
+    },
+    {
+      "path": "phase2/docs/IMPLEMENTATION_DIRECTIVE.md",
+      "sha256": "c50692d7142edb1cfd05c774c734bf93a4dc42e08ef9ce63ce6a4f44702442e7"
+    },
+    {
+      "path": "phase2/docs/JUNTA_A1_AUDIT.md",
+      "sha256": "4f172e0d330bf3327cad8e51b777d47e59cb456fc489efce8d0766c2ef2204b1"
+    },
+    {
+      "path": "phase2/reports/baseline-vitest.json",
+      "sha256": "7f0c3f353e370924ef27789760133009970ebe1bd57aafa9dbe3abb232e52cba"
+    },
+    {
+      "path": "phase2/reports/benchmark-offline.json",
+      "sha256": "f03eed9c8d2b7160f8b2d6569963cce734688ed929e9a3ac4dc7c3f51c6a44bf"
+    },
+    {
+      "path": "phase2/reports/bibliographic-first-evaluation.json",
+      "sha256": "5a34e1e49a3aa833c157d7412ec5349efb83cbe6003faa3e192fd72b297df682"
+    },
+    {
+      "path": "phase2/reports/bibliographic-parent-replay.json",
+      "sha256": "0719bb53ab96a429f7700acfc834d2fdf04e45c2cbdd55fdb8fb79126e7bb4d9"
+    },
+    {
+      "path": "phase2/reports/bibliographic-replay-01.json",
+      "sha256": "dd907517df75a45181f79dab6a27072f78799266a2bbc8c9be274e708b64ba22"
+    },
+    {
+      "path": "phase2/reports/bibliographic-reproducibility.json",
+      "sha256": "28b837929915e00ff12267114347fa1caa76c9155b4b083aaa8eb4f38154d8de"
+    },
+    {
+      "path": "phase2/reports/cli-verification.json",
+      "sha256": "f1da2fbcfe247c7bd6e38cd274d166d452415ee11d59d60a2060cbcb22f06807"
+    },
+    {
+      "path": "phase2/reports/corpus-integrity.json",
+      "sha256": "c845d23b0c1e65a2e10415ae9e2b3fc72420fc00663e0c6436e2bda64bad554d"
+    },
+    {
+      "path": "phase2/reports/final-vitest.json",
+      "sha256": "31cbcaa476dc23017030e4be0843981d9cf9da4bb2da870db0137421329cd125"
+    },
+    {
+      "path": "phase2/reports/handoff-summary.json",
+      "sha256": "9de9433f02443c1a22b1a0602be01b9c135acde2e95424480e572e5098f54d60"
+    },
+    {
+      "path": "phase2/reports/junta-a1-first-evaluation.json",
+      "sha256": "51d78cd39342c4bca4d75d057426eb1a17d74c08fde81e2eb9135d09d90524a9"
+    },
+    {
+      "path": "phase2/reports/junta-a1-regressions-final.json",
+      "sha256": "864abcf7f6f7eada51705dbab242c2dc689b640b5b69bc29936d33d0cbdb18a9"
+    },
+    {
+      "path": "phase2/reports/junta-a1-regressions.json",
+      "sha256": "a8327864ba06582cb233dfa3e61c5f90d845779fa1805e102656d0b6bfa3801d"
+    },
+    {
+      "path": "phase2/reports/junta-audit.json",
+      "sha256": "4cbd5a08320b3c43201a21ff5d9ed52547ff0717b6d2e48272fca30e4c36463d"
+    },
+    {
+      "path": "phase2/reports/live-preflight-cli.json",
+      "sha256": "3235821679abb041d2e02d8c12948d0166d42f15c24471bd00aa2c5ac03b0a14"
+    },
+    {
+      "path": "phase2/reports/model-connectivity-account-proofs.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "phase2/reports/model-connectivity-metadata.json",
+      "sha256": "2ae2520c4e10a8097edc52f554bb73cf1fafcb6fc76fe147ff0cb6763d760759"
+    },
+    {
+      "path": "phase2/reports/model-connectivity-preflight.json",
+      "sha256": "3235821679abb041d2e02d8c12948d0166d42f15c24471bd00aa2c5ac03b0a14"
+    },
+    {
+      "path": "phase2/reports/model-connectivity-smoke-plan.json",
+      "sha256": "88e999f98e37c47dec58b5ddaa5b645b94892789d149bf377e1d7c57829d11e2"
+    },
+    {
+      "path": "phase2/reports/model-connectivity-standard-prices.json",
+      "sha256": "7bfabe754d647a91bd61d650690109e3a012451123a8d76fda5d2fa567cc6b7f"
+    },
+    {
+      "path": "phase2/reports/model-connectivity-tests.json",
+      "sha256": "ed4659294cdc59ef722b88be8ebaaa253031d31d3c77e29f013e34aa176ffa74"
+    },
+    {
+      "path": "phase2/reports/pdf-review.json",
+      "sha256": "ac2fbff46fadece385e1c6fe573e970a1a96e805d6c351c03ab9d424797b0807"
+    },
+    {
+      "path": "phase2/reports/smoke-offline.json",
+      "sha256": "8da00e2de4cb6bf338481337660e160dd87d47ff45ee81313d80f43d8da64361"
+    },
+    {
+      "path": "phase2/tests/corpus-integrity.test.ts",
+      "sha256": "0c0a07e732692b9b469a52f33c65d10cfd113a0d6abba88b22a0df54aafd08b1"
+    },
+    {
+      "path": "phase2/tooling/block-network.mjs",
+      "sha256": "e016f1d51ed9b2f4771064bb7a16dec0b2562d6a4bb165f3408dab3087d1d0ac"
+    },
+    {
+      "path": "phase2/tooling/download-official-corpus.mjs",
+      "sha256": "1e103fe4eef5084e98edd7372cde70e34ae4150361c5b305155b2501186bccf8"
+    },
+    {
+      "path": "phase2/tooling/package-lock.json",
+      "sha256": "08aef1725a9930866c2f10a0e9cf1fbc5ab8847339e15ed57ef8536c681865ad"
+    },
+    {
+      "path": "phase2/tooling/package.json",
+      "sha256": "0643f118c855cc3b06016d29a51ecfff0722853cc197b27d5989f57671fce15b"
+    },
+    {
+      "path": "phase2/tooling/review-pdfs.mjs",
+      "sha256": "1498cc9614d242e61d23e1d206617a2c52ea4671ffaf7c5ab8b71c86f681d934"
+    },
+    {
+      "path": "phase2/tooling/verify-cli.mjs",
+      "sha256": "59cc33f24f11034e8d71eb15261463d153c95a4330f81eb859e3118910b6918a"
+    }
+  ],
+  "excluded": [
+    "phase2/baseline",
+    "node_modules",
+    ".npm-cache",
+    ".board-data",
+    "dist",
+    ".git",
+    "inventory itself"
+  ]
+}

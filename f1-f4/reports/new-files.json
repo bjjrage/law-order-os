@@ -1,0 +1,306 @@
+{
+  "date": "2026-10-13T16:50:48.659Z",
+  "excludes": "This inventory itself, build output, local data, dependencies, caches and Git.",
+  "files": [
+    {
+      "path": "F1_F4_BLOCKERS.md",
+      "sha256": "a31aa62a30160d99bbd537df92560cb9a58f4b8ce7f189fd0f7d7727bc5716eb"
+    },
+    {
+      "path": "F1_F4_HANDOFF.md",
+      "sha256": "73e59f991d943eeb77b9eb81e19b5619abff56676e4e368c861e20367c6e95a3"
+    },
+    {
+      "path": "F1_F4_IMPLEMENTATION_REPORT.md",
+      "sha256": "a500bfc7062c943cefb2d361567c9540e11113c42cfbb2cb27802822d1361fc7"
+    },
+    {
+      "path": "F1_F4_ROADMAP_STATUS.md",
+      "sha256": "a5936581bff8a93c978c2460b930d764586727e1dcc29fd81463154e44c23c35"
+    },
+    {
+      "path": "F1_F4_TEST_RESULTS.md",
+      "sha256": "64b2a22df595688e22e2e99228bd636fbdad660640b41d0f3bba9d71170e8695"
+    },
+    {
+      "path": "apps/api/src/auth.ts",
+      "sha256": "e86ccb861519746c36945218a7fc62aea9dfc8ae579644cfab6a5341cbdb0161"
+    },
+    {
+      "path": "apps/api/src/config.ts",
+      "sha256": "fde519abab51a049bddfe83c9a961ee75ffe332d2767573d6a557aea1c8353ee"
+    },
+    {
+      "path": "apps/api/src/main.ts",
+      "sha256": "d22f5aa90f165d65ac4d89e01bd3644c03264984dda8343f4688c3186da43ce9"
+    },
+    {
+      "path": "apps/api/src/server.ts",
+      "sha256": "74c4e8c01263f96eba01261cbb884ae931c78799204584cb7270e8a7e25cea08"
+    },
+    {
+      "path": "apps/api/src/storage.ts",
+      "sha256": "851b13067dfe80c52930457178c7abeab50c213c16bd4b6dee24034adb29b981"
+    },
+    {
+      "path": "apps/api/src/worker.ts",
+      "sha256": "dd89bb8c284417eef6d0cf0c843e3d81a27a960eaefc96dcb65d6b09c0e21017"
+    },
+    {
+      "path": "apps/api/tsconfig.build.json",
+      "sha256": "2ff4678df76c217146d55415b98273763818f4a3a3a43e6f9f9de58b6f9120e3"
+    },
+    {
+      "path": "apps/os.tsconfig.json",
+      "sha256": "11a0bacf059b8fdb2176e02773e5b3884f6704bcffcc2dd891c91b46f07626f2"
+    },
+    {
+      "path": "apps/web/index.html",
+      "sha256": "2a760a9033e753c0bf0502b7ea292a72a4970ac3eb28f2e77fcaacc3f4b77bb7"
+    },
+    {
+      "path": "apps/web/src/App.tsx",
+      "sha256": "421f86df3ab51c1d46ce6093a2cdb7c8de9ea3a44ebb26aa11475832f86b5d94"
+    },
+    {
+      "path": "apps/web/src/api.ts",
+      "sha256": "5862b7693058795f2649cfc1a5b25b826948d70bc342afa3702923da0fd0a73f"
+    },
+    {
+      "path": "apps/web/src/components.tsx",
+      "sha256": "2a30ca98e2b7a90d91aec320cc3d84121b1cd0ef48661df1141dfd95147fba4a"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "4f16270b4b9c16dd9cc14b2a3d8a00b43cf3952aa987800236a9b19ff4674c30"
+    },
+    {
+      "path": "apps/web/src/styles.css",
+      "sha256": "1b9bd04086fc286ab14de899945e405e6121dc5e0da2b6100949a40617998fd4"
+    },
+    {
+      "path": "apps/web/vite.config.ts",
+      "sha256": "ea7aa8b7f911552e3ccd4f2fb34953a289699dfbfae8d5ee069f37d3749a8ce2"
+    },
+    {
+      "path": "docs/operations/LOCAL_DEVELOPMENT.md",
+      "sha256": "787c267b61b4738f5b0701325dbe031cb387282daccdbaea28776947cd0afc80"
+    },
+    {
+      "path": "f1-f4/baseline/.gitignore",
+      "sha256": "065c12fb77af6e0e11486a72937268fea86754ea51c04b407bc8b98564f3efab"
+    },
+    {
+      "path": "f1-f4/baseline/os-core/src/authorization.ts",
+      "sha256": "3b9dcdc9f1a4a38d6f3760a1f733aee25684cb4f9d0cb30fe180c7cf187d9999"
+    },
+    {
+      "path": "f1-f4/baseline/os-core/src/contracts.ts",
+      "sha256": "8ea590cfecea9e88844d8106d0cb8bc4bdedd606ee11365966bb9c48d38b4cc8"
+    },
+    {
+      "path": "f1-f4/baseline/os-core/src/index.ts",
+      "sha256": "2279db4134beb08970381902c7a2d1b84bfb84ce0327fb028e19734916801456"
+    },
+    {
+      "path": "f1-f4/baseline/os-core/src/service.ts",
+      "sha256": "b759d8c3b5817c2ff6dc0b122b32a6fe185a9995f9db5ed20c81cdc2620326a2"
+    },
+    {
+      "path": "f1-f4/baseline/os-core/testing/memory.ts",
+      "sha256": "8ab293e4c42cff58348094cfe27f3fb6f7ad814ddfa141e66215c16356d54ec2"
+    },
+    {
+      "path": "f1-f4/baseline/os-core/tests/core.test.ts",
+      "sha256": "ee7d7b1afa0e5ef771b8604bb5f36300535860af3d4f28330450c93ec7540b4e"
+    },
+    {
+      "path": "f1-f4/baseline/os-core/tests/fixtures.ts",
+      "sha256": "9ac0af3eeaf0ffb29fcc12e7ea5fb1747d60174f1176db168921517bee7f83b5"
+    },
+    {
+      "path": "f1-f4/baseline/os-core/tests/persistence.test.ts",
+      "sha256": "25311539c3e7c19971adec2262bbc5c56435d8deb71efd6c9904aca5ad7316e1"
+    },
+    {
+      "path": "f1-f4/baseline/os-core/tests/review.test.ts",
+      "sha256": "8b82742b7673dd8b838845307d1287825ce186d4dba5e8729d0a2d2130003af3"
+    },
+    {
+      "path": "f1-f4/baseline/package-lock.json",
+      "sha256": "f9c20c4df240f25171db3978f0a1bec5cb3f0607bac378af25bf0c931ce1d131"
+    },
+    {
+      "path": "f1-f4/baseline/package.json",
+      "sha256": "0fd25ffb273318cc8188adb379aefb806393b64c8e556537e1dd5428ad4b0e14"
+    },
+    {
+      "path": "f1-f4/baseline/tsconfig.json",
+      "sha256": "fd89c3770f4d262a15ea2d84fdb811b9bdb60e7ff18baadf883078a56fb30aa8"
+    },
+    {
+      "path": "f1-f4/reports/baseline.json",
+      "sha256": "e49c3e0f55861b94935e017037a941750db122f6960ff9d81ed74f0cf505e987"
+    },
+    {
+      "path": "f1-f4/reports/browser-evidence.json",
+      "sha256": "b4a91cdc8ea5989bb05c363849f33db18768972d8ad44cab9a48a64112e6d42b"
+    },
+    {
+      "path": "f1-f4/reports/checks.json",
+      "sha256": "765f2661859629489a5470e73e56cf165ce4d424520ca7d46ac535f46fd353d2"
+    },
+    {
+      "path": "f1-f4/reports/core-regression-final.json",
+      "sha256": "96cb8c90ad714d83902bf82e648a0d6ba3984ba9b8e70484b35717709e29e435"
+    },
+    {
+      "path": "f1-f4/reports/core-regression-first.json",
+      "sha256": "bf41b5f49e1381d6bc0c5ffc3fd3a64884e9abbac82685f64a27f55e29ac675f"
+    },
+    {
+      "path": "f1-f4/reports/delivery-verification.json",
+      "sha256": "771102aac3cbbb0012bfe7c2ad8faa98b3208153e08af8b89b9bc39089deea56"
+    },
+    {
+      "path": "f1-f4/reports/local-integration-final.json",
+      "sha256": "a4049fa512363440691c162dd88d18564798062bb68746a54077f3fb34df1f03"
+    },
+    {
+      "path": "f1-f4/reports/local-integration-fourth.json",
+      "sha256": "ee07db459d7b1595d11fa1aba308483a6d68e556faf40c3db597882805946c79"
+    },
+    {
+      "path": "f1-f4/reports/local-integration-third.json",
+      "sha256": "8987d9a24dd2b934ba99e105b8a33053b3895d7eff0d2945b186afef1210117d"
+    },
+    {
+      "path": "f1-f4/reports/local-integration-verified.json",
+      "sha256": "55ef701d66d15f0ebcbea37c2e40552c1c754bd9e1eb712290b8add7db167094"
+    },
+    {
+      "path": "f1-f4/reports/postgres-first.json",
+      "sha256": "f67c321dfd228acb9bfc15e10e977bfe7c075096901712eaffeb61e52d596d32"
+    },
+    {
+      "path": "f1-f4/reports/postgres-second.json",
+      "sha256": "25263fb335de3054234deb18af60aaff2ea3ac45bb759ac002f1e1d23d1fcce1"
+    },
+    {
+      "path": "f1-f4/reports/roadmap-current.json",
+      "sha256": "53e1d444afa3c899f54c0e488463c0bdd6e760d862062227e0191a779b9a1994"
+    },
+    {
+      "path": "f1-f4/reports/running-application.json",
+      "sha256": "9c80c5d57ef783f98c5253039404f2d2ad1e40eddda8ea3b348e88847428090e"
+    },
+    {
+      "path": "f1-f4/reports/screenshots/exact-review-browser.png",
+      "sha256": "f44f581b6e25401d969bf6bbac7806f61dd67353416f9fe48e3fa9aba04266f1"
+    },
+    {
+      "path": "f1-f4/reports/screenshots/matters-1366x768-100.png",
+      "sha256": "770b441536709ef084c315fd4e70e83f69fb341210066003380dd03ebf9e2fbd"
+    },
+    {
+      "path": "f1-f4/reports/screenshots/matters-320-reflow.png",
+      "sha256": "1f42c8c3328148bffb2e64266060596f66ad02d637c3b1ff83fb5c0789cdf55d"
+    },
+    {
+      "path": "f1-f4/reports/screenshots/my-day-1366x768-100.png",
+      "sha256": "832d33edcff8ac77a8dd7d8bd85c8bfa26cbb80f609a24f89d49262607d334ed"
+    },
+    {
+      "path": "f1-f4/reports/screenshots/my-day-1440x900-100.png",
+      "sha256": "ddb3983c2055663e99249ab9980f20389e069d11c5c89352adbb1347ca779243"
+    },
+    {
+      "path": "f1-f4/reports/supabase-local-runtime.json",
+      "sha256": "24e1384cd25f15a372036619e86bd4fe8d5d737a2da11caf5b8e69f8f0ec848d"
+    },
+    {
+      "path": "f1-f4/tests/browser.test.ts",
+      "sha256": "23912d0f2ee806660902c6daa039beaa1c783a33f0fdf513c4593d8ac141de77"
+    },
+    {
+      "path": "f1-f4/tests/fixtures.ts",
+      "sha256": "c27c080cdb580706dae63e1e09ceeb18705d05824adf9558cc5ab51dc30aaa5f"
+    },
+    {
+      "path": "f1-f4/tests/postgres.test.ts",
+      "sha256": "c63e0fe4a8d67a591d48af8b3717c4b7cb40e00e973b5b7d333d96f297477ec0"
+    },
+    {
+      "path": "f1-f4/tests/security.test.ts",
+      "sha256": "9c9866da3281f9cc7d23ae11b85a0e9b5cbe4b6170a0cffcb1378fddd8242e3c"
+    },
+    {
+      "path": "f1-f4/tooling/async-core.mjs",
+      "sha256": "ae69a28d4ad449e1d92893460499cfe16b1758ea46606ce6d35b0aa23b6d3e87"
+    },
+    {
+      "path": "f1-f4/tooling/baseline.mjs",
+      "sha256": "af191d1f31ddbdcc3c9b629ea1e0dd8a12178fd107b19044f314132d4b1df78e"
+    },
+    {
+      "path": "f1-f4/tooling/inventory.mjs",
+      "sha256": "f410bc0a34e9697170d2ff1842f234501f46a3417d335e90431e87ecccf191af"
+    },
+    {
+      "path": "f1-f4/tooling/materialize-schema.mjs",
+      "sha256": "e205f8d710bad396db98ff67551f4b5e462aaf3ebab18f489b2a77dbbfa5c03d"
+    },
+    {
+      "path": "f1-f4/tooling/roadmap.mjs",
+      "sha256": "e128f5ff98bf12825f4276451ea5aa8597448f3c24eada00b9ff83b780384b38"
+    },
+    {
+      "path": "f1-f4/tooling/runtime-check.mjs",
+      "sha256": "4dd653f385b6d3231dda6882906cf50c3cdf58975247fdd604d7cc5aa4726580"
+    },
+    {
+      "path": "f1-f4/tooling/upgrade-local.mjs",
+      "sha256": "33a8c95cbdb5839facc6991454984532a983f39711641861a06884d13935453e"
+    },
+    {
+      "path": "f1-f4/tooling/verify-delivery.mjs",
+      "sha256": "f6aa3240b0c2f7dd51ca1d86afacb2ec0868cca475fdb5decc6343bf73b3f377"
+    },
+    {
+      "path": "f1-f4/vitest.config.ts",
+      "sha256": "1a8d5b193bfd07bfdf50bda778b40db1f473be9dc58d12ea97e81992a4d74539"
+    },
+    {
+      "path": "infra/local/configure.ts",
+      "sha256": "d4b014fa4d8f108a5295ae067b89fda881d494648c3b155f6bbbd369e106a997"
+    },
+    {
+      "path": "infra/local/postgres.ts",
+      "sha256": "f22a8341481b8dcdb879854d2ef121e7c8b825838b33cefd60bdaee34428753c"
+    },
+    {
+      "path": "infra/local/seed.ts",
+      "sha256": "5df0c3c4e1567be5d86328da1cbb9aad7b11992169143c5ed08190f42260f2df"
+    },
+    {
+      "path": "packages/persistence-postgres/src/index.ts",
+      "sha256": "66104122c8432771380ed2039b925e550378bccf99cd2ccfcc6db2d367adaf54"
+    },
+    {
+      "path": "packages/persistence-postgres/src/schema.ts",
+      "sha256": "c0ee743abf21f6b0308bc57046a92f83cfe6e8e355cc27c8e1c9c8114a96c347"
+    },
+    {
+      "path": "supabase/.temp/cli-latest",
+      "sha256": "2f99ec07bad208b0108748390c2fe80fb0a91b1784a8f7bf1d303efda7deeaee"
+    },
+    {
+      "path": "supabase/config.toml",
+      "sha256": "69c06efb3df74d12f364ce294fa5ae31eca6146fc16569f94db19c2f352490b8"
+    },
+    {
+      "path": "supabase/migrations/20261013155851_os_core_local.sql",
+      "sha256": "740256b89694777dbc65df114d605c82a7f1d7a2e8a0d1e5216df606a565a60a"
+    }
+  ]
+}

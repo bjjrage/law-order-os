@@ -1,0 +1,43 @@
+{
+  "tool": "NODE_PDFJS_LOCAL",
+  "python_used": false,
+  "network_used": false,
+  "documents": [
+    {
+      "source_document_id": "csj-constitucional-1010-2015",
+      "original_sha256": "214e4e61a0e62d1b2a57c01c04b660b18ad6110e7dd78aca6d68a9a72f0d8f91",
+      "extraction_sha256": "a92bd502fa82f5f25b0e13330049bd415e5b4238219a5505160357ec2cce47d8",
+      "page_count": 13,
+      "extraction_status": "IMAGE_ONLY_OCR_NOT_RUN",
+      "extracted_characters": 0,
+      "review_images": [
+        "phase2/corpus/review-images/csj-constitucional-1010-2015-p1.png",
+        "phase2/corpus/review-images/csj-constitucional-1010-2015-p13.png"
+      ]
+    },
+    {
+      "source_document_id": "csj-civil-1184-2013",
+      "original_sha256": "a59ef9e2258e92e3b076fdf37092f4013538d1f91dafea95e2ffdf46fa8d9de1",
+      "extraction_sha256": "1e2cb80479d8bb0725ebc643456029c70f937ec2f6161b860c0c322dd10a4025",
+      "page_count": 29,
+      "extraction_status": "DIGITAL_TEXT_UNREVIEWED",
+      "extracted_characters": 71241,
+      "review_images": [
+        "phase2/corpus/review-images/csj-civil-1184-2013-p1.png",
+        "phase2/corpus/review-images/csj-civil-1184-2013-p29.png"
+      ]
+    },
+    {
+      "source_document_id": "csj-penal-162-2023",
+      "original_sha256": "e19fd055650eadb537285bce6c1ccdbd3128a0ad8fd94fd37616fc37aa9c5aeb",
+      "extraction_sha256": "1aa13ddb64de9e1fb38a655f37a202be86be4f0878d5e7664d1273bd4d3c27f1",
+      "page_count": 7,
+      "extraction_status": "DIGITAL_TEXT_UNREVIEWED",
+      "extracted_characters": 15234,
+      "review_images": [
+        "phase2/corpus/review-images/csj-penal-162-2023-p1.png",
+        "phase2/corpus/review-images/csj-penal-162-2023-p7.png"
+      ]
+    }
+  ]
+}

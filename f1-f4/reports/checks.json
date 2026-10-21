@@ -1,0 +1,10 @@
+[
+ {"command":"npm.cmd run typecheck","exit_code":0},
+ {"command":"npm.cmd run os:typecheck","exit_code":0},
+ {"command":"npm.cmd run build","exit_code":0},
+ {"command":"npm.cmd run build:os-core","exit_code":0},
+ {"command":"npm.cmd run os:build:api","exit_code":0},
+ {"command":"npm.cmd run os:build:web","exit_code":0},
+ {"command":"vitest root -> core-regression-final.json","exit_code":0},
+ {"command":"vitest local -> local-integration-final.json","exit_code":0}
+]

@@ -1,0 +1,28 @@
+{
+  "status": "PASS_UI_HTTP_POSTGRES",
+  "authentication": "SYNTHETIC_TEST_DOUBLE_ONLY",
+  "storage": "REAL_LOCAL_FILESYSTEM_TEST_ADAPTER",
+  "supabase_auth_storage_e2e": "BLOCKED_NOT_RUN",
+  "evidence": [
+    {
+      "viewport": "1440x900",
+      "topbar": 44,
+      "sidebar": 212,
+      "font": "13px",
+      "rows_visible": 16
+    },
+    {
+      "viewport": "1366x768",
+      "topbar": 44,
+      "sidebar": 212,
+      "font": "13px",
+      "rows_visible": 15
+    }
+  ],
+  "keyboard": {
+    "tag": "BUTTON",
+    "outline": "solid"
+  },
+  "external_requests": "BLOCKED",
+  "paid_calls": 0
+}

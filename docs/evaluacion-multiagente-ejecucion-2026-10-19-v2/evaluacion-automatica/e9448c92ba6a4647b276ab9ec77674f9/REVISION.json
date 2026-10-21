@@ -1,0 +1,74 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“Las matrices ML-1 y ML-2 no deben tratarse como activos propios de Ribera”",
+      "explanation": "Distingue correctamente la propiedad de Sur del Lago del registro y la estimación interna de reposición, y no convierte esos PYG 60.000.000 en una reducción automática del precio. Propone excluir las matrices de los activos vendidos, coordinar su traslado como bienes del cliente y revisar la asignación."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“La carta del cliente permite una transición potencial, pero no prueba que esté aprobada”",
+      "explanation": "Refleja la aceptación condicionada, enumera las condiciones técnicas y de transición, identifica que no existe aprobación técnica y plantea condicionar el cierre a su cumplimiento; conserva la alternativa de postergar o no adquirir."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“No confiar en ‘cerrar y reabrir legajos’ como mecanismo que extinga continuidad o pasivos.”",
+      "explanation": "Conecta la condición laboral con la viabilidad técnica y comercial, identifica que los técnicos expresaron interés condicionado y recomienda verificar antigüedad, condiciones y conciliaciones sin presentar la retención del precio como liberación frente a trabajadores."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“Debe acordarse entre las tres sociedades quién produce y entrega, quién factura, qué efectivo o crédito pasa a Fresno”",
+      "explanation": "Reconcilia el anticipo de PYG 120.000.000 y el saldo comercial de PYG 80.000.000 con el pedido de PYG 200.000.000; advierte contra el doble cobro y distingue la aritmética de una conclusión sobre propiedad, exigibilidad o impuestos."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“Los PYG 240.000.000 diferidos forman parte de los PYG 900.000.000; no son además una garantía en efectivo.”",
+      "explanation": "Identifica el error de duplicación, analiza las limitaciones del mecanismo de imputación y propone negociar garantía o retención con reglas y plazos adecuados, sin asegurar que el saldo cubra toda contingencia."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“El reclamo de PYG 40.000.000 por agosto-7 está controvertido, no aceptado y no documentado como nota de crédito.”",
+      "explanation": "Lo distingue del anticipo, recoge que la cesión no queda condicionada al pago de esa cifra y que Ribera no queda liberada por defectos anteriores. Recomienda un procedimiento de revisión y rechaza una compensación automática."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "“No hay base suficiente en el expediente para cuantificar el impuesto ni concluir el tratamiento de cada derecho o componente.”",
+      "explanation": "El memo trata adecuadamente la incertidumbre sobre base, precio, documentación, IVA y fabricación pendiente, y evita inventar una tasa o liquidación. Sin embargo, omite una consecuencia fiscal específica potencialmente importante de la transferencia de establecimiento comercial: el art. 13 de F03 dispone el cierre del ejercicio económico para el enajenante y que el adquirente mantenga el mismo valor fiscal de los bienes al momento de adquirirlos. Debía señalarla como cuestión a confirmar, sin asumir que esta estructura necesariamente califica."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“El estimado de PYG 8.000.000 por vacaciones es grupal, incompleto y no una liquidación”",
+      "explanation": "No transforma el estimado en deuda definitiva ni considera que los recibos de septiembre prueben la cancelación de todos los saldos. Propone obtener legajos y conciliaciones individuales y distingue la responsabilidad contractual de una liberación frente a trabajadores."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "La omisión del art. 13 de F03 deja fuera un posible efecto fiscal de la operación como transferencia de establecimiento comercial: cierre del ejercicio del enajenante y continuidad, para el adquirente, de los valores fiscales de los bienes al momento de adquisición. Su aplicación concreta depende de confirmar la calificación jurídica de la transacción y la normativa vigente a la fecha de corte."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La valoración de la referencia fiscal añadida se basa en el texto proporcionado de F03; el propio memo reconoce que el corpus no acredita consolidación normativa al 19/10/2026, por lo que corresponde verificar vigencia, modificaciones y reglamentación antes de concluir."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "e9448c92ba6a4647b276ab9ec77674f9",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 233180,
+    "output_tokens_including_reasoning": 1398,
+    "cost_accounted_upper_usd": 0.0298465,
+    "estimated_standard_no_cache_discount_usd": 0.024017,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 8
+}

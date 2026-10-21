@@ -1,0 +1,34 @@
+{
+  "name": "law-order-junta-juridica-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node node_modules/typescript/bin/tsc -p tsconfig.build.json",
+    "build:os-core": "node node_modules/typescript/bin/tsc -p os-core/tsconfig.build.json",
+    "typecheck": "node node_modules/typescript/bin/tsc --noEmit",
+    "board:test": "node node_modules/vitest/vitest.mjs run",
+    "board:smoke:offline": "node scripts/board.mjs smoke",
+    "board:benchmark:offline": "node scripts/board.mjs benchmark",
+    "board:show": "node scripts/board.mjs show",
+    "board:connectivity": "node scripts/board.mjs connectivity",
+    "board:plan": "node scripts/board.mjs plan",
+    "board:recover": "node scripts/board.mjs recover",
+    "board:live": "node scripts/board.mjs live",
+    "board:live:preflight": "node scripts/board.mjs live-preflight",
+    "board:live:smoke": "node scripts/board.mjs live-smoke",
+    "corpus:verify": "node phase2/tooling/download-official-corpus.mjs",
+    "corpus:review": "node phase2/tooling/review-pdfs.mjs"
+  },
+  "dependencies": {
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.3"
+  }
+}

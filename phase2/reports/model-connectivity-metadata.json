@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-13T03:22:59.632Z",
+  "credential_presence": {
+    "JEV_API_KEY": false,
+    "JEV_MODEL": false,
+    "OPENAI_API_KEY": false,
+    "OPENAI_LUNA_MODEL": false,
+    "OPENAI_SOL_MODEL": false,
+    "OPENAI_SOL_REASONING_EFFORT": false,
+    "GEMINI_API_KEY": true,
+    "GEMINI_AUDITOR_MODEL": false
+  },
+  "method": "GET",
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/models",
+  "scope": "OFFICIAL_MODEL_METADATA_ONLY",
+  "generation_status": "NOT_RUN",
+  "paid_inference_usd": 0,
+  "network_attempted": true,
+  "status": "BLOCKED",
+  "reason": "MODEL_METADATA_HTTP_401",
+  "http_status": 401
+}

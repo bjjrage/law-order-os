@@ -1,0 +1,84 @@
+{
+  "version": "0.4",
+  "created_at": "2026-10-21T21:17:59.487Z",
+  "scope": "Documentary research, conditional cost planning, offline snapshot checks. No native launch or paid pilot in this revision.",
+  "paid_inferences": 0,
+  "provider_requests_by_offline_calculator": 0,
+  "legal_signoff": false,
+  "total_spend_authorized": false,
+  "paid_execution_enabled": false,
+  "archived_research_originals": 16,
+  "research_original_hashes_verified": true,
+  "prior_control_code_hashes_unchanged": 18,
+  "native_evidence_package_version": "0.3",
+  "snapshot_scope_tests_passed": 3,
+  "snapshot_scope_tests_failed": 0,
+  "measured_case_turns": 24,
+  "integration_size_rejections": 24,
+  "provider_invocations_in_size_probe": 0,
+  "scenario_pilot_usd": [
+    {
+      "id": "ACOTADO",
+      "usd": 8.8488
+    },
+    {
+      "id": "CENTRAL",
+      "usd": 25.164
+    },
+    {
+      "id": "TENSION",
+      "usd": 90.3792
+    }
+  ],
+  "nominal_cap_proposed_usd": 86.4,
+  "human_hours_proposed": 111,
+  "human_fees_quoted": false,
+  "conditional_budget_not_current_packet_forecast": true,
+  "pending": [
+    "HUMAN_LEGAL_SIGNOFF_PENDING",
+    "CORPUS_INTEGRATION_SIZE_LIMIT_ALL_24_SNAPSHOTS",
+    "DYNAMIC_PROMPT_TOKEN_COUNTS_UNMEASURED",
+    "LONG_CONTEXT_PRICING_RUNTIME_NOT_TIER_AWARE",
+    "SCENARIO_INTERACTION_CAP_CAN_BIND",
+    "LIVE_TRANSPORT_ABSENT",
+    "TOTAL_SPEND_NOT_AUTHORIZED"
+  ],
+  "inputs": [
+    {
+      "path": "VIGENCIA.md",
+      "sha256": "c1e7799f739f9845ed134a04bf66125997cba3a563b4cd20cd259d4b8dbcffc5"
+    },
+    {
+      "path": "VALIDACION_ABOGADO.md",
+      "sha256": "9d25d2904036ad81c38479e283ba408b1a95ec679fe8d938b97af812d3056459"
+    },
+    {
+      "path": "PRESUPUESTO.md",
+      "sha256": "31410321ae69827f25e900c6d46573300dc3a5d528d59a3a3af3365ac6cac0f2"
+    },
+    {
+      "path": "operacion/TARIFAS_PROPUESTAS.json",
+      "sha256": "d970b789832673f8bc68b4ee45a68bdfcb4e5cb325f47b6a314ef8a6032998e6"
+    },
+    {
+      "path": "operacion/PRESUPUESTO_DETALLADO.json",
+      "sha256": "ef565ec5892f2411846c9b41efc37654ae77217234de622b2d4bc78ff23753d6"
+    },
+    {
+      "path": "operacion/REVISION_TESTS.json",
+      "sha256": "45b2fc958bce90d76b85ec1d355cff05adf17e28b86f998a50606cdd21a7cd04"
+    },
+    {
+      "path": "publico/CASOS.json",
+      "sha256": "2d52cdace7214154e2c70c8eaa26a1c086fe54283d8b10220220819dbabc62a5"
+    },
+    {
+      "path": "publico/fuentes/INVENTARIO.json",
+      "sha256": "c7edf198f121619290ebd83ee12a0115afc202f41ce16c59021b17ad6c32267f"
+    },
+    {
+      "path": "revision-vigencia-2026-10-21/DESCARGAS.json",
+      "sha256": "dd426ddb4f2afcd0b275c3d91fb5621bf58e14673287e96842ebfeb602bff051"
+    }
+  ]
+}

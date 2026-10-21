@@ -1,0 +1,11 @@
+{
+  "name": "law-order-phase2-pdf-review-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated offline document review tooling; not an OS infrastructure decision.",
+  "dependencies": {
+    "pdfjs-dist": "6.4.299",
+    "tesseract.js": "7.0.0"
+  }
+}

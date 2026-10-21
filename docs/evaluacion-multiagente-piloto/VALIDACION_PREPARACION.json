@@ -1,0 +1,144 @@
+{
+  "schema_version": "focused-investigation-preparation-validation-v1",
+  "validated_at_utc": "2026-10-19T04:53:10.063Z",
+  "client_date": "2026-10-19",
+  "timezone": "America/Asuncion",
+  "status": "PASS_STRUCTURAL_WITH_SOURCE_ENCODING_NOTES",
+  "scope": "Static integrity of documentary preparation only; not a legal or model quality evaluation.",
+  "files_inspected_before_report": 32,
+  "checks": {
+    "strict_utf8_authored_and_derived_files": 29,
+    "raw_source_encoding_checked_separately": true,
+    "local_markdown_links_checked": 38,
+    "json_parsed": 3,
+    "csv_formats": [
+      {
+        "file": "operacion/CEGAMIENTO.csv",
+        "columns": 13,
+        "data_rows": 0
+      },
+      {
+        "file": "operacion/EJECUCIONES.csv",
+        "columns": 13,
+        "data_rows": 18
+      },
+      {
+        "file": "plantillas/CORRECCION_Y_TIEMPOS.csv",
+        "columns": 24,
+        "data_rows": 0
+      },
+      {
+        "file": "plantillas/HALLAZGOS.csv",
+        "columns": 21,
+        "data_rows": 0
+      },
+      {
+        "file": "plantillas/TELEMETRIA.csv",
+        "columns": 26,
+        "data_rows": 0
+      }
+    ],
+    "unique_paragraph_locators": 90,
+    "paragraph_reference_mentions_checked": 205,
+    "public_markdown_without_reserved_reference_links": true,
+    "source_hashes_and_line_ids_checked": 3,
+    "planned_matrix_cells": 18,
+    "execution_results_present": false
+  },
+  "cases": [
+    {
+      "case_id": "P01",
+      "synthetic_documents": 7,
+      "document_ids": [
+        "P01-D01",
+        "P01-D02",
+        "P01-D03",
+        "P01-D04",
+        "P01-D05",
+        "P01-D06",
+        "P01-D07"
+      ],
+      "paragraphs": 28,
+      "document_words": 1983,
+      "initial_reference_findings": 6
+    },
+    {
+      "case_id": "P02",
+      "synthetic_documents": 7,
+      "document_ids": [
+        "P02-D01",
+        "P02-D02",
+        "P02-D03",
+        "P02-D04",
+        "P02-D05",
+        "P02-D06",
+        "P02-D07"
+      ],
+      "paragraphs": 29,
+      "document_words": 2010,
+      "initial_reference_findings": 7
+    },
+    {
+      "case_id": "P03",
+      "synthetic_documents": 8,
+      "document_ids": [
+        "P03-D01",
+        "P03-D02",
+        "P03-D03",
+        "P03-D04",
+        "P03-D05",
+        "P03-D06",
+        "P03-D07",
+        "P03-D08"
+      ],
+      "paragraphs": 33,
+      "document_words": 2352,
+      "initial_reference_findings": 8
+    }
+  ],
+  "source_encoding_notes": [
+    {
+      "source_id": "F01",
+      "original_preserved": true,
+      "derived_replacement_lines": [
+        "[F01-L00053]",
+        "[F01-L02795]",
+        "[F01-L02799]",
+        "[F01-L02823]",
+        "[F01-L02831]"
+      ],
+      "human_transcription_review": "PENDING"
+    },
+    {
+      "source_id": "F02",
+      "original_preserved": true,
+      "derived_replacement_lines": [
+        "[F02-L00053]",
+        "[F02-L01262]",
+        "[F02-L01270]"
+      ],
+      "human_transcription_review": "PENDING"
+    }
+  ],
+  "initial_validation": {
+    "file": "VALIDACION_PREPARACION_PRIMER_INTENTO.json",
+    "status": "FAIL",
+    "reason": "Strict UTF8 check was applied to raw official HTML archives; source encoding deviations are now registered explicitly without altering original bytes."
+  },
+  "errors": [],
+  "not_performed": [
+    "PAID_MODEL_INFERENCE",
+    "OS_RUNTIME_TESTS",
+    "ARCHITECTURE_CHANGES",
+    "INDEPENDENT_HUMAN_LEGAL_REVIEW",
+    "FULL_HUMAN_SOURCE_TRANSCRIPTION_REVIEW",
+    "LAW_CONSOLIDATION_ATTESTATION",
+    "BLIND_OUTPUT_REVIEW",
+    "LEGAL_SUPERIORITY_EVALUATION"
+  ],
+  "limitations": [
+    "Static scanning is not an access-control implementation.",
+    "Synthetic development cases are not an independent holdout.",
+    "Source snapshots are not certified consolidated law."
+  ]
+}

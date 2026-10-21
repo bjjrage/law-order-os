@@ -1,0 +1,127 @@
+
+
+
+<section class="wrapper wrapper-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h5 class="text-steelblue"><b><span class="fa fa-th-list"></span>&nbsp;RESULTADO DE LA CONSULTA</b></h5>
+      </div>
+      <div class="col-md-4">
+        <a href="javascript:MostrarCriterios();" class="btn btn-primary pull-right"><span class="fa fa-arrow-left"></span>&nbsp;Regresar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrapper">
+  <div class="container">
+    <div class="row">
+      <br />
+      <div class="col-lg-12">
+        <table class="table table-striped table-bordered table-hover" id="tbl-resultado" width="100%">
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Tipo</th>
+              <th>Número</th>
+              <th>Año</th>
+              <th>Carátula</th>
+              <th>Sala</th>
+              <th class="text-center"><span class="fa fa-download"></span></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+  var table = $('#tbl-resultado').DataTable(
+    {
+      columnDefs: [
+        { width: "5%", "targets": [0], "visible": false },
+        { className: "lnk", targets : [4]},
+        { className: "text-center custom-middle-align lnk", "targets": [0, 1, 2, 3, 5], createdCell:  function (td, cellData, rowData) {
+          var d = rowData["CodigoJurisprudencia"];
+          $(td).closest('tr').attr('id', d);
+        }},
+        {
+          data: null, className: "text-center custom-middle-align", defaultContent: "<a class='lnk-descarga' href='#'><span class='fa fa-download fa-2x'></span></button>", "targets": [6] }
+      ],
+      language:
+      {
+        processing: "<div class='overlay custom-loader-background'><i class='fa fa-cog fa-spin custom-loader-color'></i></div>",
+        sLengthMenu: "Mostrar _MENU_ registros",
+        sZeroRecords: "No se encontraron resultados",
+        sEmptyTable: "No se han encontrado resultados para su búsqueda",
+        sInfo: "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+        sInfoEmpty: "Mostrando registros del 0 al 0 de un total de 0 registros",
+        sInfoFiltered: "(filtrado de un total de _MAX_ registros)",
+        sInfoPostFix: "",
+        sSearch: "Buscar:",
+        sUrl: "",
+        sInfoThousands: ",",
+        oPaginate: {
+          sFirst: "Primero",
+          sLast: "Último",
+          sNext: "Siguiente",
+          sPrevious: "Anterior"
+        },
+        oAria: {
+          sSortAscending: ": Activar para ordenar la columna de manera ascendente",
+          sSortDescending: ": Activar para ordenar la columna de manera descendente"
+        }
+      },
+      processing : true,
+      serverSide : true,
+      ajax :
+      {
+        url : "/jurisprudencia/Jurisprudencias/GetData",
+        type : "POST",
+        dataType : "JSON"
+      },
+      columns : [
+        { data: "CodigoJurisprudencia" },
+        { data: "TipoResolucionJudicial.DescripcionTipoResolucionJudicial" },
+        { data: "NoResolucionJudicial" },
+        {
+          data: "FechaResolucionJudicial",
+          render: function (data) {
+            var m = data.match(/\/Date\((\d+)\)\//);
+            return m ? (new Date(+m[1])).toLocaleDateString('en-US', { year: 'numeric' }) : d;
+          }
+        },
+        { data: "CaratulaPublicacion" },
+        { data: "Sala.DescripcionSala" }
+      ]
+    });
+
+  $("#tbl-resultado tbody").delegate(".lnk", "click", function () {
+
+    var tr = $(this).closest('tr');
+
+    $.MostrarContenido.opctionsDefault.identificador = 'detalle-jurisprudencia';
+    $.MostrarContenido.opctionsDefault.url = '/jurisprudencia/home/detalle';
+    $.MostrarContenido.opctionsDefault.parameter = { codigo : tr.attr('id')};
+
+    $.MostrarContenido();
+
+  });
+
+  $("#tbl-resultado tbody").delegate(".lnk-descarga", "click", function () {
+
+    var tr = $(this).closest('tr');
+
+    window.location.href = '/jurisprudencia/home/DocumentoJurisprudencia' + '?codigo=' + tr.attr('id');
+
+  });
+
+  function MostrarCriterios() {
+    $('#resultado').hide();
+    $('.criterios').show();
+    $('#resultado').html('');
+  }
+</script>

@@ -1,0 +1,75 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "son alternativas para discutir, no aceptadas por Laurel",
+      "explanation": "El memo recoge que no hay aceptación documentada ni aprobación interna de compra o reserva, y trata la conclusión sobre la inexistencia de compromiso como provisional, sujeta a revisar comunicaciones y poderes. Responde de forma útil al hallazgo sin afirmar que la ausencia de documentos pruebe que no hubo actuaciones externas."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El contrato vigente hasta el 28/02/2028 requiere autorización previa y escrita tanto para cesión/sustitución del prestador como para cambio directo o indirecto de control",
+      "explanation": "Aplica correctamente la cláusula a ambas estructuras, rebate la afirmación del vendedor sobre la compra de acciones y relaciona el consentimiento con la resolución contractual y la valoración."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No consta decisión de terminar ni incumplimiento actual, pero la reunión propuesta para el 27/10 no es promesa de aprobación ni plazo de resolución",
+      "explanation": "Distingue la recepción de la solicitud y la predisposición a reunirse de una autorización. También conserva la alternativa de que Horizonte no termine el contrato y propone condicionar compromisos a una respuesta escrita específica."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Recomiendo no pagar ni firmar reserva con esos términos.",
+      "explanation": "Identifica la falta de autorización y acuerdo separado, la pérdida no reembolsable para Laurel, la ausencia de remedio si desiste el vendedor y la cuenta personal no verificada. Propone alternativas de protección sin afirmar que una técnica particular sea obligatoria."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Si jurídicamente hay sustitución de empleador, el Código del Trabajo establece que no afecta los contratos vigentes y prevé responsabilidad solidaria del empleador sustituido y del sustituyente por obligaciones previas durante seis meses desde la sustitución",
+      "explanation": "Explica la consecuencia laboral de una posible sustitución, evita afirmar que el cambio ya ocurrió o que la antigüedad desaparece, y reconoce que la clasificación depende de la estructura y documentación final."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No usar los importes tributarios de la hoja financiera para decidir",
+      "explanation": "Describe las inconsistencias de ambas hojas y advierte que los importes no constituyen liquidaciones. Diferencia la exención de IVA aplicable a acciones de la tributación de renta y deja pendiente un análisis por estructura, sujeto y activos. La conclusión está bien delimitada, aunque una cita jurídica del memo es errónea; se registra por separado."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "conciliar nómina, horarios, pagos, aportes, vacaciones y contingencias por trabajador",
+      "explanation": "No convierte el estimado de PYG 16.000.000 en una deuda liquidada, distingue los recibos de salario base de la conciliación de horas y señala que faltan registros y revisión de otras obligaciones laborales."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MATERIAL",
+      "category": "INCORRECT_SOURCE_APPLICATION",
+      "exact_output_quote": "La ley incluye ganancias de capital derivadas de enajenación de acciones en los supuestos del art. 12.5 (F03-L00426)",
+      "evidence_locator": "F03-L00426 está en el Artículo 57, numeral 5, de la Ley 6380; no es el artículo 12.5.",
+      "explanation": "La proposición sustantiva se apoya en el pasaje pertinente, pero la referencia «art. 12.5» no corresponde a ese pasaje y puede inducir a error al verificar la conclusión. Debe corregirse a Artículo 57, numeral 5. El error no invalida por sí mismo la recomendación tributaria cautelosa."
+    }
+  ],
+  "novel_valid_findings": [],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El expediente no incluye documentación corporativa completa, inventario detallado de activos, conciliaciones completas de pasivos ni registros íntegros de jornadas; el memo identifica varias de estas carencias y condiciona la decisión a diligencia adicional.",
+    "Las fuentes normativas aportadas no acreditan consolidación ni vigencia completa a la fecha de corte; el memo reconoce la necesidad de confirmar la normativa tributaria vigente antes del cierre."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "0bdfe5bcac5e433a92518ff8359a6fcb",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 232306,
+    "output_tokens_including_reasoning": 1530,
+    "cost_accounted_upper_usd": 0.02980325,
+    "estimated_standard_no_cache_discount_usd": 0.0239956,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 0
+}

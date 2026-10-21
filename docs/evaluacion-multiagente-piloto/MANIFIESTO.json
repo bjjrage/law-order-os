@@ -1,0 +1,292 @@
+{
+  "schema_version": "focused-investigation-pilot-preparation-manifest-v1",
+  "package_version": "0.1",
+  "prepared_on": "2026-10-19",
+  "timezone": "America/Asuncion",
+  "created_at_utc": "2026-10-19T04:53:10.112Z",
+  "status": "PREPARATION_SNAPSHOT_NOT_EXECUTION_FREEZE",
+  "paid_calls_authorized": false,
+  "inference_status": "NOT_RUN",
+  "architecture_changes": "NONE",
+  "human_legal_review": "PENDING",
+  "independent_holdout": false,
+  "law_consolidation_attestation": "NOT_GRANTED",
+  "cases": [
+    {
+      "case_id": "P01",
+      "synthetic_documents": 7,
+      "document_ids": [
+        "P01-D01",
+        "P01-D02",
+        "P01-D03",
+        "P01-D04",
+        "P01-D05",
+        "P01-D06",
+        "P01-D07"
+      ],
+      "paragraphs": 28,
+      "document_words": 1983,
+      "initial_reference_findings": 6
+    },
+    {
+      "case_id": "P02",
+      "synthetic_documents": 7,
+      "document_ids": [
+        "P02-D01",
+        "P02-D02",
+        "P02-D03",
+        "P02-D04",
+        "P02-D05",
+        "P02-D06",
+        "P02-D07"
+      ],
+      "paragraphs": 29,
+      "document_words": 2010,
+      "initial_reference_findings": 7
+    },
+    {
+      "case_id": "P03",
+      "synthetic_documents": 8,
+      "document_ids": [
+        "P03-D01",
+        "P03-D02",
+        "P03-D03",
+        "P03-D04",
+        "P03-D05",
+        "P03-D06",
+        "P03-D07",
+        "P03-D08"
+      ],
+      "paragraphs": 33,
+      "document_words": 2352,
+      "initial_reference_findings": 8
+    }
+  ],
+  "planned_final_documents": 18,
+  "source_registry": "publico/fuentes/FUENTES.json",
+  "validation_report": "VALIDACION_PREPARACION.json",
+  "hash_algorithm": "SHA-256",
+  "excluded_from_own_inventory": [
+    "MANIFIESTO.json",
+    "MANIFIESTO.sha256"
+  ],
+  "public_input_paths": [
+    "publico/BRIEF_COMUN.md",
+    "publico/casos/P01/DOCUMENTOS.md",
+    "publico/casos/P01/ENCARGO.md",
+    "publico/casos/P02/DOCUMENTOS.md",
+    "publico/casos/P02/ENCARGO.md",
+    "publico/casos/P03/DOCUMENTOS.md",
+    "publico/casos/P03/ENCARGO.md",
+    "publico/fuentes/FUENTES.json",
+    "publico/fuentes/FUENTES.md",
+    "publico/fuentes/extracciones/F01-codigo-civil-libro-iii.txt",
+    "publico/fuentes/extracciones/F02-codigo-trabajo.txt",
+    "publico/fuentes/extracciones/F03-ley-6380.txt",
+    "publico/fuentes/originales/F01-codigo-civil-libro-iii.html",
+    "publico/fuentes/originales/F02-codigo-trabajo.html",
+    "publico/fuentes/originales/F03-ley-6380.html"
+  ],
+  "file_count_excluding_manifest_and_digest": 33,
+  "total_files_including_manifest_and_digest": 35,
+  "files": [
+    {
+      "path": "PROTOCOLO.md",
+      "bytes": 15899,
+      "sha256": "1459387870666e152c3625351540d6970d37e232e5a883da7b7170f79191f72c",
+      "audience": "PACKAGE_DOCUMENTATION"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4068,
+      "sha256": "746819c5c7fb86f1f7f05a641743e1d369ddad0d31caf68f01dbb38f1f0f5858",
+      "audience": "PACKAGE_DOCUMENTATION"
+    },
+    {
+      "path": "VALIDACION_PREPARACION.json",
+      "bytes": 3778,
+      "sha256": "66c7b308d285e8a648749b2ea642a80e8fc2e138bd0fe684b26ff37296ac3dc9",
+      "audience": "PACKAGE_DOCUMENTATION"
+    },
+    {
+      "path": "VALIDACION_PREPARACION_PRIMER_INTENTO.json",
+      "bytes": 3198,
+      "sha256": "d1dfce2d81f299daa4df57c47c00daf927cd153192bfa12eebac15739f6b65c1",
+      "audience": "PACKAGE_DOCUMENTATION"
+    },
+    {
+      "path": "operacion/CEGAMIENTO.csv",
+      "bytes": 225,
+      "sha256": "8e01b10f42b8e93c892b84a13d4c03beb697a7c2ae0fa4ad1360d33840508422",
+      "audience": "OPERATOR_RESTRICTED"
+    },
+    {
+      "path": "operacion/EJECUCIONES.csv",
+      "bytes": 948,
+      "sha256": "7cf65249156ac515dca578a3f97ee840e74488bc597f1cfb72c6c64926f7d2df",
+      "audience": "OPERATOR_RESTRICTED"
+    },
+    {
+      "path": "operacion/FICHA_PREVIA.json",
+      "bytes": 2789,
+      "sha256": "dc739096ae4e1238d3757d902ba200cf5e2d7bd4f10047b2173ab76d3f242409",
+      "audience": "OPERATOR_RESTRICTED"
+    },
+    {
+      "path": "operacion/MODALIDADES.md",
+      "bytes": 4290,
+      "sha256": "13b6acfcca500c1081ab4f7908f71ad2aa91401e41e82c6d8a855c74307fb00e",
+      "audience": "OPERATOR_RESTRICTED"
+    },
+    {
+      "path": "plantillas/COMPARACION.md",
+      "bytes": 2621,
+      "sha256": "8a26076efe62c8aeea210c5a0a0a7d5d30be213773cf5aca84d5c696aa811935",
+      "audience": "EMPTY_REVIEW_TEMPLATE"
+    },
+    {
+      "path": "plantillas/CORRECCION_Y_TIEMPOS.csv",
+      "bytes": 427,
+      "sha256": "7423957f40793c34dc7454e852db5567c36c26d0531010cce3d745e897cae0b9",
+      "audience": "EMPTY_REVIEW_TEMPLATE"
+    },
+    {
+      "path": "plantillas/HALLAZGOS.csv",
+      "bytes": 357,
+      "sha256": "22d47863376e0b3bb8d1729303eebdfe1cd85116a95bbcc4ead7ef817a137893",
+      "audience": "EMPTY_REVIEW_TEMPLATE"
+    },
+    {
+      "path": "plantillas/LEEME.md",
+      "bytes": 3457,
+      "sha256": "0e04a7bad01a6506317b72c94a5ee203a4ecb6d69446096dde76d2af0126c4fb",
+      "audience": "EMPTY_REVIEW_TEMPLATE"
+    },
+    {
+      "path": "plantillas/REVISION_CIEGA.md",
+      "bytes": 5379,
+      "sha256": "bc8452fb9abed1b7def4a6c77b820ec9261384db1c7b49f620a68db1d5266d85",
+      "audience": "EMPTY_REVIEW_TEMPLATE"
+    },
+    {
+      "path": "plantillas/TELEMETRIA.csv",
+      "bytes": 357,
+      "sha256": "825b52a7aa774cb2ec5c9e311e5ecdbee07c48b53194c1e66573066211bea302",
+      "audience": "EMPTY_REVIEW_TEMPLATE"
+    },
+    {
+      "path": "publico/BRIEF_COMUN.md",
+      "bytes": 2336,
+      "sha256": "fd40d835662abd3efc68db5086ad7a4700dea2a86bdb863935b374e22ca605ad",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/casos/P01/DOCUMENTOS.md",
+      "bytes": 13619,
+      "sha256": "132874f6058793c1b537d9ee30832a724a6a08c71c142f6d091dee1df5770858",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/casos/P01/ENCARGO.md",
+      "bytes": 831,
+      "sha256": "788fd42b220ef3ec2e93543bef7fe5e1a7d72e3c81b862298f6b422fe0a3ee73",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/casos/P02/DOCUMENTOS.md",
+      "bytes": 13666,
+      "sha256": "b1787a1f14b6c431e64d5d6bee9d5817deeffc027a16749a4ce1bf02c7bdb54d",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/casos/P02/ENCARGO.md",
+      "bytes": 815,
+      "sha256": "a402ffdb3298c1f5912b0c79191d1db9da95b0f3e88d10d47de6df8e884bc217",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/casos/P03/DOCUMENTOS.md",
+      "bytes": 15553,
+      "sha256": "b40ba24d108a217be179a26de323ed524995828d2dffbf175390679a51140f67",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/casos/P03/ENCARGO.md",
+      "bytes": 811,
+      "sha256": "6a39d90e6ac9122a97f41200edf7b260071a018d9c27572952984d379f2803d9",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/fuentes/FUENTES.json",
+      "bytes": 4920,
+      "sha256": "6a0bffd85fff9875ebeb50bc4081aecf2074b32db03d761e98a6d5a8d9232ed7",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/fuentes/FUENTES.md",
+      "bytes": 3804,
+      "sha256": "45fc39f3c583f05b8635ca0a4a7bc8c5ed1211e72f6d6e33351974c523362914",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/fuentes/extracciones/F01-codigo-civil-libro-iii.txt",
+      "bytes": 504449,
+      "sha256": "c49430cbd45587a1a87cc8a8cd8a330597599695fed212020b05e6063d6d7ced",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/fuentes/extracciones/F02-codigo-trabajo.txt",
+      "bytes": 214326,
+      "sha256": "01f50ac7d66c0f7570094feee8656561b27eeb9d78cf5ddf619de4229eabfa0e",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/fuentes/extracciones/F03-ley-6380.txt",
+      "bytes": 197815,
+      "sha256": "3288946b8e09af6b92243ad1f3a25bf33b9e8e871849775f94e6472c6c8339c5",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/fuentes/originales/F01-codigo-civil-libro-iii.html",
+      "bytes": 688084,
+      "sha256": "af093f2f454f588cce33781df2cac03b02b601cb0c8ca94a94156f46969a3de1",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/fuentes/originales/F02-codigo-trabajo.html",
+      "bytes": 410957,
+      "sha256": "c5c3237a08e35ba03165dcdf7170711a6e283a77500bef171541590dcd27f148",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "publico/fuentes/originales/F03-ley-6380.html",
+      "bytes": 290574,
+      "sha256": "cb0f9b6142ec3b8df4f0860441ab4100662a45859ca1ee8278dc574dc193170f",
+      "audience": "RESEARCH_INPUT"
+    },
+    {
+      "path": "reservado/GUIA_REFERENCIAS.md",
+      "bytes": 2826,
+      "sha256": "ee1b438705d3272aa163f3ddb57da2899d4e37043cd4f1b851ff2ac7faf07ea1",
+      "audience": "LEGAL_REFERENCE_RESTRICTED"
+    },
+    {
+      "path": "reservado/REFERENCIA_P01.md",
+      "bytes": 5049,
+      "sha256": "23540a25168e20dfefe7db4cdc89aad7f4cd5fc453df3cc49c66c9f36690b475",
+      "audience": "LEGAL_REFERENCE_RESTRICTED"
+    },
+    {
+      "path": "reservado/REFERENCIA_P02.md",
+      "bytes": 5353,
+      "sha256": "522e8877b31879c297ff8d0ed58a2f02daf25fe907bbc704aa2c4b608c9685d4",
+      "audience": "LEGAL_REFERENCE_RESTRICTED"
+    },
+    {
+      "path": "reservado/REFERENCIA_P03.md",
+      "bytes": 5405,
+      "sha256": "58a185d2f527927d09d45b08684422ecc71d2a83fb2c6abc27638af300abad70",
+      "audience": "LEGAL_REFERENCE_RESTRICTED"
+    }
+  ]
+}

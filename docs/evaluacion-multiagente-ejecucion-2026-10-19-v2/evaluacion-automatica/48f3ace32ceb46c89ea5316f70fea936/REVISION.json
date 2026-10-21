@@ -1,0 +1,63 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P01-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El borrador no es vinculante, pero sus términos económicos difieren del presupuesto autorizado y dejan sin resolver condiciones esenciales: el precio podría aumentar por tributos",
+      "explanation": "Identifica la diferencia entre el precio neto más tributos de P01-D02 v2, P02 y el límite autorizado de P01-D01 v1, P02. Recomienda fijar un tope total y remitir cualquier exceso al comité, sin asumir que la oferta anterior con impuestos incluidos prevalece ni calcular un tributo sin fundamento."
+    },
+    {
+      "reference_id": "P01-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La continuidad con Maroma es una condición comercial crítica, no un resultado acordado.",
+      "explanation": "Expone la restricción de cesión y la exigencia de consentimiento previo escrito de P01-D03 v1, P02; distingue ese requisito del interés preliminar expresado por Maroma en P01-D04 v1, P02-P03. Mantiene alternativas razonables: negociar acuerdo escrito, evaluar proveedores alternativos y revisar márgenes o retirarse."
+    },
+    {
+      "reference_id": "P01-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "la suma de PYG 9.000.000 es aritmética de los registros, no una liquidación ni prueba concluyente de saldo exigible.",
+      "explanation": "Distingue correctamente el registro de comisiones impagas de una liquidación jurídica y señala que los recibos de salario base no acreditan el pago de esas comisiones. También propone conciliar individualmente vacaciones y otras partidas, con referencias al Código del Trabajo sobre comisiones, aguinaldo y vacaciones."
+    },
+    {
+      "reference_id": "P01-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Si jurídicamente hay sustitución patronal, la Ley 213 establece que los contratos vigentes no se afectan y prevé responsabilidad solidaria por obligaciones anteriores durante seis meses, con responsabilidad del nuevo empleador subsistente después; la aplicación de esa norma a esta venta de activos requiere asesoría laboral específica.",
+      "explanation": "Trata la sustitución patronal como una cuestión condicionada a su caracterización, no como conclusión automática; explica la consecuencia legal citada y aclara que la indemnidad contractual no elimina derechos de terceros. Recomienda no exigir renuncias ni ignorar antigüedad."
+    },
+    {
+      "reference_id": "P01-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "la impresión verbal del contador del vendedor de que no habría IVA por no vender acciones no está sustentada.",
+      "explanation": "Contrasta esa manifestación privada con la amplitud de los hechos generadores y la definición de enajenación de la Ley 6380, arts. 80-81, y evita fijar tasa o importe sin caracterizar cada componente. Señala además la falta de análisis escrito y documentación fiscal."
+    },
+    {
+      "reference_id": "P01-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Excluir del precio el saldo a favor de IVA de PYG 22.000.000 hasta acreditar su procedencia y disponibilidad para Cedro",
+      "explanation": "Reconoce que el saldo figura a nombre de Naranjal y que no se aportó fundamento para tratarlo como crédito de Cedro; recomienda no sumarlo a activos ni precio salvo respaldo suficiente."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "El memo no aborda la posible aplicación del art. 13 de la Ley 6380 si la operación se caracteriza jurídicamente como transferencia de un establecimiento comercial: ese artículo dispone que la transferencia implica el cierre del ejercicio económico para el enajenante y que el adquirente mantenga el mismo valor fiscal de los bienes al adquirirlos. El expediente describe la venta de inventario, equipos y derechos comerciales, pero no permite resolver por sí solo si alcanza el umbral de transferencia de establecimiento. Conviene pedir al asesor tributario que determine y documente esa caracterización y sus efectos; su omisión deja incompleto el análisis fiscal integrado."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El corpus normativo aportado no acredita consolidación legislativa a la fecha de corte; debe verificarse la vigencia de las disposiciones citadas antes de autorizar el cierre.",
+    "La aplicación del régimen de sustitución patronal y la caracterización fiscal de la transferencia dependen de hechos y fuentes adicionales que el expediente no resuelve."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "48f3ace32ceb46c89ea5316f70fea936",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 232633,
+    "output_tokens_including_reasoning": 1356,
+    "cost_accounted_upper_usd": 0.029757125,
+    "estimated_standard_no_cache_discount_usd": 0.0239413,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 0
+}

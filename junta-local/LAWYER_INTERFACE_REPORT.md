@@ -1,0 +1,15 @@
+# Junta orientada al trabajo del abogado
+
+2026-10-14, America/Asuncion. Se reemplazó el lenguaje de modelos y estados internos por roles jurídicos y explicaciones de su intervención: Documentalista, Relator, Abogado principal, Auditor adversarial y Verificador de citas.
+
+La deliberación conserva etapas, tiempos y costos registrados. Cada rol muestra qué hace y, cuando existen datos guardados, qué produjo. Ya no muestra proveedor/modelo, enum de estado ni código de error. La guía en Trabajo jurídico reemplaza la tabla de configuración de proveedores y la demo para desarrolladores. La configuración de claves sigue privada en el servidor; este cambio no modifica modelos ni ejecuta inferencias.
+
+Se agregó Control del informe: respaldo de afirmaciones, documentación decisiva y normas/jurisprudencia citadas. Las observaciones se derivan del resultado del auditor y el cotejo de citas se recupera del artefacto inmutable del verificador, con validación de su hash. Distingue menciones detectadas, referencias identificadas, cotejadas y no resueltas; no vuelve a ejecutar el verificador ni interpreta cero citas como ausencia de errores. Si falta el artefacto, informa que no hay resultado registrado. Una cita no localizada no se declara inexistente universalmente; una transcripción discordante tampoco se confunde con identidad comprobada.
+
+En la corrida `950f72e3-0b40-408b-8d80-9122ae804c24`: tres observaciones del auditor —documentación faltante, afirmación no acreditada y reserva sobre una referencia al relato—; cero menciones a citas concretas detectadas, cero referencias completas y cero referencias cotejadas. No se informa jurisprudencia inventada ni una prueba de ausencia de alucinaciones. Se conservan costo USD 0.050737152 y tiempo total 118,094 segundos.
+
+La presentación y exportación traducen etiquetas como UNKNOWN y DOCUMENT_CONTENT, conservando negaciones y reservas. No se modifican los resultados originales ni sus referencias. Los informes HTML/Markdown se actualizaron. Se eliminó la descarga JSON de la vista normal, la recuperación manual mediante UUID y los identificadores internos junto a documentos. La recuperación automática y las opciones de alcance siguen disponibles. Los errores conocidos tienen explicaciones comprensibles para el profesional. La interfaz identifica el modo de prueba sin exponer IDs de perfil.
+
+Validación: typecheck y build web PASS; 20/20 pruebas locales PASS en reports/lawyer-interface-tests.json. Incluye roles sin tabla de proveedores, ausencia de etiquetas/modelos en progreso e informe, cotejo recuperado del registro, casos sin citas/menciones incompletas/citas no localizadas/transcripciones discordantes, preservación de reservas y exportación segura. El navegador real confirmó la guía de roles; captura reports/junta-roles-juridicos.png. Las pruebas de ejecución usan HTTP falso y credenciales sintéticas en directorios temporales.
+
+Se reinició únicamente el servidor propio del OS para publicar la lectura del cotejo. No se tocaron otros procesos, no se debilitó la verificación de fuentes y no hubo llamadas pagas ni despliegues.

@@ -1,0 +1,52 @@
+{
+  "run_id": "P01-A-R1",
+  "case_id": "P01",
+  "modality": "A",
+  "repetition": 1,
+  "started_at": "2026-10-19T05:05:27.653Z",
+  "status": "COMPLETED",
+  "model": "gpt-6-luna",
+  "blind_id": "cab4b070b7bc4e25b3821cf41c74386c",
+  "paid_inference": true,
+  "output_sha256": "c4fdf79892250cfc21dc31a284818b2ee0fa1c9189f102f7254c7290b99e3b6a",
+  "blind_output_sha256": "c4fdf79892250cfc21dc31a284818b2ee0fa1c9189f102f7254c7290b99e3b6a",
+  "output_words_including_annex": 1712,
+  "case_locator_mentions": [
+    "P01-D01-P01",
+    "P01-D02-P01",
+    "P01-D07-P02",
+    "P01-D02-P03",
+    "P01-D01-P02",
+    "P01-D02-P02",
+    "P01-D06-P03",
+    "P01-D03-P01",
+    "P01-D04-P02",
+    "P01-D04-P03",
+    "P01-D01-P04",
+    "P01-D05-P01",
+    "P01-D05-P02",
+    "P01-D06-P02",
+    "P01-D03-P02",
+    "P01-D07-P01"
+  ],
+  "source_locator_mentions": [
+    "F03-L00599",
+    "F03-L00605",
+    "F03-L00700",
+    "F03-L00685",
+    "F02-L00118"
+  ],
+  "invalid_case_locators": [],
+  "finished_at": "2026-10-19T05:06:32.670Z",
+  "elapsed_ms": 65017,
+  "usage": {
+    "calls": 20,
+    "input_tokens": 420073,
+    "output_tokens_including_reasoning": 3558,
+    "cost_accounted_upper_usd": 0.054288125,
+    "estimated_standard_no_cache_discount_usd": 0.0437863,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.5
+  }
+}

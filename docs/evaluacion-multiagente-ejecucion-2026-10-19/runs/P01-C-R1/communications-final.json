@@ -1,0 +1,9 @@
+[
+  {
+    "at": "2026-10-19T05:08:12.082Z",
+    "sender": "tributario",
+    "target": "titular",
+    "finding": "Consecuencia tributaria que altera autorización económica: la propuesta v2 es PYG 600m netos y agrega tributos (P01-D02-P02), no conserva el límite presupuestario de PYG 600m total (P01-D01-P02). Venta de inventario, equipos y derechos parece operación gravada con IVA; tasa general 10% salvo bienes específicos a validar. Si se aplicara 10% a todo precio atribuible, aritmética ilustrativa PYG 60m de IVA y desembolso PYG 660m, excede en PYG 60m el mandato; no es liquidación, pues falta asignación/base/tasa por componente y comprobación normativa vigente. Condicionar compromiso a precio máximo total o nueva aprobación comité, clasificación y factura válidas; no tratar crédito IVA de vendedor como de Cedro.",
+    "evidence": "F03 Ley 6380 arts. 80-82, 81.1(c),(f), 84-85, 90(g) líneas F03-L00599-L00639, L00654-L00668, L00700-L00711; P01-D02-P01-P02. El contador reconoce falta de análisis (P01-D06-P02); IVA saldo 22m a nombre de Naranjal y sin base para transferir (P01-D06-P03); crédito deducible exige requisitos del art. 89 y traslado de crédito solo reorganización art. 88 (F03-L00685-L00699)."
+  }
+]

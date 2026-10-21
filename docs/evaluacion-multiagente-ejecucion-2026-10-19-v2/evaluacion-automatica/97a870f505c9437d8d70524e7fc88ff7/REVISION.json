@@ -1,0 +1,71 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P01-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No se aportó una liquidación que permita calcular tributos ni cuantificar el desembolso final.",
+      "explanation": "Contrasta el precio neto para el vendedor y los tributos adicionales de la propuesta con el tope del comité; recomienda aclarar el costo total o recabar nueva aprobación sin inventar una tasa ni liquidación."
+    },
+    {
+      "reference_id": "P01-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No está acreditado que Maroma abastecerá a Cedro, en qué condiciones, con qué precios o con exclusividad.",
+      "explanation": "Expone la restricción de cesión, distingue el interés preliminar del consentimiento y del contrato, y plantea tanto obtener acuerdo escrito como evaluar proveedores alternativos."
+    },
+    {
+      "reference_id": "P01-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Eso acredita PYG 9.000.000 registrados sin evidencia de pago en la carpeta, no una liquidación definitiva de deuda exigible",
+      "explanation": "Suma explícitamente las dos comisiones registradas, evita equiparar falta de comprobante con liquidación definitiva y señala que vacaciones y aportes requieren conciliación."
+    },
+    {
+      "reference_id": "P01-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Queda pendiente determinar si esta compraventa de activos y continuidad configura sustitución.",
+      "explanation": "Aplica el art. 28 del Código del Trabajo con cautela: explica la posible continuidad y solidaridad, y diferencia esa exposición frente a trabajadores de la indemnidad interna propuesta, sin afirmar pérdida de antigüedad ni terminación automática."
+    },
+    {
+      "reference_id": "P01-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No corresponde cuantificar IVA ni asumir una tasa uniforme con este expediente.",
+      "explanation": "Rechaza la impresión no revisada del contador y conecta enajenación de bienes y derechos patrimoniales con la necesidad de analizar bases y componentes, sin concluir exención ni cuantificar el impuesto."
+    },
+    {
+      "reference_id": "P01-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No incluirlo en el precio ni en el modelo de crédito fiscal de Cedro",
+      "explanation": "Reconoce que el saldo de IVA figura a nombre de Naranjal y que no se aportó fundamento para transferirlo; evita tratarlo como activo o crédito de Cedro."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MATERIAL",
+      "category": "UNSUPPORTED_CLAIM",
+      "exact_output_quote": "El inventario marca la revisión temporal de F01, F02 y F03 como NOT_ATTESTED.",
+      "evidence_locator": "Brief común: “El corpus es acotado y no acredita consolidación normativa a la fecha de corte”; inventario documental y fuentes suministradas en el expediente.",
+      "explanation": "El expediente advierte que no acredita consolidación normativa, pero el material aportado no indica que el inventario marque las fuentes como “NOT_ATTESTED”. La cautela sobre vigencia es razonable; atribuir esa etiqueta concreta al inventario no está respaldado."
+    }
+  ],
+  "novel_valid_findings": [
+    "El análisis tributario del IRE podría ser más completo: la Ley 6380 contempla el resultado de transferir empresas o establecimientos comerciales y dispone que la transferencia de establecimientos implica cierre del ejercicio económico para el enajenante (F03, art. 8.7, F03-L00087–L00099; art. 13, F03-L00129–L00131). El memo menciona que no se aportó liquidación de IRE y pide analizarla, pero no identifica expresamente esta posible caracterización ni su efecto de cierre. Conviene solicitar al contador una conclusión motivada sobre si la operación concreta califica como transferencia de establecimiento y qué consecuencias tendría, sin presumir que califica."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La evaluación se limita a los documentos y extractos jurídicos incluidos en el expediente; no acredita la consolidación ni vigencia normativa al 19/10/2026.",
+    "No se evalúa exhaustivamente la exactitud jurídica de la asignación de cada rubro laboral o tributario; varias conclusiones del memo quedan correctamente condicionadas a documentación y verificación adicionales."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "97a870f505c9437d8d70524e7fc88ff7",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 232704,
+    "output_tokens_including_reasoning": 1291,
+    "cost_accounted_upper_usd": 0.0297335,
+    "estimated_standard_no_cache_discount_usd": 0.0239159,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 5
+}

@@ -1,0 +1,15 @@
+{
+  "blind_id": "e6c4897a65ba4421a511370f3b761119",
+  "status": "GRADE_FAILED",
+  "error": "TRANSPORT_OUTCOME_UNKNOWN",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 234570,
+    "output_tokens_including_reasoning": 8192,
+    "cost_accounted_upper_usd": 0.03341725,
+    "estimated_standard_no_cache_discount_usd": 0,
+    "unknown_usage": true,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  }
+}

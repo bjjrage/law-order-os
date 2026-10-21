@@ -1,0 +1,836 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blueprint maestro · V2.0</title><style>
+:root{--bg:#f4f6fa;--surface:#fff;--line:#dce2eb;--ink:#182437;--muted:#617084;--accent:#1d4f7b;--accent-lite:#edf4fb;--bar:#0e2338;--radius:10px;--shadow:0 1px 2px rgba(10,30,50,.04)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--bg);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;line-height:1.45}
+.top{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:16px;background:var(--bar);color:white;padding:10px 20px;min-height:45px}.logo{font-weight:800;letter-spacing:.07em;white-space:nowrap;font-size:12px}.top .hint{opacity:.78;font-size:11px}.top input{margin-left:auto;width:300px;max-width:36vw;border:1px solid #4a6078;border-radius:6px;background:#20394f;color:white;padding:7px 10px;font-size:12px;outline-offset:3px}.top input::placeholder{color:#c7d5e2}
+.layout{display:grid;grid-template-columns:215px minmax(0,1fr);max-width:1540px;margin:auto;min-height:calc(100vh - 45px)}.sidebar{padding:18px 10px 22px;position:sticky;top:45px;align-self:start;max-height:calc(100vh - 45px);overflow:auto;border-right:1px solid var(--line)}.sidebar .nav-title{font-size:10px;color:var(--muted);font-weight:800;letter-spacing:.12em;padding:8px 10px}.sidebar a{display:block;padding:7px 10px;font-size:11.5px;color:#36536f;text-decoration:none;border-radius:7px;margin:2px 0;line-height:1.35}.sidebar a:hover,.sidebar a.active{background:#e1edf8;color:#123b62}.body{padding:19px 22px 50px;max-width:1200px;width:100%}.hero{padding:24px 25px;background:linear-gradient(115deg,#102e4b,#1f476c);color:white;border-radius:12px;margin-bottom:14px}.hero h1{font-size:24px;letter-spacing:-.03em;margin:0 0 7px}.hero p{color:#cfdfeb;margin:0;font-size:12px}.chipbar{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}.chip{font-size:10px;border:1px solid #7890a4;color:white;border-radius:999px;padding:4px 8px}.notes{font-size:11.5px;color:var(--muted);margin:9px 0 16px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 15px}.stat{background:white;border:1px solid var(--line);padding:10px 12px;border-radius:8px}.stat b{font-size:15px;display:block}.stat span{font-size:10px;color:var(--muted)}
+.section{border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow);border-radius:10px;margin:0 0 9px;overflow:hidden}.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 16px;background:var(--surface);border:0;width:100%;text-align:left;color:var(--ink);cursor:pointer}.section-head:hover{background:#f7fafc}.section-head strong{font-size:14px;line-height:1.3}.section-head span{font-size:10px;color:var(--muted);white-space:nowrap}.section-content{border-top:1px solid var(--line);padding:13px 18px 19px;overflow:auto}.section.collapsed .section-content{display:none}.section h3{font-size:13.5px;line-height:1.35;margin:19px 0 9px;color:#214d70}.section h4{font-size:12.5px;margin:14px 0 6px}.section p{margin:9px 0}.section table{width:100%;border-collapse:collapse;font-size:11.5px;margin:12px 0 16px;min-width:550px}.section th{text-align:left;background:#edf2f8;font-size:11px;position:static}.section th,.section td{padding:6px 8px;border-bottom:1px solid #e3e9ef;vertical-align:top}.section tr:hover td{background:#fbfdff}.section blockquote{border-left:3px solid #407aa9;background:#f0f6fc;padding:7px 11px;margin:12px 0;color:#35516f}.section code{font-size:11.5px;background:#f2f5f9;color:#2a4260;border-radius:3px;padding:1px 4px}.section pre{overflow:auto;background:#122537;color:#eef4fa;padding:12px;border-radius:7px;font-size:11px}.section pre code{background:transparent;color:inherit}.section ul,.section ol{padding-left:20px}.section li{margin:4px 0}.section a{color:#1c6098}.section strong{font-weight:700}.ctrls{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end;margin-bottom:10px}.ctrls button{background:white;border:1px solid var(--line);border-radius:7px;padding:7px 10px;font-size:11px;cursor:pointer;color:#294966}.ctrls button:hover{background:#eaf3fb}.task{display:flex;align-items:flex-start;gap:8px;padding:5px 0}.task input{accent-color:#2d6e9f;margin-top:3px;flex-shrink:0}.task.done .task-label{text-decoration:line-through;color:#687b8c}.task-label{flex:1}.tag{font-size:10px;border-radius:5px;background:#eef3f7;color:#4a6174;padding:3px 6px;white-space:nowrap}.footer{font-size:11px;color:var(--muted);padding:18px 0 0;text-align:center}.hidden-search{display:none!important}.progress{font-size:11px;color:#4c657c;margin-bottom:12px}
+@media(max-width:850px){.layout{display:block}.sidebar{position:static;max-height:150px;border-right:0;border-bottom:1px solid var(--line);display:flex;overflow:auto;gap:6px;padding:7px}.sidebar .nav-title{display:none}.sidebar a{white-space:nowrap;min-width:max-content}.body{padding:12px}.top{padding:10px}.top .hint{display:none}.top input{width:160px;max-width:45vw}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:18px}.hero h1{font-size:20px}.section-content{padding:9px 12px 14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.top,.sidebar,.ctrls{display:none}.layout{display:block}.section-content{display:block!important}.section{break-inside:avoid}.body{max-width:none;padding:0}}
+</style></head><body><header class="top"><span class="logo">LAW &amp; ORDER OS</span><span class="hint">Documento canónico de diseño · 13/10/2026</span><input id="search" aria-label="Buscar dentro del documento" placeholder="Buscar sección o concepto…"></header><div class="layout"><nav class="sidebar" aria-label="Capítulos"><div class="nav-title">EXPLORAR DOCUMENTO</div><a href="#s0">01. Gobierno, precedencia y estado verificado</a><a href="#s1">02. Objetivo y decisiones no negociables</a><a href="#s2">03. Arquitectura funcional del OS</a><a href="#s3">04. Roles, paneles y acceso</a><a href="#s4">05. Módulos y criterios funcionales</a><a href="#s5">06. Datos y relaciones de dominio</a><a href="#s6">07. Arquitectura técnica del OS y sistema UI compacto</a><a href="#s7">08. Fuentes estatales y estado de adquisición</a><a href="#s8">09. RAG jurídico: ingesta, identidad y versiones</a><a href="#s9">10. RAG jurídico y paquetes de contexto por encargo</a><a href="#s10">11. Junta Jurídica V2 — workflow aprobado</a><a href="#s11">12. Checker bibliográfico — contratos, atestación y gate</a><a href="#s12">13. Documentos, aprobación, entrega y presentación</a><a href="#s13">14. Agenda, tareas, comunicaciones y portales</a><a href="#s14">15. Honorarios, administración y dirección</a><a href="#s15">16. Desarrollo de Junta propia — sin dependencia de Mussi</a><a href="#s16">17. Contratos funcionales entre OS y Junta</a><a href="#s17">18. QA, evaluaciones y criterios de DONE</a><a href="#s18">19. Operación, protección de datos y continuidad</a><a href="#s19">20. Decisiones pendientes — no resolver por intuición</a><a href="#s20">21. Alcance de producto y próximos gates</a><a href="#s21">22. Fuentes del blueprint y ruta de instalación</a></nav><main class="body"><header class="hero"><h1>Blueprint maestro · V2.0</h1><p>Documento autónomo e interactivo · Guardar en la carpeta docs del proyecto para Codex</p><div class="chipbar"><span class="chip">v2.0</span><span class="chip">Paraguay</span><span class="chip">13 OCT 2026</span><span class="chip">Decisiones pendientes visibles</span></div></header><div class="stats"><div class="stat"><b>OS integral</b><span>producto, no chatbot</span></div><div class="stat"><b>Junta V2</b><span>Jev / Luna / Sol / Gemini / Checker</span></div><div class="stat"><b>271/271</b><span>tests offline reportados</span></div><div class="stat"><b>ADR OS-001</b><span>PENDIENTE</span></div></div><div class="notes"><h1>LAW &amp; ORDER OS</h1>
+<h2>BLUEPRINT MAESTRO CANÓNICO · V2.0</h2>
+<p><strong>13 de octubre de 2026 · Paraguay · Diseño del producto completo + reconciliación con Fase 2</strong></p>
+<p><strong>Estado documental: listo para revisión/aprobación de producto; NO equivale a certificación de producción.</strong> Este documento sustituye el diseño de la Junta y los estados desactualizados del blueprint v1.1. El v1.1 queda preservado, no se borra ni modifica. <strong>El stack productivo, la identidad del estudio piloto y las condiciones comerciales no están aprobados</strong>.</p>
+<blockquote>
+<p><strong>Identidad:</strong> LAW &amp; ORDER OS es el sistema operativo integral de un estudio jurídico: personas, asuntos, documentos, trabajo del equipo, investigación, escritos, agenda, comunicaciones y administración. No es solo un chatbot o base jurisprudencial. El abogado decide en derecho. El checker verifica la autenticidad bibliográfica de las referencias utilizadas por la IA; no decide si el dictamen es jurídicamente correcto.</p>
+</blockquote>
+</div><div class="ctrls"><button id="expand">Expandir todo</button><button id="collapse">Contraer todo</button></div><section class="section" id="s0"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s0"><strong>01. Gobierno, precedencia y estado verificado</strong><span>▼</span></button><div class="section-content" id="c-s0"><h3>Precedencia documental</h3>
+<ol>
+<li>Instrucciones y decisiones expresas recientes del propietario del proyecto.</li>
+<li>ADR de Junta V2 y los contratos efectivamente implementados, dentro del alcance aprobado.</li>
+<li>Fuente de código local como prueba de implementación (no de decisiones de producto).</li>
+<li>Este Blueprint V2 y Roadmap V2 después de su aprobación, para el alcance completo del OS.</li>
+<li>Blueprint/Roadmap v1.1 como referencia histórica, especialmente para módulos operativos no reemplazados.</li>
+<li>Informes de Codex como evidencia reportada, sujetos a reproducción independiente.</li>
+</ol>
+<p><strong>No inventar continuidad:</strong> La Junta V2 propia sustituye la clonación de Mussi y la topología 3→2→1. El <code>ADR OS-001</code> está pendiente: no elegir backend, base de datos, autentificación, hosting, región ni framework definitivo por inferencia. No iniciar migraciones o despliegues productivos sin aprobación.</p>
+<h3>Reporte de estado al 13/10/2026</h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Estado sustentado</th>
+<th>Evidencia disponible / límite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Junta Jurídica V2, orquestador y contratos</td>
+<td><strong>IMPLEMENTED / TESTED_OFFLINE reportado</strong></td>
+<td>Informe Fase 2; código local de esa fase no adjunto aquí.</td>
+</tr>
+<tr>
+<td>Pruebas integradas</td>
+<td><strong>271/271 PASS reportado</strong></td>
+<td>Typecheck y dos builds PASS reportados; no certificación externa.</td>
+</tr>
+<tr>
+<td>Checker/citación</td>
+<td><strong>Extracción 11/12; FAIL conocido</strong></td>
+<td>Detección 12/12, una cita con número escrito en palabras queda pendiente; no ocultar.</td>
+</tr>
+<tr>
+<td>Corpus de jurisprudencia</td>
+<td><strong>3 originales obtenidos, alcance limitado</strong></td>
+<td>Constitucional A&amp;S 1010/2015 (13 pp), Civil A&amp;S 1184/2013 (29 pp), Penal A&amp;S 162/2023 (7 pp). No es corpus completo ni autenticación cerrada.</td>
+</tr>
+<tr>
+<td>Fact Checker contra documentos oficiales</td>
+<td><strong>BLOCKED</strong></td>
+<td>Política de confianza institucional, verificador y curaduría jurídica externa pendientes.</td>
+</tr>
+<tr>
+<td>Jev/Luna/Sol/Gemini con cuentas reales</td>
+<td><strong>NOT_RUN/BLOCKED</strong></td>
+<td>Google GET devolvió 401; Jev/OpenAI sin claves verificadas. USD 0 gastados en inferencia.</td>
+</tr>
+<tr>
+<td>OS Core de dominio y servicio</td>
+<td><strong>IMPLEMENTED / TESTED_OFFLINE reportado</strong></td>
+<td>42 pruebas del núcleo de dominio; E2E sintético de 14 pasos.</td>
+</tr>
+<tr>
+<td>App web navegable</td>
+<td><strong>NO ACREDITADA / PENDIENTE</strong></td>
+<td>No se reporta frontend real, login empresarial ni persistencia productiva.</td>
+</tr>
+<tr>
+<td>Autenticación, persistencia y permisos en infraestructura real</td>
+<td><strong>BLOCKED — ADR OS-001 PENDING</strong></td>
+<td>Servicio con denegación por defecto y adaptadores de prueba; no prueba de sesiones durables ni RLS en base real.</td>
+</tr>
+<tr>
+<td>Git, CI y despliegues</td>
+<td><strong>NO INICIADO / NO DEPLOY</strong></td>
+<td>No existe Git en carpeta reportada; baseline de 76 archivos y manifiestos preservados.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Clasificación obligatoria:</strong> <code>DECIDED</code>, <code>PROPOSED</code>, <code>IMPLEMENTED</code>, <code>TESTED_OFFLINE</code>, <code>VERIFIED_REAL</code>, <code>BLOCKED</code>, <code>NOT_RUN</code>, <code>FAIL</code>. No convertir pruebas con mocks en validación productiva. El documento está construido a partir de v1.1 y el informe de Fase 2 suministrado; los reportes complementarios como <code>OS_CORE_ARCHITECTURE.md</code> no fueron adjuntados a esta revisión y deben contrastarse localmente.</p>
+</div></section><section class="section" id="s1"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s1"><strong>02. Objetivo y decisiones no negociables</strong><span>▼</span></button><div class="section-content" id="c-s1"><p><strong>Decisiones expresas:</strong> OS real para estudios paraguayos; cada abogado con panel y permisos; gestionar la operativa completa; UI compacta; Junta propia <strong>Jev → Luna → GPT-6.1 Sol Medium → Gemini 3.8 Flash → checker determinístico → revisión humana</strong>; RAG jurídico fundamental; no clonar Mussi; no usar Haiku como auditor en esta fase.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Invariante / decisión</th>
+<th>Consecuencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INV-01</td>
+<td>OS completo, no chatbot</td>
+<td>El roadmap mantiene clientes, tareas, documentos, agenda, honorarios y cobros.</td>
+</tr>
+<tr>
+<td>INV-02</td>
+<td>El <strong>asunto</strong> es el ámbito de trabajo; procedimiento/expediente es entidad distinta</td>
+<td>Un asunto consultivo puede existir sin juicio; un asunto puede tener varios procedimientos.</td>
+</tr>
+<tr>
+<td>INV-03</td>
+<td>Cada abogado tiene un panel compacto de trabajo</td>
+<td>Mostrar acciones reales y pendientes, no KPIs gigantes decorativos.</td>
+</tr>
+<tr>
+<td>INV-04</td>
+<td>Junta jurídica <strong>propia</strong>, secuencia Jev/Luna/Sol/Gemini/checker</td>
+<td>Sustituye la clonación de Mussi 3→2→1. No reintroducirla.</td>
+</tr>
+<tr>
+<td>INV-05</td>
+<td>Sol usa <code>reasoning_effort=medium</code></td>
+<td>Controlar tokens/herramientas desde el orquestador; no fiar el costo a la etiqueta Medium.</td>
+</tr>
+<tr>
+<td>INV-06</td>
+<td>Jev prioriza; no borra ni descarta irreversiblemente</td>
+<td>El RAG y los originales siguen recuperables.</td>
+</tr>
+<tr>
+<td>INV-07</td>
+<td>Luna estructura contexto referenciado, no reemplaza el expediente</td>
+<td>Sol/Gemini pueden pedir originales acotados.</td>
+</tr>
+<tr>
+<td>INV-08</td>
+<td>Gemini audita adversarialmente; checker es determinístico y bibliográfico</td>
+<td>El consenso LLM no concede identidad verificada.</td>
+</tr>
+<tr>
+<td>INV-09</td>
+<td>Problema controlado: jurisprudencia falsa usada como fundamento</td>
+<td>No sustituir métrica por “predice sentencia” o “acierta el veredicto”.</td>
+</tr>
+<tr>
+<td>INV-10</td>
+<td>Decisión jurídica final del abogado humano</td>
+<td>Documento y análisis entregables requieren revisión/aprobación explícita según flujo.</td>
+</tr>
+<tr>
+<td>INV-11</td>
+<td>No gastos IA, scraping masivo, emails, despliegues ni migraciones de producción sin aprobación</td>
+<td>Smoke pagado permanece NOT_RUN y sujeto a presupuesto.</td>
+</tr>
+<tr>
+<td>INV-12</td>
+<td>El OS funciona sin LLMs</td>
+<td>Tareas, permisos, clientes, documentos y cobros no dependen de proveedores de inferencia.</td>
+</tr>
+<tr>
+<td>INV-13</td>
+<td>Mocks, datos sintéticos y adaptadores de memoria no son solución productiva</td>
+<td>Separación estricta de estados y evidencias.</td>
+</tr>
+<tr>
+<td>INV-14</td>
+<td>UI desktop-first <strong>extremadamente compacta</strong> (criterio visual ~85% zoom)</td>
+<td>Tipografías, densidad, tablas y tarjetas deben someterse a QA visual.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Alcance territorial inicial:</strong> Paraguay. Sala Constitucional, Sala Civil y Comercial, Sala Penal, Constitución, códigos y legislación. El corpus actual de tres PDFs no acredita cobertura. El despliegue regional queda posterior y separado.</p>
+<p><strong>No promesas:</strong> ni ausencia absoluta de alucinaciones, ni certeza legal automática, ni fallos futuros predictivos, ni IA “ilimitada” comercial por una suscripción personal sin acuerdo contractual. No fijar precio definitivo sin benchmark de costos/uso.</p>
+</div></section><section class="section" id="s2"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s2"><strong>03. Arquitectura funcional del OS</strong><span>▼</span></button><div class="section-content" id="c-s2"><p><strong>PROPUESTO V2 / HEREDADO DE V1.1 — sujeto a aprobación de detalle.</strong> La unidad de trabajo central es el <strong>asunto</strong>, no el chat. Un cliente puede tener múltiples asuntos; un asunto puede estar relacionado con varios clientes o partes y contener cero, uno o varios procedimientos o expedientes judiciales/administrativos. Un encargo contractual o de asesoría no necesita un expediente judicial ficticio.</p>
+<h3>Cadena operativa</h3>
+<p>Consulta entrante → revisión de aceptación y conflictos → propuesta/encargo → apertura de asunto → equipo y plan de trabajo → documentos y evidencia → investigación/Junta → producción → revisión y aprobación → entrega o presentación acreditada → seguimiento → facturación/cobro → cierre y archivo.</p>
+<p>No todos los asuntos recorren exactamente los mismos estados. Las plantillas de flujo pueden variar por especialidad, pero no deben borrar responsabilidades, controles de versión o evidencia de las operaciones realizadas.</p>
+<h3>Navegación de producto propuesta</h3>
+<table>
+<thead>
+<tr>
+<th>Espacio principal</th>
+<th>Trabajo que concentra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mi día</strong></td>
+<td>Atención personal: tareas, revisiones, citas, vencimientos confirmados, documentación nueva y bloqueos.</td>
+</tr>
+<tr>
+<td><strong>Asuntos</strong></td>
+<td>Equipo, partes, documentos, actividad, Junta, escritos y economía de cada encargo.</td>
+</tr>
+<tr>
+<td><strong>Clientes</strong></td>
+<td>Contactos, captación, propuestas, solicitudes y relación histórica autorizada.</td>
+</tr>
+<tr>
+<td><strong>Agenda</strong></td>
+<td>Eventos, audiencias, fechas internas, vencimientos y responsables.</td>
+</tr>
+<tr>
+<td><strong>Trabajo jurídico</strong></td>
+<td>Investigaciones y documentos; siempre vinculables a un asunto o a una investigación interna autorizada.</td>
+</tr>
+<tr>
+<td><strong>Administración</strong></td>
+<td>Acuerdos económicos, tiempo, gastos, anticipos, facturación y cobros.</td>
+</tr>
+<tr>
+<td><strong>Dirección</strong></td>
+<td>Carga, pendientes, indicadores operativos y económicos con datos verificables.</td>
+</tr>
+</tbody>
+</table>
+<p>La biblioteca, configuración y fuentes pueden vivir en navegación secundaria. Evitar una barra principal interminable. Abrir una tarea debe llevar al documento, comunicación o punto del asunto correspondiente, sin obligar a reconstruir el contexto desde cero.</p>
+<p><strong>La aplicación debe seguir funcionando cuando la IA esté indisponible:</strong> agenda, documentos, permisos, tareas, clientes y cobros no dependen de una respuesta LLM.</p>
+</div></section><section class="section" id="s3"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s3"><strong>04. Roles, paneles y acceso</strong><span>▼</span></button><div class="section-content" id="c-s3"><p><strong>PROPUESTO V2 / HEREDADO DE V1.1 — sujeto a aprobación de detalle.</strong> El rol define capacidades posibles; la asignación al estudio y al asunto delimita dónde se pueden usar. Ocultar un botón no constituye autorización. Las reglas deben aplicarse a API, consultas, archivos, exportaciones, búsquedas, trabajos en background y contexto IA.</p>
+<table>
+<thead>
+<tr>
+<th>Perfil</th>
+<th>Panel de inicio</th>
+<th>Capacidades propuestas</th>
+<th>Límites por defecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Socio/director</td>
+<td>Trabajo del equipo, asuntos sin próxima acción, aprobaciones y estado económico</td>
+<td>Asignar, supervisar, aprobar según política y gestionar cartera</td>
+<td>No acceso irrestricto a asuntos reservados por el solo título; acceso explícito y auditado.</td>
+</tr>
+<tr>
+<td>Abogado responsable</td>
+<td>Sus entregas, plazos, nueva información y bloqueos</td>
+<td>Gestionar asuntos asignados, convocar Junta, preparar y aprobar dentro de su autoridad</td>
+<td>Sin acceso a otros equipos/asuntos fuera de su ámbito.</td>
+</tr>
+<tr>
+<td>Abogado colaborador</td>
+<td>Producción y revisiones asignadas</td>
+<td>Investigar, redactar, comentar y proponer cambios</td>
+<td>Aprobación externa solo con permiso concedido.</td>
+</tr>
+<tr>
+<td>Asistente/procurador</td>
+<td>Gestiones y documentos faltantes</td>
+<td>Organizar documentación, registrar actuaciones y comprobantes</td>
+<td>No aprobar análisis jurídico ni modificar condiciones económicas salvo permiso.</td>
+</tr>
+<tr>
+<td>Administración</td>
+<td>Facturación, cobros, gastos y rendiciones</td>
+<td>Operaciones económicas autorizadas y datos necesarios</td>
+<td>No acceso automático al contenido jurídico reservado.</td>
+</tr>
+<tr>
+<td>Cliente externo</td>
+<td>Sus solicitudes, citas, entregables y estado de cuenta</td>
+<td>Aportar documentos y ver lo compartido</td>
+<td>Nunca recibe debate interno, borradores privados o documentos de otros clientes por defecto.</td>
+</tr>
+<tr>
+<td>Administrador técnico</td>
+<td>Usuarios, políticas, integraciones y estado del servicio</td>
+<td>Operar configuración y soporte</td>
+<td>Acceso al contenido sujeto a política explícita; soporte excepcional temporal, justificado y auditado.</td>
+</tr>
+</tbody>
+</table>
+<h3>Reglas transversales</h3>
+<p>El acceso se deniega por defecto. Toda entidad privada lleva identificación del estudio; las relaciones no pueden cruzar estudios por un ID recibido del navegador. Los documentos públicos del corpus y los privados se almacenan e indexan con ámbitos distintos. La revocación debe alcanzar enlaces, búsquedas y trabajos en curso, no solo la pantalla.</p>
+<p>El portal de cliente se basa en <strong>versiones compartidas explícitamente</strong>, no en “mostrar siempre la última versión”. Un documento posterior interno no se vuelve público por actualizarse el original. Los resultados agregados de Dirección tampoco deben revelar asuntos reservados a usuarios sin autorización.</p>
+<p><strong>DONE de acceso:</strong> pruebas negativas entre dos estudios, entre asuntos del mismo estudio y entre roles internos/cliente; ningún texto privado aparece en búsqueda, cita, log o exportación fuera de su ámbito.</p>
+</div></section><section class="section" id="s4"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s4"><strong>05. Módulos y criterios funcionales</strong><span>▼</span></button><div class="section-content" id="c-s4"><p>Los módulos siguientes forman la visión del OS. Las fases de construcción no autorizan a reducir el producto a una consulta IA.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Módulo</th>
+<th>Capacidad concreta</th>
+<th>Criterio de aceptación propuesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS-01</td>
+<td>Captación e intake</td>
+<td>Consulta, entrevista, documentación inicial y seguimiento</td>
+<td>Una consulta puede convertirse en asunto sin duplicar persona ni perder archivos; aceptación registrada.</td>
+</tr>
+<tr>
+<td>OS-02</td>
+<td>Revisión de conflictos</td>
+<td>Coincidencias de partes/contactos y revisión humana</td>
+<td>Una coincidencia se muestra como alerta, no como dictamen; búsqueda limitada a datos accesibles y política del estudio.</td>
+</tr>
+<tr>
+<td>OS-03</td>
+<td>Encargo y propuesta</td>
+<td>Alcance, responsables, acuerdo económico y aceptación</td>
+<td>Condiciones aceptadas versionadas; no se factura por un acuerdo posterior no aprobado.</td>
+</tr>
+<tr>
+<td>OS-04</td>
+<td>Asuntos/procedimientos</td>
+<td>Estado, equipo, partes y expedientes relacionados</td>
+<td>Un asunto asesor sin juicio y un asunto con dos procedimientos funcionan sin artificios.</td>
+</tr>
+<tr>
+<td>OS-05</td>
+<td>Mi día y equipo</td>
+<td>Pendientes, bloqueos, revisiones y reasignaciones</td>
+<td>Toda tarjeta abre la tarea real y conserva un responsable; una sustitución mantiene historial.</td>
+</tr>
+<tr>
+<td>OS-06</td>
+<td>Documentos y expediente</td>
+<td>Originales, índice, anexos, versiones y exportaciones</td>
+<td>Se puede reconstruir el paquete entregado; el original no se altera por reclasificación.</td>
+</tr>
+<tr>
+<td>OS-07</td>
+<td>Investigación/Junta</td>
+<td>Encargo delimitado, evidencia congelada y resultado</td>
+<td>Se conserva el run, sus fuentes y etapas; no aparece resultado “verificado” por terminar llamadas.</td>
+</tr>
+<tr>
+<td>OS-08</td>
+<td>Editor jurídico</td>
+<td>Plantillas, secciones, cambios acotados y revisiones</td>
+<td>Comparación de versiones; referencias revisadas contra la versión exportada.</td>
+</tr>
+<tr>
+<td>OS-09</td>
+<td>Tareas y workflow</td>
+<td>Dependencias, aprobaciones y alertas</td>
+<td>Un evento repetido no crea dos tareas ni dos envíos; un bloqueo tiene causa y responsable.</td>
+</tr>
+<tr>
+<td>OS-10</td>
+<td>Agenda y seguimiento</td>
+<td>Citas, gestiones y vencimientos confirmados</td>
+<td>Una fecha sugerida no se convierte en plazo validado; recordatorio y actividad son entidades distintas.</td>
+</tr>
+<tr>
+<td>OS-11</td>
+<td>Comunicación y portal</td>
+<td>Solicitudes, mensajes vinculados y entregas aprobadas</td>
+<td>Cliente ve únicamente su versión compartida; evidencias de entrega no se infieren del borrador.</td>
+</tr>
+<tr>
+<td>OS-12</td>
+<td>Honorarios y costos</td>
+<td>Acuerdos, horas opcionales, gastos y anticipos</td>
+<td>Importe, moneda y origen de cada movimiento; no mezclar dinero del cliente con ingreso del estudio.</td>
+</tr>
+<tr>
+<td>OS-13</td>
+<td>Facturación y cobros</td>
+<td>Pendientes, documentos económicos, pagos y aplicaciones</td>
+<td>Facturado ≠ cobrado; anticipos aplicados una vez; integración fiscal no simulada como válida.</td>
+</tr>
+<tr>
+<td>OS-14</td>
+<td>Dirección y cierre</td>
+<td>Carga, saldos, costos, cierre/exportación/retención</td>
+<td>Indicadores reconciliables; sin “rentabilidad exacta” cuando faltan costos.</td>
+</tr>
+</tbody>
+</table>
+<h3>Diseño de “Mi día”</h3>
+<p>La prioridad visual debe ser trabajo accionable, no gráficos decorativos. Mostrar primero vencimientos confirmados y entregas próximas, luego aprobaciones, documentación nueva y tareas bloqueadas. Ofrecer filtros por responsabilidad y equipo sin mezclar asuntos no autorizados. La explicación de por qué un elemento aparece como prioritario debe derivar de fechas y estado, no de una urgencia inventada por la IA.</p>
+<h3>Contexto refinado para la producción</h3>
+<p>El abogado puede confirmar una ficha del asunto con cronología, documentos disponibles, afirmaciones del cliente, puntos controvertidos y datos faltantes. Esa ficha conserva vínculos con originales y versiones. Una corrección no borra el registro anterior ni se pierde dentro de un resumen narrativo viejo.</p>
+<p>El editor usa plantillas y estilo aprobado del estudio; no “aprende” silenciosamente de documentos de otro cliente. Permite fijar secciones aprobadas y editar una sección sin regenerar todo. Una referencia modificada invalida su comprobación anterior; una nueva fecha exige revisión del contexto afectado, no una sustitución global ciega.</p>
+</div></section><section class="section" id="s5"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s5"><strong>06. Datos y relaciones de dominio</strong><span>▼</span></button><div class="section-content" id="c-s5"><p><strong>PROPUESTO V1 — modelo lógico, no migraciones aprobadas.</strong> Los nombres siguientes identifican responsabilidades; su DDL, índices y tecnología se fijan después de elegir stack y revisar el motor existente.</p>
+<table>
+<thead>
+<tr>
+<th>Grupo</th>
+<th>Entidades lógicas</th>
+<th>Relaciones y restricciones esenciales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Estudio y personas</td>
+<td><code>study</code>, <code>membership</code>, <code>role_grant</code>, <code>contact</code>, <code>client</code></td>
+<td>Usuario puede pertenecer a varios estudios con permisos distintos; no deduplicar datos personales entre tenants por inferencia.</td>
+</tr>
+<tr>
+<td>Trabajo</td>
+<td><code>matter</code>, <code>matter_party</code>, <code>matter_membership</code>, <code>proceeding</code>, <code>engagement</code></td>
+<td>Matter aislado por estudio; múltiples partes y procedimientos; autorización por relación, no por conocer UUID.</td>
+</tr>
+<tr>
+<td>Operación</td>
+<td><code>task</code>, <code>task_dependency</code>, <code>event</code>, <code>deadline</code>, <code>workflow_run</code></td>
+<td>Tarea, evento, plazo y recordatorio distintos; dependencias sin ciclos y dueño verificable.</td>
+</tr>
+<tr>
+<td>Documentos</td>
+<td><code>document</code>, <code>document_version</code>, <code>attachment_link</code>, <code>review</code>, <code>approval</code>, <code>delivery</code>, <code>filing_receipt</code></td>
+<td>Aprobación y entrega referencian versión exacta; original y derivado separados; comprobante no inferido.</td>
+</tr>
+<tr>
+<td>Contexto</td>
+<td><code>matter_snapshot</code>, <code>fact_record</code>, <code>context_link</code></td>
+<td>Hecho documental, afirmación e inferencia tipificados; edición versionada; no reconstruir snapshot pasado con datos actuales.</td>
+</tr>
+<tr>
+<td>Inteligencia</td>
+<td><code>research_request</code>, <code>evidence_pack</code>, <code>board_run</code>, <code>board_stage</code>, <code>board_result</code>, <code>citation_check</code></td>
+<td>Cada run ligado a snapshot y versión de evidencia; etapas del workflow Jev/Luna/Sol/Gemini aisladas por snapshot y permisos.</td>
+</tr>
+<tr>
+<td>Corpus público</td>
+<td><code>source_provider</code>, <code>source_item</code>, <code>source_version</code>, <code>passage</code>, <code>legal_relation</code>, <code>coverage_manifest</code></td>
+<td>Identidad oficial separada de ID interno; hash no sustituye procedencia; ausencia de fecha no se inventa.</td>
+</tr>
+<tr>
+<td>Economía</td>
+<td><code>fee_agreement</code>, <code>time_entry</code>, <code>expense</code>, <code>invoice</code>, <code>payment</code>, <code>allocation</code>, <code>ledger_entry</code></td>
+<td>Importes exactos y moneda; reversos trazables; aplicaciones atómicas para impedir doble cobro/aplicación.</td>
+</tr>
+<tr>
+<td>Comunicación</td>
+<td><code>thread</code>, <code>message</code>, <code>document_request</code>, <code>shared_item</code></td>
+<td>Envíos aprobados; reintentos idempotentes; compartición de versión exacta.</td>
+</tr>
+<tr>
+<td>Gobierno</td>
+<td><code>audit_event</code>, <code>integration_run</code>, <code>outbox_event</code>, <code>retention_rule</code>, <code>access_exception</code></td>
+<td>Registro de operaciones; trabajos durables; no almacenar secretos ni texto sensible innecesario en logs.</td>
+</tr>
+</tbody>
+</table>
+<h3>Invariantes de almacenamiento</h3>
+<p>Las operaciones privadas incluyen estudio y asunto cuando corresponda; las claves compuestas o controles equivalentes impiden referencias cruzadas. La concurrencia utiliza versionado optimista o equivalente: una revisión sobre una versión anterior no aprueba automáticamente una nueva.</p>
+<p>Las escrituras económicas y de workflow se agrupan transaccionalmente con el evento de salida. El envío externo puede reintentarse sin duplicar la operación. El reloj técnico se conserva de forma consistente y la interfaz muestra zona horaria explícita; la política exacta de fechas de todo el estudio se valida con el piloto.</p>
+<p>Las monedas se registran en cada importe; PYG es una necesidad del ámbito paraguayo, pero moneda base, monedas secundarias, reglas de cambio, redondeo y retención se aprueban antes de contabilizar. No se hardcodean tasas tributarias en este documento.</p>
+</div></section><section class="section" id="s6"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s6"><strong>07. Arquitectura técnica del OS y sistema UI compacto</strong><span>▼</span></button><div class="section-content" id="c-s6"><h3>Capas lógicas, no selección de stack definitivo</h3>
+<p><code>Web OS</code> → <code>Auth/tenant authorization</code> → <code>Domain services</code> → <code>Durable database/document storage/jobs</code> → <code>AI research orchestration</code> → <code>RAG+corpus+checker</code>. Separar dominio empresarial del runtime LLM. Las interfaces de prueba actuales pueden ser reutilizadas, pero no son persistencia ni auth empresarial.</p>
+<p><strong>ADR OS-001: PENDING_DECISION.</strong> Comparar alternativas con compatibilidad con código TypeScript existente, PostgreSQL, autenticación y autorización multiestudio, control de documentos privados, backups, residencia, costo/operación, jobs y testing E2E. Next.js + TypeScript + PostgreSQL/Supabase puede evaluarse como <strong>candidato</strong>, no como decisión congelada.</p>
+<h3>UI obligatoria — alta densidad desktop-first</h3>
+<p>El usuario pide una interfaz <strong>COMPACTA</strong>, visualmente como una app que habitualmente se vería al <strong>85% del zoom</strong>, sin depender de aplicar CSS <code>zoom</code> ni de obligar al navegador al 85%. Usar dimensiones de diseño compactas a zoom 100%, respetando legibilidad y accesibilidad.</p>
+<table>
+<thead>
+<tr>
+<th>Token UI propuesto para evaluar en QA</th>
+<th>Rango de diseño inicial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Body</td>
+<td>12.5–13.5px, line-height 1.35–1.45; no tipografía inflada</td>
+</tr>
+<tr>
+<td>Texto secundario</td>
+<td>11–12px, contraste suficiente</td>
+</tr>
+<tr>
+<td>H1 / H2 / H3</td>
+<td>19–22 / 15–17 / 13–14px, jerarquía sobria</td>
+</tr>
+<tr>
+<td>Altura topbar</td>
+<td>42–48px</td>
+</tr>
+<tr>
+<td>Sidebar</td>
+<td>200–224px (colapsable)</td>
+</tr>
+<tr>
+<td>Filas de tabla</td>
+<td>30–36px desktop; ampliación accesible cuando corresponda</td>
+</tr>
+<tr>
+<td>Inputs y botones</td>
+<td>30–34px, controles densos con hit target accesible</td>
+</tr>
+<tr>
+<td>Cards / paneles</td>
+<td>Padding 10–14px; densidad operativa; no tarjetas gigantes</td>
+</tr>
+<tr>
+<td>Gap estándar</td>
+<td>4 / 8 / 12 / 16px, evitando vacíos decorativos</td>
+</tr>
+<tr>
+<td>Hover</td>
+<td>Sutil: cambio tenue de fondo/borde; sin elevación teatral ni animaciones excesivas</td>
+</tr>
+<tr>
+<td>Foco / teclado</td>
+<td>Focus visible, navegación operable y estados accesibles</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Prohibido:</strong> cards enormes, hero dashboards, 4 KPIs gigantes repetidos, navbar interminable, banners inflados, fila táctil de 56px sin razón, padding de 24–32px indiscriminado, tipografía de 16–18px para datos densos, hover llamativo.</p>
+<p><strong>Diseño de Mi día:</strong> tareas y plazos confirmados arriba; revisiones pendientes; asuntos sin próxima acción; documentos recién incorporados. Acciones de una línea, tabla compacta, búsqueda/filtros sobre el contenido, detalles en panel o navegación contextual. Los estados son reales, no tarjetas visuales de mock.</p>
+<p><strong>QA UI:</strong> captura a 1440×900 y 1366×768 a zoom 100% para validar densidad; captura adicional a 85% para comparación visual; verificar responsive y accesibilidad. Criterio preliminar: navegación, filtros y al menos 8–12 filas de trabajo visibles sin scroll excesivo según pantalla, siempre que el contenido lo permita. Este objetivo visual es <strong>PROPOSED</strong>, no un umbral de accesibilidad.</p>
+</div></section><section class="section" id="s7"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s7"><strong>08. Fuentes estatales y estado de adquisición</strong><span>▼</span></button><div class="section-content" id="c-s7"><p><strong>Dato nuevo de Fase 2:</strong> tres PDFs oficiales obtenidos vía HTTPS, bytes originales conservados con SHA-256, URL, fechas, MIME, páginas y metadatos. PDF.js 6.4.299 permitió extracción/render. No equivale a cobertura completa, permisos universales ni atestación institucional real.</p>
+<table>
+<thead>
+<tr>
+<th>Sala</th>
+<th>Muestra preservada (según informe de Codex)</th>
+<th>Limitación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Constitucional</td>
+<td>Acuerdo y Sentencia <strong>1010</strong>, 11/12/2015, 13 páginas</td>
+<td>Escaneo sin texto digital; OCR/curaduría pendiente.</td>
+</tr>
+<tr>
+<td>Civil y Comercial</td>
+<td>Acuerdo y Sentencia <strong>1184</strong>, 19/09/2013, 29 páginas</td>
+<td>Texto digital, sin revisión de contenido integral.</td>
+</tr>
+<tr>
+<td>Penal</td>
+<td>Acuerdo y Sentencia <strong>162</strong>, 24/05/2023, 7 páginas</td>
+<td>Número/fecha identificados por publicación oficial, no impresos en encabezado PDF.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fuente reportada:</strong> <code>PHASE2_IMPLEMENTATION_REPORT.md</code>, 13/10/2026. La documentación original debe permanecer referenciada en el repositorio y debe contrastarse contra <code>OFFICIAL_CORPUS_MANIFEST.json</code> y los originales antes de marcar hechos como verificados independientemente.</p>
+<table>
+<thead>
+<tr>
+<th>Canal</th>
+<th>Estado de investigación heredado</th>
+<th>Gate restante</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSJ / IIJ jurisprudencia Constitucional, Civil, Penal</td>
+<td>Buscador y muestras públicas identificadas</td>
+<td>API/exportación oficial o conector autorizado, identidad y cobertura por sala/año.</td>
+</tr>
+<tr>
+<td>Digesto Legislativo</td>
+<td>Muestras PDF de tres salas identificadas, + corpus F2 real</td>
+<td>Procedencia y permisos de uso sistemático, actualizaciones y reconciliación con CSJ.</td>
+</tr>
+<tr>
+<td>Congreso SILpy y OpenAPI v2</td>
+<td>API documental/metadatos y adjuntos tipados conocidos</td>
+<td>Confirmar versión aplicable, semántica, originales y publicaciones frente a proyectos.</td>
+</tr>
+<tr>
+<td>CSJ legislación, Constitución, Gaceta y códigos</td>
+<td>Portales y candidatos localizados</td>
+<td>Texto oficial/versionado, modificaciones, uso autorizado, integridad y permisos.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Doctrina de autenticidad:</strong> una firma Ed25519 válida de un emisor configurado no prueba por sí sola que el documento provenga de autoridad pública; registry y canal de atestación deben vincularse a evidencia institucional autorizada. Nunca autodeclarar <code>VERIFIED</code>. <code>NOT_FOUND_IN_SCOPE</code> no significa “no existe”. No sortear restricciones, CAPTCHA, ni crear corpus comercial con contenido editorial restringido sin autorización.</p>
+</div></section><section class="section" id="s8"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s8"><strong>09. RAG jurídico: ingesta, identidad y versiones</strong><span>▼</span></button><div class="section-content" id="c-s8"><h3>Estado técnico del RAG en Fase 2</h3>
+<p>El servicio local admite extracción UTF-8, búsqueda por texto/metadatos, IDs/localizadores, snapshots e interfaz semántica. Esa implementación fue <strong>probada offline</strong>. Embeddings/corpus completo/conectores estatales reproducibles siguen bloqueados. Las reglas siguientes son especificación de destino: no interpretarlas como ya implementadas.</p>
+<h3>Separación de colecciones</h3>
+<p><strong>Jurisprudencia pública:</strong> resoluciones y originales identificados. <strong>Normativa pública:</strong> leyes, Constitución, códigos como instrumentos/versiones y modificatorias. <strong>Documentación privada:</strong> archivos autorizados del estudio/asunto. <strong>Material editorial autorizado:</strong> colección distinta, no confundida con texto normativo o resolución judicial.</p>
+<p>Una referencia a un fallo dentro de un escrito del cliente es una cita candidata, no un registro auténtico del corpus. Un resumen generado por IA puede facilitar navegación, pero jamás convertirse en original de autoridad.</p>
+<h3>Cadena de ingesta propuesta</h3>
+<p>Registro y permiso de fuente → captura autorizada de originales y metadatos → comprobación de contenido → extracción → estructuración → identidad y deduplicación → control de versión → QA documental → índices → manifiesto de cobertura → publicación del snapshot.</p>
+<p>Cada paso puede quedar pendiente o fallido. <code>HTTP 200</code>, JSON bien formado o embeddings generados no cierran el proceso. Se detectan páginas de login, PDFs truncados, adjuntos ajenos, errores servidos como HTML y campos faltantes.</p>
+<h3>Identidad canónica</h3>
+<p>Conservar <code>provider_id</code>, ID oficial cuando exista, URI estable, jurisdicción, órgano, sala, tipo de resolución, número, fecha y referencias secundarias disponibles. Asignar un ID interno inmutable sin fingir que sea un identificador estatal. No fijar una llave universal tribunal+número+año antes de verificar colisiones reales en los datos.</p>
+<p>Las fusiones de duplicados guardan alias y razones. Cuando varios documentos puedan coincidir, se devuelve ambigüedad; no se elige uno por cercanía semántica y se declara validado. Una resolución publicada en dos fuentes puede asociarse con evidencia explícita, conservando ambos originales/versiones.</p>
+<h3>Original, texto y extracción</h3>
+<p>Se conservan bytes originales, tipo, fecha de obtención, hash, origen y permisos. El hash demuestra identidad de bytes entre observaciones, no autenticidad estatal por sí solo. Se extrae primero texto digital; OCR solo cuando el original no ofrece una alternativa utilizable, con calidad y páginas problemáticas registradas.</p>
+<p>Una normalización de texto conserva los offsets/páginas para volver al original. Los errores de extracción no se “corrigen” inventando un número, una palabra citada o una fecha. El documento ilegible queda marcado para revisión.</p>
+<h3>Estructura documental</h3>
+<p>Segmentar por documento y estructura: encabezado, artículos, secciones, párrafos y páginas. Recuperar un pasaje con contexto de su fuente. Mantener separados fallo, voto, transcripción de partes, sumario y comentario cuando la estructura permita identificarlos; si no, registrar incertidumbre de clasificación.</p>
+<h3>Temporalidad</h3>
+<p>Registrar fecha de emisión, publicación y vigencia según la fuente y sus límites. Son campos diferentes. Las relaciones de modificación/derogación deben tener procedencia; un modelo no inventa una fecha de vigencia. Conservar versiones históricas sin sobrescribirlas.</p>
+<p>Una compilación “actualizada 2024” no se presenta como normativa consolidada vigente a 2026. La selección jurídica aplicable la revisa el abogado; el RAG aporta la versión y la información documental conocida.</p>
+<h3>Cobertura</h3>
+<p>Por cada fuente y partición se conserva <code>sala/órgano</code>, años cubiertos, documentos obtenidos, documentos íntegros, registros sin original, exclusiones, fallos de captura y último control. El total conocido del proveedor se registra solamente si se verificó. Mostrar cantidad de documentos indexados no permite afirmar cobertura completa.</p>
+</div></section><section class="section" id="s9"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s9"><strong>10. RAG jurídico y paquetes de contexto por encargo</strong><span>▼</span></button><div class="section-content" id="c-s9"><h3>Dos trabajos distintos</h3>
+<p><strong>Investigación temática:</strong> buscar antecedentes relevantes de una cuestión. <strong>Resolución bibliográfica exacta:</strong> comprobar identidad de una sentencia/norma citada. La segunda no se resuelve con similitud semántica.</p>
+<h3>Flujo de contexto para expedientes extensos</h3>
+<ol>
+<li><strong>Ingesta persistente por documento y versión:</strong> original, extracción, índice textual/metadatos, localizadores y hashes. Evitar reprocesar si no cambia la versión.</li>
+<li><strong>Research Request delimitada:</strong> abogado elige una cuestión; el expediente completo queda en el OS. No activar diez Juntas por un pedido general.</li>
+<li><strong>RAG híbrido:</strong> recuperar candidatos exactos, textuales y semánticos con filtros de estudio/asunto, fecha, jurisdicción, permisos y snapshots.</li>
+<li><strong>Jev Evidence Router:</strong> clasificar candidatos por lotes; esencial, relevante, contextual, contradictorio, incierto o no relacionado con la cuestión. No elimina documentos.</li>
+<li><strong>Luna Context Builder:</strong> producir hechos, alegaciones de partes, cronología, contradicciones, vacíos, cobertura y citas de fragmentos originales.</li>
+<li><strong>Sol 6.1 Medium:</strong> recibe contexto compacto más originales críticos, recuperables bajo demanda con límites.</li>
+<li><strong>Gemini auditor:</strong> no depender únicamente del resumen de Luna; puede consultar originales con límites.</li>
+<li><strong>Checker determinístico:</strong> resolver todas las citas finales con registro de identidad auténtica.</li>
+</ol>
+<h3>Contrato mínimo de evidencia</h3>
+<p><code>EvidencePack { pack_id, run_id, matter_snapshot_id, corpus_snapshot_id, retrieved_passages[{source_id,document_version_id,passage_id,page_range,source_status}], query_intents, search_filters, coverage_limitations, created_at }</code>.</p>
+<p><strong>Reglas:</strong> una fuente privada citando jurisprudencia no constituye una sentencia oficial; un resumen LLM no se vuelve original. Contextos congelados por run, con <code>OUTDATED</code> cuando cambian datos, no nueva Junta automática. Un fallo de recuperación o truncamiento no se silencia: resultado parcial/pending o escalamiento al abogado.</p>
+<p><strong>Presupuestos son experimentales:</strong> Sol Medium objetivo inicial 30K–60K de entrada, ampliación hasta 100K, salida total hasta 25K, máximo dos recuperaciones acotadas. Deben medirse pérdida de evidencia crítica, tokens facturados, P50/P90 y costo real; no recortar fuentes decisivas solo para alcanzar precios. Para Jev y Luna el tamaño depende de límites efectivamente documentados y la versión de modelo accesible.</p>
+</div></section><section class="section" id="s10"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s10"><strong>11. Junta Jurídica V2 — workflow aprobado</strong><span>▼</span></button><div class="section-content" id="c-s10"><h3>Arquitectura propia, no clonación de Mussi</h3>
+<p><code>ResearchRequest → Ingestion/RAG → Jev (clasifica) → Luna (estructura) → GPT-6.1 Sol MEDIUM (analiza) → Gemini 3.8 Flash (audita) → Checker determinístico (verifica identidad) → HUMAN_REVIEW_PENDING</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Contrato de entrada</th>
+<th>Salida y control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jev</td>
+<td>Cuestión, candidatos, IDs y localizadores</td>
+<td>Scores/categorías, explícitos inciertos y contradictorios; conserva cobertura.</td>
+</tr>
+<tr>
+<td>Luna</td>
+<td>Fragmentos seleccionados + originales localizables</td>
+<td>LegalCasePacket con hechos vs alegaciones vs inferencias, cronología, vacíos y procedencia.</td>
+</tr>
+<tr>
+<td>Sol 6.1 Medium</td>
+<td>Cuestión, pack versionado, hechos y fuentes identificadas</td>
+<td>Análisis delimitado con citas estructuradas, alternativas, faltantes y <code>completion_status</code>.</td>
+</tr>
+<tr>
+<td>Gemini 3.8 Flash</td>
+<td>Análisis Sol, contexto y originales, cobertura</td>
+<td>Objeciones independientes, referencias sospechosas, inconsistencias y evidencias omitidas. No dictamen final autónomo.</td>
+</tr>
+<tr>
+<td>Checker</td>
+<td>Citas en campos y prosa + corpus/registro de confianza</td>
+<td>Identidad <code>VERIFIED_IDENTITY</code> o fallo/ambiguo; citas textuales exactas o estado pendiente.</td>
+</tr>
+<tr>
+<td>Abogado</td>
+<td>Análisis, objeciones, verificaciones</td>
+<td>Acepta, corrige, rechaza; la IA no aprueba ni presenta autónomamente.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Separación decisiva:</strong> el auditor puede observar errores jurídicos, pero la métrica y bloqueo duro que motivan el checker son jurisprudencia inventada y citas no acreditadas, no “acertar la sentencia”. Una fuente real mal interpretada corresponde a revisión profesional.</p>
+<h3>Estados de ejecución y gobernanza</h3>
+<p><code>CREATED → PREPARING_EVIDENCE → ROUTING_EVIDENCE → BUILDING_CONTEXT → PRINCIPAL_ANALYSIS → ADVERSARIAL_AUDIT → CHECKING_REFERENCES → HUMAN_REVIEW_PENDING</code>; con estados <code>PARTIAL</code>, <code>FAILED</code>, <code>CANCELLED</code> y vigencia <code>CURRENT/OUTDATED</code> separados. Nunca etiquetar verificado cuando haya citas no examinadas o ambigüedad. Presupuestos de gasto, latencia, intentos, llamadas extra y salida deben aplicarse en backend.</p>
+<h3>Estado reportado de implementación</h3>
+<p>La Fase 2 implementó la secuencia modular, un preflight y un live-smoke <strong>no ejecutado</strong>, con techo planeado de <strong>USD 0,60</strong>, un candidato, cero reintentos/recuperaciones; adaptadores reales sin cuentas validadas. Google Models GET devolvió HTTP 401. No declarar conectividad por un test con transportes falsos.</p>
+<p><strong>Deuda activa de citas:</strong> extractor es-bibliography-v3 detectó 12/12 referencias pero estructuró 11/12; un encabezado civil en palabras permanece <code>PENDING</code>. Cero etiquetas <code>VERIFIED</code> proviene de confianza cerrada, no de una validación efectiva de jurisprudencia auténtica.</p>
+</div></section><section class="section" id="s11"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s11"><strong>12. Checker bibliográfico — contratos, atestación y gate</strong><span>▼</span></button><div class="section-content" id="c-s11"><p><strong>Función exclusiva:</strong> comprobación determinística de identidad de referencias y correspondencia literal de citas textuales. NO decide si la interpretación de la fuente es correcta.</p>
+<h3>Identidad y clasificación</h3>
+<p><code>VERIFIED_IDENTITY</code>, <code>METADATA_MISMATCH</code>, <code>AMBIGUOUS</code>, <code>NOT_FOUND_IN_SCOPE</code>, <code>SOURCE_UNAVAILABLE</code>, <code>INSUFFICIENT_IDENTITY</code>. Para cita textual: <code>QUOTE_MATCH</code>, <code>QUOTE_MISMATCH</code>, <code>TEXT_UNAVAILABLE</code>, <code>EXTRACTION_UNCERTAIN</code>, <code>NOT_APPLICABLE</code>.</p>
+<p>Verificar metadatos disponibles: tribunal/sala, tipo y número, fecha, id oficial, URL/original, versión, localizador y texto. Resolver duplicados sin afirmar una coincidencia solo por número o por embedding.</p>
+<p><strong>Atestación:</strong> registro confiable de verificadores externo al bundle; Ed25519 para integridad de documentos y claims; revocación y fecha; <code>trust_registry</code> separado. El reporte señala corrección local probada, pero <strong>canal oficial y política jurídica de emisores autorizados sigue pendiente</strong>. Firma interna válida ≠ certificación institucional.</p>
+<p><strong>Salida segura:</strong> toda referencia detectada/estructurada/presente en prosa requiere estado; sin cobertura total el documento nunca lleva <code>VERIFIED</code> global. La extracción numérica en palabras en una cabecera civil sigue siendo fallo documentado. No ocultar el 11/12 ni reutilizar un holdout ya visto como independiente.</p>
+</div></section><section class="section" id="s12"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s12"><strong>13. Documentos, aprobación, entrega y presentación</strong><span>▼</span></button><div class="section-content" id="c-s12"><p><strong>PROPUESTO V2 / HEREDADO DE V1.1 — sujeto a aprobación de detalle.</strong> Cada documento tiene versiones. Un original recibido es inmutable; una corrección produce un derivado o una nueva versión con vínculo al original. La clasificación y el índice no modifican bytes.</p>
+<p>Estados propuestos: <code>DRAFT → IN_REVIEW → CHANGES_REQUESTED / APPROVED</code>. La entrega y la presentación son actos separados con su evidencia: <code>DELIVERED</code> y <code>FILED</code> no son sinónimos de aprobación. La descarga de un Word o PDF no demuestra presentación judicial.</p>
+<p>Cada aprobación registra quién, cuándo y qué versión aprobó. Si cambia el contenido, esa aprobación no cubre automáticamente la nueva versión. El OS puede exigir revisor distinto del autor según política del estudio; la regla se configura y prueba, no se presume universal.</p>
+<p>El armado de expediente produce índice, orden, anexos y paquete versionado, sin destruir originales. Debe permitir ver qué archivos se incluyeron y reconstruir el paquete entregado. Plantillas del estudio, números, partes y anexos se validan antes de exportar; no se inventan identificadores judiciales ausentes.</p>
+<p><strong>DONE documental:</strong> crear dos versiones, revisar la primera, modificar la segunda y demostrar que ni la aprobación ni el estado de referencias se arrastran indebidamente; compartir solo la versión autorizada; registrar entrega/presentación con comprobante.</p>
+</div></section><section class="section" id="s13"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s13"><strong>14. Agenda, tareas, comunicaciones y portales</strong><span>▼</span></button><div class="section-content" id="c-s13"><h3>Fechas y responsabilidades</h3>
+<p>Una fecha extraída, una fecha interna y un plazo procesal confirmado son tipos distintos. Las fechas sugeridas se identifican como pendientes. Un calculador de plazos requiere reglas locales revisadas, hecho de inicio confirmado, calendario/versionado y casos de prueba; queda bloqueado mientras eso no exista.</p>
+<p>Cada tarea tiene responsable, asunto, fecha si aplica, estado y dependencia. Los recordatorios escalan según política conocida. Reintentar una notificación no crea otra tarea. Vacaciones o sustituciones mantienen el historial de asignación.</p>
+<h3>Comunicaciones</h3>
+<p>Se integrarán correo, calendario y otros canales solo mediante conexiones autorizadas y contratos comprobados. No se importan bandejas completas indiscriminadamente ni se comparten contactos de un estudio con otro. Los mensajes se vinculan explícitamente a asuntos y conservan adjuntos y procedencia.</p>
+<p>Los borradores IA no se envían automáticamente como asesoramiento final. Los envíos externos requieren permiso y aprobación acorde al tipo de mensaje. El portal permite solicitar documentos, recibirlos, confirmar recepción y compartir entregables; debe distinguir recepción técnica de aceptación o revisión profesional.</p>
+<p>La agenda operativa y las comunicaciones pueden funcionar sin integración judicial automática: el origen manual se etiqueta. Ese modo no se comercializa como sincronización estatal ni autoriza promesas de monitoreo continuo.</p>
+</div></section><section class="section" id="s14"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s14"><strong>15. Honorarios, administración y dirección</strong><span>▼</span></button><div class="section-content" id="c-s14"><h3>Gestión económica propuesta</h3>
+<p>Soportar acuerdos por monto fijo, etapas, abono y tiempo cuando el estudio los utilice; otras modalidades se validan con el piloto. Registrar alcance, moneda, responsables y versión aceptada. No suponer que todas las horas son facturables ni que un importe estimado ya se devengó.</p>
+<p>Separar acordado, trabajo registrado, facturado, cobrado y pendiente. Los anticipos y gastos recuperables se aplican una sola vez; las anulaciones se hacen con reversos y autorización, no borrando historial. Los fondos de clientes requieren cuentas/registros separados de ingresos propios y revisión profesional de la modalidad aplicable.</p>
+<p>La emisión fiscal e integración contable se trata como un conector específico, no como un PDF visualmente parecido a una factura. Tasas, autorizaciones y obligaciones no se definen por memoria de una LLM. No se implementa contabilidad tributaria completa sin cerrar esos requisitos.</p>
+<h3>Reportes útiles</h3>
+<p>Dirección ve trabajo sin próxima acción, entregas demoradas, carga por abogado, asuntos con saldo pendiente y trabajo aún no facturado. La rentabilidad necesita costos y reglas acordadas; cuando falten, mostrar cobertura de datos y métricas parciales en vez de un margen ficticio.</p>
+<p>Cada KPI debe poder abrir el listado que lo explica. Los totales respetan permisos, fechas, monedas y estados. Un reporte no suma monedas distintas sin una conversión identificable ni trata facturación como caja.</p>
+</div></section><section class="section" id="s15"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s15"><strong>16. Desarrollo de Junta propia — sin dependencia de Mussi</strong><span>▼</span></button><div class="section-content" id="c-s15"><p><strong>Decisión aprobada posterior a v1.1:</strong> construir nuestro workflow desde cero. Cualquier texto antiguo que ordene clonar <code>juntaClinica.js</code> o reconstruir el 3→2→1 queda superado. Mussi se preserva sin cambios, y sus benchmarks no sirven como validación de la Junta jurídica nueva.</p>
+<p>La Fase 1 implementó el motor offline; Fase 2 corrigió extracción, firmas/registry, versiones, restricciones de proveedor, introdujo corpus de tres originales y OS Core en servicios; todo pendiente de pruebas reales de proveedores y de política de procedencia oficial. Preservar historial, pruebas y fixtures; avanzar por cambios pequeños sin reconstruir desde cero.</p>
+<p><strong>Paralelismo autorizado:</strong> frente Junta/RAG y frente OS Core, con ramas separadas cuando Git exista. Ningún avance en la Junta debe bloquear el desarrollo convencional de clientes, asuntos, permisos, tareas, documentos y administración. El OS debe operar sin LLMs.</p>
+</div></section><section class="section" id="s16"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s16"><strong>17. Contratos funcionales entre OS y Junta</strong><span>▼</span></button><div class="section-content" id="c-s16"><table>
+<thead>
+<tr>
+<th>Operación lógica</th>
+<th>Entrada / propiedad</th>
+<th>Resultado / obligación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>openMatter</code></td>
+<td>study_id, client_id, responsable, fecha, estado</td>
+<td>Asunto durable, autorización y actividad.</td>
+</tr>
+<tr>
+<td><code>attachDocument</code></td>
+<td>matter_id, original, scope</td>
+<td>Versión inmutable y hash, permisos y estado de extracción.</td>
+</tr>
+<tr>
+<td><code>createResearchRequest</code></td>
+<td>cuestión, materia, alcance, snapshot, presupuesto</td>
+<td>Request versionada; no dispara inferencia sin autorización.</td>
+</tr>
+<tr>
+<td><code>assembleEvidencePack</code></td>
+<td>run_id, filtros, permisos, versiones</td>
+<td>Snapshot localizable, cobertura y estado RAG.</td>
+</tr>
+<tr>
+<td><code>runJunta</code></td>
+<td>request congelada, permiso, presupuesto</td>
+<td>Ejecución idempotente con stages, costo, timeout y resultado no aprobado.</td>
+</tr>
+<tr>
+<td><code>checkCitation</code></td>
+<td>referencia, corpus oficial, policy de confianza</td>
+<td>Clasificación determinística con evidencia y razones.</td>
+</tr>
+<tr>
+<td><code>createDraft</code></td>
+<td>asunto, plantilla, análisis seleccionado</td>
+<td>Documento editable, no aprobado por IA.</td>
+</tr>
+<tr>
+<td><code>approveDocumentVersion</code></td>
+<td>ID exacto de versión y usuario autorizado</td>
+<td>Aprobación inmutable para esa versión; no aprobación genérica del archivo.</td>
+</tr>
+<tr>
+<td><code>recordDeliveryOrFiling</code></td>
+<td>documento aprobado, acto externo, recibo</td>
+<td>Entrega/presentación acreditada, nunca inferida por descarga.</td>
+</tr>
+</tbody>
+</table>
+<p>Especificación lógica: contratos productivos en SQL/API pendientes del <strong>ADR OS-001</strong>. El servicio offline existente no constituye backend productivo autorizado. Consentimiento, aislamiento por tenant y revisiones deben verificarse también en jobs/cachés/contexto LLM. No automatizar plazos procesales por LLM.</p>
+</div></section><section class="section" id="s17"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s17"><strong>18. QA, evaluaciones y criterios de DONE</strong><span>▼</span></button><div class="section-content" id="c-s17"><h3>Gates independientes</h3>
+<ol>
+<li><strong>Motor offline:</strong> tests unitarios, contratos, checker y orquestador; 271/271 PASS <strong>reportado</strong> al 13/10, aún sujeto a reproducción en este corte de código.</li>
+<li><strong>Extractor:</strong> medir detección y resolución sobre corpus real; 12/12 detectadas y 11/12 extraídas reportado. Un FAIL conocido impide certificar cobertura.</li>
+<li><strong>Procedencia oficial:</strong> originales con hash ≠ autenticación cerrada. Falta policy de emisores/autoridad y curaduría externa.</li>
+<li><strong>Proveedores:</strong> solo smoke sin costo reportado; acceso API real BLOQUEADO (Google 401, Jev/OpenAI sin credenciales).</li>
+<li><strong>OS Core:</strong> 42 pruebas sintéticas y flujo de 14 pasos; no equivale a app web, sesiones o RLS productivos.</li>
+<li><strong>Integración:</strong> carga de original, asunto, Junta, auditoría/checker, borrador, revisión/aprobación, entrega registrada, actividad y costos.</li>
+<li><strong>UI:</strong> densidad, jerarquía, navegación por teclado, error y vacío, estados reales; screenshots desktop 100% + referencia visual 85%.</li>
+<li><strong>Seguridad:</strong> dos estudios, varios asuntos, acceso negativo a API/documentos/índices/caché/LLM y revocación.</li>
+</ol>
+<h3>Definición de DONE de un producto OS real</h3>
+<p>Solo si existe autenticación empresarial, persistencia durable, permisos a nivel servidor/BD, flujos transaccionales completos, UI navegable, E2E no sintético, restauración y gestión de errores; pruebas reales de integración de la Junta/identidad de referencias o bloqueo explícito visible. El OS Core aislado no cierra el producto. No hacer deploy con mocks.</p>
+<p><strong>Métricas principales de la Junta:</strong> <code>citation_detection_recall</code>, <code>false_verified_count</code>, <code>authentic_citations_unresolved</code>, <code>critical_document_omission</code>, <code>source_provenance_failures</code>, costo real por asunto/encargo, p50/p90, reintentos, tokens reales. Separar dictamen jurídico revisado por abogado de identidad de referencias.</p>
+</div></section><section class="section" id="s18"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s18"><strong>19. Operación, protección de datos y continuidad</strong><span>▼</span></button><div class="section-content" id="c-s18"><p>Proponer ambientes separados, secretos fuera del repositorio, control de acceso del lado servidor, cifrado según proveedor, auditoría útil, exportaciones autorizadas y backups con restauración ensayada. La selección de proveedores debe revisar ubicación, retención y uso de entradas por los modelos; no se declara cumplimiento normativo por contratar un servicio determinado.</p>
+<p>Los documentos estatales pueden contener datos personales o material reservado. El carácter público de un portal no habilita republicar indiscriminadamente todo dato. Registrar exclusiones, retiro/corrección, permisos y solicitudes de borrado conforme a políticas revisadas profesionalmente.</p>
+<p>El sistema limita tamaño de archivos, protege la recuperación de URLs contra destinos no permitidos y separa instrucciones de documentos. Los logs operativos no deben almacenar prompts completos privados por defecto. El soporte no puede leer todos los asuntos para depurar sin control.</p>
+<p>Tareas de ingesta usan límites aprobados, reintentos con espera, checkpoints y alarmas; nunca un scraper infinito agresivo. La falla de actualización conserva el último snapshot identificable y muestra su fecha, sin anunciar actualidad inexistente.</p>
+<p>Se monitorean pipeline de fuentes, colas, etapas de Junta, costos, permisos fallidos y entrega de notificaciones. Las métricas de éxito operativo se mantienen separadas de la calidad bibliográfica.</p>
+</div></section><section class="section" id="s19"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s19"><strong>20. Decisiones pendientes — no resolver por intuición</strong><span>▼</span></button><div class="section-content" id="c-s19"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Decisión</th>
+<th>Estado e impacto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADR OS-001</td>
+<td>Web stack, backend, BD, auth, storage, jobs, hosting/región</td>
+<td><strong>PENDING_DECISION</strong>; impide implementación empresarial final. Requiere leer <code>OS_CORE_ARCHITECTURE.md</code>.</td>
+</tr>
+<tr>
+<td>PROD-01</td>
+<td>Estudio piloto, tamaño, roles reales, especialidades y proceso de cobros</td>
+<td>PENDIENTE; regula prioridades y aceptación de UI/operativa.</td>
+</tr>
+<tr>
+<td>DATA-01</td>
+<td>Fuentes oficiales, licencias, atestadores/registry, OCR y cobertura</td>
+<td><strong>BLOCKED</strong> para verificar jurisprudencia real.</td>
+</tr>
+<tr>
+<td>AI-01</td>
+<td>Model IDs accesibles, credenciales, política de costos y datos</td>
+<td><strong>BLOCKED</strong>; Google 401, Jev/OpenAI sin confirmación.</td>
+</tr>
+<tr>
+<td>QA-01</td>
+<td>Umbrales de recall real y holdout externo independiente</td>
+<td>PENDIENTE; 11/12 no acredita certificación.</td>
+</tr>
+<tr>
+<td>OPS-01</td>
+<td>Dominio/Git/CI, ambiente dev/preview/prod y deploy</td>
+<td>PENDIENTE; no existe Git según último reporte.</td>
+</tr>
+<tr>
+<td>COM-01</td>
+<td>Modelo comercial y costo real por abogado/Junta</td>
+<td>PENDIENTE; no sostener IA ilimitada por supuestos.</td>
+</tr>
+<tr>
+<td>LOCAL-01</td>
+<td>Plazos, facturación paraguaya, firma y conectores judiciales</td>
+<td>FUERA de Fase 2; requiere contratos/localización.</td>
+</tr>
+<tr>
+<td>GOV-01</td>
+<td>Residencia, confidencialidad, retención y borrado</td>
+<td>PENDIENTE; no subir datos reales a IA sin política.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tratamiento:</strong> cada cierre requiere ADR con responsable, criterio, alternativas descartadas, evidencia y alcance. Los documentos actuales no constituyen permiso para que un agente tome decisiones por el propietario.</p>
+</div></section><section class="section" id="s20"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s20"><strong>21. Alcance de producto y próximos gates</strong><span>▼</span></button><div class="section-content" id="c-s20"><p><strong>Entrega prioritaria:</strong> cerrar ADR OS-001 y comenzar app compacta real con estudios, login, membresías, clientes, asuntos, documentos, tareas y versiones; en paralelo, curar corpus oficial y ejecutar un smoke real acotado de Junta solo tras autorización de gasto y credenciales. No desplazar el OS completo por otra iteración indefinida del motor offline.</p>
+<p><strong>Fuera de fase próxima:</strong> predicción de sentencias, presentación judicial automática, scraping no autorizado, expansión a 18 países, facturación paraguaya productiva sin reglas validadas, promesas de uso LLM ilimitado. <strong>Dentro del alcance total:</strong> comunicaciones, workflow, agenda, portal, honorarios, gastos y cobros.</p>
+</div></section><section class="section" id="s21"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s21"><strong>22. Fuentes del blueprint y ruta de instalación</strong><span>▼</span></button><div class="section-content" id="c-s21"><ul>
+<li><code>PHASE2_IMPLEMENTATION_REPORT.md</code> (usuario, 13/10/2026) = estado reportado más reciente.</li>
+<li><code>AUDIT_REMEDIATION.md</code> (usuario) e <code>IMPLEMENTATION_REPORT.md</code> (usuario) = historia de F1 / remediación.</li>
+<li>Blueprint y Roadmap V1.1 = alcance histórico de OS completo, preservado bajo <code>docs/historico/</code>.</li>
+<li>Investigación pública de fuentes V1.1 = informe/registro preservados bajo <code>docs/fuentes/</code>.</li>
+<li><code>docs/ADR_RECONCILIACION_V2.md</code> = cambios explícitos y asuntos abiertos.</li>
+<li><code>docs/CODEX_HANDOFF_INSTALACION.md</code> = cómo incorporar documentación en carpeta local sin modificar código.</li>
+</ul>
+<p><strong>Este documento no prueba acceso al disco C: del usuario.</strong> Debe instalarse bajo <code>C:\Users\User\Desktop\PORYECTOS\LAW &amp; ORDER OS\docs\</code>; después Codex valida la ruta exacta y prioriza este blueprint. No sobrescribir reportes existentes.</p>
+</div></section><div class="footer">LAW &amp; ORDER OS · Fuente editable Markdown incluida en el ZIP. Interacciones locales, sin red.</div></main></div><script>
+(function(){const KEY='law-order-os:v2.0:roadmap-checks';const tasks=Array.from(document.querySelectorAll('input[data-task]'));let state={};try{state=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){state={}}
+function update(){let c=0;tasks.forEach(x=>{if(x.checked)c++;x.closest('.task').classList.toggle('done',x.checked)});const n=document.getElementById('progress');if(n)n.textContent=`Seguimiento local: ${c}/${tasks.length} tareas marcadas. No son gates certificados.`}
+tasks.forEach(x=>{x.checked=!!state[x.dataset.task];x.addEventListener('change',()=>{state[x.dataset.task]=x.checked;try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}update()})});update();
+document.querySelectorAll('.section-head').forEach(b=>b.addEventListener('click',()=>{const s=b.closest('.section');s.classList.toggle('collapsed');b.setAttribute('aria-expanded',String(!s.classList.contains('collapsed')));b.querySelector('span').textContent=s.classList.contains('collapsed')?'▶':'▼'}));
+document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.toLocaleLowerCase().trim();document.querySelectorAll('.section').forEach(s=>{const yes=!q||s.textContent.toLocaleLowerCase().includes(q);s.classList.toggle('hidden-search',!yes);if(q&&yes){s.classList.remove('collapsed');s.querySelector('.section-head').setAttribute('aria-expanded','true')}})});
+document.getElementById('expand').addEventListener('click',()=>document.querySelectorAll('.section:not(.hidden-search)').forEach(s=>{s.classList.remove('collapsed');s.querySelector('.section-head').setAttribute('aria-expanded','true')}));
+document.getElementById('collapse').addEventListener('click',()=>document.querySelectorAll('.section:not(.hidden-search)').forEach(s=>{s.classList.add('collapsed');s.querySelector('.section-head').setAttribute('aria-expanded','false')}));
+const exportBtn=document.getElementById('export');if(exportBtn)exportBtn.addEventListener('click',()=>{const blob=new Blob([JSON.stringify({document:'LAW_ORDER_OS_ROADMAP_v2.0',exported_at:new Date().toISOString(),checked:state},null,2)],{type:'application/json'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='LAW_ORDER_ROADMAP_SEGUIMIENTO_LOCAL.json';a.click();URL.revokeObjectURL(u)})
+})();</script></body></html>

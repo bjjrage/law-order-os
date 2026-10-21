@@ -1,0 +1,1811 @@
+{
+  "status": "LIVE_GENERATION_COMPLETED",
+  "started_at": "2026-10-19T05:12:45.050Z",
+  "finished_at": "2026-10-19T05:50:14.868Z",
+  "model": "gpt-6-luna",
+  "generated": 18,
+  "successful": 18,
+  "automated_reviews": 14,
+  "accounted_upper_usd": 1.558872,
+  "calibration_accounted_upper_usd": 0.27957475,
+  "combined_accounted_upper_usd": 1.83844675,
+  "actual_invoice_cost_usd": null,
+  "human_legal_review": "NOT_RUN",
+  "human_correction_times": "NOT_MEASURED",
+  "legal_superiority": "NOT_ESTABLISHED",
+  "results": [
+    {
+      "run_id": "P01-A-R1",
+      "case_id": "P01",
+      "modality": "A",
+      "repetition": 1,
+      "started_at": "2026-10-19T05:12:45.728Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "dfa259867f844c18aaaaf78afb1f40a6",
+      "paid_inference": true,
+      "output_sha256": "bfd6b9298bf8ed7569bc2ac98e6d23e0f694f479ac6aa3815a82d44b26a08ef8",
+      "blind_output_sha256": "bfd6b9298bf8ed7569bc2ac98e6d23e0f694f479ac6aa3815a82d44b26a08ef8",
+      "output_words_including_annex": 1488,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [
+        "F03-L00599",
+        "F03-L00609",
+        "F03-L00700",
+        "F03-L00641",
+        "F03-L00664",
+        "F03-L00021",
+        "F03-L00087",
+        "F03-L00098",
+        "F03-L00194",
+        "F03-L00690",
+        "F02-L00118",
+        "F02-L00076",
+        "F02-L00759",
+        "F02-L00793",
+        "F02-L00732",
+        "F02-L00741"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:13:59.815Z",
+      "elapsed_ms": 74086,
+      "usage": {
+        "calls": 27,
+        "input_tokens": 643307,
+        "output_tokens_including_reasoning": 3538,
+        "cost_accounted_upper_usd": 0.082182375,
+        "estimated_standard_no_cache_discount_usd": 0.0660997,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P01-B-R1",
+      "case_id": "P01",
+      "modality": "B",
+      "repetition": 1,
+      "started_at": "2026-10-19T05:13:59.821Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "48f3ace32ceb46c89ea5316f70fea936",
+      "paid_inference": true,
+      "output_sha256": "35abbae32d8fcc2fecd9896a1edb5d4b47e17b0189dd363b0ae5c96c73c9dfcb",
+      "blind_output_sha256": "35abbae32d8fcc2fecd9896a1edb5d4b47e17b0189dd363b0ae5c96c73c9dfcb",
+      "output_words_including_annex": 1680,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [
+        "F03-L00599",
+        "F01-L00272",
+        "F02-L00118",
+        "F02-L00759",
+        "F02-L00793",
+        "F02-L00732",
+        "F02-L00740"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:16:30.761Z",
+      "elapsed_ms": 150940,
+      "usage": {
+        "calls": 29,
+        "input_tokens": 915417,
+        "output_tokens_including_reasoning": 8825,
+        "cost_accounted_upper_usd": 0.118839625,
+        "estimated_standard_no_cache_discount_usd": 0.0959542,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P01-C-R1",
+      "case_id": "P01",
+      "modality": "C",
+      "repetition": 1,
+      "started_at": "2026-10-19T05:16:30.950Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "49825e2527134601991bd7fed80f88e0",
+      "paid_inference": true,
+      "output_sha256": "6eea423416e6fa2a0f7cc2e57d8f1adce73f30b8c1f1fe4bbeefeaac61bd9da6",
+      "blind_output_sha256": "6eea423416e6fa2a0f7cc2e57d8f1adce73f30b8c1f1fe4bbeefeaac61bd9da6",
+      "output_words_including_annex": 1685,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:17:45.398Z",
+      "elapsed_ms": 74449,
+      "usage": {
+        "calls": 30,
+        "input_tokens": 343531,
+        "output_tokens_including_reasoning": 10683,
+        "cost_accounted_upper_usd": 0.048282875,
+        "estimated_standard_no_cache_discount_usd": 0.0396946,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P02-B-R1",
+      "case_id": "P02",
+      "modality": "B",
+      "repetition": 1,
+      "started_at": "2026-10-19T05:17:45.559Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "a97a962708544bb79ce51ad9ee2432dd",
+      "paid_inference": true,
+      "output_sha256": "ea47b0ad594c0ad2c9775fde8d5ba380a9a3f419468d856b653519d4d6ce8f6b",
+      "blind_output_sha256": "ea47b0ad594c0ad2c9775fde8d5ba380a9a3f419468d856b653519d4d6ce8f6b",
+      "output_words_including_annex": 1689,
+      "case_locator_mentions": [
+        "P02-D01-P01",
+        "P02-D03-P01",
+        "P02-D01-P02",
+        "P02-D02-P04",
+        "P02-D05-P01",
+        "P02-D02-P03",
+        "P02-D07-P04",
+        "P02-D02-P01",
+        "P02-D03-P02",
+        "P02-D07-P03",
+        "P02-D02-P02",
+        "P02-D04-P01",
+        "P02-D04-P03",
+        "P02-D03-P03",
+        "P02-D02-P05",
+        "P02-D07-P01",
+        "P02-D05-P03",
+        "P02-D07-P02",
+        "P02-D06-P01",
+        "P02-D06-P03",
+        "P02-D04-P02",
+        "P02-D06-P02"
+      ],
+      "source_locator_mentions": [
+        "F01-L00082",
+        "F01-L00085",
+        "F01-L00094",
+        "F03-L00098",
+        "F03-L00129",
+        "F03-L00599",
+        "F02-L00118",
+        "F02-L00076",
+        "F02-L00768"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:19:20.121Z",
+      "elapsed_ms": 94560,
+      "usage": {
+        "calls": 13,
+        "input_tokens": 214013,
+        "output_tokens_including_reasoning": 8332,
+        "cost_accounted_upper_usd": 0.030917625,
+        "estimated_standard_no_cache_discount_usd": 0.0255673,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P02-C-R1",
+      "case_id": "P02",
+      "modality": "C",
+      "repetition": 1,
+      "started_at": "2026-10-19T05:19:20.571Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "e6c4897a65ba4421a511370f3b761119",
+      "paid_inference": true,
+      "output_sha256": "2778be53737812563638aac7cefaa5b6ce625c3497c0ce02ed96daeeee5ed032",
+      "blind_output_sha256": "2778be53737812563638aac7cefaa5b6ce625c3497c0ce02ed96daeeee5ed032",
+      "output_words_including_annex": 1693,
+      "case_locator_mentions": [
+        "P02-D04-P03",
+        "P02-D05-P03",
+        "P02-D03-P01",
+        "P02-D01-P01",
+        "P02-D07-P01",
+        "P02-D03-P02",
+        "P02-D04-P02",
+        "P02-D03-P03",
+        "P02-D02-P01",
+        "P02-D07-P03",
+        "P02-D06-P01",
+        "P02-D06-P04",
+        "P02-D02-P03",
+        "P02-D05-P01",
+        "P02-D01-P02"
+      ],
+      "source_locator_mentions": [
+        "F02-L00118",
+        "F02-L00076",
+        "F02-L00701",
+        "F02-L00768",
+        "F03-L00747",
+        "F03-L00599",
+        "F03-L00606",
+        "F03-L00098",
+        "F03-L00087",
+        "F01-L00082",
+        "F02-L00732"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:20:18.302Z",
+      "elapsed_ms": 57731,
+      "usage": {
+        "calls": 23,
+        "input_tokens": 191799,
+        "output_tokens_including_reasoning": 8486,
+        "cost_accounted_upper_usd": 0.028217875,
+        "estimated_standard_no_cache_discount_usd": 0.0234229,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P02-A-R1",
+      "case_id": "P02",
+      "modality": "A",
+      "repetition": 1,
+      "started_at": "2026-10-19T05:20:18.307Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "0bdfe5bcac5e433a92518ff8359a6fcb",
+      "paid_inference": true,
+      "output_sha256": "713656d9742378ed3383b939a8cb214692c8bb5f49b17933c8e25ea864640655",
+      "blind_output_sha256": "713656d9742378ed3383b939a8cb214692c8bb5f49b17933c8e25ea864640655",
+      "output_words_including_annex": 1644,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [
+        "F03-L00749",
+        "F03-L00426"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:20:57.567Z",
+      "elapsed_ms": 39261,
+      "usage": {
+        "calls": 10,
+        "input_tokens": 103805,
+        "output_tokens_including_reasoning": 2878,
+        "cost_accounted_upper_usd": 0.014414625,
+        "estimated_standard_no_cache_discount_usd": 0.0118195,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P03-C-R1",
+      "case_id": "P03",
+      "modality": "C",
+      "repetition": 1,
+      "started_at": "2026-10-19T05:20:57.715Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "d5e6ac8725e446aaa8d8b27ee7ea96e7",
+      "paid_inference": true,
+      "output_sha256": "d2dd709cd11c030185e566bb57f922b7dff308508a5ab2d46e84c27054b42f15",
+      "blind_output_sha256": "d2dd709cd11c030185e566bb57f922b7dff308508a5ab2d46e84c27054b42f15",
+      "output_words_including_annex": 1679,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [
+        "F02-L00118",
+        "F02-L00076",
+        "F03-L00599",
+        "F03-L00664",
+        "F03-L00685"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:22:05.444Z",
+      "elapsed_ms": 67730,
+      "usage": {
+        "calls": 24,
+        "input_tokens": 244674,
+        "output_tokens_including_reasoning": 10147,
+        "cost_accounted_upper_usd": 0.03565775,
+        "estimated_standard_no_cache_discount_usd": 0.0295409,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P03-A-R1",
+      "case_id": "P03",
+      "modality": "A",
+      "repetition": 1,
+      "started_at": "2026-10-19T05:22:05.447Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "fda7cc4b03a3417d8e1bb177d5f93d69",
+      "paid_inference": true,
+      "output_sha256": "4044494b8b8ed64dfe42ffeb936514544c23457a9bc1a2584f9e6f16b7c60091",
+      "blind_output_sha256": "4044494b8b8ed64dfe42ffeb936514544c23457a9bc1a2584f9e6f16b7c60091",
+      "output_words_including_annex": 1478,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:23:02.149Z",
+      "elapsed_ms": 56703,
+      "usage": {
+        "calls": 21,
+        "input_tokens": 503955,
+        "output_tokens_including_reasoning": 3082,
+        "cost_accounted_upper_usd": 0.064535375,
+        "estimated_standard_no_cache_discount_usd": 0.0519365,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P03-B-R1",
+      "case_id": "P03",
+      "modality": "B",
+      "repetition": 1,
+      "started_at": "2026-10-19T05:23:02.156Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "8b188e3e05954e72a39046f935879c08",
+      "paid_inference": true,
+      "output_sha256": "250391f5684d3bb66b410124c0de386253ffb8ca783366af66d81ba28fed269b",
+      "blind_output_sha256": "250391f5684d3bb66b410124c0de386253ffb8ca783366af66d81ba28fed269b",
+      "output_words_including_annex": 1686,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:25:25.542Z",
+      "elapsed_ms": 143384,
+      "usage": {
+        "calls": 26,
+        "input_tokens": 998833,
+        "output_tokens_including_reasoning": 11245,
+        "cost_accounted_upper_usd": 0.130476625,
+        "estimated_standard_no_cache_discount_usd": 0.1055058,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P01-C-R2",
+      "case_id": "P01",
+      "modality": "C",
+      "repetition": 2,
+      "started_at": "2026-10-19T05:25:25.564Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "97a870f505c9437d8d70524e7fc88ff7",
+      "paid_inference": true,
+      "output_sha256": "4a077c0c5ae763a3c401871724d9f97e211363c6241ab1b31decf886e7e7c5af",
+      "blind_output_sha256": "4a077c0c5ae763a3c401871724d9f97e211363c6241ab1b31decf886e7e7c5af",
+      "output_words_including_annex": 1727,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [
+        "F02-L00118",
+        "F03-L00600",
+        "F03-L00664",
+        "F03-L00641",
+        "F03-L00081"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:26:47.545Z",
+      "elapsed_ms": 81982,
+      "usage": {
+        "calls": 29,
+        "input_tokens": 367197,
+        "output_tokens_including_reasoning": 12283,
+        "cost_accounted_upper_usd": 0.052041125,
+        "estimated_standard_no_cache_discount_usd": 0.0428612,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P01-B-R2",
+      "case_id": "P01",
+      "modality": "B",
+      "repetition": 2,
+      "started_at": "2026-10-19T05:26:47.551Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "873df254eb7f481ba4cb1dc8851070f5",
+      "paid_inference": true,
+      "output_sha256": "1c01a6cd567f766ac9a5dfbaa4ec993ec7e3a1d27155d9bb9201710e02b0dc8a",
+      "blind_output_sha256": "1c01a6cd567f766ac9a5dfbaa4ec993ec7e3a1d27155d9bb9201710e02b0dc8a",
+      "output_words_including_annex": 1880,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:29:04.182Z",
+      "elapsed_ms": 136630,
+      "usage": {
+        "calls": 28,
+        "input_tokens": 951155,
+        "output_tokens_including_reasoning": 10247,
+        "cost_accounted_upper_usd": 0.124017875,
+        "estimated_standard_no_cache_discount_usd": 0.100239,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P01-A-R2",
+      "case_id": "P01",
+      "modality": "A",
+      "repetition": 2,
+      "started_at": "2026-10-19T05:29:04.187Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "98be438b73f348aeae1158f4b979e17b",
+      "paid_inference": true,
+      "output_sha256": "3e6d44c37e304d102a197aa4d0edb9530e266f07792f189f8e0f1e8889a249f7",
+      "blind_output_sha256": "3e6d44c37e304d102a197aa4d0edb9530e266f07792f189f8e0f1e8889a249f7",
+      "output_words_including_annex": 1508,
+      "case_locator_mentions": [
+        "P01-D01-P02",
+        "P01-D02-P01",
+        "P01-D04-P02",
+        "P01-D07-P01",
+        "P01-D02-P02",
+        "P01-D02-P05",
+        "P01-D06-P02",
+        "P01-D06-P01",
+        "P01-D06-P03",
+        "P01-D03-P01",
+        "P01-D03-P03",
+        "P01-D02-P03",
+        "P01-D01-P04",
+        "P01-D05-P01",
+        "P01-D02-P04",
+        "P01-D01-P03",
+        "P01-D05-P04",
+        "P01-D03-P02",
+        "P01-D05-P02",
+        "P01-D07-P02"
+      ],
+      "source_locator_mentions": [],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:29:56.652Z",
+      "elapsed_ms": 52465,
+      "usage": {
+        "calls": 15,
+        "input_tokens": 320301,
+        "output_tokens_including_reasoning": 3009,
+        "cost_accounted_upper_usd": 0.041542125,
+        "estimated_standard_no_cache_discount_usd": 0.0335346,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P02-A-R2",
+      "case_id": "P02",
+      "modality": "A",
+      "repetition": 2,
+      "started_at": "2026-10-19T05:29:56.679Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "79c59fdfa2ae42eb8edd1eacdb46e417",
+      "paid_inference": true,
+      "output_sha256": "b42e61c2aecdb08d006ed50ffd20d23fc40cdbc3dc9b1450643d0c8e7bde28f5",
+      "blind_output_sha256": "b42e61c2aecdb08d006ed50ffd20d23fc40cdbc3dc9b1450643d0c8e7bde28f5",
+      "output_words_including_annex": 1835,
+      "case_locator_mentions": [
+        "P02-D03-P02",
+        "P02-D04-P02",
+        "P02-D03-P01",
+        "P02-D01-P01",
+        "P02-D02-P05",
+        "P02-D07-P01",
+        "P02-D04-P03",
+        "P02-D01-P03",
+        "P02-D03-P03",
+        "P02-D02-P02",
+        "P02-D03-P04",
+        "P02-D02-P01",
+        "P02-D07-P02",
+        "P02-D05-P03",
+        "P02-D02-P03",
+        "P02-D02-P04",
+        "P02-D01-P02",
+        "P02-D05-P01",
+        "P02-D06-P01",
+        "P02-D06-P03",
+        "P02-D06-P02",
+        "P02-D06-P04",
+        "P02-D07-P03",
+        "P02-D07-P04"
+      ],
+      "source_locator_mentions": [
+        "F03-L00098",
+        "F03-L00129"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:30:37.062Z",
+      "elapsed_ms": 40384,
+      "usage": {
+        "calls": 7,
+        "input_tokens": 76219,
+        "output_tokens_including_reasoning": 3261,
+        "cost_accounted_upper_usd": 0.011157875,
+        "estimated_standard_no_cache_discount_usd": 0.0092524,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P02-C-R2",
+      "case_id": "P02",
+      "modality": "C",
+      "repetition": 2,
+      "started_at": "2026-10-19T05:30:37.140Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "de2be54c83c14282bf0620af12170869",
+      "paid_inference": true,
+      "output_sha256": "768e457d07b3daa0f647b457e217a13635f8e58f3c6d67ebc77b78276e5ed899",
+      "blind_output_sha256": "768e457d07b3daa0f647b457e217a13635f8e58f3c6d67ebc77b78276e5ed899",
+      "output_words_including_annex": 1630,
+      "case_locator_mentions": [
+        "P02-D05-P01",
+        "P02-D05-P03",
+        "P02-D03-P01",
+        "P02-D01-P01",
+        "P02-D07-P01",
+        "P02-D03-P02",
+        "P02-D04-P02",
+        "P02-D04-P03",
+        "P02-D03-P03",
+        "P02-D02-P01",
+        "P02-D06-P01",
+        "P02-D06-P02",
+        "P02-D07-P02",
+        "P02-D02-P03",
+        "P02-D01-P02",
+        "P02-D07-P04",
+        "P02-D02-P04"
+      ],
+      "source_locator_mentions": [
+        "F02-L00118",
+        "F02-L00076",
+        "F03-L00747",
+        "F03-L00098",
+        "F03-L00733",
+        "F03-L00129",
+        "F03-L00700"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:31:45.215Z",
+      "elapsed_ms": 68075,
+      "usage": {
+        "calls": 25,
+        "input_tokens": 268720,
+        "output_tokens_including_reasoning": 8471,
+        "cost_accounted_upper_usd": 0.0378255,
+        "estimated_standard_no_cache_discount_usd": 0.0311075,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P02-B-R2",
+      "case_id": "P02",
+      "modality": "B",
+      "repetition": 2,
+      "started_at": "2026-10-19T05:31:45.228Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "688315d4284344b8beeb663bb05322b5",
+      "paid_inference": true,
+      "output_sha256": "afeb73ffffdddc57bc8aba9ff22b681180a1935c2cf4279dd38480f6df344dd7",
+      "blind_output_sha256": "afeb73ffffdddc57bc8aba9ff22b681180a1935c2cf4279dd38480f6df344dd7",
+      "output_words_including_annex": 1515,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [
+        "F01-L00082",
+        "F01-L00094",
+        "F03-L00098",
+        "F03-L00129",
+        "F02-L00118",
+        "F02-L00732",
+        "F02-L00793"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:33:26.991Z",
+      "elapsed_ms": 101764,
+      "usage": {
+        "calls": 18,
+        "input_tokens": 344950,
+        "output_tokens_including_reasoning": 7961,
+        "cost_accounted_upper_usd": 0.04709925,
+        "estimated_standard_no_cache_discount_usd": 0.0384755,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P03-B-R2",
+      "case_id": "P03",
+      "modality": "B",
+      "repetition": 2,
+      "started_at": "2026-10-19T05:33:27.162Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "e9448c92ba6a4647b276ab9ec77674f9",
+      "paid_inference": true,
+      "output_sha256": "2b09b313efe2b35ac7c89e1610b6fee03d5fc332a1392b81d150ecf1752671e7",
+      "blind_output_sha256": "2b09b313efe2b35ac7c89e1610b6fee03d5fc332a1392b81d150ecf1752671e7",
+      "output_words_including_annex": 1563,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:35:27.450Z",
+      "elapsed_ms": 120286,
+      "usage": {
+        "calls": 24,
+        "input_tokens": 679999,
+        "output_tokens_including_reasoning": 8863,
+        "cost_accounted_upper_usd": 0.089431375,
+        "estimated_standard_no_cache_discount_usd": 0.0724314,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P03-A-R2",
+      "case_id": "P03",
+      "modality": "A",
+      "repetition": 2,
+      "started_at": "2026-10-19T05:35:27.456Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "7e46424f571f401cb0dcedb09822fba9",
+      "paid_inference": true,
+      "output_sha256": "f3984424e9affbf4c56ba541f458f35119688ddc77fc9aa81adb1b3f56e4fe13",
+      "blind_output_sha256": "f3984424e9affbf4c56ba541f458f35119688ddc77fc9aa81adb1b3f56e4fe13",
+      "output_words_including_annex": 1496,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [
+        "F02-L00118",
+        "F03-L00599",
+        "F03-L00664"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:36:03.582Z",
+      "elapsed_ms": 36127,
+      "usage": {
+        "calls": 9,
+        "input_tokens": 148796,
+        "output_tokens_including_reasoning": 2876,
+        "cost_accounted_upper_usd": 0.0200375,
+        "estimated_standard_no_cache_discount_usd": 0.0163176,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    },
+    {
+      "run_id": "P03-C-R2",
+      "case_id": "P03",
+      "modality": "C",
+      "repetition": 2,
+      "started_at": "2026-10-19T05:36:03.589Z",
+      "status": "COMPLETED",
+      "model": "gpt-6-luna",
+      "blind_id": "db8f9e2685e042c49e5b90ac68f095e4",
+      "paid_inference": true,
+      "output_sha256": "c1a38ecf2f08daae5aaf0865a2a200eb64f8146f57a99b3eacd356fdc47d74ee",
+      "blind_output_sha256": "c1a38ecf2f08daae5aaf0865a2a200eb64f8146f57a99b3eacd356fdc47d74ee",
+      "output_words_including_annex": 1668,
+      "case_locator_mentions": [],
+      "source_locator_mentions": [
+        "F02-L00118",
+        "F03-L00605",
+        "F03-L00664",
+        "F03-L00709"
+      ],
+      "invalid_case_locators": [],
+      "finished_at": "2026-10-19T05:37:08.550Z",
+      "elapsed_ms": 64960,
+      "usage": {
+        "calls": 18,
+        "input_tokens": 201433,
+        "output_tokens_including_reasoning": 10719,
+        "cost_accounted_upper_usd": 0.030538625,
+        "estimated_standard_no_cache_discount_usd": 0.0255028,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.45
+      }
+    }
+  ],
+  "grades": [
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P02-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "son alternativas para discutir, no aceptadas por Laurel",
+          "explanation": "El memo recoge que no hay aceptación documentada ni aprobación interna de compra o reserva, y trata la conclusión sobre la inexistencia de compromiso como provisional, sujeta a revisar comunicaciones y poderes. Responde de forma útil al hallazgo sin afirmar que la ausencia de documentos pruebe que no hubo actuaciones externas."
+        },
+        {
+          "reference_id": "P02-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "El contrato vigente hasta el 28/02/2028 requiere autorización previa y escrita tanto para cesión/sustitución del prestador como para cambio directo o indirecto de control",
+          "explanation": "Aplica correctamente la cláusula a ambas estructuras, rebate la afirmación del vendedor sobre la compra de acciones y relaciona el consentimiento con la resolución contractual y la valoración."
+        },
+        {
+          "reference_id": "P02-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No consta decisión de terminar ni incumplimiento actual, pero la reunión propuesta para el 27/10 no es promesa de aprobación ni plazo de resolución",
+          "explanation": "Distingue la recepción de la solicitud y la predisposición a reunirse de una autorización. También conserva la alternativa de que Horizonte no termine el contrato y propone condicionar compromisos a una respuesta escrita específica."
+        },
+        {
+          "reference_id": "P02-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Recomiendo no pagar ni firmar reserva con esos términos.",
+          "explanation": "Identifica la falta de autorización y acuerdo separado, la pérdida no reembolsable para Laurel, la ausencia de remedio si desiste el vendedor y la cuenta personal no verificada. Propone alternativas de protección sin afirmar que una técnica particular sea obligatoria."
+        },
+        {
+          "reference_id": "P02-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Si jurídicamente hay sustitución de empleador, el Código del Trabajo establece que no afecta los contratos vigentes y prevé responsabilidad solidaria del empleador sustituido y del sustituyente por obligaciones previas durante seis meses desde la sustitución",
+          "explanation": "Explica la consecuencia laboral de una posible sustitución, evita afirmar que el cambio ya ocurrió o que la antigüedad desaparece, y reconoce que la clasificación depende de la estructura y documentación final."
+        },
+        {
+          "reference_id": "P02-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No usar los importes tributarios de la hoja financiera para decidir",
+          "explanation": "Describe las inconsistencias de ambas hojas y advierte que los importes no constituyen liquidaciones. Diferencia la exención de IVA aplicable a acciones de la tributación de renta y deja pendiente un análisis por estructura, sujeto y activos. La conclusión está bien delimitada, aunque una cita jurídica del memo es errónea; se registra por separado."
+        },
+        {
+          "reference_id": "P02-H07",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "conciliar nómina, horarios, pagos, aportes, vacaciones y contingencias por trabajador",
+          "explanation": "No convierte el estimado de PYG 16.000.000 en una deuda liquidada, distingue los recibos de salario base de la conciliación de horas y señala que faltan registros y revisión de otras obligaciones laborales."
+        }
+      ],
+      "errors": [
+        {
+          "severity": "MATERIAL",
+          "category": "INCORRECT_SOURCE_APPLICATION",
+          "exact_output_quote": "La ley incluye ganancias de capital derivadas de enajenación de acciones en los supuestos del art. 12.5 (F03-L00426)",
+          "evidence_locator": "F03-L00426 está en el Artículo 57, numeral 5, de la Ley 6380; no es el artículo 12.5.",
+          "explanation": "La proposición sustantiva se apoya en el pasaje pertinente, pero la referencia «art. 12.5» no corresponde a ese pasaje y puede inducir a error al verificar la conclusión. Debe corregirse a Artículo 57, numeral 5. El error no invalida por sí mismo la recomendación tributaria cautelosa."
+        }
+      ],
+      "novel_valid_findings": [],
+      "recommendation_coherent": true,
+      "limitations": [
+        "El expediente no incluye documentación corporativa completa, inventario detallado de activos, conciliaciones completas de pasivos ni registros íntegros de jornadas; el memo identifica varias de estas carencias y condiciona la decisión a diligencia adicional.",
+        "Las fuentes normativas aportadas no acreditan consolidación ni vigencia completa a la fecha de corte; el memo reconoce la necesidad de confirmar la normativa tributaria vigente antes del cierre."
+      ],
+      "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+      "blind_id": "0bdfe5bcac5e433a92518ff8359a6fcb",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 232306,
+        "output_tokens_including_reasoning": 1530,
+        "cost_accounted_upper_usd": 0.02980325,
+        "estimated_standard_no_cache_discount_usd": 0.0239956,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 0
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P01-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "El borrador no es vinculante, pero sus términos económicos difieren del presupuesto autorizado y dejan sin resolver condiciones esenciales: el precio podría aumentar por tributos",
+          "explanation": "Identifica la diferencia entre el precio neto más tributos de P01-D02 v2, P02 y el límite autorizado de P01-D01 v1, P02. Recomienda fijar un tope total y remitir cualquier exceso al comité, sin asumir que la oferta anterior con impuestos incluidos prevalece ni calcular un tributo sin fundamento."
+        },
+        {
+          "reference_id": "P01-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "La continuidad con Maroma es una condición comercial crítica, no un resultado acordado.",
+          "explanation": "Expone la restricción de cesión y la exigencia de consentimiento previo escrito de P01-D03 v1, P02; distingue ese requisito del interés preliminar expresado por Maroma en P01-D04 v1, P02-P03. Mantiene alternativas razonables: negociar acuerdo escrito, evaluar proveedores alternativos y revisar márgenes o retirarse."
+        },
+        {
+          "reference_id": "P01-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "la suma de PYG 9.000.000 es aritmética de los registros, no una liquidación ni prueba concluyente de saldo exigible.",
+          "explanation": "Distingue correctamente el registro de comisiones impagas de una liquidación jurídica y señala que los recibos de salario base no acreditan el pago de esas comisiones. También propone conciliar individualmente vacaciones y otras partidas, con referencias al Código del Trabajo sobre comisiones, aguinaldo y vacaciones."
+        },
+        {
+          "reference_id": "P01-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Si jurídicamente hay sustitución patronal, la Ley 213 establece que los contratos vigentes no se afectan y prevé responsabilidad solidaria por obligaciones anteriores durante seis meses, con responsabilidad del nuevo empleador subsistente después; la aplicación de esa norma a esta venta de activos requiere asesoría laboral específica.",
+          "explanation": "Trata la sustitución patronal como una cuestión condicionada a su caracterización, no como conclusión automática; explica la consecuencia legal citada y aclara que la indemnidad contractual no elimina derechos de terceros. Recomienda no exigir renuncias ni ignorar antigüedad."
+        },
+        {
+          "reference_id": "P01-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "la impresión verbal del contador del vendedor de que no habría IVA por no vender acciones no está sustentada.",
+          "explanation": "Contrasta esa manifestación privada con la amplitud de los hechos generadores y la definición de enajenación de la Ley 6380, arts. 80-81, y evita fijar tasa o importe sin caracterizar cada componente. Señala además la falta de análisis escrito y documentación fiscal."
+        },
+        {
+          "reference_id": "P01-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Excluir del precio el saldo a favor de IVA de PYG 22.000.000 hasta acreditar su procedencia y disponibilidad para Cedro",
+          "explanation": "Reconoce que el saldo figura a nombre de Naranjal y que no se aportó fundamento para tratarlo como crédito de Cedro; recomienda no sumarlo a activos ni precio salvo respaldo suficiente."
+        }
+      ],
+      "errors": [],
+      "novel_valid_findings": [
+        "El memo no aborda la posible aplicación del art. 13 de la Ley 6380 si la operación se caracteriza jurídicamente como transferencia de un establecimiento comercial: ese artículo dispone que la transferencia implica el cierre del ejercicio económico para el enajenante y que el adquirente mantenga el mismo valor fiscal de los bienes al adquirirlos. El expediente describe la venta de inventario, equipos y derechos comerciales, pero no permite resolver por sí solo si alcanza el umbral de transferencia de establecimiento. Conviene pedir al asesor tributario que determine y documente esa caracterización y sus efectos; su omisión deja incompleto el análisis fiscal integrado."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "El corpus normativo aportado no acredita consolidación legislativa a la fecha de corte; debe verificarse la vigencia de las disposiciones citadas antes de autorizar el cierre.",
+        "La aplicación del régimen de sustitución patronal y la caracterización fiscal de la transferencia dependen de hechos y fuentes adicionales que el expediente no resuelve."
+      ],
+      "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+      "blind_id": "48f3ace32ceb46c89ea5316f70fea936",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 232633,
+        "output_tokens_including_reasoning": 1356,
+        "cost_accounted_upper_usd": 0.029757125,
+        "estimated_standard_no_cache_discount_usd": 0.0239413,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 0
+    },
+    {
+      "blind_id": "49825e2527134601991bd7fed80f88e0",
+      "status": "GRADE_FAILED",
+      "error": "TRANSPORT_OUTCOME_UNKNOWN",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 234563,
+        "output_tokens_including_reasoning": 8192,
+        "cost_accounted_upper_usd": 0.033416375,
+        "estimated_standard_no_cache_discount_usd": 0,
+        "unknown_usage": true,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      }
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P02-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Las propuestas A y B no documentan una compra aceptada: el vendedor las presenta como alternativas para discutir y afirma que no concluyen una compra ni obligan a transferir el negocio; Laurel no eligió una, no pagó ni recibió el taller",
+          "explanation": "Distingue correctamente las propuestas de una operación aceptada y relaciona ese estado con la falta de autorización del comité para comprar o reservar. Apoya la conclusión en la documentación y en los arts. 674 y 685 del Código Civil."
+        },
+        {
+          "reference_id": "P02-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Exige autorización previa y escrita tanto para cesión/sustitución del prestador como para cambio directo o indirecto de control; define el cambio de control e indica que el silencio, recibir información o reunirse no equivalen a autorización.",
+          "explanation": "Trata tanto el cambio de control de la alternativa A como la cesión propuesta en B, y conecta la condición contractual con la continuidad de Horizonte y la recomendación de condicionar la operación."
+        },
+        {
+          "reference_id": "P02-H03",
+          "treatment": "PARTIAL",
+          "exact_output_quote": "Horizonte solo recibió información general, pidió detalles y negó expresamente que su predisposición a reunirse constituya autorización; no consta aprobación ni plan de transición acordado",
+          "explanation": "Explica adecuadamente que la correspondencia no es autorización y que la reunión no garantiza aprobación. Sin embargo, no recoge expresamente que Horizonte manifestó que no había decidido terminar el contrato ni observaciones de incumplimiento actual (P02-D04-P03), una distinción útil para no confundir el riesgo de resolución futura con una terminación actual."
+        },
+        {
+          "reference_id": "P02-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "La reserva de PYG 120.000.000 debe rechazarse en su forma actual.",
+          "explanation": "Expone sus términos desfavorables, la ausencia del acuerdo separado y la falta de verificación o custodia, y recomienda no pagar ni firmar en la forma actual. No equipara sin más la etiqueta “reserva” con una señal jurídica ni afirma que el importe ya se haya perdido."
+        },
+        {
+          "reference_id": "P02-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "En A, Delta Azul seguiría como empleador; en B, la continuidad de los técnicos puede plantear sustitución del empleador.",
+          "explanation": "Distingue los escenarios y cita el art. 28 del Código del Trabajo para la continuidad contractual y la responsabilidad solidaria temporal. También aclara que la información no acredita cancelación de antigüedad ni ausencia de obligaciones."
+        },
+        {
+          "reference_id": "P02-H06",
+          "treatment": "PARTIAL",
+          "exact_output_quote": "La determinación depende de la estructura real, el vendedor, los activos, costos fiscales y documentación. El corpus tampoco permite liquidar IVA ni pasivos tributarios de Delta Azul",
+          "explanation": "Rechaza correctamente los importes inconsistentes de las hojas como tributos exigibles y cita normas relevantes de IRE, incluida la transferencia de establecimientos comerciales. Deja pendiente la liquidación de IVA, pero no desarrolla suficientemente las reglas de IVA aplicables a la cesión de activos ni la posible relevancia de la exoneración de transferencias por reorganización: su aplicación dependería de los hechos y no debe darse por supuesta."
+        },
+        {
+          "reference_id": "P02-H07",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Existe un estimado interno de PYG 16.000.000 por horas adicionales de septiembre, pendiente de conciliación y no equivalente a liquidación jurídica; no se aportó el registro íntegro de jornadas",
+          "explanation": "Conserva el carácter preliminar del estimado y señala la necesidad de revisar jornadas, vacaciones, aguinaldo y aportes, sin convertir los datos privados en una liquidación definitiva ni suponer que las obligaciones sean cero."
+        }
+      ],
+      "errors": [],
+      "novel_valid_findings": [],
+      "recommendation_coherent": true,
+      "limitations": [
+        "La evaluación se limita al expediente y a las extracciones jurídicas incluidas; el memo advierte correctamente que no se acredita consolidación normativa al corte.",
+        "La cuestión tributaria de IVA queda identificada como pendiente, pero el memo no brinda un análisis comparativo suficiente de sus posibles efectos en una adquisición de activos."
+      ],
+      "preliminary_usability": "POTENTIALLY_USABLE",
+      "blind_id": "688315d4284344b8beeb663bb05322b5",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 232174,
+        "output_tokens_including_reasoning": 1444,
+        "cost_accounted_upper_usd": 0.02974375,
+        "estimated_standard_no_cache_discount_usd": 0.0239394,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 0
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P02-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No se documenta aceptación de Laurel.",
+          "explanation": "Distingue correctamente las propuestas alternativas de una operación aceptada y relaciona la reserva separada, la falta de pago y el acta interna con la cautela de no asumir que la adquisición se perfeccionó. También deja abierta la revisión de comunicaciones y poderes."
+        },
+        {
+          "reference_id": "P02-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "para este contrato, la transferencia de más del 50% de las acciones con voto o de derechos de designar la mayoría del directorio constituye cambio de control",
+          "explanation": "Identifica que la cláusula cubre tanto la adquisición de acciones como la cesión, y que la continuidad de la misma persona jurídica no evita por sí sola el requisito contractual. Expone la consecuencia potencial —no una terminación ya ocurrida— y conecta la autorización con la valoración."
+        },
+        {
+          "reference_id": "P02-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "la predisposición a reunirse no autoriza ninguna alternativa",
+          "explanation": "Trata la respuesta de Horizonte como recepción y evaluación, no consentimiento; reconoce que la reunión posterior a la fecha de la reserva no promete una decisión y evita describir la demora como rechazo o terminación."
+        },
+        {
+          "reference_id": "P02-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "La reserva debe rechazarse en su forma actual.",
+          "explanation": "Explica los riesgos de la suma no reembolsable, la cuenta personal y la falta de acuerdo separado, y recomienda no pagar tal como está. Presenta las salvaguardas posibles como condiciones a negociar, no como protecciones ya pactadas."
+        },
+        {
+          "reference_id": "P02-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "B no debe tratarse como un reinicio de antigüedad ni como eliminación de obligaciones históricas.",
+          "explanation": "Distingue la continuidad del empleador en la compra de acciones de la propuesta de sustitución en la compra de activos, aplica el artículo 28 del Código del Trabajo y advierte que la hoja de escenario no prueba una transferencia laboral ya realizada. Mantiene como cuestión pendiente la aplicación a la operación concreta."
+        },
+        {
+          "reference_id": "P02-H06",
+          "treatment": "PARTIAL",
+          "exact_output_quote": "La nota tributaria contiene errores reconocidos",
+          "explanation": "Rechaza fundadamente los PYG 90.000.000 como impuesto validado, cita reglas de IRE para transferencia de establecimientos y acciones, y pide análisis tributario por estructura. Sin embargo, el tratamiento de IVA puede diferir materialmente entre la cesión de acciones y la transferencia de negocio/activos, y el memo no lo analiza de forma concreta pese a que la fuente lo permite."
+        },
+        {
+          "reference_id": "P02-H07",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "no es una liquidación jurídica",
+          "explanation": "Distingue el estimado interno de PYG 16.000.000 de una liquidación probada, identifica las deficiencias de la documentación de jornada y amplía la diligencia a nómina, vacaciones y aportes sin afirmar que exista una deuda definitivamente determinada."
+        }
+      ],
+      "errors": [],
+      "novel_valid_findings": [
+        "La comparación tributaria queda incompleta en un punto estructural: la Ley 6380 incluye las transferencias de empresas entre los hechos relevantes para IVA (art. 81.1.c, F03-L00609), mientras que también exonera la enajenación de acciones y cuotas (art. 100.1.a, F03-L00750). La aplicación concreta, base y eventuales componentes de una venta de activos requieren análisis y reglamentación, pero el memo debería identificar expresamente esta diferencia potencial y pedir que se cuantifique para ambas estructuras."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "La revisión se limita al expediente ficticio y a las extracciones normativas incluidas; el propio corpus advierte que no acredita consolidación normativa al 19/10/2026.",
+        "No se infiere que las anotaciones de firmas o comunicaciones ficticias estén autenticadas externamente."
+      ],
+      "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+      "blind_id": "79c59fdfa2ae42eb8edd1eacdb46e417",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 232795,
+        "output_tokens_including_reasoning": 1294,
+        "cost_accounted_upper_usd": 0.029746375,
+        "estimated_standard_no_cache_discount_usd": 0.0239265,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 1
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P03-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "**No pagar su valor a Ribera ni tratarlas como bienes adquiridos**: ajustar la contraprestación o sustituir su tratamiento por un acuerdo de custodia/traslado autorizado.",
+          "explanation": "Distingue la titularidad de Sur del Lago del valor interno de reposición, y propone excluir las matrices del precio o documentar un traslado autorizado, sin presentar los PYG 60.000.000 como precio aceptado. También vincula la conclusión con el contrato, el inventario y la carta del cliente."
+        },
+        {
+          "reference_id": "P03-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "La carta del cliente, sin embargo, expresa aceptación de cesión sujeta a condiciones, no una aprobación técnica ya emitida (P03-D04 v1, P01 y P04).",
+          "explanation": "No confunde la aceptación condicionada con rechazo total ni con aprobación técnica cumplida. Recomienda completar inspección, trazabilidad, disponibilidad de los operadores y cesión antes del cierre."
+        },
+        {
+          "reference_id": "P03-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No recomendaría “cerrar y reabrir” como si ello borrara antigüedad o pasivos.",
+          "explanation": "Explica que la antigüedad propuesta no debe darse por reiniciada y enlaza la necesidad comercial de mantener a los operadores con la condición de Sur del Lago. Expone el artículo 28 del Código del Trabajo y deja expresamente pendiente confirmar si una transferencia de activos configura sustitución de empleador."
+        },
+        {
+          "reference_id": "P03-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Antes del cierre se requiere un acuerdo tripartito que determine quién fabrica y factura, cómo se imputa el anticipo, quién recibe el saldo de 80.000.000 y qué fondos o ajuste acompañan la obligación futura.",
+          "explanation": "Reconcilia el anticipo cobrado por Ribera, la prestación futura y el saldo del pedido. Advierte que el expediente no acredita transferencia a Fresno, que no debe cobrarse de nuevo el anticipo y que no corresponde tratarlo automáticamente como ingreso nuevo de Fresno o parte adicional del precio."
+        },
+        {
+          "reference_id": "P03-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Eso no prueba que la retención sea suficiente: falta cuantificar exposiciones, definir reclamaciones, prueba, plazos, controversias y garantía de pago.",
+          "explanation": "Aclara que los PYG 240.000.000 son precio diferido y evita contarlos como una garantía adicional. Señala límites concretos de la cláusula actual y propone negociar mecanismos sin afirmar que el importe alcance para cubrir todas las contingencias."
+        },
+        {
+          "reference_id": "P03-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "El monto es una exposición discutida, no deuda reconocida ni compensación documentada con OP-44.",
+          "explanation": "Mantiene separado el reclamo de PYG 40.000.000 del anticipo de OP-44, recoge su carácter controvertido y recomienda revisar el lote y conservar un interlocutor, sin liquidar ni compensar automáticamente el reclamo."
+        },
+        {
+          "reference_id": "P03-H07",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "La venta de activos y derechos debe analizarse por componentes y documentación; no corresponde calcular ahora impuesto sobre PYG 900.000.000 ni afirmar que el anticipo sea deuda tributaria equivalente.",
+          "explanation": "Reconoce que la base comercial está desactualizada y no aprobada, trata los efectos de IVA con referencias pertinentes y evita inventar una tasa o liquidación. Propone un análisis fiscal por componentes y por separado para el anticipo y la fabricación pendiente."
+        },
+        {
+          "reference_id": "P03-H08",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "El informe propone fecha de ingreso 02/11 para todos pese a ingresos anteriores (P03-D07 v1, P01), identifica a los operadores con fechas de 2017 y 2019, y estima PYG 8.000.000 de vacaciones sin liquidación individual ni prueba de cancelación (P03-D07 v1, P01–P02).",
+          "explanation": "Distingue el estimado conjunto de una liquidación individual, advierte que los documentos aportados no prueban cancelación de saldos y recomienda conciliación individual de derechos y aportes. No calcula indemnizaciones sin evidencia de extinciones."
+        }
+      ],
+      "errors": [],
+      "novel_valid_findings": [
+        "El memo no aborda expresamente el artículo 13 de la Ley 6380/2019: si la operación llegara a calificar como transferencia de establecimiento comercial, ese artículo dispone el cierre del ejercicio económico del enajenante y que el adquirente mantenga el valor fiscal de los bienes al momento de adquirirlos. Sería útil pedir al asesor tributario que determine si resulta aplicable a esta transferencia de activos y cómo afecta la documentación y la cuenta de cierre; el expediente no permite concluir por sí solo que la operación califique."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "El corpus jurídico aportado no acredita consolidación normativa al 19/10/2026; el memo reconoce esa limitación, por lo que las conclusiones tributarias y laborales requieren verificación normativa actualizada antes de ejecutar la operación.",
+        "La carta del cliente establece condiciones para una cesión futura, pero no prueba que la inspección técnica se haya realizado satisfactoriamente ni que se hayan completado las condiciones.",
+        "Los documentos no permiten determinar definitivamente si la transferencia de activos constituye sustitución de empleador, cuál sería la liquidación individual laboral ni el tratamiento fiscal final de cada componente."
+      ],
+      "preliminary_usability": "POTENTIALLY_USABLE",
+      "blind_id": "7e46424f571f401cb0dcedb09822fba9",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 233113,
+        "output_tokens_including_reasoning": 1448,
+        "cost_accounted_upper_usd": 0.029863125,
+        "estimated_standard_no_cache_discount_usd": 0.0240353,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 0
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P01-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "El precio de PYG 600.000.000 es **neto para el vendedor**, con tributos aplicables añadidos; reemplaza una oferta anterior que los incluía",
+          "explanation": "Identifica correctamente el cambio entre la oferta previa y la propuesta v2, lo conecta con el límite de autorización del comité y recomienda fijar el precio total y volver al comité si se excede. También evita inventar una tasa tributaria."
+        },
+        {
+          "reference_id": "P01-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Por tanto, la caracterización del vendedor —“los veo bien predispuestos”— no es aprobación ni compromiso del proveedor.",
+          "explanation": "Contrasta la cláusula de consentimiento previo y escrito con la respuesta expresa de Maroma, y propone consentimiento o contrato nuevo como condición, con revisión económica si no se obtiene. Conserva la posibilidad de operar con proveedores alternativos sin asumir que la continuidad está asegurada."
+        },
+        {
+          "reference_id": "P01-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Hay comisiones de septiembre por PYG 5.000.000 y PYG 4.000.000 a favor de dos vendedores con la columna de pago vacía y sin transferencia o recibo aportado; la explicación administrativa no acredita pago",
+          "explanation": "Distingue adecuadamente los PYG 9.000.000 registrados de una liquidación definitiva de lo exigible, observa la falta de prueba de pago y suma la necesidad de conciliar vacaciones y otros conceptos laborales sin cuantificar contingencias no calculadas."
+        },
+        {
+          "reference_id": "P01-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Esa distribución contractual no debe presentarse como liberación frente a trabajadores",
+          "explanation": "Aplica el artículo 28 del Código del Trabajo a la continuidad propuesta, separa la indemnidad entre vendedor y comprador de los derechos de terceros y advierte que no debe asumirse pérdida de antigüedad ni exigir renuncias. El tratamiento se mantiene dentro de lo que permite inferir el expediente."
+        },
+        {
+          "reference_id": "P01-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Que se trate de activos y no acciones no basta para concluir que la operación no tiene IVA.",
+          "explanation": "Cuestiona la impresión verbal no respaldada del contador y la contrasta con las reglas de IVA sobre enajenación y transferencia de derechos patrimoniales. Delimita lo pendiente: analizar por componente y revisar normativa reglamentaria, en vez de afirmar una tasa o un resultado definitivo."
+        },
+        {
+          "reference_id": "P01-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Exclúyelo del precio y no reconocerlo como crédito del comprador sin fundamento formal.",
+          "explanation": "Señala que el saldo de IVA está documentado a nombre de Naranjal y no se aportó fundamento para atribuírselo a Cedro; evita incluirlo entre los activos o tratarlo como crédito transferible."
+        }
+      ],
+      "errors": [],
+      "novel_valid_findings": [
+        "El memo observa correctamente que el momento de entrega y los pagos parciales pueden incidir en el momento de configuración del IVA si la operación resulta gravada; la recomendación de coordinar calendario, facturación y cierre es pertinente al esquema propuesto de 70% al firmar y 30% contra recepción."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "El memo reconoce que el corpus no acredita consolidación normativa al 19/10/2026 y recomienda verificar textos y reglamentos vigentes antes de la firma; por ello, las conclusiones tributarias quedan apropiadamente sujetas a esa verificación.",
+        "La eventual aplicación del régimen de sustitución de empleador depende de la estructura y los hechos definitivos de la transferencia. El memo la plantea como cuestión a analizar y no como hecho consumado, aunque será necesario resolverla antes de cerrar."
+      ],
+      "preliminary_usability": "POTENTIALLY_USABLE",
+      "blind_id": "873df254eb7f481ba4cb1dc8851070f5",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 232988,
+        "output_tokens_including_reasoning": 1267,
+        "cost_accounted_upper_usd": 0.029757,
+        "estimated_standard_no_cache_discount_usd": 0.0239323,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 1
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P03-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Excluir las matrices de los bienes vendidos y del anexo de activos propios; documentar su traslado separado. No reducir automáticamente el precio en PYG 60.000.000",
+          "explanation": "El memo distingue la propiedad de Sur del Lago de la custodia de Ribera, identifica los PYG 60.000.000 como estimación de reposición y evita convertirlos en una reducción automática del precio. También propone documentar por separado el traslado."
+        },
+        {
+          "reference_id": "P03-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "La carta del cliente acepta la cesión desde el 02/11 solo si antes recibe acta de entrega de ML-1 y ML-2 como bienes propios, acredita el plan de trazabilidad y confirma la permanencia de Tomás Leiva y Nuria Acosta o una sustitución técnicamente aceptada",
+          "explanation": "Caracteriza correctamente la aceptación como condicionada, no como consentimiento incondicional ni como rechazo. Recomienda cumplir y verificar las condiciones antes del cierre, y toma en cuenta la inspección técnica pendiente."
+        },
+        {
+          "reference_id": "P03-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Por ello, no tratar el cambio de fecha como reinicio automático de antigüedad.",
+          "explanation": "Relaciona la continuidad de los operadores con la condición comercial del cliente, diferencia el interés manifestado de un acuerdo laboral y advierte que la fecha propuesta en la hoja no prueba reinicio de antigüedad. Recomienda revisar legajos, condiciones y saldos."
+        },
+        {
+          "reference_id": "P03-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Antes del cierre, firmar un acuerdo tripartito que indique quién termina y factura el pedido, a quién se paga el saldo, qué pasa con los bienes en proceso y cómo se transfiere o compensa el anticipo.",
+          "explanation": "Reconoce que Ribera recibió y conserva el anticipo, que la fabricación sigue pendiente y que Sur del Lago no pagará dos veces. Propone una diligencia que aborda fondos, prestación, facturación e imputación, y rechaza contarlo como efectivo recibido por Fresno o como crédito adicional al precio."
+        },
+        {
+          "reference_id": "P03-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "es parte del precio diferido, no una garantía adicional",
+          "explanation": "El memo aclara que los PYG 240.000.000 forman parte del precio, identifica que el procedimiento de imputación y la garantía adicional no están resueltos y exige negociar un mecanismo que cubra contingencias previas, incluidas las que aparezcan después de 180 días."
+        },
+        {
+          "reference_id": "P03-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "El reclamo de PYG 40.000.000 por agosto-7 es una contingencia distinta: Ribera controvierte causa, no emitió nota de crédito y el monto no está reconocido ni compensado con el anticipo",
+          "explanation": "Distingue el reclamo del anticipo de OP-44, preserva el procedimiento de revisión y no presenta el importe como deuda reconocida ni compensada."
+        },
+        {
+          "reference_id": "P03-H07",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No está resuelto si esta venta de unidad encaja en esa figura, ni se aportan valores fiscales, comprobantes o liquidación.",
+          "explanation": "Relaciona el análisis tributario con la naturaleza de la transferencia, el precio, los componentes y la cuenta del anticipo; señala la falta de base fiscal y liquidación, y no inventa una tasa ni un impuesto exigible."
+        },
+        {
+          "reference_id": "P03-H08",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "El estimado grupal de PYG 8.000.000 en vacaciones no es liquidación ni acredita pago",
+          "explanation": "Distingue los recibos parciales y el estimado privado de una conciliación o liquidación individual. Además, señala la posible responsabilidad por sustitución del empleador con la cautela de que depende de la aplicación del supuesto."
+        }
+      ],
+      "errors": [],
+      "novel_valid_findings": [
+        "El memo incorpora una diligencia pertinente sobre gravámenes y titularidad de los equipos de Ribera: el inventario solo aporta comprobantes privados y no incluye consultas de gravámenes (P03-D05 v1, P03).",
+        "Advierte que la cercanía entre la inspección del 29/10 y el cierre propuesto del 02/11 puede hacer inviable completar diligencias suficientes, y propone postergar en vez de cerrar sin verificarlas.",
+        "Incluye una cautela para evitar que actos durante la negociación contradigan la posición de que aún no hay obligación de compra ni entrega, apoyándose en el estado del borrador y en reglas generales de consentimiento y oferta."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "La conclusión sobre continuidad laboral queda razonablemente delimitada: el memo no cuantifica saldos ni responsabilidades individuales porque faltan conciliaciones, legajos y acuerdos.",
+        "La conclusión tributaria no determina tasas o importes finales; reconoce que hace falta identificar el tratamiento aplicable a cada componente y verificar normativa y reglamentación vigente al corte.",
+        "La eficacia y autenticidad externa de los documentos privados no está acreditada; el memo lo indica expresamente."
+      ],
+      "preliminary_usability": "POTENTIALLY_USABLE",
+      "blind_id": "8b188e3e05954e72a39046f935879c08",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 233354,
+        "output_tokens_including_reasoning": 1542,
+        "cost_accounted_upper_usd": 0.02994025,
+        "estimated_standard_no_cache_discount_usd": 0.0241064,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 1
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P01-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No se aportó una liquidación que permita calcular tributos ni cuantificar el desembolso final.",
+          "explanation": "Contrasta el precio neto para el vendedor y los tributos adicionales de la propuesta con el tope del comité; recomienda aclarar el costo total o recabar nueva aprobación sin inventar una tasa ni liquidación."
+        },
+        {
+          "reference_id": "P01-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No está acreditado que Maroma abastecerá a Cedro, en qué condiciones, con qué precios o con exclusividad.",
+          "explanation": "Expone la restricción de cesión, distingue el interés preliminar del consentimiento y del contrato, y plantea tanto obtener acuerdo escrito como evaluar proveedores alternativos."
+        },
+        {
+          "reference_id": "P01-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Eso acredita PYG 9.000.000 registrados sin evidencia de pago en la carpeta, no una liquidación definitiva de deuda exigible",
+          "explanation": "Suma explícitamente las dos comisiones registradas, evita equiparar falta de comprobante con liquidación definitiva y señala que vacaciones y aportes requieren conciliación."
+        },
+        {
+          "reference_id": "P01-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Queda pendiente determinar si esta compraventa de activos y continuidad configura sustitución.",
+          "explanation": "Aplica el art. 28 del Código del Trabajo con cautela: explica la posible continuidad y solidaridad, y diferencia esa exposición frente a trabajadores de la indemnidad interna propuesta, sin afirmar pérdida de antigüedad ni terminación automática."
+        },
+        {
+          "reference_id": "P01-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No corresponde cuantificar IVA ni asumir una tasa uniforme con este expediente.",
+          "explanation": "Rechaza la impresión no revisada del contador y conecta enajenación de bienes y derechos patrimoniales con la necesidad de analizar bases y componentes, sin concluir exención ni cuantificar el impuesto."
+        },
+        {
+          "reference_id": "P01-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No incluirlo en el precio ni en el modelo de crédito fiscal de Cedro",
+          "explanation": "Reconoce que el saldo de IVA figura a nombre de Naranjal y que no se aportó fundamento para transferirlo; evita tratarlo como activo o crédito de Cedro."
+        }
+      ],
+      "errors": [
+        {
+          "severity": "MATERIAL",
+          "category": "UNSUPPORTED_CLAIM",
+          "exact_output_quote": "El inventario marca la revisión temporal de F01, F02 y F03 como NOT_ATTESTED.",
+          "evidence_locator": "Brief común: “El corpus es acotado y no acredita consolidación normativa a la fecha de corte”; inventario documental y fuentes suministradas en el expediente.",
+          "explanation": "El expediente advierte que no acredita consolidación normativa, pero el material aportado no indica que el inventario marque las fuentes como “NOT_ATTESTED”. La cautela sobre vigencia es razonable; atribuir esa etiqueta concreta al inventario no está respaldado."
+        }
+      ],
+      "novel_valid_findings": [
+        "El análisis tributario del IRE podría ser más completo: la Ley 6380 contempla el resultado de transferir empresas o establecimientos comerciales y dispone que la transferencia de establecimientos implica cierre del ejercicio económico para el enajenante (F03, art. 8.7, F03-L00087–L00099; art. 13, F03-L00129–L00131). El memo menciona que no se aportó liquidación de IRE y pide analizarla, pero no identifica expresamente esta posible caracterización ni su efecto de cierre. Conviene solicitar al contador una conclusión motivada sobre si la operación concreta califica como transferencia de establecimiento y qué consecuencias tendría, sin presumir que califica."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "La evaluación se limita a los documentos y extractos jurídicos incluidos en el expediente; no acredita la consolidación ni vigencia normativa al 19/10/2026.",
+        "No se evalúa exhaustivamente la exactitud jurídica de la asignación de cada rubro laboral o tributario; varias conclusiones del memo quedan correctamente condicionadas a documentación y verificación adicionales."
+      ],
+      "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+      "blind_id": "97a870f505c9437d8d70524e7fc88ff7",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 232704,
+        "output_tokens_including_reasoning": 1291,
+        "cost_accounted_upper_usd": 0.0297335,
+        "estimated_standard_no_cache_discount_usd": 0.0239159,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 5
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P01-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "El precio total de PYG 600 millones no debe interpretarse como costo máximo: es neto para Naranjal y los tributos se añadirían.",
+          "explanation": "Contrasta el precio neto de la propuesta con el límite presupuestario del comité, advierte que el costo total puede excederlo y propone cerrar el precio máximo y la asignación tributaria antes de autorizar un compromiso. También reconoce que la oferta v2 reemplaza la oferta comercial previa y que no hay aceptación ni compromiso firmado."
+        },
+        {
+          "reference_id": "P01-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Maroma solo expresó interés en estudiar continuidad, pidió información y dijo explícitamente que el correo no aprueba cesión ni constituye contrato con Cedro.",
+          "explanation": "Aplica la cláusula de consentimiento escrito y distingue adecuadamente el interés comercial de una aprobación vinculante. Conserva el riesgo de exclusividad y la alternativa de proveedores, y condiciona el cierre a consentimiento o a un nuevo acuerdo escrito."
+        },
+        {
+          "reference_id": "P01-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Los recibos acreditan anotación de recepción de salarios base, no pago de esas comisiones.",
+          "explanation": "Distingue los recibos de salario base del registro de comisiones con la columna de pago vacía, calcula correctamente PYG 9 millones como suma aritmética y no lo presenta como una liquidación jurídica definitiva. También identifica que el saldo de vacaciones y los aportes requieren conciliación documental."
+        },
+        {
+          "reference_id": "P01-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Si la continuidad planeada implica sustitución, presupuestar continuidad de derechos/antigüedad y obtener conciliación individual de salarios, comisiones, vacaciones y aportes, comprobantes y garantías con retención.",
+          "explanation": "Expone de forma condicional la posible sustitución de empleador y la responsabilidad solidaria legal por seis meses, y aclara que la indemnidad contractual no libera frente a los trabajadores. No afirma terminación, renuncia, pérdida automática de antigüedad ni indemnizaciones causadas por la negociación."
+        },
+        {
+          "reference_id": "P01-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "La impresión verbal del contador de que no habría IVA porque no se venden acciones carece de análisis y la propia nota reconoce que debe revisarse.",
+          "explanation": "Contrasta la opinión privada con la regla de IVA sobre enajenación de bienes, trata inventario y equipos como una cuestión tributaria que debe resolverse y deja pendiente el tratamiento de los derechos comerciales y la tasa aplicable. Para IRE, diferencia el valor contable de una liquidación fiscal y evita concluir que la operación sea una transferencia de establecimiento."
+        },
+        {
+          "reference_id": "P01-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "El saldo de IVA a favor de Naranjal de PYG 22 millones deriva de comprobantes a su nombre; no está incluido ni hay fundamento para tratarlo como crédito de Cedro.",
+          "explanation": "No incorpora el saldo a favor del vendedor a los activos ni lo da por transferible mediante la entrega de facturas. La salvedad de exigir base legal y validación formal evita presentar la conclusión como una comprobación definitiva."
+        }
+      ],
+      "errors": [],
+      "novel_valid_findings": [
+        "El memo no desarrolla expresamente la regla del art. 88 de la Ley 6380 sobre traslado proporcional de IVA Crédito en transferencias consecuencia de reorganización de empresas. El expediente no acredita que esta compra de activos sea una reorganización, y el memo reserva la posibilidad de acreditar una base legal; por ello es una diligencia útil, no un error demostrado."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "La evaluación se limita al memo, los documentos sintéticos aportados y las extracciones normativas incluidas; el propio expediente advierte que no acredita consolidación normativa a la fecha de corte.",
+        "La aplicabilidad de reglas tributarias específicas a la transferencia de derechos comerciales, del conjunto de activos o a una eventual reorganización requiere revisión normativa y reglamentaria completa."
+      ],
+      "preliminary_usability": "POTENTIALLY_USABLE",
+      "blind_id": "98be438b73f348aeae1158f4b979e17b",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 232319,
+        "output_tokens_including_reasoning": 1572,
+        "cost_accounted_upper_usd": 0.029825875,
+        "estimated_standard_no_cache_discount_usd": 0.0240179,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 0
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P02-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Con la evidencia aportada, no trataría esa frase como aceptación.",
+          "explanation": "Distingue correctamente las propuestas de negociación de una aceptación y usa los hechos sobre falta de elección, pago y aprobación interna. También evita una conclusión absoluta y reserva la posibilidad de comunicaciones o conductas no aportadas. El tratamiento se apoya en P02-D01-P02, P02-D02-P04 y P02-D05-P01–P02, además de las reglas de consentimiento y reserva expresa de F01."
+        },
+        {
+          "reference_id": "P02-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No evita la intervención de Horizonte: el contrato exige autorización previa y escrita también para un cambio directo o indirecto de control",
+          "explanation": "Aplica directamente la cláusula contractual al escenario de adquisición de acciones y conecta esa condición con la decisión económica. También distingue el escenario de cesión de activos y recoge que la autorización es específica para cada estructura. Véanse P02-D03-P02–P04."
+        },
+        {
+          "reference_id": "P02-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No consta consentimiento. (P02-D04 v1, P02-D04-P01–P04). No hay decisión actual de terminar ni incumplimiento observado",
+          "explanation": "Trata la respuesta de Horizonte como recepción y evaluación pendiente, no como autorización ni rechazo. Reconoce que la reunión del 27/10 no garantiza una decisión ni coincide con el plazo pedido para la reserva. Esto refleja P02-D04-P02–P04 y P02-D02-P03–P04."
+        },
+        {
+          "reference_id": "P02-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Recomendación: no aceptar ni transferirla.",
+          "explanation": "Identifica la asimetría, la falta de excepciones, la cuenta personal no verificada y la ausencia de acuerdo firmado, custodia y autorización interna. Recomienda no pagar, pero conserva la posibilidad de negociar una protección distinta, sin afirmar que una técnica concreta sea obligatoria. P02-D02-P03–P04, P02-D05-P01 y P02-D07-P04 sustentan el análisis."
+        },
+        {
+          "reference_id": "P02-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "A conserva a Delta Azul como empleador en la hoja de escenario; B propone incorporarlos a Laurel.",
+          "explanation": "Separa la situación documentada de los escenarios no ejecutados, identifica el riesgo de sustitución patronal en B y advierte que la antigüedad y los derechos no se eliminan mediante un nuevo contrato. Cita el art. 28 del Código del Trabajo y evita afirmar que la sustitución ya ocurrió. P02-D06-P01/P03 y F02-L00118–L00121 son pertinentes."
+        },
+        {
+          "reference_id": "P02-H06",
+          "treatment": "PARTIAL",
+          "exact_output_quote": "El IVA grava enajenaciones de bienes y servicios (art. 80; F03-L00599–L00603).",
+          "explanation": "El memo acierta al rechazar los PYG 90.000.000 como liquidación acreditada y advierte que faltan bases y clasificación de activos. Pero, al comparar acciones y activos, la formulación general sobre el IVA omite la exoneración expresa de la enajenación de acciones o cuotas del art. 100.1.a de F03 (F03-L00749–L00750), mientras la ley incluye la transferencia de acciones entre los supuestos de enajenación del IVA (F03-L00605–L00609). La omisión puede inducir a no distinguir el tratamiento de ambas estructuras; la exposición no afirma expresamente que ambas paguen IVA."
+        },
+        {
+          "reference_id": "P02-H07",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Conciliar horas y registros es prioritario; la ley fija recargos para horas extraordinarias según sus circunstancias",
+          "explanation": "Diferencia los recibos de salario base del estimado interno de horas adicionales y no convierte los PYG 16.000.000 en deuda liquidada. También señala que faltan registros de jornadas y que vacaciones, aportes y otras obligaciones no se pueden tratar como cero. Usa P02-D06-P02/P04 y F02-L00768–L00771."
+        }
+      ],
+      "errors": [
+        {
+          "severity": "MATERIAL",
+          "category": "INCORRECT_SOURCE_APPLICATION",
+          "exact_output_quote": "El IVA grava enajenaciones de bienes y servicios (art. 80; F03-L00599–L00603).",
+          "evidence_locator": "F03-L00605–L00609 y F03-L00749–L00750",
+          "explanation": "En el contexto de comparar una compra de acciones con una compra de activos, citar solo la regla general del hecho gravado sin señalar que la enajenación de acciones está expresamente exonerada puede crear una impresión incompleta sobre el IVA de la alternativa A. La afirmación general es correcta, por lo que el problema es de aplicación incompleta, no una falsedad literal. El memo sí reconoce que la liquidación depende de datos faltantes y no concluye que exista un importe exigible."
+        }
+      ],
+      "novel_valid_findings": [
+        "La observación de que el contrato de Horizonte no garantiza un mínimo de horas fuera de mantenimientos programados fortalece correctamente la advertencia de que el plazo hasta 2028 no equivale a ingresos asegurados.",
+        "El memo incorpora la autorización interna de gastos hasta PYG 12.000.000 y la diferencia entre continuar la diligencia y aprobar la operación, útil para acotar la decisión del comité."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "El corpus jurídico aportado no acredita consolidación normativa al 19/10/2026. El memo reconoce esta limitación y propone verificar vigencia y reglamentación antes de firmar.",
+        "No se aportó el acuerdo de reserva, una conciliación completa de pasivos ni una autorización de Horizonte; el memo correctamente condiciona conclusiones sobre esos extremos.",
+        "La conclusión tributaria sobre cada alternativa queda pendiente de identificar vendedor, bienes, bases fiscales, valores y tratamiento reglamentario aplicable."
+      ],
+      "preliminary_usability": "POTENTIALLY_USABLE",
+      "blind_id": "a97a962708544bb79ce51ad9ee2432dd",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 232715,
+        "output_tokens_including_reasoning": 1678,
+        "cost_accounted_upper_usd": 0.029928375,
+        "estimated_standard_no_cache_discount_usd": 0.0241105,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 0
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P03-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“Ese valor es una estimación interna de reposición, no precio de venta; no se aportó acto de venta del propietario”",
+          "explanation": "Distingue correctamente las matrices de propiedad de Sur del Lago y su custodia por Ribera, y advierte que el valor interno no acredita una venta. Recomienda depurar el inventario y documentar el traslado autorizado, sin presentar el valor de PYG 60.000.000 como una reducción de precio ya acordada (P03-D05 v1, P02-P04; P03-D03 v1, P01-P02)."
+        },
+        {
+          "reference_id": "P03-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“La carta del 18/10 acepta la cesión desde el 02/11 solo si antes se entrega acta de las matrices como bienes del cliente, se acredita el plan de trazabilidad y se confirma la permanencia de Tomás Leiva y Nuria Acosta o una sustitución técnicamente aceptada.”",
+          "explanation": "Reconoce que hay aceptación condicionada, no rechazo total ni aprobación incondicionada. Identifica las condiciones pendientes, la inspección aún no aprobada y la necesidad de hacer de su cumplimiento un requisito previo al cierre (P03-D04 v1, P01 y P04; P03-D03 v1, P02)."
+        },
+        {
+          "reference_id": "P03-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“La continuidad propuesta de seis empleados no debe instrumentarse como un simple ‘cierre y reapertura’ de legajos con fecha 02/11.”",
+          "explanation": "Relaciona la continuidad laboral con la condición comercial sobre los operadores, distingue sus manifestaciones condicionadas de un acuerdo y señala la antigüedad registrada. Aplica condicionalmente el art. 28 del Código del Trabajo a una posible sustitución del empleador y propone revisar legajos, saldos y asignación de pasivos (P03-D07 v1, P01-P03; P03-D04 v1, P01; F02-L00118-L00120)."
+        },
+        {
+          "reference_id": "P03-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“La cuenta de cierre debe conciliar esos bienes con el anticipo y la prestación futura.”",
+          "explanation": "Expone que el anticipo de PYG 120.000.000 fue pagado a Ribera y no consta transferido a Fresno, conecta los PYG 90.000.000 en proceso con la prestación pendiente y pide un acuerdo tripartito que evite el doble cobro. No lo presenta como ingreso o crédito ya adquirido por Fresno ni como deuda fiscal de igual importe (P03-D05 v1, P01; P03-D06 v1, P01-P04; P03-D04 v1, P02)."
+        },
+        {
+          "reference_id": "P03-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“El borrador solo permite imputar ciertas obligaciones reconocidas por Ribera o establecidas por decisión firme, pero deja sin definir procedimiento, decisor y garantía adicional.”",
+          "explanation": "Aclara que PYG 240.000.000 son precio diferido dentro del total, no efectivo adicional, y que el mecanismo de imputación aún es incompleto. Advierte que su duración no cubre automáticamente riesgos posteriores ni la prestación futura, y propone negociar procedimiento y respaldo sin afirmar que la suma sea suficiente o insuficiente por sí sola (P03-D02 v3, P02-P03; P03-D08 v1, P01 y P03)."
+        },
+        {
+          "reference_id": "P03-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“El reclamo de PYG 40.000.000 por agosto-7 es distinto: figura como reclamado, sin nota de crédito, y Ribera controvierte causa y monto.”",
+          "explanation": "Lo separa del anticipo de OP-44, evita tratarlo como deuda reconocida o compensación acordada y recomienda preservar la revisión contractual y mantener un interlocutor (P03-D06 v1, P03; P03-D03 v1, P04; P03-D04 v1, P02-P03)."
+        },
+        {
+          "reference_id": "P03-H07",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“Sin clasificación de los elementos, precio definitivo y comprobantes no puede cuantificarse el impuesto ni afirmarse que PYG 900.000.000 sea precio con tributos incluidos.”",
+          "explanation": "Aborda la conexión tributaria con la composición real de los activos y derechos, el precio y la documentación. Usa la Ley 6380 para identificar posibles hechos generadores, base y requisitos de crédito IVA, pero no inventa una tasa aplicable ni una liquidación definitiva. También señala la falta de datos para calcular la renta imponible del vendedor (P03-D02 v3, P01 y P05; P03-D08 v1, P02; F03-L00599-L00614, F03-L00664-L00668 y F03-L00685-L00699)."
+        },
+        {
+          "reference_id": "P03-H08",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“PYG 8.000.000 por vacaciones es un estimado agregado, no liquidación individual ni prueba de pago.”",
+          "explanation": "Distingue el estimado de una deuda liquidada, advierte que los recibos de septiembre no concilian períodos anteriores y que la retención no extingue derechos laborales. Propone verificación individual antes del cierre, sin asumir despidos o indemnizaciones no documentados (P03-D07 v1, P02 y P04; P03-D02 v3, P04)."
+        }
+      ],
+      "errors": [
+        {
+          "severity": "MINOR",
+          "category": "UNSUPPORTED_CLAIM",
+          "exact_output_quote": "“F01-F03, metadato `temporal_review: NOT_ATTESTED`.”",
+          "evidence_locator": "Brief, «Condiciones comunes»: “El corpus es acotado y no acredita consolidación normativa a la fecha de corte”; inventario de fuentes F01-F03 aportado, que no contiene el metadato citado.",
+          "explanation": "Es correcto advertir que el corpus no acredita consolidación normativa, pero el memo atribuye a las fuentes un metadato específico que no aparece en el material suministrado. Conviene formular la reserva directamente con base en las condiciones comunes, sin atribuir ese campo al expediente."
+        }
+      ],
+      "novel_valid_findings": [
+        "La recomendación de no comprometer el pago inicial de PYG 660.000.000 antes de resolver condiciones comerciales, activos, transición y cuenta de cierre es coherente con el hecho documentado de que el borrador no está firmado, no hubo entrega de posesión y no existe obligación de compra (P03-D01 v1, P02; P03-D02 v3, encabezado).",
+        "La propuesta distingue razonablemente lo que el comité puede autorizar el 23/10 —negociación condicionada— de las condiciones necesarias para un cierre posterior, y conserva la alternativa de postergar o rechazar."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "La valoración se limita a los documentos privados ficticios y las fuentes normativas suministradas; no se acredita una revisión de consolidación normativa al corte indicado.",
+        "No se puede validar una liquidación tributaria concreta ni cuantificar obligaciones laborales con los datos disponibles; el memo identifica estas limitaciones y propone diligencias pertinentes."
+      ],
+      "preliminary_usability": "POTENTIALLY_USABLE",
+      "blind_id": "d5e6ac8725e446aaa8d8b27ee7ea96e7",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 233309,
+        "output_tokens_including_reasoning": 2031,
+        "cost_accounted_upper_usd": 0.030179125,
+        "estimated_standard_no_cache_discount_usd": 0.0243464,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 9
+    },
+    {
+      "blind_id": "db8f9e2685e042c49e5b90ac68f095e4",
+      "status": "GRADE_FAILED",
+      "error": "TRANSPORT_OUTCOME_UNKNOWN",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 235345,
+        "output_tokens_including_reasoning": 8192,
+        "cost_accounted_upper_usd": 0.033514125,
+        "estimated_standard_no_cache_discount_usd": 0,
+        "unknown_usage": true,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      }
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P02-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Las propuestas del vendedor son alternativas para discutir, no aceptadas. A ofrece el 100% de las acciones por PYG 1.200 millones, dejando en Delta Azul sus contratos, trabajadores, activos y obligaciones. B ofrece herramientas, equipos, inventario y derecho de uso de marca por PYG 900 millones, con propuesta de cesión del contrato y continuidad de ocho técnicos; no incluye un inventario completo ni una cesión aprobada por Horizonte (P02-D02 v1, P02-D02-P01–P02).",
+          "explanation": "El memo distingue las dos alternativas, su estado no aceptado y la ausencia de una compra perfeccionada. También mantiene la recomendación limitada a diligencia y negociación no vinculante."
+        },
+        {
+          "reference_id": "P02-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Por ello, la compra de acciones **no evita** la aprobación: cambia el control de la sociedad prestadora. La compra de activos requeriría, además, la cesión y sustitución del prestador.",
+          "explanation": "Aplica correctamente las cláusulas de autorización a ambas estructuras y conecta la dependencia de Horizonte con la recomendación y valoración."
+        },
+        {
+          "reference_id": "P02-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Horizonte pidió que se precise la estructura, el responsable del servicio y el plan de personal; aclaró que su disposición a reunirse no autoriza ninguna alternativa. La reunión ofrecida para el 27/10 no garantiza una decisión ese día y es posterior al plazo propuesto para la reserva (P02-D04 v1, P02-D04-P02–P03). No es hecho que el contrato vaya a terminar: Horizonte indicó que no había decidido terminarlo y que no observaba incumplimiento actual, pero tampoco prometió continuidad bajo Laurel (P02-D04 v1, P02-D04-P03).",
+          "explanation": "Diferencia recepción y predisposición a reunirse de una autorización, advierte la desalineación temporal con la reserva y evita afirmar que el contrato ya terminó o que su terminación sea segura."
+        },
+        {
+          "reference_id": "P02-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No hay base para recomendar el pago. Si el vendedor exige asegurar exclusividad, solo consideraría negociar un instrumento separado sujeto a aprobación interna, con condiciones de devolución, tratamiento de contingencias y mecanismo de custodia o garantía acordado; no se ha convenido ninguno.",
+          "explanation": "Desaconseja el pago actual y trata custodia, devolución y condiciones como opciones negociables, no como protecciones ya existentes. Reconoce que no hubo pago ni acuerdo separado."
+        },
+        {
+          "reference_id": "P02-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "En acciones, Delta Azul seguiría siendo la empleadora y titular de sus obligaciones; Laurel adquiriría una sociedad cuyo alcance de pasivos no está conciliado. En activos, la propuesta de incorporar a los mismos técnicos podría configurar sustitución del empleador. El Código del Trabajo dispone que la sustitución no afecta contratos vigentes; establece responsabilidad solidaria del empleador sustituido con el nuevo por seis meses respecto de obligaciones anteriores y luego subsiste la responsabilidad del nuevo empleador (Ley 213, art. 28, F02-L00118–L00121).",
+          "explanation": "Separa la continuidad del empleador en la compra de acciones de la posible sustitución en la compra de activos, aplica el art. 28 y mantiene condicional la calificación de la estructura concreta."
+        },
+        {
+          "reference_id": "P02-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No utilizaría los PYG 90 millones de la hoja financiera como impuesto estimado. La hoja titulada “compra de acciones” copia “venta de maquinaria”; la de activos contiene una nota sobre acciones exentas. El analista reconoce celdas duplicadas y no aporta base, desglose de bienes ni liquidación firmada (P02-D07 v1, P02-D07-P02).",
+          "explanation": "Rechaza expresamente tratar el importe como impuesto establecido y examina por separado las consecuencias tributarias relevantes que permiten las fuentes, con reservas sobre la falta de inventario, valores y consolidación normativa."
+        },
+        {
+          "reference_id": "P02-H07",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Es un estimado interno, no una liquidación ni prueba de pago; vacaciones y aportes tampoco se cuantifican ni se acreditan como inexistentes (P02-D06 v1, P02-D06-P02/P04). Antes de fijar precio o indemnidades, pedir legajos, contratos, jornadas, salarios, horas extra, comprobantes, vacaciones y aportes por técnico, y conciliar reclamos u obligaciones no reflejadas.",
+          "explanation": "No eleva la estimación de horas adicionales a una deuda liquidada y propone diligencias específicas para cuantificar obligaciones laborales y evaluar pasivos no revisados."
+        }
+      ],
+      "errors": [],
+      "novel_valid_findings": [
+        "El memo invoca el art. 3 del Código del Trabajo para advertir contra asumir que renuncias o acuerdos eliminan derechos laborales indisponibles; es una conexión pertinente a la propuesta de continuidad de técnicos y a la nota del vendedor sobre antigüedades.",
+        "Identifica correctamente que, si se transfiere un establecimiento comercial, la Ley 6380 art. 13 prevé cierre del ejercicio del enajenante y continuidad del valor fiscal de los bienes para el adquirente; advierte que falta evidencia para determinar si B es transferencia de establecimiento o venta separada de bienes.",
+        "Señala que la exención de IVA para acciones no permite inferir ausencia de todo efecto fiscal: distingue la regla de IVA del tratamiento de resultados en IRE y de la obligación declarativa sobre el excedente al valor nominal, evitando una conclusión tributaria binaria.",
+        "La reserva se dirige a la cuenta personal del accionista vendedor y no hay verificación de cuenta, custodia, garantía ni mecanismo de devolución; la recomendación de no transferir y de negociar protecciones si se insiste está bien sustentada en P02-D02-P03/P04 y P02-D07-P04.",
+        "La recomendación condicionada preserva una alternativa de rechazo o postergación si Horizonte no autoriza o si el vendedor no acepta condiciones prudentes, en lugar de presentar la adquisición como inevitable."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "El tratamiento del art. 28 laboral y la identidad del empleador bajo una transferencia de negocio dependen de cómo se estructure y ejecute la operación; el memo reconoce esa incertidumbre, pero la investigación normativa completa de otras posibles responsabilidades laborales o previsionales queda pendiente.",
+        "Las fuentes F02 y F03 no acreditan consolidación normativa a la fecha de corte; el memo lo advierte y condiciona el análisis fiscal a verificación posterior.",
+        "No se analiza en detalle la forma societaria y los requisitos registrales de una transferencia de acciones ni los requisitos instrumentales completos de una venta de activos; no hay base para tratar esa omisión como error decisivo porque el informe se limita a una recomendación preliminar y la tabla se restringe a cuestiones materiales."
+      ],
+      "preliminary_usability": "POTENTIALLY_USABLE",
+      "blind_id": "de2be54c83c14282bf0620af12170869",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 232499,
+        "output_tokens_including_reasoning": 1526,
+        "cost_accounted_upper_usd": 0.029825375,
+        "estimated_standard_no_cache_discount_usd": 0.0240129,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 0
+    },
+    {
+      "blind_id": "dfa259867f844c18aaaaf78afb1f40a6",
+      "status": "GRADE_FAILED",
+      "error": "TRANSPORT_OUTCOME_UNKNOWN",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 234464,
+        "output_tokens_including_reasoning": 8192,
+        "cost_accounted_upper_usd": 0.033404,
+        "estimated_standard_no_cache_discount_usd": 0,
+        "unknown_usage": true,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      }
+    },
+    {
+      "blind_id": "e6c4897a65ba4421a511370f3b761119",
+      "status": "GRADE_FAILED",
+      "error": "TRANSPORT_OUTCOME_UNKNOWN",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 234570,
+        "output_tokens_including_reasoning": 8192,
+        "cost_accounted_upper_usd": 0.03341725,
+        "estimated_standard_no_cache_discount_usd": 0,
+        "unknown_usage": true,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      }
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P03-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“Las matrices ML-1 y ML-2 no deben tratarse como activos propios de Ribera”",
+          "explanation": "Distingue correctamente la propiedad de Sur del Lago del registro y la estimación interna de reposición, y no convierte esos PYG 60.000.000 en una reducción automática del precio. Propone excluir las matrices de los activos vendidos, coordinar su traslado como bienes del cliente y revisar la asignación."
+        },
+        {
+          "reference_id": "P03-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“La carta del cliente permite una transición potencial, pero no prueba que esté aprobada”",
+          "explanation": "Refleja la aceptación condicionada, enumera las condiciones técnicas y de transición, identifica que no existe aprobación técnica y plantea condicionar el cierre a su cumplimiento; conserva la alternativa de postergar o no adquirir."
+        },
+        {
+          "reference_id": "P03-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“No confiar en ‘cerrar y reabrir legajos’ como mecanismo que extinga continuidad o pasivos.”",
+          "explanation": "Conecta la condición laboral con la viabilidad técnica y comercial, identifica que los técnicos expresaron interés condicionado y recomienda verificar antigüedad, condiciones y conciliaciones sin presentar la retención del precio como liberación frente a trabajadores."
+        },
+        {
+          "reference_id": "P03-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“Debe acordarse entre las tres sociedades quién produce y entrega, quién factura, qué efectivo o crédito pasa a Fresno”",
+          "explanation": "Reconcilia el anticipo de PYG 120.000.000 y el saldo comercial de PYG 80.000.000 con el pedido de PYG 200.000.000; advierte contra el doble cobro y distingue la aritmética de una conclusión sobre propiedad, exigibilidad o impuestos."
+        },
+        {
+          "reference_id": "P03-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“Los PYG 240.000.000 diferidos forman parte de los PYG 900.000.000; no son además una garantía en efectivo.”",
+          "explanation": "Identifica el error de duplicación, analiza las limitaciones del mecanismo de imputación y propone negociar garantía o retención con reglas y plazos adecuados, sin asegurar que el saldo cubra toda contingencia."
+        },
+        {
+          "reference_id": "P03-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“El reclamo de PYG 40.000.000 por agosto-7 está controvertido, no aceptado y no documentado como nota de crédito.”",
+          "explanation": "Lo distingue del anticipo, recoge que la cesión no queda condicionada al pago de esa cifra y que Ribera no queda liberada por defectos anteriores. Recomienda un procedimiento de revisión y rechaza una compensación automática."
+        },
+        {
+          "reference_id": "P03-H07",
+          "treatment": "PARTIAL",
+          "exact_output_quote": "“No hay base suficiente en el expediente para cuantificar el impuesto ni concluir el tratamiento de cada derecho o componente.”",
+          "explanation": "El memo trata adecuadamente la incertidumbre sobre base, precio, documentación, IVA y fabricación pendiente, y evita inventar una tasa o liquidación. Sin embargo, omite una consecuencia fiscal específica potencialmente importante de la transferencia de establecimiento comercial: el art. 13 de F03 dispone el cierre del ejercicio económico para el enajenante y que el adquirente mantenga el mismo valor fiscal de los bienes al momento de adquirirlos. Debía señalarla como cuestión a confirmar, sin asumir que esta estructura necesariamente califica."
+        },
+        {
+          "reference_id": "P03-H08",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "“El estimado de PYG 8.000.000 por vacaciones es grupal, incompleto y no una liquidación”",
+          "explanation": "No transforma el estimado en deuda definitiva ni considera que los recibos de septiembre prueben la cancelación de todos los saldos. Propone obtener legajos y conciliaciones individuales y distingue la responsabilidad contractual de una liberación frente a trabajadores."
+        }
+      ],
+      "errors": [],
+      "novel_valid_findings": [
+        "La omisión del art. 13 de F03 deja fuera un posible efecto fiscal de la operación como transferencia de establecimiento comercial: cierre del ejercicio del enajenante y continuidad, para el adquirente, de los valores fiscales de los bienes al momento de adquisición. Su aplicación concreta depende de confirmar la calificación jurídica de la transacción y la normativa vigente a la fecha de corte."
+      ],
+      "recommendation_coherent": true,
+      "limitations": [
+        "La valoración de la referencia fiscal añadida se basa en el texto proporcionado de F03; el propio memo reconoce que el corpus no acredita consolidación normativa al 19/10/2026, por lo que corresponde verificar vigencia, modificaciones y reglamentación antes de concluir."
+      ],
+      "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+      "blind_id": "e9448c92ba6a4647b276ab9ec77674f9",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 233180,
+        "output_tokens_including_reasoning": 1398,
+        "cost_accounted_upper_usd": 0.0298465,
+        "estimated_standard_no_cache_discount_usd": 0.024017,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 8
+    },
+    {
+      "reference_findings": [
+        {
+          "reference_id": "P03-H01",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "No deben comprarse ni valorarse como bienes de Ribera; el conteo las incluye para control de traslado, no como acto de venta, y no define ajuste de precio si se excluyen",
+          "explanation": "Distingue correctamente la titularidad de Sur del Lago de la custodia y del valor interno de reposición, y señala que la exclusión no determina por sí sola cómo ajustar el precio. También propone depurar el anexo y documentar el traslado."
+        },
+        {
+          "reference_id": "P03-H02",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "La carta del cliente es una base útil, no prueba de cumplimiento: condiciona su consentimiento a actuaciones futuras y no libera a Ribera por reclamos anteriores",
+          "explanation": "Trata la carta como aceptación condicionada, no como rechazo total ni consentimiento ya perfeccionado; identifica las condiciones de matrices, trazabilidad y operadores, y exige aprobación técnica final previa al cierre."
+        },
+        {
+          "reference_id": "P03-H03",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "La fecha de ingreso del 2 de noviembre en la planilla no debe sustituir la antigüedad registrada, que en los operadores se remonta a 2017 y 2019; los otros cuatro ingresaron entre 2021 y 2025",
+          "explanation": "Reconoce que el interés de los técnicos no equivale a aceptar nuevas condiciones, advierte contra reiniciar antigüedad mediante nuevos legajos y propone verificar obligaciones y documentar la continuidad."
+        },
+        {
+          "reference_id": "P03-H04",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Antes del cierre debe establecerse quién termina y factura la producción, a quién se entrega el efectivo o cómo se reconoce un crédito/ajuste, y cómo se aplica el saldo de PYG 80 millones.",
+          "explanation": "Identifica que los PYG 120 millones ya fueron recibidos por Ribera, que Fresno no tiene acreditada su transferencia y que el cliente no pagará de nuevo lo anticipado. Propone resolver la prestación futura, el efectivo o ajuste y la facturación en un acuerdo tripartito."
+        },
+        {
+          "reference_id": "P03-H05",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "La retención **no es garantía adicional**",
+          "explanation": "Explica la doble contabilización y que los PYG 240 millones forman parte del precio diferido. También advierte que faltan procedimiento, garantía y decisor de reclamos y que el diferimiento no cubre automáticamente todos los pasivos."
+        },
+        {
+          "reference_id": "P03-H06",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Fresno no debería asumirlo sin acuerdo expreso",
+          "explanation": "Distingue el reclamo de PYG 40 millones del anticipo, informa que está controvertido y no reconocido, y conserva el procedimiento de inspección sin tratar el consentimiento a la cesión como renuncia a reclamos anteriores."
+        },
+        {
+          "reference_id": "P03-H07",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "Los bienes muebles y los derechos requieren clasificación y base documentada; el precio de PYG 900 millones y la asignación comercial no bastan para una liquidación",
+          "explanation": "Relaciona el análisis fiscal con la composición real de los activos, los derechos y OP-44; diferencia tasa legal, base imponible y precio comercial, y deja pendiente verificar normativa y reglamentación vigentes y obtener un dictamen tributario."
+        },
+        {
+          "reference_id": "P03-H08",
+          "treatment": "SUFFICIENT",
+          "exact_output_quote": "la estimación de PYG 8 millones de vacaciones no es liquidación individual",
+          "explanation": "No convierte la estimación conjunta en deuda liquidada ni considera que recibos y aportes de septiembre prueben una conciliación completa. Pide legajos, conciliación individual y reserva o indemnidad."
+        }
+      ],
+      "errors": [
+        {
+          "severity": "MATERIAL",
+          "category": "INCORRECT_SOURCE_APPLICATION",
+          "exact_output_quote": "La sustitución del empleador no afecta contratos vigentes; el empleador sustituido responde solidariamente con el sustituyente por obligaciones anteriores durante seis meses, tras los cuales subsiste la responsabilidad del nuevo empleador (Ley 213, Código del Trabajo, art. 28; F02 L118–120). Por tanto, “cerrar legajos y reabrirlos” no elimina el riesgo.",
+          "evidence_locator": "P03-D01-P01 (Fresno quiere adquirir bienes y derechos, no acciones, y Ribera seguirá existiendo); P03-D02-P04 (borrador sobre seis empleados, sin decisión de cómo documentar antigüedad o responsabilidades); F02 L118–120 (art. 28, cuyo supuesto es la sustitución del empleador).",
+          "explanation": "El artículo 28 establece consecuencias si hay sustitución del empleador, pero el expediente describe una compra de activos y derechos y no determina si jurídicamente esta operación constituye esa sustitución ni cómo se instrumentará la continuidad. El memo presenta como aplicable al caso una regla cuyo presupuesto aún requiere análisis. La advertencia sobre antigüedad y la diligencia laboral son pertinentes; conviene formular la solidaridad legal como consecuencia condicionada a establecer dicho presupuesto, sin dar por resuelta la calificación por el mero hecho de prever continuidad de empleados."
+        }
+      ],
+      "novel_valid_findings": [],
+      "recommendation_coherent": true,
+      "limitations": [
+        "La conclusión sobre sucesión o sustitución de empleador requiere revisar la estructura definitiva de transferencia y las circunstancias de continuidad; el expediente no basta para resolverla."
+      ],
+      "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+      "blind_id": "fda7cc4b03a3417d8e1bb177d5f93d69",
+      "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 232945,
+        "output_tokens_including_reasoning": 1673,
+        "cost_accounted_upper_usd": 0.029954625,
+        "estimated_standard_no_cache_discount_usd": 0.024131,
+        "unknown_usage": false,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      },
+      "non_literal_quote_count": 0
+    }
+  ]
+}

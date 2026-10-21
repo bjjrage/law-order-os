@@ -1,0 +1,27 @@
+{
+  "version": "0.5",
+  "cases": 6,
+  "executions": 36,
+  "turns": 144,
+  "official_downloads": 16,
+  "dossiers": 6,
+  "manifest_files": 106,
+  "paid_inferences": 0,
+  "human_legal_validation": "PENDING",
+  "isolation": "VERIFIED_OFFLINE_APPCONTAINER",
+  "global_spend_cap": "VERIFIED_OFFLINE_PERSISTENT_ATOMIC",
+  "paid_execution_enabled": false,
+  "scope": "documentary integrity and offline technical verification; no legal approval or live authorization",
+  "native_isolation_evidence_package_version": "0.5",
+  "legal_freshness_review": "PROVISIONAL_HUMAN_SIGNOFF_PENDING",
+  "paid_budget_ready": false,
+  "corpus_and_context_verified": true,
+  "long_context_price_verified": true,
+  "live_blockers": [
+    "HUMAN_LEGAL_VALIDATION",
+    "BLINDING_AND_FEES",
+    "REAL_COUNTS_AND_COST_PREFLIGHT",
+    "TOTAL_AUTHORIZATION",
+    "LIVE_TRANSPORT_NOT_IMPLEMENTED"
+  ]
+}

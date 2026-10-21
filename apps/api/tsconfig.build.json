@@ -1,0 +1,5 @@
+{
+ "extends":"../../tsconfig.json",
+ "compilerOptions":{"noEmit":false,"outDir":"../../dist/os-app","rootDir":"../..","declaration":false},
+ "include":["src/**/*.ts","../../packages/**/*.ts","../../infra/local/**/*.ts","../../os-core/src/**/*.ts"]
+}

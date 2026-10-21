@@ -1,0 +1,3075 @@
+
+
+<!-- main content -->
+<div class="box">
+  <div class="center">
+
+    <!-- demo -->
+    <div id="demo" class="box jplist" style="margin: 20px 0 50px 0">
+
+      <!-- ios button: show/hide panel -->
+      <div class="jplist-ios-button">
+        <i class="fa fa-sort"></i>
+        Operaciones de Filtro
+      </div>
+
+      <!-- panel -->
+      <div class="jplist-panel box panel-top">
+
+        <!-- back button button -->
+        <button
+          type="button"
+          data-control-type="back-button"
+          data-control-name="back-button"
+          data-control-action="back-button">
+          <i class="fa fa-arrow-left"></i>&nbsp;Atrás
+        </button>
+
+        <!-- reset button -->
+        <button
+          type="button"
+          class="jplist-reset-btn"
+          data-control-type="reset"
+          data-control-name="reset"
+          data-control-action="reset">
+          Reset &nbsp;<i class="fa fa-share"></i>
+        </button>
+
+        <!-- items per page dropdown -->
+        <div
+          class="jplist-drop-down"
+          data-control-type="items-per-page-drop-down"
+          data-control-name="paging"
+          data-control-action="paging">
+
+          <ul>
+            <li><span data-number="10" data-default="true">10 por página </span></li>
+            <li><span data-number="15">15 por página </span></li>
+            <li><span data-number="20">20 por página </span></li>
+            <li><span data-number="all">Mostrar Todos </span></li>
+          </ul>
+        </div>
+
+        <!-- sort dropdown -->
+        <div
+          class="jplist-drop-down"
+          data-control-type="sort-drop-down"
+          data-control-name="sort"
+          data-control-action="sort"
+          data-datetime-format="{day}/{month}/{year}">
+          <!-- {year}, {month}, {day}, {hour}, {min}, {sec} -->
+
+          <ul>
+            <li><span data-path="default">Ordenar por</span></li>
+            <li><span data-path=".title" data-order="asc" data-type="text">Título A-Z</span></li>
+            <li><span data-path=".title" data-order="desc" data-type="text">Título Z-A</span></li>
+            <li><span data-path=".desc" data-order="asc" data-type="text">Descripción A-Z</span></li>
+            <li><span data-path=".desc" data-order="desc" data-type="text">Descripción Z-A</span></li>
+            <li><span data-path=".ministerio" data-order="asc" data-type="text" data-default="true">Instituciones A-Z</span></li>
+            <li><span data-path=".ministerio" data-order="desc" data-type="number">Instituciones Z-A</span></li>
+            <li><span data-path=".date" data-order="asc" data-type="datetime">Fecha asc</span></li>
+            <li><span data-path=".date" data-order="desc" data-type="datetime">Fecha desc</span></li>
+          </ul>
+        </div>
+
+        <!-- filter by title -->
+        <div class="text-filter-box">
+
+          <i class="fa fa-search  jplist-icon"></i>
+
+          <!--[if lt IE 10]>
+				<div class="jplist-label">Filter by Title:</div>
+				<![endif]-->
+
+          <input
+            data-path=".title"
+            type="text"
+            value=""
+            placeholder="Filtro por Título"
+            data-control-type="textbox"
+            data-control-name="title-filter"
+            data-control-action="filter" />
+        </div>
+
+        <!-- filter by description -->
+        <div class="text-filter-box">
+
+          <i class="fa fa-search  jplist-icon"></i>
+
+          <!--[if lt IE 10]>
+				<div class="jplist-label">Filter by Description:</div>
+				<![endif]-->
+
+          <input
+            data-path=".desc"
+            type="text"
+            value=""
+            placeholder="Filtro por Descripción"
+            data-control-type="textbox"
+            data-control-name="desc-filter"
+            data-control-action="filter" />
+        </div>
+
+        <!-- views -->
+        <div
+          class="jplist-views"
+          data-control-type="views"
+          data-control-name="views"
+          data-control-action="views"
+          data-default="jplist-list-view">
+        </div>
+
+        <!-- pagination results -->
+        <div
+          class="jplist-label"
+          data-type="Página {current} de {pages}"
+          data-control-type="pagination-info"
+          data-control-name="paging"
+          data-control-action="paging">
+        </div>
+
+        <!-- pagination control -->
+        <div
+          class="jplist-pagination"
+          data-control-type="pagination"
+          data-control-name="paging"
+          data-control-action="paging"
+          data-items-per-page="10">
+        </div>
+
+      </div>
+
+      <!-- data -->
+      <div class="list box text-shadow" id="resultado-consulta">
+
+          <div class="list-item box" id="16656">
+            <!-- data -->
+            <div class="block">
+              <p class="date">65 - 2025</p>
+              <p class="title">Decreto 3594  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL EL &quot;TRIG&#201;SIMO CUARTO PROTOCOLO ADICIONAL AL ACUERDO DE COMPLEMENTACI&#211;N ECON&#211;MICA N&#176; 36 CELEBRADO ENTRE LOS GOBIERNOS DE LOS ESTADOS PARTES DEL MERCOSUR Y EL GOBIERNO DEL ESTADO PLURINACIONAL DE BOLIVIA&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 65 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16657">
+            <!-- data -->
+            <div class="block">
+              <p class="date">65 - 2025</p>
+              <p class="title">Decreto 3593  </p>
+              <p class="desc">POR EL CUAL SE FACULTA AL MINISTERIO DE ECONOM&#205;A Y FINANZAS A EMITIR RESOLUCIONES PARA INCORPORAR AL ORDENAMIENTO JUR&#205;DICO INTERNO LAS DIRECTIVAS DE LA COMISI&#211;N DE COMERCIO DEL MERCOSUR QUE APRUEBAN, CON CAR&#193;CTER EXCEPCIONAL Y TRANSITORIO, REDUCCIONES DEL ARANCEL A LA IMPORTACI&#211;N.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 65 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16660">
+            <!-- data -->
+            <div class="block">
+              <p class="date">88 - 2025</p>
+              <p class="title">Ley 7467 /2025 </p>
+              <p class="desc">QUE ESTABLECE DISPOSICIONES ESPECIALES PARA EVENTOS DEPORTIVOS DE RELEVANCIA INTERNACIONAL, CELEBRADOS EN LA REP&#218;BLICA DEL PARAGUAY
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 88 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16661">
+            <!-- data -->
+            <div class="block">
+              <p class="date">89 - 2025</p>
+              <p class="title">Ley 7460 /2025 </p>
+              <p class="desc">QUE DECLARA PATRIMONIO CULTURAL Y NATURAL AL SITIO DE LA EXMINA DE AZUFRE PARA LA PRODUCCI&#211;N DE P&#211;LVORA DURANTE LA GUERRA DE LA TRIPLE ALIANZA, UBICADO EN EL L&#205;MITE DE LAS CIUDADES DE VALENZUELA E ITACURUB&#205; DE LA CORDILLERA</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 89 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16676">
+            <!-- data -->
+            <div class="block">
+              <p class="date">105 - 2025</p>
+              <p class="title">Ley 7462 /2025 </p>
+              <p class="desc">QUE APRUEBA EL QUINCUAG&#201;SIMO TERCER PROTOCOLO ADICIONAL AL ACUERDO DE COMPLEMENTACI&#211;N ECON&#211;MICA ACE — 35, CELEBRADO ENTRE LOS GOBIERNOS DE LOS ESTADOS PARTES DEL MERCOSUR Y EL GOBIERNO DE LA REP&#218;BLICA DE CHILE
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 105 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16677">
+            <!-- data -->
+            <div class="block">
+              <p class="date">105 - 2025</p>
+              <p class="title">Ley 7455 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE LAMBAR&#201;, A TRANSFERIR A T&#205;TULO ONEROSO A SUS ACTUALES OCUPANTES UN INMUEBLE, CON CTA. CTE. CTRAL. N&#176; 13-1261- 05 UBICADO SOBRE LA CALLE EMILIO HASSLER ESQUINA TOBAT&#205;, DEL BARRIO SAN ROQUE GONZ&#193;LEZ, DEL DISTRITO DE LAMBAR&#201;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 105 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16688">
+            <!-- data -->
+            <div class="block">
+              <p class="date">126 - 2025</p>
+              <p class="title">Ley 7484 /2025 </p>
+              <p class="desc">QUE AUMENTA PENSI&#211;N GRACIABLE A LA SE&#209;ORA JUANA ILDA RAM&#205;REZ
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 126 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16689">
+            <!-- data -->
+            <div class="block">
+              <p class="date">126 - 2025</p>
+              <p class="title">Ley 7483 /2025 </p>
+              <p class="desc">QUE CONCEDE PENSI&#211;N GRACIABLE AL SE&#209;OR LUIS GUSTAVO MART&#205;NEZ
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 126 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16692">
+            <!-- data -->
+            <div class="block">
+              <p class="date">128 - 2025</p>
+              <p class="title">Ley 7481 /2025 </p>
+              <p class="desc">QUE CREA ESPACIOS RECREATIVOS ACCESIBLES EN PLAZAS Y PARQUES DE LA REP&#218;BLICA DEL PARAGUAY
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 128 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16695">
+            <!-- data -->
+            <div class="block">
+              <p class="date">121 - 2025</p>
+              <p class="title">Decreto 3951  </p>
+              <p class="desc">POR EL CUAL SE MODIFICAN LOS ANEXOS &quot;A&quot; (GU&#205;A DE NORMAS Y PROCESOS DEL PGN 2025) Y &quot;B&quot; &quot;FORMULARIOS&quot; DEL DECRETO N&#176; 3248/2025, &#171;POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024, &quot;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;&#187;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 121 - 2025</span>
+                <span class="ministerio">Ministerio de Hacienda</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16704">
+            <!-- data -->
+            <div class="block">
+              <p class="date">135 - 2025</p>
+              <p class="title">Ley 7489 /2025 </p>
+              <p class="desc">QUE CREA LA UNIVERSIDAD CENTRO FAMILIAR DE ADORACI&#211;N.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 135 - 2025</span>
+                <span class="ministerio">Ministerio de Educaci&#243;n y Ciencias</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16705">
+            <!-- data -->
+            <div class="block">
+              <p class="date">133 - 2025</p>
+              <p class="title">Decreto 4061  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTAN ART&#205;CULOS 6, NUMERAL 10 Y EL ART&#205;CULO 235 NUMERAL 5 DE LA LEY N&#176; 7280/2024 &quot;DE REFORMA Y MODERNIZACI&#211;N DE LA POLIC&#205;A NACIONAL&quot;, SE CREA EL &quot;SISTEMA NACIONAL DE B&#218;SQUEDA Y LOCALIZACI&#211;N DE PERSONAS DESAPARECIDAS&quot; Y SE APRUEBA SU REGLAMENTO DE IMPLEMENTACI&#211;N.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 133 - 2025</span>
+                <span class="ministerio">Ministerio de la Ni&#241;ez y la Adolescencia</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16717">
+            <!-- data -->
+            <div class="block">
+              <p class="date">147 - 2025</p>
+              <p class="title">Decreto 4145  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA EL CAP&#205;TULO IV DE LA LEY N&#176; 1328/1998, &quot;DE DERECHO DE AUTOR Y DERECHOS CONEXOS&quot; Y SE DEROGA EL DECRETO N&#176; 4212/2015
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 147 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16743">
+            <!-- data -->
+            <div class="block">
+              <p class="date">168 - 2025</p>
+              <p class="title">Ley 7500 /2025 </p>
+              <p class="desc">POR LA QUE SE REGULA LA IMPORTACI&#211;N, COMERCIALIZACI&#211;N, POSESION Y, USO DE INHIBIDORES DE SE&#209;ALES DE FRECUENCIA Y COMUNICACI&#211;N.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 168 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16746">
+            <!-- data -->
+            <div class="block">
+              <p class="date">178 - 2025</p>
+              <p class="title">Ley 7520 /2025 </p>
+              <p class="desc">QUE AMPL&#205;A EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024 &quot;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;, CONSEJO DE LA MAGISTRATURA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 178 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16753">
+            <!-- data -->
+            <div class="block">
+              <p class="date">184 - 2025</p>
+              <p class="title">Ley 7524 /2025 </p>
+              <p class="desc">QUE MODIFICA LOS ART&#205;CULOS 64, 66 Y 278 DE LA LEY N&#176; 834/1996 &quot;QUE ESTABLECE EL C&#211;DIGO ELECTORAL PARAGUAYO&quot;, MODIFICADO POR LAS LEYES N&#186;s 4743/2012, 6167/2018 Y 6501/2020
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 184 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16754">
+            <!-- data -->
+            <div class="block">
+              <p class="date">184 - 2025</p>
+              <p class="title">Ley 7519 /2025 </p>
+              <p class="desc">QUE ESTABLECE EL MARCO NORMATIVO PARA EL PROCEDIMIENTO ADMINISTRATIVO Y EL PROCESO JUDICIAL DE RESTITUCI&#211;N Y VISITA INTERNACIONAL DE NI&#209;OS, NI&#209;AS Y ADOLESCENTES
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 184 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16755">
+            <!-- data -->
+            <div class="block">
+              <p class="date">184 - 2025</p>
+              <p class="title">Ley 7513 /2025 </p>
+              <p class="desc">DE BIENESTAR Y PROTECCI&#211;N ANIMAL.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 184 - 2025</span>
+                <span class="ministerio">Ministerio de Agricultura y Ganader&#237;a</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16658">
+            <!-- data -->
+            <div class="block">
+              <p class="date">79 - 2025</p>
+              <p class="title">Ley 7459 /2025 </p>
+              <p class="desc">QUE MODIFICA LOS ART&#205;CULOS 1&#176;, 2&#176; Y 3&#176; DE LA LEY N&#176; 7447/2025 &quot;QUE MODIFICA EL ART&#205;CULO 22 DE LA LEY N&#176; 620/1976 &quot;QUE ESTABLECE EL R&#201;GIMEN TRIBUTARIO PARA LAS MUNICIPALIDADES DE 1&#176;, 2&#176; Y 3&#176; CATEGOR&#205;AS&quot;, MODIFICADO POR LA LEY N&#176; 135/1991&quot; Y DEROGA LA LEY N&#176; 5817/2017 &quot;QUE SUSTITUYE LOS ART&#205;CULOS 25, 26 Y 27 DE LA LEY N&#176; 881/81 &#39;QUE ESTABLECE EL R&#201;GIMEN TRIBUTARIO Y DE OTROS RECURSOS PARA LA MUNICIPALIDAD DE ASUNCI&#211;N&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 79 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16672">
+            <!-- data -->
+            <div class="block">
+              <p class="date">105 - 2025</p>
+              <p class="title">Ley 7466 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE CAPIAT&#193;, A TRANSFERIR A T&#205;TULO ONEROSO A FAVOR DEL CLUB 29 DE SEPTIEMBRE, LAS FRACCIONES DE INMUEBLES INDIVIDUALIZADAS COMO CTA. CTE. CTRAL. N&#176; 27-5344-02, MATR&#205;CULA L02/75657 Y CTA. CTE. CTRAL. N&#176; 27-5344-01, MATR&#205;CULA L02/75656, UBICADAS EN LA COMPA&#209;&#205;A 6TA. - BARRIO NI&#209;O SALVADOR DEL MUNDO, DEL CITADO MUNICIPIO, PARA ASIENTO DEL CAMPO DEPORTIVO DEL REFERIDO CLUB
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 105 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16673">
+            <!-- data -->
+            <div class="block">
+              <p class="date">105 - 2025</p>
+              <p class="title">Ley 7464 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE ENCARNACI&#211;N, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE EDUCACI&#211;N Y CIENCIAS, UN INMUEBLE CON TODO LO EDIFICADO Y PLANTADO, INDIVIDUALIZADO COMO LOTE N&#176; 02-A DE LA MANZANA 30, FINCA N&#176; 24974, CTA. CTE. CTRAL. N&#176; 23-2152-02, UBICADO EN EL BARRIO ITANGUA, DEL DISTRITO DE ENCARNACI&#211;N, PARA ASIENTO DE LA ESCUELA B&#193;SICA N&#176; 7.694 MAR&#205;A FLORENCIA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 105 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16674">
+            <!-- data -->
+            <div class="block">
+              <p class="date">105 - 2025</p>
+              <p class="title">Ley 7365 /2025 </p>
+              <p class="desc">QUE CREA UN TRIBUNAL DE APELACI&#211;N EN LO PENAL, UN TRIBUNAL DE SENTENCIA ITINERANTE, UN JUZGADO DE EJECUCI&#211;N PENAL Y UN JUZGADO EN LO LABORAL PARA LA CIUDAD DE CORONEL OVIEDO DEL DEPARTAMENTO DE CAAGUAZ&#218;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 105 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16675">
+            <!-- data -->
+            <div class="block">
+              <p class="date">105 - 2025</p>
+              <p class="title">Ley 7463 /2025 </p>
+              <p class="desc">QUE MODIFICA Y AMPL&#205;A LOS ART&#205;CULOS 2&#176; Y 7&#176; DE LA LEY N&#176; 296/1994 &quot;QUE ORGANIZA EL FUNCIONAMIENTO DEL CONSEJO DE LA MAGISTRATURA&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 105 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16678">
+            <!-- data -->
+            <div class="block">
+              <p class="date">109 - 2025</p>
+              <p class="title">Ley 7478 /2025 </p>
+              <p class="desc">QUE AUTORIZA A LA MUNICIPALIDAD DE PASO BARRETO A TRANSFERIR, A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO — MINISTERIO DE SALUD P&#218;BLICA Y BIENESTAR SOCIAL, UN INMUEBLE IDENTIFICADO CON PADR&#211;N N&#176; 3113, FINCA N&#176; 3701, PROPIEDAD DE LA MUNICIPALIDAD DE PASO BARRETO, PARA LA CONSTRUCCI&#211;N DE LA UNIDAD DE SALUD FAMILIAR, DE LA COLONIA JORGE SEBASTI&#193;N MIRANDA, HUGUA &#209;AND&#218;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 109 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16679">
+            <!-- data -->
+            <div class="block">
+              <p class="date">109 - 2025</p>
+              <p class="title">Ley 7476 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO AL DOMINIO PRIVADO DE LA MUNICIPALIDAD DE VILLA ELISA, EL INMUEBLE IDENTIFICADO COMO PARTE DE LA FINCA N&#176; 5847, CTA. CTE. CTRAL. N&#176; 27-0768-11, PARA LA CONSTRUCCI&#211;N DEL CENTRO INTEGRAL DE PRIMERA INFANCIA, DEPENDIENTE DEL CITADO MUNICIPIO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 109 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16680">
+            <!-- data -->
+            <div class="block">
+              <p class="date">109 - 2025</p>
+              <p class="title">Ley 7473 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE VILLA ELISA, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO — MINISTERIO DE EDUCACI&#211;N Y CIENCIAS, EL INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N&#176; 8.839, CTA. CTE. CTRAL. N&#176; 27-1365-01, FRACCI&#211;N &quot;A&quot;, UBICADO EN EL BARRIO MBOCAYATY, DEL MENCIONADO DISTRITO PARA ASIENTO DE LA ESCUELA B&#193;SICA N&#176; 3.839 &quot;ESTADO DE QATAR&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 109 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16685">
+            <!-- data -->
+            <div class="block">
+              <p class="date">118 - 2025</p>
+              <p class="title">Decreto 3907  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176; 6935 / 2022, &quot;DEL SERVICIO DIPLOM&#193;TICO Y CONSULAR Y DEL SERVICIO ADMINISTRATIVO Y T&#201;CNICO DEL MINISTERIO DE RELACIONES EXTERIORES DE LA REP&#218;BLICA DEL PARAGUAY&quot;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 118 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16686">
+            <!-- data -->
+            <div class="block">
+              <p class="date">119 - 2025</p>
+              <p class="title">Ley 7480 /2025 </p>
+              <p class="desc">QUE DECLARA A LA CIUDAD DE ATYR&#193;, COMO CAPITAL ECOL&#211;GICA DE LA REP&#218;BLICA DEL PARAGUAY.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 119 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16687">
+            <!-- data -->
+            <div class="block">
+              <p class="date">119 - 2025</p>
+              <p class="title">Ley 7419 /2025 </p>
+              <p class="desc">QUE APRUEBA EL CONTRATO DE PR&#201;STAMO N&#176; 24.2.0312.1 POR UN MONTO DE HASTA US$ 101.606.009,02. PARA EL FINANCIAMIENTO DEL PROYECTO &quot;ADQUISICI&#211;N DE MEDIOS A&#201;REOS (AVIONES) CON CAPACIDAD TECNOL&#211;GICA PARA LA DEFENSA DEL ESPACIO A&#201;REO NACIONAL Y EL APOYO A LA LUCHA CONTRA EL NARCOTERRORISMO&quot;, QUE ESTAR&#193; A CARGO DEL MINISTERIO DE DEFENSA NACIONAL, Y AMPL&#205;A EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 119 - 2025</span>
+                <span class="ministerio">Ministerio de Hacienda</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16690">
+            <!-- data -->
+            <div class="block">
+              <p class="date">126 - 2025</p>
+              <p class="title">Ley 7482 /2025 </p>
+              <p class="desc">QUE CONCEDE PENSI&#211;N GRACIABLE AL SE&#209;OR H&#201;CTOR Z&#193;RATE RAM&#205;REZ
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 126 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16734">
+            <!-- data -->
+            <div class="block">
+              <p class="date">164 - 2025</p>
+              <p class="title">Decreto 4230  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA COMPETENCIA REGULATORIA DE LAS AUTORIDADES DE APLICACI&#211;N DE LA LEY N&#176; 74452025, &quot;DE LA FUNCI&#211;N P&#218;BLICA Y DEL SERVICIO CIVIL&quot;, Y SE DISPONE SU IMPLEMENTACI&#211;N.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 164 - 2025</span>
+                <span class="ministerio">Ministerio de Hacienda</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16735">
+            <!-- data -->
+            <div class="block">
+              <p class="date">164 - 2025</p>
+              <p class="title">Ley 7504 /2025 </p>
+              <p class="desc">QUE CREA EL FIDEICOMISO DE ADMINISTRACI&#211;N PARA EL APOYO FINANCIERO A PRODUCTORES, PROFESIONALES INDEPENDIENTES, CUENTA PROPISTAS, MICRO, PEQUE&#209;AS Y MEDIANAS EMPRESAS (FIPROMIPYMES).</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 164 - 2025</span>
+                <span class="ministerio">Ministerio de Hacienda</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16736">
+            <!-- data -->
+            <div class="block">
+              <p class="date">164 - 2025</p>
+              <p class="title">Ley 7501 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE AREGU&#193;, A TRANSFERIR A T&#205;TULO ONEROSO UN INMUEBLE INDIVIDUALIZADO CON CTA. CTE. CTRAL. N&#176; 27049902, A FAVOR DEL CLUB 8 DE SETIEMBRE F.B.C., UBICADO EN LA COMPA&#209;&#205;A VALLE PUC&#218;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 164 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16737">
+            <!-- data -->
+            <div class="block">
+              <p class="date">164 - 2025</p>
+              <p class="title">Ley 7499 /2025 </p>
+              <p class="desc">QUE CONCEDE PENSI&#211;N GRACIABLE AL SE&#209;OR CELSO DUARTE GONZ&#193;LEZ.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 164 - 2025</span>
+                <span class="ministerio">Ministerio de Hacienda</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16738">
+            <!-- data -->
+            <div class="block">
+              <p class="date">164 - 2025</p>
+              <p class="title">Ley 7498 /2025 </p>
+              <p class="desc">DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL, AUTORIZA A LA MUNICIPALIDAD DE LUQUE, A TRANSFERIR A T&#205;TULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES, UN INMUEBLE INDIVIDUALIZADO CON CTA. CTE. CTRAL. N&#176; 27-3497-02, Y QUE FORMA PARTE DE LA FINCA MATRIZ N&#176; 859 (SUJETO A LOTEAMIENTO), UBICADO EN LA 10 COMPA&#209;&#205;A CA&#209;ADA GARAY, NUCLEADOS EN LA &quot;COMISI&#211;N VECINAL DE FOMENTO TERRITORIO SOCIAL REFUGIO NAVIDAD&quot;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 164 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16739">
+            <!-- data -->
+            <div class="block">
+              <p class="date">164 - 2025</p>
+              <p class="title">Ley 7497 /2025 </p>
+              <p class="desc">QUE CREA JUZGADOS, DEFENSOR&#205;AS P&#218;BLICAS, FISCAL&#205;AS Y TRIBUNALES DE APELACI&#211;N EN LA CIRCUNSCRIPCI&#211;N JUDICIAL DEL DEPARTAMENTO DE PARAGUAR&#205;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 164 - 2025</span>
+                <span class="ministerio">Ministerio de Justicia y Trabajo</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16740">
+            <!-- data -->
+            <div class="block">
+              <p class="date">164 - 2025</p>
+              <p class="title">Ley 7494 /2025 </p>
+              <p class="desc">DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE MINGA GUAZ&#218;, A TRANSFERIR A T&#205;TULO ONEROSO A FAVOR DE LA FIRMA DRACENA S.A., LAS FRACCIONES DE TERRENOS DESTINADAS INICIALMENTE A CALLES, CTA. CTE. CTRAL. N&#176; 26-2533-02 Y MATR&#205;CULA N&#176; K13/6.749, DEL DISTRITO DE MINGA GUAZ&#218;, DEPARTAMENTO ALTO PARAN&#193;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 164 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16667">
+            <!-- data -->
+            <div class="block">
+              <p class="date">102 - 2025</p>
+              <p class="title">Decreto 3848  </p>
+              <p class="desc">POR EL CUAL SE ESTABLECEN LOS MONTOS DE LAS TASAS A SER PERCIBIDAS POR EL SERVICIO NACIONAL DE CALIDAD Y SALUD ANIMAL (SENACSA) EN CONCEPTO DE SERVICIO DE TOMA DE MUESTRAS PARA BRUCELOSIS Y TUBERCULINIZACI&#211;N
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 102 - 2025</span>
+                <span class="ministerio">Ministerio de Agricultura y Ganader&#237;a</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16693">
+            <!-- data -->
+            <div class="block">
+              <p class="date">129 - 2025</p>
+              <p class="title">Ley 7458 /2025 </p>
+              <p class="desc">QUE DECLARA EN SITUACI&#211;N DE EMERGENCIA VIAL, LA RUTA PY 08 &quot;DOCTOR BLAS GARAY&quot;, TRAMO VIEJO, CON UNA EXTENSI&#211;N DE 14 KILOMETROS, QUE UNE LOS DISTRITOS DE SAN PEDRO DEL PARAN&#193; Y JOSE LEANDRO OVIEDO, DEPARTAMENTO ITAPUA, Y FACULTA AL PODER EJECUTIVO - MINISTERIO DE OBRAS PUBLICAS Y COMUNICACIONES, A GESTIONAR LOS RECURSOS NECESARIOS PARA LA REPARACION DEL TRAMO AFECTADO
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 129 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16710">
+            <!-- data -->
+            <div class="block">
+              <p class="date">143 - 2025</p>
+              <p class="title">Ley 7488 /2025 </p>
+              <p class="desc">QUE FACULTA AL MINISTERIO DE EDUCACI&#211;N Y CIENCIAS, AL MINISTERIO DE SALUD P&#218;BLICA Y BIENESTAR SOCIAL Y AL MINISTERIO DEL INTERIOR, CONJUNTAMENTE CON OTRAS ENTIDADES DEL ESTADO A REALIZAR INVERSIONES EN ESTABLECIMIENTOS EDUCATIVOS, DE SALUD P&#218;BLICA Y DEPENDENCIAS POLICIALES QUE CAREZCAN DE T&#205;TULO DE PROPIEDAD</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 143 - 2025</span>
+                <span class="ministerio">Ministerio de Educaci&#243;n y Ciencias; Ministerio de Salud P&#250;blica y Bienestar Social; Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16711">
+            <!-- data -->
+            <div class="block">
+              <p class="date">144 - 2025</p>
+              <p class="title">Ley 7503 /2025 </p>
+              <p class="desc">SISTEMA NACIONAL DE PAGOS</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 144 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16744">
+            <!-- data -->
+            <div class="block">
+              <p class="date">168 - 2025</p>
+              <p class="title">Ley 7508 /2025 </p>
+              <p class="desc">QUE ESTABLECE MEDIDAS SANITARIAS DE PROTECCI&#211;N A LA SALUD DE LAS PERSONAS EN RELACI&#211;N A LOS DISPOSITIVOS, ACCESORIOS E INSUMOS DE LOS SISTEMAS ELECTR&#211;NICOS DE ADMINISTRACI&#211;N DE NICOTINA (SEAN) Y SISTEMAS SIMILARES SIN NICOTINA (SSSN) U OTROS DISPOSITIVOS NUEVOS Y EMERGENTES CON O SIN NICOTINA, Y SUSTANCIAS UTILIZADAS PARA EL VAPEO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 168 - 2025</span>
+                <span class="ministerio">Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16747">
+            <!-- data -->
+            <div class="block">
+              <p class="date">178 - 2025</p>
+              <p class="title">Ley 7516 /2025 </p>
+              <p class="desc">QUE AUTORIZA A LA MUNICIPALIDAD DE SAN IGNACIO GUAZ&#218;, A ERIGIR UN MONUMENTO A LA MEMORIA DEL ARTISTA DELF&#205;N ROQUE RUIZ P&#201;REZ (KOKI RU&#205;Z), EN LA LOCALIDAD DE TA&#209;ARANDY
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 178 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16748">
+            <!-- data -->
+            <div class="block">
+              <p class="date">176 - 2025</p>
+              <p class="title">Ley 7512 /2025 </p>
+              <p class="desc">QUE AUTORIZA LA DESAFECTACI&#211;N DE INMUEBLES DE DOMINIO PUBLICO MUNICIPAL, INDIVIDUALIZADOS COMO FRACCI&#211;N L-2 Y FRACCION L-3 QUE FORMAN PARTE DE LA MATRICULA N&#176; S08/7825 Y CUENTA ,CORRIENTE CATASTRAL N&#176; 31-0039-01 DEL MUNICIPIO DE KATUETE, DEPARTAMENTO DE CANINDEYU, A FAVOR DEL ESTADO PARAGUAYO, PARA LA SEDE DEL JUZGADO DE PRIMERA INSTANCIA Y DEL MINISTERIO DE LA DEFENSA PUBLICA.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 176 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16749">
+            <!-- data -->
+            <div class="block">
+              <p class="date">178 - 2025</p>
+              <p class="title">Ley 7515 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE SAN JUAN BAUTISTA, DEPARTAMENTO DE MISIONES, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO (CORTE SUPREMA DE JUSTICIA, JUZGADO DE PAZ), UN TERRENO MUNICIPAL, INDIVIDUALIZADO COMO LOTE N&#176; 06, MANZANA N&#176; 0556 CON CTA. CTE. CTRAL. N&#176; 24-0556-08, UBICADO EN EL BARRIO N&#176; 02 — VILLA BONITA DE LA CIUDAD DE SAN JUAN BAUTISTA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 178 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16752">
+            <!-- data -->
+            <div class="block">
+              <p class="date">180 - 2025</p>
+              <p class="title">Ley 7511 /2025 </p>
+              <p class="desc">QUE MODIFICA EL ART&#205;CULO 60 DE LA LEY N&#186; 1562/2000 &quot;ORG&#193;NICA DEL MINISTERIO P&#218;BLICO&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 180 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16759">
+            <!-- data -->
+            <div class="block">
+              <p class="date">191 - 2025</p>
+              <p class="title">Decreto 4456  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA EL ART&#205;CULO 2&#176; DE LA LEY N&#176; 7459/2025, QUE MODIFICA LOS ART&#205;CULOS 1&#176;, 2&#176; Y 3&#176; DE LA LEY N&#176; 7447/2025, &#171;QUE MODIFICA EL ART&#205;CULO 22 DE LA LEY N&#176; 620/1976, &quot;QUE ESTABLECE EL R&#201;GIMEN TRIBUTARIO PARA LAS MUNICIPALIDADES DE 1&#176;, 2&#176; y 3&#176; CATEGOR&#205;AS&quot;&#187;, MODIFICADO POR LA LEY N&#176; 135/1991, Y DEROGA LA LEY N&#176; 5817/2017, &#171;QUE SUSTITUYE LOS ART&#205;CULOS 25, 26 y 27 DE LA LEY N&#176; 881/81, ,&quot;QUE ESTABLECE EL R&#201;GIMEN TRIBUTARIO Y DE OTROS RECURSOS PARA LA MUNICIPALIDAD DE ASUNCI&#211;N&quot;&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 191 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16761">
+            <!-- data -->
+            <div class="block">
+              <p class="date">193 - 2025</p>
+              <p class="title">Ley 7521 /2025 </p>
+              <p class="desc">QUE ESTABLECE EL D&#205;A NACIONAL DEL QU&#205;MICO INDUSTRIAL
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 193 - 2025</span>
+                <span class="ministerio">Ministerio de Educaci&#243;n y Ciencias</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16763">
+            <!-- data -->
+            <div class="block">
+              <p class="date">196 - 2025</p>
+              <p class="title">Decreto 4434  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7504/2025, &quot;QUE CREA EL FIDEICOMISO DE ADMINISTRACI&#211;N PARA EL APOYO FINANCIERO A PRODUCTORES, PROFESIONALES INDEPENDIENTES, CUENTAPROPISTAS, MICRO, PEQUE&#209;AS Y MEDIANAS EMPRESAS (FIPROMIPYMES)&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 196 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16766">
+            <!-- data -->
+            <div class="block">
+              <p class="date">203 - 2025</p>
+              <p class="title">Decreto 4522  </p>
+              <p class="desc">POR EL CUAL SE DECLARA FERIADO NACIONAL CONFORME CON LAS DISPOSICIONES DE LA LEY N&#176; 7544/2025 EL D&#205;A. VIERNES 5 DE SETIEMBRE DE 2025 PARA CONMEMORAR LA HIST&#211;RICA CLASIFICACI&#211;N DE LA SELECCI&#211;N PARAGUAYA (&quot;LA ALBIRROJA&quot;) A LA COPA MUNDIAL DE LA FIFA 2026
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 203 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16767">
+            <!-- data -->
+            <div class="block">
+              <p class="date">202 - 2025</p>
+              <p class="title">Ley 7531 /2025 </p>
+              <p class="desc">QUE ABROGA LA LEY N&#176; 5.466/2015 &quot;QUE AUTORIZA A LA MUNICIPALIDAD DE CAAGUAZ&#218;, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL MINISTERIO DE SALUD P&#218;BLICA Y BIENESTAR SOCIAL, FRACCIONES DE INMUEBLES INDIVIDUALIZADAS COMO FINCAS N&#176;s 975 Y 4.497, DEL DISTRITO DE CAAGUAZ&#218;, PARA ASIENTO DEL HOSPITAL REGIONAL&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 202 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16769">
+            <!-- data -->
+            <div class="block">
+              <p class="date">205 - 2025</p>
+              <p class="title">Ley 7548 /2025 </p>
+              <p class="desc">QUE ESTABLECE EL NUEVO R&#201;GIMEN DE INCENTIVOS FISCALES PARA LA INVERSI&#211;N NACIONAL Y EXTRANJERA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 205 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16778">
+            <!-- data -->
+            <div class="block">
+              <p class="date">215 - 2025</p>
+              <p class="title">Ley 7537 /2025 </p>
+              <p class="desc">QUE AUTORIZA A LA GOBERNACI&#211;N DEPARTAMENTAL DEL XIII DEPARTAMENTO DE AMAMBAY A TRANSFERIR A T&#205;TULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES, EL INMUEBLE DE SU DOMINIO PRIVADO, INDIVIDUALIZADO COMO FINCA N&#176; 9058, DEL DISTRITO DE PEDRO JUAN CABALLERO
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 215 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16779">
+            <!-- data -->
+            <div class="block">
+              <p class="date">217 - 2025</p>
+              <p class="title">Ley 7539 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE LUQUE, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE EDUCACI&#211;N Y CIENCIAS, UN INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N&#176; 10385, CTA. CTE. CTRAL. N&#176; 27-0925-13, UBICADO EN LA TERCERA COMPA&#209;&#205;A ISLA BOGADO DEL MENCIONADO DISTRITO, PARA LA AMPLIACI&#211;N DEL PREDIO DEL COLEGIO NACIONAL ISLA BOGADO
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 217 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16784">
+            <!-- data -->
+            <div class="block">
+              <p class="date">221 - 2025</p>
+              <p class="title">Ley 7533 /2025 </p>
+              <p class="desc">QUE REGULA EL EJERCICIO PROFESIONAL DEL FARMAC&#201;UTICO EN LA REP&#218;BLICA DEL PARAGUAY.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 221 - 2025</span>
+                <span class="ministerio">Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16764">
+            <!-- data -->
+            <div class="block">
+              <p class="date">199 - 2025</p>
+              <p class="title">Ley 7532 /2025 </p>
+              <p class="desc">QUE MODIFICA EL ART&#205;CULO 168 DE LA LEY N&#176; 7408/2024 “QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025”
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 199 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16765">
+            <!-- data -->
+            <div class="block">
+              <p class="date">200 - 2025</p>
+              <p class="title">Ley 7544 /2025 </p>
+              <p class="desc">QUE DETERMINA LOS FERIADOS NACIONALES DE LA REP&#218;BLICA DEL PARAGUAY, SE ESTABLECEN LOS FERIADOS M&#211;VILES Y SE FACULTA AL PODER EJECUTIVO A INSTITUIR OTROS FERIADOS EN SITUACIONES ESPECIALES.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 200 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16774">
+            <!-- data -->
+            <div class="block">
+              <p class="date">209 - 2025</p>
+              <p class="title">Ley 7530 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL EL INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N&#176; 28707 Y AUTORIZA A LA MUNICIPALIDAD DE SAN LORENZO A PERMUTAR POR OTRO INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA MATR&#205;CULA N&#176; L13/3561, UBICADOS EN EL LUGAR DENOMINADO LAGUNA GRANDE, DEL DISTRITO DE SAN LORENZO, DEPARTAMENTO CENTRAL
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 209 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16775">
+            <!-- data -->
+            <div class="block">
+              <p class="date">209 - 2025</p>
+              <p class="title">Decreto 4535  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176;4457/2012, &quot;PARA LAS MICRO, PEQUE&#209;AS Y MEDIANAS EMPRESAS (MIPYMES)&quot;, MODIFICADA Y AMPLIADA POR LA LEY N&#176; 7444/2025, &#171;QUE MODIFICA VARIOS ART&#205;CULOS Y AMPL&#205;A LA LEY N&#176; 4457/2012, &quot;PARA LAS MICRO, PEQUE&#209;AS Y MEDIANAS EMPRESAS (MIPYMES)&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 209 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16816">
+            <!-- data -->
+            <div class="block">
+              <p class="date">251 - 2025</p>
+              <p class="title">Ley 7543 /2025 </p>
+              <p class="desc">QUE MODIFICA EL ART&#205;CULO 30 DE LA LEY N&#176; 879/1981 &#171;C&#211;DIGO DE ORGANIZACI&#211;N JUDICIAL&#187;, MODIFICADO POR LA LEY N&#176; 2248/2003
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 251 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16817">
+            <!-- data -->
+            <div class="block">
+              <p class="date">252 - 2025</p>
+              <p class="title">Ley 7576 /2025 </p>
+              <p class="desc">QUE AMPL&#205;A EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024, INSTITUTO DE PREVISI&#211;N SOCIAL
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 252 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16819">
+            <!-- data -->
+            <div class="block">
+              <p class="date">271 - 2025</p>
+              <p class="title">Decreto 4925  </p>
+              <p class="desc">POR EL CUAL SE MODIFICAN VARIOS ART&#205;CULOS DEL DECRETO N&#176; 11967 DE FECHA 25 DE ENERO DE 2001, &#171;POR EL CUAL SE REGLAMENTA LA LEY N&#176; 1618/2000, &quot;DE CONCESIONES DE OBRAS Y SERVICIOS P&#218;BLICOS&quot;&#187;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 271 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16820">
+            <!-- data -->
+            <div class="block">
+              <p class="date">262 - 2025</p>
+              <p class="title">Ley 7583 /2025 </p>
+              <p class="desc">QUE ESTABLECE LA FECHA 5 DE MAYO COMO “D&#205;A NACIONAL DE LA GUITARRA Y DEL GUITARRISTA PARAGUAYO”.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 262 - 2025</span>
+                <span class="ministerio">Ministerio de Educaci&#243;n y Ciencias</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16821">
+            <!-- data -->
+            <div class="block">
+              <p class="date">262 - 2025</p>
+              <p class="title">Ley 7582 /2025 </p>
+              <p class="desc">QUE MODIFICA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024, “QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025”, MINISTERIO DEL AMBIENTE Y DESARROLLO SOSTENIBLE
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 262 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16822">
+            <!-- data -->
+            <div class="block">
+              <p class="date">262 - 2025</p>
+              <p class="title">Ley 7579 /2025 </p>
+              <p class="desc">QUE DECLARA DE UTILIDAD P&#218;BLICA Y EXPROPIA LOS INMUEBLES INDIVIDUALIZADOS COMO MATR&#205;CULA N&#176; P01/1486 Y COMO FINCAS N&#176;s 19819 Y 19922, UBICADOS EN EL MUNICIPIO DE VILLA HAYES, DEPARTAMENTO DE PRESIDENTE HAYES, A FAVOR DEL MINISTERIO DE OBRAS P&#218;BLICAS Y COMUNICACIONES Y DEL MINISTERIO DEL INTERIOR - POLIC&#205;A NACIONAL Y DESAFECTA LA MATR&#205;CULA N&#176; P01/1486 DE SU CONDICI&#211;N DE &#193;REA SILVESTRE PROTEGIDA.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 262 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16823">
+            <!-- data -->
+            <div class="block">
+              <p class="date">262 - 2025</p>
+              <p class="title">Ley 7578 /2025 </p>
+              <p class="desc">QUE MODIFICA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024 “QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025”, INSTITUTO PARAGUAYO DE ARTESAN&#205;A
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 262 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16828">
+            <!-- data -->
+            <div class="block">
+              <p class="date">256 - 2025</p>
+              <p class="title">Decreto 4809  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA RESOLUCI&#211;N DEL GRUPO MERCADO COM&#218;N DEL MERCOSUR N&#176; 14/23, &quot;REGLAMENTO T&#201;CNICO MERCOSUR SOBRE USO DE ALMIDONES EN QUESOS DE MUY ALTA HUMEDAD&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 256 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores; Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16829">
+            <!-- data -->
+            <div class="block">
+              <p class="date">256 - 2025</p>
+              <p class="title">Decreto 4808  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA DIRECTIVA DE LA COMISI&#211;N DE COMERCIO DEL MERCOSUR N&#176; 130/24, R&#201;GIMEN DE ORIGEN MERCOSUR &quot;ACTUALIZACI&#211;N DE LOS REQUISITOS ESPEC&#205;FICOS DE ORIGEN A LA VII ENMIENDA DEL SISTEMA ARMONIZADO&quot; (DEROGACI&#211;N DE LA DIRECTIVA CCM N&#176; 54/24), PROTOCOLIZADA ANTE LA ALADI COMO &quot;DUCENT&#201;SIMO VIG&#201;SIMO PRIMER PROTOCOLO ADICIONAL AL ACUERDO DE COMPLEMENTACI&#211;N ECON&#211;MICA N&#176; 18&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 256 - 2025</span>
+                <span class="ministerio">Ministerio de Agricultura y Ganader&#237;a; Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16837">
+            <!-- data -->
+            <div class="block">
+              <p class="date">276 - 2025</p>
+              <p class="title">Ley 7580 /2025 </p>
+              <p class="desc">QUE DENOMINA CON EL NOMBRE DE &#171;TENIENTE RAM&#211;N TRIAY GENES&#187;, A LA RUTA QUE CONECTA LAS CIUDADES DE NUEVA ITALIA (DEPARTAMENTO CENTRAL) Y CARAPEGU&#193; (DEPARTAMENTO DE PARAGUAR&#205;), CONOCIDA POPULARMENTE COMO RUTA NUEVA ITALIA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 276 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16840">
+            <!-- data -->
+            <div class="block">
+              <p class="date">281 - 2025</p>
+              <p class="title">Decreto 4957  </p>
+              <p class="desc">POR EL CUAL SE MODIFICAN PARCIALMENTE LOS ART&#205;CULOS 2&#176;, 4&#176;, 6&#176; y 7&#176; DEL DECRETO N&#176; 2491/2024, &#171;POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7081/2023, &quot;QUE ESTABLECE UN R&#201;GIMEN DE INDEMNIZACI&#211;N DE LOS GESTORES COMBATIENTES DEL LEVANTAMIENTO DEL 2 Y 3 DE FEBRERO DEL A&#209;O 1989&quot;&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 281 - 2025</span>
+                <span class="ministerio">Ministerio de Defensa Nacional; Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16844">
+            <!-- data -->
+            <div class="block">
+              <p class="date">284 - 2025</p>
+              <p class="title">Ley 7594 /2025 </p>
+              <p class="desc">QUE DECLARA EL 20 DE MARZO, COMO EL &#171;D&#205;A NACIONAL DEL POLIT&#211;LOGO&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 284 - 2025</span>
+                <span class="ministerio">Ministerio de Educaci&#243;n y Ciencias</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16845">
+            <!-- data -->
+            <div class="block">
+              <p class="date">284 - 2025</p>
+              <p class="title">Ley 7592 /2025 </p>
+              <p class="desc">QUE MODIFICA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024 &#171;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;, MINISTERIO DE INDUSTRIA Y COMERCIO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 284 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16846">
+            <!-- data -->
+            <div class="block">
+              <p class="date">284 - 2025</p>
+              <p class="title">Ley 7571 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE PRESIDENTE FRANCO, A TRANSFERIR A T&#205;TULO GRATUITO, A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO P&#218;BLICO, UN INMUEBLE INDIVIDUALIZADO CON CTA. CTE. CTRAL. N&#176; 26-1859-12, PARTE DE LA FINCA N&#176; 8073, LOTE N&#176; 02, MANZANA &#171;C&#187;, DEL DISTRITO DE PRESIDENTE FRANCO, PARA LA CONSTRUCCI&#211;N DE LA SEDE DEL MINISTERIO P&#218;BLICO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 284 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16847">
+            <!-- data -->
+            <div class="block">
+              <p class="date">292 - 2025</p>
+              <p class="title">Decreto 5040  </p>
+              <p class="desc">POR EL CUAL SE DECLARA FERIADO NACIONAL CONFORME CON LAS DISPOSICIONES DE LA LEY N&#176; 7544/2025 EL D&#205;A VIERNES 26 DE DICIEMBRE DE 2025.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 292 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16848">
+            <!-- data -->
+            <div class="block">
+              <p class="date">291 - 2025</p>
+              <p class="title">Ley 7595 /2025 </p>
+              <p class="desc">QUE DECLARA DE INTER&#201;S SOCIAL Y AUTORIZA A LA GOBERNACI&#211;N DEL DEPARTAMENTO DE AMAMBAY, A TRANSFERIR A T&#205;TULO GRATUITO, A FAVOR DE LA UNIVERSIDAD NACIONAL - FILIAL PEDRO JUAN CABALLERO, UNA FRACCI&#211;N DE INMUEBLE DE SU DOMINIO PRIVADO, IDENTIFICADA COMO PARTE DE LA FINCA N&#176; 9763 DEL DISTRITO DE PEDRO JUAN CABALLERO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 291 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16849">
+            <!-- data -->
+            <div class="block">
+              <p class="date">291 - 2025</p>
+              <p class="title">Ley 7591 /2025 </p>
+              <p class="desc">QUE AUTORIZA A LA MUNICIPALIDAD DE CONCEPCI&#211;N, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE EDUCACI&#211;N Y CIENCIAS, PARTE DE LA FRACCI&#211;N III, CON MATR&#205;CULA N&#176; D01/24067, LOS LOTES MUNICIPALES N&#176;s 16, 17, 18, 19, 20 Y 21 DE LA MANZANA N&#176; 3, CON CTA. CTE. CTRAL. N&#176; 17-1962-07, UBICADO EN CAMPO YPAN&#201;, LOS MANANTIALES, DEL CITADO MUNICIPIO DEL DEPARTAMENTO DE CONCEPCI&#211;N, PARA ASIENTO DE LA ESCUELA B&#193;SICA “ANDR&#201;S VILLALBA BARRIOS”.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 291 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16856">
+            <!-- data -->
+            <div class="block">
+              <p class="date">320 - 2025</p>
+              <p class="title">Ley 7609 /2025 </p>
+              <p class="desc">QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2026 </p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 320 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16857">
+            <!-- data -->
+            <div class="block">
+              <p class="date">319 - 2025</p>
+              <p class="title">Ley 7615 /2025 </p>
+              <p class="desc">QUE MODIFICA EL ART&#205;CULO 8&#176; DE LA LEY N&#176; 609/1995 &#171;QUE ORGANIZA LA CORTE SUPREMA DE JUSTICIA&#187; Y DEROGA LA LEY N&#176; 7058/2023.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 319 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16858">
+            <!-- data -->
+            <div class="block">
+              <p class="date">319 - 2025</p>
+              <p class="title">Ley 7614 /2025 </p>
+              <p class="desc">QUE ESTABLECE MECANISMOS DE SANEAMIENTO PARA JUICIOS EJECUTIVOS, ACCIONES PREPARATORIAS Y DE COBRO DE GUARAN&#205;ES. (Mafia de los Pagar&#233;s)</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 319 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16859">
+            <!-- data -->
+            <div class="block">
+              <p class="date">312 - 2025</p>
+              <p class="title">Ley 7561 /2025 </p>
+              <p class="desc">DE ARBITRAJE
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 312 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16818">
+            <!-- data -->
+            <div class="block">
+              <p class="date">262 - 2025</p>
+              <p class="title">Ley 7564 /2025 </p>
+              <p class="desc">QUE ESTABLECE PROCEDIMIENTOS Y L&#205;MITES PARA LA AUTORIZACI&#211;N DE DESCUENTOS Y TRABA DE EMBARGOS, SOBRE SALARIOS Y REMUNERACIONES POR SERVICIOS PERSONALES PAGADOS EN ORGANISMOS Y ENTIDADES DEL ESTADO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 262 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16824">
+            <!-- data -->
+            <div class="block">
+              <p class="date">262 - 2025</p>
+              <p class="title">Ley 7573 /2025 </p>
+              <p class="desc">QUE MODIFICA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024 “QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025”, ENTE REGULADOR DE SERVICIOS SANITARIOS
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 262 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16825">
+            <!-- data -->
+            <div class="block">
+              <p class="date">262 - 2025</p>
+              <p class="title">Ley 7562 /2025 </p>
+              <p class="desc">QUE APRUEBA EL “CONTRATO DE CONCESI&#211;N PARA LA EXPLOTACI&#211;N DE SERVICIOS B&#193;SICOS DE TELECOMUNICACIONES LOCAL, DE LARGA DISTANCIA NACIONAL, Y DE LARGA DISTANCIA INTERNACIONAL”, A SER SUSCRITO ENTRE LA COMISI&#211;N NACIONAL DE TELECOMUNICACIONES Y LA COMPA&#209;&#205;A PARAGUAYA DE COMUNICACIONES S.A
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 262 - 2025</span>
+                <span class="ministerio">Ministerio de Tecnolog&#237;a de la Informaci&#243;n y Comunicaci&#243;n</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16826">
+            <!-- data -->
+            <div class="block">
+              <p class="date">268 - 2025</p>
+              <p class="title">Decreto 4904  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTAN DIVERSOS ART&#205;CULOS DE LA LEY N&#176; 7280/2024 DE REFORMA Y MODERNIZACI&#211;N DE LA POLIC&#205;A NACIONAL Y SE ESTABLECEN LOS PROCEDIMIENTOS PARA ASCENSOS Y LOS CRITERIOS PARA LA EVALUACI&#211;N DE DESEMPE&#209;O DE OFICIALES Y SUBOFICIALES DE LA POLIC&#205;A NACIONAL
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 268 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16827">
+            <!-- data -->
+            <div class="block">
+              <p class="date">256 - 2025</p>
+              <p class="title">Decreto 4810  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA RESOLUCI&#211;N DEL GRUPO MERCADO COM&#218;N DEL MERCOSUR N&#176; 48/23, &#171;MODIFICACI&#211;N DE LA RESOLUCI&#211;N GMC N&#176; 46/06, &quot;REGLAMENTO T&#201;CNICO MERCOSUR SOBRE DISPOSICIONES PARA ENVASES, REVESTIMIENTOS, UTENSILIOS, TAPAS Y EQUIPAMIENTOS MET&#193;LICOS EN CONTACTO CON ALIMENTOS&quot;&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 256 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores; Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16831">
+            <!-- data -->
+            <div class="block">
+              <p class="date">272 - 2025</p>
+              <p class="title">Ley 7586 /2025 </p>
+              <p class="desc">QUE APRUEBA EL CONTRATO, DE PR&#201;STAMO SUSCRITO POR EL BANCO DE DESARROLLO DE AMERICA LATINA Y EL CARIBE (CAF), EN FECHA 21 DE MAYO DE 2025 Y POR LA REPUBLICA DEL PARAGUAY EN FECHA 22 DE MAYO DE 2025, POR UN MONTO DE HASTA US$ 74.200.000 (DOLARES DE LOS ESTADOS UNIDOS DE AMERICA SETENTA Y CUATRO MILLONES DOSCIENTOS MIL), PARA EL FINANCIAMIENTO DEL PROGRAMA DE CAMINOS VECINALES Y PUENTES - FASE 3, A CARGO DEL MINISTERIO DE OBRAS PUBLICAS Y COMUNICACIONES (MOPC); Y AMPLIA EL PRESUPUESTO GENERAL DE LA NACION PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 272 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16841">
+            <!-- data -->
+            <div class="block">
+              <p class="date">277 - 2025</p>
+              <p class="title">Ley 7596 /2025 </p>
+              <p class="desc">QUE MODIFICA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024 &#171;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&#187;, MINISTERIO DE SALUD P&#218;BLICA Y BIENESTAR SOCIAL.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 277 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16842">
+            <!-- data -->
+            <div class="block">
+              <p class="date">277 - 2025</p>
+              <p class="title">Ley 7575 /2025 </p>
+              <p class="desc">QUE MODIFICA Y AMPL&#205;A EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408, MINISTERIO DE EDUCACI&#211;N Y CIENCIAS - AGENCIA NACIONAL DE EVALUACI&#211;N Y ACREDITACI&#211;N DE LA EDUCACI&#211;N SUPERIOR.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 277 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16843">
+            <!-- data -->
+            <div class="block">
+              <p class="date">277 - 2025</p>
+              <p class="title">Ley 7574 /2025 </p>
+              <p class="desc">QUE DECLARA DE INTER&#201;S SOCIAL Y DISPONE LA TRANSFERENCIA, A T&#205;TULO GRATUITO, A FAVOR DE LA MUNICIPALIDAD DE TENIENTE 1&#176; MANUEL IRALA FERNANDEZ, DEPARTAMENTO DE PRESIDENTE HAYES, DE UNA FRACCI&#211;N DEL INMUEBLE INDIVIDUALIZADA COMO PARTE DE LA FINCA N&#176;13932, PROPIEDAD DEL INSTITUTO PARAGUAYO DE TECNOLOG&#205;A AGRARIA, PARA DESTINARLA A ASENTAMIENTO URBANO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 277 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16850">
+            <!-- data -->
+            <div class="block">
+              <p class="date">291 - 2025</p>
+              <p class="title">Ley 7590 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL, EL INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N&#176; 4505, A FAVOR DE LA DI&#211;CESIS DE SAN LORENZO Y AUTORIZA A LA MUNICIPALIDAD DE SAN LORENZO A PERMUTARLO POR OTRO INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N&#176; 4879 PROPIEDAD DE LA DI&#211;CESIS DE SAN LORENZO, UBICADOS EN EL BARRIO NUESTRA SE&#209;ORA DE LA ASUNCI&#211;N DEL CITADO MUNICIPIO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 291 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16851">
+            <!-- data -->
+            <div class="block">
+              <p class="date">291 - 2025</p>
+              <p class="title">Ley 7588 /2025 </p>
+              <p class="desc">QUE DESAFECTA DE LA MUNICIPALIDAD DE SAN LORENZO Y AUTORIZA A TRANSFERIR A T&#205;TULO ONEROSO A FAVOR DEL OBISPADO DE SAN LORENZO, UN INMUEBLE INDIVIDUALIZADO CON MATR&#205;CULA N&#176; L 13/50.029 Y CON CTAS. CTES. CTRALES. N&#176; 27-4308-02, N&#176; 27-4308-03, N&#176; 27-4308-04, N&#176; 27-4308-15, N&#176; 27- 4308-16, N&#176; 27-4308-17 Y N&#176; 27-4310-02, UBICADO EN EL BARRIO L&#201;RIDA, DE LA MENCIONADA CIUDAD, DEL DEPARTAMENTO CENTRAL PARA ASIENTO DE LA CAPILLA SAN PEDRO AP&#211;STOL.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 291 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16853">
+            <!-- data -->
+            <div class="block">
+              <p class="date">299 - 2025</p>
+              <p class="title">Ley 7599 /2025 </p>
+              <p class="desc">DE MODERNIZACI&#211;N DEL R&#201;GIMEN QUE REGULA Y FOMENTA LA GENERACI&#211;N DE ENERG&#205;A EL&#201;CTRICA A PARTIR DE FUENTES DE ENERG&#205;AS RENOVABLES NO CONVENCIONALES NO HIDR&#193;ULICAS.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 299 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16854">
+            <!-- data -->
+            <div class="block">
+              <p class="date">301 - 2025</p>
+              <p class="title">Ley 7599 /2025 </p>
+              <p class="desc">DE MODERNIZACI&#211;N DEL R&#201;GIMEN QUE REGULA Y FOMENTA LA GENERACI&#211;N DE ENERG&#205;A EL&#201;CTRICA A PARTIR DE FUENTES DE ENERG&#205;AS RENOVABLES NO CONVENCIONALES NO HIDR&#193;ULICAS (FE DE ERRATAS)</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 301 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16860">
+            <!-- data -->
+            <div class="block">
+              <p class="date">316 - 2025</p>
+              <p class="title">Ley 7621 /2025 </p>
+              <p class="desc">QUE MODIFICA Y AMPL&#205;A VARIOS ART&#205;CULOS DE LA LEY N&#176; 5162/2014 &#171;C&#211;DIGO DE EJECUCI&#211;N PENAL PARA LA REP&#218;BLICA DEL PARAGUAY&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 316 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16861">
+            <!-- data -->
+            <div class="block">
+              <p class="date">304 - 2025</p>
+              <p class="title">Ley 7605 /2025 </p>
+              <p class="desc">QUE CREA EL REGISTRO NACIONAL DE PERSONAS DESAPARECIDAS (RENAPED) Y EL SISTEMA NACIONAL DE ALERTA INMEDIATA PARA LA B&#218;SQUEDA DE PERSONAS DESAPARECIDAS (MAFE).
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 304 - 2025</span>
+                <span class="ministerio">Ministerio de la Ni&#241;ez y la Adolescencia; Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16703">
+            <!-- data -->
+            <div class="block">
+              <p class="date">132 - 2025</p>
+              <p class="title">Ley 7487 /2025 </p>
+              <p class="desc">QUE AMPL&#205;A EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LA LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024, MINISTERIO DE EDUCACI&#211;N Y CIENCIAS.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 132 - 2025</span>
+                <span class="ministerio">Ministerio de Hacienda</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16805">
+            <!-- data -->
+            <div class="block">
+              <p class="date">232 - 2025</p>
+              <p class="title">Resolución 1 /2025 </p>
+              <p class="desc">REGLAMENTO DE TRANSPARENCIA Y CRITERIOS M&#205;NIMOS PARA EL COBRO DE COMISIONES, GASTOS Y PENALIDADES EN EL SECTOR FINANCIERO.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 232 - 2025</span>
+                <span class="ministerio">Banco Central del Paraguay</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16812">
+            <!-- data -->
+            <div class="block">
+              <p class="date">238 - 2025</p>
+              <p class="title">Ley 7549 /2025 </p>
+              <p class="desc">QUE DISPONE LA OBLIGATORIEDAD DE LA CONSERVACI&#211;N DE DATOS PARA COMBATIR LA PORNOGRAF&#205;A RELATIVA A NI&#209;OS Y ADOLESCENTES Y HECHOS PUNIBLES CONEXOS
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 238 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16803">
+            <!-- data -->
+            <div class="block">
+              <p class="date">231 - 2025</p>
+              <p class="title">Ley 7551 /2025 </p>
+              <p class="desc">QUE APRUEBA EL ACUERDO POR NOTAS REVERSALES ENTRE EL GOBIERNO DE LA REP&#218;BLICA DEL PARAGUAY Y EL GOBIERNO DEL JAP&#211;N RELATIVO A LA COOPERACI&#211;N FINANCIERA NO REEMBOLSABLE PARA LA IMPLEMENTACI&#211;N DEL PROGRAMA DE DESARROLLO ECON&#211;MICO Y SOCIAL.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 231 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16804">
+            <!-- data -->
+            <div class="block">
+              <p class="date">232 - 2025</p>
+              <p class="title">Resolución 9 /2025 </p>
+              <p class="desc"> SUPERINTENDENCIA DE BANCOS CR&#201;DITOS PARA LA VIVIENDA NORMAS DE CLASIFICACI&#211;N Y CONSTITUCI&#211;N DE PREVISIONES CAJA DE JUBILACIONES Y PENSIONES DE EMPLEADOS DE BANCOS Y AFINES</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 232 - 2025</span>
+                <span class="ministerio">Banco Central del Paraguay</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16806">
+            <!-- data -->
+            <div class="block">
+              <p class="date">242 - 2025</p>
+              <p class="title">Decreto 4777  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA EL R&#201;GIMEN ESPECIAL DEL CONTRATO DE EMPLEO P&#218;BLICO DE LA LEY N&#176; 7445/2025, &quot;DE LA FUNCI&#211;N P&#218;BLICA Y DEL SERVICIO CIVIL&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 242 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16807">
+            <!-- data -->
+            <div class="block">
+              <p class="date">242 - 2025</p>
+              <p class="title">Decreto 4776  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA ORGANIZACI&#211;N, FUNCIONAMIENTO Y PROCEDIMIENTOS DEL CONSEJO DE SEGURIDAD SOCIAL EN EL MARCO DE LA LEY N&#176; 7235/2023
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 242 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16808">
+            <!-- data -->
+            <div class="block">
+              <p class="date">240 - 2025</p>
+              <p class="title">Decreto 4770  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTAN LAS DISPOSICIONES GENERALES DE LA LEY N&#176; 7445/2025, “DE LA FUNCI&#211;N P&#218;BLICA Y DEL SERVICIO CIVIL”
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 240 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16809">
+            <!-- data -->
+            <div class="block">
+              <p class="date">236 - 2025</p>
+              <p class="title">Decreto 4741  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176; 6841/2021, &quot;QUE FOMENTA Y REGULA LA ORGANIZACI&#211;N, CONSTITUCI&#211;N Y EL FUNCIONAMIENTO DE LAS COOPERATIVAS DE TRABAJO ASOCIADO&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 236 - 2025</span>
+                <span class="ministerio">Ministerio de Agricultura y Ganader&#237;a; Ministerio de Salud P&#250;blica y Bienestar Social; Ministerio de Trabajo, empleo y seguridad social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16810">
+            <!-- data -->
+            <div class="block">
+              <p class="date">237 - 2025</p>
+              <p class="title">Ley 7553 /2025 </p>
+              <p class="desc">QUE ABROGA LA LEY N&#176; 4900/2013 &#171;QUE DECLARA DE INTER&#201;S SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO (MINISTERIO DE SALUD P&#218;BLICA Y BIENESTAR SOCIAL), UN INMUEBLE INDIVIDUALIZADO COMO FINCA N&#176; 8669, UBICADO EN EL MUNICIPIO DE PRESIDENTE FRANCO, PARA ASIENTO DEL CENTRO DE SALUD DE LA LOCALIDAD&#187;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 237 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16811">
+            <!-- data -->
+            <div class="block">
+              <p class="date">238 - 2025</p>
+              <p class="title">Ley 7559 /2025 </p>
+              <p class="desc">QUE ESTABLECE EL 28 DE NOVIEMBRE DE CADA A&#209;O, COMO EL D&#205;A NACIONAL DE LA SEMILLA PARAGUAYA.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 238 - 2025</span>
+                <span class="ministerio">Ministerio de Agricultura y Ganader&#237;a; Ministerio de Educaci&#243;n y Ciencias</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16876">
+            <!-- data -->
+            <div class="block">
+              <p class="date">318 - 2025</p>
+              <p class="title">Decreto 5181 /2026 </p>
+              <p class="desc">POR EL CUAL SE APRUEBA EL SISTEMA DE VALORACI&#211;N FISCAL DE LOS INMUEBLES, ESTABLECIDOS POR LA DIRECCI&#211;N GENERAL DEL SERVICIO NACIONAL DE CATASTRO, QUE SERVIR&#193; COMO BASE IMPONIBLE PARA LA DETERMINACI&#211;N DEL IMPUESTO INMOBILIARIO Y SUS ADICIONALES, PARA EL EJERCICIO FISCAL 2026.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 318 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16878">
+            <!-- data -->
+            <div class="block">
+              <p class="date">314 - 2025</p>
+              <p class="title">Ley 7607 /2025 </p>
+              <p class="desc">QUE MODIFICA LOS ART&#205;CULOS 1&#176;, 2&#176; Y 3&#176; DE LA LEY N&#176; 5031/2013 &#171;QUE IMPLEMENTA EL IDIOMA INGL&#201;S EN LA MALLA CURRICULAR DE LA EDUCACI&#211;N P&#218;BLICA DESDE EL PREESCOLAR HASTA EL TERCERO DE LA MEDIA&#187;, E INCORPORA NUEVOS ART&#205;CULOS
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 314 - 2025</span>
+                <span class="ministerio">Ministerio de Educaci&#243;n y Ciencias</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16879">
+            <!-- data -->
+            <div class="block">
+              <p class="date">311 - 2025</p>
+              <p class="title">Ley 7618 /2025 </p>
+              <p class="desc">QUE ESTABLECE EL R&#201;GIMEN DE LICENCIA AMBIENTAL PARA EL CULTIVO, ENGORDE Y COMERCIALIZACI&#211;N DE ESPECIES AL&#211;CTONAS O EX&#211;TICAS EN CUERPOS DE AGUA CERRADOS O SEMIABIERTOS EN LA REP&#218;BLICA DEL PARAGUAY.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 311 - 2025</span>
+                <span class="ministerio">Ministerio de Agricultura y Ganader&#237;a; Ministerio del Ambiente y Desarrollo Sostenible</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16882">
+            <!-- data -->
+            <div class="block">
+              <p class="date">306 - 2025</p>
+              <p class="title">Decreto 5104  </p>
+              <p class="desc">POR EL CUAL SE PRORROGA LA VIGENCIA DEL DECRETO N&#176; 7636 DEL 7 DE NOVIEMBRE DE 2011, &#171;POR EL CUAL SE REGLAMENTA EL ART&#205;CULO 26 DE LA LEY N&#176; 422/1973, &quot;FORESTAL&quot;, Y SE ESTABLECE UN R&#201;GIMEN ESPECIAL PARA EL APROVECHAMIENTO, TRANSPORTE Y COMERCIALIZACI&#211;N DE MADERAS Y OTROS PRODUCTOS PROVENIENTES DE PLANTACIONES FORESTALES ESTABLECIDAS CON ESPECIES EX&#211;TICAS O INTRODUCIDAS DE R&#193;PIDO CRECIMIENTO&#187;,AMPLIANDO LA PR&#211;RROGA CONCEDIDA POR LOS DECRETOS N&#176; 4768/2021 Y N&#176; 4433/2015.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 306 - 2025</span>
+                <span class="ministerio">Ministerio de Agricultura y Ganader&#237;a</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16888">
+            <!-- data -->
+            <div class="block">
+              <p class="date">264 - 2025</p>
+              <p class="title">Ley 7587 /2025 </p>
+              <p class="desc">QUE CREA EL INSTITUTO SUPERIOR DE LA ACADEMIA LEGISLATIVA (ISAL)
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 264 - 2025</span>
+                <span class="ministerio">Ministerio de Educaci&#243;n y Ciencias</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16901">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Ley 7606 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE PRESIDENTE FRANCO A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO - CORTE SUPREMA DE JUSTICIA, UN INMUEBLE DESTINADO A SEDE DEL PODER JUDICIAL.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16903">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Ley 7601 /2025 </p>
+              <p class="desc">QUE AUTORIZA A LA MUNICIPALIDAD DE GUARAMBAR&#201;, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO - SERVICIO NACIONAL DE CALIDAD Y SANIDAD VEGETAL Y DE SEMILLAS, UN INMUEBLE INDIVIDUALIZADO CON MATR&#205;CULA N&#176; 2629, CTA. CTE. CTRAL. N&#176; 27-0426-02, Y CTA. CTE. CTRAL. N&#176; 27-0426-03, UBICADO EN EL BARRIO ALEGRE DEL MENCIONADO DISTRITO, DEPARTAMENTO CENTRAL, PARA SEDE DE LA OFICINA REGIONAL.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16906">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Decreto 5175  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA RESOLUCI&#211;N DEL GRUPO MERCADO COM&#218;N DEL MERCOSUR N&#176; 34/22, &quot;FARMACOPEA MERCOSUR: CROMATOGRAF&#205;A&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores; Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16881">
+            <!-- data -->
+            <div class="block">
+              <p class="date">311 - 2025</p>
+              <p class="title">Ley 7603 /2025 </p>
+              <p class="desc">QUE DECLARA EL 31 DE AGOSTO COMO EL &#171;D&#205;A NACIONAL DEL OBSTETRA&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 311 - 2025</span>
+                <span class="ministerio">Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16885">
+            <!-- data -->
+            <div class="block">
+              <p class="date">303 - 2025</p>
+              <p class="title">Ley 7598 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE PEDRO JUAN CABALLERO, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL CUERPO DE BOMBEROS VOLUNTARIOS, FRACCIONES DE INMUEBLES QUE FORMAN PARTE DE LA FINCA N&#176; 689 Y DE LA FINCA N&#176; 4067 DE LA CIUDAD DE PEDRO JUAN CABALLERO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 303 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16886">
+            <!-- data -->
+            <div class="block">
+              <p class="date">303 - 2025</p>
+              <p class="title">Ley 7589 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE LAMBAR&#201;, A TRANSFERIR A T&#205;TULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES, PARTE DEL INMUEBLE IDENTIFICADO CON LA CTA. CTE. CTRAL. N&#176; 13-1862-00, UBICADO EN EL BARRIO SAN ROQUE GONZ&#193;LEZ DE SANTACRUZ DE LA CIUDAD DE LAMBAR&#201;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 303 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16899">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Decreto 5154  </p>
+              <p class="desc">POR EL CUAL SE ESTABLECE UN R&#201;GIMEN EXCEPCIONAL Y TRANSITORIO PARA LA REGULARIZACI&#211;N DE DETERMINADAS DEUDAS IMPOSITIVAS.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16900">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Ley 7608 /2025 </p>
+              <p class="desc">QUE MODIFICA LOS ART&#205;CULOS 1&#176; Y 2&#176; DE LA LEY N&#176; 3854/2009 &#171;QUE RECONOCE AL INSTITUTO T&#201;CNICO SUPERIOR ‘DE SALUD Y MEDIO AMBIENTE (ITSMA)’, COMO INSTITUTO SUPERIOR EN CIENCIAS DE LA SALUD ‘SANTA ROSA M&#205;STICA&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio de Educaci&#243;n y Ciencias</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16908">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Decreto 5172  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA RESOLUCI&#211;N DEL GRUPO MERCADO COM&#218;N DEL MERCOSUR N&#176; 05/19, &quot;FARMACOPEA MERCOSUR: M&#201;TODOS GENERALES PARA IDENTIFICACI&#211;N DE NITRATO&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores; Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16909">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Decreto 5174  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA RESOLUCI&#211;N DEL GRUPO MERCADO COM&#218;N DEL MERCOSUR N&#176; 26/23, &quot;ORIENTACIONES FRENTE A EVENTOS DE SALUD P&#218;BLICA PARA EL PERSONAL DE VIGILANCIA Y CONTROL SANITARIO EN PUNTOS DE ENTRADA Y MEDIOS DE TRANSPORTE INTERNACIONAL DEL MERCOSUR&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores; Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16910">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Decreto 5171  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA RESOLUCI&#211;N DEL GRUPO MERCADO COM&#218;N DEL MERCOSUR N&#176; 25/23, &quot;REQUISITOS DE BUENAS PR&#193;CTICAS PARA EL DIAGN&#211;STICO DE MUERTE ENCEF&#193;LICA&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores; Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16911">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Decreto 5170  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL EL &quot;ACUERDO DE COMPLEMENTACI&#211;N ECON&#211;MICA N&#176; 76 ENTRE LOS ESTADOS PARTES DEL MERCADO COM&#218;N DEL SUR (MERCOSUR) SIGNATARIOS DEL TRATADO DE ASUNCI&#211;N Y LA REP&#218;BLICA DE PANAM&#193;&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio de Agricultura y Ganader&#237;a; Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16895">
+            <!-- data -->
+            <div class="block">
+              <p class="date">269 - 2025</p>
+              <p class="title">Ley 7566 /2025 </p>
+              <p class="desc">QUE CREA LA UNIVERSIDAD INTERNACIONAL DE DESARROLLO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 269 - 2025</span>
+                <span class="ministerio">Ministerio de Educaci&#243;n y Ciencias</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16898">
+            <!-- data -->
+            <div class="block">
+              <p class="date">270 - 2025</p>
+              <p class="title">Ley 7567 /2025 </p>
+              <p class="desc">QUE DECLARA AL DISTRITO DE GENERAL ELIZARDO AQUINO, DEL II DEPARTAMENTO SAN PEDRO &#171;CIUDAD DE LA CORDIALIDAD Y DEL TAJY&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 270 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16877">
+            <!-- data -->
+            <div class="block">
+              <p class="date">318 - 2025</p>
+              <p class="title">Decreto 5244 /2025 </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176; 4558/2011 &quot;QUE ESTABLECE MECANISMOS DE APOYO A LA PRODUCCI&#211;N Y EMPLEO NACIONAL, A TRAV&#201;S DE LOS PROCEDIMIENTOS DE CONTRATACIONES P&#218;BLICAS&quot;, SE ESTABLECE SU MECANISMO DE APLICACI&#211;N Y SE DEROGA EL DECRETO N&#176; 9649/2012.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 318 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16897">
+            <!-- data -->
+            <div class="block">
+              <p class="date">270 - 2025</p>
+              <p class="title">Ley 7581 /2025 </p>
+              <p class="desc">QUE DECLARA EN EMERGENCIA VIAL, LA RUTA DEPARTAMENTAL N&#176; 8, TRAMO QUE UNE LA CIUDAD DE VILLARRICA DEL ESP&#205;RITU SANTO, CON LA CIUDAD DE ITAP&#201;, DEL DEPARTAMENTO DE GUAIR&#193;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 270 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16902">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Ley 7602 /2025 </p>
+              <p class="desc">QUE DENOMINA CON EL NOMBRE DE &#171;PADRE GUIDO CORONEL NOCE&#187;, AL PUENTE QUE UNIR&#193; F&#205;SICAMENTE EL DISTRITO DE MINGA GUAZ&#218; CON EL DISTRITO DE HERNANDARIAS.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16904">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Ley 7597 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE LUQUE A TRANSFERIR, A T&#205;TULO ONEROSO, A FAVOR DE SU ACTUAL OCUPANTE, EL INMUEBLE INDIVIDUALIZADO CON CTA. CTE. CTRAL. N&#176; 27-6412-01 Y MATR&#205;CULA N&#176; 65289, UBICADO EN LA QUINTA COMPA&#209;&#205;A YAGUARET&#201; COR&#193; DEL CITADO MUNICIPIO.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16905">
+            <!-- data -->
+            <div class="block">
+              <p class="date">309 - 2025</p>
+              <p class="title">Decreto 5176  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA RESOLUCI&#211;N DEL GRUPO MERCADO COM&#218;N DEL MERCOSUR N&#176; 07/24, &quot;REGLAMENTO T&#201;CNICO MERCOSUR REQUISITOS ESENCIALES DE SEGURIDAD Y DESEMPE&#209;O DE LOS PRODUCTOS M&#201;DICOS Y PRODUCTOS M&#201;DICOS PARA DIAGN&#211;STICO IN VITRO (DEROGACI&#211;N DE LA RESOLUCI&#211;N GMC N&#176; 72/98)&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 309 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores; Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16896">
+            <!-- data -->
+            <div class="block">
+              <p class="date">270 - 2025</p>
+              <p class="title">Ley 7584 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE CAPIAT&#193;, A TRANSFERIR A T&#205;TULO GRATUITO, A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE SALUD P&#218;BLICA Y BIENESTAR SOCIAL, UN INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N&#176; 24503, CTA. CTE. CTRAL. N&#176; 27-3122-02, UBICADO EN EL LUGAR DENOMINADO COMPA&#209;&#205;A 6ta YATAITY, DEL MENCIONADO DISTRITO, PARA ASIENTO DE UNA NUEVA UNIDAD DE SALUD FAMILIAR.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 270 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16928">
+            <!-- data -->
+            <div class="block">
+              <p class="date">58 - 2026</p>
+              <p class="title">Ley 7612 /2026 </p>
+              <p class="desc">QUE AUTORIZA LA DESAFECTACI&#211;N DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE CAPIAT&#193;, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE EDUCACI&#211;N Y CIENCIAS, EL INMUEBLE INDIVIDUALIZADO CON LA FINCA N&#176; 4.008, UBICADO EN EL DISTRITO DE CAPIAT&#193;, PARA ASIENTO DE LA ESCUELA B&#193;SICA PRIVADA SUBVENCIONADA MUNICIPAL N&#176; 6438 SANTA LUC&#205;A.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 58 - 2026</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16929">
+            <!-- data -->
+            <div class="block">
+              <p class="date">58 - 2026</p>
+              <p class="title">Ley 7610 /2026 </p>
+              <p class="desc">QUE DECLARA AL DISTRITO DE VILLA DEL ROSARIO DEL KUAREPOTI DEL II DEPARTAMENTO DE SAN PEDRO, &#171;CIUDAD DE LA SOLIDARIDAD&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 58 - 2026</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16618">
+            <!-- data -->
+            <div class="block">
+              <p class="date">10 - 2025</p>
+              <p class="title">Ley 7424 /2025 </p>
+              <p class="desc">QUE CREA EL SISTEMA NACIONAL UNIFICADO REGISTRAL Y CATASTRAL Y EL REGISTRO UNIFICADO NACIONAL (RUN)</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 10 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16620">
+            <!-- data -->
+            <div class="block">
+              <p class="date">4 - 2025</p>
+              <p class="title">Ley 7444 /2025 </p>
+              <p class="desc">QUE MODIFICA VARIOS ART&#205;CULOS Y AMPL&#205;A LA LEY N&#176; 4.457/2012 &#171;PARA LAS MICRO PEQUE&#209;AS Y MEDIANAS EMPRESAS (MIPYMES)&#187;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 4 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16621">
+            <!-- data -->
+            <div class="block">
+              <p class="date">4 - 2025</p>
+              <p class="title">Ley 7439 /2025 </p>
+              <p class="desc">QUE APRUEBA EL ACUERDO ENTRE LA REP&#218;BLICA DEL PARAGUAY Y LA REP&#218;BLICA DE TRINIDAD Y TOBAGO SOBRE LA SUPRESI&#211;N DE VISAS PARA PORTADORES DE PASAPORTES DIPLOM&#193;TICOS, OFICIALES Y ORDINARIOS
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 4 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16625">
+            <!-- data -->
+            <div class="block">
+              <p class="date">3 - 2025</p>
+              <p class="title">Ley 7438 /2025 </p>
+              <p class="desc">QUE MODIFICA Y AMPL&#205;A LA LEY N&#176; 1016/1997 “QUE ESTABLECE EL REGIMEN JUR&#205;DICO PARA LA EXPLOTACI&#211;N DE LOS JUEGOS DE SUERTE O DE AZAR&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 3 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16626">
+            <!-- data -->
+            <div class="block">
+              <p class="date">3 - 2025</p>
+              <p class="title">Ley 7423 /2025 </p>
+              <p class="desc">QUE AUMENTA PENSI&#211;N GRACIABLE A LA SE&#209;ORA F&#193;TIMA MARIZZA ARIAS ALCARAZ
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 3 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16635">
+            <!-- data -->
+            <div class="block">
+              <p class="date">5 - 2025</p>
+              <p class="title">Ley 7425 /2025 </p>
+              <p class="desc">QUE APRUEBA EL ACUERDO POR NOTAS REVERSALES ENTRE EL GOBIERNO DE LA REP&#218;BLICA DEL PARAGUAY Y EL GOBIERNO DEL JAP&#211;N RELATIVO A LA COOPERACI&#211;N FINANCIERA NO REEMBOLSABLE PARA LA IMPLEMENTACI&#211;N DEL PROGRAMA DE DESARROLLO ECON&#211;MICO Y SOCIAL
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 5 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16619">
+            <!-- data -->
+            <div class="block">
+              <p class="date">9 - 2025</p>
+              <p class="title">Ley 7416 /2025 </p>
+              <p class="desc">QUE DENOMINA CON EL NOMBRE DE &quot;NATALICIO GONZ&#193;LEZ&quot; LA RUTA DEPARTAMENTAL D012 QUE UNE LOS DEPARTAMENTOS CENTRAL Y CORDILLERA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 9 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16638">
+            <!-- data -->
+            <div class="block">
+              <p class="date">5 - 2025</p>
+              <p class="title">Ley 7413 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE SAN ANTONIO, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DEL INTERIOR, UN INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N&#176; 7205, MANZANA N&#176; 02, LOTE N&#176; 10, CON CTA. CTE. CTRAL. N&#176; 27-1289-10, UBICADO EN EL BARRIO SAN JORGE DEL DISTRITO DE SAN ANTONIO, PARA ASIENTO DEL PUESTO POLICIAL N&#176; 009 DEL CITADO MUNICIPIO
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 5 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16668">
+            <!-- data -->
+            <div class="block">
+              <p class="date">102 - 2025</p>
+              <p class="title">Decreto 3846  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7438/2025, &#171;QUE MODIFICA Y AMPL&#205;A LA LEY N&#176; 1016/1997, &quot;QUE ESTABLECE EL R&#201;GIMEN JUR&#205;DICO PARA LA EXPLOTACI&#211;N DE LOS JUEGOS DE SUERTE O DE AZAR&quot;, SE CREA LA DIRECCI&#211;N GENERAL DE JUEGOS DE AZAR Y SE ESTABLECEN DISPOSICIONES GENERALES EN MATERIA DE JUEGOS DE AZAR&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 102 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16682">
+            <!-- data -->
+            <div class="block">
+              <p class="date">109 - 2025</p>
+              <p class="title">Ley 7470 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE CONCEPCI&#211;N, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO — MINISTERIO DE EDUCACI&#211;N Y CIENCIAS, UN INMUEBLE INDIVIDUALIZADO CON CTA. CTE. CTRAL. N&#176; 17-1186-02, LOTE N&#176; 2 DE LA MANZANA N&#176; 2 Y CON LA MATR&#205;CULA N&#176; B01/23.075, DEL DISTRITO DE CONCEPCI&#211;N, PARA EL ASIENTO DEL CENTRO DE APOYO A LA INCLUSI&#211;N EDUCATIVA CONCEPCI&#211;N
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 109 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16683">
+            <!-- data -->
+            <div class="block">
+              <p class="date">109 - 2025</p>
+              <p class="title">Ley 7469 /2025 </p>
+              <p class="desc">QUE APRUEBA EL CONVENIO CONSTITUTIVO Y EL CONVENIO DE ADMINISTRACI&#211;N DEL FONDO MULTILATERAL DE INVERSIONES IV (FOMIN IV) Y SUS ANEXOS, APROBADOS POR MEDIO DE UNA RESOLUCI&#211;N CONJUNTA DE LAS ASAMBLEAS DE GOBERNADORES DEL BANCO INTERAMERICANO DE DESARROLLO (BID) Y LA CORPORACI&#211;N INTERAMERICANA DE INVERSIONES (CII), Y DEL COMIT&#201; DE DONANTES DEL FOMIN, AG-8/24, CII/AG-6/24 Y MIF/DE-7/24, EN LA CIUDAD DE PUNTA CANA, REP&#218;BLICA DOMINICANA, EL 10 DE MARZO DE 2024
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 109 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16713">
+            <!-- data -->
+            <div class="block">
+              <p class="date">147 - 2025</p>
+              <p class="title">Ley 7492 /2025 </p>
+              <p class="desc">QUE AMPL&#205;A EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408, DE FECHA 30 DE DICIEMBRE DE 2024, MINISTERIO DE SALUD P&#218;BLICA Y BIENESTAR SOCIAL
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 147 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16718">
+            <!-- data -->
+            <div class="block">
+              <p class="date">148 - 2025</p>
+              <p class="title">Resolución 926 /2025 </p>
+              <p class="desc">POR LA CUAL SE APRUEBA LA GU&#205;A PR&#193;CTICA PARA LA GESTI&#211;N DE COBRANZAS.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 148 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16719">
+            <!-- data -->
+            <div class="block">
+              <p class="date">148 - 2025</p>
+              <p class="title">Resolución 909 /2025 </p>
+              <p class="desc">RESOLUCI&#211;N SDCU N 9092025 POR LA CUAL SE REVOCA IN TOTUM LA RESOLUCI&#211;N SDCU N 7642025.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 148 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16720">
+            <!-- data -->
+            <div class="block">
+              <p class="date">150 - 2025</p>
+              <p class="title">Resolución 1578 /2025 </p>
+              <p class="desc">“POR LA CUAL SE DEJA SIN EFECTO LA RESOLUCI&#211;N DIRECTORIO N&#176; 0389/2024 Y SE DETERMINAN LOS VALORES DE DERECHO DE AUTORIZACI&#211;N, AMPLIACI&#211;N, ARANCEL POR USO DEL ESPECTRO RADIOEL&#201;CTRICO E INSPECCI&#211;N T&#201;CNICA DEL SERVICIO DE ACCESO RURAL COMPLEMENTARIO (SARC)”.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 150 - 2025</span>
+                <span class="ministerio">CONATEL</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16721">
+            <!-- data -->
+            <div class="block">
+              <p class="date">150 - 2025</p>
+              <p class="title">Resolución 1577 /2025 </p>
+              <p class="desc">POR LA CUAL SE MODIFICA EL ART&#205;CULO 4&#176; DEL ANEXO DE LA RESOLUCI&#211;N DIRECTORIO N&#176; 8562000 &quot;POR LA CUAL SE ESTABLECEN LOS CARGOS EN CONCEPTO DE ARANCELES POR USO DEL ESPECTRO RADIOEL&#201;CTRICO PARA ESTACIONES, SISTEMAS Y SERVICIOS RADIOEL&#201;CTRICOS, AS&#205; COMO LOS DE INSPECCI&#211;N PARA HABILITACI&#211;N DE ESTACIONES RADIOEL&#201;CTRICAS&quot; Y SE ESTABLECEN DISPOSICIONES PARA EL SERVICIO DE ACCESO RURAL COMPLEMENTARIO SARC.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 150 - 2025</span>
+                <span class="ministerio">CONATEL</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16722">
+            <!-- data -->
+            <div class="block">
+              <p class="date">151 - 2025</p>
+              <p class="title">Resolución 1605 /2025 </p>
+              <p class="desc">POR LA CUAL SE RESUELVE APROBAR LA ACTUALIZACI&#211;N DEL REGLAMENTO DEL SERVICIO DE TELEVISI&#211;N.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 151 - 2025</span>
+                <span class="ministerio">CONATEL</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16723">
+            <!-- data -->
+            <div class="block">
+              <p class="date">155 - 2025</p>
+              <p class="title">Ley 7510 /2025 </p>
+              <p class="desc">QUE APRUEBA EL CONTRATO DE PR&#201;STAMO N&#176; 6022649001 SUSCRITO EN FECHA 14 DE FEBRERO DE 2025, ENTRE LA AGENCIA FINANCIERA DE DESARROLLO Y THE EXPORTIMPORT BANK OF THE REPUBLIC OF CHINA EXIMBANK TAIWAN, POR UN MONTO DE HASTA US 200.000.000 DOLARES.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 155 - 2025</span>
+                <span class="ministerio">Ministerio de Hacienda</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16639">
+            <!-- data -->
+            <div class="block">
+              <p class="date">4 - 2025</p>
+              <p class="title">Decreto 3215  </p>
+              <p class="desc">POR EL CUAL SE RATIFICA LA AUTORIZACI&#211;N OTORGADA POR EL DECRETO N&#176; 642 DEL 3 DE NOVIEMBRE DE 2023 A LA DIRECCI&#211;N GENERAL DE MATERIAL B&#201;LICO (DIGEMABEL) PARA SUSPENDER TEMPORALMENTE POR RESOLUCI&#211;N ADMINISTRATIVA LA EXPEDICI&#211;N DE AUTORIZACIONES DE IMPORTACI&#211;N DE ARMAS DE FUEGO Y MUNICIONES EN LA REPUBLICA DEL PARAGUAY, BAJO EL IMPERIO DE LA LEY N&#176; 7411/2024
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 4 - 2025</span>
+                <span class="ministerio">Ministerio de Defensa Nacional</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16649">
+            <!-- data -->
+            <div class="block">
+              <p class="date">30 - 2025</p>
+              <p class="title">Decreto 3337  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7269/2024 &quot;DE PREVENCI&#211;N, CONTROL Y ERRADICACI&#211;N DE LA VIOLENCIA EN EL DEPORTE&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 30 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16724">
+            <!-- data -->
+            <div class="block">
+              <p class="date">160 - 2025</p>
+              <p class="title">Ley 7493 /2025 </p>
+              <p class="desc">QUE CAMBIA DE DENOMINACI&#211;N LA RUTA PY17 DE LA SOBERAN&#205;A, Y PASA A DENOMINARSE RUTA PY17 NI&#209;OS M&#193;RTIRES DE ACOSTA &#209;U</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 160 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16725">
+            <!-- data -->
+            <div class="block">
+              <p class="date">158 - 2025</p>
+              <p class="title">Ley 7509 /2025 </p>
+              <p class="desc">QUE ESTABLECE EL 10 DE JUNIO DE CADA A&#209;O, COMO &quot;D&#205;A NACIONAL DEL SOLDADO PARAGUAYO DE PAZ&quot;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 158 - 2025</span>
+                <span class="ministerio">Ministerio de Defensa Nacional</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16726">
+            <!-- data -->
+            <div class="block">
+              <p class="date">158 - 2025</p>
+              <p class="title">Ley 7506 /2025 </p>
+              <p class="desc">QUE APRUEBA EL &quot;ACUERDO POR NOTAS REVERSALES ENTRE EL GOBIERNO DE LA REP&#218;BLICA DEL PARAGUAY Y EL GOBIERNO DE HUNGR&#205;A PARA LA PROVISI&#211;N DE BECAS STIPENDIUM HUNGARICUM&quot;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 158 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16727">
+            <!-- data -->
+            <div class="block">
+              <p class="date">158 - 2025</p>
+              <p class="title">Ley 7505 /2025 </p>
+              <p class="desc">QUE APRUEBA LA SUSCRIPCI&#211;N DE 855 ACCIONES DE CAPITAL SOCIAL DE LA CORPORACI&#211;N INTERAMERICANA DE INVERSIONES CII, EN EL MARCO DEL AUMENTO GENERAL DE CAPITAL, AUTORIZADO POR LA ASAMBLEA DE GOBERNADORES DEL CITADO ORGANISMO.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 158 - 2025</span>
+                <span class="ministerio">Ministerio de Hacienda</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16730">
+            <!-- data -->
+            <div class="block">
+              <p class="date">158 - 2025</p>
+              <p class="title">Ley 7495 /2025 </p>
+              <p class="desc">QUE APRUEBA LA DECISI&#211;N MERCOSURCMDEC. N&#176; 2503 RELATIVO AL MECANISMO PARA EL EJERCICIO TEMPORARIO.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 158 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16762">
+            <!-- data -->
+            <div class="block">
+              <p class="date">192 - 2025</p>
+              <p class="title">Decreto 4456 /2025 </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA EL ART&#205;CULO 2&#176; DE LA LEY N&#176; 7459/2025, QUE MODIFICA LOS ART&#205;CULOS 1&#176;, 2&#176; Y 3&#176; DE LA LEY N&#176; 7447 /2025, &#171;QUE MODIFICA EL ART&#205;CULO 22 DE LA LEY N&#176; 620/1976, &quot;QUE ESTABLECE EL R&#201;GIMEN TRIBUTARIO PARA LAS MUNICIPALIDADES DE 1&#176;, 2&#176; y 3&#176; CATEGOR&#205;AS&quot;&#187;, MODIFICADO POR LA LEY N&#176; 135/1991, Y DEROGA LA LEY N&#176; 5817/2017, &#171;QUE SUSTITUYE LOS ART&#205;CULOS 25, 26 y 27 DE LA LEY N&#176; 881/81, ,&quot;QUE ESTABLECE EL R&#201;GIMEN TRIBUTARIO Y DE OTROS RECURSOS PARA LA MUNICIPALIDAD DE ASUNCI&#211;N&quot;&#187;.(FE DE ERRATAS)	</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 192 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16768">
+            <!-- data -->
+            <div class="block">
+              <p class="date">202 - 2025</p>
+              <p class="title">Ley 7527 /2025 </p>
+              <p class="desc">QUE DECLARA DE UTILIDAD P&#218;BLICA Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE OBRAS P&#218;BLICAS Y COMUNICACIONES, VARIOS INMUEBLES Y MEJORAS AFECTADOS A OBRAS DE INFRAESTRUCTURA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 202 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16770">
+            <!-- data -->
+            <div class="block">
+              <p class="date">205 - 2025</p>
+              <p class="title">Ley 7547 /2025 </p>
+              <p class="desc">DEL R&#201;GIMEN DE MAQUILA</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 205 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16771">
+            <!-- data -->
+            <div class="block">
+              <p class="date">205 - 2025</p>
+              <p class="title">Ley 7546 /2025 </p>
+              <p class="desc">QUE ESTABLECE LA POL&#205;TICA NACIONAL PARA LA PRODUCCI&#211;N Y EL ENSAMBLAJE DE EQUIPOS EL&#201;CTRICOS, ELECTR&#211;NICOS, ELECTROMEC&#193;NICOS Y DIGITALES
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 205 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16772">
+            <!-- data -->
+            <div class="block">
+              <p class="date">206 - 2025</p>
+              <p class="title">Ley 7529 /2025 </p>
+              <p class="desc">QUE MODIFICA VARIOS ART&#205;CULOS DE LA LEY N&#176; 5.322/2014 &quot;QUE ESTABLECE EL ESTATUTO DEL FUTBOLISTA PROFESIONAL&quot;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 206 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16773">
+            <!-- data -->
+            <div class="block">
+              <p class="date">206 - 2025</p>
+              <p class="title">Ley 7526 /2025 </p>
+              <p class="desc">QUE CREA JUZGADOS DE PAZ, EN VARIAS CIRCUNSCRIPCIONES JUDICIALES DEL PA&#205;S SIN AFECTACI&#211;N PRESUPUESTARIA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 206 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16783">
+            <!-- data -->
+            <div class="block">
+              <p class="date">221 - 2025</p>
+              <p class="title">Ley 7534 /2025 </p>
+              <p class="desc">QUE MODIFICA Y AMPL&#205;A LOS ART&#205;CULOS 2&#176; Y 11 DE LA LEY N&#176; 5508/2015 &#171;PROMOCION, PROTECCI&#211;N DE LA MATERNIDAD Y APOYO A LA LACTANCIA MATERNA&#187; Y SU MODIFICATORIA LEY N&#176; 6453/2019 Y DEROGA LA LEY N&#176; 5344/2014 &#171;QUE ESTABLECE EL REPOSO POR MATERNIDAD EN CARGOS ELECTIVOS&#187;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 221 - 2025</span>
+                <span class="ministerio">Ministerio de Salud P&#250;blica y Bienestar Social; Ministerio de Trabajo, empleo y seguridad social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16697">
+            <!-- data -->
+            <div class="block">
+              <p class="date">122 - 2025</p>
+              <p class="title">Decreto 3983  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA RESOLUCI&#211;N DEL GRUPO MERCADO COM&#218;N DEL MERCOSUR N&#176; 3521, &quot;FARMACOPEA MERCOSUR M&#201;TODO GENERAL PARA VOLUMETR&#205;A&quot;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 122 - 2025</span>
+                <span class="ministerio">Ministerio de Hacienda; Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores; Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16745">
+            <!-- data -->
+            <div class="block">
+              <p class="date">176 - 2025</p>
+              <p class="title">Ley 7517 /2025 </p>
+              <p class="desc">PR&#201;STAMOS SUSCRITOS POR EL BANCO (CAF), EN FECHA 2/12/2024 Y POR PARAGUAY EN FECHA 17/12/2024, POR UN MONTO DE HASTA US$ 135.000.000 (CIENTO TREINTA Y CINCO MILLONES) Y POR EL FONDO DE LA ORGANIZACI&#211;N (OFID), EN FECHA 22/11/2024 Y POR PARAGUAY EN FECHA 4/12/2024, POR UN MONTO DE HASTA US$ 50.000.000 (CINCUENTA MILLONES), PARA EL FINANCIAMIENTO DEL PROGRAMA DE REHABILITACI&#211;N, MEJORAMIENTO Y MANTENIMIENTO DE LA RUTA NACIONAL PY22, TRAMO CONCEPCI&#211;N - VALLEM&#205; - SAN L&#193;ZARO Y ACCESOS (VIAL 4), A CARGO DEL MINISTERIO DE OBRAS P&#218;BLICAS Y COMUNICACIONES.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 176 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16750">
+            <!-- data -->
+            <div class="block">
+              <p class="date">176 - 2025</p>
+              <p class="title">Ley 7429 /2025 </p>
+              <p class="desc">QUE DECLARA DE INTER&#201;S SOCIAL Y DISPONE LA TRANSFERENCIA A T&#205;TULO GRATUITO A FAVOR DEL MINISTERIO DE DESARROLLO SOCIAL, EL INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N&#176; 27837, DEL DISTRITO DE LUQUE, PROPIEDAD DEL MINISTERIO DE URBANISMO, VIVIENDA Y H&#193;BITAT, PARA SU POSTERIOR TRANSFERENCIA A T&#205;TULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 176 - 2025</span>
+                <span class="ministerio">Ministerio de Urbanismo, vivienda y h&#225;bitat</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16751">
+            <!-- data -->
+            <div class="block">
+              <p class="date">178 - 2025</p>
+              <p class="title">Ley 7514 /2025 </p>
+              <p class="desc">QUE DEROGA EL DECRETO — LEY N&#176; 18240 DEL A&#209;O 1943 Y LOS ART&#205;CULOS 2&#176; Y 3&#176; DEL DECRETO — LEY N&#176; 9844, DE FECHA 28 DE NOVIEMBRE DE 1941 &quot;POR EL CUAL SE OTORGA EN PROPIEDAD AL CLUB DEPORTIVO RECOLETA UNA FRACCI&#211;N DE TERRENO FISCAL SITUADO EN EL DISTRITO DE LA RECOLETA, PARA LA INSTALACI&#211;N DE SU CAMPO DE DEPORTES&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 178 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16794">
+            <!-- data -->
+            <div class="block">
+              <p class="date">220 - 2025</p>
+              <p class="title">Ley 7554 /2025 </p>
+              <p class="desc">QUE MODIFICA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024 &#171;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;, MINISTERIO DE LA DEFENSA P&#218;BLICA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 220 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16795">
+            <!-- data -->
+            <div class="block">
+              <p class="date">220 - 2025</p>
+              <p class="title">Ley 7552 /2025 </p>
+              <p class="desc">QUE AMPL&#205;A EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024 &#171;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;, MINISTERIO DE DEFENSA NACIONAL.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 220 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16796">
+            <!-- data -->
+            <div class="block">
+              <p class="date">218 - 2025</p>
+              <p class="title">Ley 7545 /2025 </p>
+              <p class="desc">QUE MODIFICA LOS ART&#205;CULOS 1&#176; Y 2&#176; DE LA LEY N&#176; 2972/2006 &#171;QUE RECONOCE AL INSTITUTO SUPERIOR INTERAMERICANO DE CIENCIAS SOCIALES, COMO INSTITUCION DE EDUCACION SUPERIOR&#187;.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 218 - 2025</span>
+                <span class="ministerio">Ministerio de Educaci&#243;n y Ciencias</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16798">
+            <!-- data -->
+            <div class="block">
+              <p class="date">218 - 2025</p>
+              <p class="title">Decreto 4497  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA RESOLUCI&#211;N DEL GRUPO MERCADO COM&#218;N DEL MERCOSUR N&#176; 24/22, ‹‹MODIFICACI&#211;N DE LA RESOLUCI&#211;N GMC N&#176; 35/02, “NORMAS PARA LA CIRCULACI&#211;N DE VEH&#205;CULOS DE TURISTAS, PARTICULARES Y DE ALQUILER, EN LOS ESTADOS PARTES DEL MERCOSUR”, Y SE MODIFICA PARCIALMENTE EL ART&#205;CULO 1&#176; DEL DECRETO N&#176; 7889/2006››
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 218 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones; Ministerio de Relaciones Exteriores; Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16813">
+            <!-- data -->
+            <div class="block">
+              <p class="date">245 - 2025</p>
+              <p class="title">Ley 7563 /2025 </p>
+              <p class="desc">QUE AMPL&#205;A EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024 &#171;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;, CORTE SUPREMA DE JUSTICIA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 245 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16814">
+            <!-- data -->
+            <div class="block">
+              <p class="date">245 - 2025</p>
+              <p class="title">Ley 7560 /2025 </p>
+              <p class="desc">QUE MODIFICA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024 &#171;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;, CORTE SUPREMA DE JUSTICIA</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 245 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16832">
+            <!-- data -->
+            <div class="block">
+              <p class="date">273 - 2025</p>
+              <p class="title">Ley 7577 /2025 </p>
+              <p class="desc">DE EXONERACI&#211;N TRIBUTARIA PARA LA ADQUISICI&#211;N DE VACUNAS Y FORTALECIMIENTO DEL PROGRAMA NACIONAL DE INMUNIZACIONES.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 273 - 2025</span>
+                <span class="ministerio">Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16834">
+            <!-- data -->
+            <div class="block">
+              <p class="date">265 - 2025</p>
+              <p class="title">Ley 7572 /2025 </p>
+              <p class="desc">MERCADO DE VALORES Y PRODUCTOS.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 265 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16835">
+            <!-- data -->
+            <div class="block">
+              <p class="date">287 - 2025</p>
+              <p class="title">Ley 7593 /2025 </p>
+              <p class="desc">DE PROTECCI&#211;N DE DATOS PERSONALES EN LA REP&#218;BLICA DEL PARAGUAY </p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 287 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16838">
+            <!-- data -->
+            <div class="block">
+              <p class="date">276 - 2025</p>
+              <p class="title">Ley 7570 /2025 </p>
+              <p class="desc">QUE AUMENTA PENSI&#211;N GRACIABLE AL SE&#209;OR SALOM&#211;N BEN&#205;TEZ GIMENEZ.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 276 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16628">
+            <!-- data -->
+            <div class="block">
+              <p class="date">5 - 2025</p>
+              <p class="title">Ley 7447 /2025 </p>
+              <p class="desc">QUE MODIFICA EL ART&#205;CULO 22 DE LA LEY N&#176; 620/1976 &#171;QUE ESTABLECE EL R&#201;GIMEN TRIBUTARIO PARA LAS MUNICIPALIDADES DE 10, 20 Y 30 CATEGOR&#205;AS&#187;, MODIFICADO POR LA LEY N&#176; 135/1991</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 5 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16629">
+            <!-- data -->
+            <div class="block">
+              <p class="date">5 - 2025</p>
+              <p class="title">Ley 7434 /2025 </p>
+              <p class="desc">DE LA REFORMA DEL TREN DE CERCAN&#205;AS
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 5 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16630">
+            <!-- data -->
+            <div class="block">
+              <p class="date">12 - 2025</p>
+              <p class="title">Ley 7445 /2025 </p>
+              <p class="desc">DE LA FUNCI&#211;N P&#218;BLICA Y DEL SERVICIO CIVIL
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 12 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16634">
+            <!-- data -->
+            <div class="block">
+              <p class="date">5 - 2025</p>
+              <p class="title">Ley 7433 /2025 </p>
+              <p class="desc">QUE APRUEBA EL CONVENIO DE PR&#201;STAMO N&#176; 9517-PY, SUSCRITO POR EL BANCO INTERNACIONAL DE RECONSTRUCCI&#211;N Y FOMENTO EN FECHA 7 DE AGOSTO DE 2024 Y POR LA REP&#218;BLICA DEL PARAGUAY EN FECHA 9 DE AGOSTO DE 2024, POR UN MONTO DE HASTA US$ 125.300.000 (D&#211;LARES DE LOS ESTADOS UNIDOS DE AM&#201;RICA CIENTO VEINTICINCO MILLONES TRESCIENTOS MIL), PARA EL FINANCIAMIENTO DEL &#171;PROYECTO TEJIENDO APOYOS PARA LA EXCELENCIA EDUCATIVA EN PARAGUAY&#187;, QUE ESTAR&#193; A CARGO DEL MINISTERIO DE OBRAS P&#218;BLICAS Y COMUNICACIONES Y DEL MINISTERIO DE EDUCACI&#211;N Y CIENCIAS</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 5 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16636">
+            <!-- data -->
+            <div class="block">
+              <p class="date">5 - 2025</p>
+              <p class="title">Ley 7419 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE CAPIAT&#193;, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DEL INTERIOR, UNA FRACCI&#211;N DE TERRENO UBICADA EN LA 6o COMPA&#209;&#205;A &#171;BARRIO KENNEDY&#187;, DEL CITADO MUNICIPIO, PARA ASIENTO DE UNA COMISAR&#205;A
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 5 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16640">
+            <!-- data -->
+            <div class="block">
+              <p class="date">7 - 2025</p>
+              <p class="title">Ley 7449 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE AREGU&#193;, A TRANSFERIR A T&#205;TULO ONEROSO A FAVOR DE LA ARQUIDI&#211;CESIS DE LA SANT&#205;SIMA ASUNCI&#211;N, UN INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA CTA. CTE. CTRAL. N&#176; 27-2129-02, MATR&#205;CULA N&#176; L01/18252, UBICADO EN EL BARRIO SANTA ROSA DE LIMA DE LA COMPA&#209;&#205;A VALLE PUC&#218; DEL CITADO MUNICIPIO, DEL DEPARTAMENTO CENTRAL PARA ASIENTO DE UNA CAPILLA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 7 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16641">
+            <!-- data -->
+            <div class="block">
+              <p class="date">7 - 2025</p>
+              <p class="title">Ley 7437 /2025 </p>
+              <p class="desc">QUE APRUEBA EL MEMORANDO DE ENTENDIMIENTO PARA LA COOPERACI&#211;N DEL GOBIERNO DE LA REP&#218;BLICA DE COREA AL GOBIERNO DE LA REP&#218;BLICA DEL PARAGUAY DESTINADA AL ESTABLECIMIENTO DEL CENTRO PARAGUAYO DE RECOMENDACIONES Y SOLUCIONES TECNOL&#211;GICAS DESDE COREA (TASK) PARA EL AVANCE DE AUTOPARTES Y PLAN PILOTO DE MOVILIDAD EL&#201;CTRICA
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 7 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16642">
+            <!-- data -->
+            <div class="block">
+              <p class="date">7 - 2025</p>
+              <p class="title">Ley 7430 /2025 </p>
+              <p class="desc">QUE APRUEBA EL ACUERDO MODIFICATORIO DEL ACUERDO PARA LA CONCESI&#211;N DE UN PLAZO DE 90 (NOVENTA) D&#205;AS A LOS TURISTAS NACIONALES DE LOS ESTADOS PARTES DEL MERCOSUR Y ESTADOS ASOCIADOS
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 7 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16645">
+            <!-- data -->
+            <div class="block">
+              <p class="date">21 - 2025</p>
+              <p class="title">Ley 7452 /2025 </p>
+              <p class="desc">DE MODERNIZACI&#211;N DEL R&#201;GIMEN DE PROMOCI&#211;N DE LA INVERSI&#211;N EN INFRAESTRUCTURA P&#218;BLICA Y AMPLIACI&#211;N Y MEJORAMIENTO DE LOS BIENES Y SERVICIOS A CARGO DEL ESTADO</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 21 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16651">
+            <!-- data -->
+            <div class="block">
+              <p class="date">47 - 2025</p>
+              <p class="title">Decreto 3427  </p>
+              <p class="desc">POR EL CUAL SE MODIFICA EL ANEXO A (GU&#205;A DE NORMAS Y PROCESOS DEL PGN 2025) DEL DECRETO N&#176; 3248/2025, &#171;POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024, &quot;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;&#187;</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 47 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16650">
+            <!-- data -->
+            <div class="block">
+              <p class="date">37 - 2025</p>
+              <p class="title">Decreto 3369  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7190/23 &quot;DE LOS CR&#201;DITOS DE CARBONO&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 37 - 2025</span>
+                <span class="ministerio">Ministerio del Ambiente y Desarrollo Sostenible</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16637">
+            <!-- data -->
+            <div class="block">
+              <p class="date">5 - 2025</p>
+              <p class="title">Ley 7417 /2025 </p>
+              <p class="desc">QUE DECLARA DE INTER&#201;S SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE URBANISMO, VIVIENDA Y H&#193;BITAT, UN INMUEBLE INDIVIDUALIZADO COMO FINCA N&#176; 444, PADR&#211;N N&#176; 1250 DEL DISTRITO DE JULI&#193;N AUGUSTO SALDIVAR, BARRIO LAS ROSAS KM. 23/5, DEL DEPARTAMENTO CENTRAL, QUE SIRVE DE ASIENTO AL TERRITORIO SOCIAL DENOMINADO &#171;TIERRA NUEVA&#187;, PARA SU POSTERIOR TRANSFERENCIA A T&#205;TULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 5 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16643">
+            <!-- data -->
+            <div class="block">
+              <p class="date">7 - 2025</p>
+              <p class="title">Ley 7421 /2025 </p>
+              <p class="desc">QUE DECLARA EMERGENCIA NACIONAL COMO CONSECUENCIA DE LOS INCENDIOS FORESTALES Y LOS DA&#209;OS A LOS ECOSISTEMAS Y LA BIODIVERSIDAD
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 7 - 2025</span>
+                <span class="ministerio">Ministerio de Defensa Nacional; Ministerio del Ambiente y Desarrollo Sostenible</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16644">
+            <!-- data -->
+            <div class="block">
+              <p class="date">19 - 2025</p>
+              <p class="title">Decreto 3248  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024, &quot;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 19 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16652">
+            <!-- data -->
+            <div class="block">
+              <p class="date">54 - 2025</p>
+              <p class="title">Decreto 3465  </p>
+              <p class="desc">POR EL CUAL SE MODIFICA EL ART&#205;CULO 17 DEL ANEXO AL DECRETO N&#176; 4672/2005, &#171;POR EL CUAL SE REGLAMENTA LA LEY N&#176; 2422/2004, &quot;C&#211;DIGO ADUANERO&quot;, Y SE ESTABLECE LA ESTRUCTURA ORGANIZACIONAL DE LA DIRECCI&#211;N NACIONAL DE ADUANAS&#187;, SE AUTORIZA A LA DIRECCI&#211;N NACIONAL DE INGRESOS TRIBUTARIOS A REGLAMENTAR LOS REQUISITOS Y CONDICIONES PARA SU APLICACI&#211;N Y SE DEROGAN LOS ART&#205;CULOS DEL 18 AL 97 DEL T&#205;TULO II DEL ANEXO AL CITADO DECRETO
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 54 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16653">
+            <!-- data -->
+            <div class="block">
+              <p class="date">55 - 2025</p>
+              <p class="title">Decreto 3473  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA DIRECTIVA DE LA COMISI&#211;N DE COMERCIO DEL MERCOSUR N&#176; 54/24, &quot;ADECUACI&#211;N DE REQUISITOS ESPEC&#205;FICOS DE ORIGEN (MODIFICACI&#211;N DE LA DECISI&#211;N CMC N&#176; 05/23)&quot;, PROTOCOLIZADA ANTE LA ASOCIACI&#211;N LATINOAMERICANA DE INTEGRACI&#211;N (ALADI) COMO &quot;DUCENT&#201;SIMO VIG&#201;SIMO PROTOCOLO ADICIONAL AL ACUERDO DE COMPLEMENTACI&#211;N ECON&#211;MICA N&#176; 18&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 55 - 2025</span>
+                <span class="ministerio">Ministerio de Agricultura y Ganader&#237;a; Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16684">
+            <!-- data -->
+            <div class="block">
+              <p class="date">109 - 2025</p>
+              <p class="title">Ley 7468 /2025 </p>
+              <p class="desc">QUE APRUEBA LA SUSCRIPCI&#211;N DE ACCIONES ADICIONALES DEL CAPITAL AUTORIZADO DE LA CORPORACI&#211;N FINANCIERA INTERNACIONAL (CFI) DEL GRUPO BANCO MUNDIAL, EN EL MARCO DEL AUMENTO SELECTIVO DE CAPITAL DE 2018 (ASC) Y AUMENTO GENERAL DE CAPITAL DE 2018 (AGC), AUTORIZADOS POR LA JUNTA DE GOBERNADORES DE LA CORPORACI&#211;N FINANCIERA INTERNACIONAL (CFI), MEDIANTE LAS RESOLUCIONES NROS. 271 Y 272 DEL 16 DE ABRIL DE 2020
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 109 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16706">
+            <!-- data -->
+            <div class="block">
+              <p class="date">138 - 2025</p>
+              <p class="title">Ley 7491 /2025 </p>
+              <p class="desc">QUE MODIFICA EL ART&#205;CULO 130 DE LA LEY N&#176; 834 / 1996 QUE ESTABLECE EL C&#211;DIGO ELECTORAL PARAGUAYO, MODIFICADO POR LA LEY N&#176; 2.858 / 2006.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 138 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16702">
+            <!-- data -->
+            <div class="block">
+              <p class="date">121 - 2025</p>
+              <p class="title">Ley 7485 /2025 </p>
+              <p class="desc">QUE APRUEBA EL ACUERDO ENTRE EL GOBIERNO DE LA REP&#218;BLICA DEL PARAGUAY Y EL GOBIERNO DE LA REP&#218;BLICA DE CHINA TAIW&#193;N SOBRE LA EXENCI&#211;N MUTUA DE LOS REQUISITOS DE VISAS PARA LOS TITULARES DE PASAPORTES ORDINARIOS.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 121 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16712">
+            <!-- data -->
+            <div class="block">
+              <p class="date">144 - 2025</p>
+              <p class="title">Decreto 4122  </p>
+              <p class="desc">POR EL CUAL SE DISPONE EL REAJUSTE DE LOS SUELDOS Y JORNALES M&#205;NIMOS DE TRABAJADORES DEL SECTOR PRIVADO</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 144 - 2025</span>
+                <span class="ministerio">Ministerio de Trabajo, empleo y seguridad social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16729">
+            <!-- data -->
+            <div class="block">
+              <p class="date">158 - 2025</p>
+              <p class="title">Ley 7496 /2025 </p>
+              <p class="desc">QUE ENMIENDA AL PROTOCOLO DE MONTEVIDEO SOBRE EL COMERCIO DE SERVICIOS DEL MERCOSUR.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 158 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16731">
+            <!-- data -->
+            <div class="block">
+              <p class="date">162 - 2025</p>
+              <p class="title">Resolución 9 /2025 </p>
+              <p class="desc">NORMA REGLAMENTARIA QUE ESTABLECE EXCEPCIONES AL L&#205;MITE DE OPERACIONES FORWARD CON INVERSIONISTAS NO RESIDENTES TENEDORES DE BONOS DEL TESORO P&#218;BLICO EN GUARAN&#205;ES, EMITIDOS EN LOS MERCADOS INTERNACIONALES.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 162 - 2025</span>
+                <span class="ministerio">Banco Central del Paraguay</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16732">
+            <!-- data -->
+            <div class="block">
+              <p class="date">162 - 2025</p>
+              <p class="title">Resolución 8 /2025 </p>
+              <p class="desc">NORMA REGLAMENTARIA GENERAL DE L&#205;MITES DE OPERACIONES EN EL MERCADO CAMBIARIO - MODIFICACI&#211;N.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 162 - 2025</span>
+                <span class="ministerio">Banco Central del Paraguay</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16733">
+            <!-- data -->
+            <div class="block">
+              <p class="date">162 - 2025</p>
+              <p class="title">Resolución 5 /2025 </p>
+              <p class="desc">QUE ESTABLECE LOS EST&#193;NDARES M&#205;NIMOS PARA UN BUEN GOBIERNO CORPORATIVO  AMPLIACI&#211;N.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 162 - 2025</span>
+                <span class="ministerio">Banco Central del Paraguay</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16741">
+            <!-- data -->
+            <div class="block">
+              <p class="date">171 - 2025</p>
+              <p class="title">Decreto 4299  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL LA DIRECTIVA DE LA COMISI&#211;N DE COMERCIO DEL MERCOSUR N&#176; 68/24, &quot;SISTEMA DE ADMINISTRACI&#211;N Y DISTRIBUCI&#211;N DE CUPOS OTORGADOS AL MERCOSUR POR TERCEROS PA&#205;SES O GRUPOS DE PA&#205;SES (SACME)&quot; (MODIFICACI&#211;N DE LA RESOLUCI&#211;N GMC N&#176; 31/10).
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 171 - 2025</span>
+                <span class="ministerio">Ministerio de Agricultura y Ganader&#237;a; Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16742">
+            <!-- data -->
+            <div class="block">
+              <p class="date">171 - 2025</p>
+              <p class="title">Decreto 4297  </p>
+              <p class="desc">POR EL CUAL SE MODIFICA EL ANEXO A (GU&#205;A DE NORMAS Y PROCESOS DEL PGN 2025) DEL DECRETO N&#176; 3248/2025, &#171;POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024, &quot;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;&#187;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 171 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16756">
+            <!-- data -->
+            <div class="block">
+              <p class="date">186 - 2025</p>
+              <p class="title">Decreto 4415  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7134/2023, &#39;&#39;QUE ESTABLECE EL TURISMO INCLUSIVO Y ACCESIBLE&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 186 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16757">
+            <!-- data -->
+            <div class="block">
+              <p class="date">188 - 2025</p>
+              <p class="title">Ley 7528 /2025 </p>
+              <p class="desc">QUE AMPL&#205;A LAS DISPOSICIONES DEL C&#211;DIGO ELECTORAL, REGULA LA FIGURA DE CONCERTACIONES DE CAR&#193;CTER NACIONAL, DEPARTAMENTAL Y MUNICIPAL Y DEROGA LA LEY N&#176; 3212/2007
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 188 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16758">
+            <!-- data -->
+            <div class="block">
+              <p class="date">188 - 2025</p>
+              <p class="title">Ley 7523 /2025 </p>
+              <p class="desc">QUE AMPL&#205;A EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025, APROBADO POR LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024 &quot;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;, AGENCIA FINANCIERA DE DESARROLLO
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 188 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16782">
+            <!-- data -->
+            <div class="block">
+              <p class="date">217 - 2025</p>
+              <p class="title">Ley 7535 /2025 </p>
+              <p class="desc">QUE AUTORIZA A LA MUNICIPALIDAD DE TENIENTE ESTEBAN MART&#205;NEZ, A TRANSFERIR A T&#205;TULO GRATUITO, UN INMUEBLE DEL DOMINIO PRIVADO MUNICIPAL, INDIVIDUALIZADO CON MATR&#205;CULA N&#176; P08/395, CTA. CTE. CTRAL. N&#176; 30-9037-02, CON UNA SUPERFICIE DE 5.000 m2 (CINCO MIL METROS CUADRADOS), A FAVOR DEL MINISTERIO DE SALUD P&#218;BLICA Y BIENESTAR SOCIAL, PARA ASIENTO DEL CENTRO DE SALUD
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 217 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16785">
+            <!-- data -->
+            <div class="block">
+              <p class="date">221 - 2025</p>
+              <p class="title">Decreto 4638  </p>
+              <p class="desc">POR EL CUAL SE INCORPORA AL ORDENAMIENTO JUR&#205;DICO NACIONAL EL &quot;SEXAG&#201;SIMO NOVENO PROTOCOLO ADICIONAL AL ACUERDO DE COMPLEMENTACI&#211;N ECON&#211;MICA (ACE) N&#176; 35 CELEBRADO ENTRE LOS GOBIERNOS DE LOS ESTADOS PARTES DEL MERCOSUR Y EL GOBIERNO DE LA REP&#218;BLICA DE CHILE&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 221 - 2025</span>
+                <span class="ministerio">Ministerio de Industria y Comercio; Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16671">
+            <!-- data -->
+            <div class="block">
+              <p class="date">105 - 2025</p>
+              <p class="title">Ley 7474 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE LAMBAR&#201;, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO — CORTE SUPREMA DE JUSTICIA, EL INMUEBLE INDIVIDUALIZADO CON CTAS. CTES. CTRALS. N&#176;s 13-1862-02 Y 13-0105-35 (PARTE), FINCA N&#176; 15391; UBICADO EN EL LUGAR DENOMINADO BARRIO SAN ROQUE DE SANTA CRUZ DEL CITADO MUNICIPIO, PARA ASIENTO DE LAS INSTALACIONES DEL EDIFICIO DE LOS JUZGADOS Y TRIBUNALES
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 105 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16681">
+            <!-- data -->
+            <div class="block">
+              <p class="date">109 - 2025</p>
+              <p class="title">Ley 7475 /2025 </p>
+              <p class="desc">QUE AUTORIZA AL MINISTERIO DE ECONOM&#205;A Y FINANZAS A TRANSFERIR EL SALDO DEL APORTE ESPECIAL AL MUNICIPIO DE SANTIAGO DEL DEPARTAMENTO MISIONES POR SER SEDE DISTRITAL DE LOS MONUMENTOS HISTORICOS DE LAS MISIONES JESUITICAS DE CONFORMIDAD CON LO ESTABLECIDO EN LA LEY N&#176; 6241/2018 &#39;QUE ESTABLECE CONCEDER UN APORTE ESPECIAL A LOS MUNICIPIOS DE SAN IGNACIO, SANTA MARIA, SANTIAGO Y SANTA ROSA DEL DEPARTAMENTO MISIONES, POR SER SEDES DISTRITALES DE LOS MONUMENTOS HISTORICOS DE LAS MISIONES JESUITICAS&quot;</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 109 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16694">
+            <!-- data -->
+            <div class="block">
+              <p class="date">129 - 2025</p>
+              <p class="title">Ley 7457 /2025 </p>
+              <p class="desc">QUE DECLARA EN SITUACI&#211;N DE EMERGENCIA VIAL, LA RUTA PY08 EN EL TRAMO QUE UNE CRUCE 6000, DISTRITO DE SAN ESTANISLAO, DEPARTAMENTO SAN PEDRO, HASTA EL DISTRITO DE AZOTEY, DEPARTAMENTO CONCEPCION Y FACULTA AL PODER EJECUTIVO MINISTERIO DE OBRAS PUBLICAS Y COMUNICACIONES, A GESTIONAR LOS RECURSOS NECESARIOS PARA LA REPARACION DEL TRAMO AFECTADO
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 129 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16714">
+            <!-- data -->
+            <div class="block">
+              <p class="date">147 - 2025</p>
+              <p class="title">Ley 7490 /2025 </p>
+              <p class="desc">QUE DENOMINA CON EL NOMBRE DE &quot;RUTA DE LA SOBERAN&#205;A&quot;, LA RUTA NACIONAL PY 17, QUE UNE LOS DEPARTAMENTOS DE CANINDEY&#218; Y AMAMBAY, LLEGANDO A LA FRONTERA CON BRASIL
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 147 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16715">
+            <!-- data -->
+            <div class="block">
+              <p class="date">147 - 2025</p>
+              <p class="title">Ley 7371 /2025 </p>
+              <p class="desc">QUE GARANTIZA LOS DERECHOS DE LAS PERSONAS CON DISCAPACIDAD, MODIFICA VARIOS ART&#205;CULOS DE LA LEY N&#176; 1183/1985 &quot;C&#211;DIGO CIVIL&quot; Y MODIFICA LOS ART&#205;CULOS 262 Y 357 DE LA LEY N&#176; 879/1981 &quot;C&#211;DIGO DE ORGANIZACI&#211;N JUDICIAL&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 147 - 2025</span>
+                <span class="ministerio">Ministerio de Salud P&#250;blica y Bienestar Social</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16716">
+            <!-- data -->
+            <div class="block">
+              <p class="date">147 - 2025</p>
+              <p class="title">Decreto 4148  </p>
+              <p class="desc">	POR EL CUAL SE MODIFICA EL ART&#205;CULO 189 DEL ANEXO A (GU&#205;A DE NORMAS Y PROCESOS DEL PGN 2025) DEL DECRETO N&#176; 3248/2025, &#171;POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024, &quot;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;&#187;</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 147 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16777">
+            <!-- data -->
+            <div class="block">
+              <p class="date">212 - 2025</p>
+              <p class="title">Ley 7522 /2025 </p>
+              <p class="desc">QUE APRUEBA EL ACUERDO DE LIBRE COMERCIO ENTRE EL MERCADO COM&#218;N DEL SUR (MERCOSUR) Y LA REP&#218;BLICA DE SINGAPUR.</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 212 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16780">
+            <!-- data -->
+            <div class="block">
+              <p class="date">217 - 2025</p>
+              <p class="title">Ley 7538 /2025 </p>
+              <p class="desc">QUE AUTORIZA A LA MUNICIPALIDAD DE ITACURUB&#205; DEL ROSARIO, A TRANSFERIR A T&#205;TULO GRATUITO A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE EDUCACI&#211;N Y CIENCIAS, UN INMUEBLE INDIVIDUALIZADO EN LA MANZANA N&#176; 53, LOTE N&#176; 01, CON MATR&#205;CULA N&#176; C02/2882, CON CTA. CTE. CTRAL. N&#176; 18-0053- 01, PROPIEDAD DE LA MUNICIPALIDAD DE ITACURUB&#205; DEL ROSARIO, DEPARTAMENTO DE SAN PEDRO, PARA ASIENTO DE LA ESCUELA B&#193;SICA N&#176; 35 &#171;JOHN F. KENNEDY&#187;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 217 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16781">
+            <!-- data -->
+            <div class="block">
+              <p class="date">217 - 2025</p>
+              <p class="title">Ley 7536 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE CAACUP&#201;, A TRANSFERIR A T&#205;TULO GRATUITO, A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE SALUD P&#218;BLICA Y BIENESTAR SOCIAL, UN INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N&#176; 14121, CTA. CTE. CTRAL. N&#176; 19-2446-02, UBICADO EN EL LUGAR DENOMINADO BARRIO SAN ISIDRO DE LA COMPA&#209;&#205;A CABA&#209;AS, DEL MENCIONADO DISTRITO, PARA ASIENTO DE UNA UNIDAD DE SALUD FAMILIAR.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 217 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16797">
+            <!-- data -->
+            <div class="block">
+              <p class="date">218 - 2025</p>
+              <p class="title">Decreto 4582  </p>
+              <p class="desc">POR EL CUAL SE MODIFICA EL ART&#205;CULO 9&#176; DEL ANEXO &quot;A&quot; (GU&#205;A DE NORMAS Y PROCESOS DEL PGN 2025) DEL DECRETO N&#176; 3248/2025, &#171;POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7408 DEL 30 DE DICIEMBRE DE 2024, &quot;QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACI&#211;N PARA EL EJERCICIO FISCAL 2025&quot;&gt;&gt;, MODIFICADO POR EL DECRETO N&#176; 3427 DEL 28 DE FEBRERO DE 2025.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 218 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16799">
+            <!-- data -->
+            <div class="block">
+              <p class="date">225 - 2025</p>
+              <p class="title">Ley 7540 /2025 </p>
+              <p class="desc">QUE DESAFECTA DEL DOMINIO P&#218;BLICO AL DOMINIO PRIVADO MUNICIPAL, UN INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N&#176; 5864, CON CTA. CTE. CTRAL. N&#176; 27-0781-21, PARA SU POSTERIOR TRANSFERENCIA A TITULO ONEROSO A FAVOR DE SU ACTUAL OCUPANTE, LUGAR DENOMINADO BARRIO DOMINGO SAVIO, UBICADO EN EL DISTRITO DE FERNANDO DE LA MORA, DEL DEPARTAMENTO CENTRAL
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 225 - 2025</span>
+                <span class="ministerio">Ministerio del Interior</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16800">
+            <!-- data -->
+            <div class="block">
+              <p class="date">227 - 2025</p>
+              <p class="title">Ley 7550 /2025 </p>
+              <p class="desc">SE&#209;ALIZACI&#211;N VIAL DE &#193;REAS DE PROTECCI&#211;N AMBIENTAL
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 227 - 2025</span>
+                <span class="ministerio">Ministerio de Obras P&#250;blicas y Comunicaciones</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16815">
+            <!-- data -->
+            <div class="block">
+              <p class="date">249 - 2025</p>
+              <p class="title">Decreto 4806  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTA LA LEY N&#176; 7363/2024, &quot;QUE ESTABLECE EL CONTROL, LA TRANSPARENCIA Y LA RENDICI&#211;N DE CUENTAS DE LAS ORGANIZACIONES SIN FINES DE LUCRO&quot;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 249 - 2025</span>
+                <span class="ministerio">Ministerio de Tecnolog&#237;a de la Informaci&#243;n y Comunicaci&#243;n</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16839">
+            <!-- data -->
+            <div class="block">
+              <p class="date">276 - 2025</p>
+              <p class="title">Ley 7569 /2025 </p>
+              <p class="desc">QUE CONCEDE PENSI&#211;N GRACIABLE AL SE&#209;OR JES&#218;S SALVADOR P&#201;REZ ECHANIQUE
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 276 - 2025</span>
+                <span class="ministerio"></span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16852">
+            <!-- data -->
+            <div class="block">
+              <p class="date">296 - 2025</p>
+              <p class="title">Ley 7600 /2025 </p>
+              <p class="desc">QUE APRUEBA LA CONVENCI&#211;N INTERAMERICANA SOBRE LA PROTECCI&#211;N DE LOS DERECHOS HUMANOS DE LAS PERSONAS MAYORES.
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 296 - 2025</span>
+                <span class="ministerio">Ministerio de Relaciones Exteriores</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-item box" id="16855">
+            <!-- data -->
+            <div class="block">
+              <p class="date">301 - 2025</p>
+              <p class="title">Decreto 5087  </p>
+              <p class="desc">POR EL CUAL SE REGLAMENTAN LOS ART&#205;CULOS 42, 43 Y 44 DE LA LEY N&#176; 6422/2019, &#171;QUE MODIFICA LOS ART&#205;CULOS 41, 42, 43, 44 Y 45 DE LA LEY N&#176; 352/1994, “DE &#193;REAS SILVESTRES PROTEGIDAS”&#187;
+</p>
+              <p class="theme">
+                <span class="other pull-right hidden">GACETA 301 - 2025</span>
+                <span class="ministerio">Ministerio del Ambiente y Desarrollo Sostenible</span>
+              </p>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="box jplist-no-results text-shadow align-center">
+        <p>No se han encontrado resultados</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+
+  $('document').ready(function () {
+
+    $('#demo').jplist({
+      itemsBox: '.list'
+      , itemPath: '.list-item'
+      , panelPath: '.jplist-panel'
+    });
+  });
+
+  $('#resultado-consulta').on('click', '.list-item', function () {
+
+    var codigo = $(this).attr('id');
+
+    $.ajax({
+      type: 'GET',
+      url: '/legislacion/Consulta/Detalle',
+      data: { id: codigo },
+      contentType: 'application/html; charset=utf-8',
+      success: function (datos) {
+
+        var detalle = $('#panel-detalle');
+
+        var listaresultado = $('#resultado');
+        var detalleregistro = $('#detalle');
+
+        $("#navegador").append('<a href="javascript:Navegacion(2);" id="n3" class="btn btn-default">Detalle</a>');
+
+        listaresultado.hide();
+        detalleregistro.html(datos);
+        detalle.show();
+
+      },
+      error: function () {
+        alert('Problemas para desplegar el detalle del registro consultado');
+      }
+    });
+
+  });
+
+</script>

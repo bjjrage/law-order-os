@@ -1,0 +1,119 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Laurel no hizo pagos, no recibió el taller y no eligió una alternativa",
+      "explanation": "Distingue las propuestas no aceptadas de una operación concluida y apoya continuar solo con diligencia, sin asumir una compra perfeccionada."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "el contrato exige autorización previa y escrita tanto para la cesión como para un cambio de control",
+      "explanation": "Identifica la exigencia contractual para ambas estructuras, explica por qué la compra de acciones también activa el consentimiento y vincula el riesgo con la valoración."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no se prometió una decisión ese día",
+      "explanation": "Expone que la respuesta de Horizonte no es autorización y que la reunión ocurre después del plazo de reserva, sin calificarlo como rechazo o terminación."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La reserva debe rechazarse en su forma actual",
+      "explanation": "Trata el importe, la cuenta personal, la pérdida potencial y la falta de acuerdo; propone protecciones posibles como condiciones negociadas, sin presentarlas como existentes."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "B no debe tratarse como un reinicio de antigüedad ni como eliminación de obligaciones históricas",
+      "explanation": "Diferencia los escenarios laborales, aplica la regla de sustitución de empleador citada y propone confirmar su aplicación y cuantificar contingencias."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "No hay base, desglose ni liquidación firmada",
+      "explanation": "Rechaza correctamente tratar PYG 90.000.000 como impuesto acreditado y señala que las reglas citadas no bastan para liquidar. El análisis tributario por estructura queda pendiente, pero no aborda las disposiciones de IVA expresamente relevantes para transferencia de activos y acciones."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no es una liquidación jurídica",
+      "explanation": "Mantiene el estimado de horas como preliminar, señala la falta de registros y pagos acreditados y propone conciliar jornadas, recibos, vacaciones y aportes."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "El análisis tributario cita IRE (F03, arts. 8 y 13), pero no examina el IVA: la Ley 6380 define como enajenaciones tanto transferencias de empresas como cesiones de acciones, y contempla exenciones específicas para acciones y otras operaciones (F03, arts. 81 y 100). La conclusión tributaria comparativa queda pendiente de analizar esos artículos, el desglose de activos y la reglamentación aplicable; el memo sí reconoce que falta análisis tributario local."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La evaluación contrasta el memo con el inventario y las extracciones normativas aportadas; el expediente advierte que estas fuentes no acreditan consolidación normativa al corte.",
+    "La conclusión tributaria se mantiene necesariamente condicionada: no se aportaron desglose fiscal de bienes, costos de acciones, liquidación ni reglamentación consolidada a la fecha de corte."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "79c59fdfa2ae42eb8edd1eacdb46e417",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H01",
+      "quote": "Laurel no hizo pagos, no recibió el taller y no eligió una alternativa",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H02",
+      "quote": "el contrato exige autorización previa y escrita tanto para la cesión como para un cambio de control",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H03",
+      "quote": "no se prometió una decisión ese día",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H04",
+      "quote": "La reserva debe rechazarse en su forma actual",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H05",
+      "quote": "B no debe tratarse como un reinicio de antigüedad ni como eliminación de obligaciones históricas",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H06",
+      "quote": "No hay base, desglose ni liquidación firmada",
+      "treatment": "PARTIAL",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H07",
+      "quote": "no es una liquidación jurídica",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 0,
+  "missing_required_quote_count": 0
+}

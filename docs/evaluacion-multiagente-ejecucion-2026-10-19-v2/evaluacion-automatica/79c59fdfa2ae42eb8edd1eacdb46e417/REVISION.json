@@ -1,0 +1,69 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No se documenta aceptación de Laurel.",
+      "explanation": "Distingue correctamente las propuestas alternativas de una operación aceptada y relaciona la reserva separada, la falta de pago y el acta interna con la cautela de no asumir que la adquisición se perfeccionó. También deja abierta la revisión de comunicaciones y poderes."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "para este contrato, la transferencia de más del 50% de las acciones con voto o de derechos de designar la mayoría del directorio constituye cambio de control",
+      "explanation": "Identifica que la cláusula cubre tanto la adquisición de acciones como la cesión, y que la continuidad de la misma persona jurídica no evita por sí sola el requisito contractual. Expone la consecuencia potencial —no una terminación ya ocurrida— y conecta la autorización con la valoración."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "la predisposición a reunirse no autoriza ninguna alternativa",
+      "explanation": "Trata la respuesta de Horizonte como recepción y evaluación, no consentimiento; reconoce que la reunión posterior a la fecha de la reserva no promete una decisión y evita describir la demora como rechazo o terminación."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La reserva debe rechazarse en su forma actual.",
+      "explanation": "Explica los riesgos de la suma no reembolsable, la cuenta personal y la falta de acuerdo separado, y recomienda no pagar tal como está. Presenta las salvaguardas posibles como condiciones a negociar, no como protecciones ya pactadas."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "B no debe tratarse como un reinicio de antigüedad ni como eliminación de obligaciones históricas.",
+      "explanation": "Distingue la continuidad del empleador en la compra de acciones de la propuesta de sustitución en la compra de activos, aplica el artículo 28 del Código del Trabajo y advierte que la hoja de escenario no prueba una transferencia laboral ya realizada. Mantiene como cuestión pendiente la aplicación a la operación concreta."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "La nota tributaria contiene errores reconocidos",
+      "explanation": "Rechaza fundadamente los PYG 90.000.000 como impuesto validado, cita reglas de IRE para transferencia de establecimientos y acciones, y pide análisis tributario por estructura. Sin embargo, el tratamiento de IVA puede diferir materialmente entre la cesión de acciones y la transferencia de negocio/activos, y el memo no lo analiza de forma concreta pese a que la fuente lo permite."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no es una liquidación jurídica",
+      "explanation": "Distingue el estimado interno de PYG 16.000.000 de una liquidación probada, identifica las deficiencias de la documentación de jornada y amplía la diligencia a nómina, vacaciones y aportes sin afirmar que exista una deuda definitivamente determinada."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "La comparación tributaria queda incompleta en un punto estructural: la Ley 6380 incluye las transferencias de empresas entre los hechos relevantes para IVA (art. 81.1.c, F03-L00609), mientras que también exonera la enajenación de acciones y cuotas (art. 100.1.a, F03-L00750). La aplicación concreta, base y eventuales componentes de una venta de activos requieren análisis y reglamentación, pero el memo debería identificar expresamente esta diferencia potencial y pedir que se cuantifique para ambas estructuras."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La revisión se limita al expediente ficticio y a las extracciones normativas incluidas; el propio corpus advierte que no acredita consolidación normativa al 19/10/2026.",
+    "No se infiere que las anotaciones de firmas o comunicaciones ficticias estén autenticadas externamente."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "79c59fdfa2ae42eb8edd1eacdb46e417",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 232795,
+    "output_tokens_including_reasoning": 1294,
+    "cost_accounted_upper_usd": 0.029746375,
+    "estimated_standard_no_cache_discount_usd": 0.0239265,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 1
+}

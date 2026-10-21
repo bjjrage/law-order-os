@@ -1,0 +1,19 @@
+{
+  "status": "INTERRUPTED_FOR_INSTRUMENT_CALIBRATION",
+  "at": "2026-10-19T05:11:35.882Z",
+  "reason": "A cumulative 800000-input-token quota prevented B from producing a final memo while monetary and output budgets remained. Preserve this first pass and rerun every modality with a common higher quota; do not compare selected outputs across versions.",
+  "known_usage_requests": 86,
+  "unknown_outcome_requests": 1,
+  "accounted_upper_usd": 0.27957475,
+  "unresolved_requests": [
+    {
+      "request": "runs/P02-B-R1/integracion-016-16805f5b.request.json",
+      "input_byte_upper_bound": 216826,
+      "max_output_tokens": 8192
+    }
+  ],
+  "signal": "SIGINT via execution session",
+  "human_review": "NOT_RUN",
+  "architecture_changes": "NONE",
+  "next_execution": "../evaluacion-multiagente-ejecucion-2026-10-19-v2"
+}

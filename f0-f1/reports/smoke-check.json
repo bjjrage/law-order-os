@@ -1,0 +1,23 @@
+{
+  "command": [
+    "node",
+    "--import",
+    "./phase2/tooling/block-network.mjs",
+    "dist/cli/index.js",
+    "smoke",
+    "--request-id",
+    "f0-f1-offline-2026-10-13",
+    "--data-dir",
+    "f0-f1/local-board-data",
+    "--report-dir",
+    "f0-f1/reports"
+  ],
+  "exit_code": 0,
+  "status": "HUMAN_REVIEW_PENDING",
+  "reference_verification": "PASS_IN_SCOPE",
+  "labels": [
+    "SIMULATED_VERIFIED"
+  ],
+  "network_guard": true,
+  "paid_inference_usd": 0
+}

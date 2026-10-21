@@ -1,0 +1,121 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P01-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "el desembolso real podría exceder esa autorización",
+      "explanation": "Contrasta el presupuesto de Cedro con el precio neto más tributos y recomienda fijar un tope aprobado. También advierte que la versión v2 reemplazó la oferta anterior con impuestos incluidos."
+    },
+    {
+      "reference_id": "P01-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no hay continuidad aprobada por Maroma",
+      "explanation": "Explica la exigencia contractual de consentimiento escrito, distingue el interés preliminar de Maroma de una aprobación y propone condicionar el cierre a un acuerdo vinculante, con alternativa de suministro."
+    },
+    {
+      "reference_id": "P01-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Los recibos acreditan anotación de recepción de salarios base, no pago de esas comisiones",
+      "explanation": "Distingue los recibos de salario base del registro de PYG 9 millones en comisiones no acreditadas como pagadas, y señala que vacaciones, aportes y exposición total requieren conciliación."
+    },
+    {
+      "reference_id": "P01-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "el pacto entre comprador y vendedor de que Naranjal indemnizará a Cedro no elimina esa regla frente a trabajadores",
+      "explanation": "Aplica el artículo 28 del Código del Trabajo a la continuidad prevista, reconoce la responsabilidad frente a trabajadores y diferencia esa regla de la indemnidad contractual. No afirma que la negociación por sí sola cause despidos o indemnizaciones."
+    },
+    {
+      "reference_id": "P01-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no puede descartarse por ser una venta de activos",
+      "explanation": "Rechaza correctamente la impresión no fundamentada del contador y analiza por separado IVA, IRE y la asignación de contraprestación, sin fijar una tasa ni afirmar una exención general."
+    },
+    {
+      "reference_id": "P01-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no hay fundamento para tratarlo como crédito de Cedro",
+      "explanation": "Identifica que el saldo de IVA pertenece a Naranjal, que no forma parte de los activos ofrecidos y que no se aportó fundamento para transferirlo; recomienda excluirlo salvo validación."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MATERIAL",
+      "category": "INCORRECT_SOURCE_APPLICATION",
+      "exact_output_quote": "La obligación se configura con la entrega de bienes acompañada del comprobante. Así, al menos inventario y equipos plantean una cuestión de IVA",
+      "evidence_locator": "F03-L00829–F03-L00832 (art. 110, ISC); F03-L00641–F03-L00653 (art. 83, IVA)",
+      "explanation": "El memo atribuye al artículo 110 una regla temporal que pertenece al ISC, no al IVA: la disposición de entrega acompañada de comprobante aparece allí para el nacimiento de la obligación de ese impuesto. Para la conclusión sobre IVA debía citarse y aplicarse el artículo 83; la conclusión general de que la transmisión puede plantear IVA no queda por ello necesariamente descartada."
+    }
+  ],
+  "novel_valid_findings": [
+    "El memo no analiza la regla específica del artículo 13 de la Ley 6380 para transferencias de establecimientos comerciales: el acto implica cierre del ejercicio económico para el enajenante y el adquirente debe mantener el mismo valor fiscal de los bienes al adquirirlos. Como la operación combina inventario, equipos y derechos comerciales, corresponde determinar si constituye una transferencia de establecimiento y, de ser así, incorporar esas consecuencias al análisis del IRE y a las condiciones de cierre. Fuente: F03-L00129–F03-L00131."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La fuente tributaria se presenta como publicación archivada sin revisión temporal acreditada; el memo reconoce que debe verificarse la normativa y reglamentación vigentes al cierre.",
+    "El corpus no contiene los contratos individuales, constancias completas de aportes, conciliación de vacaciones, título registral de la denominación ni búsqueda registral de los equipos. El memo trata esos extremos como diligencias pendientes y no como hechos comprobados.",
+    "El artículo 28 del Código del Trabajo aparece en la extracción aportada, pero la consolidación normativa a la fecha de corte no está acreditada."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "98be438b73f348aeae1158f4b979e17b",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H01",
+      "quote": "el desembolso real podría exceder esa autorización",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H02",
+      "quote": "no hay continuidad aprobada por Maroma",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H03",
+      "quote": "Los recibos acreditan anotación de recepción de salarios base, no pago de esas comisiones",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H04",
+      "quote": "el pacto entre comprador y vendedor de que Naranjal indemnizará a Cedro no elimina esa regla frente a trabajadores",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H05",
+      "quote": "no puede descartarse por ser una venta de activos",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H06",
+      "quote": "no hay fundamento para tratarlo como crédito de Cedro",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "ERROR",
+      "index": 0,
+      "quote": "La obligación se configura con la entrega de bienes acompañada del comprobante. Así, al menos inventario y equipos plantean una cuestión de IVA",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 2,
+  "missing_required_quote_count": 0
+}

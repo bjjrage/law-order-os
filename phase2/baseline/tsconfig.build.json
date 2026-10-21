@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "outDir": "dist", "rootDir": "junta-juridica/src", "declaration": true, "sourceMap": true },
+  "include": ["junta-juridica/src/**/*.ts"]
+}

@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "mode": "OFFLINE_SIMULATION",
+  "provider_quality_evaluation": "NOT_RUN",
+  "real_integration": "NOT_RUN",
+  "holdout": {
+    "set_id": "holdout-v1-frozen-2026-10-12",
+    "sha256": "f68295e548c863f69a6eb280dee1776a9e9735bd4f5cce0b8b26fc22ecc29399",
+    "frozen_before_evaluation": true,
+    "cases": [
+      {
+        "id": "h01",
+        "genuine": true,
+        "identity": "VERIFIED_IDENTITY",
+        "quote": "NOT_APPLICABLE",
+        "export_label": "SIMULATED_VERIFIED",
+        "pass": true
+      },
+      {
+        "id": "h02",
+        "genuine": false,
+        "identity": "NOT_FOUND_IN_SCOPE",
+        "quote": "NOT_APPLICABLE",
+        "export_label": "REVIEW_REQUIRED",
+        "pass": true
+      },
+      {
+        "id": "h03",
+        "genuine": false,
+        "identity": "METADATA_MISMATCH",
+        "quote": "NOT_APPLICABLE",
+        "export_label": "REVIEW_REQUIRED",
+        "pass": true
+      },
+      {
+        "id": "h04",
+        "genuine": true,
+        "identity": "VERIFIED_IDENTITY",
+        "quote": "QUOTE_MISMATCH",
+        "export_label": "REVIEW_REQUIRED",
+        "pass": true
+      }
+    ],
+    "extraction": [
+      {
+        "expected": 1,
+        "detected": 1,
+        "unresolved_markers": 0
+      },
+      {
+        "expected": 1,
+        "detected": 1,
+        "unresolved_markers": 0
+      },
+      {
+        "expected": 1,
+        "detected": 0,
+        "unresolved_markers": 1
+      }
+    ]
+  },
+  "development": {
+    "set_id": "demo-development-v1",
+    "runs": 10,
+    "relevant_document_recall": 1,
+    "critical_document_omission": 0,
+    "audit_findings": 0,
+    "input_tokens": 87870,
+    "output_tokens": 13820,
+    "token_count_kind": "SIMULATED",
+    "cost_per_run": [
+      {
+        "estimated_simulation_usd": 0.011551,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011551,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011551,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011551,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011551,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011551,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011551,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011551,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011551,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011551,
+        "actual_paid_usd": 0
+      }
+    ],
+    "latency_p50_ms": 36.82470000000012,
+    "latency_p90_ms": 53.1232,
+    "provider_errors": 0
+  },
+  "citation_extraction_recall": 0.6666666666666666,
+  "false_verified_citations": 0,
+  "genuine_citations_unresolved": 0,
+  "limitations": [
+    "Fixtures sintéticos; no corpus jurídico paraguayo auténtico.",
+    "Recall documental mide reglas de simulación, no Jev.",
+    "Un solo caso de recuperación repetido mide variabilidad temporal local, no generalización.",
+    "Holdout pequeño: no justifica porcentajes de reducción de alucinaciones.",
+    "Gramática finita de extracción; citas fuera de gramática requieren revisión humana."
+  ]
+}

@@ -1,0 +1,12 @@
+import { readFile, writeFile } from 'node:fs/promises';
+const path = '.local-dev/gabriel/2026-10-16.json';
+const before = JSON.parse(await readFile(path, 'utf8'));
+const own = Object.entries(before.requests).find(([, request]) => request.operation === 'chat' && request.result?.reply?.includes('vender el 55%'));
+if (!own) throw Error('No se encontró el caso sintético propio; no se envía otra consulta.');
+const origin = 'http://127.0.0.1:4313';
+const response = await fetch(origin + '/local/gabriel/chat', { method: 'POST', headers: { Origin: origin, 'X-Gabriel': '1', 'X-Request-Id': own[0], 'Content-Type': 'application/json' }, body: JSON.stringify({ message: '¿Vender el 55% de una sociedad equivale a una fusión empresarial? Respondé conceptualmente, sin citar normas.', history: [], view: 'dashboard' }) });
+const result = await response.json();
+const after = JSON.parse(await readFile(path, 'utf8'));
+const status = await (await fetch(origin + '/local/gabriel/status')).json();
+const proof = { verified_at: new Date().toISOString(), status: response.status, same_reply: result.reply === own[1].result.reply, requests_unchanged: Object.keys(before.requests).length === Object.keys(after.requests).length, reservation_unchanged: before.reserved === after.reserved, backend: status };
+await writeFile('local-browser/reports/gabriel/restart-proof.json', JSON.stringify(proof, null, 2)); console.log(proof);

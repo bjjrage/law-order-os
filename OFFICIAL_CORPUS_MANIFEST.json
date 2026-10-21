@@ -1,0 +1,208 @@
+{
+  "schema_version": "official-corpus-observation-v1",
+  "client_date": "2026-10-13",
+  "timezone": "America/Asuncion",
+  "scope": "Small research corpus; not a production index or judicial authenticity certificate",
+  "status": "RECOVERED_REAL_ORIGINALS_WITH_BLOCKED_CHECKER_INTEGRATION",
+  "gate_a2": {
+    "original_retrieval": "VERIFIED_REAL",
+    "chambers_recovered": 3,
+    "identity_and_source_observation": "TESTED_OFFLINE_WITH_REAL_BYTES",
+    "production_checker_readiness": "BLOCKED"
+  },
+  "documents": [
+    {
+      "source_document_id": "csj-constitucional-1010-2015",
+      "source_institution": "Corte Suprema de Justicia del Paraguay - Poder Judicial",
+      "source_url": "https://www.pj.gov.py/descargas/ID1-423_acuerdo_y_sentencia_1010.pdf",
+      "retrieved_at": "2026-10-13T09:52:49.974Z",
+      "original_sha256": "214e4e61a0e62d1b2a57c01c04b660b18ad6110e7dd78aca6d68a9a72f0d8f91",
+      "file_mime_type": "application/pdf",
+      "document_type": "ACUERDO_Y_SENTENCIA",
+      "court": "Corte Suprema de Justicia",
+      "chamber": "Sala Constitucional",
+      "resolution_number": "1010",
+      "resolution_date": "2015-12-11",
+      "document_version": "sha256:214e4e61a0e62d1b2a57c01c04b660b18ad6110e7dd78aca6d68a9a72f0d8f91",
+      "original_path": "phase2/corpus/originals/csj-constitucional-1010-2015.pdf",
+      "extraction_status": "IMAGE_ONLY_OCR_NOT_RUN",
+      "verification_status": "UNVERIFIED_FOR_CHECKER",
+      "origin_observation_status": "VERIFIED_REAL_HTTPS_DOWNLOAD",
+      "identity_review_status": "IDENTITY_VISUALLY_CORROBORATED",
+      "provenance_evidence": {
+        "official_publication_path": "phase2/corpus/provenance/csj-constitucional-1010-2015.html",
+        "official_publication_sha256": "f9291b956c06798d3b6315ec8c122a919b19d29f2b534a5ba2252203b0a55a66",
+        "original_http": {
+          "status": "DOWNLOADED",
+          "http_status": 200,
+          "final_url": "https://www.pj.gov.py/descargas/ID1-423_acuerdo_y_sentencia_1010.pdf",
+          "mime_type": "application/pdf",
+          "bytes": 4819396,
+          "sha256": "214e4e61a0e62d1b2a57c01c04b660b18ad6110e7dd78aca6d68a9a72f0d8f91",
+          "etag": "\"981e6f-4989c4-526dcda9da458\"",
+          "last_modified": "Mon, 14 Dec 2015 14:54:45 GMT"
+        },
+        "review_images": [
+          "phase2/corpus/review-images/csj-constitucional-1010-2015-p1.png",
+          "phase2/corpus/review-images/csj-constitucional-1010-2015-p13.png"
+        ],
+        "review_method": "Mozilla PDF.js 6.4.299 plus visual inspection of rendered first/last pages",
+        "reviewed_by": "CODEX_PHASE2_OBSERVATION_NOT_A_JUDICIAL_SIGNER",
+        "signature_validation": "NOT_RUN",
+        "host_trusted_attestation": "ABSENT"
+      },
+      "reuse_rights_status": "OFFICIAL_JUDICIAL_TEXT_BASIS_IDENTIFIED_HOST_REVIEW_PENDING",
+      "reuse_rights_evidence": {
+        "source_url": "https://www.pj.gov.py/images/contenido/ddpi/leyes/ley-1328-del-98-derecho-de-autor-y-derechos-conexos.pdf",
+        "provision": "Ley 1328/98 Article 8(2)",
+        "interpretation": "Official judicial texts are excluded from copyright protection subject to text integrity and source citation; this is not blanket clearance for editorial compilations, personal-data processing or all portal assets."
+      },
+      "page_count": 13,
+      "extraction_path": "phase2/corpus/extracted/csj-constitucional-1010-2015.json",
+      "extraction_sha256": "a92bd502fa82f5f25b0e13330049bd415e5b4238219a5505160357ec2cce47d8",
+      "extracted_characters": 0,
+      "production_indexing_permitted": false,
+      "research_archive_status": "PUBLIC_OFFICIAL_DOWNLOAD_USER_AUTHORIZED",
+      "metadata_discrepancies": [
+        "Number and date read from pages 1 and 13; publication date 2015-12-14 is different from decision date.",
+        "Image-only PDF; no OCR executed."
+      ],
+      "blockers": [
+        "HOST_TRUST_POLICY_AND_ATTESTATION_REQUIRED",
+        "REVIEWED_OCR_OR_TRANSCRIPTION_REQUIRED"
+      ]
+    },
+    {
+      "source_document_id": "csj-civil-1184-2013",
+      "source_institution": "Corte Suprema de Justicia del Paraguay - Poder Judicial",
+      "source_url": "https://www.pj.gov.py/descargas/ID1-966_ays_1184.pdf",
+      "retrieved_at": "2026-10-13T09:52:51.807Z",
+      "original_sha256": "a59ef9e2258e92e3b076fdf37092f4013538d1f91dafea95e2ffdf46fa8d9de1",
+      "file_mime_type": "application/pdf",
+      "document_type": "ACUERDO_Y_SENTENCIA",
+      "court": "Corte Suprema de Justicia",
+      "chamber": "Sala Civil y Comercial",
+      "resolution_number": "1184",
+      "resolution_date": "2013-09-19",
+      "document_version": "sha256:a59ef9e2258e92e3b076fdf37092f4013538d1f91dafea95e2ffdf46fa8d9de1",
+      "original_path": "phase2/corpus/originals/csj-civil-1184-2013.pdf",
+      "extraction_status": "DIGITAL_TEXT_UNREVIEWED",
+      "verification_status": "UNVERIFIED_FOR_CHECKER",
+      "origin_observation_status": "VERIFIED_REAL_HTTPS_DOWNLOAD",
+      "identity_review_status": "IDENTITY_TEXT_AND_VISUAL_CORROBORATED",
+      "provenance_evidence": {
+        "official_publication_path": "phase2/corpus/provenance/csj-civil-1184-2013.html",
+        "official_publication_sha256": "8923c79d0e1f56383e0549dcef53e506c369fdcf9b7fd41e322bf0e9a69abdb5",
+        "original_http": {
+          "status": "DOWNLOADED",
+          "http_status": 200,
+          "final_url": "https://www.pj.gov.py/descargas/ID1-966_ays_1184.pdf",
+          "mime_type": "application/pdf",
+          "bytes": 226566,
+          "sha256": "a59ef9e2258e92e3b076fdf37092f4013538d1f91dafea95e2ffdf46fa8d9de1",
+          "etag": "\"981a53-37506-4e9d138e2a643\"",
+          "last_modified": "Mon, 28 Oct 2013 18:25:18 GMT"
+        },
+        "review_images": [
+          "phase2/corpus/review-images/csj-civil-1184-2013-p1.png",
+          "phase2/corpus/review-images/csj-civil-1184-2013-p29.png"
+        ],
+        "review_method": "Mozilla PDF.js 6.4.299 plus visual inspection of rendered first/last pages",
+        "reviewed_by": "CODEX_PHASE2_OBSERVATION_NOT_A_JUDICIAL_SIGNER",
+        "signature_validation": "NOT_RUN",
+        "host_trusted_attestation": "ABSENT"
+      },
+      "reuse_rights_status": "OFFICIAL_JUDICIAL_TEXT_BASIS_IDENTIFIED_HOST_REVIEW_PENDING",
+      "reuse_rights_evidence": {
+        "source_url": "https://www.pj.gov.py/images/contenido/ddpi/leyes/ley-1328-del-98-derecho-de-autor-y-derechos-conexos.pdf",
+        "provision": "Ley 1328/98 Article 8(2)",
+        "interpretation": "Official judicial texts are excluded from copyright protection subject to text integrity and source citation; this is not blanket clearance for editorial compilations, personal-data processing or all portal assets."
+      },
+      "page_count": 29,
+      "extraction_path": "phase2/corpus/extracted/csj-civil-1184-2013.json",
+      "extraction_sha256": "1e2cb80479d8bb0725ebc643456029c70f937ec2f6161b860c0c322dd10a4025",
+      "extracted_characters": 71241,
+      "production_indexing_permitted": false,
+      "research_archive_status": "PUBLIC_OFFICIAL_DOWNLOAD_USER_AUTHORIZED",
+      "metadata_discrepancies": [
+        "Number written in words and decision date on first page; official landing gives numeric number and same date.",
+        "Publication date 2013-10-28 is not the decision date."
+      ],
+      "blockers": [
+        "HOST_TRUST_POLICY_AND_ATTESTATION_REQUIRED",
+        "EXTRACTION_QUALITY_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "source_document_id": "csj-penal-162-2023",
+      "source_institution": "Corte Suprema de Justicia del Paraguay - Poder Judicial",
+      "source_url": "https://www.pj.gov.py/descargas/ID1-711_ays_162d.pdf",
+      "retrieved_at": "2026-10-13T09:52:52.274Z",
+      "original_sha256": "e19fd055650eadb537285bce6c1ccdbd3128a0ad8fd94fd37616fc37aa9c5aeb",
+      "file_mime_type": "application/pdf",
+      "document_type": "ACUERDO_Y_SENTENCIA",
+      "court": "Corte Suprema de Justicia",
+      "chamber": "Sala Penal",
+      "resolution_number": "162",
+      "resolution_date": "2023-05-24",
+      "document_version": "sha256:e19fd055650eadb537285bce6c1ccdbd3128a0ad8fd94fd37616fc37aa9c5aeb",
+      "original_path": "phase2/corpus/originals/csj-penal-162-2023.pdf",
+      "extraction_status": "DIGITAL_TEXT_UNREVIEWED",
+      "verification_status": "UNVERIFIED_FOR_CHECKER",
+      "origin_observation_status": "VERIFIED_REAL_HTTPS_DOWNLOAD",
+      "identity_review_status": "IDENTITY_OFFICIAL_LINK_CORROBORATED_NUMBER_DATE_NOT_PRINTED",
+      "provenance_evidence": {
+        "official_publication_path": "phase2/corpus/provenance/csj-penal-162-2023.html",
+        "official_publication_sha256": "3e8458c165ccf21afacf49610cad6f1dc325a77d5b3572f2fa152da401548520",
+        "original_http": {
+          "status": "DOWNLOADED",
+          "http_status": 200,
+          "final_url": "https://www.pj.gov.py/descargas/ID1-711_ays_162d.pdf",
+          "mime_type": "application/pdf",
+          "bytes": 516642,
+          "sha256": "e19fd055650eadb537285bce6c1ccdbd3128a0ad8fd94fd37616fc37aa9c5aeb",
+          "etag": "\"984653-7e222-5fc71e4c84c2f\"",
+          "last_modified": "Wed, 24 May 2023 15:09:43 GMT"
+        },
+        "review_images": [
+          "phase2/corpus/review-images/csj-penal-162-2023-p1.png",
+          "phase2/corpus/review-images/csj-penal-162-2023-p7.png"
+        ],
+        "review_method": "Mozilla PDF.js 6.4.299 plus visual inspection of rendered first/last pages",
+        "reviewed_by": "CODEX_PHASE2_OBSERVATION_NOT_A_JUDICIAL_SIGNER",
+        "signature_validation": "NOT_RUN",
+        "host_trusted_attestation": "ABSENT"
+      },
+      "reuse_rights_status": "OFFICIAL_JUDICIAL_TEXT_BASIS_IDENTIFIED_HOST_REVIEW_PENDING",
+      "reuse_rights_evidence": {
+        "source_url": "https://www.pj.gov.py/images/contenido/ddpi/leyes/ley-1328-del-98-derecho-de-autor-y-derechos-conexos.pdf",
+        "provision": "Ley 1328/98 Article 8(2)",
+        "interpretation": "Official judicial texts are excluded from copyright protection subject to text integrity and source citation; this is not blanket clearance for editorial compilations, personal-data processing or all portal assets."
+      },
+      "page_count": 7,
+      "extraction_path": "phase2/corpus/extracted/csj-penal-162-2023.json",
+      "extraction_sha256": "1aa13ddb64de9e1fb38a655f37a202be86be4f0878d5e7664d1273bd4d3c27f1",
+      "extracted_characters": 15234,
+      "production_indexing_permitted": false,
+      "research_archive_status": "PUBLIC_OFFICIAL_DOWNLOAD_USER_AUTHORIZED",
+      "metadata_discrepancies": [
+        "Official landing expressly identifies number/date and links this PDF.",
+        "PDF heading omits resolution number and date; chamber and public case match. Visible digital signature dates are not cryptographic validation.",
+        "A trusted verifier must approve this contextual identity before checker authentication."
+      ],
+      "blockers": [
+        "HOST_TRUST_POLICY_AND_ATTESTATION_REQUIRED",
+        "EXTRACTION_QUALITY_REVIEW_REQUIRED",
+        "CONTEXTUAL_IDENTITY_APPROVAL_REQUIRED"
+      ]
+    }
+  ],
+  "restrictions": [
+    "No login, CAPTCHA or access control was bypassed.",
+    "Original PDF bytes retained unchanged; extraction is a separate derived artifact.",
+    "No official trust keys or signatures were invented.",
+    "Public download and copyright basis do not settle privacy or production reuse policy."
+  ],
+  "model_inference_status": "NOT_RUN",
+  "paid_inference_usd": 0
+}

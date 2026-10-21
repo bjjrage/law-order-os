@@ -1,0 +1,1 @@
+run_id,attempt_id,event_id,parent_event_id,etapa,role_internal,provider,effective_model_id,config_sha256,inicio_utc,fin_utc,elapsed_ms,queue_ms,tool_name,input_tokens_observed,output_tokens_observed,reasoning_tokens_observed,cost_observed_usd,cost_estimated_usd,cost_unknown,usage_status,status,error_code,input_artifact_sha256,output_artifact_sha256,notas

@@ -1,0 +1,26 @@
+﻿{
+  "status": "NOT_RUN",
+  "stages": [
+    {
+      "stage": "jev",
+      "status": "BLOCKED",
+      "reason": "Falta JEV_API_KEY."
+    },
+    {
+      "stage": "luna",
+      "status": "BLOCKED",
+      "reason": "Falta OPENAI_API_KEY."
+    },
+    {
+      "stage": "sol",
+      "status": "BLOCKED",
+      "reason": "Falta OPENAI_API_KEY."
+    },
+    {
+      "stage": "gemini",
+      "status": "BLOCKED",
+      "reason": "Falta GEMINI_AUDITOR_MODEL."
+    }
+  ],
+  "network_used": false
+}

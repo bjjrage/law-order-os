@@ -1,0 +1,44 @@
+[
+  {
+    "at": "2026-10-19T05:21:02.624Z",
+    "sender": "contractual",
+    "target": "titular",
+    "finding": "Frente contractual: no recomendar comprometer cierre/pago según v3. Puede avanzarse solo condicionado a consentimiento operativo y técnico de Sur del Lago, tratamiento tripartito del anticipo OP-44, exclusión de matrices ajenas, y resolución verificable de personal/continuidad. Carta 18/10 es condicional y no acredita aprobación técnica. Retención 240m es diferimiento del precio (no garantía adicional) y no cubre automáticamente riesgos ni obligaciones futuras; borrador carece de procedimiento y respaldo. El reclamo agosto-7 de 40m es controvertido/no liquidado; separar del anticipo 120m. PYG 90m en proceso asociado OP-44 exige asignar propiedad, facturación, prestación y riesgo sin doble cobro. Bases esenciales deben ser condiciones precedentes, cuenta de cierre y derecho de terminación.",
+    "evidence": "P03-D01-P01..P04; P03-D02-P01..P04; P03-D03-P01..P04; P03-D04-P01..P04; P03-D05-P01..P04; P03-D06-P01..P04; P03-D08-P01,P03,P04"
+  },
+  {
+    "at": "2026-10-19T05:21:03.992Z",
+    "sender": "laboral",
+    "target": "titular",
+    "finding": "Frente laboral: no tratar los seis traspasos como nuevas contrataciones con fecha 02/11 ni asumir que cerrar legajos extingue derechos. Si hay sustitución de empleador, CT art. 28 mantiene contratos y establece solidaridad del sustituido con sustituyente por obligaciones preexistentes durante seis meses. Hay discrepancia material entre continuidad funcional propuesta y fecha nueva; conciliación de obligaciones/legajos incompleta. Condicionar cierre a estructuración laboral individual, antigüedad y pasivos acreditados; presupuestar contingencia y no confiar exclusivamente en retención PYG 240m (diferida 180 días, sin procedimiento). Además permanencia de Tomás/Nuria es condición expresa de Sur del Lago para cesión; solo ellos manifestaron interés condicionado, y no hay sustituto técnico aprobado.",
+    "evidence": "P03-D02 v3 P04 (seis continuidad, cerrar/reabrir sugerido sin acuerdos); P03-D07 v1 P01-P04 (ingresos 2017/2019 operadores, salarios septiembre/aportes sin conciliación, vacaciones estimadas PYG8m no liquidación, manifestaciones condicionadas, cuatro sin respuesta); P03-D04 v1 P01 (cesión condicionada a operadores permanentes o sustitución aprobada); Ley 213 art. 28 F02-L00118-L00119; art. 3 no renuncia F02-L00076."
+  },
+  {
+    "at": "2026-10-19T05:21:07.229Z",
+    "sender": "contractual",
+    "target": "tributario",
+    "finding": "Dependencia tributario-contractual: v3 asigna 300m inventario, 360m equipos/matrices y 240m derechos, pero incluye 60m matrices de Sur del Lago (custodia, no venta) y el conteo incluye 90m WIP OP-44; anticipo cliente 120m quedó en Ribera y fabricación futura pendiente. No asumir asignación fiscal/base ni incluir propiedad ajena o doble contar anticipo como precio/crédito. Reconciliar en contrato/closing statement bienes propios, tratamiento OP-44 (quién factura y entrega, anticipo transferido/compensado, saldo 80m), derechos cedidos y contraprestación; precio 900m vs tax inclusive/exclusive sin resolver. P03-D08 no determina tasa/base.",
+    "evidence": "P03-D02-P01,P03,P05; P03-D05-P01..P04; P03-D06-P01..P04; P03-D08-P01..P04"
+  },
+  {
+    "at": "2026-10-19T05:21:09.928Z",
+    "sender": "contractual",
+    "target": "laboral",
+    "finding": "Dependencia contractual-laboral: continuidad de seis personas ofrecida sin acuerdos individuales; plan propone fecha 02/11 a todos pero antigüedad conocida de operadores 2017/2019 y empleados condicionan aclaración; saldo vacaciones 8m es estimado, no liquidación. Compra de activos no resuelve por sí sola continuidad, antigüedad ni pasivos. Cierre condicionado a análisis legal/documental y mecanismo de transición compatible con consentimiento/ley, conciliaciones individuales y asignación de pasivos; no confiar en retención 240m como cancelación frente a trabajadores. Técnicos son además condición de aceptación técnica Sur del Lago.",
+    "evidence": "P03-D02-P04; P03-D07-P01..P04; P03-D04-P01"
+  },
+  {
+    "at": "2026-10-19T05:21:13.476Z",
+    "sender": "tributario",
+    "target": "titular",
+    "finding": "Frente tributario: la venta de activos/derechos por Ribera no queda fiscalmente neutral por llamarse compra de unidad. Ley 6380 IVA grava enajenación y prestación de servicios (art.80); define enajenación incluyendo transferencias de empresas (art.81). La base onerosa es precio devengado, sumando importes cargados al comprador (art.85); tasa general 10%, salvo categorías legales específicas (art.90: envases/equipos/derechos no identificados entre excepciones en extracto, confirmar norma/reglamentación vigente). Separar IVA del precio o fijar precio tax-inclusive, factura y crédito IVA documentado para Fresno; no cuantificar sin clasificación/base y revisión temporal. La asignación de precio no está validada: excluir matrices de SDL (60m custodia), tratar WIP OP-44 (90m dentro inventario 300m) y anticipo 120m pagado a Ribera sin doble cargo; discriminar prestación futura/cesión. Dependencia contractual: el pedido OP-44 de 200m se entregará 12/11, saldo cliente 80m, anticipo retenido por Ribera; acuerdo tripartito debe definir quién produce/factura, traspaso/imputación 120m y evitar segundo cobro. Evidencia P03-D02-P01,P03,P05; D03-P01..03; D04-P01..03; D05-P01..04; D06-P01..04; D08-P01..04; fuente F03 arts.80,81,85,90 y 89.",
+    "evidence": "P03-D02-P01,P03,P05; P03-D03-P01..03; P03-D04-P01..03; P03-D05-P01..04; P03-D06-P01..04; P03-D08-P01..04; F03-L00599..605,L00664..667,L00695..700,L00700..710"
+  },
+  {
+    "at": "2026-10-19T05:21:16.765Z",
+    "sender": "contractual",
+    "target": "titular",
+    "finding": "Fundamento contractual normativo corroborante: los contratos obligan de buena fe conforme a su texto y consecuencias (Código Civil, Ley 1183, art. 715); derechos/obligaciones no se presumen oponibles a terceros y sucesión contractual no puede imponerse al cliente, según art. 717. En este caso además el contrato comercial exige consentimiento escrito para cesión y traslado de matrices (P03-D03-P02), y la carta solo da aceptación condicionada (P03-D04-P01-P04). No equiparar borrador comprador-vendedor a cesión o liberación frente a Sur del Lago. La fuente F01 está archivada, sin revisión temporal acreditada para corte 19/10/2026.",
+    "evidence": "F01 líneas 168-170 (Ley 1183, arts. 715-717); P03-D02-P03; P03-D03-P02-P03; P03-D04-P01-P04; metadato F01 temporal_review NOT_ATTESTED"
+  }
+]

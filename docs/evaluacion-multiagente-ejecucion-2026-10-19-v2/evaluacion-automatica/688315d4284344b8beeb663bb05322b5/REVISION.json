@@ -1,0 +1,67 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Las propuestas A y B no documentan una compra aceptada: el vendedor las presenta como alternativas para discutir y afirma que no concluyen una compra ni obligan a transferir el negocio; Laurel no eligió una, no pagó ni recibió el taller",
+      "explanation": "Distingue correctamente las propuestas de una operación aceptada y relaciona ese estado con la falta de autorización del comité para comprar o reservar. Apoya la conclusión en la documentación y en los arts. 674 y 685 del Código Civil."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Exige autorización previa y escrita tanto para cesión/sustitución del prestador como para cambio directo o indirecto de control; define el cambio de control e indica que el silencio, recibir información o reunirse no equivalen a autorización.",
+      "explanation": "Trata tanto el cambio de control de la alternativa A como la cesión propuesta en B, y conecta la condición contractual con la continuidad de Horizonte y la recomendación de condicionar la operación."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "Horizonte solo recibió información general, pidió detalles y negó expresamente que su predisposición a reunirse constituya autorización; no consta aprobación ni plan de transición acordado",
+      "explanation": "Explica adecuadamente que la correspondencia no es autorización y que la reunión no garantiza aprobación. Sin embargo, no recoge expresamente que Horizonte manifestó que no había decidido terminar el contrato ni observaciones de incumplimiento actual (P02-D04-P03), una distinción útil para no confundir el riesgo de resolución futura con una terminación actual."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La reserva de PYG 120.000.000 debe rechazarse en su forma actual.",
+      "explanation": "Expone sus términos desfavorables, la ausencia del acuerdo separado y la falta de verificación o custodia, y recomienda no pagar ni firmar en la forma actual. No equipara sin más la etiqueta “reserva” con una señal jurídica ni afirma que el importe ya se haya perdido."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "En A, Delta Azul seguiría como empleador; en B, la continuidad de los técnicos puede plantear sustitución del empleador.",
+      "explanation": "Distingue los escenarios y cita el art. 28 del Código del Trabajo para la continuidad contractual y la responsabilidad solidaria temporal. También aclara que la información no acredita cancelación de antigüedad ni ausencia de obligaciones."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "La determinación depende de la estructura real, el vendedor, los activos, costos fiscales y documentación. El corpus tampoco permite liquidar IVA ni pasivos tributarios de Delta Azul",
+      "explanation": "Rechaza correctamente los importes inconsistentes de las hojas como tributos exigibles y cita normas relevantes de IRE, incluida la transferencia de establecimientos comerciales. Deja pendiente la liquidación de IVA, pero no desarrolla suficientemente las reglas de IVA aplicables a la cesión de activos ni la posible relevancia de la exoneración de transferencias por reorganización: su aplicación dependería de los hechos y no debe darse por supuesta."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Existe un estimado interno de PYG 16.000.000 por horas adicionales de septiembre, pendiente de conciliación y no equivalente a liquidación jurídica; no se aportó el registro íntegro de jornadas",
+      "explanation": "Conserva el carácter preliminar del estimado y señala la necesidad de revisar jornadas, vacaciones, aguinaldo y aportes, sin convertir los datos privados en una liquidación definitiva ni suponer que las obligaciones sean cero."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La evaluación se limita al expediente y a las extracciones jurídicas incluidas; el memo advierte correctamente que no se acredita consolidación normativa al corte.",
+    "La cuestión tributaria de IVA queda identificada como pendiente, pero el memo no brinda un análisis comparativo suficiente de sus posibles efectos en una adquisición de activos."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "688315d4284344b8beeb663bb05322b5",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 232174,
+    "output_tokens_including_reasoning": 1444,
+    "cost_accounted_upper_usd": 0.02974375,
+    "estimated_standard_no_cache_discount_usd": 0.0239394,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 0
+}

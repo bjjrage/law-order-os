@@ -1,0 +1,16 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { loadCase, runCase } from '../../../scripts/junta-case.mjs';
+const root=resolve('.'),id='6a91ea11-9484-42a4-9aa7-ecf1152cf020';
+const prepared=await loadCase(id,root);
+if(prepared.bundle.request.study_id!=='compact-ux-demo'||prepared.bundle.request.matter_id!=='matter-demo-3'||prepared.execution_mode!=='LIVE'||prepared.config.max_cost_usd!==0.6||!prepared.bundle.request.legal_question.startsWith('En un supuesto totalmente ficticio'))throw Error('OWN_SYNTHETIC_CASE_SCOPE_MISMATCH');
+const file=resolve(root,'.local-dev/junta-approvals',id+'.json');
+const grant=JSON.parse(await readFile(file,'utf8'));
+if(grant.prepared_id!==id||grant.prepared_hash!==prepared.prepared_hash||grant.max_cost_usd!==0.6||grant.authorize_paid_calls!==true||grant.owner_approval!==true)throw Error('EXISTING_QUERY_GRANT_REQUIRED');
+grant.allow_context_classification_repair=true;
+grant.allow_analysis_metadata_repair=true;
+grant.repair_reason='GENERAL_UNPROVEN_HYPOTHESIS_MOVED_TO_PENDING_QUESTIONS';
+await writeFile(file,JSON.stringify(grant,null,2));
+const run=await runCase(id,root);
+await writeFile(resolve(root,'local-browser/reports/junta-live/live-result.json'),JSON.stringify(run,null,2));
+console.log(JSON.stringify({prepared_id:id,run_id:run.run_id,mode:run.mode,status:run.status,error_code:run.error_code,has_analysis:!!run.analysis,has_audit:!!run.audit,cost:run.cost,stages:run.stages,citation_review:run.citation_review},null,2));

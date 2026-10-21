@@ -1,0 +1,26 @@
+{
+  "schema_version": "live-smoke-plan-v1",
+  "scenario_id": "phase2-one-question-one-source",
+  "question": "¿Qué requisito probatorio expresa la resolución seleccionada para la cuestión delimitada y qué límites declara para aplicarlo?",
+  "confidential_data": false,
+  "inference_status": "NOT_RUN",
+  "request_id": "phase2-live-smoke-001",
+  "frozen_bundle_hash": null,
+  "frozen_evidence_pack_hash": null,
+  "config": {
+    "max_cost_usd": 0.6,
+    "timeout_ms": 120000,
+    "max_retries": 0,
+    "max_retrievals": 0,
+    "router_batch_size": 1,
+    "router_batch_token_limit": 24000,
+    "candidate_limit": 1,
+    "sol_target_input_tokens": 50000,
+    "sol_max_input_tokens": 60000,
+    "sol_max_output_tokens": 25000,
+    "auditor_max_input_tokens": 100000,
+    "auditor_max_output_tokens": 16000
+  },
+  "total_budget_usd": 0.6,
+  "price_valid_until": "2026-10-20"
+}

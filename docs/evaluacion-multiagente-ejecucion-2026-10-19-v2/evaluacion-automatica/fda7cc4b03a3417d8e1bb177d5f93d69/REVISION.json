@@ -1,0 +1,80 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No deben comprarse ni valorarse como bienes de Ribera; el conteo las incluye para control de traslado, no como acto de venta, y no define ajuste de precio si se excluyen",
+      "explanation": "Distingue correctamente la titularidad de Sur del Lago de la custodia y del valor interno de reposición, y señala que la exclusión no determina por sí sola cómo ajustar el precio. También propone depurar el anexo y documentar el traslado."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La carta del cliente es una base útil, no prueba de cumplimiento: condiciona su consentimiento a actuaciones futuras y no libera a Ribera por reclamos anteriores",
+      "explanation": "Trata la carta como aceptación condicionada, no como rechazo total ni consentimiento ya perfeccionado; identifica las condiciones de matrices, trazabilidad y operadores, y exige aprobación técnica final previa al cierre."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La fecha de ingreso del 2 de noviembre en la planilla no debe sustituir la antigüedad registrada, que en los operadores se remonta a 2017 y 2019; los otros cuatro ingresaron entre 2021 y 2025",
+      "explanation": "Reconoce que el interés de los técnicos no equivale a aceptar nuevas condiciones, advierte contra reiniciar antigüedad mediante nuevos legajos y propone verificar obligaciones y documentar la continuidad."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Antes del cierre debe establecerse quién termina y factura la producción, a quién se entrega el efectivo o cómo se reconoce un crédito/ajuste, y cómo se aplica el saldo de PYG 80 millones.",
+      "explanation": "Identifica que los PYG 120 millones ya fueron recibidos por Ribera, que Fresno no tiene acreditada su transferencia y que el cliente no pagará de nuevo lo anticipado. Propone resolver la prestación futura, el efectivo o ajuste y la facturación en un acuerdo tripartito."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La retención **no es garantía adicional**",
+      "explanation": "Explica la doble contabilización y que los PYG 240 millones forman parte del precio diferido. También advierte que faltan procedimiento, garantía y decisor de reclamos y que el diferimiento no cubre automáticamente todos los pasivos."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Fresno no debería asumirlo sin acuerdo expreso",
+      "explanation": "Distingue el reclamo de PYG 40 millones del anticipo, informa que está controvertido y no reconocido, y conserva el procedimiento de inspección sin tratar el consentimiento a la cesión como renuncia a reclamos anteriores."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Los bienes muebles y los derechos requieren clasificación y base documentada; el precio de PYG 900 millones y la asignación comercial no bastan para una liquidación",
+      "explanation": "Relaciona el análisis fiscal con la composición real de los activos, los derechos y OP-44; diferencia tasa legal, base imponible y precio comercial, y deja pendiente verificar normativa y reglamentación vigentes y obtener un dictamen tributario."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "la estimación de PYG 8 millones de vacaciones no es liquidación individual",
+      "explanation": "No convierte la estimación conjunta en deuda liquidada ni considera que recibos y aportes de septiembre prueben una conciliación completa. Pide legajos, conciliación individual y reserva o indemnidad."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MATERIAL",
+      "category": "INCORRECT_SOURCE_APPLICATION",
+      "exact_output_quote": "La sustitución del empleador no afecta contratos vigentes; el empleador sustituido responde solidariamente con el sustituyente por obligaciones anteriores durante seis meses, tras los cuales subsiste la responsabilidad del nuevo empleador (Ley 213, Código del Trabajo, art. 28; F02 L118–120). Por tanto, “cerrar legajos y reabrirlos” no elimina el riesgo.",
+      "evidence_locator": "P03-D01-P01 (Fresno quiere adquirir bienes y derechos, no acciones, y Ribera seguirá existiendo); P03-D02-P04 (borrador sobre seis empleados, sin decisión de cómo documentar antigüedad o responsabilidades); F02 L118–120 (art. 28, cuyo supuesto es la sustitución del empleador).",
+      "explanation": "El artículo 28 establece consecuencias si hay sustitución del empleador, pero el expediente describe una compra de activos y derechos y no determina si jurídicamente esta operación constituye esa sustitución ni cómo se instrumentará la continuidad. El memo presenta como aplicable al caso una regla cuyo presupuesto aún requiere análisis. La advertencia sobre antigüedad y la diligencia laboral son pertinentes; conviene formular la solidaridad legal como consecuencia condicionada a establecer dicho presupuesto, sin dar por resuelta la calificación por el mero hecho de prever continuidad de empleados."
+    }
+  ],
+  "novel_valid_findings": [],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La conclusión sobre sucesión o sustitución de empleador requiere revisar la estructura definitiva de transferencia y las circunstancias de continuidad; el expediente no basta para resolverla."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "fda7cc4b03a3417d8e1bb177d5f93d69",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 232945,
+    "output_tokens_including_reasoning": 1673,
+    "cost_accounted_upper_usd": 0.029954625,
+    "estimated_standard_no_cache_discount_usd": 0.024131,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 0
+}

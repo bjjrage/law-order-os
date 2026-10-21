@@ -1,0 +1,78 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Excluir las matrices de los bienes vendidos y del anexo de activos propios; documentar su traslado separado. No reducir automáticamente el precio en PYG 60.000.000",
+      "explanation": "El memo distingue la propiedad de Sur del Lago de la custodia de Ribera, identifica los PYG 60.000.000 como estimación de reposición y evita convertirlos en una reducción automática del precio. También propone documentar por separado el traslado."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La carta del cliente acepta la cesión desde el 02/11 solo si antes recibe acta de entrega de ML-1 y ML-2 como bienes propios, acredita el plan de trazabilidad y confirma la permanencia de Tomás Leiva y Nuria Acosta o una sustitución técnicamente aceptada",
+      "explanation": "Caracteriza correctamente la aceptación como condicionada, no como consentimiento incondicional ni como rechazo. Recomienda cumplir y verificar las condiciones antes del cierre, y toma en cuenta la inspección técnica pendiente."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Por ello, no tratar el cambio de fecha como reinicio automático de antigüedad.",
+      "explanation": "Relaciona la continuidad de los operadores con la condición comercial del cliente, diferencia el interés manifestado de un acuerdo laboral y advierte que la fecha propuesta en la hoja no prueba reinicio de antigüedad. Recomienda revisar legajos, condiciones y saldos."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Antes del cierre, firmar un acuerdo tripartito que indique quién termina y factura el pedido, a quién se paga el saldo, qué pasa con los bienes en proceso y cómo se transfiere o compensa el anticipo.",
+      "explanation": "Reconoce que Ribera recibió y conserva el anticipo, que la fabricación sigue pendiente y que Sur del Lago no pagará dos veces. Propone una diligencia que aborda fondos, prestación, facturación e imputación, y rechaza contarlo como efectivo recibido por Fresno o como crédito adicional al precio."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "es parte del precio diferido, no una garantía adicional",
+      "explanation": "El memo aclara que los PYG 240.000.000 forman parte del precio, identifica que el procedimiento de imputación y la garantía adicional no están resueltos y exige negociar un mecanismo que cubra contingencias previas, incluidas las que aparezcan después de 180 días."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El reclamo de PYG 40.000.000 por agosto-7 es una contingencia distinta: Ribera controvierte causa, no emitió nota de crédito y el monto no está reconocido ni compensado con el anticipo",
+      "explanation": "Distingue el reclamo del anticipo de OP-44, preserva el procedimiento de revisión y no presenta el importe como deuda reconocida ni compensada."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No está resuelto si esta venta de unidad encaja en esa figura, ni se aportan valores fiscales, comprobantes o liquidación.",
+      "explanation": "Relaciona el análisis tributario con la naturaleza de la transferencia, el precio, los componentes y la cuenta del anticipo; señala la falta de base fiscal y liquidación, y no inventa una tasa ni un impuesto exigible."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El estimado grupal de PYG 8.000.000 en vacaciones no es liquidación ni acredita pago",
+      "explanation": "Distingue los recibos parciales y el estimado privado de una conciliación o liquidación individual. Además, señala la posible responsabilidad por sustitución del empleador con la cautela de que depende de la aplicación del supuesto."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "El memo incorpora una diligencia pertinente sobre gravámenes y titularidad de los equipos de Ribera: el inventario solo aporta comprobantes privados y no incluye consultas de gravámenes (P03-D05 v1, P03).",
+    "Advierte que la cercanía entre la inspección del 29/10 y el cierre propuesto del 02/11 puede hacer inviable completar diligencias suficientes, y propone postergar en vez de cerrar sin verificarlas.",
+    "Incluye una cautela para evitar que actos durante la negociación contradigan la posición de que aún no hay obligación de compra ni entrega, apoyándose en el estado del borrador y en reglas generales de consentimiento y oferta."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La conclusión sobre continuidad laboral queda razonablemente delimitada: el memo no cuantifica saldos ni responsabilidades individuales porque faltan conciliaciones, legajos y acuerdos.",
+    "La conclusión tributaria no determina tasas o importes finales; reconoce que hace falta identificar el tratamiento aplicable a cada componente y verificar normativa y reglamentación vigente al corte.",
+    "La eficacia y autenticidad externa de los documentos privados no está acreditada; el memo lo indica expresamente."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "8b188e3e05954e72a39046f935879c08",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 233354,
+    "output_tokens_including_reasoning": 1542,
+    "cost_accounted_upper_usd": 0.02994025,
+    "estimated_standard_no_cache_discount_usd": 0.0241064,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 1
+}

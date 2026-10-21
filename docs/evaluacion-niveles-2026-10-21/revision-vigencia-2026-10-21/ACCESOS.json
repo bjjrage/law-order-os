@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CSJ-NOTA7663",
+    "url": "https://www.pj.gov.py/notas/30287-decisiones-de-la-plenaria-de-la-corte-suprema-de-justicia",
+    "status": 200,
+    "at": "2026-10-21T21:16:48.232Z"
+  },
+  {
+    "id": "CSJ-ACORDADAS",
+    "url": "https://www.pj.gov.py/acordadas-digitales/",
+    "status": 200,
+    "at": "2026-10-21T21:16:48.317Z"
+  },
+  {
+    "id": "BCP-SEOG",
+    "url": "https://www.bcp.gov.py/web/institucional/seog",
+    "status": 403,
+    "at": "2026-10-21T21:16:48.548Z"
+  },
+  {
+    "id": "EXP-CPP74",
+    "url": "https://silpy.congreso.gov.py/web/expediente/2696",
+    "status": 200,
+    "at": "2026-10-21T21:16:48.819Z"
+  },
+  {
+    "id": "LEY6470",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/9119/ley-n-6470-modifica-el-art-culo-9-de-la-ley-n-213-1993-que-establece-el-c-digo-del-trabajo-modificado-por-la-ley-n-496-1995",
+    "status": 200,
+    "at": "2026-10-21T21:16:50.340Z"
+  }
+]

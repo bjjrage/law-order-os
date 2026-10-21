@@ -1,0 +1,117 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Las propuestas A y B no documentan una compra aceptada",
+      "explanation": "Distingue las propuestas alternativas de una operación aceptada y relaciona esa conclusión con la reserva expresa del vendedor, la falta de elección y la falta de aceptación enviada."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Exige autorización previa y escrita tanto para cesión/sustitución del prestador como para cambio directo o indirecto de control",
+      "explanation": "Explica que el contrato cubre ambas estructuras, que el silencio no autoriza y que una implementación no autorizada puede habilitar la resolución; conecta la autorización con la inversión."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no es una aprobación ni promesa de resolver",
+      "explanation": "Trata la respuesta de Horizonte como insuficiente para autorizar cualquiera de las opciones y señala correctamente que la reunión será posterior al plazo de reserva, sin describir la situación como terminación actual."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La reserva de PYG 120.000.000 debe rechazarse en su forma actual",
+      "explanation": "Identifica las condiciones asimétricas, la cuenta personal, la falta de acuerdo separado y la ausencia de custodia o verificación; recomienda no pagar ni firmar, sin afirmar que el dinero ya se perdió."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "en B, la continuidad de los técnicos puede plantear sustitución del empleador",
+      "explanation": "Distingue la continuidad del empleador en A de la posible sustitución en B, aplica el artículo 28 del Código del Trabajo y advierte que la antigüedad y las obligaciones previas no se eliminan por inferencia."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Ninguno de esos importes debe incorporarse como impuesto exigible ni asumirse exención",
+      "explanation": "Reconoce las inconsistencias de las hojas, evita tratar PYG 90.000.000 como deuda tributaria y delimita que el análisis depende de la estructura, los activos y los costos fiscales; también advierte que deben verificarse vigencia y reglamentación."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no equivalente a liquidación jurídica",
+      "explanation": "Diferencia expresamente el estimado interno de horas adicionales de una liquidación, señala que faltan registros y conciliaciones y propone revisar los demás conceptos laborales sin asignarles valor cero."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La revisión temporal de las extracciones normativas no está acreditada; el memo lo reconoce y recomienda verificar vigencia y reglamentación al corte.",
+    "El expediente no contiene autorización de Horizonte, valoración sin ese cliente ni conciliaciones completas de pasivos tributarios y laborales; el memo condiciona razonablemente sus conclusiones a obtenerlas."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "688315d4284344b8beeb663bb05322b5",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H01",
+      "quote": "Las propuestas A y B no documentan una compra aceptada",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H02",
+      "quote": "Exige autorización previa y escrita tanto para cesión/sustitución del prestador como para cambio directo o indirecto de control",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H03",
+      "quote": "no es una aprobación ni promesa de resolver",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H04",
+      "quote": "La reserva de PYG 120.000.000 debe rechazarse en su forma actual",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H05",
+      "quote": "en B, la continuidad de los técnicos puede plantear sustitución del empleador",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H06",
+      "quote": "Ninguno de esos importes debe incorporarse como impuesto exigible ni asumirse exención",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H07",
+      "quote": "no equivalente a liquidación jurídica",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 0,
+  "missing_required_quote_count": 0
+}

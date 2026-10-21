@@ -1,0 +1,557 @@
+{
+  "version": "0.5",
+  "created_at": "2026-10-21T21:44:50.064Z",
+  "paid_inferences": 0,
+  "real_provider_requests": 0,
+  "durable_global_budget_verified": true,
+  "concurrent_reservation_verified": true,
+  "synthetic_calls_sent": 1,
+  "offline_tests": {
+    "passed": 50,
+    "failed": 0,
+    "success": true
+  },
+  "code_matches": [
+    {
+      "path": "scripts/benchmark-isolation.mjs",
+      "sha256": "5ca6b88c03b673fb45bd10b550403244ab447db361235baf9472003919e3ecd6",
+      "matches": true
+    },
+    {
+      "path": "scripts/benchmark-offline-check.mjs",
+      "sha256": "c0a0b49da15366554a692f42effa593f0a35d44ebedbd70729d7b57d724da0ed",
+      "matches": true
+    },
+    {
+      "path": "scripts/benchmark-appcontainer.cs",
+      "sha256": "07a8b68e0e4caaeb65e844b30e0e7a0245a93641f82f3b253d0e9c91f92956f0",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-spend-store.mjs",
+      "sha256": "31cf48ce7329eeffbec139e2b18f86074056d07be50ee8ff4c0aeeda0aa899f2",
+      "matches": true
+    },
+    {
+      "path": "scripts/benchmark-history.mjs",
+      "sha256": "d9935f9a7b8cb43a00b426e1d6021b80fd180a6b193ccb148650a981dea1c611",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/dist/tokenizers.cjs",
+      "sha256": "fab81302e9d4ebf2c7aec310e35af0df81c28cb1ef7a4ac44ac83848e39ae79c",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/dist/tokenizers.min.cjs",
+      "sha256": "823659581561e4845b2f5b08b86d2289614dc2a392be35ae6b49a45e284966a6",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/dist/tokenizers.min.mjs",
+      "sha256": "258e46332101335ce8d95aed7745b19ac3b46d37f3e159a89cf894c2ea9b1d3a",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/dist/tokenizers.mjs",
+      "sha256": "1c4a848f86156201c033d6cd08c4cf81ae1088552acec3367f31ef086edf5af0",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/package.json",
+      "sha256": "f6b9849b58de625c4fd79583242dd4506914b92082f9af17719d39416658ef24",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/README.md",
+      "sha256": "41ac4a2ef81dbbe1308d4e86a3e87e7a45a78b4f26dcebb6f36c4d235fb2615c",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/AddedToken.d.ts",
+      "sha256": "9affeef826cb802a1af83c8572a5cb38a2e8d5c93001b5e40e922d311e671560",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/BPE.d.ts",
+      "sha256": "84371297875cdd53262d535e593f07199dace4ddeb65eca2d2d86043e0664573",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/ByteFallback.d.ts",
+      "sha256": "79bdf4539f4e1b6e98a52c7d627fb69aeb62d206904f73d88411f0d14e0e802e",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/ByteLevel.d.ts",
+      "sha256": "a2b4388b624e86cf124ed82046a69faad2c5bdd45055aa31dab9c7b0f3425508",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/create_decoder.d.ts",
+      "sha256": "5a66398eae734ddc907ff723bb101e9e34fac42b443a634e742d418b6a8b7f50",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/CTC.d.ts",
+      "sha256": "67ca9de3a2afecd5442ceec457a17283303016194f559671088ff55773af5111",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/Fuse.d.ts",
+      "sha256": "45066095ba1e89b17d27e3663262bb0d94079475bec6e492893f04d4c05ca648",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/Metaspace.d.ts",
+      "sha256": "62f5d4ce769a7ca98b839036cacf242027f083827c958aa6b4fd697d7e9fef55",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/Replace.d.ts",
+      "sha256": "da61ae342f4da9121b9e550522816659d42ba41239474a867ded9e1af5849981",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/Sequence.d.ts",
+      "sha256": "3620d4bdfe201c7bbeb7edbea9f9c569db9d09d6e770eebc435215fa8dd47654",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/Strip.d.ts",
+      "sha256": "3de18969d766044c871e0febb196941d0db6958ef135759ab3572978fc5b6c3d",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/decoder/WordPiece.d.ts",
+      "sha256": "9361f2dd38ae66d923a61b677e9423a9f9754ebe5e00e5abad27000854a99355",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/Decoder.d.ts",
+      "sha256": "084345f5ea0aaa21d8f0ec20e6ecab8e37b73c0f5c5cc6557aa519e1deb41c5a",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/BertNormalizer.d.ts",
+      "sha256": "bd7be0b99c45592d2611b153573293318aabfa3006594c09d9615bf5c18af830",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/create_normalizer.d.ts",
+      "sha256": "f4e0711b47a2aa9da6bd04488ca1489011cb52e7e6929c3597cd5a71024509d6",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/Lowercase.d.ts",
+      "sha256": "ef8a82a00f553dc8ed3baab211ccc5de75638aae369cc60ef8dbc446e391849c",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/NFC.d.ts",
+      "sha256": "3c79bb2858c5f55e140bd9afb902c12c915672e28a0b32cadd8d94b7cdc263aa",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/NFD.d.ts",
+      "sha256": "a7af6e47ef9e921ec936da54488659a68b89f1b6eebdc086562e29bd18e68ebf",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/NFKC.d.ts",
+      "sha256": "43fd9e106ea8871db6d40433d49e3ca860e63e591d36899e28ce52ff54670e6b",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/NFKD.d.ts",
+      "sha256": "8358ddaf51f4d4061be4dda49d65ed91ebbfd1072942c17c22a77434b94596bd",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/Precompiled.d.ts",
+      "sha256": "3fdddbcd4102235f9e7ebea0d3841e99164338f714492ac3b96bea4df81f6bd8",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/Prepend.d.ts",
+      "sha256": "9cbb24af53f60751cf6d002d86b9ad5edc2997e08b923c17a57bb723b5b90df9",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/Replace.d.ts",
+      "sha256": "a51a34f5b94edae57660e26e070854fb1eaae7d06a2e2bc93fbcf8c075c1e73e",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/Sequence.d.ts",
+      "sha256": "181e6510e9690a93c5104a9f1b39045afd26c2036a12ba5d8c47ed3d38f980a7",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/Strip.d.ts",
+      "sha256": "701f7c81892952e79dfdf5aa7f3fadfe2346b7583042673cdf82441274644fde",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/StripAccents.d.ts",
+      "sha256": "c24ad1a30d4fd9a383b880a73ba024dbdba54c27f7b758725f34a980be9d5a4f",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/normalizer/UnicodeNormalizer.d.ts",
+      "sha256": "90fc95790328b0dfbed8aa19151b5211dd3e751abf1a6bc054d628d2d7e63fce",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/Normalizer.d.ts",
+      "sha256": "cd951087528fefee949d16de764101905db73ddb7b3a2d8b4394c1a2e249165a",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/postProcessor/BertProcessing.d.ts",
+      "sha256": "0dfa3a6467b57ac1148c368eda4e6220a1e8048a5737702d1f33595d3ca2ddfa",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/postProcessor/ByteLevel.d.ts",
+      "sha256": "b44e65dc2c275f0329b2bdca0a2043110c1cd75a669b33542028755dc197e189",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/postProcessor/create_post_processor.d.ts",
+      "sha256": "c78928bd9b1e9999c77394a6f116fbdfb8cd383907141f4f9a79b9f8239d6728",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/postProcessor/RobertaProcessing.d.ts",
+      "sha256": "b6fdc04c2d4f97dc7da29b2fb2a6097ed72427ba69c6cbd5136610d711a08853",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/postProcessor/Sequence.d.ts",
+      "sha256": "ba799b9fbac30980d6fb588237a3529ab62243669c40cb887ddff83428df7ba3",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/postProcessor/TemplateProcessing.d.ts",
+      "sha256": "334023da4abf4226a0271b38b1ca567cff380bb4cdf7db1a5d7a29202955be74",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/PostProcessor.d.ts",
+      "sha256": "3a5c5848b1eeebb94a30e14472b4c159635ecb6c88ca87b416d2869738c39627",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/BertPreTokenizer.d.ts",
+      "sha256": "1cac64892da7e91c8d6d631e74012712151dd39f19df361d21a1e58712eb7ba8",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/ByteLevel.d.ts",
+      "sha256": "e06d6190989785755a76aa2d672cff182fe0a99f1d3f42e23d3a9ab33298917b",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/create_pre_tokenizer.d.ts",
+      "sha256": "7c737aaff6b783f724f8c3cc0d099f15d9fae85c6a90a1f691c4686b555f4b84",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/Digits.d.ts",
+      "sha256": "6af6a94f99935f22ddfafdd0b780a5b202d087481ab25031d842b2a4534afa7e",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/FixedLength.d.ts",
+      "sha256": "8aa8e87dd69f4645fd4e27abdd0a2eb055f1dc2e12feeb3a010b5e6169ab5215",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/Metaspace.d.ts",
+      "sha256": "7a4d29f3ad9a507c0f66b459401b57aa0a542f3a4e8e41f95047b27dc1790fd9",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/Punctuation.d.ts",
+      "sha256": "31cdaa0d7e120c793f7182a56838d8efb9d4a3015118e0ad9cf9f96461a62ef9",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/Replace.d.ts",
+      "sha256": "49eba984abde40c24cbcf9ccfdd614a4197042314791a84034241ca2e56e9932",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/Sequence.d.ts",
+      "sha256": "f6327aec465cc4f6b239c541b9dc460450e95ad9bc288dbd4a6588fbd88df690",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/Split.d.ts",
+      "sha256": "70f1643b8764d12ba20e9acdbb0528bd3937a822a496684c33dc2d1982dfd46f",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/Whitespace.d.ts",
+      "sha256": "389c0aba9a62bcd8dcd8b68b70dd1644e19e9dca853e648ba19f0f3f512410f3",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/preTokenizer/WhitespaceSplit.d.ts",
+      "sha256": "4522da06a9c8b24cd08f4ce468d281d4552451f2b936cb61507e5380bf1cd416",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/PreTokenizer.d.ts",
+      "sha256": "829842ad5a7b838a23587856e438f618bba3bdb499d89b8e3e23e700d843a866",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/Tokenizer.d.ts",
+      "sha256": "ebf7749a0f460aebb64ae2fc5a05591a9b7ba502dcd372d90380cdfa08b4993f",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/TokenizerModel.d.ts",
+      "sha256": "9166d4b07d4599ff5e7d1b3703d8f63a2e1e8b096d3345ac7985f272c307bb3e",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/tokenizerModelImplementations/BPE.d.ts",
+      "sha256": "d8858a3c493e6ede4b6dbe70ca16fd1ef23ac655d1ac8f2004b163713ee0000c",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/tokenizerModelImplementations/create_tokenizer_model.d.ts",
+      "sha256": "48bdbae4243b3316d9d201c1218baa1d3ff08df12c45632c54ab05190fc27af9",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/tokenizerModelImplementations/Legacy.d.ts",
+      "sha256": "ecb502d149995eb4c620e27eab6015dcb491f7f2e0946e24b91fd177768196ce",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/tokenizerModelImplementations/Unigram.d.ts",
+      "sha256": "d31fdbdd84fbba79e2c0b1ae5ac58173d4c567d8b83234a45a6452cf4655f772",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/core/tokenizerModelImplementations/WordPiece.d.ts",
+      "sha256": "fda9355d64902f2816d85fa48f05df7fff0342848b375f19aee2bbbbb3964270",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/decoders.d.ts",
+      "sha256": "6817e8f619b09e89e07bd81aad776a7ab4cb3fa668c49010496da5da2efa81a7",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/index.d.ts",
+      "sha256": "1329f09ea0efcae61ce71e23029f6788079a0fb49447c3f9626f4418a1edab47",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/models.d.ts",
+      "sha256": "906b3192d3e1469487aa690d185b7ad3cf107218a96aa56de21bcfaf76c4733a",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/normalizers.d.ts",
+      "sha256": "ecad6c443e0976d76f832ff1d7cb44bcbc22ae82d91ddfe1417179158621956e",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/post-processors.d.ts",
+      "sha256": "e2c25fa13dbd967725125c3188e205043d00822b9e99ff5afe61d5104133f577",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/pre-tokenizers.d.ts",
+      "sha256": "e983e44f29331dbcd818480ec4ad6b73f6c5ecd9a8d3598636a413bd4c7173e6",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/static/constants.d.ts",
+      "sha256": "9ef5af6b6210cc2a4a1223ee849587c6ddf98ea59d6b7fee5bfb7e80d2dd78e3",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/static/tokenizer.d.ts",
+      "sha256": "14bd6027ae25caf70b2faa924434eec13e414d4f83f6c1d758e25e66ec42c2ac",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/static/types.d.ts",
+      "sha256": "94202ea4e28fff67abde5649ffede1086beac5e8f7af066c8d9b4046b1c09260",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/utils/Callable.d.ts",
+      "sha256": "964024086ff5d2f100eef46bfd73a2c3739616a4686a82c237c2236472491b74",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/utils/core.d.ts",
+      "sha256": "d6985109c097fff30b9d8cb898cd924f7bf8de714fd5ff49ba8272d4479b798e",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/utils/data-structures/CharTrie.d.ts",
+      "sha256": "03909119cd6f9ff2ce7e1683cb0f78b5b6d04d40b25a32e3f3c921ac4023f9df",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/utils/data-structures/DictionarySplitter.d.ts",
+      "sha256": "070a93589344e31dde7f663843ea2699925663a26c760a330d6675dfa3fe85b3",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/utils/data-structures/LRUCache.d.ts",
+      "sha256": "a59cbc477ee488a9170a67ab4791f39cef960a4f3ac976ddbfb793dc8aa4114d",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/utils/data-structures/PriorityQueue.d.ts",
+      "sha256": "6ce8c33f085b04b6f7caf9f1cf324f2d95f4152643e2c0722e64fee9f52fbe62",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/utils/data-structures/TokenLattice.d.ts",
+      "sha256": "33f6d2f8c40e8eba25a1ac42ddd55ea45abbb1e7d0a477db4ef115e8a6f88936",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/utils/index.d.ts",
+      "sha256": "d7ed80693cbc03c4419a7b31d2b8399c82d418685551f72ea61105a8f78d2f42",
+      "matches": true
+    },
+    {
+      "path": "node_modules/@huggingface/tokenizers/types/utils/maths.d.ts",
+      "sha256": "a987ccd1b443c12a854a2aa11e2001d17f22aa60c9f2cc93b037f5dd4d5244a4",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "1a1c7a8b28b0966853add84388f813b6922550e9fe4aed2558c5dd8e7d7b062c",
+      "matches": true
+    },
+    {
+      "path": "packages/workspace/assets/deepseek-v4-tokenizer/SOURCE.json",
+      "sha256": "3fbf2ffde0ff0c090ad4d69677d2f60dd244edf114ab2141b9ed5689cb562744",
+      "matches": true
+    },
+    {
+      "path": "packages/workspace/assets/deepseek-v4-tokenizer/tokenizer.json",
+      "sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+      "matches": true
+    },
+    {
+      "path": "packages/workspace/assets/deepseek-v4-tokenizer/tokenizer_config.json",
+      "sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+      "matches": true
+    },
+    {
+      "path": "packages/workspace/src/analysis-levels.ts",
+      "sha256": "98946fb8d41eb9248fe2fb0f508500ee23e6a3fd63d652e70436d2f277d5f83a",
+      "matches": true
+    },
+    {
+      "path": "scripts/benchmark-worker.mjs",
+      "sha256": "b6b9c0b1fde1d06447a54bd0c58969eaac11c30444c62a51670b64c5f0c9a7f9",
+      "matches": true
+    },
+    {
+      "path": "scripts/junta-setup.mjs",
+      "sha256": "bafd9f3f8ac22f8e45ce5cb00aa2774081e8f3ada5fa5b7d9da1c1a2603d6422",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-agent.mjs",
+      "sha256": "707e655e855a8490c27a66750593d18a1072cc1d65d88c64a936531d72e77190",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-ai.mjs",
+      "sha256": "4866f4e44e36a12aa9375e43bfe1b9f913382664cca215ed2609849cf24f798b",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-auditor.mjs",
+      "sha256": "f77040a16c6e6b86163e016cbf0f1317e778451a9c292c31b4dee95ec6bdf72b",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-context.mjs",
+      "sha256": "d2ef02f2db76bb8370b495d7d32e65773a419aa70c69ff94f2ad8440efd54eed",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-director.mjs",
+      "sha256": "04c301d1c9d91834611107035204a11b3d66ffadcac7c1b0bfb0c1d0ac3d1930",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-document-edits.mjs",
+      "sha256": "f59d213b0d0f6f18b15b2d85b050dff0c88bb14963a8b9b8039f9e4dfb29d094",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-integration.mjs",
+      "sha256": "aab7334b8de197b5ad3fb38a79dbde20694cb6df35d6b80a0625d3682491266b",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-models.mjs",
+      "sha256": "71de23af01e9cf95bdf4b7ad232fdc2cfaa9763953a70805c2a45af079fd8f44",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-pricing.mjs",
+      "sha256": "047941beb97b6c6fde1edfa9fa135d855ab6eb50bee071921df55cce0b1dd666",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-quality.mjs",
+      "sha256": "852d621d8ae122928a6c196554f6af352c6ec56e4416a3cf49eb3b1d66cff066",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-source-packet.mjs",
+      "sha256": "15b3e3529b3a14ae5d731a1928eedf41a9add1d7a93961058274e157e9897eb8",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-specialists.mjs",
+      "sha256": "01c15a0e44e35cf9ce8b386d4ba123b23566bb089c1dec068c8f9b9fde557dd9",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-spend.mjs",
+      "sha256": "ede2cd8b1c5a7e98e88adfd42f5863b1b5bef803861211ea487c3168e312906e",
+      "matches": true
+    }
+  ],
+  "corpus_verified": true,
+  "price_inventory_sha256": "6e04acc3aa79590dd74cfd6a19c7fa9092be67af36d9cf22a76bae88fbd0ebab",
+  "long_context_price_verified": true,
+  "isolation": {
+    "verified": true,
+    "scope": "Four AppContainer turns with two specialists, integration, scoped history and actual unified runtime, synthetic providers; no live matrix executed",
+    "evidence": "AISLAMIENTO_OFFLINE.json"
+  },
+  "gates": {
+    "offline_technical_checks_passed": true,
+    "corpus_and_context_verified": true,
+    "long_context_price_verified": true,
+    "paid_execution_enabled": false,
+    "human_legal_validation": false,
+    "total_spend_authorized": false
+  }
+}

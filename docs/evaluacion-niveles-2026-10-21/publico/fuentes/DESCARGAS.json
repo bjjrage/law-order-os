@@ -1,0 +1,132 @@
+[
+  {
+    "id": "CC-II",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/5299/codigo-civil-ii-parte-libro-segundo",
+    "path": "CC-II.html",
+    "bytes": 292160,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.141Z"
+  },
+  {
+    "id": "CC-III",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/522/codigo-civil-iii-parte-libro-tercero",
+    "path": "CC-III.html",
+    "bytes": 687375,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.221Z"
+  },
+  {
+    "id": "CPC",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/3038/ley-",
+    "path": "CPC.html",
+    "bytes": 517477,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.058Z"
+  },
+  {
+    "id": "TRABAJO",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/2608/ley-n-213-",
+    "path": "TRABAJO.html",
+    "bytes": 410343,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.085Z"
+  },
+  {
+    "id": "TRABAJO-496",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/2514/modifica-amplia-y-deroga-articulos-de-la-ley-21393-codigo-del-trabajo",
+    "path": "TRABAJO-496.html",
+    "bytes": 130348,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.146Z"
+  },
+  {
+    "id": "ADMIN",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/10974/ley-n-6715-",
+    "path": "ADMIN.html",
+    "bytes": 190303,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:20.625Z"
+  },
+  {
+    "id": "MUNICIPAL",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/969/organica-municipal",
+    "path": "MUNICIPAL.html",
+    "bytes": 375151,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.186Z"
+  },
+  {
+    "id": "NINEZ",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/5261/codigo-de-la-ninez-y-la-adolescencia",
+    "path": "NINEZ.html",
+    "bytes": 285041,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.246Z"
+  },
+  {
+    "id": "CPP",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/203/ley-n-1286--cdigo-procesal-penal",
+    "path": "CPP.html",
+    "bytes": 558520,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.331Z"
+  },
+  {
+    "id": "GACETA-2011-2",
+    "url": "https://www.pj.gov.py/ebook/libros_files/Gaceta_Judicial_2_2011.pdf",
+    "path": "GACETA-2011-2.pdf",
+    "bytes": 993384,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:19.239Z"
+  },
+  {
+    "id": "NINEZ-6083",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/8441/ley-n-6083-modifica-la-ley-n-1-680-01-c-digo-de-la-ni-ez-y-la-adolescencia",
+    "path": "NINEZ-6083.html",
+    "bytes": 106425,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:21:10.543Z"
+  },
+  {
+    "id": "PENAL",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/3497/ley-n-11601997-codigo-penal",
+    "path": "PENAL.html",
+    "bytes": 598682,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:21:11.190Z"
+  },
+  {
+    "id": "PENAL-3440",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/3485/ley-n-3440-modifica-varias-disposiciones-de-la-ley-n-",
+    "path": "PENAL-3440.html",
+    "bytes": 191310,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:21:12.731Z"
+  },
+  {
+    "id": "FACTURA-6542",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/9277/ley-n-6542-de-factoraje-factura-cambiaria-y-sistema-electronico-de-operaciones-garantizada",
+    "path": "FACTURA-6542.html",
+    "bytes": 130581,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:26:08.926Z"
+  },
+  {
+    "id": "CONSTITUCION",
+    "url": "https://www.diputados.gov.py/pdf/ConstitucionNacional_2024.pdf",
+    "path": "CONSTITUCION.pdf",
+    "bytes": 7709861,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:26:11.402Z"
+  },
+  {
+    "id": "CPC-7663",
+    "url": "https://silpy.congreso.gov.py/web/descarga/ley-146583",
+    "path": "CPC-7663.pdf",
+    "bytes": 3753955,
+    "status": 200,
+    "retrieved_at": "2026-10-21T21:07:43.802Z",
+    "sha256": "2f529243c422c9015fc671cdc87e5c71983bb6551681d555da93ec7512c3c795",
+    "note": "Art. 7 condiciona la entrada en vigencia a reglamentaci?n por acordada. Aplicabilidad temporal pendiente de validaci?n. Extracci?n PDF con errores OCR: cotejar original."
+  }
+]

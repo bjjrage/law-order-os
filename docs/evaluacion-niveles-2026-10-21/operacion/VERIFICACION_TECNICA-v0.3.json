@@ -1,0 +1,117 @@
+{
+  "version": "0.3",
+  "created_at": "2026-10-21T17:42:10.811Z",
+  "paid_inferences": 0,
+  "real_provider_requests": 0,
+  "durable_global_budget_verified": true,
+  "concurrent_reservation_verified": true,
+  "synthetic_calls_sent": 1,
+  "offline_tests": {
+    "passed": 29,
+    "failed": 0,
+    "success": true
+  },
+  "code_matches": [
+    {
+      "path": "scripts/benchmark-isolation.mjs",
+      "sha256": "0a5734a24aef067a195273e44a5dd1496cda1db3a500da5e4804208a123eef5e",
+      "matches": true
+    },
+    {
+      "path": "scripts/benchmark-offline-check.mjs",
+      "sha256": "c0a0b49da15366554a692f42effa593f0a35d44ebedbd70729d7b57d724da0ed",
+      "matches": true
+    },
+    {
+      "path": "scripts/benchmark-appcontainer.cs",
+      "sha256": "07a8b68e0e4caaeb65e844b30e0e7a0245a93641f82f3b253d0e9c91f92956f0",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-spend-store.mjs",
+      "sha256": "31cf48ce7329eeffbec139e2b18f86074056d07be50ee8ff4c0aeeda0aa899f2",
+      "matches": true
+    },
+    {
+      "path": "scripts/benchmark-history.mjs",
+      "sha256": "d9935f9a7b8cb43a00b426e1d6021b80fd180a6b193ccb148650a981dea1c611",
+      "matches": true
+    },
+    {
+      "path": "packages/workspace/src/analysis-levels.ts",
+      "sha256": "98946fb8d41eb9248fe2fb0f508500ee23e6a3fd63d652e70436d2f277d5f83a",
+      "matches": true
+    },
+    {
+      "path": "scripts/benchmark-worker.mjs",
+      "sha256": "c74f182703ec7a9ec3ccf54fd0724f18aad327c35bb4bc5531d0acd9b4a5596c",
+      "matches": true
+    },
+    {
+      "path": "scripts/junta-setup.mjs",
+      "sha256": "bafd9f3f8ac22f8e45ce5cb00aa2774081e8f3ada5fa5b7d9da1c1a2603d6422",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-agent.mjs",
+      "sha256": "707e655e855a8490c27a66750593d18a1072cc1d65d88c64a936531d72e77190",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-ai.mjs",
+      "sha256": "030dc843bd299afaedc2e69e880a5bb22faab84a9db4d529ff5246d2e23de433",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-auditor.mjs",
+      "sha256": "f77040a16c6e6b86163e016cbf0f1317e778451a9c292c31b4dee95ec6bdf72b",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-director.mjs",
+      "sha256": "04c301d1c9d91834611107035204a11b3d66ffadcac7c1b0bfb0c1d0ac3d1930",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-document-edits.mjs",
+      "sha256": "f59d213b0d0f6f18b15b2d85b050dff0c88bb14963a8b9b8039f9e4dfb29d094",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-integration.mjs",
+      "sha256": "d8c86b7c189e22587fdb84441f344f79caec1505c06cba5adcbf5b38e1c5a934",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-models.mjs",
+      "sha256": "71de23af01e9cf95bdf4b7ad232fdc2cfaa9763953a70805c2a45af079fd8f44",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-quality.mjs",
+      "sha256": "852d621d8ae122928a6c196554f6af352c6ec56e4416a3cf49eb3b1d66cff066",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-specialists.mjs",
+      "sha256": "01c15a0e44e35cf9ce8b386d4ba123b23566bb089c1dec068c8f9b9fde557dd9",
+      "matches": true
+    },
+    {
+      "path": "scripts/workspace-spend.mjs",
+      "sha256": "16ff6fa115d1673ec1c96b91585b49634ba62f219de754547a58adba666121b4",
+      "matches": true
+    }
+  ],
+  "isolation": {
+    "verified": true,
+    "scope": "Four AppContainer turns with scoped durable history and actual unified runtime, synthetic providers; no live matrix executed",
+    "evidence": "AISLAMIENTO_OFFLINE.json"
+  },
+  "gates": {
+    "offline_technical_checks_passed": true,
+    "paid_execution_enabled": false,
+    "human_legal_validation": false,
+    "total_spend_authorized": false
+  }
+}

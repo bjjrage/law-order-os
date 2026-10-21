@@ -1,0 +1,63 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P01-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El precio de PYG 600.000.000 es **neto para el vendedor**, con tributos aplicables añadidos; reemplaza una oferta anterior que los incluía",
+      "explanation": "Identifica correctamente el cambio entre la oferta previa y la propuesta v2, lo conecta con el límite de autorización del comité y recomienda fijar el precio total y volver al comité si se excede. También evita inventar una tasa tributaria."
+    },
+    {
+      "reference_id": "P01-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Por tanto, la caracterización del vendedor —“los veo bien predispuestos”— no es aprobación ni compromiso del proveedor.",
+      "explanation": "Contrasta la cláusula de consentimiento previo y escrito con la respuesta expresa de Maroma, y propone consentimiento o contrato nuevo como condición, con revisión económica si no se obtiene. Conserva la posibilidad de operar con proveedores alternativos sin asumir que la continuidad está asegurada."
+    },
+    {
+      "reference_id": "P01-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Hay comisiones de septiembre por PYG 5.000.000 y PYG 4.000.000 a favor de dos vendedores con la columna de pago vacía y sin transferencia o recibo aportado; la explicación administrativa no acredita pago",
+      "explanation": "Distingue adecuadamente los PYG 9.000.000 registrados de una liquidación definitiva de lo exigible, observa la falta de prueba de pago y suma la necesidad de conciliar vacaciones y otros conceptos laborales sin cuantificar contingencias no calculadas."
+    },
+    {
+      "reference_id": "P01-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Esa distribución contractual no debe presentarse como liberación frente a trabajadores",
+      "explanation": "Aplica el artículo 28 del Código del Trabajo a la continuidad propuesta, separa la indemnidad entre vendedor y comprador de los derechos de terceros y advierte que no debe asumirse pérdida de antigüedad ni exigir renuncias. El tratamiento se mantiene dentro de lo que permite inferir el expediente."
+    },
+    {
+      "reference_id": "P01-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Que se trate de activos y no acciones no basta para concluir que la operación no tiene IVA.",
+      "explanation": "Cuestiona la impresión verbal no respaldada del contador y la contrasta con las reglas de IVA sobre enajenación y transferencia de derechos patrimoniales. Delimita lo pendiente: analizar por componente y revisar normativa reglamentaria, en vez de afirmar una tasa o un resultado definitivo."
+    },
+    {
+      "reference_id": "P01-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Exclúyelo del precio y no reconocerlo como crédito del comprador sin fundamento formal.",
+      "explanation": "Señala que el saldo de IVA está documentado a nombre de Naranjal y no se aportó fundamento para atribuírselo a Cedro; evita incluirlo entre los activos o tratarlo como crédito transferible."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "El memo observa correctamente que el momento de entrega y los pagos parciales pueden incidir en el momento de configuración del IVA si la operación resulta gravada; la recomendación de coordinar calendario, facturación y cierre es pertinente al esquema propuesto de 70% al firmar y 30% contra recepción."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El memo reconoce que el corpus no acredita consolidación normativa al 19/10/2026 y recomienda verificar textos y reglamentos vigentes antes de la firma; por ello, las conclusiones tributarias quedan apropiadamente sujetas a esa verificación.",
+    "La eventual aplicación del régimen de sustitución de empleador depende de la estructura y los hechos definitivos de la transferencia. El memo la plantea como cuestión a analizar y no como hecho consumado, aunque será necesario resolverla antes de cerrar."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "873df254eb7f481ba4cb1dc8851070f5",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 232988,
+    "output_tokens_including_reasoning": 1267,
+    "cost_accounted_upper_usd": 0.029757,
+    "estimated_standard_no_cache_discount_usd": 0.0239323,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 1
+}

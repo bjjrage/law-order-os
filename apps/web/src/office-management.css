@@ -1,0 +1,106 @@
+.office-management {
+  padding: 16px;
+  background: var(--surface, #fff);
+  border: 1px solid #d3ded7;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+.office-tabs,
+.office-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px 0 16px;
+}
+.office-actions > p {
+  flex: 1;
+  min-width: 180px;
+  margin: 0;
+}
+.office-tabs button[aria-pressed="true"] {
+  background: #234f5b;
+  color: #fff;
+}
+.office-picker {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.office-picker select {
+  min-width: 180px;
+  max-width: 100%;
+  padding: 8px;
+}
+.office-balances,
+.office-appointments {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+  margin: 12px 0;
+}
+.office-balances article,
+.office-appointments article {
+  padding: 14px;
+  border: 1px solid #d3ded7;
+  border-radius: 5px;
+}
+.office-balances span {
+  display: block;
+  margin-top: 6px;
+}
+.office-table {
+  overflow: auto;
+}
+.office-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.office-table th,
+.office-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #d3ded7;
+}
+.office-table small {
+  display: block;
+  color: #526963;
+  margin-top: 4px;
+}
+.office-management .form-footer {
+  justify-content: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.office-management .form-footer button {
+  order: -1;
+}
+.case-more {
+  margin-left: auto;
+  position: relative;
+}
+.tabs.matter-tabs {
+  overflow: visible;
+  flex-wrap: wrap;
+}
+.case-more > summary {
+  cursor: pointer;
+  padding: 8px;
+}
+.case-more[open] > div {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 15;
+  min-width: 220px;
+  background: #fff;
+  border: 1px solid #c6d3cc;
+  box-shadow: 0 4px 12px #0002;
+  padding: 8px;
+}
+.case-more button {
+  display: block;
+  width: 100%;
+  text-align: left;
+}

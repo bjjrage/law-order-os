@@ -1,0 +1,21 @@
+{
+  "date_local": "2026-10-13",
+  "timezone": "America/Asuncion",
+  "status": "PASS_REPRODUCIBILITY_ONLY",
+  "first_evaluation": "phase2/reports/bibliographic-first-evaluation.json",
+  "first_evaluation_sha256_unchanged": "5a34e1e49a3aa833c157d7412ec5349efb83cbe6003faa3e192fd72b297df682",
+  "replay": "phase2/reports/bibliographic-replay-01.json",
+  "dataset_sha256_unchanged": "10189975fbb17f55f2a593dce0951b74da52a13a56f752097622cda165a98634",
+  "metrics_identical": true,
+  "supplemental_observations_identical": true,
+  "commands": [
+    {"command": "node phase2/benchmark/prepare.mjs", "exit_code": 0, "purpose": "Freeze inputs before first evaluation"},
+    {"command": "node phase2/benchmark/run.mjs", "exit_code": 0, "purpose": "First evaluation; real authenticity remains BLOCKED"},
+    {"command": "node phase2/benchmark/run.mjs --output=phase2/reports/bibliographic-replay-01.json", "exit_code": 0, "purpose": "Repeat frozen evaluation without overwriting first output"}
+  ],
+  "network_used": false,
+  "paid_inference_usd": 0,
+  "real_authenticity_validation": "BLOCKED",
+  "quote_validation": "BLOCKED",
+  "independence": "New references and cases relative to V1/V2; no external legal curation"
+}

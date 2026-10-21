@@ -1,0 +1,30 @@
+[
+  {
+    "at": "2026-10-19T05:30:42.898Z",
+    "sender": "contractual",
+    "target": "titular",
+    "finding": "Frente contractual: no recomiendo asumir compromiso de compra ni pagar la reserva el 22/10. Las propuestas A/B son expresamente bases no vinculantes pendientes de acuerdo; acta interna autoriza solo diligencia, no compra/reserva. La continuidad del cliente principal está condicionada a autorización escrita para cualquiera de las estructuras, aún inexistente; contrato permite resolución por implementación no autorizada. Continuar exclusivamente diligencia/negociación no vinculante, con condición precedente de consentimiento específico, documentación de pasivos y personal, y nueva valoración si Horizonte no consiente; no usar valoración vigente como continuidad asegurada. Alternativa acciones mantiene entidad prestadora pero activa cambio de control; alternativa activos exige cesión y sustitución del prestador. No recomendar tratar una como elusión del consentimiento. Reserva PYG120m a cuenta personal, unilateralmente no reembolsable si Laurel desiste, sin protección simétrica ni custodia; rechazar o diferir hasta acuerdo separado condicionado, firmado y mecanismo seguro.",
+    "evidence": "P02-D02-P01–P04: alternativas no aceptadas; correo expresa que no concluyen compra, reserva requiere acuerdo separado y vendedor no autorizado a cobrar; cláusula de reserva sin excepción si no hay consentimiento. P02-D05-P01–P03: solo diligencia, no compra/reserva; sin continuidad, nueva valoración. P02-D03-P02–P05: autorización previa escrita tanto para cesión/sustitución como cambio de control (>50% acciones voto/nombramiento mayoría); silencio/reunión no autorizan; ejecución sin permiso habilita resolución; permiso no se extiende a otra estructura. P02-D04-P02–P04: Horizonte pide estructura y no autoriza, reunión posterior al plazo. P02-D01-P02, D05-P02: no aceptación manifestada, gerente sin autoridad interna. P02-D07-P01, D02: precio depende de Horizonte, columnas tributarias corruptas, no comparar desembolso total aún."
+  },
+  {
+    "at": "2026-10-19T05:30:48.984Z",
+    "sender": "laboral",
+    "target": "titular",
+    "finding": "Frente laboral: alternativas tienen efectos distintos, pero ambas implican continuidad potencial de derechos/obligaciones; no tratar antigüedad como borrable ni dar por probado pasivo cero. En compra de acciones Delta Azul sigue empleador; en compra de activos con incorporación de los ocho técnicos podría operar sustitución del empleador, preservando contratos y responsabilidad solidaria por obligaciones preexistentes durante seis meses, luego responsabilidad del nuevo empleador. Conciliar horas extras estimadas PYG 16m (no liquidación) y auditar vacaciones/aportes/jornadas antes de fijar precio/indemnidades. Condicionar estructura B a plan de transición y contratos; no cerrar ni pagar reserva antes de diligencia y consentimiento Horizonte.",
+    "evidence": "P02-D06-P01/P02/P03/P04 (planilla privada; ocho empleados 2015-24, horas septiembre estimadas 16m pendientes, antigüedad no resuelta, no hay jornales íntegros ni valor cero vacaciones/aportes); Ley 213 art. 28, F02 líneas 118-121: sustitución no afecta contratos vigentes; responsabilidad solidaria preexistente por seis meses, luego subsiste nuevo empleador. Art. 3 F02 líneas 76-80 impide renunciar derechos. P02-D03-P02/P03 y P02-D04-P02: cambio control/cesión requieren autorización previa escrita."
+  },
+  {
+    "at": "2026-10-19T05:30:49.760Z",
+    "sender": "contractual",
+    "target": "titular",
+    "finding": "Dependencia laboral contractual: opción de activos no puede presumirse que reinicia antigüedad ni elimina pasivos si en sustancia hay sustitución de empleador; Código del Trabajo art. 28 conserva contratos y establece solidaridad del sustituido/sustituyente por obligaciones pre-sustitución durante seis meses. Planilla identifica ocho empleados pero no hay cambio efectivamente hecho; escenario activos contempla incorporación y debe aclararse jurídicamente antes de fijar costo/condiciones. Horas extra estimadas PYG16m no conciliadas, no liquidación; exigir jornadas, libro salarial y conciliación.",
+    "evidence": "F02-L00118–00119 (art. 28); F02-L00703 (art.206 b, registro horas extra), F02-L00768–00771 (art.234 recargos; naturaleza/cómputo de horas requieren registros). P02-D06-P01–P04: ocho trabajadores, sin renuncias/liquidaciones/cambio; estimado 16m sin registro íntegro; falta información de vacaciones/aportes; P02-D02-P02 pretende continuidad; P02-D07-P03 no conciliación laboral."
+  },
+  {
+    "at": "2026-10-19T05:30:51.413Z",
+    "sender": "tributario",
+    "target": "titular",
+    "finding": "Frente tributario: no usar PYG 90m (A) ni rótulo “acciones exentas” (B) como costo/impuesto. Son celdas reconocidas duplicadas, sin base ni liquidación (P02-D07 v1 P02-D07-P02). Acciones y activos tienen tratamientos diferentes; continuidad Horizonte condiciona ambas valoraciones, no el impuesto por sí solo.",
+    "evidence": "Ley 6380 F03 art. 100.1.a exime IVA sobre enajenación de acciones/cuotas; art. 96.1 obliga consignar en declaración la porción de precio sobre nominal; art. 8.7 IRE incluye resultado de transferencia de empresa/establecimiento y acciones/cuotas; art. 13 establece cierre fiscal para enajenación establecimiento y mismo valor fiscal para adquirente. IVA tasa general 10% art. 90.g salvo clasificación/exención aplicable. No concluir tasa/base de cada activo sin inventario y análisis."
+  }
+]

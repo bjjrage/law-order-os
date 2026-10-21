@@ -1,0 +1,47 @@
+{
+  "status": "AUTHORIZED_EXPLORATORY_EXECUTION",
+  "frozen_at": "2026-10-19T05:05:26.351Z",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "service_tier": "default",
+  "repetitions": 2,
+  "planned_runs": 18,
+  "generation_cap_per_run_usd": 0.5,
+  "automated_review_cap_per_document_usd": 0.1,
+  "total_cap_usd": 10.8,
+  "calls_per_workflow": 32,
+  "output_token_pool": 32000,
+  "input_token_pool": 800000,
+  "primary_comparison": "C_vs_B",
+  "open_web": false,
+  "input_manifest_sha256": "d046396c043c5a910af3a5fac0863743f5df4dae5d20a3c244c99ad4b21cebff",
+  "runner_sha256": "320005f88bddcbf746b9fbcd6402ce01c5deb2e2e9e38b09727b6964d86a8afd",
+  "pricing": {
+    "input_per_million_usd": 0.1,
+    "output_per_million_usd": 0.5,
+    "cache_write_reservation_multiplier": 1.25,
+    "long_context_input_multiplier": 2,
+    "long_context_output_multiplier": 1.5,
+    "long_context_threshold": 272000,
+    "checked_on": "2026-10-19",
+    "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+    "invoice_cost_available": false
+  },
+  "authorization": "User: no ejecutaste el test? necesito que lo corras. Supersedes earlier preparation-only restriction for this isolated pilot.",
+  "preserved_limits": [
+    "NO_OS_ARCHITECTURE_CHANGE",
+    "SYNTHETIC_CASES_AND_PUBLIC_LAW_ONLY",
+    "NO_CONTACT_WITH_THIRD_PARTIES"
+  ],
+  "deviations_from_initial_human_validated_protocol": [
+    "Human legal curation and reference validation not completed: exploratory execution only.",
+    "Independent lawyer review and human correction times not performed; automated provisional review is separate.",
+    "Practical superiority thresholds are not fixed; no adoption or legal-superiority conclusion is authorized.",
+    "No Jev, production checker, permanent specialists or deep-board pipeline: isolates research organization using equal local evidence tools.",
+    "Parallel stages have eight-turn ceilings, B has eight turns per stage; A may use the full thirty-two-turn pool.",
+    "Model alias used as configured; effective ID verified but no immutable snapshot available."
+  ],
+  "human_legal_review": "PENDING",
+  "legal_superiority": "NOT_ESTABLISHED",
+  "paid_execution_enabled_for_this_runner_only": true
+}

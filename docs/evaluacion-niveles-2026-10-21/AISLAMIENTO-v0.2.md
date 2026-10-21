@@ -1,0 +1,11 @@
+# Aislamiento y cegamiento
+
+Resultado actual: **NO ACREDITADO**. Los dossiers están en el mismo workspace que el código y documentos públicos. Un canario en una ruta operativa fue legible por rutas absoluta y relativa desde el proceso de preparación. Esto demuestra ausencia de aislamiento de ese proceso; no demuestra por sí solo qué puede leer el modelo mediante cada herramienta. La prueba de symlink no pudo realizarse por EPERM y no cuenta como rechazo de acceso aprobado.
+
+La configuración del bridge dirige la instancia normal al puerto 55432 y a almacenamiento de trabajo. La prueba TCP no consiguió conectar durante esta revisión; no se arrancó ni detuvo ningún proceso. Que un puerto no responda no prueba una separación de redes ni de datos. No hubo lecturas SQL ni cambios en base productiva.
+
+Antes del piloto usar instancia/base/almacenamiento propios con el mismo código congelado. La identidad de ejecución solo debe leer las fuentes/documentos liberados. Dossiers, clave ciega, otras ejecuciones, repositorio completo, respaldos y memoria deben quedar fuera de sus permisos e índices. Restringir archivos, historial, gestión, biblioteca y red según inventario real de herramientas. No confundir permisos por documento del producto con aislamiento completo de la evaluación.
+
+Pruebas necesarias: canarios no secretos fuera del conjunto público, intentos por cada herramienta activa de leer/buscar por ruta absoluta/relativa, enlaces, historial de otros asuntos, biblioteca y endpoints; denegación verificada y sin inclusión del canario en resultados, errores o logs accesibles. Probar también el documento futuro de turno 2 antes de liberarlo. Guardar identidad, permisos y resultados. Aún no se ejecutó esa matriz contra una instancia aislada.
+
+Un operador genera códigos aleatorios opacos y mezcla salidas, guardando la clave fuera del sistema/revisores. Exportar todas las salidas, también fallidas, retirando modelo, nivel, costos, latencia y autorrevelaciones sin alterar argumentos. Conservar original y log de redacciones; registrar cegamiento comprometido si no se puede preservar contenido. Cerrar fichas y adjudicación con fecha/hash antes de revelar identidades. Costos y auditoría interna se analizan después.

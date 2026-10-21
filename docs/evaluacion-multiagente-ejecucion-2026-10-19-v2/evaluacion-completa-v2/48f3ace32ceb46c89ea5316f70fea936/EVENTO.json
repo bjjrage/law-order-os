@@ -1,0 +1,25 @@
+{
+  "blind_id": "48f3ace32ceb46c89ea5316f70fea936",
+  "started_at": "2026-10-19T05:51:39.281Z",
+  "status": "COMPLETED",
+  "max_cost_usd": 0.08,
+  "reserved_upper_usd": 0.032461875,
+  "counted_input_tokens": 233071,
+  "finished_at": "2026-10-19T05:51:57.053Z",
+  "elapsed_ms": 17772,
+  "response_id": "resp_0278ab5a499aa986016ad5aff7c2e087d1884d3346953339e2",
+  "usage": {
+    "input_tokens": 233071,
+    "input_tokens_details": {
+      "cache_write_tokens": 233068,
+      "cached_tokens": 0
+    },
+    "output_tokens": 1088,
+    "output_tokens_details": {
+      "reasoning_tokens": 380
+    },
+    "total_tokens": 234159
+  },
+  "accounted_upper_usd": 0.029677875000000003,
+  "actual_invoice_cost_usd": null
+}

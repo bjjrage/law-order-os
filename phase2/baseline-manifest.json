@@ -1,0 +1,331 @@
+{
+  "phase": "PHASE2",
+  "client_date": "2026-10-13",
+  "timezone": "America/Asuncion",
+  "git": {
+    "present": false,
+    "branch": null,
+    "initial_sha": null
+  },
+  "missing_authoritative_documents": [
+    "Blueprint",
+    "Roadmap",
+    "handoff"
+  ],
+  "excluded": [
+    "node_modules",
+    ".npm-cache",
+    ".board-data",
+    "dist",
+    ".git",
+    ".codex",
+    ".agents",
+    "phase2"
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "1cc2c384e21e6b45883b093d8b89a904169d0fd92b1270befaa7ddfc6b8414f2"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "065c12fb77af6e0e11486a72937268fea86754ea51c04b407bc8b98564f3efab"
+    },
+    {
+      "path": "ARCHITECTURE_DECISIONS.md",
+      "sha256": "9e3e03eeca2a5593da6659f35f9aca59b06fe95b8a99e114fdb7c0353ce284dc"
+    },
+    {
+      "path": "AUDIT_REMEDIATION.md",
+      "sha256": "c5118a390aa7c372348500c1c3ce2467e9af9c937a8f18117ddf549be866a3a4"
+    },
+    {
+      "path": "COST_REPORT.md",
+      "sha256": "e18d429560d6c04c3f7f8e8f894df584936b21da3ae282fd59a56c14969413ce"
+    },
+    {
+      "path": "IMPLEMENTATION_REPORT.md",
+      "sha256": "73313f5e0d2ae9a559ae34c3a2d1f3b9909aa68deeec41193e8ebcbf1abda049"
+    },
+    {
+      "path": "junta-juridica/docs/ADR_JUNTA_JURIDICA_V2.md",
+      "sha256": "f09e75d9307b91f5bbb573760aba299b40a9a0bbec657b3d0cf9c93dc3297445"
+    },
+    {
+      "path": "junta-juridica/docs/BENCHMARK_PROTOCOL.md",
+      "sha256": "d661abdb56af46fa1d954e709d7bc8dc4f70ab8a12c1efc138d49e5b655b89aa"
+    },
+    {
+      "path": "junta-juridica/docs/CONTRACTS.md",
+      "sha256": "f1116cce9f2c703b51aee9452e661eb8d21d654c0937d9bc69a729764c8eb17b"
+    },
+    {
+      "path": "junta-juridica/docs/IMPLEMENTATION_DIRECTIVE.md",
+      "sha256": "f95a5c72d82caa897842a1eb35553f4ff1d68d89670becbba923ebee42cdc8bd"
+    },
+    {
+      "path": "junta-juridica/docs/INITIAL_AUDIT.md",
+      "sha256": "39eda201b039da81df72c1c76f33632096ebad49f997570f50077e832e321420"
+    },
+    {
+      "path": "junta-juridica/docs/RUNBOOK.md",
+      "sha256": "c787df3ccfc3ecbf2985e3ad859afb43fb9d3822821bb2095516db25e763f1d9"
+    },
+    {
+      "path": "junta-juridica/reports/benchmark-bibliography-v2-first-evaluation.json",
+      "sha256": "ee33880442a9f5c97995214607f07ef911d39bca73c3f231c727e40a4aed6c00"
+    },
+    {
+      "path": "junta-juridica/reports/benchmark-offline-before-remediation.json",
+      "sha256": "754e55178ab24a43e936cd94079338de8ae49af0e1b528216d94e9cb2c9420d0"
+    },
+    {
+      "path": "junta-juridica/reports/benchmark-offline-first-evaluation.json",
+      "sha256": "eaea00c25f3f364a444d80c060ca5a1d62d9e1354a96c928c7d4c6a59f073e7c"
+    },
+    {
+      "path": "junta-juridica/reports/benchmark-offline.json",
+      "sha256": "6588f072f61d71c0353aeba96e7e28426e81c279d8d26cf54f7a31ea499a65fc"
+    },
+    {
+      "path": "junta-juridica/reports/cli-remediation-verification.json",
+      "sha256": "c016e4084d938d6b30d91459a6940599f11f67aa0ac4647ab128641b4b4194cb"
+    },
+    {
+      "path": "junta-juridica/reports/connectivity-remediation.json",
+      "sha256": "00f3a2d4bba6eeb10c7819707abf34eb38a232d041ee658a86231c5abcc53843"
+    },
+    {
+      "path": "junta-juridica/reports/connectivity.json",
+      "sha256": "bc0abbcc057bd6fa95942ed7771a699f251ff45f07c9d136d62c2626523f1f91"
+    },
+    {
+      "path": "junta-juridica/reports/remediation-summary.json",
+      "sha256": "cfc82536c8a9155de738b252c34d60850b4bc20cac19722c67e204f24166fea4"
+    },
+    {
+      "path": "junta-juridica/reports/smoke-offline-before-remediation.json",
+      "sha256": "f68c0bd522a99807b0ad9922ddcd20bbb788ff810ed436e2d6f652abbd02f7a3"
+    },
+    {
+      "path": "junta-juridica/reports/smoke-offline.json",
+      "sha256": "e90711df3d841a786dd25b85a3434cc6b0226965ef12af3527fb0117fba479f7"
+    },
+    {
+      "path": "junta-juridica/reports/vitest-remediation-development.json",
+      "sha256": "ca57637c345052f27f43aa87b97be6da71699e497d53f2eede5c848b08672772"
+    },
+    {
+      "path": "junta-juridica/reports/vitest-results-before-remediation.json",
+      "sha256": "533589e0f7765fbec366ffa04d4b9d56ffb5a426dd6eb67fbcebcca6d1bafa44"
+    },
+    {
+      "path": "junta-juridica/reports/vitest-results.json",
+      "sha256": "21d6874e17fc7a0a918c0a7698cc89a50867ffd0e884478be28acac2e648f60f"
+    },
+    {
+      "path": "junta-juridica/src/adversarial-audit/index.ts",
+      "sha256": "679d90f9089a0b10997de5d117b12d47b50846d314e270172dfa7580ea3cbfa8"
+    },
+    {
+      "path": "junta-juridica/src/citation-checker/extraction.ts",
+      "sha256": "39b5e0f982cecae81ec3897ac2c1e3b5b8d83d8b5f2fb8a2230af18836599813"
+    },
+    {
+      "path": "junta-juridica/src/citation-checker/index.ts",
+      "sha256": "b6e744009eded276641959ecc8c2733d51a024d9bb4ba88d60b5070bc613c64f"
+    },
+    {
+      "path": "junta-juridica/src/cli/benchmark.ts",
+      "sha256": "74c691c8fa0ca8526b146dc3bbab276a1b01b37a036f77ad3d1f3e9440d4b03d"
+    },
+    {
+      "path": "junta-juridica/src/cli/demo.ts",
+      "sha256": "7e08db2e4f6c83403e169e0259af3898cafdc14e38e7cfc826c9e112acb12367"
+    },
+    {
+      "path": "junta-juridica/src/cli/index.ts",
+      "sha256": "78e4c19cf176bc7eb47dfe6c5a842598ebc5393f7b11dbb05c5d160ff6d192fa"
+    },
+    {
+      "path": "junta-juridica/src/context-builder/index.ts",
+      "sha256": "69b235339ca2c3e33708d1312757f6a9820cf5d5a68056298ca73ed20ecd27c8"
+    },
+    {
+      "path": "junta-juridica/src/domain/contracts.ts",
+      "sha256": "14d0c91ab9d9e12ecf30b3399addbea271f6fbd9a53a1fa1178c14badd972343"
+    },
+    {
+      "path": "junta-juridica/src/domain/guards.ts",
+      "sha256": "90f24b0ea268c06726bd0b17b0ebcc28ec76d480d448a84eefee0312b5e2756f"
+    },
+    {
+      "path": "junta-juridica/src/evidence-router/index.ts",
+      "sha256": "d8a89e88866b5dc9609a0a2f20a979e9122a1c84fdb83ba9a49e7c088dd656d6"
+    },
+    {
+      "path": "junta-juridica/src/index.ts",
+      "sha256": "1da616329acc8ba4e8839f793031e750e900ee7ddc37c130a81a6c2d83651919"
+    },
+    {
+      "path": "junta-juridica/src/ingestion/bundle.ts",
+      "sha256": "511b8b0b3a968038fd6a7a9e71d33f918fa55985a73549f6a579ff4fb64d940a"
+    },
+    {
+      "path": "junta-juridica/src/ingestion/index.ts",
+      "sha256": "39010658e90774c0b0448fef76748e3fc0b02e7e5c134fe0e22cab1de2b765a8"
+    },
+    {
+      "path": "junta-juridica/src/ingestion/provenance.ts",
+      "sha256": "64a73d03d5562003d0bd7efca021279e3952a6ee90e8fa602b436091f4717fbc"
+    },
+    {
+      "path": "junta-juridica/src/orchestration/index.ts",
+      "sha256": "bf915c98befb7f3e831327c4d90d5e155bf2a7d7de17bc8a16cad5e4df6494cf"
+    },
+    {
+      "path": "junta-juridica/src/orchestration/issue-plan.ts",
+      "sha256": "5dedde7ec45cf1ff76cafa764ced581b888bdb3048910403949d3a56bab751d2"
+    },
+    {
+      "path": "junta-juridica/src/persistence/index.ts",
+      "sha256": "d0b00b87eb7803737789c8ba13d009f1653ea41d0bef5a5ff305f0791bd962e7"
+    },
+    {
+      "path": "junta-juridica/src/principal-analysis/index.ts",
+      "sha256": "d9960f00c674a15e57d9d044e9e45113938f5ad7a625fb4fa79dce818cc0322e"
+    },
+    {
+      "path": "junta-juridica/src/providers/config.ts",
+      "sha256": "5b3573471063fdc79132244258a3a39cb33d451c1d93f958a5927af84e2d03e5"
+    },
+    {
+      "path": "junta-juridica/src/providers/contracts.ts",
+      "sha256": "55bba06967e8e64f622dea7d717f58f4dd2abfb07bddee987438bdc2f29b32de"
+    },
+    {
+      "path": "junta-juridica/src/providers/live.ts",
+      "sha256": "439a66929185d43c277eea753f7a7aab9b4d6ee3a6681abc9aaa1504da8a1381"
+    },
+    {
+      "path": "junta-juridica/src/providers/offline.ts",
+      "sha256": "8ee2a305a095291a781b12bd953a308bf88c564957616a6e9a4dcb258522f835"
+    },
+    {
+      "path": "junta-juridica/src/retrieval/index.ts",
+      "sha256": "b5f47500a5eddd02b7b5d081b95d0ebf05d4e412d6c7a8a735866c5f4ed994db"
+    },
+    {
+      "path": "junta-juridica/src/telemetry/index.ts",
+      "sha256": "a35f2bd6e1177075c2b5b00c9c128234d1c4f2e053894ad4b20f1161b5ac1975"
+    },
+    {
+      "path": "junta-juridica/tests/adversarial/checker.test.ts",
+      "sha256": "acbb207973eafa2426b86ed176628f09fa02dc6cb8aeed6cb5345096d070e448"
+    },
+    {
+      "path": "junta-juridica/tests/adversarial/extraction.test.ts",
+      "sha256": "53808c33c76b3cb88636b69ac994adb89b565489f39f07a852b251a7e2c302ac"
+    },
+    {
+      "path": "junta-juridica/tests/adversarial/provenance.test.ts",
+      "sha256": "6dd68c5cd84b42f9980cb3c06382a187270d0199e9c78ac11aef511b16196b6d"
+    },
+    {
+      "path": "junta-juridica/tests/adversarial/security.test.ts",
+      "sha256": "dd77e982dbe540084811b4150ea74b1bfc750831c6454396b7236eeeb082b09f"
+    },
+    {
+      "path": "junta-juridica/tests/fixtures/bibliography-holdout-v2.json",
+      "sha256": "1a5d1a1ee10849e79a986163e71a1cafdc32ace6f7d5611b504685b66cf73735"
+    },
+    {
+      "path": "junta-juridica/tests/fixtures/holdout.json",
+      "sha256": "f68295e548c863f69a6eb280dee1776a9e9735bd4f5cce0b8b26fc22ecc29399"
+    },
+    {
+      "path": "junta-juridica/tests/fixtures/index.ts",
+      "sha256": "2429adf5ea8953f6c40a577701827c5ccccfee09b3d63877333467e236500f71"
+    },
+    {
+      "path": "junta-juridica/tests/fixtures/trust.ts",
+      "sha256": "0772959247761a3ceffc8e6bba7afa490b8351695c750f8851a6b8375e67bb58"
+    },
+    {
+      "path": "junta-juridica/tests/integration/orchestration.test.ts",
+      "sha256": "51610d372318d60f667a8390b015b77c96eaebdc6dffe262afcf310d93d2803a"
+    },
+    {
+      "path": "junta-juridica/tests/integration/persistence.test.ts",
+      "sha256": "20ace033f73b1357b5e8987eccff90a078fe661385e8a221a0adc4c652f139e0"
+    },
+    {
+      "path": "junta-juridica/tests/setup.ts",
+      "sha256": "f0b55f74861445b799c65b84b9aa6082b5829beacc28a126068c8efd6a663b80"
+    },
+    {
+      "path": "junta-juridica/tests/unit/auditor-budget.test.ts",
+      "sha256": "2b77a4cbbbe7662743537e5977d5325579de659c69eace33b5836c68bb1acbaf"
+    },
+    {
+      "path": "junta-juridica/tests/unit/evidence.test.ts",
+      "sha256": "e8da41b14765bc83bd43ce3baf68bc75674b39abec2e2af4efa31bd93b3c8324"
+    },
+    {
+      "path": "junta-juridica/tests/unit/issue-plan.test.ts",
+      "sha256": "78228fb269bec3ec282fd0023429b63e28e4844c346cfed600fca4b24f823dfd"
+    },
+    {
+      "path": "junta-juridica/tests/unit/providers.test.ts",
+      "sha256": "5f06ce722b3fbb52090f5fef822de4fead9f69837a4dd48a86f14445ab77a77b"
+    },
+    {
+      "path": "junta-juridica/tests/unit/versions.test.ts",
+      "sha256": "2375c03cf79d75ef6e4904736ffb1b21f8be47a6e2062195878d2c8e43705ff0"
+    },
+    {
+      "path": "KNOWN_LIMITATIONS.md",
+      "sha256": "a50bafe44321b1c3e07fcc75c7bd3e23e96887abc7b7d8d4ab260667e4e5001b"
+    },
+    {
+      "path": "MODEL_CONNECTIVITY.md",
+      "sha256": "b28d13ed86d9b2542615a576344ced7ef53f81e0b7984df47655890f759e9534"
+    },
+    {
+      "path": "NEXT_STEPS.md",
+      "sha256": "ae85234b0b670bb587652aa8f290bcac0ede297f4b6e155086a9d7458bc9d4a0"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "f9c20c4df240f25171db3978f0a1bec5cb3f0607bac378af25bf0c931ce1d131"
+    },
+    {
+      "path": "package.json",
+      "sha256": "acab8e7b58adbdd3eb75fb5f366ddc8b72dcf165728346867b4c04ec7b445e0a"
+    },
+    {
+      "path": "README.md",
+      "sha256": "5ab431790a2262142efd04a93942514f8e4aa8b2df56676c236bb26c763d34aa"
+    },
+    {
+      "path": "scripts/board.mjs",
+      "sha256": "0c0efcff8536cfa330d94f89b759dcdb40523171301af842446ab56962a8703d"
+    },
+    {
+      "path": "TEST_RESULTS.md",
+      "sha256": "7c6e8479d5844e22a6a7bdb6fe6787da01d24c2b5055d72435bc3b9944685e54"
+    },
+    {
+      "path": "tsconfig.build.json",
+      "sha256": "74148d8235db895a01e6a7bd4043e659591bfdc5fd38fdae9f8f5e417818b96d"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "8de764750b2b589ad2f3325e5ce285fa1efb9be21b715d7afafdebb8f5097017"
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "7519795f5821de32ef93300224996ecf4485f697024c6c663f39f95cb6b14a60"
+    }
+  ]
+}

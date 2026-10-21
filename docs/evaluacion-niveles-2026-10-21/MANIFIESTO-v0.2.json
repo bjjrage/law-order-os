@@ -1,0 +1,214 @@
+{
+  "version": "0.2",
+  "status": "PREPARACION_NO_HABILITADA",
+  "files": [
+    {
+      "path": "AISLAMIENTO.md",
+      "sha256": "9570e56c8319648b2c78dbc82ee5e17e83ddaa52790dc631a95943aa5d96714a"
+    },
+    {
+      "path": "MANIFIESTO-v0.1.json",
+      "sha256": "ca925c163ae182dd638b166b53e8a73fbc1a8efe1e55e38dd1929f842cbb145a"
+    },
+    {
+      "path": "PRESUPUESTO.md",
+      "sha256": "e2676673e4b34d732ff51305d2303914b9fc150a0193e54aa08be842233368c4"
+    },
+    {
+      "path": "PROTOCOLO.md",
+      "sha256": "258264a15cfca244af9702ed7b9b8afe0dae26f5d719c23ccdcb77d893884002"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c282f2e49e6b5a2e087ddb6d7fde828c4ca49f34896f7e2008ddfe6c4c1d6a80"
+    },
+    {
+      "path": "REFERENCIAS_PENDIENTES.csv",
+      "sha256": "f6de8aaf96fd21872afa40c9d7490c1ed9c0a63ca59c1e321268ec396a2476bd"
+    },
+    {
+      "path": "REVISION.md",
+      "sha256": "0196d7c4ba5aeacf5912fc7a23aced89ee4d93ae73818b47d917be68c15fe6b2"
+    },
+    {
+      "path": "VERIFICACION.md",
+      "sha256": "b6033f61efc97726744e1f394519017f8bf2a2f4ff9b8b0a40905b8543a197af"
+    },
+    {
+      "path": "dossiers/LEEME.md",
+      "sha256": "7ba613f5288752036f4a34d48e46626f3acb4cc95a11e6c071960a1997deca5e"
+    },
+    {
+      "path": "dossiers/N01.md",
+      "sha256": "6db4c2e1b009b70a0349bfe43dac158876b362c5231858053782136496012314"
+    },
+    {
+      "path": "dossiers/N02.md",
+      "sha256": "281019987f300f88afd25db9f79d933e2a1a61613c885b53d29316713655d224"
+    },
+    {
+      "path": "dossiers/N03.md",
+      "sha256": "f6d67c60809fc9ffe5c83889203c74b47daf93c6b1730c2f1406ef1b988e8f7b"
+    },
+    {
+      "path": "dossiers/N04.md",
+      "sha256": "0f682e5aecb33bea8a40c0e274c54149ece6162159bbf85a0ffb7e77dff4e9f9"
+    },
+    {
+      "path": "dossiers/N05.md",
+      "sha256": "f054c0cc7a64a89c524efcba3fd58f849803205801866398d9e56a12c74bad49"
+    },
+    {
+      "path": "dossiers/N06.md",
+      "sha256": "94fb4a1d0748e5949a0804fffb977bd08a5e60ad1da2cbc93c4d688f1fbe02bf"
+    },
+    {
+      "path": "operacion/AISLAMIENTO_OFFLINE.json",
+      "sha256": "b32e2ad4bfa908aa1337a2affc2bc18549d5895206fae0b9253e7765658bae04"
+    },
+    {
+      "path": "operacion/MATRIZ.csv",
+      "sha256": "3d1132b2ff0cf9f6fb166a5551134c3d651b6d98524921a1b7006041ce7318eb"
+    },
+    {
+      "path": "operacion/VERIFICACION_TECNICA.json",
+      "sha256": "c710788ad9fd00e4be38f6d9faa0075bd08f390ec703cce57e798a1d55713f45"
+    },
+    {
+      "path": "publico/CASOS.json",
+      "sha256": "5255cec5e0d67c9ffc43ad2b187224b80ec855aefd828f9a0166c5ba181ed8cd"
+    },
+    {
+      "path": "publico/fuentes/ADMIN.html",
+      "sha256": "d2e988d31d335eac21d3ad0907a97fb1bc070b6aee114c7febe0c47786918a06"
+    },
+    {
+      "path": "publico/fuentes/ADMIN.txt",
+      "sha256": "b06994bd276859aa7fad729a14c34a9459749ca56a5a461d3f86577704e26b92"
+    },
+    {
+      "path": "publico/fuentes/CC-II.html",
+      "sha256": "0cb2466519ff727969ce04923dec6519ec6c4c2de3016e37fc58d82ef8649949"
+    },
+    {
+      "path": "publico/fuentes/CC-II.txt",
+      "sha256": "df417ffe2b5f54cf2a21cb805a02ec2c35659be06d91ab3b4d1559e1bf754243"
+    },
+    {
+      "path": "publico/fuentes/CC-III.html",
+      "sha256": "9b3c71288f5f31cfe35fb11026a04267e885b8ee00c560d2e1e647eff2840b4d"
+    },
+    {
+      "path": "publico/fuentes/CC-III.txt",
+      "sha256": "9681d8cb6eba2fdfdb24eaa3b8409b6046fa771099b67fd1db28fdbd44c7199a"
+    },
+    {
+      "path": "publico/fuentes/CONSTITUCION.pdf",
+      "sha256": "dda16d040a03cb5f20ad7ae8b091c79d1d288162400e8524e7b0c0efbfa575b4"
+    },
+    {
+      "path": "publico/fuentes/CONSTITUCION.txt",
+      "sha256": "896dc3af1fec3ee3ca09fb73368d30cff1d1509abd21ea87e024a61deabe0131"
+    },
+    {
+      "path": "publico/fuentes/CPC.html",
+      "sha256": "0544afec337f41e9f29426e0a32a821fff51a6eb0e337aede5c65418bbdfdfb1"
+    },
+    {
+      "path": "publico/fuentes/CPC.txt",
+      "sha256": "856166368ef115e67284a8871e981817c46de5f58c028a1ac287f668aa0f25ff"
+    },
+    {
+      "path": "publico/fuentes/CPP.html",
+      "sha256": "a1cbeefcea58f6b3596b9a20fcfb08427654a4ad3f8fcc0cce137e71721b59e9"
+    },
+    {
+      "path": "publico/fuentes/CPP.txt",
+      "sha256": "9a55e5e7d96885e7f2144cacac10695bfe62c897bebb2569753898a85ea8b87d"
+    },
+    {
+      "path": "publico/fuentes/DESCARGAS.json",
+      "sha256": "3ece1e4afb88f886694331ab307f7a58d17177244865f07facfe0283d93f5cea"
+    },
+    {
+      "path": "publico/fuentes/FACTURA-6542.html",
+      "sha256": "88b7df5b23e37581af075dcee784ab368980af72993ea18962a410bf3d09a0fe"
+    },
+    {
+      "path": "publico/fuentes/FACTURA-6542.txt",
+      "sha256": "78c63dd06d453dc0312753d00a618dad9f0d4b2ed7f890af2854a4c9fb5e76a5"
+    },
+    {
+      "path": "publico/fuentes/GACETA-2011-2.pdf",
+      "sha256": "93fee19703c8c4a52e7e4a3ea90b12023cc0f7c6f18345c80b31b941470611fe"
+    },
+    {
+      "path": "publico/fuentes/INVENTARIO.json",
+      "sha256": "b095505d2246ae8eeb6102f6ddf4ac361438ecb0d817907d4e9a4110f10a66ac"
+    },
+    {
+      "path": "publico/fuentes/LEEME.md",
+      "sha256": "2aa0ae7c04472fc6c58b984ae90cf4cb6a2d5d866b04602def6083c07c5b077f"
+    },
+    {
+      "path": "publico/fuentes/MUNICIPAL.html",
+      "sha256": "c9e51a9bf27860add3225ce6445acee21ebb2947509ede09ecc2a3bfeb7b532b"
+    },
+    {
+      "path": "publico/fuentes/MUNICIPAL.txt",
+      "sha256": "4357bd8798ea3885195edbf75c1bcd28b1fa67c0e3c8876f190575255ec64af8"
+    },
+    {
+      "path": "publico/fuentes/N06-AS318-2010.txt",
+      "sha256": "a64dd6d0661d2341fde82f36854fa3c2f31340acada66e5bda86b5796c8c465d"
+    },
+    {
+      "path": "publico/fuentes/NINEZ-6083.html",
+      "sha256": "11c7e8adef361165321c20608fde215fcd0e412413a56ce1b951045fcfb84944"
+    },
+    {
+      "path": "publico/fuentes/NINEZ-6083.txt",
+      "sha256": "d3750103a064968586a6472140bb89a29f5e487b9be03be08b3c465f058f0e1c"
+    },
+    {
+      "path": "publico/fuentes/NINEZ.html",
+      "sha256": "51b46b6287807a070814c4cd317d2f4365b8930f73354f826b8d34a6986dd471"
+    },
+    {
+      "path": "publico/fuentes/NINEZ.txt",
+      "sha256": "c73b3e748abcc58e74b366499a804718291d5d136ee160f5a1e1971ee74981a3"
+    },
+    {
+      "path": "publico/fuentes/PENAL-3440.html",
+      "sha256": "85e107f879129953750119f3dd768a17ae3cd0e5e9834f35b3e0211a3055b69e"
+    },
+    {
+      "path": "publico/fuentes/PENAL-3440.txt",
+      "sha256": "1c5cc16572ceb7b198cc8dda255d1309137d3339876486f7b490ffaa43497a56"
+    },
+    {
+      "path": "publico/fuentes/PENAL.html",
+      "sha256": "6b35c7add7a82dd9eed9495fba9eb350dcd75175d70d24a70d364fafd3600646"
+    },
+    {
+      "path": "publico/fuentes/PENAL.txt",
+      "sha256": "5b4bedb7d28f983b807817229e96e092a7b4f65c970c6ded401bf63db9c190da"
+    },
+    {
+      "path": "publico/fuentes/TRABAJO-496.html",
+      "sha256": "4490420d3994b776242f4baab17b6c964638f171744e76bc1ea3b6caa1ecacf9"
+    },
+    {
+      "path": "publico/fuentes/TRABAJO-496.txt",
+      "sha256": "5f1b02a5e11e598d35747398c4220460214a1e4b07d1704aad12ff82bffeacdd"
+    },
+    {
+      "path": "publico/fuentes/TRABAJO.html",
+      "sha256": "2c43d49a578b9c16b1f66d01284f186e0af37ab222492c351bb48b848f6c5c20"
+    },
+    {
+      "path": "publico/fuentes/TRABAJO.txt",
+      "sha256": "39177c847d8c6d44b0f9af084bd93354e49a5c79427b5563f3adfee7053c9622"
+    }
+  ]
+}

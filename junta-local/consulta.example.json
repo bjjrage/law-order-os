@@ -1,0 +1,10 @@
+{
+  "estado": "ENTRADA_PENDIENTE_DE_VALIDACION_NO_ES_BUNDLE_EJECUTABLE",
+  "pregunta_juridica": "COMPLETAR: una pregunta concreta",
+  "jurisdiccion": "PY",
+  "fecha_de_corte": "COMPLETAR: AAAA-MM-DD",
+  "hechos_documentados": [],
+  "alegaciones_no_comprobadas": [],
+  "documentos": [],
+  "nota": "Indicar documentos y versiones que respaldan cada hecho. Esta ficha no concede oficialidad ni autoriza llamadas. No incluir secretos ni datos reales en esta fase local sintética."
+}

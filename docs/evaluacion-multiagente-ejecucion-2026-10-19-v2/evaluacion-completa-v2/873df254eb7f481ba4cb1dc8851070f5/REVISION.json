@@ -1,0 +1,104 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P01-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El precio de PYG 600.000.000 es **neto para el vendedor**, con tributos aplicables añadidos",
+      "explanation": "Distingue los términos nuevos del precio anterior con impuestos incluidos, los vincula al límite del comité y condiciona la autorización a un total aprobado, sin inventar una tasa."
+    },
+    {
+      "reference_id": "P01-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Maroma expresa interés en estudiar continuidad, pero dice que su correo no aprueba una cesión ni constituye contrato con Cedro",
+      "explanation": "Aplica las cláusulas de consentimiento y no confunde interés comercial con aprobación; propone consentimiento o nuevo contrato y contempla revisar márgenes si no hay continuidad."
+    },
+    {
+      "reference_id": "P01-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Hay comisiones de septiembre por PYG 5.000.000 y PYG 4.000.000 a favor de dos vendedores con la columna de pago vacía",
+      "explanation": "Identifica el total documental de PYG 9.000.000, diferencia falta de prueba de pago de una liquidación definitiva y pide conciliar vacaciones y otras partidas sin cuantificarlas."
+    },
+    {
+      "reference_id": "P01-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Esa distribución contractual no debe presentarse como liberación frente a trabajadores",
+      "explanation": "Expone la regla de continuidad y responsabilidad solidaria del artículo 28, advierte el límite de la indemnidad inter partes y evita afirmar pérdida de antigüedad o terminación automática."
+    },
+    {
+      "reference_id": "P01-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Que se trate de activos y no acciones no basta para concluir que la operación no tiene IVA",
+      "explanation": "Contrasta la impresión no respaldada del contador con las definiciones de enajenación y derechos patrimoniales, y deja pendiente un análisis por componente y de las reglas vigentes."
+    },
+    {
+      "reference_id": "P01-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Excluirlo del precio y no reconocerlo como crédito del comprador sin fundamento formal",
+      "explanation": "Distingue el saldo registrado a nombre de Naranjal de un crédito disponible para Cedro y no lo suma a los activos ofrecidos."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [],
+  "recommendation_coherent": true,
+  "limitations": [
+    "Las fuentes F01–F03 tienen revisión temporal no certificada; el memo lo advierte y condiciona la firma a verificar vigencia, reglamentos y formalidades.",
+    "El expediente no incluye contratos individuales ni constancias completas de aportes, búsquedas registrales, título de la denominación, ni liquidación tributaria definitiva; el memo identifica diligencias para resolver esos faltantes.",
+    "No se puede confirmar a partir del corpus si la operación concreta constituye sustitución del empleador ni liquidar las contingencias laborales o tributarias; el memo presenta la primera como cuestión a analizar y evita cuantificar la segunda."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "873df254eb7f481ba4cb1dc8851070f5",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H01",
+      "quote": "El precio de PYG 600.000.000 es **neto para el vendedor**, con tributos aplicables añadidos",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H02",
+      "quote": "Maroma expresa interés en estudiar continuidad, pero dice que su correo no aprueba una cesión ni constituye contrato con Cedro",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H03",
+      "quote": "Hay comisiones de septiembre por PYG 5.000.000 y PYG 4.000.000 a favor de dos vendedores con la columna de pago vacía",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H04",
+      "quote": "Esa distribución contractual no debe presentarse como liberación frente a trabajadores",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H05",
+      "quote": "Que se trate de activos y no acciones no basta para concluir que la operación no tiene IVA",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H06",
+      "quote": "Excluirlo del precio y no reconocerlo como crédito del comprador sin fundamento formal",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 0,
+  "missing_required_quote_count": 0
+}

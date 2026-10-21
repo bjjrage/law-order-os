@@ -1,0 +1,57 @@
+{
+  "date_local": "2026-10-13",
+  "timezone": "America/Asuncion",
+  "scope": "A1 additional synthetic regressions and static trust/version/coverage review",
+  "network_used": false,
+  "paid_inference_usd": 0,
+  "deployment_executed": false,
+  "findings": [
+    {
+      "id": "J-001",
+      "status": "PASS",
+      "qualification": "TESTED_OFFLINE within finite grammar; no independent real-corpus certification",
+      "new_defect": "Known identity with fabricated literal in guillemets or single quotes could pass with quote=null. Unbalanced or second quotes could be omitted too.",
+      "first_evaluation": "FAIL; eight quote-related failures and one spaced-abbreviation failure",
+      "remediation": "es-bibliography-v3 preserves paired quotations, marks incomplete/additional quotations unresolved, and recognizes spaced A . y . S .; checker gate remains closed",
+      "remaining_limit": "Finite Spanish grammar. Court/chamber require explicit labels; arbitrary natural-language attribution, unknown notation and semantic correctness require human review. Additional unresolved quote markers are not counted as additional bibliographic references."
+    },
+    {
+      "id": "J-002",
+      "status": "PASS",
+      "qualification": "TESTED_OFFLINE cryptographic and host-policy contract",
+      "evidence": "Rejects valid signature from unconfigured issuer, same issuer ID signed with wrong key, configured key under another authorized actor, URL host/credentials/port mismatch, expiry and fixture promotion; signed full document and original hash rechecked",
+      "remaining_limit": "No official government signer was verified. Registry is privileged host configuration; a compromised host/verifier can grant false authority. Host must protect keys, verifier authorization, source validation and rights policy."
+    },
+    {
+      "id": "J-003",
+      "status": "PASS",
+      "qualification": "TESTED_OFFLINE publication and access contracts",
+      "evidence": "Out-of-order versions, explicit current head, unpublished subsequent candidate, caller-map mutation, historical snapshot access, foreign-study rejection and unrelated private ambiguity tested",
+      "remaining_limit": "publishVersion is a trusted host operation, not authenticated as a remote service; no production persistence or role policy is supplied by the Junta CLI."
+    },
+    {
+      "id": "J-004",
+      "status": "PASS",
+      "qualification": "TESTED_OFFLINE configurable budgets, mock model windows and complete coverage",
+      "evidence": "Existing 150K/300K budget tests plus additional complete prose/reference payload and blocked-audit state tests pass. Oversized input never invokes auditor or reaches HUMAN_REVIEW_PENDING.",
+      "remaining_limit": "Model account windows, tokenizer bounds, provider behavior, quality and billing were not established through inference; no automatic fragmentation."
+    },
+    {
+      "id": "A1_REAL_SECURITY_APPROVAL",
+      "status": "BLOCKED",
+      "reason": "Synthetic disposable Ed25519 test signers and mocked provider metadata do not prove real official provenance, exhaustive bibliography or production host security."
+    }
+  ],
+  "validation": {
+    "new_tests": 30,
+    "first_new_suite": {"total":25,"passed":16,"failed":9,"artifact":"phase2/reports/junta-a1-first-evaluation.json","sha256":"51d78cd39342c4bca4d75d057426eb1a17d74c08fde81e2eb9135d09d90524a9"},
+    "final_focused_suite": {"total":102,"passed":102,"failed":0,"artifact":"phase2/reports/junta-a1-regressions-final.json"},
+    "typecheck": {"status":"PASS","command":"node node_modules/typescript/bin/tsc --noEmit"},
+    "build_and_smoke": {"status":"NOT_RUN_BY_A1_AGENT","reason":"Consolidated root validation uses a new phase2 smoke request ID; see phase2 final report."}
+  },
+  "policy": {"verification_policy_version":3,"extractor_version":"es-bibliography-v3","prior_run_compatibility":"Prior version-2 IDs have different input hashes and require a new request ID; no cached model replay or historical overwrite."},
+  "preserved_holdouts": [
+    {"path":"junta-juridica/tests/fixtures/holdout.json","sha256":"f68295e548c863f69a6eb280dee1776a9e9735bd4f5cce0b8b26fc22ecc29399","matches_baseline":true},
+    {"path":"junta-juridica/tests/fixtures/bibliography-holdout-v2.json","sha256":"1a5d1a1ee10849e79a986163e71a1cafdc32ace6f7d5611b504685b66cf73735","matches_baseline":true}
+  ]
+}

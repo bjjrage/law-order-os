@@ -1,0 +1,117 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Laurel no debería asumir un compromiso de compra, precio o traspaso esta semana",
+      "explanation": "Distingue las alternativas no aceptadas, la falta de aprobación interna y la ausencia de una reserva acordada, sin afirmar que la operación ya se perfeccionó."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Ambas requieren autorización previa y escrita",
+      "explanation": "Explica que tanto el cambio de control como la cesión requieren autorización y que el consentimiento para una estructura no cubre automáticamente la otra; conecta esto con la dependencia económica de Horizonte."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El acuse de Horizonte no basta",
+      "explanation": "Trata la respuesta como evaluación pendiente, no como autorización o rechazo, y advierte que la reunión posterior a la fecha de la reserva no promete una decisión."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no pagar ni aceptar ese esquema",
+      "explanation": "Considera la asimetría, la cuenta personal no verificada, la falta de acuerdo separado y la ausencia de aprobación del comité; no presenta como consumada una pérdida."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no hace desaparecer pasivos históricos de la sociedad adquirida",
+      "explanation": "Compara la continuidad del empleador en acciones con la posible sustitución en activos, recoge la solidaridad legal por obligaciones previas durante seis meses y rechaza que se borre la antigüedad."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No hay base para afirmar que los PYG 90.000.000 anotados sean impuesto exigible",
+      "explanation": "Rechaza usar las celdas duplicadas como liquidación y diferencia el tratamiento de IVA de la posible imposición sobre la renta, dejando pendiente el análisis específico de cada estructura."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no es una liquidación jurídica y falta el registro íntegro de jornadas",
+      "explanation": "Distingue la estimación interna de una deuda liquidada y pide revisar jornadas, pagos, vacaciones, aportes y otras obligaciones laborales sin darles valor cero."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El inventario marca como no atestada la revisión temporal de las tres fuentes jurídicas. El memo lo señala expresamente para la Ley 6380, pero convendría delimitar también la vigencia y consolidación de las normas civiles y laborales al corte.",
+    "El análisis tributario queda correctamente condicionado: el expediente no incluye desglose de bienes, costos fiscales completos ni liquidaciones. La aplicación concreta requiere documentación y verificación normativa y reglamentaria adicional."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "e6c4897a65ba4421a511370f3b761119",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H01",
+      "quote": "Laurel no debería asumir un compromiso de compra, precio o traspaso esta semana",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H02",
+      "quote": "Ambas requieren autorización previa y escrita",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H03",
+      "quote": "El acuse de Horizonte no basta",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H04",
+      "quote": "no pagar ni aceptar ese esquema",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H05",
+      "quote": "no hace desaparecer pasivos históricos de la sociedad adquirida",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H06",
+      "quote": "No hay base para afirmar que los PYG 90.000.000 anotados sean impuesto exigible",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H07",
+      "quote": "no es una liquidación jurídica y falta el registro íntegro de jornadas",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 1,
+  "missing_required_quote_count": 0
+}

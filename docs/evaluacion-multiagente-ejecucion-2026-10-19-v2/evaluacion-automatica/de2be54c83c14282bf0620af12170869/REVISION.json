@@ -1,0 +1,74 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Las propuestas del vendedor son alternativas para discutir, no aceptadas. A ofrece el 100% de las acciones por PYG 1.200 millones, dejando en Delta Azul sus contratos, trabajadores, activos y obligaciones. B ofrece herramientas, equipos, inventario y derecho de uso de marca por PYG 900 millones, con propuesta de cesión del contrato y continuidad de ocho técnicos; no incluye un inventario completo ni una cesión aprobada por Horizonte (P02-D02 v1, P02-D02-P01–P02).",
+      "explanation": "El memo distingue las dos alternativas, su estado no aceptado y la ausencia de una compra perfeccionada. También mantiene la recomendación limitada a diligencia y negociación no vinculante."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Por ello, la compra de acciones **no evita** la aprobación: cambia el control de la sociedad prestadora. La compra de activos requeriría, además, la cesión y sustitución del prestador.",
+      "explanation": "Aplica correctamente las cláusulas de autorización a ambas estructuras y conecta la dependencia de Horizonte con la recomendación y valoración."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Horizonte pidió que se precise la estructura, el responsable del servicio y el plan de personal; aclaró que su disposición a reunirse no autoriza ninguna alternativa. La reunión ofrecida para el 27/10 no garantiza una decisión ese día y es posterior al plazo propuesto para la reserva (P02-D04 v1, P02-D04-P02–P03). No es hecho que el contrato vaya a terminar: Horizonte indicó que no había decidido terminarlo y que no observaba incumplimiento actual, pero tampoco prometió continuidad bajo Laurel (P02-D04 v1, P02-D04-P03).",
+      "explanation": "Diferencia recepción y predisposición a reunirse de una autorización, advierte la desalineación temporal con la reserva y evita afirmar que el contrato ya terminó o que su terminación sea segura."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No hay base para recomendar el pago. Si el vendedor exige asegurar exclusividad, solo consideraría negociar un instrumento separado sujeto a aprobación interna, con condiciones de devolución, tratamiento de contingencias y mecanismo de custodia o garantía acordado; no se ha convenido ninguno.",
+      "explanation": "Desaconseja el pago actual y trata custodia, devolución y condiciones como opciones negociables, no como protecciones ya existentes. Reconoce que no hubo pago ni acuerdo separado."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "En acciones, Delta Azul seguiría siendo la empleadora y titular de sus obligaciones; Laurel adquiriría una sociedad cuyo alcance de pasivos no está conciliado. En activos, la propuesta de incorporar a los mismos técnicos podría configurar sustitución del empleador. El Código del Trabajo dispone que la sustitución no afecta contratos vigentes; establece responsabilidad solidaria del empleador sustituido con el nuevo por seis meses respecto de obligaciones anteriores y luego subsiste la responsabilidad del nuevo empleador (Ley 213, art. 28, F02-L00118–L00121).",
+      "explanation": "Separa la continuidad del empleador en la compra de acciones de la posible sustitución en la compra de activos, aplica el art. 28 y mantiene condicional la calificación de la estructura concreta."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No utilizaría los PYG 90 millones de la hoja financiera como impuesto estimado. La hoja titulada “compra de acciones” copia “venta de maquinaria”; la de activos contiene una nota sobre acciones exentas. El analista reconoce celdas duplicadas y no aporta base, desglose de bienes ni liquidación firmada (P02-D07 v1, P02-D07-P02).",
+      "explanation": "Rechaza expresamente tratar el importe como impuesto establecido y examina por separado las consecuencias tributarias relevantes que permiten las fuentes, con reservas sobre la falta de inventario, valores y consolidación normativa."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Es un estimado interno, no una liquidación ni prueba de pago; vacaciones y aportes tampoco se cuantifican ni se acreditan como inexistentes (P02-D06 v1, P02-D06-P02/P04). Antes de fijar precio o indemnidades, pedir legajos, contratos, jornadas, salarios, horas extra, comprobantes, vacaciones y aportes por técnico, y conciliar reclamos u obligaciones no reflejadas.",
+      "explanation": "No eleva la estimación de horas adicionales a una deuda liquidada y propone diligencias específicas para cuantificar obligaciones laborales y evaluar pasivos no revisados."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "El memo invoca el art. 3 del Código del Trabajo para advertir contra asumir que renuncias o acuerdos eliminan derechos laborales indisponibles; es una conexión pertinente a la propuesta de continuidad de técnicos y a la nota del vendedor sobre antigüedades.",
+    "Identifica correctamente que, si se transfiere un establecimiento comercial, la Ley 6380 art. 13 prevé cierre del ejercicio del enajenante y continuidad del valor fiscal de los bienes para el adquirente; advierte que falta evidencia para determinar si B es transferencia de establecimiento o venta separada de bienes.",
+    "Señala que la exención de IVA para acciones no permite inferir ausencia de todo efecto fiscal: distingue la regla de IVA del tratamiento de resultados en IRE y de la obligación declarativa sobre el excedente al valor nominal, evitando una conclusión tributaria binaria.",
+    "La reserva se dirige a la cuenta personal del accionista vendedor y no hay verificación de cuenta, custodia, garantía ni mecanismo de devolución; la recomendación de no transferir y de negociar protecciones si se insiste está bien sustentada en P02-D02-P03/P04 y P02-D07-P04.",
+    "La recomendación condicionada preserva una alternativa de rechazo o postergación si Horizonte no autoriza o si el vendedor no acepta condiciones prudentes, en lugar de presentar la adquisición como inevitable."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El tratamiento del art. 28 laboral y la identidad del empleador bajo una transferencia de negocio dependen de cómo se estructure y ejecute la operación; el memo reconoce esa incertidumbre, pero la investigación normativa completa de otras posibles responsabilidades laborales o previsionales queda pendiente.",
+    "Las fuentes F02 y F03 no acreditan consolidación normativa a la fecha de corte; el memo lo advierte y condiciona el análisis fiscal a verificación posterior.",
+    "No se analiza en detalle la forma societaria y los requisitos registrales de una transferencia de acciones ni los requisitos instrumentales completos de una venta de activos; no hay base para tratar esa omisión como error decisivo porque el informe se limita a una recomendación preliminar y la tabla se restringe a cuestiones materiales."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "de2be54c83c14282bf0620af12170869",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 232499,
+    "output_tokens_including_reasoning": 1526,
+    "cost_accounted_upper_usd": 0.029825375,
+    "estimated_standard_no_cache_discount_usd": 0.0240129,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 0
+}

@@ -1,0 +1,131 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Excluir las matrices de los bienes vendidos y del anexo de activos propios",
+      "explanation": "Distingue la propiedad de Sur del Lago de los bienes propios de Ribera y evita convertir la estimación de reposición en precio o ajuste automático."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La carta del cliente acepta la cesión desde el 02/11 solo si antes recibe acta de entrega de ML-1 y ML-2 como bienes propios",
+      "explanation": "Caracteriza correctamente la aceptación como condicionada, identifica las condiciones pendientes y las propone como previas al cierre."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no tratar el cambio de fecha como reinicio automático de antigüedad",
+      "explanation": "Relaciona la continuidad de los técnicos con la condición comercial y advierte que la fecha administrativa no demuestra una ruptura laboral ni borra antigüedad."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No registrar los PYG 120.000.000 como efectivo recibido por Fresno",
+      "explanation": "Reconoce que el anticipo permanece en Ribera, que Fresno podría asumir la fabricación y que el cliente no pagará nuevamente; pide acordar la cuenta tripartita."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "es parte del precio diferido, no una garantía adicional",
+      "explanation": "Diferencia el saldo de precio de una garantía independiente y advierte que el procedimiento y el plazo no aseguran cobertura de todas las contingencias."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El reclamo de PYG 40.000.000 por agosto-7 es una contingencia distinta",
+      "explanation": "Lo separa del anticipo, conserva su carácter controvertido y no lo trata como deuda reconocida ni como compensación pactada."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No aprobar el importe como costo total ni fijar impuestos con los datos disponibles",
+      "explanation": "Vincula la incertidumbre tributaria con objeto, valores fiscales, comprobantes y cuenta del anticipo, y evita presentar una liquidación o tasa no sustentada."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El estimado grupal de PYG 8.000.000 en vacaciones no es liquidación ni acredita pago",
+      "explanation": "Distingue el estimado del vendedor de una liquidación individual y señala que recibos y retención de precio no prueban la extinción de obligaciones laborales."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [],
+  "recommendation_coherent": true,
+  "limitations": [
+    "Las fuentes jurídicas entregadas no acreditan consolidación normativa ni vigencia completa a la fecha de corte; el memo reconoce esa limitación y deja pendiente la revisión local actualizada.",
+    "El expediente no aporta valores fiscales, liquidación tributaria final, conciliaciones laborales individuales ni aprobación técnica; el memo evita cuantificar esas cuestiones."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "8b188e3e05954e72a39046f935879c08",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H01",
+      "quote": "Excluir las matrices de los bienes vendidos y del anexo de activos propios",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H02",
+      "quote": "La carta del cliente acepta la cesión desde el 02/11 solo si antes recibe acta de entrega de ML-1 y ML-2 como bienes propios",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H03",
+      "quote": "no tratar el cambio de fecha como reinicio automático de antigüedad",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H04",
+      "quote": "No registrar los PYG 120.000.000 como efectivo recibido por Fresno",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H05",
+      "quote": "es parte del precio diferido, no una garantía adicional",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H06",
+      "quote": "El reclamo de PYG 40.000.000 por agosto-7 es una contingencia distinta",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H07",
+      "quote": "No aprobar el importe como costo total ni fijar impuestos con los datos disponibles",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H08",
+      "quote": "El estimado grupal de PYG 8.000.000 en vacaciones no es liquidación ni acredita pago",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 0,
+  "missing_required_quote_count": 0
+}

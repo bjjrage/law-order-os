@@ -1,0 +1,66 @@
+{
+  "paid_calls": 0,
+  "deployments": 0,
+  "results": [
+    {
+      "command": "benchmark",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "reference_verification": null,
+      "error_code": null,
+      "run_id": null,
+      "pass": true
+    },
+    {
+      "command": "smoke-default",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "HUMAN_REVIEW_PENDING",
+      "reference_verification": "PASS_IN_SCOPE",
+      "error_code": null,
+      "run_id": "run:6ea3fe818a267e67fd142686a7e299ac",
+      "pass": true
+    },
+    {
+      "command": "smoke-idempotent",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "HUMAN_REVIEW_PENDING",
+      "reference_verification": "PASS_IN_SCOPE",
+      "error_code": null,
+      "run_id": "run:9b23f158562c0cba3e36fee47e5c1158",
+      "pass": true
+    },
+    {
+      "command": "show",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "HUMAN_REVIEW_PENDING",
+      "reference_verification": "PASS_IN_SCOPE",
+      "error_code": null,
+      "run_id": "run:9b23f158562c0cba3e36fee47e5c1158",
+      "pass": true
+    },
+    {
+      "command": "live-without-authorization",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "BLOCKED",
+      "reference_verification": null,
+      "error_code": "EXPLICIT_PAID_CALL_AUTHORIZATION_REQUIRED",
+      "run_id": null,
+      "pass": true
+    },
+    {
+      "command": "connectivity-local",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "NOT_RUN",
+      "reference_verification": null,
+      "error_code": null,
+      "run_id": null,
+      "pass": true
+    }
+  ]
+}

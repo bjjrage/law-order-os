@@ -1,0 +1,179 @@
+
+
+
+<link href="/jurisprudencia/Content/formulario.css" rel="stylesheet" />
+
+<section class="wrapper wrapper-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h5 class="text-steelblue"><b><span class="fa fa-th-list"></span>&nbsp;AUTO INTERLOCUTORIO : N&#186;. 20 / 2025</b></h5>
+      </div>
+      <div class="col-md-4">        
+        <a href="javascript:$.OcultarVista($.ObtenerVistaActual().vista);" class="btn btn-primary pull-right"><span class="fa fa-arrow-left"></span>&nbsp;Regresar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrapper">
+
+  <div class="container">
+    <div class="row">
+      <br />
+      <div class="col-md-12">
+        <a href="/jurisprudencia/home/DocumentoJurisprudencia?codigo=108259" class="pull-right"><span class="fa fa-download fa-2x"></span></a>
+        <b>EXPEDIENTE: “RECUSACION: MIRIAN CONCEPCION DELVALLE DE CASASNOVAS Y ALBERTO NICOLAS CASASNOVAS BENITEZ S/ ESTAFA”.-</b>
+      </div>
+      <hr />
+      <form role="form">
+        <div class="col-md-4">
+          <div class="form-group float-label-control label-bottom">
+            <label for="">Fecha resolución judicial</label>
+            <input type="text" class="form-control" placeholder="Fecha de la Resolución Judicial" value="lunes, 03 de febrero de 2025">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group float-label-control label-bottom">
+            <label for="">Número resolución judicial</label>
+            <input type="text" class="form-control" placeholder="Fecha de la Resolución Judicial" value="20">
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="form-group float-label-control label-bottom">
+            <label for="">Tipo resolución judicial</label>
+            <input type="text" class="form-control" placeholder="Fecha de la Resolución Judicial" value="Auto Interlocutorio">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group float-label-control label-bottom">
+            <label for="">Sala </label>
+            <input type="text" class="form-control" placeholder="Fecha de la Resolución Judicial" value="SALA PENAL">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group float-label-control label-bottom">
+            <label for="">Preopinante</label>
+            <input type="text" class="form-control" placeholder="Fecha de la Resolución Judicial" value="Luis Maria Benitez Riera">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group float-label-control label-bottom">
+            <label for="">Materia</label>
+            <input type="text" class="form-control" placeholder="Fecha de la Resolución Judicial" value="Penal">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="form-group float-label-control label-bottom">
+            <label for="">Acción resuelta </label>
+            <input type="text" class="form-control" value="Recusaci&#243;n">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group float-label-control label-bottom">
+            <label for="">Resultado de la acción</label>
+            <input type="text" class="form-control" value="Declarar Inadmisible">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="form-group float-label-control label-bottom">
+            <label for="">Tribunal o juzgado de origen</label>
+            <input type="text" class="form-control" value="N/A">
+          </div>
+        </div>        
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+    </div>
+
+   
+  </div>
+
+  
+</section>
+
+<script>
+
+  (function ($) {
+    $.fn.floatLabels = function (options) {
+
+      // Settings
+      var self = this;
+      var settings = $.extend({}, options);
+
+
+      // Event Handlers
+      function registerEventHandlers() {
+        self.on('input keyup change', 'input, textarea', function () {
+          actions.swapLabels(this);
+        });
+      }
+
+
+      // Actions
+      var actions = {
+        initialize: function () {
+          self.each(function () {
+            var $this = $(this);
+            var $label = $this.children('label');
+            var $field = $this.find('input,textarea').first();
+
+            if ($this.children().first().is('label')) {
+              $this.children().first().remove();
+              $this.append($label);
+            }
+
+            var placeholderText = ($field.attr('placeholder') && $field.attr('placeholder') != $label.text()) ? $field.attr('placeholder') : $label.text();
+
+            $label.data('placeholder-text', placeholderText);
+            $label.data('original-text', $label.text());
+
+            if ($field.val() == '') {
+              $field.addClass('empty')
+            }
+          });
+        },
+        swapLabels: function (field) {
+          var $field = $(field);
+          var $label = $(field).siblings('label').first();
+          var isEmpty = Boolean($field.val());
+
+          if (isEmpty) {
+            $field.removeClass('empty');
+            $label.text($label.data('original-text'));
+          }
+          else {
+            $field.addClass('empty');
+            $label.text($label.data('placeholder-text'));
+          }
+        }
+      }
+
+
+      // Initialization
+      function init() {
+        registerEventHandlers();
+
+        actions.initialize();
+        self.each(function () {
+          actions.swapLabels($(this).find('input,textarea').first());
+        });
+      }
+      init();
+
+
+      return this;
+    };
+
+    $(function () {
+      $('.float-label-control').floatLabels();
+    });
+  })(jQuery);
+</script>

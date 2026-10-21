@@ -1,0 +1,407 @@
+.studio-team-overview {
+  display: grid;
+  gap: 20px;
+  color: #193f4e;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.studio-team-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 19px 22px;
+  border: 1px solid #cad6c7;
+  border-left: 3px solid #b49b6c;
+  border-radius: 8px;
+  background:
+    radial-gradient(#254f4810 0.6px, transparent 0.6px) 0 0/5px 5px,
+    #f5f6ee;
+}
+.studio-team-intro h2 {
+  font-size: 23px;
+  line-height: 1.25;
+  max-width: 650px;
+  margin: 5px 0 8px;
+  letter-spacing: -0.5px;
+}
+.studio-team-intro p {
+  margin: 0;
+  max-width: 670px;
+  color: #5b7070;
+}
+.studio-team-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 7px;
+  flex-shrink: 0;
+}
+.studio-team-actions button {
+  font-size: 11px !important;
+  min-height: 30px !important;
+}
+.studio-team-leadership {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.studio-team-leadership article {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  border: 1px solid #d3ded3;
+  border-radius: 8px;
+  padding: 17px;
+  background: #fffef9;
+}
+.studio-team-leadership article > img,
+.studio-team-leadership article > .reference-avatar {
+  flex-shrink: 0;
+}
+.studio-team-leadership h3 {
+  font-size: 20px;
+  margin: 1px 0 5px;
+}
+.studio-team-leadership p {
+  margin: 0 0 8px;
+  max-width: 470px;
+  color: #5b7070;
+}
+.studio-role-note {
+  font-size: 10px;
+  color: #6e765d;
+  border-top: 1px solid #e3e7da;
+  padding-top: 5px;
+  display: block;
+}
+.studio-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 11px;
+}
+.studio-section-heading h3 {
+  font-size: 18px;
+  margin: 3px 0 0;
+}
+.studio-section-heading > span {
+  font-size: 10px;
+  color: #6e7c70;
+}
+.studio-team-overview .eyebrow {
+  font-size: 9px;
+  letter-spacing: 1.3px;
+}
+.studio-specialists-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.studio-specialist {
+  border: 1px solid #d5dfd2;
+  border-radius: 8px;
+  background: #fffef9;
+  overflow: hidden;
+  transition:
+    border-color 0.16s,
+    background-color 0.16s;
+}
+.studio-specialist:hover {
+  border-color: #8fa99a;
+  background: #fdfef7;
+}
+.studio-specialist header {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  padding: 14px 15px 0;
+}
+.studio-specialist h4 {
+  font-size: 17px;
+  margin: 0;
+}
+.studio-specialist header span {
+  font-size: 11px;
+  color: #5d7671;
+}
+.studio-specialist > p {
+  padding: 0 15px;
+  margin: 10px 0 12px;
+  color: #597071;
+  min-height: 58px;
+}
+.studio-specialist-output {
+  display: grid;
+  gap: 3px;
+  padding: 9px 15px;
+  background: #f3f5ed;
+  border-block: 1px solid #e2e8db;
+  min-height: 62px;
+}
+.studio-specialist-output small {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #7b795f;
+}
+.studio-specialist-output span {
+  font-size: 11px;
+}
+.studio-specialist details {
+  padding: 9px 15px;
+  font-size: 11px;
+}
+.studio-specialist summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: #285b62;
+  font-weight: 600;
+}
+.studio-specialist summary::-webkit-details-marker {
+  display: none;
+}
+.studio-specialist details[open] summary span {
+  transform: rotate(45deg);
+}
+.studio-specialist details h5 {
+  font-size: 11px;
+  margin: 12px 0 5px;
+}
+.studio-specialist details ol {
+  padding-left: 16px;
+  margin: 0;
+}
+.studio-specialist details ol li {
+  margin: 4px 0;
+  color: #607470;
+}
+.studio-expertise-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: grid;
+  gap: 7px;
+}
+.studio-expertise-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e4e9de;
+}
+.studio-expertise-list small {
+  font-size: 9px;
+  color: #807754;
+  max-width: 96px;
+  text-align: right;
+  line-height: 1.4;
+}
+.studio-capability-note {
+  font-size: 10px;
+  color: #83714d;
+  border-left: 2px solid #b99f6e;
+  padding-left: 8px;
+}
+.studio-deliberation {
+  border: 1px solid #d2ddcf;
+  background: #fffef9;
+  border-radius: 8px;
+  padding: 17px;
+}
+.studio-deliberation-stages {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 7px;
+}
+.studio-deliberation-stages button {
+  position: relative;
+  display: grid;
+  justify-items: start;
+  align-content: start;
+  gap: 5px;
+  padding: 10px !important;
+  text-align: left;
+  font-size: 11px !important;
+  min-height: 112px !important;
+  border-radius: 6px;
+}
+.studio-deliberation-stages button small {
+  font-size: 10px;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+.studio-deliberation-stages button[aria-pressed="true"] {
+  background: #193f4e;
+  color: #fffef9;
+  border-color: #193f4e;
+}
+.studio-step-number {
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 1px solid #9db5aa;
+  font-size: 10px;
+}
+.studio-step-arrow {
+  position: absolute;
+  right: 9px;
+  top: 11px;
+  opacity: 0.5;
+}
+.studio-deliberation-stages button:last-child .studio-step-arrow {
+  display: none;
+}
+.studio-stage-detail {
+  display: flex;
+  gap: 18px;
+  margin-top: 13px;
+  border-left: 3px solid #b49b6c;
+  background: #f3f5ed;
+  padding: 13px 15px;
+  min-height: 108px;
+}
+.studio-stage-owner {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  flex: 0 0 145px;
+  color: #647366;
+}
+.studio-stage-detail h4 {
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+.studio-stage-detail p {
+  margin: 0 0 7px;
+  color: #60746f;
+  max-width: 760px;
+}
+.studio-stage-detail > div > span {
+  font-size: 11px;
+}
+.studio-team-delivery {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 28px;
+  padding: 17px 20px;
+  border: 1px solid #d4dece;
+  border-radius: 8px;
+  background: #f4f5ec;
+}
+.studio-team-delivery h3 {
+  font-size: 19px;
+  margin: 4px 0 7px;
+}
+.studio-team-delivery p {
+  color: #60746f;
+  margin: 0;
+  max-width: 430px;
+}
+.studio-team-delivery ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.studio-team-delivery li {
+  display: grid;
+  gap: 2px;
+  padding-left: 10px;
+  border-left: 1px solid #b7c9b9;
+}
+.studio-team-delivery li span {
+  font-size: 11px;
+  color: #61756c;
+}
+.studio-human-review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #5e716b;
+  font-size: 11px;
+}
+.studio-human-review > span {
+  display: grid;
+  place-items: center;
+  border: 1px solid #b6c9b9;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  color: #547c67;
+}
+.studio-human-review p {
+  margin: 0;
+}
+.data-panel:has(.studio-team-overview) > .list-toolbar {
+  display: none;
+}
+.data-panel > .studio-team-overview {
+  padding: 17px;
+}
+@media (max-width: 1050px) {
+  .studio-specialists-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .studio-deliberation-stages {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .studio-deliberation-stages button {
+    min-height: 90px !important;
+  }
+  .studio-team-intro h2 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 650px) {
+  .studio-team-intro {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 15px;
+    gap: 12px;
+  }
+  .studio-team-intro h2 {
+    font-size: 20px;
+  }
+  .studio-team-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .studio-team-leadership,
+  .studio-specialists-grid,
+  .studio-team-delivery {
+    grid-template-columns: 1fr;
+  }
+  .studio-stage-detail {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .studio-stage-owner {
+    flex: auto;
+  }
+  .studio-deliberation-stages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .studio-section-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .studio-team-leadership article {
+    padding: 14px;
+  }
+  .studio-team-overview {
+    gap: 16px;
+  }
+  .studio-specialist > p {
+    min-height: 0;
+  }
+}

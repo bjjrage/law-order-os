@@ -1,0 +1,20 @@
+{
+  "version": "2.0",
+  "date": "2026-10-13",
+  "origin": "user conversation historical V1.1 plus PHASE2_IMPLEMENTATION_REPORT.md",
+  "files": {
+    "README_PRIMERO.md": "4b265d763bcc256837f8a633d0984dccca1261a690bb53d3bb721a50ec664fcf",
+    "docs/ADR_RECONCILIACION_V2.md": "3bc16bcb0b291c5d2afd3d4e2e9f9b5b2be546f2ad8e39b5adafae96b0bd0c8c",
+    "docs/CODEX_HANDOFF_INSTALACION.md": "ff02714fb78813556b1cad04bde2e10f64b51d5668df55f2e09a7c9687b751ba",
+    "docs/DOCUMENT_MANIFEST_SHA256.json": "f6cb3c0efc06e9b622a20217c36936300afa0c8e6eb196209553e0f21dae95ec",
+    "docs/LAW_ORDER_OS_BLUEPRINT_v2.0.html": "092e31b30093134de6e85252d2105c56e60192928160afb67954391020f98563",
+    "docs/LAW_ORDER_OS_BLUEPRINT_v2.0.md": "d3d7d1ac3a3756689b817b816eca01ef63a2ef493984cb7aa6d63daa2849872b",
+    "docs/LAW_ORDER_OS_ROADMAP_v2.0.html": "84d444daeba6be2a72c38dfffc0e71b4b7f995d4bf3d58fc55b88904c75082a0",
+    "docs/LAW_ORDER_OS_ROADMAP_v2.0.md": "dc8631c93c50949a5c4ed113d4db4c7ee04dbe6043530fe5d762382cb3e38409",
+    "docs/fuentes/FUENTES_Y_APIS_PARAGUAY_v1.1.json": "8bd3f2872655cd7e62e4437f3fd729d515085410a7d9a24b7028693f8a2bd656",
+    "docs/fuentes/FUENTES_Y_APIS_PARAGUAY_v1.1.md": "bf77aced9583722742cdfde8537b71ef552820296b5d5733cb4f79d46dacc283",
+    "docs/historico/BLUEPRINT_v1.1.md": "cf353defa5546a67da32fc55fba1276f6a4176663a60e613c09c83b215aba56b",
+    "docs/historico/DECISIONES_v1.1.md": "7bf6af9cbf5d837bce4a2a6aacb5c7bcf85125159b3f0068f18f6e0010a85de3",
+    "docs/historico/ROADMAP_v1.1.md": "d8602127da9cbab67302c056f80d660010c70ffaadcd56aba305e585f6fc8a45"
+  }
+}

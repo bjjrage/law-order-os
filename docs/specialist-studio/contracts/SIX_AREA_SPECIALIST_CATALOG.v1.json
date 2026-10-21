@@ -1,0 +1,139 @@
+{
+  "catalog_id": "law-order-six-practice-areas",
+  "schema_version": 1,
+  "catalog_version": 1,
+  "decision_date": "2026-10-14",
+  "decision_status": "ACCEPTED_PRODUCT_GROUPING",
+  "acceptance": "El propietario aceptó la propuesta de seis grandes áreas con: esta bien... hacelo",
+  "runtime_activation": false,
+  "visual_reference": "../concepts/emoji-option-01-v3.png",
+  "updated_design": "../concepts/six-area-selected-v4.png",
+  "presentation_policy": {
+    "character_style": "HUMAN_3D_EMOJI_SEMI_CARICATURE_REALISTIC_MATERIALS",
+    "public_identity": "PERSONA_AND_LEGAL_ROLE",
+    "technical_provider_identity_visible": false,
+    "case_team_visibility": "ASSIGNED_AND_INVITED_ONLY",
+    "catalog_visibility": "ALL_SIX_IN_EXPLICIT_SELECTOR",
+    "subprofiles_create_extra_characters": false,
+    "selection_executes_analysis": false,
+    "depth_change_preserves_persona": true
+  },
+  "specialists": [
+    {
+      "practice_area_id": "civil_patrimonial",
+      "public_label": "Civil y patrimonial",
+      "persona_id": "elena",
+      "persona_name": "Elena",
+      "persona_version": 1,
+      "character_description": "Mujer adulta, pelo oscuro corto estilo bob, blazer azul marino; personaje humano 3D tipo emoji.",
+      "runtime_enabled": false,
+      "subprofiles": [
+        { "subprofile_id": "civil_contractual", "label": "Contratos y obligaciones", "status": "PILOT_DESIGN_ONLY" },
+        { "subprofile_id": "civil_responsabilidad", "label": "Responsabilidad y daños", "status": "DRAFT" },
+        { "subprofile_id": "civil_familia", "label": "Familia, niñez y adolescencia", "status": "DRAFT" },
+        { "subprofile_id": "civil_sucesorio", "label": "Sucesiones", "status": "DRAFT" },
+        { "subprofile_id": "civil_inmobiliario", "label": "Inmuebles y patrimonio", "status": "DRAFT" }
+      ]
+    },
+    {
+      "practice_area_id": "comercial_empresarial",
+      "public_label": "Comercial y empresarial",
+      "persona_id": "valeria",
+      "persona_name": "Valeria",
+      "persona_version": 1,
+      "character_description": "Mujer adulta de piel morena, pelo corto rizado, blazer color piedra; personaje humano 3D tipo emoji.",
+      "runtime_enabled": false,
+      "subprofiles": [
+        { "subprofile_id": "comercial_societario", "label": "Sociedades", "status": "DRAFT" },
+        { "subprofile_id": "comercial_negocios", "label": "Negocios y operaciones comerciales", "status": "DRAFT" },
+        { "subprofile_id": "comercial_bancario", "label": "Banca y financiación", "status": "DRAFT" },
+        { "subprofile_id": "comercial_concursal", "label": "Insolvencia y reestructuración", "status": "DRAFT" }
+      ]
+    },
+    {
+      "practice_area_id": "laboral",
+      "public_label": "Laboral",
+      "persona_id": "lucia",
+      "persona_name": "Lucía",
+      "persona_version": 1,
+      "character_description": "Mujer adulta, pelo castaño hasta los hombros, blazer grafito; personaje humano 3D tipo emoji.",
+      "runtime_enabled": false,
+      "subprofiles": [
+        { "subprofile_id": "laboral_individual", "label": "Relaciones individuales de trabajo", "status": "DRAFT" },
+        { "subprofile_id": "laboral_colectivo", "label": "Relaciones colectivas de trabajo", "status": "DRAFT" },
+        { "subprofile_id": "laboral_seguridad_social", "label": "Seguridad social", "status": "DRAFT" }
+      ]
+    },
+    {
+      "practice_area_id": "tributario_aduanero",
+      "public_label": "Tributario y aduanero",
+      "persona_id": "martin",
+      "persona_name": "Martín",
+      "persona_version": 1,
+      "character_description": "Hombre adulto, pelo oscuro, gafas negras, traje grafito; personaje humano 3D tipo emoji.",
+      "runtime_enabled": false,
+      "subprofiles": [
+        { "subprofile_id": "tributario_impuestos", "label": "Impuestos y obligaciones formales", "status": "DRAFT" },
+        { "subprofile_id": "tributario_fiscalizaciones", "label": "Fiscalizaciones y controversias tributarias", "status": "DRAFT" },
+        { "subprofile_id": "aduanero_comercio_exterior", "label": "Aduanas y comercio exterior", "status": "DRAFT" }
+      ]
+    },
+    {
+      "practice_area_id": "penal",
+      "public_label": "Penal",
+      "persona_id": "diego",
+      "persona_name": "Diego",
+      "persona_version": 1,
+      "character_description": "Hombre adulto de piel morena, pelo muy corto, barba corta cuidada, blazer azul marino; personaje humano 3D tipo emoji.",
+      "runtime_enabled": false,
+      "subprofiles": [
+        { "subprofile_id": "penal_defensa", "label": "Defensa penal", "status": "DRAFT" },
+        { "subprofile_id": "penal_querella", "label": "Querellas y representación de víctimas", "status": "DRAFT" },
+        { "subprofile_id": "penal_economico", "label": "Delitos económicos", "status": "DRAFT" }
+      ]
+    },
+    {
+      "practice_area_id": "derecho_publico",
+      "public_label": "Derecho público",
+      "persona_id": "camila",
+      "persona_name": "Camila",
+      "persona_version": 1,
+      "character_description": "Mujer adulta, pelo recogido con canas, gafas finas, blazer pizarra; personaje humano 3D tipo emoji.",
+      "runtime_enabled": false,
+      "subprofiles": [
+        { "subprofile_id": "publico_constitucional", "label": "Constitucional y garantías", "status": "DRAFT" },
+        { "subprofile_id": "publico_administrativo", "label": "Administrativo", "status": "DRAFT" },
+        { "subprofile_id": "publico_contratacion", "label": "Contratación pública", "status": "DRAFT" },
+        { "subprofile_id": "publico_regulatorio", "label": "Regulación sectorial", "status": "DRAFT" }
+      ]
+    }
+  ],
+  "supporting_roles": [
+    {
+      "role_id": "coordination",
+      "public_label": "Coordinación IA",
+      "persona_id": "gabriel",
+      "persona_name": "Gabriel",
+      "counts_as_practice_area": false,
+      "legal_opinion_allowed": false,
+      "runtime_enabled": false
+    },
+    {
+      "role_id": "adversarial_review",
+      "public_label": "Revisión adversarial",
+      "persona_id": "santiago",
+      "persona_name": "Santiago",
+      "counts_as_practice_area": false,
+      "participation": "OPTIONAL_WITH_HUMAN_AUTHORIZATION",
+      "runtime_enabled": false
+    }
+  ],
+  "activation_requirements": [
+    "APPROVED_RECONCILED_ADR",
+    "SUBPROFILE_SPECIFIC_SOURCES_AND_RETRIEVAL_POLICY",
+    "SUBPROFILE_SPECIFIC_EVALUATION",
+    "MATTER_ACCESS_AND_HUMAN_OWNER",
+    "EXPLICIT_EXECUTION_AND_BUDGET_AUTHORIZATION",
+    "FINAL_SOURCE_CONTROL_FOR_EXACT_OUTPUT_VERSION"
+  ]
+}

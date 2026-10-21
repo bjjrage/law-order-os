@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const baseline=JSON.parse(fs.readFileSync('f1-f4/reports/baseline.json','utf8'));
+const changed=baseline.files.filter(f=>!fs.existsSync(f.path)||hash(f.path)!==f.sha256).map(f=>f.path);
+const allowed=p=>['package.json','package-lock.json','.gitignore','README.md'].includes(p)||p.startsWith('os-core/src/')||p.startsWith('os-core/testing/')||p==='os-core/tests/persistence.test.ts'||p.startsWith('dist/os-core/');
+const unexpected=changed.filter(p=>!allowed(p));
+const core=JSON.parse(fs.readFileSync('f1-f4/reports/core-regression-final.json','utf8'));
+const integration=JSON.parse(fs.readFileSync('f1-f4/reports/local-integration-verified.json','utf8'));
+const checks=JSON.parse(fs.readFileSync('f1-f4/reports/checks.json','utf8'));
+const result={date:new Date().toISOString(),baseline_files:baseline.files.length,changed_existing:changed,unexpected_changed:unexpected,protected_junta_and_phase2_unchanged:unexpected.filter(p=>p.startsWith('junta-juridica/')||p.startsWith('phase2/')).length===0,core:{pass:core.success,passed:core.numPassedTests,files:core.testResults.length},integration:{pass:integration.success,passed:integration.numPassedTests,files:integration.testResults.length,auth:'TEST_DOUBLE_ONLY',database:'REAL_LOCAL_POSTGRESQL'},checks,paid_calls:0,deployments:0,production_migrations:0,real_supabase_e2e:'BLOCKED_NOT_RUN'};
+fs.writeFileSync('f1-f4/reports/delivery-verification.json',JSON.stringify(result,null,2));
+console.log(JSON.stringify({...result,checks:undefined},null,2));
+if(unexpected.length||!core.success||!integration.success||checks.some(c=>c.exit_code!==0))process.exitCode=1;

@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "network_guard": true,
+  "paid_inference_usd": 0,
+  "deployments": 0,
+  "smoke_run_id": "run:a496bfc3a5875d53608223474f99b2ca",
+  "results": [
+    {
+      "name": "offline-smoke",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "HUMAN_REVIEW_PENDING",
+      "error_code": null,
+      "pass": true
+    },
+    {
+      "name": "offline-idempotence",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "HUMAN_REVIEW_PENDING",
+      "error_code": null,
+      "pass": true
+    },
+    {
+      "name": "offline-show",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "HUMAN_REVIEW_PENDING",
+      "error_code": null,
+      "pass": true
+    },
+    {
+      "name": "known-offline-regressions",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "error_code": null,
+      "pass": true
+    },
+    {
+      "name": "live-preflight-pure",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "BLOCKED",
+      "error_code": null,
+      "pass": true
+    },
+    {
+      "name": "live-smoke-without-authorization",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "BLOCKED",
+      "error_code": "EXPLICIT_PAID_CALL_AUTHORIZATION_REQUIRED",
+      "pass": true
+    },
+    {
+      "name": "general-live-without-authorization",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "status": "BLOCKED",
+      "error_code": "EXPLICIT_PAID_CALL_AUTHORIZATION_REQUIRED",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "ML-1 y ML-2, identificadas como propiedad de Sur del Lago bajo custodia de Ribera",
+      "explanation": "Distingue correctamente propiedad y custodia, y no trata la estimación de PYG 60.000.000 como precio aceptado. También recomienda depurar la lista y verificar los bienes propios."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "acepta la cesión desde el 02/11 solo si antes",
+      "explanation": "Explica que la carta contiene una aceptación condicionada, enumera sus requisitos y propone hacerlos condiciones previas al cierre, incluida la inspección pendiente."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no debe instrumentarse como un simple “cierre y reapertura” de legajos",
+      "explanation": "Relaciona la disponibilidad de los técnicos con la condición comercial y advierte que la fecha administrativa propuesta no resuelve por sí sola antigüedad, empleador ni condiciones laborales."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Las tres partes deben acordar quién produce, entrega y factura",
+      "explanation": "Identifica que el anticipo permanece en Ribera y exige un acuerdo tripartito sobre fondos, prestación y saldo, sin proponer un segundo cobro ni presentar el anticipo como ingreso nuevo de Fresno."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no son un depósito adicional",
+      "explanation": "Distingue el precio diferido de una garantía adicional y señala que el mecanismo y su plazo no aseguran automáticamente todas las contingencias. Propone negociar procedimiento y respaldo sin afirmar que la retención sea suficiente."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No corresponde descontarlo automáticamente del precio ni compensarlo con el anticipo",
+      "explanation": "Mantiene separados el reclamo controvertido de PYG 40.000.000 y el anticipo, y recomienda preservar el procedimiento de revisión contractual."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Sin clasificación de los elementos, precio definitivo y comprobantes no puede cuantificarse el impuesto",
+      "explanation": "Aplica las disposiciones tributarias al problema sin inventar una tasa o liquidación, y reconoce que el precio, los activos transferibles y los comprobantes requieren definición."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "PYG 8.000.000 por vacaciones es un estimado agregado",
+      "explanation": "No presenta el estimado como deuda definitiva y pide conciliaciones individuales. También explica condicionalmente la responsabilidad por sustitución del empleador y reconoce que los registros aportados son incompletos."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [],
+  "recommendation_coherent": true,
+  "limitations": [
+    "Las fuentes legales recibidas indican revisión temporal NOT_ATTESTED y no acreditan consolidación al corte; el memo reconoce esta limitación y propone verificar vigencia y normativa complementaria antes de firmar.",
+    "La conclusión sobre tributación permanece necesariamente provisional: el expediente no contiene clasificación fiscal aprobada, cuenta final ni comprobantes suficientes para una liquidación."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "d5e6ac8725e446aaa8d8b27ee7ea96e7",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H01",
+      "quote": "ML-1 y ML-2, identificadas como propiedad de Sur del Lago bajo custodia de Ribera",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H02",
+      "quote": "acepta la cesión desde el 02/11 solo si antes",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H03",
+      "quote": "no debe instrumentarse como un simple “cierre y reapertura” de legajos",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H04",
+      "quote": "Las tres partes deben acordar quién produce, entrega y factura",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H05",
+      "quote": "no son un depósito adicional",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H06",
+      "quote": "No corresponde descontarlo automáticamente del precio ni compensarlo con el anticipo",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H07",
+      "quote": "Sin clasificación de los elementos, precio definitivo y comprobantes no puede cuantificarse el impuesto",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H08",
+      "quote": "PYG 8.000.000 por vacaciones es un estimado agregado",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 1,
+  "missing_required_quote_count": 0
+}

@@ -1,0 +1,69 @@
+.analysis-level-picker {
+  display: grid;
+  gap: 5px;
+  margin: 8px 0;
+  min-width: 0;
+}
+.analysis-level-picker > div {
+  display: flex;
+  gap: 0;
+  padding: 3px;
+  border: 1px solid #c7d6ce;
+  border-radius: 9px;
+  background: #edf2ec;
+  width: fit-content;
+}
+.analysis-level-picker button {
+  min-height: 30px;
+  min-width: 64px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #234c58;
+  padding: 5px 12px;
+}
+.analysis-level-picker button[aria-pressed="true"] {
+  background: #234c58;
+  color: #fff;
+  box-shadow: 0 1px 3px #153b4526;
+}
+.analysis-level-picker button:focus-visible {
+  outline: 2px solid #ad965a;
+  outline-offset: 2px;
+}
+.analysis-level-picker small {
+  color: #637664;
+  line-height: 1.45;
+}
+.unified-consultation {
+  padding: 24px;
+  border: 1px solid #d1ded5;
+  border-radius: 12px;
+  background: #fffefa;
+  display: grid;
+  gap: 16px;
+  max-width: 980px;
+}
+.unified-consultation h2,
+.unified-consultation p {
+  margin: 0;
+}
+.unified-consultation textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid #739687;
+  border-radius: 8px;
+  background: #fff;
+  resize: vertical;
+}
+.unified-consultation label {
+  display: grid;
+  gap: 6px;
+}
+.unified-consultation-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}

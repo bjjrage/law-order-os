@@ -1,0 +1,32 @@
+{
+  "tests": {
+    "total": 173,
+    "passed": 173,
+    "failed": 0,
+    "files": 11
+  },
+  "benchmark": {
+    "status": "PASS",
+    "bibliography_v2_passed": 24,
+    "bibliography_v2_total": 24,
+    "original_extraction_recall": 1,
+    "external_independent_validation": false
+  },
+  "smoke": {
+    "run_id": "run:9b23f158562c0cba3e36fee47e5c1158",
+    "status": "HUMAN_REVIEW_PENDING",
+    "reference_verification": "PASS_IN_SCOPE",
+    "labels": [
+      "SIMULATED_VERIFIED"
+    ]
+  },
+  "holdout_hashes": {
+    "v1": "f68295e548c863f69a6eb280dee1776a9e9735bd4f5cce0b8b26fc22ecc29399",
+    "v2": "1a5d1a1ee10849e79a986163e71a1cafdc32ace6f7d5611b504685b66cf73735"
+  },
+  "typecheck": "PASS",
+  "build": "PASS",
+  "paid_calls": 0,
+  "external_requests": 0,
+  "deployments": 0
+}

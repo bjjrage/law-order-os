@@ -1,0 +1,149 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No pagar su valor a Ribera ni tratarlas como bienes adquiridos",
+      "explanation": "El memo distingue la propiedad de Sur del Lago de los equipos de Ribera y propone excluir las matrices del precio, sin presentar los PYG 60.000.000 como valor de venta aceptado."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "aceptación de cesión sujeta a condiciones, no una aprobación técnica ya emitida",
+      "explanation": "Describe correctamente un consentimiento condicionado y condiciona el cierre a que se acrediten la inspección, la trazabilidad y la disponibilidad o sustitución técnica aceptada."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No recomendaría “cerrar y reabrir” como si ello borrara antigüedad o pasivos.",
+      "explanation": "Relaciona la continuidad de los técnicos con la condición comercial del cliente y trata la antigüedad y los saldos laborales como cuestiones pendientes, sin presumir acuerdos individuales."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "un acuerdo tripartito que determine quién fabrica y factura, cómo se imputa el anticipo",
+      "explanation": "Reconoce que los PYG 120.000.000 permanecen en Ribera, separa el saldo del pedido y propone documentar la prestación y los pagos para evitar doble cobro."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "los 240.000.000 no deben contarse dos veces",
+      "explanation": "Aclara que el saldo diferido integra el precio, no es garantía adicional, y que su suficiencia, procedimiento, cobertura temporal y relación con prestaciones futuras siguen sin resolverse."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "una exposición discutida, no deuda reconocida ni compensación documentada con OP-44",
+      "explanation": "Distingue el reclamo de PYG 40.000.000 del anticipo y propone revisión contractual e indemnidad sin convertirlo en deuda cierta ni descontarlo automáticamente."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "no corresponde calcular ahora impuesto sobre PYG 900.000.000",
+      "explanation": "Evita inventar una liquidación y solicita análisis por componentes, pero el tratamiento tributario queda enunciado de forma general y no desarrolla efectos potenciales específicos de la transferencia del establecimiento ni el tratamiento fiscal diferenciado de bienes, derechos y fabricación pendiente."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "PYG 8.000.000 de vacaciones sin liquidación individual ni prueba de cancelación",
+      "explanation": "Califica correctamente el importe como estimación y exige conciliación individual y respaldo, además de reconocer que la retención no extingue derechos laborales."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MINOR",
+      "category": "UNSUPPORTED_CLAIM",
+      "exact_output_quote": "La operación debe reestructurarse para excluir del precio las matrices que pertenecen a Sur del Lago",
+      "evidence_locator": "P03-D02 v3 [P01–P05]; P03-D05 v1 [P02–P04]",
+      "explanation": "La exclusión de las matrices como bienes adquiridos está respaldada, pero el expediente no fija cómo repercutirá exactamente esa exclusión en la contraprestación. El memo luego propone un ajuste, pero la frase inicial puede leerse como un ajuste económico ya determinado."
+    }
+  ],
+  "novel_valid_findings": [
+    "El análisis tributario cita los artículos 80 y 85 de la Ley 6380, pero no examina la definición de enajenación del artículo 81, que incluye la transferencia de empresas y de derechos patrimoniales (F03-L00604–L00614). Esa omisión limita la evaluación por separado de activos y derechos y del encuadre fiscal de la operación."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "Las fuentes jurídicas disponibles están marcadas como no revisadas temporalmente; el material no acredita consolidación normativa al 19/10/2026.",
+    "El memo identifica que la aplicación del artículo 28 del Código del Trabajo a una transferencia de activos depende de los hechos y pide confirmarla, pero no dispone de información suficiente para resolver esa calificación.",
+    "La recomendación depende de consentimientos, aprobación técnica, conciliaciones laborales y análisis tributario aún pendientes."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "7e46424f571f401cb0dcedb09822fba9",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H01",
+      "quote": "No pagar su valor a Ribera ni tratarlas como bienes adquiridos",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H02",
+      "quote": "aceptación de cesión sujeta a condiciones, no una aprobación técnica ya emitida",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H03",
+      "quote": "No recomendaría “cerrar y reabrir” como si ello borrara antigüedad o pasivos.",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H04",
+      "quote": "un acuerdo tripartito que determine quién fabrica y factura, cómo se imputa el anticipo",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H05",
+      "quote": "los 240.000.000 no deben contarse dos veces",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H06",
+      "quote": "una exposición discutida, no deuda reconocida ni compensación documentada con OP-44",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H07",
+      "quote": "no corresponde calcular ahora impuesto sobre PYG 900.000.000",
+      "treatment": "PARTIAL",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H08",
+      "quote": "PYG 8.000.000 de vacaciones sin liquidación individual ni prueba de cancelación",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "ERROR",
+      "index": 0,
+      "quote": "La operación debe reestructurarse para excluir del precio las matrices que pertenecen a Sur del Lago",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 0,
+  "missing_required_quote_count": 0
+}

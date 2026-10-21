@@ -1,0 +1,17 @@
+{
+  "set_id": "holdout-v1-frozen-2026-10-12",
+  "synthetic": true,
+  "purpose": "Independent finite deterministic checker evaluation; no provider quality claim",
+  "document": { "number": "78106", "date": "2025-06-18", "court": "Órgano Ficticio Holdout", "resolution_type": "Resolución", "quote": "El registro de entrega debe conservarse íntegramente." },
+  "cases": [
+    { "id": "h01", "number": "78106", "court": "Órgano Ficticio Holdout", "date": "2025-06-18", "quote": null, "genuine": true, "expected_identity": "VERIFIED_IDENTITY" },
+    { "id": "h02", "number": "78107", "court": "Órgano Ficticio Holdout", "date": "2025-06-18", "quote": null, "genuine": false, "expected_identity": "NOT_FOUND_IN_SCOPE" },
+    { "id": "h03", "number": "78106", "court": "Órgano Alterado Holdout", "date": "2025-06-18", "quote": null, "genuine": false, "expected_identity": "METADATA_MISMATCH" },
+    { "id": "h04", "number": "78106", "court": "Órgano Ficticio Holdout", "date": "2025-06-18", "quote": "La entrega se presume incluso sin registro.", "genuine": true, "expected_identity": "VERIFIED_IDENTITY", "expected_quote": "QUOTE_MISMATCH" }
+  ],
+  "extraction_texts": [
+    { "text": "Resolución N° 78106 del 2025-06-18 | tribunal: Órgano Ficticio Holdout", "expected_citations": 1 },
+    { "text": "Decreto N° 88300 del 2025-07-12 | organismo: Poder Ficticio", "expected_citations": 1 },
+    { "text": "Acordada 334 de fecha 18 de junio de 2025.", "expected_citations": 1 }
+  ]
+}

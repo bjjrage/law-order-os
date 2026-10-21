@@ -1,0 +1,148 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Las matrices tampoco deben tratarse como bienes propios incluidos en la venta.",
+      "explanation": "Distingue la propiedad de Sur del Lago del valor estimado interno y recomienda excluirlas de los activos vendidos, sin presentar los PYG 60.000.000 como precio aceptado."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La carta es una aceptación condicionada, no evidencia de que las condiciones ya se cumplieron.",
+      "explanation": "Describe correctamente el consentimiento condicionado, las condiciones técnicas y la inspección pendiente; no confunde la carta con aprobación final."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La fecha administrativa propuesta no resuelve por sí sola la continuidad.",
+      "explanation": "Relaciona la condición comercial de los técnicos con la incertidumbre laboral, cita el art. 28 del Código del Trabajo y pide determinar hechos y conciliar legajos."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El dinero permanece en Ribera y no se acredita su transferencia a Fresno",
+      "explanation": "Expone el anticipo, el saldo comercial y el riesgo de doble cobro, y pide un acuerdo tripartito sobre fondos, prestación futura y facturación."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "estos últimos forman parte del precio",
+      "explanation": "Aclara que los PYG 240 millones no son garantía adicional y que el mecanismo no cubre automáticamente riesgos posteriores ni la prestación pendiente."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El reclamo de agosto-7 debe permanecer separado y disputado.",
+      "explanation": "Distingue los PYG 40 millones del anticipo, refleja que no están reconocidos y recomienda no compensarlos automáticamente, manteniendo el procedimiento de revisión."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No cuantifico un impuesto exigible.",
+      "explanation": "Identifica que faltan clasificación, base, tasa y definición contractual sobre impuestos, y pide análisis fiscal escrito sin convertir las cifras comerciales en una liquidación."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La estimación agregada de PYG 8.000.000 por vacaciones no es una liquidación individual ni prueba de pago",
+      "explanation": "Caracteriza correctamente el estimado y señala que recibos parciales y retención del precio no acreditan la extinción de obligaciones laborales."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MATERIAL",
+      "category": "INCORRECT_SOURCE_APPLICATION",
+      "exact_output_quote": "La Ley 6380 incluye en el concepto de enajenación transferencias de empresas y derechos patrimoniales, y prevé una base asociada al precio devengado e importes cargados al comprador",
+      "evidence_locator": "F03-L00098; F03-L00129–F03-L00131; F03-L00605–F03-L00612; F03-L00664–F03-L00668",
+      "explanation": "El memo no analiza el artículo 13 de la Ley 6380, que establece que la transferencia de establecimientos comerciales cierra el ejercicio económico del enajenante y obliga al adquirente a mantener el mismo valor fiscal de los bienes. Esa regla es directamente pertinente a la operación propuesta y debe incorporarse o dejarse como diligencia fiscal expresa."
+    }
+  ],
+  "novel_valid_findings": [
+    "Falta identificar y verificar el régimen jurídico específico de transferencia de establecimiento/unidad comercial y sus formalidades, además de las reglas generales de compraventa citadas; el inventario de fuentes no aporta la legislación comercial necesaria. Conviene condicionar la recomendación a esa investigación, sin presumir consecuencias concretas no acreditadas por el corpus."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El material normativo indica expresamente que su revisión temporal no está atestiguada; el memo reconoce la falta de consolidación a la fecha de corte y pide verificación actualizada.",
+    "La pertinencia y aplicación del régimen de transferencia de establecimiento comercial no puede resolverse con las fuentes jurídicas completas aportadas."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "db8f9e2685e042c49e5b90ac68f095e4",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H01",
+      "quote": "Las matrices tampoco deben tratarse como bienes propios incluidos en la venta.",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H02",
+      "quote": "La carta es una aceptación condicionada, no evidencia de que las condiciones ya se cumplieron.",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H03",
+      "quote": "La fecha administrativa propuesta no resuelve por sí sola la continuidad.",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H04",
+      "quote": "El dinero permanece en Ribera y no se acredita su transferencia a Fresno",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H05",
+      "quote": "estos últimos forman parte del precio",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H06",
+      "quote": "El reclamo de agosto-7 debe permanecer separado y disputado.",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H07",
+      "quote": "No cuantifico un impuesto exigible.",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H08",
+      "quote": "La estimación agregada de PYG 8.000.000 por vacaciones no es una liquidación individual ni prueba de pago",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "ERROR",
+      "index": 0,
+      "quote": "La Ley 6380 incluye en el concepto de enajenación transferencias de empresas y derechos patrimoniales, y prevé una base asociada al precio devengado e importes cargados al comprador",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 1,
+  "missing_required_quote_count": 0
+}

@@ -1,0 +1,6 @@
+{
+ "extends":"../tsconfig.json",
+ "compilerOptions":{"noEmit":true,"allowImportingTsExtensions":true,"jsx":"react-jsx","lib":["ES2023","DOM","DOM.Iterable"],"types":["node","vite/client"]},
+ "include":["api/**/*.ts","web/src/**/*.ts","web/src/**/*.tsx","web/vite.config.ts","../packages/**/*.ts","../infra/local/**/*.ts","../f1-f4/tests/**/*.ts","../local-browser/tests/**/*.ts"],
+ "exclude":["../f1-f4/baseline"]
+}

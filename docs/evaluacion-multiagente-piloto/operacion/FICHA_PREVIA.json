@@ -1,0 +1,80 @@
+{
+  "schema_version": "focused-investigation-pilot-preflight-v1",
+  "package_version": "0.1",
+  "prepared_on": "2026-10-19",
+  "timezone": "America/Asuncion",
+  "status": "PREPARED_FOR_HUMAN_REVIEW_NOT_RUN",
+  "paid_calls_authorized": false,
+  "architecture_changes_authorized": false,
+  "execution_enabled": false,
+  "case_ids": ["P01", "P02", "P03"],
+  "modalities": ["A", "B", "C"],
+  "repetitions_per_case_modality": 2,
+  "planned_final_documents": 18,
+  "primary_comparison": "C_vs_B",
+  "secondary_comparisons": ["B_vs_A", "C_vs_A"],
+  "model": {
+    "provider": null,
+    "effective_model_id": null,
+    "version_or_snapshot": null,
+    "generation_parameters": null,
+    "reasoning_parameters": null,
+    "seed_policy": null,
+    "usage_accounting_limits": null
+  },
+  "resources": {
+    "max_usd_per_complete_run": null,
+    "max_usd_total_pilot": null,
+    "max_calls_per_complete_run": null,
+    "max_elapsed_minutes_per_complete_run": null,
+    "token_limits_and_accounting": null,
+    "price_snapshot_and_currency": null,
+    "integration_reserve_policy": null,
+    "shared_checker_auditor_repair_policy": null,
+    "technical_failure_and_replacement_policy": null
+  },
+  "evidence": {
+    "mode": "FROZEN_LOCAL_CORPUS",
+    "open_web_during_inference": false,
+    "same_public_files_for_all_modalities": true,
+    "source_registry": "../publico/fuentes/FUENTES.json",
+    "human_source_review": "PENDING",
+    "legal_temporal_coverage_review": "PENDING",
+    "common_context_policy": null,
+    "tool_allowlist_and_scope": null,
+    "isolation_check_record": null
+  },
+  "human_review": {
+    "operator": null,
+    "legal_curator": null,
+    "reviewer_1": null,
+    "reviewer_2": null,
+    "adjudicator": null,
+    "reference_review_completed_at": null,
+    "reviewer_assignment_and_prior_exposure_policy": null,
+    "correction_time_limit_and_censoring_policy": null
+  },
+  "decision_criteria_to_freeze_before_inference": {
+    "minimum_useful_human_time_improvement": null,
+    "material_quality_noninferiority_margin": null,
+    "maximum_acceptable_total_cost": null,
+    "critical_error_rule_and_rationale": null,
+    "justification_for_thresholds": null,
+    "allowed_claim_scope": "DESCRIPTIVE_DIAGNOSTIC_SIGNAL_ONLY"
+  },
+  "freeze": {
+    "preparation_manifest": "../MANIFIESTO.json",
+    "execution_protocol_approved_by": null,
+    "execution_protocol_approved_at": null,
+    "pre_execution_manifest_sha256": null,
+    "pre_execution_configuration_sha256": null,
+    "paid_call_authorization_reference": null
+  },
+  "null_value_meaning": "REQUIRED_VALUE_NOT_YET_FIXED; NEVER_ZERO_OR_UNLIMITED",
+  "results": {
+    "inference_runs": "NOT_RUN",
+    "legal_human_review": "NOT_RUN",
+    "correction_sessions": "NOT_RUN",
+    "legal_superiority": "NOT_ESTABLISHED"
+  }
+}

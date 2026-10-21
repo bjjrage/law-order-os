@@ -1,0 +1,46 @@
+node_modules/
+dist/
+.npm-cache/
+.env
+.env.*
+!.env.example
+.board-data/
+coverage/
+*.tmp
+.local-dev/
+f0-f1/local-board-data/
+f1-f4/local-board-data/
+supabase/.temp/
+supabase/.branches/
+playwright-report/
+test-results/
+# Runtime data and credentials stay on this computer.
+*.env
+*.env.local
+*.log
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pem
+*.p12
+*.pfx
+**/*secrets*.json
+**/*credentials*.json
+
+# Downloaded corpus, generated catalogs, and local case/session output.
+/local-browser/library/research/
+/apps/web/public/library/
+/junta-local/reports/
+/docs/specialist-studio/reports/
+/local-browser/reports/**
+!/local-browser/reports/**/
+!/local-browser/reports/**/*.mjs
+!/local-browser/reports/**/*.ts
+
+# Separate embedded project, outside LAW & ORDER OS.
+/nexora-logistic/
+
+# Local project backups; keep them outside source control.
+/LAW & ORDER OS.zip
+/LAW & ORDER OS.rar

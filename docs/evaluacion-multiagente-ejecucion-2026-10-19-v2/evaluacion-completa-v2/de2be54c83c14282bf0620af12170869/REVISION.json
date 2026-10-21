@@ -1,0 +1,119 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "las propuestas del vendedor son alternativas para discutir, no aceptadas",
+      "explanation": "Distingue correctamente negociación de aceptación y señala que el comité no autorizó compra ni reserva, con referencias a las propuestas y al acta interna."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "la compra de acciones no evita la aprobación",
+      "explanation": "Explica que el cambio de control también requiere autorización previa y escrita, y diferencia ese supuesto de la cesión y sustitución del prestador."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La reunión ofrecida para el 27/10 no garantiza una decisión ese día",
+      "explanation": "Relaciona la respuesta de Horizonte con la fecha posterior a la reserva y evita tratar la reunión, el silencio o la predisposición como consentimiento o rechazo."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No hay base para recomendar el pago",
+      "explanation": "Expone las condiciones desfavorables, la falta de acuerdo separado, autorización y custodia, y deja abierta la negociación de protecciones alternativas sin presentarlas como ya acordadas."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La aplicación a una operación concreta depende de cómo se instrumente y ejecute",
+      "explanation": "Diferencia la continuidad del empleador en la compra de acciones de una posible sustitución en activos, cita el artículo 28 y no trata renuncias o liquidaciones inexistentes como hechos."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no puede liquidarse la alternativa B",
+      "explanation": "Identifica los errores de las hojas, evita tratar PYG 90 millones como impuesto exigible y distingue el tratamiento de acciones, establecimiento y bienes sin calcular una obligación no sustentada."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Es un estimado interno, no una liquidación ni prueba de pago",
+      "explanation": "Conserva el carácter preliminar de los PYG 16 millones y propone conciliar jornadas, salarios, vacaciones y aportes sin afirmar que la diligencia acredita inexistencia de obligaciones."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "Conviene verificar con fechas exactas de ingreso si alguno de los técnicos alcanzó diez años de servicio antes del cierre. El informe solo da años, no fechas completas, y el Código del Trabajo contempla estabilidad tras diez años ininterrumpidos; esa posible exposición podría incidir especialmente en una terminación o sustitución mal planificada (P02-D06 v1, P02-D06-P01; Ley 213, art. 94, F02-L00446–L00452)."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El inventario común indica que las fuentes normativas tienen revisión temporal NOT_ATTESTED y el propio memo reconoce que no acredita consolidación normativa al corte; sus conclusiones tributarias y laborales requieren verificación de vigencia y normas complementarias antes de firmar o cerrar.",
+    "La estimación de ingresos atribuibles a Horizonte y los datos laborales proceden de manifestaciones y documentos privados del expediente; no equivalen a comprobación independiente ni a liquidaciones oficiales."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "de2be54c83c14282bf0620af12170869",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H01",
+      "quote": "las propuestas del vendedor son alternativas para discutir, no aceptadas",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H02",
+      "quote": "la compra de acciones no evita la aprobación",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H03",
+      "quote": "La reunión ofrecida para el 27/10 no garantiza una decisión ese día",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H04",
+      "quote": "No hay base para recomendar el pago",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H05",
+      "quote": "La aplicación a una operación concreta depende de cómo se instrumente y ejecute",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H06",
+      "quote": "no puede liquidarse la alternativa B",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H07",
+      "quote": "Es un estimado interno, no una liquidación ni prueba de pago",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 2,
+  "missing_required_quote_count": 0
+}

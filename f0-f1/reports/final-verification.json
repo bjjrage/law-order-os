@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-10-13T15:31:58.400Z",
+  "baseline_files": 483,
+  "changed_existing_files": [],
+  "canonical": [
+    {
+      "path": "README_PRIMERO.md",
+      "expected": "4b265d763bcc256837f8a633d0984dccca1261a690bb53d3bb721a50ec664fcf",
+      "actual": "4b265d763bcc256837f8a633d0984dccca1261a690bb53d3bb721a50ec664fcf"
+    },
+    {
+      "path": "docs/ADR_RECONCILIACION_V2.md",
+      "expected": "3bc16bcb0b291c5d2afd3d4e2e9f9b5b2be546f2ad8e39b5adafae96b0bd0c8c",
+      "actual": "3bc16bcb0b291c5d2afd3d4e2e9f9b5b2be546f2ad8e39b5adafae96b0bd0c8c"
+    },
+    {
+      "path": "docs/CODEX_HANDOFF_INSTALACION.md",
+      "expected": "ff02714fb78813556b1cad04bde2e10f64b51d5668df55f2e09a7c9687b751ba",
+      "actual": "ff02714fb78813556b1cad04bde2e10f64b51d5668df55f2e09a7c9687b751ba"
+    },
+    {
+      "path": "docs/DOCUMENT_MANIFEST_SHA256.json",
+      "expected": "f6cb3c0efc06e9b622a20217c36936300afa0c8e6eb196209553e0f21dae95ec",
+      "actual": "2df71a6a5a5712d062e35ee97db6e8b4a00daae663d40dc105b92326ebdb83c4"
+    },
+    {
+      "path": "docs/LAW_ORDER_OS_BLUEPRINT_v2.0.html",
+      "expected": "092e31b30093134de6e85252d2105c56e60192928160afb67954391020f98563",
+      "actual": "092e31b30093134de6e85252d2105c56e60192928160afb67954391020f98563"
+    },
+    {
+      "path": "docs/LAW_ORDER_OS_BLUEPRINT_v2.0.md",
+      "expected": "d3d7d1ac3a3756689b817b816eca01ef63a2ef493984cb7aa6d63daa2849872b",
+      "actual": "d3d7d1ac3a3756689b817b816eca01ef63a2ef493984cb7aa6d63daa2849872b"
+    },
+    {
+      "path": "docs/LAW_ORDER_OS_ROADMAP_v2.0.html",
+      "expected": "84d444daeba6be2a72c38dfffc0e71b4b7f995d4bf3d58fc55b88904c75082a0",
+      "actual": "84d444daeba6be2a72c38dfffc0e71b4b7f995d4bf3d58fc55b88904c75082a0"
+    },
+    {
+      "path": "docs/LAW_ORDER_OS_ROADMAP_v2.0.md",
+      "expected": "dc8631c93c50949a5c4ed113d4db4c7ee04dbe6043530fe5d762382cb3e38409",
+      "actual": "dc8631c93c50949a5c4ed113d4db4c7ee04dbe6043530fe5d762382cb3e38409"
+    },
+    {
+      "path": "docs/fuentes/FUENTES_Y_APIS_PARAGUAY_v1.1.json",
+      "expected": "8bd3f2872655cd7e62e4437f3fd729d515085410a7d9a24b7028693f8a2bd656",
+      "actual": "8bd3f2872655cd7e62e4437f3fd729d515085410a7d9a24b7028693f8a2bd656"
+    },
+    {
+      "path": "docs/fuentes/FUENTES_Y_APIS_PARAGUAY_v1.1.md",
+      "expected": "bf77aced9583722742cdfde8537b71ef552820296b5d5733cb4f79d46dacc283",
+      "actual": "bf77aced9583722742cdfde8537b71ef552820296b5d5733cb4f79d46dacc283"
+    },
+    {
+      "path": "docs/historico/BLUEPRINT_v1.1.md",
+      "expected": "cf353defa5546a67da32fc55fba1276f6a4176663a60e613c09c83b215aba56b",
+      "actual": "cf353defa5546a67da32fc55fba1276f6a4176663a60e613c09c83b215aba56b"
+    },
+    {
+      "path": "docs/historico/DECISIONES_v1.1.md",
+      "expected": "7bf6af9cbf5d837bce4a2a6aacb5c7bcf85125159b3f0068f18f6e0010a85de3",
+      "actual": "7bf6af9cbf5d837bce4a2a6aacb5c7bcf85125159b3f0068f18f6e0010a85de3"
+    },
+    {
+      "path": "docs/historico/ROADMAP_v1.1.md",
+      "expected": "d8602127da9cbab67302c056f80d660010c70ffaadcd56aba305e585f6fc8a45",
+      "actual": "d8602127da9cbab67302c056f80d660010c70ffaadcd56aba305e585f6fc8a45"
+    }
+  ],
+  "manifest_self_mismatch": 1,
+  "unexpected_canonical_mismatches": 0,
+  "tests": {
+    "success": true,
+    "total": 271,
+    "passed": 271,
+    "files": 17,
+    "os_core": 42
+  },
+  "missing_deliverables": [],
+  "roadmap": {
+    "canonical_tasks": 78,
+    "matrix_rows": 78,
+    "missing_ids": []
+  },
+  "paid_calls": 0,
+  "deployments": 0
+}

@@ -1,0 +1,105 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P01-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "“precio neto para el vendedor”",
+      "explanation": "Contrasta el precio neto más tributos con el tope de PYG 600.000.000 y condiciona la autorización a una liquidación y, si corresponde, nueva aprobación del comité."
+    },
+    {
+      "reference_id": "P01-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No está acreditado que Maroma abastecerá a Cedro",
+      "explanation": "Distingue el interés preliminar del consentimiento escrito exigido y propone condicionar el cierre o probar la viabilidad de alternativas."
+    },
+    {
+      "reference_id": "P01-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "PYG 9.000.000 registrados sin evidencia de pago en la carpeta",
+      "explanation": "Calcula explícitamente las comisiones registradas, pero no las presenta como deuda definitivamente liquidada; también identifica la falta de conciliación de vacaciones."
+    },
+    {
+      "reference_id": "P01-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Queda pendiente determinar si esta compraventa de activos y continuidad configura sustitución",
+      "explanation": "Expone con cautela la posible aplicación del art. 28 y diferencia la asignación contractual de pasivos de la responsabilidad frente a trabajadores."
+    },
+    {
+      "reference_id": "P01-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No corresponde cuantificar IVA ni asumir una tasa uniforme con este expediente",
+      "explanation": "Rechaza la opinión verbal no revisada, aplica las reglas de IVA a bienes y derechos y deja pendiente el análisis y desglose por componente."
+    },
+    {
+      "reference_id": "P01-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No incluirlo en el precio ni en el modelo de crédito fiscal de Cedro",
+      "explanation": "Reconoce que el saldo figura a nombre de Naranjal y no lo trata como crédito transferible sin fundamento documentado."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "La Ley 6380 incluye en renta bruta el resultado de transferir empresas o establecimientos comerciales (art. 8, numeral 7; F03-L00087–L00100) y regula específicamente la transferencia de establecimientos comerciales, incluido el cierre del ejercicio del enajenante y el mantenimiento de valores fiscales por el adquirente (art. 13; F03-L00129–L00131). Dado el conjunto negociado de inventario, equipos y derechos comerciales, convendría analizar si la operación encaja en ese tratamiento, sin presumir que lo hace; el memo menciona IRE de forma general, pero no aborda esta regla específica."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El inventario de fuentes indica que la revisión temporal de las extracciones no está acreditada; el memo reconoce esa limitación y pide verificar la normativa vigente al corte.",
+    "La aplicabilidad de la sustitución del empleador y la clasificación tributaria de la transferencia dependen de hechos y análisis adicionales; el memo los deja abiertos en lugar de afirmarlos como conclusiones definitivas. "
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "97a870f505c9437d8d70524e7fc88ff7",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H01",
+      "quote": "“precio neto para el vendedor”",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H02",
+      "quote": "No está acreditado que Maroma abastecerá a Cedro",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H03",
+      "quote": "PYG 9.000.000 registrados sin evidencia de pago en la carpeta",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H04",
+      "quote": "Queda pendiente determinar si esta compraventa de activos y continuidad configura sustitución",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H05",
+      "quote": "No corresponde cuantificar IVA ni asumir una tasa uniforme con este expediente",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H06",
+      "quote": "No incluirlo en el precio ni en el modelo de crédito fiscal de Cedro",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 4,
+  "missing_required_quote_count": 0
+}

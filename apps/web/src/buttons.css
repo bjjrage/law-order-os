@@ -1,0 +1,299 @@
+/* Shared controls: actions, file labels, navigation and interactive surfaces.
+   Feature styles own geometry; this sheet alone owns button appearance/states. */
+:root {
+  --action-ink: #173744;
+  --action-ink-hover: #2d6674;
+  --action-ink-pressed: #102f3a;
+  --action-paper: #fffefa;
+  --action-soft: #e8eeea;
+  --action-secondary-hover: #244f5c;
+  --action-secondary-pressed: #173b46;
+  --action-ghost-text: #245768;
+  --action-ghost-hover: #e0eae3;
+  --action-ghost-pressed: #cbded1;
+  --action-danger-soft: #f5e9e3;
+  --action-danger-text: #8a4135;
+  --action-danger-hover: #9d4f42;
+  --action-danger-pressed: #7c392f;
+  --action-surface-hover: #dbe9dc;
+  --action-surface-selected: #e4ede0;
+  --action-surface-pressed: #cedfce;
+  --action-disabled-bg: #e9ebe7;
+  --action-disabled-text: #687168;
+  --action-focus: #487f8b;
+  --action-duration: 140ms;
+}
+.dashboard-overview .dashboard-operational-kpi {
+  --control-bg: #fffefa;
+  --control-hover-bg: #f1f6ef;
+  --control-hover-text: #173744;
+  --control-selected-bg: #edf5eb;
+  --control-selected-text: #173744;
+}
+.dashboard-overview
+  :is(
+    .dashboard-priority-link,
+    .dashboard-office-totals button,
+    .dashboard-today-list > button,
+    .dashboard-case-list > button
+  ) {
+  --control-bg: transparent;
+  --control-hover-bg: #f1f6ed;
+  --control-hover-text: #173744;
+  --control-pressed-bg: #e4eedf;
+  --control-pressed-text: #173744;
+}
+
+/* Calendar reservations use the same control system, including open pickers.
+   Set its tokens here so the shared button rules cannot restore gray defaults. */
+.study-calendar .calendar-time-slot {
+  --control-bg: transparent;
+  --control-text: #1c625b;
+  --control-hover-bg: #c8eee2;
+  --control-hover-text: #1c625b;
+  --control-pressed-bg: #aaddcd;
+  --control-pressed-text: #174e46;
+}
+.study-calendar .calendar-resize-handle {
+  --control-bg: transparent;
+  --control-hover-bg: #a6dfc5;
+  --control-pressed-bg: #8acfaf;
+}
+.agenda-select .agenda-select-trigger,
+.agenda-schedule .agenda-range > button {
+  --control-bg: #fff;
+  --control-text: #254b54;
+  --control-border: #cdded4;
+  --control-hover-bg: #eef8f2;
+  --control-hover-text: #254b54;
+  --control-pressed-bg: #e0f0e7;
+  --control-pressed-text: #254b54;
+}
+.agenda-select .agenda-select-popover [role="option"],
+.agenda-schedule .agenda-date-grid > button,
+.agenda-schedule .agenda-time-options > button,
+.agenda-schedule .agenda-durations > button {
+  --control-bg: transparent;
+  --control-text: #416951;
+  --control-hover-bg: #e2f4e9;
+  --control-hover-text: #245b51;
+  --control-pressed-bg: #cbe8d8;
+  --control-pressed-text: #245b51;
+  --control-selected-bg: #245b51;
+  --control-selected-text: #fff;
+}
+.agenda-select .agenda-select-popover [role="option"] {
+  --control-selected-bg: #e1f1e9;
+  --control-selected-text: #20584d;
+}
+
+:where(button, a.button, label.button) {
+  min-height: 26px;
+  padding: 4px 9px;
+  border-radius: 7px;
+  font:
+    600 12px/1.3 "Segoe UI",
+    Inter,
+    Arial,
+    sans-serif;
+}
+:is(button, a.button, label.button) {
+  --control-bg: var(--action-soft);
+  --control-text: var(--action-ink);
+  --control-border: transparent;
+  --control-hover-bg: var(--action-secondary-hover);
+  --control-hover-text: var(--action-paper);
+  --control-pressed-bg: var(--action-secondary-pressed);
+  --control-pressed-text: var(--action-paper);
+  --control-selected-bg: var(--action-secondary-hover);
+  --control-selected-text: var(--action-paper);
+  --control-selected-border: transparent;
+  background-color: var(--control-bg);
+  background-image: var(--grain);
+  color: var(--control-text);
+  border: 1px solid var(--control-border);
+  box-shadow: none;
+  transform: none;
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background-color var(--action-duration),
+    color var(--action-duration),
+    border-color var(--action-duration);
+}
+:is(button, a.button, label.button):where(
+  [aria-pressed="true"],
+  [aria-selected="true"]
+) {
+  background-color: var(--control-selected-bg);
+  color: var(--control-selected-text);
+  border-color: var(--control-selected-border);
+}
+@media (hover: hover) {
+  :is(button, a.button, label.button):where(
+    :hover:not(:disabled):not([aria-disabled="true"]):not(:has(input:disabled))
+  ) {
+    background-color: var(--control-hover-bg);
+    color: var(--control-hover-text);
+  }
+}
+:is(button, a.button, label.button):where(
+  :active:not(:disabled):not([aria-disabled="true"]):not(:has(input:disabled))
+) {
+  background-color: var(--control-pressed-bg);
+  color: var(--control-pressed-text);
+}
+:is(button, a.button, label.button):focus-visible,
+:is(a.button, label.button):has(input:focus-visible),
+.shell :is(button, a.button, label.button):focus-visible {
+  outline: 2px solid var(--action-focus);
+  outline-offset: 3px;
+}
+
+/* Main actions. */
+:is(button, a.button, label.button).primary {
+  --control-bg: var(--action-ink);
+  --control-text: var(--action-paper);
+  --control-hover-bg: var(--action-ink-hover);
+  --control-pressed-bg: var(--action-ink-pressed);
+}
+:is(button, a.button, label.button):is(.text-button, .text-action) {
+  --control-bg: transparent;
+  --control-text: var(--action-ghost-text);
+  --control-hover-bg: var(--action-ghost-hover);
+  --control-hover-text: var(--action-ink);
+  --control-pressed-bg: var(--action-ghost-pressed);
+  --control-pressed-text: var(--action-ink);
+  border: 0;
+}
+:is(button, a.button, label.button):is(.danger, .document-remove) {
+  --control-bg: var(--action-danger-soft);
+  --control-text: var(--action-danger-text);
+  --control-hover-bg: var(--action-danger-hover);
+  --control-hover-text: var(--action-paper);
+  --control-pressed-bg: var(--action-danger-pressed);
+  --control-pressed-text: var(--action-paper);
+}
+
+/* All selection controls share the ink state, including library favorites. */
+:is(.segmented, .agenda-filters, .library-counts, .legal-library > .actions)
+  > button,
+.client-filter-chip {
+  --control-bg: var(--action-soft);
+}
+.agenda-filters button[aria-pressed] strong {
+  background: transparent;
+  color: inherit;
+}
+
+/* Tabs keep their underline and their compact, scrollable geometry. */
+button[role="tab"] {
+  --control-bg: transparent;
+  --control-text: var(--action-ghost-text);
+  --control-selected-bg: var(--action-surface-selected);
+  --control-selected-text: var(--action-ink);
+  --control-hover-bg: var(--action-secondary-hover);
+  --control-hover-text: var(--action-paper);
+  border: 0;
+  border-bottom: 3px solid transparent;
+}
+button[role="tab"][aria-selected="true"] {
+  border-bottom-color: var(--action-ink);
+}
+
+/* KPI, rows and specialists are interactive surfaces rather than action buttons. */
+:is(
+    .dashboard-kpis,
+    .dashboard-matters,
+    .dashboard-records,
+    .specialist-selector,
+    .deliberation-steps
+  )
+  > button,
+.deliberation-steps li > button,
+button.summary-control,
+button.specialist-persona {
+  --control-bg: var(--paper);
+  --control-hover-bg: var(--action-surface-hover);
+  --control-hover-text: var(--action-ink);
+  --control-selected-bg: var(--action-surface-selected);
+  --control-selected-text: var(--action-ink);
+  --control-pressed-bg: var(--action-surface-pressed);
+  --control-pressed-text: var(--action-ink);
+}
+button.summary-control,
+button.specialist-persona,
+.deliberation-steps button {
+  --control-bg: transparent;
+}
+button.specialist-persona[aria-expanded="true"],
+.deliberation-steps button[aria-expanded="true"] {
+  background-color: var(--control-selected-bg);
+}
+:is(.dashboard-matters, .dashboard-records) > button {
+  --control-bg: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+}
+.dashboard-kpis > button {
+  --control-border: var(--line);
+  --control-selected-border: #adc1ad;
+  border: 1px solid var(--control-border);
+}
+
+/* Navigation stays legible against the ink sidebar. */
+.sidebar :is(button, a.button, label.button) {
+  --control-bg: #1b3d4a;
+  --control-text: #e6ece9;
+  --control-hover-bg: var(--action-ink-hover);
+  --control-hover-text: var(--action-paper);
+  --control-pressed-bg: var(--action-ink-pressed);
+  --control-pressed-text: var(--action-paper);
+}
+.sidebar button.nav-item {
+  --control-bg: transparent;
+}
+.sidebar button.nav-item.active {
+  --control-bg: var(--action-secondary-hover);
+  --control-text: var(--action-paper);
+  border-left: 3px solid var(--brass);
+}
+@media (min-width: 481px) {
+  .shell.collapsed .sidebar button.nav-item.active {
+    border-left-width: 1px;
+    border-left-color: transparent;
+    border-bottom: 2px solid var(--brass);
+  }
+}
+@media (min-width: 481px) and (max-width: 900px) {
+  .sidebar button.nav-item.active {
+    border-left-width: 1px;
+    border-left-color: transparent;
+    border-bottom: 2px solid var(--brass);
+  }
+}
+
+/* Disabled always wins over hover, selection and the sidebar palette. */
+:is(button, a.button, label.button):where(
+  :disabled,
+  [aria-disabled="true"],
+  :has(input:disabled)
+) {
+  background-color: var(--action-disabled-bg);
+  background-image: none;
+  color: var(--action-disabled-text);
+  border-color: transparent;
+  cursor: not-allowed;
+  opacity: 1;
+}
+:is(button, a.button, label.button)[aria-busy="true"] {
+  background-color: #e1e9e5;
+  color: #49685e;
+  cursor: progress;
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(button, a.button, label.button) {
+    transition: none;
+  }
+}

@@ -1,0 +1,54 @@
+**MEMORANDO CONFIDENCIAL — Cedro Operaciones SA**  
+**Fecha de corte:** 19/10/2026  
+**Asunto:** Compra de activos y derechos comerciales de Naranjal Distribución SA
+
+### Recomendación ejecutiva
+
+Recomiendo **seguir negociando, pero no autorizar un compromiso vinculante de compra en los términos de la propuesta v2**. La propuesta todavía es no vinculante, no ha sido aceptada y no exige pago, entrega ni posesión anticipados (P01-D02 v2, P05). Cedro puede usar la reunión del 23/10 para pedir documentación y negociar condiciones; la decisión de cerrar debería quedar sujeta a condiciones precedentes verificables.
+
+Hay dos obstáculos decisivos. Primero, el precio de PYG 600.000.000 es **neto para Naranjal** y los tributos aplicables se agregarían, mientras que el comité reservó PYG 600.000.000 para el precio y exige volver a aprobación si aumenta el desembolso (P01-D02 v2, P02; P01-D01 v1, P02). Segundo, ni la continuidad del suministro de Maroma ni el costo de las obligaciones laborales están resueltos: Maroma aún no aprobó la cesión y los antecedentes laborales muestran importes pendientes y saldos sin conciliar (P01-D03 v1, P02; P01-D04 v1, P02; P01-D05 v1, P02-P03).
+
+Autorizaría avanzar hacia un contrato definitivo solo si: **(i)** se fija un precio máximo total para Cedro —incluidos los tributos que legalmente le correspondan— o el comité aprueba previamente un desembolso mayor; **(ii)** se obtiene consentimiento escrito de Maroma o un nuevo contrato directo con condiciones comerciales aceptables, o Cedro aprueba el negocio evaluando expresamente que esa continuidad puede no ocurrir; **(iii)** se concluyen la revisión laboral y la tributaria, con protecciones económicas adecuadas; y **(iv)** Naranjal acredita los derechos que realmente puede transferir. Si no se cumplen estas condiciones, corresponde postergar o reconsiderar la compra.
+
+### Mérito y fundamentos
+
+**1. Alcance de la operación y protección económica.**  
+Según el borrador, se ofrecen inventario por PYG 300.000.000, equipos por PYG 180.000.000 y denominación e información comercial transferible por PYG 120.000.000. Se excluyen acciones, inmueble, cuentas por cobrar anteriores, bancos y deuda financiera (P01-D02 v2, P01). Esto coincide con la intención expresada por Cedro de comprar activos y derechos, no la sociedad ni el inmueble (P01-D01 v1, P01). El relevamiento conjunto no encontró diferencias entre el inventario contado y la planilla, pero no fue auditoría de títulos ni verificación con terceros (P01-D07 v1, P01-P02).
+
+La estructura por activos **no permite dar por sentado que no haya IVA**. La Ley 6380 incluye la enajenación de bienes entre los hechos gravados y comprende transferencias de empresas y de derechos patrimoniales (arts. 80-82, especialmente art. 81.1(c) y (f); F03-L00599–L00639). La tasa general reproducida es 10%, con categorías a tasa reducida cuya posible aplicación debe verificarse según los bienes concretos (art. 90; F03-L00700–L00711). Faltan la clasificación detallada de los productos y el análisis fiscal de cada componente. Por tanto, una aplicación hipotética de 10% a los PYG 600.000.000 arrojaría PYG 60.000.000 de IVA y PYG 660.000.000 en total; es **aritmética ilustrativa, no liquidación tributaria**. No aceptar el precio neto sin límite de desembolso y determinación documentada del tratamiento por componente. La propuesta prevé 70% al firmar y 30% contra recepción; además, la ley reproducida sitúa el nacimiento de la obligación de IVA, en general, en la entrega o percepción del precio, lo que ocurra primero (Ley 6380, art. 83; F03-L00641–L00653). Firma, factura, pago y entrega deben coordinarse.
+
+El contador de Naranjal reconoce que no liquidó resultados ni determinó el tratamiento definitivo, y que su comentario inicial de que no habría IVA por no vender acciones fue una impresión no respaldada por análisis (P01-D06 v1, P01-P02). El mismo documento consigna un saldo a favor de IVA de PYG 22.000.000 originado en compras con comprobantes a nombre de Naranjal, sin análisis que permita tratarlo como crédito de Cedro (P01-D06 v1, P03). **Excluir ese saldo de la valoración** salvo prueba jurídica y fiscal específica. Para el IRE del vendedor, las cifras contables aportadas no determinan costo fiscal, depreciaciones admitidas ni impuesto exigible; pedir cálculo al vendedor y establecer que Cedro no asume sus obligaciones tributarias (P01-D06 v1, P01-P02; Ley 6380, arts. 8-9; F03-L00087–L00110).
+
+**2. Maroma y valor comercial.**  
+El contrato vigente hasta el 31/12/2027 prohíbe ceder la posición de Naranjal o encomendar la distribución a un tercero sin consentimiento previo y escrito; vender inventario no equivale a obtenerlo (P01-D03 v1, P01-P02). La respuesta de Maroma solo expresa interés en estudiar la continuidad, exige información adicional y dice que no aprueba la cesión ni contrata con Cedro (P01-D04 v1, P02). La afirmación de que no hay facturas vencidas se refiere a la cuenta de Naranjal al día del correo; no promete suministro futuro a Cedro (P01-D04 v1, P03).
+
+Esta brecha es comercialmente relevante: Cedro estima que Maroma representa 35% de las compras de la línea, y las alternativas cotizadas cuestan 8% y 11% más, aunque el negocio podría operar sin Maroma y aún falta revisar márgenes (P01-D01 v1, P04). Negociar el consentimiento o un contrato nuevo que defina suministro, duración, territorio, exclusividad y precios. Si no se obtiene, reevaluar el precio y el caso económico con proveedores alternativos; no pagar como adquirido un vínculo que no está aprobado.
+
+**3. Personal y pasivos.**  
+La continuidad prevista de cinco personas, en tareas ordinarias desde la entrega pero en el depósito de Cedro, requiere análisis específico de sustitución del empleador (P01-D05 v1, P01; P01-D01 v1, P01). El artículo 28 del Código del Trabajo dispone que la sustitución no afecta los contratos vigentes y establece solidaridad por obligaciones anteriores durante seis meses; la aplicación concreta a esta transferencia de activos depende de sus hechos y forma de ejecución (F02-L00118–L00121). La indemnidad ofrecida por Naranjal puede ordenar el reparto económico entre las empresas, pero no debe considerarse una eliminación de derechos de trabajadores.
+
+El informe registra PYG 5.000.000 y PYG 4.000.000 en comisiones de septiembre con la columna de pago vacía y sin comprobantes aportados; la administración dice que se regularizarían junto con octubre (P01-D05 v1, P02). Los PYG 9.000.000 constituyen una **exposición documental preliminar**, no una liquidación final. Las vacaciones no están actualizadas ni conciliadas individualmente, y faltan contratos y constancias completas de aportes (P01-D05 v1, P01-P03). Antes del cierre, conciliar por persona remuneraciones, comisiones, vacaciones, aguinaldo y aportes; pedir comprobantes y revisar obligaciones hasta la fecha efectiva. Negociar retención o garantía e indemnidad con alcance y respaldo suficientes. No exigir renuncias ni pérdida de antigüedad: Cedro declara que no quiere hacerlo (P01-D01 v1, P03).
+
+**4. Derechos transferibles y verificaciones.**  
+Naranjal aún no identifica el título documental de la denominación comercial y no aportó título registral (P01-D02 v2, P03). Antes de asignarle valor, verificar titularidad, alcance, transferibilidad y formalidades aplicables. Para los equipos hay comprobantes privados a nombre del vendedor y no se declaró prenda, pero no se aportó búsqueda registral (P01-D07 v1, P02). Para el inventario, confirmar antes del cierre que no haya cambios, bienes de terceros o derechos de terceros; el recuento disponible no sustituye esa verificación (P01-D07 v1, P01).
+
+### Límites y decisión para la reunión
+
+Las extracciones de las leyes tributaria y laboral disponibles no tienen revisión temporal acreditada; el corpus no confirma por sí solo la normativa consolidada vigente al 19/10/2026. Antes de firmar, obtener verificación normativa y reglamentaria actualizada, análisis tributario por componente y asesoramiento paraguayo sobre la sustitución laboral. La ausencia de intimaciones o reclamos en los documentos aportados no acredita cumplimiento ni inexistencia de contingencias (P01-D06 v1, P04; P01-D05 v1, P03).
+
+**Alternativas:** negociar bajo las condiciones indicadas; rediseñar la operación y el precio si Maroma no continúa; o postergar/rechazar si el costo total supera el mandato sin nueva aprobación, no se aclaran pasivos o no se acreditan los derechos ofrecidos. El presupuesto de **esta operación es el total aprobado para el encargo: PYG 600.000.000 para el precio; la mudanza cuenta con PYG 18.000.000 independientes** (P01-D01 v1, P02). No se presupone otro presupuesto de asesoría.
+
+### Anexo — Cuestiones materiales
+
+| Cuestión | Estado y efecto para Cedro | Diligencia o condición |
+|---|---|---|
+| Precio e impuestos | PYG 600m netos más tributos; posible exceso respecto del límite (P01-D02 v2, P02; P01-D01 v1, P02). IVA apunta a ser aplicable, pero la cuantía no está liquidada (Ley 6380, arts. 80-85, F03-L00599–L00680). | Precio máximo total o nueva aprobación; dictamen fiscal por componente. |
+| Momento de IVA | Pago de 70% al firmar y 30% contra recepción; entrega o percepción pueden determinar el nacimiento del impuesto (P01-D02 v2, P02; Ley 6380, art. 83). | Coordinar firma, factura, pagos y entrega. |
+| Crédito IVA del vendedor | PYG 22m a nombre de Naranjal, sin base aportada para transferirlo a Cedro (P01-D06 v1, P03; Ley 6380, arts. 88-89, F03-L00685–L00699). | Excluirlo del precio y valor salvo acreditación independiente. |
+| Maroma | Cesión requiere consentimiento escrito; correo no aprueba ni contrata (P01-D03 v1, P02; P01-D04 v1, P02). | Obtener consentimiento o contrato directo; de lo contrario, revaluar márgenes. |
+| Comisiones | PYG 9m sin constancia de pago; registro interno no liquida la deuda total (P01-D05 v1, P02). | Conciliar devengo, pago y beneficios asociados. |
+| Vacaciones y aportes | Saldo desactualizado; faltan contratos y constancias completas (P01-D05 v1, P01 y P03). | Revisión individual hasta fecha de cierre y garantía/retención. |
+| Sustitución de empleador | Continuidad prevista; art. 28 establece efectos y solidaridad bajo sus condiciones (P01-D05 v1, P01; F02-L00118–L00121). | Confirmar aplicación jurídica; preservar antigüedad y derechos. |
+| IRE de Naranjal | No hay liquidación fiscal definitiva; valores contables no determinan impuesto (P01-D06 v1, P01-P02; Ley 6380, arts. 8-9). | Exigir cálculo del vendedor y excluir obligación propia del vendedor. |
+| Denominación comercial | Título aún no identificado (P01-D02 v2, P03). | Verificar titularidad y transferibilidad antes de atribuir valor. |
+| Equipos e inventario | Recuento favorable, pero sin auditoría de títulos ni búsqueda registral (P01-D07 v1, P01-P02). | Confirmar propiedad, ausencia de gravámenes y estado a la entrega. |

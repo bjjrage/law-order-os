@@ -1,0 +1,52 @@
+.platform-entry {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f3f4ef;
+}
+.platform-card {
+  width: min(100%, 430px);
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #c6d4cc;
+  border-radius: 10px;
+}
+.platform-card form,
+.platform-form {
+  display: grid;
+  gap: 12px;
+  max-width: 560px;
+}
+.platform-card label,
+.platform-form label,
+.platform-settings label {
+  display: grid;
+  gap: 5px;
+}
+.platform-card input,
+.platform-form input {
+  min-width: 0;
+  width: 100%;
+}
+.platform-settings details {
+  border-top: 1px solid #d5ded7;
+  padding: 12px 0;
+}
+.platform-settings summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.platform-settings ul {
+  padding-left: 20px;
+}
+.platform-settings li {
+  margin: 8px 0;
+}
+.platform-settings [role="alert"],
+.platform-card [role="alert"] {
+  color: #972f25;
+}
+.platform-settings p {
+  max-width: 76ch;
+}

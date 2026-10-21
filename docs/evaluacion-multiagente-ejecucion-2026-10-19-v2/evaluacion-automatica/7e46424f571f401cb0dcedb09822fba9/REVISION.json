@@ -1,0 +1,76 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "**No pagar su valor a Ribera ni tratarlas como bienes adquiridos**: ajustar la contraprestación o sustituir su tratamiento por un acuerdo de custodia/traslado autorizado.",
+      "explanation": "Distingue la titularidad de Sur del Lago del valor interno de reposición, y propone excluir las matrices del precio o documentar un traslado autorizado, sin presentar los PYG 60.000.000 como precio aceptado. También vincula la conclusión con el contrato, el inventario y la carta del cliente."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La carta del cliente, sin embargo, expresa aceptación de cesión sujeta a condiciones, no una aprobación técnica ya emitida (P03-D04 v1, P01 y P04).",
+      "explanation": "No confunde la aceptación condicionada con rechazo total ni con aprobación técnica cumplida. Recomienda completar inspección, trazabilidad, disponibilidad de los operadores y cesión antes del cierre."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No recomendaría “cerrar y reabrir” como si ello borrara antigüedad o pasivos.",
+      "explanation": "Explica que la antigüedad propuesta no debe darse por reiniciada y enlaza la necesidad comercial de mantener a los operadores con la condición de Sur del Lago. Expone el artículo 28 del Código del Trabajo y deja expresamente pendiente confirmar si una transferencia de activos configura sustitución de empleador."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Antes del cierre se requiere un acuerdo tripartito que determine quién fabrica y factura, cómo se imputa el anticipo, quién recibe el saldo de 80.000.000 y qué fondos o ajuste acompañan la obligación futura.",
+      "explanation": "Reconcilia el anticipo cobrado por Ribera, la prestación futura y el saldo del pedido. Advierte que el expediente no acredita transferencia a Fresno, que no debe cobrarse de nuevo el anticipo y que no corresponde tratarlo automáticamente como ingreso nuevo de Fresno o parte adicional del precio."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Eso no prueba que la retención sea suficiente: falta cuantificar exposiciones, definir reclamaciones, prueba, plazos, controversias y garantía de pago.",
+      "explanation": "Aclara que los PYG 240.000.000 son precio diferido y evita contarlos como una garantía adicional. Señala límites concretos de la cláusula actual y propone negociar mecanismos sin afirmar que el importe alcance para cubrir todas las contingencias."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El monto es una exposición discutida, no deuda reconocida ni compensación documentada con OP-44.",
+      "explanation": "Mantiene separado el reclamo de PYG 40.000.000 del anticipo de OP-44, recoge su carácter controvertido y recomienda revisar el lote y conservar un interlocutor, sin liquidar ni compensar automáticamente el reclamo."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La venta de activos y derechos debe analizarse por componentes y documentación; no corresponde calcular ahora impuesto sobre PYG 900.000.000 ni afirmar que el anticipo sea deuda tributaria equivalente.",
+      "explanation": "Reconoce que la base comercial está desactualizada y no aprobada, trata los efectos de IVA con referencias pertinentes y evita inventar una tasa o liquidación. Propone un análisis fiscal por componentes y por separado para el anticipo y la fabricación pendiente."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El informe propone fecha de ingreso 02/11 para todos pese a ingresos anteriores (P03-D07 v1, P01), identifica a los operadores con fechas de 2017 y 2019, y estima PYG 8.000.000 de vacaciones sin liquidación individual ni prueba de cancelación (P03-D07 v1, P01–P02).",
+      "explanation": "Distingue el estimado conjunto de una liquidación individual, advierte que los documentos aportados no prueban cancelación de saldos y recomienda conciliación individual de derechos y aportes. No calcula indemnizaciones sin evidencia de extinciones."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "El memo no aborda expresamente el artículo 13 de la Ley 6380/2019: si la operación llegara a calificar como transferencia de establecimiento comercial, ese artículo dispone el cierre del ejercicio económico del enajenante y que el adquirente mantenga el valor fiscal de los bienes al momento de adquirirlos. Sería útil pedir al asesor tributario que determine si resulta aplicable a esta transferencia de activos y cómo afecta la documentación y la cuenta de cierre; el expediente no permite concluir por sí solo que la operación califique."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El corpus jurídico aportado no acredita consolidación normativa al 19/10/2026; el memo reconoce esa limitación, por lo que las conclusiones tributarias y laborales requieren verificación normativa actualizada antes de ejecutar la operación.",
+    "La carta del cliente establece condiciones para una cesión futura, pero no prueba que la inspección técnica se haya realizado satisfactoriamente ni que se hayan completado las condiciones.",
+    "Los documentos no permiten determinar definitivamente si la transferencia de activos constituye sustitución de empleador, cuál sería la liquidación individual laboral ni el tratamiento fiscal final de cada componente."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "7e46424f571f401cb0dcedb09822fba9",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 233113,
+    "output_tokens_including_reasoning": 1448,
+    "cost_accounted_upper_usd": 0.029863125,
+    "estimated_standard_no_cache_discount_usd": 0.0240353,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 0
+}

@@ -1,0 +1,2290 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API Datos Abiertos Legislativos",
+    "description": "¡Bienvenidos a la nueva versión de la API de Datos Abiertos Legislativos!\n\nEste es un servidor de <b>datos abiertos del Congreso Nacional</b> basado en la especificación [OpenAPI 3.0](https://www.openapis.org). En esta versión de la API, ¡Hemos cambiado el enfoque de diseño! Ahora puede experimentar directamente con los datos por diferentes criterios mediante esta interfaz de consulta documentada por el framework [Swagger](https://swagger.io). Además, proveemos enlaces a la fuente origen y a las descargas de archivos de varios recursos.\n\nEsta nueva versión puede entregar datos sin procesar en formatos [JSON](https://www.json.org) para maximizar la compatiblidad e interoperabilidad de sistemas.\n\nEn esta página puede conocer y experimentar con las URL de acceso a datos, los parámetros de cadena de consulta que se pueden aplicar para filtrar y seleccionar resultados, y las estructuras de datos que se devuelven.\n\nTodas las consultas utilizan el método HTTP GET. Puede utilizar cualquier plataforma API para experimentar con los servicios, por ejemplo [POSTMAN](https://www.postman.com).\n\nDe forma predeterminada, el valor por defecto de la paginación y el tamaño de páginas es (1,50) para algunos servicios de bloques de datos.\n\nPuede obtener más información sobre qué usos dar a estos datos puede acceder al portal de Datos Abiertos Legislativos en [http://datos.congreso.gov.py](http://datos.congreso.gov.py)",
+    "termsOfService": "http://datos.congreso.gov.py/web/avisolegal",
+    "contact": {
+      "name": "Sistema de Información Legislativa, Paraguay (SILpy)",
+      "url": "http://silpy.congreso.gov.py",
+      "email": "silpy@senado.gov.py"
+    },
+    "license": {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/deed.es"
+    },
+    "version": "2.0"
+  },
+  "servers": [
+    {
+      "url": "/web",
+      "description": "API v2.0",
+      "variables": {}
+    }
+  ],
+  "tags": [
+    {
+      "name": "Audiencias-Públicas",
+      "description": "```..:: Nuevo ::..```"
+    },
+    {
+      "name": "Votaciones",
+      "description": "```..:: Nuevo ::..```"
+    }
+  ],
+  "paths": {
+    "/api/audiencia/{id}": {
+      "get": {
+        "tags": [
+          "Audiencias-Públicas"
+        ],
+        "summary": "Obtener los datos de una audiencia pública con su detalle",
+        "description": "Obtener los datos de una audiencia pública (dado su #id) con su detalle (organizadores, participantes, resultados, enlaces).\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Audiencias Públicas```](http://localhost:8080/web/pages/datosAudiencia.xhtml)",
+        "operationId": "findAudiencia",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador de la audiencia pública. Ejemplo: 102803",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 102803
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Audiencia Pública",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AudienciaPublicaDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/audiencia/periodo/{idPeriodoParlamentario}": {
+      "get": {
+        "tags": [
+          "Audiencias-Públicas"
+        ],
+        "summary": "Obtener el listado simple de las audiencias públicas por periodo parlamentario",
+        "description": "Obtener el listado simple de las audiencias públicas por periodo parlamentaro dado su #id\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Periodos```](http://localhost:8080/web/pages/datosPeriodo.xhtml)",
+        "operationId": "findAudienciaAll",
+        "parameters": [
+          {
+            "name": "idPeriodoParlamentario",
+            "in": "path",
+            "description": "El identificador del periodo. Ejemplo: 100184",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 100184
+            }
+          },
+          {
+            "name": "conLegisladores",
+            "in": "query",
+            "description": "Se incluirá la lista de legisladores organizadores de la audiencia (si los hubiere)",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "conComisiones",
+            "in": "query",
+            "description": "Se incluirá la lista de comisiones organizadoras de la audiencia (si los hubiere)",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "conBancadas",
+            "in": "query",
+            "description": "Se incluirá la lista de bancadas organizadoras de la audiencia (si los hubiere)",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Audiencias Públicas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AudienciaPublicaDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/audiencia": {
+      "get": {
+        "tags": [
+          "Audiencias-Públicas"
+        ],
+        "summary": "Obtener el listado simple de audiencia públicas",
+        "description": "Obtener el listado simple de audiencia públicas (por página). **El valor por defecto del número de pagina y el tamaño de páginas es (1,50)**. Para obtener ayuda, haga click en [Ayuda de paginación](http://localhost:8080/web/pages/ayudaPaginacion.xhtml)\n\n **Nota** *Por cuestiones de rendimiento, el tamaño máximo de bloques (limit) es 500.*",
+        "operationId": "findAudienciaRange",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "El valor de la paginación (offset). Ejemplo: 3",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "El valor del tamaño de la página (limit). Ejemplo: 50",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50
+            }
+          },
+          {
+            "name": "conLegisladores",
+            "in": "query",
+            "description": "Se incluirá la lista de legisladores organizadores de la audiencia (si los hubiere)",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "conComisiones",
+            "in": "query",
+            "description": "Se incluirá la lista de comisiones organizadoras de la audiencia (si los hubiere)",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "conBancadas",
+            "in": "query",
+            "description": "Se incluirá la lista de bancadas organizadoras de la audiencia (si los hubiere)",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Audiencia Pública",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AudienciaPublicaDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/comision/{id}": {
+      "get": {
+        "tags": [
+          "Comisiones"
+        ],
+        "summary": "Obtener los datos de una comisión",
+        "description": "Obtener los datos de una comisión dado su #id.\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Comisiones```](http://localhost:8080/web/pages/datosComision.xhtml)",
+        "operationId": "findComision",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador de la comisión. Ejemplo: 5",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 5
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Comisión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ComisionDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/comision": {
+      "get": {
+        "tags": [
+          "Comisiones"
+        ],
+        "summary": "Obtener el listado de comisiones",
+        "description": "Listar todas las comisiones (Senadores, Diputados o ambos)",
+        "operationId": "findComisionAll",
+        "parameters": [
+          {
+            "name": "idCamara",
+            "in": "query",
+            "description": "El identificador de la cámara (S: Senado, D: Diputados, A: ambos). Ejemplo: S",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Id válidos",
+              "enum": [
+                "S",
+                "D",
+                "A"
+              ],
+              "default": "S"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Comisiones",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ComisionDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/comision/{id}/dictamenes": {
+      "get": {
+        "tags": [
+          "Comisiones"
+        ],
+        "summary": "Obtener los datos de una comisión con todos sus dictámenes",
+        "description": "Obtener los datos de una comisión (dado su #id) con todos sus expedientes\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Comisiones```](http://localhost:8080/web/pages/datosComision.xhtml)",
+        "operationId": "findComisionDictamen",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador de la comisión. Ejemplo: 5",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 5
+            }
+          },
+          {
+            "name": "anios",
+            "in": "query",
+            "description": "El o los año/s en que se generaron los dictámenes. Ejemplo: 2020. El valor por defecto será el año actual si no especifica lo contrario.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Comisión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ComisionDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/comision/{id}/expedientes": {
+      "get": {
+        "tags": [
+          "Comisiones"
+        ],
+        "summary": "Obtener los datos de una comisión y sus expedientes girados",
+        "description": "Obtener los datos de una comisión (dado su #id) con sus expedientes girados por año/s.\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Comisiones```](http://localhost:8080/web/pages/datosComision.xhtml)",
+        "operationId": "findComisionExpediente",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador de la comisión. Ejemplo: 5",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 5
+            }
+          },
+          {
+            "name": "anios",
+            "in": "query",
+            "description": "El o los año/s en que los expedients fueron girados a la comisión. Ejemplo: 2020. El valor por defecto será el año actual si no especifica lo contrario.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Comisión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ComisionDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/comision/{id}/miembros/{idPeriodoParlamentario}": {
+      "get": {
+        "tags": [
+          "Comisiones"
+        ],
+        "summary": "Obtener los datos de la comisión con todos sus miembros integrantes",
+        "description": "Obtener los datos de la comisión (dado su #id) con todos sus miembros integrantes en un periodo (dado el #idPeriodoParlamentario).\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Comisiones```](http://localhost:8080/web/pages/datosComision.xhtml)\n\nLos valores válidos de #idPeriodoParlamentario pueden obtenerse desde el [```Dataset de Periodos```](http://localhost:8080/web/pages/datosPeriodo.xhtml)",
+        "operationId": "findComisionMiembro",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador de la comisión. Ejemplo: 5",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 5
+            }
+          },
+          {
+            "name": "idPeriodoParlamentario",
+            "in": "path",
+            "description": "El identificador del periodo parlamentario. Ejemplo: 100197",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 100197
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Comisión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ComisionDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ley/{id}": {
+      "get": {
+        "tags": [
+          "Leyes"
+        ],
+        "summary": "Obtener los datos de una ley",
+        "description": "Obtener los datos de una ley dado su #id\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Leyes```](http://localhost:8080/web/pages/datosLey.xhtml)",
+        "operationId": "findLey",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador de la ley. Ejemplo: 134254",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 134254
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Ley",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LeyDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ley/periodo/{idPeriodoParlamentario}": {
+      "get": {
+        "tags": [
+          "Leyes"
+        ],
+        "summary": "Obtener el listado de leyes en un periodo parlamentario",
+        "description": "Obtener el listado de leyes en un periodo parlamentario",
+        "operationId": "findLeyPeriodo",
+        "parameters": [
+          {
+            "name": "idPeriodoParlamentario",
+            "in": "path",
+            "description": "El identificador del periodo. Ejemplo: 100197",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 100197
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Leyes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeyDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ley": {
+      "get": {
+        "tags": [
+          "Leyes"
+        ],
+        "summary": "Obtener el listado de leyes",
+        "description": "Obtener el listado de las leyes (por página). **El valor por defecto del número de pagina y el tamaño de páginas es (1,50)**. Para obtener ayuda, haga click en [Ayuda de paginación](http://localhost:8080/web/pages/ayudaPaginacion.xhtml)\n\n **Nota** *Por cuestiones de rendimiento, el tamaño máximo de bloques (limit) es 500.*",
+        "operationId": "findLeyRange",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "El valor de la paginación (offset). Ejemplo: 3",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "El valor del tamaño de la página (limit). Ejemplo: 50",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Leyes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeyDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/legislador/{id}": {
+      "get": {
+        "tags": [
+          "Legisladores"
+        ],
+        "summary": "Obtener los datos de un legislador",
+        "description": "Obtener los datos de un legislador dado su #id.\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Legisladores```](http://localhost:8080/web/pages/datosLegislador.xhtml)",
+        "operationId": "findParlamentario",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador del legislador. Ejemplo: 100081",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 100081
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Legislador",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LegisladorDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/legislador": {
+      "get": {
+        "tags": [
+          "Legisladores"
+        ],
+        "summary": "Obtener el listado de todos los legisladores de todos los periodos",
+        "description": "Obtener el listado de todos los legisladores de todos los periodos por cámaras (Senado, Diputados o ambos)",
+        "operationId": "findParlamentarioAll",
+        "parameters": [
+          {
+            "name": "idCamara",
+            "in": "query",
+            "description": "El identificador de la cámara (S: Senado, D: Diputados, A: ambos). Ejemplo: S",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Id válidos",
+              "enum": [
+                "S",
+                "D",
+                "A"
+              ],
+              "default": "S"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Legisladores",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LegisladorDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/legislador/camara/{idCamara}": {
+      "get": {
+        "tags": [
+          "Legisladores"
+        ],
+        "summary": "Obtener el listado de legisladores del periodo actual por cámara",
+        "description": "Obtener el listado de legisladores del periodo actual por cámara (S: Senado, D: Diputados, A: ambos). ",
+        "operationId": "findParlamentarioCamara",
+        "parameters": [
+          {
+            "name": "idCamara",
+            "in": "path",
+            "description": "El identificador de la cámara (S: Senado, D: Diputados, A: ambos). Ejemplo: S",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Id válidos",
+              "enum": [
+                "S",
+                "D",
+                "A"
+              ],
+              "default": "S"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Legisladores",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LegisladorDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/legislador/{id}/expedientes": {
+      "get": {
+        "tags": [
+          "Legisladores"
+        ],
+        "summary": "Obtener los datos de un legislador con todos sus expedientes presentados",
+        "description": "Obtener los datos de un legislador (dado su #id) con todos sus expedientes presentados.\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Legisladores```](http://localhost:8080/web/pages/datosLegislador.xhtml)",
+        "operationId": "findParlamentarioExpediente",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador del legislador. Ejemplo: 100081",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 100081
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Legislador",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LegisladorDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/periodo/{id}": {
+      "get": {
+        "tags": [
+          "Periodos"
+        ],
+        "summary": "Obtener los datos de un periodo parlamentario (y su correspondiente periodo legislativo)",
+        "description": "Obtener los datos de un periodo parlamentario (y su correspondiente periodo legislativo) dado su #id\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Periodos```](http://localhost:8080/web/pages/datosPeriodo.xhtml)",
+        "operationId": "findPeriodoParlamentario",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador del periodo. Ejemplo: 100197",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 100197
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Periodo Parlamentario",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PeriodoParlamentarioDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/periodo": {
+      "get": {
+        "tags": [
+          "Periodos"
+        ],
+        "summary": "Obtener el listado de periodos parlamentarios (y su correspondiente periodo legislativo)",
+        "description": "Obtener el listado de todos los periodos parlamentarios (y su correspondiente periodo legislativo)",
+        "operationId": "findPeriodoParlamentarioAll",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Periodo Parlamentario",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PeriodoParlamentarioDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/proyecto/total": {
+      "get": {
+        "tags": [
+          "Expedientes-Proyectos"
+        ],
+        "summary": "Obtener el numero total de expedientes/proyectos",
+        "description": "Obtener el numero total de expedientes/proyectos",
+        "operationId": "countExpedientes",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "total-expediente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/proyecto/{id}": {
+      "get": {
+        "tags": [
+          "Expedientes-Proyectos"
+        ],
+        "summary": "Obtener los datos de un expediente/proyecto",
+        "description": "Obtener los datos de un expediente/proyecto dado su #id con el detalle de autores, ministerios y archivos adjuntos (iniciativas)\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Expedientes```](http://localhost:8080/web/pages/datosExpediente.xhtml)",
+        "operationId": "findExpediente",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador del expediente. Ejemplo: 101629",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 101629
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Expediente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProyectoDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/proyecto/{id}/adjuntos": {
+      "get": {
+        "tags": [
+          "Expedientes-Proyectos"
+        ],
+        "summary": "Obtener los datos de un expediente/proyecto con sus adjuntos",
+        "description": "Obtener los datos de un expediente/proyecto (dado su #id) con sus adjuntos\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Expedientes```](http://localhost:8080/web/pages/datosExpediente.xhtml)",
+        "operationId": "findExpedienteAdjunto",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador del expediente. Ejemplo: 101629",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 101629
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Expediente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProyectoDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/proyecto/{id}/dictamenes": {
+      "get": {
+        "tags": [
+          "Expedientes-Proyectos"
+        ],
+        "summary": "Obtener los datos de un expediente/proyecto con sus dictámenes",
+        "description": "Obtener los datos de un expediente/proyecto (dado su #id) con sus dictámenes\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Expedientes```](http://localhost:8080/web/pages/datosExpediente.xhtml)",
+        "operationId": "findExpedienteDictamen",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador del expediente. Ejemplo: 101629",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 101629
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Expediente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProyectoDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/proyecto": {
+      "get": {
+        "tags": [
+          "Expedientes-Proyectos"
+        ],
+        "summary": "Obtener el listado de expedientes/proyectos",
+        "description": "Obtener el listado simple de los expedientes/proyectos (por página). **El valor por defecto del número de pagina y el tamaño de páginas es (1,50)**. Para obtener ayuda, haga click en [Ayuda de paginación](http://localhost:8080/web/pages/ayudaPaginacion.xhtml)\n\n **Nota** *Por cuestiones de rendimiento, el tamaño máximo de bloques (limit) es 500.*",
+        "operationId": "findExpedienteRange",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "El valor de la paginación (offset). Ejemplo: 3",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "El valor del tamaño de la página (limit). Ejemplo: 50",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Expediente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProyectoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/proyecto/{id}/tramitaciones": {
+      "get": {
+        "tags": [
+          "Expedientes-Proyectos"
+        ],
+        "summary": "Obtener los datos de un expediente/proyecto con sus tramitaciones",
+        "description": "Obtener los datos de un expediente/proyecto (dado su #id) con sus tramitaciones\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Expedientes```](http://localhost:8080/web/pages/datosExpediente.xhtml)",
+        "operationId": "findExpedienteTramitacion",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador del expediente. Ejemplo: 101629",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 101629
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Expediente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProyectoDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sesion/{id}": {
+      "get": {
+        "tags": [
+          "Sesiones"
+        ],
+        "summary": "Obtener los datos de una sesión",
+        "description": "Obtener los datos de una sesión dado su #id\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Sesiones```](http://localhost:8080/web/pages/datosSesion.xhtml)",
+        "operationId": "findSesion",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador de la sesión. Ejemplo: 101194",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 101194
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Sesión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SesionDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sesion": {
+      "get": {
+        "tags": [
+          "Sesiones"
+        ],
+        "summary": "Obtener el listado de sesiones",
+        "description": "Listar todas las sesiones celebradas en un año especificado por cámaras (Senado, Diputados o ambos)",
+        "operationId": "findSesionAll",
+        "parameters": [
+          {
+            "name": "idCamara",
+            "in": "query",
+            "description": "El identificador de la cámara (S: Senado, D: Diputados, A: ambos). Ejemplo: S",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Id válidos",
+              "enum": [
+                "S",
+                "D",
+                "A"
+              ],
+              "default": "S"
+            }
+          },
+          {
+            "name": "anho",
+            "in": "query",
+            "description": "El año de realización de la sesión. Ejemplo: 2024",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 2024
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Sesiones",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SesionDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sesion/{id}/proyectos": {
+      "get": {
+        "tags": [
+          "Sesiones"
+        ],
+        "summary": "Obtener los datos de una sesión con sus expedientes tratados",
+        "description": "Obtener los datos de una sesión (dado su #id) con sus expedientes tratados\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Sesiones```](http://localhost:8080/web/pages/datosSesion.xhtml)",
+        "operationId": "findSesionExpediente",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador de la sesión. Ejemplo: 101194",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 101194
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Sesión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SesionDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sesion/periodo/{idPeriodoParlamentario}": {
+      "get": {
+        "tags": [
+          "Sesiones"
+        ],
+        "summary": "Obtener el listado de sesiones celebradas en un periodo parlamentario",
+        "description": "Obtener el listado de sesiones celebradas de un periodo parlamentario dado el #idPeriodo.\n\n**Nota:** un periodo parlamentario inicia el 1 de julio del present año y finaliza el 30 de junio del siguiente año.\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Periodos```](http://localhost:8080/web/pages/datosPeriodo.xhtml)",
+        "operationId": "findSesionPeriodo",
+        "parameters": [
+          {
+            "name": "idCamara",
+            "in": "query",
+            "description": "El identificador de la cámara (S: Senado, D: Diputados, A: ambos). Ejemplo: S",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Id válidos",
+              "enum": [
+                "S",
+                "D",
+                "A"
+              ],
+              "default": "S"
+            }
+          },
+          {
+            "name": "idPeriodoParlamentario",
+            "in": "path",
+            "description": "El identificador del periodo. Ejemplo: 100197",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 100197
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Sesiones",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SesionDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/votacion/parlamentario/{idLegislador}": {
+      "get": {
+        "tags": [
+          "Votaciones"
+        ],
+        "summary": "Obtener el detalle de las votaciones de un legislador",
+        "description": "Obtener el detalle de las votaciones de un legislador dado el #idLegislador\n\nLos valores válidos de #idLegislador pueden obtenerse desde el [```Dataset de Legisladores```](http://localhost:8080/web/pages/datosLegislador.xhtml)",
+        "operationId": "findDetalleVotacionByParlamentario",
+        "parameters": [
+          {
+            "name": "idParlamentario",
+            "in": "path",
+            "description": "El identificador del legislador. Ejemplo: 100081",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 100081
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Votaciones",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DetalleVotacionDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/votacion/{id}": {
+      "get": {
+        "tags": [
+          "Votaciones"
+        ],
+        "summary": "Obtener los datos de una votación con el detalle de los votos",
+        "description": "Obtener los datos de una votacion (dado su #id) con el detalle de los votos.\n\nLos valores válidos de #id pueden obtenerse desde el [```Dataset de Votaciones```](http://localhost:8080/web/pages/datosVotacion.xhtml)",
+        "operationId": "findVotacion",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "El identificador de la votación. Ejemplo: 100100",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 100100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Votación",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VotacionDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/votacion": {
+      "get": {
+        "tags": [
+          "Votaciones"
+        ],
+        "summary": "Obtener el listado simple de votaciones",
+        "description": "Obtener el listado simple de votaciones (por página). **El valor por defecto del número de pagina y el tamaño de páginas es (1,50)**. Para obtener ayuda, haga click en [Ayuda de paginación](http://localhost:8080/web/pages/ayudaPaginacion.xhtml)\n\n **Nota** *Por cuestiones de rendimiento, el tamaño máximo de bloques (limit) es 500.*",
+        "operationId": "findVotacionRange",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "El valor de la paginación (offset). Ejemplo: 3",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 3
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "El valor del tamaño de la página (limit). Ejemplo: 50",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal Error"
+          },
+          "default": {
+            "description": "Expediente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VotacionDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/application.wadl/{path}": {
+      "get": {
+        "operationId": "getExternalGrammar",
+        "parameters": [
+          {
+            "name": "path",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default response",
+            "content": {
+              "application/xml": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/application.wadl": {
+      "get": {
+        "operationId": "getWadl",
+        "responses": {
+          "default": {
+            "description": "default response",
+            "content": {
+              "application/vnd.sun.wadl+xml": {},
+              "application/xml": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ArchivoAdjuntoDTO": {
+        "type": "object",
+        "properties": {
+          "idAdjunto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipoAdjunto": {
+            "type": "string"
+          },
+          "tipoArchivo": {
+            "type": "string"
+          },
+          "infoAdjunto": {
+            "type": "string"
+          },
+          "idProyecto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appURL": {
+            "type": "string"
+          }
+        },
+        "xml": {
+          "name": "proyectoAdjunto"
+        }
+      },
+      "AudienciaPublicaDTO": {
+        "type": "object",
+        "properties": {
+          "idAudiencia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appURL": {
+            "type": "string"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "fechaHoraFin": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaHoraInicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "camara": {
+            "type": "string"
+          },
+          "departamento": {
+            "type": "string"
+          },
+          "enlaceVideo": {
+            "type": "string"
+          },
+          "proyecto": {
+            "$ref": "#/components/schemas/ProyectoDTO"
+          },
+          "legisladoresOrganizadores": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LegisladorDTO"
+            }
+          },
+          "legisladoresParticipantes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LegisladorDTO"
+            }
+          },
+          "comisionesOrganizadoras": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComisionDTO"
+            }
+          },
+          "bancadasOrganizadoras": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "convocatorias": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ConvocatoriaAudienciaDTO"
+            }
+          },
+          "resultados": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ResultadoAudienciaDTO"
+            }
+          }
+        }
+      },
+      "ComisionDTO": {
+        "type": "object",
+        "properties": {
+          "idComision": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "email": {
+            "type": "string"
+          },
+          "nombreComision": {
+            "type": "string"
+          },
+          "numeroComision": {
+            "type": "string"
+          },
+          "informacionComision": {
+            "type": "string"
+          },
+          "competenciaComision": {
+            "type": "string"
+          },
+          "esComisionAsesora": {
+            "type": "string"
+          },
+          "esComisionActiva": {
+            "type": "string"
+          },
+          "tipoComision": {
+            "type": "string"
+          },
+          "camaraComision": {
+            "type": "string"
+          },
+          "appURL": {
+            "type": "string"
+          },
+          "appURLProyectos": {
+            "type": "string"
+          },
+          "proyectosGirados": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GiradosComisionDTO"
+            }
+          },
+          "miembros": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LegisladorDTO"
+            }
+          }
+        },
+        "xml": {
+          "name": "comision"
+        }
+      },
+      "ConvocatoriaAudienciaDTO": {
+        "type": "object",
+        "properties": {
+          "idAdjunto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipoAdjunto": {
+            "type": "string"
+          },
+          "appURL": {
+            "type": "string"
+          }
+        },
+        "xml": {
+          "name": "convocatoriaAudiencia"
+        }
+      },
+      "DictamenComisionDTO": {
+        "type": "object",
+        "properties": {
+          "idDictamenComision": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idProyecto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appURLComision": {
+            "type": "string"
+          },
+          "appURLProyecto": {
+            "type": "string"
+          },
+          "fechaDictamen": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sentidoDictamen": {
+            "type": "string"
+          },
+          "descripcionEtapa": {
+            "type": "string"
+          },
+          "descripcionSubEtapa": {
+            "type": "string"
+          },
+          "comision": {
+            "$ref": "#/components/schemas/ComisionDTO"
+          },
+          "firmantes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LegisladorDTO"
+            }
+          }
+        },
+        "xml": {
+          "name": "dictamen"
+        }
+      },
+      "GiradosComisionDTO": {
+        "type": "object",
+        "properties": {
+          "proyecto": {
+            "$ref": "#/components/schemas/ProyectoDTO"
+          },
+          "fechaTramite": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "descripcionEtapa": {
+            "type": "string"
+          },
+          "descripcionSubEtapa": {
+            "type": "string"
+          }
+        },
+        "xml": {
+          "name": "girados"
+        }
+      },
+      "LegisladorDTO": {
+        "type": "object",
+        "properties": {
+          "idLegislador": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "apellidos": {
+            "type": "string"
+          },
+          "nombres": {
+            "type": "string"
+          },
+          "emailParlamentario": {
+            "type": "string"
+          },
+          "telefonoParlamentario": {
+            "type": "string"
+          },
+          "camaraParlamentario": {
+            "type": "string"
+          },
+          "departamento": {
+            "type": "string"
+          },
+          "partidoPolitico": {
+            "type": "string"
+          },
+          "periodoLegislativo": {
+            "type": "string"
+          },
+          "tipoParlamentario": {
+            "type": "string"
+          },
+          "curriculum": {
+            "type": "string"
+          },
+          "bancada": {
+            "type": "string"
+          },
+          "cargoBancada": {
+            "type": "string"
+          },
+          "appURL": {
+            "type": "string"
+          },
+          "fotoURL": {
+            "type": "string"
+          },
+          "proyectos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProyectoDTO"
+            }
+          },
+          "activo": {
+            "type": "boolean"
+          }
+        },
+        "xml": {
+          "name": "legislador"
+        }
+      },
+      "PeriodoParlamentarioDTO": {
+        "type": "object",
+        "properties": {
+          "idPeriodoParlamentario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "periodoParlamentario": {
+            "type": "string"
+          },
+          "fechaInicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaTermino": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idPeriodoLegislativo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "periodoLegislativo": {
+            "type": "string"
+          }
+        },
+        "xml": {
+          "name": "periodoParlamentario"
+        }
+      },
+      "ProyectoDTO": {
+        "type": "object",
+        "properties": {
+          "idProyecto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appURL": {
+            "type": "string"
+          },
+          "acapite": {
+            "type": "string"
+          },
+          "expedienteCamara": {
+            "type": "string"
+          },
+          "fechaIngresoExpediente": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "origenProyecto": {
+            "type": "string"
+          },
+          "tipoProyecto": {
+            "type": "string"
+          },
+          "descripcionEtapa": {
+            "type": "string"
+          },
+          "descripcionSubEtapa": {
+            "type": "string"
+          },
+          "iniciativa": {
+            "type": "string"
+          },
+          "urgencia": {
+            "type": "string"
+          },
+          "giradosComision": {
+            "type": "string"
+          },
+          "informacionSancion": {
+            "type": "string"
+          },
+          "estadoProyecto": {
+            "type": "string"
+          },
+          "autores": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LegisladorDTO"
+            }
+          },
+          "ministerios": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tramitaciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TramitacionDTO"
+            }
+          },
+          "dictamenes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DictamenComisionDTO"
+            }
+          },
+          "adjuntosIniciativa": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ArchivoAdjuntoDTO"
+            }
+          },
+          "archivosAdjuntos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ArchivoAdjuntoDTO"
+            }
+          }
+        },
+        "xml": {
+          "name": "proyecto"
+        }
+      },
+      "ResultadoAudienciaDTO": {
+        "type": "object",
+        "properties": {
+          "idAdjunto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "tipoAdjunto": {
+            "type": "string"
+          },
+          "appURL": {
+            "type": "string"
+          }
+        },
+        "xml": {
+          "name": "resultadoAudiencia"
+        }
+      },
+      "SesionDTO": {
+        "type": "object",
+        "properties": {
+          "idSesion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaSesion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "horaInicio": {
+            "type": "string"
+          },
+          "horaFin": {
+            "type": "string"
+          },
+          "numeroSesion": {
+            "type": "string"
+          },
+          "textoDiarioSesion": {
+            "type": "string"
+          },
+          "textoOrdenDelDia": {
+            "type": "string"
+          },
+          "textoActa": {
+            "type": "string"
+          },
+          "textoAsuntosEntrados": {
+            "type": "string"
+          },
+          "textoResultadoSesion": {
+            "type": "string"
+          },
+          "tipoSesion": {
+            "type": "string"
+          },
+          "periodoParlamentarioDTO": {
+            "$ref": "#/components/schemas/PeriodoParlamentarioDTO"
+          },
+          "camaraSesion": {
+            "type": "string"
+          },
+          "proyectos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProyectoDTO"
+            }
+          },
+          "archivoAdjuntos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ArchivoAdjuntoDTO"
+            }
+          },
+          "appURL": {
+            "type": "string"
+          }
+        },
+        "xml": {
+          "name": "sesion"
+        }
+      },
+      "TramitacionDTO": {
+        "type": "object",
+        "properties": {
+          "idTramitacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numeroSesion": {
+            "type": "string"
+          },
+          "descripcionEtapa": {
+            "type": "string"
+          },
+          "descripcionSubEtapa": {
+            "type": "string"
+          },
+          "fechaTramite": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "camaraTramite": {
+            "type": "string"
+          },
+          "resultadoTramite": {
+            "type": "string"
+          },
+          "idSesion": {
+            "$ref": "#/components/schemas/SesionDTO"
+          }
+        },
+        "xml": {
+          "name": "tramite"
+        }
+      },
+      "ApiRespuesta": {
+        "type": "object",
+        "properties": {
+          "codigoEstado": {
+            "type": "integer",
+            "format": "int32",
+            "enum": [
+              200,
+              404,
+              500
+            ]
+          },
+          "mensaje": {
+            "type": "string"
+          },
+          "datos": {
+            "type": "array",
+            "description": "Datos o Lista de datos",
+            "example": "ComisionDTO, ParlamentarioDTO, LeyDTO, ...",
+            "items": {
+              "type": "object",
+              "description": "Datos o Lista de datos",
+              "example": "ComisionDTO, ParlamentarioDTO, LeyDTO, ..."
+            }
+          }
+        },
+        "xml": {
+          "name": "respuesta"
+        }
+      },
+      "LeyDTO": {
+        "type": "object",
+        "properties": {
+          "idLey": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appURL": {
+            "type": "string"
+          },
+          "numeroLey": {
+            "type": "string"
+          },
+          "fechaSancion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaPromulgacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaPublicacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaDecreto": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "numeroDecreto": {
+            "type": "string"
+          },
+          "observacionDecreto": {
+            "type": "string"
+          },
+          "tipoPromulgacion": {
+            "type": "string"
+          },
+          "proyecto": {
+            "$ref": "#/components/schemas/ProyectoDTO"
+          }
+        },
+        "xml": {
+          "name": "ley"
+        }
+      },
+      "DetalleVotacionDTO": {
+        "type": "object",
+        "properties": {
+          "idDetalleVotacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idVotacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "proyecto": {
+            "$ref": "#/components/schemas/ProyectoDTO"
+          },
+          "observacion": {
+            "type": "string"
+          },
+          "legislador": {
+            "$ref": "#/components/schemas/LegisladorDTO"
+          },
+          "sentidoVotacion": {
+            "type": "string"
+          },
+          "idSentidoVotacion": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "xml": {
+          "name": "detalleVotacion"
+        }
+      },
+      "VotacionDTO": {
+        "type": "object",
+        "properties": {
+          "idVotacion": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "observacion": {
+            "type": "string"
+          },
+          "tramitacion": {
+            "$ref": "#/components/schemas/TramitacionDTO"
+          },
+          "proyecto": {
+            "$ref": "#/components/schemas/ProyectoDTO"
+          },
+          "appURL": {
+            "type": "string"
+          },
+          "totalSI": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalNO": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalAbstencion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalAusente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalNoVota": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "votaciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetalleVotacionDTO"
+            }
+          }
+        },
+        "xml": {
+          "name": "votacion"
+        }
+      }
+    }
+  }
+}

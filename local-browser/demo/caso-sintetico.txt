@@ -1,0 +1,17 @@
+CASO DE DEMOSTRACION - DATOS FICTICIOS
+
+Cliente ficticio: Comercial Ejemplo S.A.
+Asunto: revision documental de un contrato.
+
+HECHOS DEL ESCENARIO
+Se recibe un borrador de contrato de provision de servicios entre empresas ficticias.
+No se acompanan anexos, constancias de firma ni comprobantes de pago.
+La carpeta se utiliza exclusivamente para mostrar el flujo del OS.
+
+PREGUNTA PARA PREPARAR UNA FUTURA CONSULTA
+Que documentos faltan para revisar las obligaciones de las partes y las condiciones de terminacion?
+
+LIMITES
+Este texto no describe un caso real, no constituye prueba ni contiene jurisprudencia.
+No permite concluir incumplimiento ni calcular plazos legales.
+Toda conclusion juridica requiere evidencia, fuentes contrastadas y revision profesional.

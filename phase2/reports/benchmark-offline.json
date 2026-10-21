@@ -1,0 +1,358 @@
+{
+  "status": "PASS",
+  "mode": "OFFLINE_SIMULATION",
+  "provider_quality_evaluation": "NOT_RUN",
+  "real_integration": "NOT_RUN",
+  "holdout": {
+    "set_id": "holdout-v1-frozen-2026-10-12",
+    "sha256": "f68295e548c863f69a6eb280dee1776a9e9735bd4f5cce0b8b26fc22ecc29399",
+    "frozen_before_evaluation": true,
+    "independent_validation": false,
+    "usage": "Previously inspected; regression only.",
+    "cases": [
+      {
+        "id": "h01",
+        "genuine": true,
+        "identity": "VERIFIED_IDENTITY",
+        "quote": "NOT_APPLICABLE",
+        "export_label": "SIMULATED_VERIFIED",
+        "pass": true
+      },
+      {
+        "id": "h02",
+        "genuine": false,
+        "identity": "NOT_FOUND_IN_SCOPE",
+        "quote": "NOT_APPLICABLE",
+        "export_label": "REVIEW_REQUIRED",
+        "pass": true
+      },
+      {
+        "id": "h03",
+        "genuine": false,
+        "identity": "METADATA_MISMATCH",
+        "quote": "NOT_APPLICABLE",
+        "export_label": "REVIEW_REQUIRED",
+        "pass": true
+      },
+      {
+        "id": "h04",
+        "genuine": true,
+        "identity": "VERIFIED_IDENTITY",
+        "quote": "QUOTE_MISMATCH",
+        "export_label": "REVIEW_REQUIRED",
+        "pass": true
+      }
+    ],
+    "extraction": [
+      {
+        "expected": 1,
+        "detected": 1,
+        "unresolved_markers": 0
+      },
+      {
+        "expected": 1,
+        "detected": 1,
+        "unresolved_markers": 0
+      },
+      {
+        "expected": 1,
+        "detected": 1,
+        "unresolved_markers": 0
+      }
+    ]
+  },
+  "bibliography_v2": {
+    "set_id": "bibliography-v2-frozen-2026-10-13",
+    "sha256": "1a5d1a1ee10849e79a986163e71a1cafdc32ace6f7d5611b504685b66cf73735",
+    "frozen_before_evaluation": true,
+    "external_independent_validation": false,
+    "implementation_corrected_after_first_evaluation": true,
+    "usage": "Known regression after first evaluation; see preserved first-evaluation report.",
+    "authorship": "Local synthetic evaluation authored after implementation; not an external independent legal validation.",
+    "cases": [
+      {
+        "case_id": 1,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 2,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 3,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 4,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 5,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 6,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 7,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 8,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 9,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 10,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 11,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 12,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 13,
+        "expected_citations": 2,
+        "actual_citations": 2,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 14,
+        "expected_citations": 2,
+        "actual_citations": 2,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 15,
+        "expected_citations": 1,
+        "actual_citations": 1,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 16,
+        "expected_citations": 0,
+        "actual_citations": 0,
+        "expected_unresolved": 1,
+        "actual_unresolved": 1,
+        "coverage_status": "REVIEW_REQUIRED",
+        "pass": true
+      },
+      {
+        "case_id": 17,
+        "expected_citations": 0,
+        "actual_citations": 0,
+        "expected_unresolved": 2,
+        "actual_unresolved": 2,
+        "coverage_status": "REVIEW_REQUIRED",
+        "pass": true
+      },
+      {
+        "case_id": 18,
+        "expected_citations": 0,
+        "actual_citations": 0,
+        "expected_unresolved": 1,
+        "actual_unresolved": 1,
+        "coverage_status": "REVIEW_REQUIRED",
+        "pass": true
+      },
+      {
+        "case_id": 19,
+        "expected_citations": 0,
+        "actual_citations": 0,
+        "expected_unresolved": 3,
+        "actual_unresolved": 3,
+        "coverage_status": "REVIEW_REQUIRED",
+        "pass": true
+      },
+      {
+        "case_id": 20,
+        "expected_citations": 0,
+        "actual_citations": 0,
+        "expected_unresolved": 2,
+        "actual_unresolved": 2,
+        "coverage_status": "REVIEW_REQUIRED",
+        "pass": true
+      },
+      {
+        "case_id": 21,
+        "expected_citations": 0,
+        "actual_citations": 0,
+        "expected_unresolved": 1,
+        "actual_unresolved": 1,
+        "coverage_status": "REVIEW_REQUIRED",
+        "pass": true
+      },
+      {
+        "case_id": 22,
+        "expected_citations": 0,
+        "actual_citations": 0,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 23,
+        "expected_citations": 4,
+        "actual_citations": 4,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      },
+      {
+        "case_id": 24,
+        "expected_citations": 3,
+        "actual_citations": 3,
+        "expected_unresolved": 0,
+        "actual_unresolved": 0,
+        "coverage_status": "COVERED_IN_GRAMMAR",
+        "pass": true
+      }
+    ],
+    "passed": 24,
+    "total": 24
+  },
+  "development": {
+    "set_id": "demo-development-v1",
+    "runs": 10,
+    "relevant_document_recall": 1,
+    "critical_document_omission": 0,
+    "audit_findings": 0,
+    "input_tokens": 87820,
+    "output_tokens": 13770,
+    "token_count_kind": "SIMULATED",
+    "cost_per_run": [
+      {
+        "estimated_simulation_usd": 0.011536,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011536,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011536,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011536,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011536,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011536,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011536,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011536,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011536,
+        "actual_paid_usd": 0
+      },
+      {
+        "estimated_simulation_usd": 0.011536,
+        "actual_paid_usd": 0
+      }
+    ],
+    "latency_p50_ms": 13.891999999999996,
+    "latency_p90_ms": 16.24060000000003,
+    "provider_errors": 0
+  },
+  "citation_extraction_recall": 1,
+  "false_verified_citations": 0,
+  "genuine_citations_unresolved": 0,
+  "limitations": [
+    "Fixtures sintéticos; no corpus jurídico paraguayo auténtico.",
+    "Recall documental mide reglas de simulación, no Jev.",
+    "Un solo caso de recuperación repetido mide variabilidad temporal local, no generalización.",
+    "Holdout pequeño: no justifica porcentajes de reducción de alucinaciones.",
+    "Gramática finita de extracción; citas fuera de gramática requieren revisión humana."
+  ]
+}

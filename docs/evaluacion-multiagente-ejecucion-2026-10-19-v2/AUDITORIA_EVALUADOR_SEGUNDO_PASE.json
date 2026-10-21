@@ -1,0 +1,210 @@
+{
+  "status": "TECHNICAL_AND_CONSISTENCY_AUDIT_NOT_HUMAN_LEGAL_ADJUDICATION",
+  "at": "2026-10-19T05:59:15.272Z",
+  "all_second_pass_reviews_completed": true,
+  "raw_scores_preserved": true,
+  "no_memo_regenerated": true,
+  "blind_copies_byte_identical_to_originals": 18,
+  "quote_audit": {
+    "non_literal": 15,
+    "format_only_matches": 7,
+    "unverified_after_format_normalization": 8,
+    "details": [
+      {
+        "run_id": "P01-C-R1",
+        "blind_id": "49825e2527134601991bd7fed80f88e0",
+        "kind": "FINDING",
+        "reference_id": "P01-H01",
+        "quote": "El precio propuesto es PYG 600.000.000 netos para Naranjal, más los tributos que correspondan",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": true
+      },
+      {
+        "run_id": "P01-C-R1",
+        "blind_id": "49825e2527134601991bd7fed80f88e0",
+        "kind": "ERROR",
+        "index": 0,
+        "quote": "La extracción disponible de la Ley 6380 contiene reglas sobre renta bruta y ventas netas (F03, art. 8, L00087-L00090), además de disposiciones de IVA sobre crédito y documentación (arts. 88-89 y 92, L00685-L00699 y L00717-L00721).",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": false
+      },
+      {
+        "run_id": "P01-C-R2",
+        "blind_id": "97a870f505c9437d8d70524e7fc88ff7",
+        "kind": "FINDING",
+        "reference_id": "P01-H01",
+        "quote": "“precio neto para el vendedor”",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": false
+      },
+      {
+        "run_id": "P01-C-R2",
+        "blind_id": "97a870f505c9437d8d70524e7fc88ff7",
+        "kind": "FINDING",
+        "reference_id": "P01-H02",
+        "quote": "No está acreditado que Maroma abastecerá a Cedro",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": true
+      },
+      {
+        "run_id": "P01-C-R2",
+        "blind_id": "97a870f505c9437d8d70524e7fc88ff7",
+        "kind": "FINDING",
+        "reference_id": "P01-H04",
+        "quote": "Queda pendiente determinar si esta compraventa de activos y continuidad configura sustitución",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": true
+      },
+      {
+        "run_id": "P01-C-R2",
+        "blind_id": "97a870f505c9437d8d70524e7fc88ff7",
+        "kind": "FINDING",
+        "reference_id": "P01-H05",
+        "quote": "No corresponde cuantificar IVA ni asumir una tasa uniforme con este expediente",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": true
+      },
+      {
+        "run_id": "P01-A-R2",
+        "blind_id": "98be438b73f348aeae1158f4b979e17b",
+        "kind": "FINDING",
+        "reference_id": "P01-H04",
+        "quote": "el pacto entre comprador y vendedor de que Naranjal indemnizará a Cedro no elimina esa regla frente a trabajadores",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": false
+      },
+      {
+        "run_id": "P01-A-R2",
+        "blind_id": "98be438b73f348aeae1158f4b979e17b",
+        "kind": "FINDING",
+        "reference_id": "P01-H06",
+        "quote": "no hay fundamento para tratarlo como crédito de Cedro",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": false
+      },
+      {
+        "run_id": "P03-C-R1",
+        "blind_id": "d5e6ac8725e446aaa8d8b27ee7ea96e7",
+        "kind": "FINDING",
+        "reference_id": "P03-H02",
+        "quote": "acepta la cesión desde el 02/11 solo si antes",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": true
+      },
+      {
+        "run_id": "P03-C-R2",
+        "blind_id": "db8f9e2685e042c49e5b90ac68f095e4",
+        "kind": "FINDING",
+        "reference_id": "P03-H02",
+        "quote": "La carta es una aceptación condicionada, no evidencia de que las condiciones ya se cumplieron.",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": false
+      },
+      {
+        "run_id": "P02-C-R2",
+        "blind_id": "de2be54c83c14282bf0620af12170869",
+        "kind": "FINDING",
+        "reference_id": "P02-H01",
+        "quote": "las propuestas del vendedor son alternativas para discutir, no aceptadas",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": false
+      },
+      {
+        "run_id": "P02-C-R2",
+        "blind_id": "de2be54c83c14282bf0620af12170869",
+        "kind": "FINDING",
+        "reference_id": "P02-H02",
+        "quote": "la compra de acciones no evita la aprobación",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": true
+      },
+      {
+        "run_id": "P02-C-R1",
+        "blind_id": "e6c4897a65ba4421a511370f3b761119",
+        "kind": "FINDING",
+        "reference_id": "P02-H05",
+        "quote": "no hace desaparecer pasivos históricos de la sociedad adquirida",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": false
+      },
+      {
+        "run_id": "P03-B-R2",
+        "blind_id": "e9448c92ba6a4647b276ab9ec77674f9",
+        "kind": "FINDING",
+        "reference_id": "P03-H08",
+        "quote": "El estimado de PYG 8.000.000 por vacaciones es grupal, incompleto y no una liquidación",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": false
+      },
+      {
+        "run_id": "P03-A-R1",
+        "blind_id": "fda7cc4b03a3417d8e1bb177d5f93d69",
+        "kind": "FINDING",
+        "reference_id": "P03-H05",
+        "quote": "La retención no es garantía adicional",
+        "treatment": "SUFFICIENT",
+        "literal": false,
+        "empty_when_evidence_expected": false,
+        "matches_after_format_only_normalization": true
+      }
+    ]
+  },
+  "comparable_evaluator_criterion": {
+    "reference_id": "P03-H07",
+    "source": "F03-L00129-L00131, Ley 6380 artículo 13",
+    "B_run": "P03-B-R2",
+    "B_reference_treatment": {
+      "reference_id": "P03-H07",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "No hay base suficiente en el expediente para cuantificar el impuesto ni concluir el tratamiento de cada derecho o componente",
+      "explanation": "Es prudente sobre la falta de base, tasa y documentación, y aborda IVA y comprobantes; sin embargo, no analiza el artículo 13 de la Ley 6380 sobre transferencia de establecimientos comerciales y continuidad de valores fiscales."
+    },
+    "B_explicit_specific_rule_text_detected": false,
+    "C_run": "P03-C-R2",
+    "C_reference_treatment": {
+      "reference_id": "P03-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No cuantifico un impuesto exigible.",
+      "explanation": "Identifica que faltan clasificación, base, tasa y definición contractual sobre impuestos, y pide análisis fiscal escrito sin convertir las cifras comerciales en una liquidación."
+    },
+    "C_material_objection": {
+      "severity": "MATERIAL",
+      "category": "INCORRECT_SOURCE_APPLICATION",
+      "exact_output_quote": "La Ley 6380 incluye en el concepto de enajenación transferencias de empresas y derechos patrimoniales, y prevé una base asociada al precio devengado e importes cargados al comprador",
+      "evidence_locator": "F03-L00098; F03-L00129–F03-L00131; F03-L00605–F03-L00612; F03-L00664–F03-L00668",
+      "explanation": "El memo no analiza el artículo 13 de la Ley 6380, que establece que la transferencia de establecimientos comerciales cierra el ejercicio económico del enajenante y obliga al adquirente a mantener el mismo valor fiscal de los bienes. Esa regla es directamente pertinente a la operación propuesta y debe incorporarse o dejarse como diligencia fiscal expresa."
+    },
+    "C_explicit_specific_rule_text_detected": false,
+    "interpretation": "The same omission reduces B reference coverage but is treated as a separate material objection without reducing C coverage. The one-point apparent C-vs-B coverage advantage is not robust to this grading inconsistency."
+  },
+  "initial_review_errors_preserved": "AUDITORIA_EVALUADOR_PRIMER_PASE.json",
+  "human_legal_review": "NOT_RUN",
+  "quality_superiority": "NOT_ESTABLISHED"
+}

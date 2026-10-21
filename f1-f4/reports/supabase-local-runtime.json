@@ -1,0 +1,9 @@
+﻿{
+    "command":  "supabase start",
+    "exit_code":  1,
+    "docker_error":  true,
+    "state":  "BLOCKED_LOCAL_CONTAINER_RUNTIME",
+    "raw_output_retained":  false,
+    "paid_calls":  0,
+    "deployments":  0
+}

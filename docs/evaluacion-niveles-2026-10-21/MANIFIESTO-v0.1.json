@@ -1,0 +1,38 @@
+{
+  "version": "0.1",
+  "status": "PREPARACION_NO_HABILITADA",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "7334f3eabe4166bc41f0114a254f01ddb0fd06194bcdec443564bbfec4b1c7ae"
+    },
+    {
+      "path": "PROTOCOLO.md",
+      "sha256": "1ab9b77d1b264593e1ae3520fa324573547d4c2285917f8cf61fc004bff1c4d8"
+    },
+    {
+      "path": "publico/CASOS.json",
+      "sha256": "38dbad718e4498f202fd23487f2e750867afc98f20b437835ef6293c1d2ef108"
+    },
+    {
+      "path": "REFERENCIAS_PENDIENTES.csv",
+      "sha256": "f13d424063ecf8ca16840a1a5e6d3c76badfbdb9d766c86c7e066d54c1f769a8"
+    },
+    {
+      "path": "operacion/MATRIZ.csv",
+      "sha256": "3d1132b2ff0cf9f6fb166a5551134c3d651b6d98524921a1b7006041ce7318eb"
+    },
+    {
+      "path": "PRESUPUESTO.md",
+      "sha256": "1dea72c23bc053954f75b317817b9179f24202fd1f8582613b77a86822c22d35"
+    },
+    {
+      "path": "AISLAMIENTO.md",
+      "sha256": "7f455c20776608ce042a8a0d5c9849a271998cbf028b5482d403f11116e8f584"
+    },
+    {
+      "path": "REVISION.md",
+      "sha256": "8513eb26bcb326602ca482591d2fa8c3d6fa32c84ee9a3ad81923b9d4c3963a0"
+    }
+  ]
+}

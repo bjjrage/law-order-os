@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Roadmap maestro · V2.0</title><style>
+:root{--bg:#f4f6fa;--surface:#fff;--line:#dce2eb;--ink:#182437;--muted:#617084;--accent:#1d4f7b;--accent-lite:#edf4fb;--bar:#0e2338;--radius:10px;--shadow:0 1px 2px rgba(10,30,50,.04)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--bg);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;line-height:1.45}
+.top{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:16px;background:var(--bar);color:white;padding:10px 20px;min-height:45px}.logo{font-weight:800;letter-spacing:.07em;white-space:nowrap;font-size:12px}.top .hint{opacity:.78;font-size:11px}.top input{margin-left:auto;width:300px;max-width:36vw;border:1px solid #4a6078;border-radius:6px;background:#20394f;color:white;padding:7px 10px;font-size:12px;outline-offset:3px}.top input::placeholder{color:#c7d5e2}
+.layout{display:grid;grid-template-columns:215px minmax(0,1fr);max-width:1540px;margin:auto;min-height:calc(100vh - 45px)}.sidebar{padding:18px 10px 22px;position:sticky;top:45px;align-self:start;max-height:calc(100vh - 45px);overflow:auto;border-right:1px solid var(--line)}.sidebar .nav-title{font-size:10px;color:var(--muted);font-weight:800;letter-spacing:.12em;padding:8px 10px}.sidebar a{display:block;padding:7px 10px;font-size:11.5px;color:#36536f;text-decoration:none;border-radius:7px;margin:2px 0;line-height:1.35}.sidebar a:hover,.sidebar a.active{background:#e1edf8;color:#123b62}.body{padding:19px 22px 50px;max-width:1200px;width:100%}.hero{padding:24px 25px;background:linear-gradient(115deg,#102e4b,#1f476c);color:white;border-radius:12px;margin-bottom:14px}.hero h1{font-size:24px;letter-spacing:-.03em;margin:0 0 7px}.hero p{color:#cfdfeb;margin:0;font-size:12px}.chipbar{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}.chip{font-size:10px;border:1px solid #7890a4;color:white;border-radius:999px;padding:4px 8px}.notes{font-size:11.5px;color:var(--muted);margin:9px 0 16px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 15px}.stat{background:white;border:1px solid var(--line);padding:10px 12px;border-radius:8px}.stat b{font-size:15px;display:block}.stat span{font-size:10px;color:var(--muted)}
+.section{border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow);border-radius:10px;margin:0 0 9px;overflow:hidden}.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 16px;background:var(--surface);border:0;width:100%;text-align:left;color:var(--ink);cursor:pointer}.section-head:hover{background:#f7fafc}.section-head strong{font-size:14px;line-height:1.3}.section-head span{font-size:10px;color:var(--muted);white-space:nowrap}.section-content{border-top:1px solid var(--line);padding:13px 18px 19px;overflow:auto}.section.collapsed .section-content{display:none}.section h3{font-size:13.5px;line-height:1.35;margin:19px 0 9px;color:#214d70}.section h4{font-size:12.5px;margin:14px 0 6px}.section p{margin:9px 0}.section table{width:100%;border-collapse:collapse;font-size:11.5px;margin:12px 0 16px;min-width:550px}.section th{text-align:left;background:#edf2f8;font-size:11px;position:static}.section th,.section td{padding:6px 8px;border-bottom:1px solid #e3e9ef;vertical-align:top}.section tr:hover td{background:#fbfdff}.section blockquote{border-left:3px solid #407aa9;background:#f0f6fc;padding:7px 11px;margin:12px 0;color:#35516f}.section code{font-size:11.5px;background:#f2f5f9;color:#2a4260;border-radius:3px;padding:1px 4px}.section pre{overflow:auto;background:#122537;color:#eef4fa;padding:12px;border-radius:7px;font-size:11px}.section pre code{background:transparent;color:inherit}.section ul,.section ol{padding-left:20px}.section li{margin:4px 0}.section a{color:#1c6098}.section strong{font-weight:700}.ctrls{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end;margin-bottom:10px}.ctrls button{background:white;border:1px solid var(--line);border-radius:7px;padding:7px 10px;font-size:11px;cursor:pointer;color:#294966}.ctrls button:hover{background:#eaf3fb}.task{display:flex;align-items:flex-start;gap:8px;padding:5px 0}.task input{accent-color:#2d6e9f;margin-top:3px;flex-shrink:0}.task.done .task-label{text-decoration:line-through;color:#687b8c}.task-label{flex:1}.tag{font-size:10px;border-radius:5px;background:#eef3f7;color:#4a6174;padding:3px 6px;white-space:nowrap}.footer{font-size:11px;color:var(--muted);padding:18px 0 0;text-align:center}.hidden-search{display:none!important}.progress{font-size:11px;color:#4c657c;margin-bottom:12px}
+@media(max-width:850px){.layout{display:block}.sidebar{position:static;max-height:150px;border-right:0;border-bottom:1px solid var(--line);display:flex;overflow:auto;gap:6px;padding:7px}.sidebar .nav-title{display:none}.sidebar a{white-space:nowrap;min-width:max-content}.body{padding:12px}.top{padding:10px}.top .hint{display:none}.top input{width:160px;max-width:45vw}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:18px}.hero h1{font-size:20px}.section-content{padding:9px 12px 14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.top,.sidebar,.ctrls{display:none}.layout{display:block}.section-content{display:block!important}.section{break-inside:avoid}.body{max-width:none;padding:0}}
+</style></head><body><header class="top"><span class="logo">LAW &amp; ORDER OS</span><span class="hint">Fases y criterios de cierre · 13/10/2026</span><input id="search" aria-label="Buscar dentro del documento" placeholder="Buscar sección o concepto…"></header><div class="layout"><nav class="sidebar" aria-label="Capítulos"><div class="nav-title">EXPLORAR DOCUMENTO</div><a href="#s0">F0 — Gobernanza y documentación canónica</a><a href="#s1">F1 — ADR OS-001 y plataforma productiva</a><a href="#s2">F2 — App web compacta y acceso multiestudio</a><a href="#s3">F3 — Clientes, asuntos, tareas y actividad</a><a href="#s4">F4 — Documentos, versiones, revisión y aprobación</a><a href="#s5">F5 — Corpus estatal, procedencia y RAG real</a><a href="#s6">F6 — Junta propia: hardening y primera llamada real</a><a href="#s7">F7 — Integración Junta + expediente + editor</a><a href="#s8">F8 — Agenda, comunicación, portal, honorarios y cobros</a><a href="#s9">F9 — Piloto de estudio y preproducción</a><a href="#s10">F10 — Release controlado y expansión</a><a href="#s11">Condiciones de arranque para Codex</a></nav><main class="body"><header class="hero"><h1>Roadmap maestro · V2.0</h1><p>Documento autónomo e interactivo · Guardar en la carpeta docs del proyecto para Codex</p><div class="chipbar"><span class="chip">v2.0</span><span class="chip">Paraguay</span><span class="chip">13 OCT 2026</span><span class="chip">Decisiones pendientes visibles</span></div></header><div class="stats"><div class="stat"><b>11</b><span>fases F0–F10</span></div><div class="stat"><b>78</b><span>tareas de roadmap</span></div><div class="stat"><b>F2 OS web</b><span>sin implementación acreditada</span></div><div class="stat"><b>F6 IA real</b><span>bloqueada</span></div></div><div class="notes"><h1>LAW &amp; ORDER OS</h1>
+<h2>ROADMAP MAESTRO · V2.0</h2>
+<p><strong>13 de octubre de 2026 · 11 fases F0–F10 · OS completo, no motor IA aislado</strong></p>
+<p><strong>Estado:</strong> roadmap reconciliado con el informe Fase 2; no se han aprobado infraestructura productiva, tiempos, costos fijos ni piloto. Los estados “PASS reportado” no sustituyen evidencias replicadas.</p>
+<blockquote>
+<p><strong>Cambio respecto de v1.1:</strong> se elimina la dependencia de clonar Mussi. Junta propia Jev/Luna/Sol Medium/Gemini/checker. El OS Core offline ya existe como servicio, no como aplicación web real. Prioridad siguiente: ADR OS-001 y una aplicación compacta persistente, en paralelo a cerrar procedencia/corpus y primer smoke IA.</p>
+</blockquote>
+<h3>Semáforo del proyecto</h3>
+<table>
+<thead>
+<tr>
+<th>Frente</th>
+<th>Realidad al 13/10</th>
+<th>Riesgo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Junta V2</td>
+<td>271 tests integrados PASS <strong>reportados</strong>; 11/12 extracciones; no ejecución real</td>
+<td>Modelo/corpus/credenciales</td>
+</tr>
+<tr>
+<td>Fuentes estatales</td>
+<td>3 PDFs preservados, no corpus completo; autenticación real bloqueada</td>
+<td>Verificador oficial y derechos</td>
+</tr>
+<tr>
+<td>OS Core</td>
+<td>Servicios y pruebas sintéticas; no app productiva</td>
+<td>ADR OS-001, auth y BD</td>
+</tr>
+<tr>
+<td>UI</td>
+<td>Requisito obligatorio desktop-first compacta</td>
+<td>Sin implementación reportada</td>
+</tr>
+<tr>
+<td>Gobierno</td>
+<td>Sin Git; blueprint y roadmap no estaban en carpeta</td>
+<td>Instalar documentación y versionado</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trabajo en paralelo:</strong> F0→F1→F2→F3→F4→F7 y F0→F5→F6→F7; F8 puede empezar tras F3/F4; convergencia en F9. Ninguna rama de trabajo asume desplegar o gastar sin permiso. El primer paso no es “más tests sintéticos” indefinidamente: cerrar decisiones productivas y comenzar la app real mientras se cierran fuentes y proveedores.</p>
+<h3>Estados para gestionar avance</h3>
+<ul>
+<li><code>REPORTED_PASS</code>: dicho por Codex, no repetido independientemente.</li>
+<li><code>TESTED_OFFLINE</code>: comportamiento probado con fixtures/no red.</li>
+<li><code>BLOCKED</code>: dependencia necesaria sin resolver.</li>
+<li><code>NOT_STARTED</code>: sin implementación acreditada.</li>
+<li><code>VERIFIED_REAL</code>: original obtenido o acción externa realmente verificada, <strong>limitado al hecho verificado</strong>.</li>
+<li><code>DONE</code>: criterio de aceptación cerrado con evidencia auditada.</li>
+</ul>
+<p>Los checks interactivos de este roadmap son <strong>notas de seguimiento locales</strong> en el navegador, no estado certificado ni conexión automática a Git o a Codex.</p>
+</div><div class="ctrls"><button id="expand">Expandir todo</button><button id="collapse">Contraer todo</button><button id="export">Exportar seguimiento local</button></div><div class="progress" id="progress">Seguimiento local de tareas; no representa certificación.</div><section class="section" id="s0"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s0"><strong>F0 — Gobernanza y documentación canónica</strong><span>▼</span></button><div class="section-content" id="c-s0"><p><strong>Estado reportado:</strong> EN RECONCILIACIÓN<br/>
+<strong>Dependencias:</strong> —</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F0-T01" type="checkbox"/><span class="task-label"><strong>F0-T01</strong> — Instalar blueprint, roadmap, ADR y dossier F1 en <code>docs/</code> sin borrar fuentes previas.</span></label></li>
+<li><label class="task"><input data-task="F0-T02" type="checkbox"/><span class="task-label"><strong>F0-T02</strong> — Registrar decisión de Junta propia y mapa de reemplazo 3→2→1 / Mussi sin arrastrar código.</span></label></li>
+<li><label class="task"><input data-task="F0-T03" type="checkbox"/><span class="task-label"><strong>F0-T03</strong> — Inspeccionar repositorio y estado local (sin Git reportado) antes de crear tareas.</span></label></li>
+<li><label class="task"><input data-task="F0-T04" type="checkbox"/><span class="task-label"><strong>F0-T04</strong> — Aprobar/ajustar responsables y estudio piloto para flujos jurídicos reales.</span></label></li>
+<li><label class="task"><input data-task="F0-T05" type="checkbox"/><span class="task-label"><strong>F0-T05</strong> — Conservar los reportes F1/F2 y hashes históricos como evidencia inmutable.</span></label></li>
+<li><label class="task"><input data-task="F0-T06" type="checkbox"/><span class="task-label"><strong>F0-T06</strong> — Registrar decisiones pendientes, bloqueos y no negociables con dueño y fecha de cierre.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>Docs versionados en carpeta de Codex; ADR explícito de cambios y lectura confirmada; no arquitectura inferida.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s1"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s1"><strong>F1 — ADR OS-001 y plataforma productiva</strong><span>▼</span></button><div class="section-content" id="c-s1"><p><strong>Estado reportado:</strong> BLOCKED / DECISIÓN ABIERTA<br/>
+<strong>Dependencias:</strong> F0</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F1-T01" type="checkbox"/><span class="task-label"><strong>F1-T01</strong> — Leer el <code>OS_CORE_ARCHITECTURE.md</code> real y comparar alternativas documentadas.</span></label></li>
+<li><label class="task"><input data-task="F1-T02" type="checkbox"/><span class="task-label"><strong>F1-T02</strong> — Proponer y aprobar framework web, API/backend, PostgreSQL, auth, storage, jobs y región.</span></label></li>
+<li><label class="task"><input data-task="F1-T03" type="checkbox"/><span class="task-label"><strong>F1-T03</strong> — Definir entornos dev/preview/prod, secrets, auditoría y responsabilidades de deploy.</span></label></li>
+<li><label class="task"><input data-task="F1-T04" type="checkbox"/><span class="task-label"><strong>F1-T04</strong> — Definir frontera tenant y autorización por asunto en API/BD/storage/jobs.</span></label></li>
+<li><label class="task"><input data-task="F1-T05" type="checkbox"/><span class="task-label"><strong>F1-T05</strong> — Crear Git local y estrategia de rama protegida tras preservar baseline; remoto solo con autorización.</span></label></li>
+<li><label class="task"><input data-task="F1-T06" type="checkbox"/><span class="task-label"><strong>F1-T06</strong> — Definir restauración, backup, logs seguros y plan mínimo de operación.</span></label></li>
+<li><label class="task"><input data-task="F1-T07" type="checkbox"/><span class="task-label"><strong>F1-T07</strong> — Crear ADR aprobado y contratos API/datos compatibles con OS Core offline.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>ADR OS-001 explícitamente aprobado; decisiones técnicas registradas y pruebas básicas de infra; nada productivo por defecto.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s2"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s2"><strong>F2 — App web compacta y acceso multiestudio</strong><span>▼</span></button><div class="section-content" id="c-s2"><p><strong>Estado reportado:</strong> NO INICIADO<br/>
+<strong>Dependencias:</strong> F1</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F2-T01" type="checkbox"/><span class="task-label"><strong>F2-T01</strong> — Implementar shell web navegable y autenticación real en dev.</span></label></li>
+<li><label class="task"><input data-task="F2-T02" type="checkbox"/><span class="task-label"><strong>F2-T02</strong> — Implementar estudio, membresías y selector/contexto; denegación por defecto.</span></label></li>
+<li><label class="task"><input data-task="F2-T03" type="checkbox"/><span class="task-label"><strong>F2-T03</strong> — Crear sidebar compacta y topbar 42–48px, tipografía 12.5–13.5px, tablas densas.</span></label></li>
+<li><label class="task"><input data-task="F2-T04" type="checkbox"/><span class="task-label"><strong>F2-T04</strong> — Crear panel «Mi día» para abogado, rol coordinador y administración con datos reales.</span></label></li>
+<li><label class="task"><input data-task="F2-T05" type="checkbox"/><span class="task-label"><strong>F2-T05</strong> — QA negativo multiestudio, RLS/servidor, sesión/revocación y controles de storage.</span></label></li>
+<li><label class="task"><input data-task="F2-T06" type="checkbox"/><span class="task-label"><strong>F2-T06</strong> — Capturas desktop 1440×900 y 1366×768 al 100%; comparación visual 85% sin CSS zoom.</span></label></li>
+<li><label class="task"><input data-task="F2-T07" type="checkbox"/><span class="task-label"><strong>F2-T07</strong> — Definir navegación teclado, focus visible y estados loading/empty/error.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>App real, persistente y protegida; capturas confirman densidad y jerarquía; E2E de login y permisos.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s3"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s3"><strong>F3 — Clientes, asuntos, tareas y actividad</strong><span>▼</span></button><div class="section-content" id="c-s3"><p><strong>Estado reportado:</strong> SERVICIO OFFLINE IMPLEMENTADO / WEB PENDIENTE<br/>
+<strong>Dependencias:</strong> F2</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F3-T01" type="checkbox"/><span class="task-label"><strong>F3-T01</strong> — Reutilizar contrato de dominio OS Core ya probado offline; auditar cambios del servicio.</span></label></li>
+<li><label class="task"><input data-task="F3-T02" type="checkbox"/><span class="task-label"><strong>F3-T02</strong> — Persistir cliente/contacto/parte/estudio sin cruzar tenants.</span></label></li>
+<li><label class="task"><input data-task="F3-T03" type="checkbox"/><span class="task-label"><strong>F3-T03</strong> — Crear asunto consultivo y asunto litigioso con responsables, participantes y estado.</span></label></li>
+<li><label class="task"><input data-task="F3-T04" type="checkbox"/><span class="task-label"><strong>F3-T04</strong> — Implementar tareas y actividad auditada con asignación y vencimiento interno.</span></label></li>
+<li><label class="task"><input data-task="F3-T05" type="checkbox"/><span class="task-label"><strong>F3-T05</strong> — Implementar vistas compactas de clientes/asuntos/tareas y filtros útiles.</span></label></li>
+<li><label class="task"><input data-task="F3-T06" type="checkbox"/><span class="task-label"><strong>F3-T06</strong> — Verificar E2E permisos y persistencia tras recarga, con dos estudios y dos abogados.</span></label></li>
+<li><label class="task"><input data-task="F3-T07" type="checkbox"/><span class="task-label"><strong>F3-T07</strong> — No confundir asunto con procedimiento judicial ni calcular plazos por LLM.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>E2E crear estudio→cliente→asunto→tarea→actividad, con datos durables y denegación de acceso ajeno.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s4"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s4"><strong>F4 — Documentos, versiones, revisión y aprobación</strong><span>▼</span></button><div class="section-content" id="c-s4"><p><strong>Estado reportado:</strong> SERVICIO OFFLINE IMPLEMENTADO / WEB PENDIENTE<br/>
+<strong>Dependencias:</strong> F3</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F4-T01" type="checkbox"/><span class="task-label"><strong>F4-T01</strong> — Subir originales sin sobrescritura; hash, extracción, versiones explícitas y permisos.</span></label></li>
+<li><label class="task"><input data-task="F4-T02" type="checkbox"/><span class="task-label"><strong>F4-T02</strong> — Relacionar documentos con asunto y responsables; registros inmutables de aprobación.</span></label></li>
+<li><label class="task"><input data-task="F4-T03" type="checkbox"/><span class="task-label"><strong>F4-T03</strong> — Implementar editor/borrador con versión y revisión interna, sin IA de producción.</span></label></li>
+<li><label class="task"><input data-task="F4-T04" type="checkbox"/><span class="task-label"><strong>F4-T04</strong> — Probar cambios de versión y prohibir aprobación implícita de una versión nueva.</span></label></li>
+<li><label class="task"><input data-task="F4-T05" type="checkbox"/><span class="task-label"><strong>F4-T05</strong> — Diferenciar draft, revisión, aprobación, entrega y presentación con comprobante real.</span></label></li>
+<li><label class="task"><input data-task="F4-T06" type="checkbox"/><span class="task-label"><strong>F4-T06</strong> — QA acceso privado y descargas/exports; E2E del ciclo documental.</span></label></li>
+<li><label class="task"><input data-task="F4-T07" type="checkbox"/><span class="task-label"><strong>F4-T07</strong> — Construir índice de expediente y anexos reproducibles sin alterar originales.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>E2E documental completo con permisos reales y aprobación de versión exacta.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s5"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s5"><strong>F5 — Corpus estatal, procedencia y RAG real</strong><span>▼</span></button><div class="section-content" id="c-s5"><p><strong>Estado reportado:</strong> 3 PDFS RECUPERADOS / AUTH BLOQUEADA<br/>
+<strong>Dependencias:</strong> F0, en paralelo con F2–F4</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F5-T01" type="checkbox"/><span class="task-label"><strong>F5-T01</strong> — Conservar y verificar los tres originales de Constitucional/Civil/Penal y sus hashes.</span></label></li>
+<li><label class="task"><input data-task="F5-T02" type="checkbox"/><span class="task-label"><strong>F5-T02</strong> — Definir política de atestaciones institucionales autorizadas y registro confiable.</span></label></li>
+<li><label class="task"><input data-task="F5-T03" type="checkbox"/><span class="task-label"><strong>F5-T03</strong> — Acordar permisos de ingestión/indexación comercial, alcance de portales y versión normativa.</span></label></li>
+<li><label class="task"><input data-task="F5-T04" type="checkbox"/><span class="task-label"><strong>F5-T04</strong> — Cerrar OCR/QA de escaneos y anomalías de encabezados con revisión humana.</span></label></li>
+<li><label class="task"><input data-task="F5-T05" type="checkbox"/><span class="task-label"><strong>F5-T05</strong> — Construir conector autorizado para corpus finito y manifiesto sala/año/versión.</span></label></li>
+<li><label class="task"><input data-task="F5-T06" type="checkbox"/><span class="task-label"><strong>F5-T06</strong> — Conectar corpus verificado con resolver de referencias y RAG híbrido.</span></label></li>
+<li><label class="task"><input data-task="F5-T07" type="checkbox"/><span class="task-label"><strong>F5-T07</strong> — Ampliar leyes, códigos, Constitución y Gaceta con trazabilidad y texto vigente solo si comprobado.</span></label></li>
+<li><label class="task"><input data-task="F5-T08" type="checkbox"/><span class="task-label"><strong>F5-T08</strong> — Benchmark externo independiente; registrar detección, extracción, ambigüedad, falso VERIFIED.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>Fuentes oficiales comprobadas y permitidas, política aprobada; no falsas verificaciones en set independiente; límites de cobertura visibles.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s6"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s6"><strong>F6 — Junta propia: hardening y primera llamada real</strong><span>▼</span></button><div class="section-content" id="c-s6"><p><strong>Estado reportado:</strong> 271 TESTS OFFLINE REPORTADOS / API BLOQUEADA<br/>
+<strong>Dependencias:</strong> F0+F5 para corpus; admite preflight paralelo</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F6-T01" type="checkbox"/><span class="task-label"><strong>F6-T01</strong> — Reproducir 271 pruebas reportadas, typecheck, dos builds y smoke sobre código F2.</span></label></li>
+<li><label class="task"><input data-task="F6-T02" type="checkbox"/><span class="task-label"><strong>F6-T02</strong> — Resolver el FAIL conocido de extracción 11/12 en development; congelar holdout externo nuevo.</span></label></li>
+<li><label class="task"><input data-task="F6-T03" type="checkbox"/><span class="task-label"><strong>F6-T03</strong> — Verificar accesos reales: Jev, Luna, Sol 6.1 Medium, Gemini 3.8 Flash; no fallback oculto.</span></label></li>
+<li><label class="task"><input data-task="F6-T04" type="checkbox"/><span class="task-label"><strong>F6-T04</strong> — Solucionar Google HTTP 401 y configurar claves de forma segura; no imprimir secretos.</span></label></li>
+<li><label class="task"><input data-task="F6-T05" type="checkbox"/><span class="task-label"><strong>F6-T05</strong> — Preflight GET no generativo donde esté documentado; diferenciar 401/403/404.</span></label></li>
+<li><label class="task"><input data-task="F6-T06" type="checkbox"/><span class="task-label"><strong>F6-T06</strong> — Ejecutar UNA Junta acotada solo con autorización expresa de gasto, techo y datos sintéticos.</span></label></li>
+<li><label class="task"><input data-task="F6-T07" type="checkbox"/><span class="task-label"><strong>F6-T07</strong> — Medir tokens reales, costo final, P50/P90 cuando haya muestra, cobertura y checker.</span></label></li>
+<li><label class="task"><input data-task="F6-T08" type="checkbox"/><span class="task-label"><strong>F6-T08</strong> — Marcar ejecución parcial y requerir revisión humana; no presentar result real si falla proveedor.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>Preflight y smoke reales documentados con autorización; checker y extracción evaluados; presupuesto por run verificable.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s7"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s7"><strong>F7 — Integración Junta + expediente + editor</strong><span>▼</span></button><div class="section-content" id="c-s7"><p><strong>Estado reportado:</strong> NO INICIADO<br/>
+<strong>Dependencias:</strong> F4+F5+F6</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F7-T01" type="checkbox"/><span class="task-label"><strong>F7-T01</strong> — Desde un asunto autorizado crear cuestión jurídica y snapshot de evidencia.</span></label></li>
+<li><label class="task"><input data-task="F7-T02" type="checkbox"/><span class="task-label"><strong>F7-T02</strong> — Permitir abrir investigaciones pasadas y distinguir CURRENT/OUTDATED.</span></label></li>
+<li><label class="task"><input data-task="F7-T03" type="checkbox"/><span class="task-label"><strong>F7-T03</strong> — Recuperar originales en Sol/Gemini con presupuesto controlado y aislamiento tenant.</span></label></li>
+<li><label class="task"><input data-task="F7-T04" type="checkbox"/><span class="task-label"><strong>F7-T04</strong> — Aplicar checker a citas del borrador exportado, no solo a la salida inicial.</span></label></li>
+<li><label class="task"><input data-task="F7-T05" type="checkbox"/><span class="task-label"><strong>F7-T05</strong> — Enlazar análisis aprobado al documento y al responsable de revisión.</span></label></li>
+<li><label class="task"><input data-task="F7-T06" type="checkbox"/><span class="task-label"><strong>F7-T06</strong> — QA E2E de citas manipuladas, documento nuevo, revoke de permisos y bloqueo de fuentes.</span></label></li>
+<li><label class="task"><input data-task="F7-T07" type="checkbox"/><span class="task-label"><strong>F7-T07</strong> — Verificar costo y latencia por trabajo sin presentar éxito de dictamen como validación de autenticidad.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>E2E asunto→RAG→Junta→auditor→checker→borrador→revisión→aprobación, con evidencia íntegra y sin leaks.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s8"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s8"><strong>F8 — Agenda, comunicación, portal, honorarios y cobros</strong><span>▼</span></button><div class="section-content" id="c-s8"><p><strong>Estado reportado:</strong> NO INICIADO<br/>
+<strong>Dependencias:</strong> F3+F4; paralelo con F5–F7</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F8-T01" type="checkbox"/><span class="task-label"><strong>F8-T01</strong> — Agenda de audiencias/fechas internas con responsable y estados no ambiguos.</span></label></li>
+<li><label class="task"><input data-task="F8-T02" type="checkbox"/><span class="task-label"><strong>F8-T02</strong> — Plazos procesales sugeridos ≠ confirmados; cálculo automático solo con reglas validadas.</span></label></li>
+<li><label class="task"><input data-task="F8-T03" type="checkbox"/><span class="task-label"><strong>F8-T03</strong> — Solicitudes de documentación y comunicaciones con aprobación previa.</span></label></li>
+<li><label class="task"><input data-task="F8-T04" type="checkbox"/><span class="task-label"><strong>F8-T04</strong> — Portal de clientes para versiones explícitamente compartidas.</span></label></li>
+<li><label class="task"><input data-task="F8-T05" type="checkbox"/><span class="task-label"><strong>F8-T05</strong> — Acuerdos de honorarios, gastos, anticipos, facturado y cobrado separados.</span></label></li>
+<li><label class="task"><input data-task="F8-T06" type="checkbox"/><span class="task-label"><strong>F8-T06</strong> — Conservar moneda/IVA/tributos sin inventar integración fiscal paraguaya.</span></label></li>
+<li><label class="task"><input data-task="F8-T07" type="checkbox"/><span class="task-label"><strong>F8-T07</strong> — Panel de dirección con carga y economía reconciliable, sin KPIs decorativos.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>Ciclo administrativo y de comunicaciones probado con importes y documentos, permisos, versiones y acciones reales.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s9"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s9"><strong>F9 — Piloto de estudio y preproducción</strong><span>▼</span></button><div class="section-content" id="c-s9"><p><strong>Estado reportado:</strong> NO INICIADO<br/>
+<strong>Dependencias:</strong> F7+F8</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F9-T01" type="checkbox"/><span class="task-label"><strong>F9-T01</strong> — Elegir estudio piloto y casos de práctica autorizados; convenio de confidencialidad.</span></label></li>
+<li><label class="task"><input data-task="F9-T02" type="checkbox"/><span class="task-label"><strong>F9-T02</strong> — Ejecutar ciclo completo con dos abogados, administración y responsable de revisión.</span></label></li>
+<li><label class="task"><input data-task="F9-T03" type="checkbox"/><span class="task-label"><strong>F9-T03</strong> — Probar aislamiento entre dos estudios, revocación, recuperaciones IA y exports.</span></label></li>
+<li><label class="task"><input data-task="F9-T04" type="checkbox"/><span class="task-label"><strong>F9-T04</strong> — Pruebas de carga de documentos y operación concurrente; fallos y restauración.</span></label></li>
+<li><label class="task"><input data-task="F9-T05" type="checkbox"/><span class="task-label"><strong>F9-T05</strong> — Auditar seguridad, backups, observabilidad, costos por asiento y límites de modelos.</span></label></li>
+<li><label class="task"><input data-task="F9-T06" type="checkbox"/><span class="task-label"><strong>F9-T06</strong> — Benchmark legal independiente contra jurisprudencia verdadera/falsa y adversarial.</span></label></li>
+<li><label class="task"><input data-task="F9-T07" type="checkbox"/><span class="task-label"><strong>F9-T07</strong> — Cerrar defectos críticos y criterios de aceptación de UI compacta con capturas.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>Cero críticos abiertos, recorrido de estudio completo, evidencias E2E y aprobación humana de piloto.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s10"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s10"><strong>F10 — Release controlado y expansión</strong><span>▼</span></button><div class="section-content" id="c-s10"><p><strong>Estado reportado:</strong> NO INICIADO<br/>
+<strong>Dependencias:</strong> F9</p>
+<h3>Tareas verificables</h3>
+<ul>
+<li><label class="task"><input data-task="F10-T01" type="checkbox"/><span class="task-label"><strong>F10-T01</strong> — Aprobar políticas de datos, retención y términos de fuentes comerciales.</span></label></li>
+<li><label class="task"><input data-task="F10-T02" type="checkbox"/><span class="task-label"><strong>F10-T02</strong> — Validar precios y márgenes medidos con frecuencia de uso real.</span></label></li>
+<li><label class="task"><input data-task="F10-T03" type="checkbox"/><span class="task-label"><strong>F10-T03</strong> — Separar cambios preview/productivo con gates y rollback documentados.</span></label></li>
+<li><label class="task"><input data-task="F10-T04" type="checkbox"/><span class="task-label"><strong>F10-T04</strong> — Publicar con monitoring, backups/restauración y soporte.</span></label></li>
+<li><label class="task"><input data-task="F10-T05" type="checkbox"/><span class="task-label"><strong>F10-T05</strong> — Activar clientes comerciales gradualmente sin prometer corpus total.</span></label></li>
+<li><label class="task"><input data-task="F10-T06" type="checkbox"/><span class="task-label"><strong>F10-T06</strong> — Planificar nuevas salas/territorios y conectores según evidencia.</span></label></li>
+<li><label class="task"><input data-task="F10-T07" type="checkbox"/><span class="task-label"><strong>F10-T07</strong> — Actualizar blueprint, roadmap y ADRs con release real y trazabilidad.</span></label></li>
+</ul>
+<h3>Gate DONE</h3>
+<p>Release autorizado con rollback, operación monitoreada, economía medida y cobertura publicada sin afirmaciones falsas.</p>
+<h3>Prueba y evidencia</h3>
+<p>Registrar archivos, comandos, SHA, entorno, usuario/rol, resultados PASS/FAIL/BLOCKED, capturas cuando corresponde y límites de la prueba. Nunca marcar DONE por mocks o por una pantalla navegable sin backend.</p>
+</div></section><section class="section" id="s11"><button class="section-head" type="button" aria-expanded="true" aria-controls="c-s11"><strong>Condiciones de arranque para Codex</strong><span>▼</span></button><div class="section-content" id="c-s11"><ol>
+<li>Instalar/leer <code>docs/LAW_ORDER_OS_BLUEPRINT_v2.0.md</code> y este roadmap <strong>antes de programar</strong>.</li>
+<li>Leer <code>PHASE2_IMPLEMENTATION_REPORT.md</code>, <code>OS_CORE_ARCHITECTURE.md</code>, <code>ADR OS-001</code>, informes de test, corpus y bloqueos locales; inventariar lo implementado.</li>
+<li>Detener solo decisiones bloqueantes (stack productivo y datos reales), documentar alternativas y esperar aprobación; no detener módulos independientes ni rehacer Junta offline.</li>
+<li>Mostrar evidencia real y un walkthrough del primer OS navegable con UI compacta en el siguiente reporte.</li>
+<li>Prohibido inventar status de despliegue, claves API, cobertura jurisdiccional o permisos de uso de corpus.</li>
+</ol>
+<p><strong>Hito inmediato de producto:</strong> aprobar ADR OS-001, implementar autenticación/persistencia multiestudio y pantalla «Mi día» compacta, asuntos, clientes, documentos y tareas sobre servicios reales. <strong>Hito inmediato de IA:</strong> verificador de fuentes autorizado, test de extracción externo, acceso a modelos y smoke explícitamente aprobado.</p>
+</div></section><div class="footer">LAW &amp; ORDER OS · Fuente editable Markdown incluida en el ZIP. Interacciones locales, sin red.</div></main></div><script>
+(function(){const KEY='law-order-os:v2.0:roadmap-checks';const tasks=Array.from(document.querySelectorAll('input[data-task]'));let state={};try{state=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){state={}}
+function update(){let c=0;tasks.forEach(x=>{if(x.checked)c++;x.closest('.task').classList.toggle('done',x.checked)});const n=document.getElementById('progress');if(n)n.textContent=`Seguimiento local: ${c}/${tasks.length} tareas marcadas. No son gates certificados.`}
+tasks.forEach(x=>{x.checked=!!state[x.dataset.task];x.addEventListener('change',()=>{state[x.dataset.task]=x.checked;try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}update()})});update();
+document.querySelectorAll('.section-head').forEach(b=>b.addEventListener('click',()=>{const s=b.closest('.section');s.classList.toggle('collapsed');b.setAttribute('aria-expanded',String(!s.classList.contains('collapsed')));b.querySelector('span').textContent=s.classList.contains('collapsed')?'▶':'▼'}));
+document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.toLocaleLowerCase().trim();document.querySelectorAll('.section').forEach(s=>{const yes=!q||s.textContent.toLocaleLowerCase().includes(q);s.classList.toggle('hidden-search',!yes);if(q&&yes){s.classList.remove('collapsed');s.querySelector('.section-head').setAttribute('aria-expanded','true')}})});
+document.getElementById('expand').addEventListener('click',()=>document.querySelectorAll('.section:not(.hidden-search)').forEach(s=>{s.classList.remove('collapsed');s.querySelector('.section-head').setAttribute('aria-expanded','true')}));
+document.getElementById('collapse').addEventListener('click',()=>document.querySelectorAll('.section:not(.hidden-search)').forEach(s=>{s.classList.add('collapsed');s.querySelector('.section-head').setAttribute('aria-expanded','false')}));
+const exportBtn=document.getElementById('export');if(exportBtn)exportBtn.addEventListener('click',()=>{const blob=new Blob([JSON.stringify({document:'LAW_ORDER_OS_ROADMAP_v2.0',exported_at:new Date().toISOString(),checked:state},null,2)],{type:'application/json'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='LAW_ORDER_ROADMAP_SEGUIMIENTO_LOCAL.json';a.click();URL.revokeObjectURL(u)})
+})();</script></body></html>

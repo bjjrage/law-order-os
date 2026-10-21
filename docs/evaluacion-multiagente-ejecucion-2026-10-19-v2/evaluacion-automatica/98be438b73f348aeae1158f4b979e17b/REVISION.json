@@ -1,0 +1,63 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P01-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El precio total de PYG 600 millones no debe interpretarse como costo máximo: es neto para Naranjal y los tributos se añadirían.",
+      "explanation": "Contrasta el precio neto de la propuesta con el límite presupuestario del comité, advierte que el costo total puede excederlo y propone cerrar el precio máximo y la asignación tributaria antes de autorizar un compromiso. También reconoce que la oferta v2 reemplaza la oferta comercial previa y que no hay aceptación ni compromiso firmado."
+    },
+    {
+      "reference_id": "P01-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Maroma solo expresó interés en estudiar continuidad, pidió información y dijo explícitamente que el correo no aprueba cesión ni constituye contrato con Cedro.",
+      "explanation": "Aplica la cláusula de consentimiento escrito y distingue adecuadamente el interés comercial de una aprobación vinculante. Conserva el riesgo de exclusividad y la alternativa de proveedores, y condiciona el cierre a consentimiento o a un nuevo acuerdo escrito."
+    },
+    {
+      "reference_id": "P01-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Los recibos acreditan anotación de recepción de salarios base, no pago de esas comisiones.",
+      "explanation": "Distingue los recibos de salario base del registro de comisiones con la columna de pago vacía, calcula correctamente PYG 9 millones como suma aritmética y no lo presenta como una liquidación jurídica definitiva. También identifica que el saldo de vacaciones y los aportes requieren conciliación documental."
+    },
+    {
+      "reference_id": "P01-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Si la continuidad planeada implica sustitución, presupuestar continuidad de derechos/antigüedad y obtener conciliación individual de salarios, comisiones, vacaciones y aportes, comprobantes y garantías con retención.",
+      "explanation": "Expone de forma condicional la posible sustitución de empleador y la responsabilidad solidaria legal por seis meses, y aclara que la indemnidad contractual no libera frente a los trabajadores. No afirma terminación, renuncia, pérdida automática de antigüedad ni indemnizaciones causadas por la negociación."
+    },
+    {
+      "reference_id": "P01-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La impresión verbal del contador de que no habría IVA porque no se venden acciones carece de análisis y la propia nota reconoce que debe revisarse.",
+      "explanation": "Contrasta la opinión privada con la regla de IVA sobre enajenación de bienes, trata inventario y equipos como una cuestión tributaria que debe resolverse y deja pendiente el tratamiento de los derechos comerciales y la tasa aplicable. Para IRE, diferencia el valor contable de una liquidación fiscal y evita concluir que la operación sea una transferencia de establecimiento."
+    },
+    {
+      "reference_id": "P01-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El saldo de IVA a favor de Naranjal de PYG 22 millones deriva de comprobantes a su nombre; no está incluido ni hay fundamento para tratarlo como crédito de Cedro.",
+      "explanation": "No incorpora el saldo a favor del vendedor a los activos ni lo da por transferible mediante la entrega de facturas. La salvedad de exigir base legal y validación formal evita presentar la conclusión como una comprobación definitiva."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "El memo no desarrolla expresamente la regla del art. 88 de la Ley 6380 sobre traslado proporcional de IVA Crédito en transferencias consecuencia de reorganización de empresas. El expediente no acredita que esta compra de activos sea una reorganización, y el memo reserva la posibilidad de acreditar una base legal; por ello es una diligencia útil, no un error demostrado."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La evaluación se limita al memo, los documentos sintéticos aportados y las extracciones normativas incluidas; el propio expediente advierte que no acredita consolidación normativa a la fecha de corte.",
+    "La aplicabilidad de reglas tributarias específicas a la transferencia de derechos comerciales, del conjunto de activos o a una eventual reorganización requiere revisión normativa y reglamentaria completa."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "98be438b73f348aeae1158f4b979e17b",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "usage": {
+    "calls": 1,
+    "input_tokens": 232319,
+    "output_tokens_including_reasoning": 1572,
+    "cost_accounted_upper_usd": 0.029825875,
+    "estimated_standard_no_cache_discount_usd": 0.0240179,
+    "unknown_usage": false,
+    "actual_invoice_cost_usd": null,
+    "max_cost_usd": 0.08
+  },
+  "non_literal_quote_count": 0
+}

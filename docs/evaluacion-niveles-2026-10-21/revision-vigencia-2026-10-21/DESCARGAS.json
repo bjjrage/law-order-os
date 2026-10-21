@@ -1,0 +1,138 @@
+[
+  {
+    "id": "LEY7663",
+    "url": "https://silpy.congreso.gov.py/web/ley/146583",
+    "path": "LEY7663.html",
+    "bytes": 38643,
+    "retrieved_at": "2026-10-21T21:05:12.193Z",
+    "sha256": "fe90b176b5821f676cf1cf9c3a8e92c852559f0911ad41ff001804ee9ac72705"
+  },
+  {
+    "id": "EXP6715-14",
+    "url": "https://silpy.congreso.gov.py/web/expediente/130811",
+    "path": "EXP6715-14.html",
+    "bytes": 69202,
+    "retrieved_at": "2026-10-21T21:05:12.409Z",
+    "sha256": "507f741149542bd6ef65a1a2d90a90e45bfed643f8619e072d5c5ecd85abe4b9"
+  },
+  {
+    "id": "EXP6715-69",
+    "url": "https://silpy.congreso.gov.py/web/expediente/154461",
+    "path": "EXP6715-69.html",
+    "bytes": 66184,
+    "retrieved_at": "2026-10-21T21:05:12.388Z",
+    "sha256": "34c22163e53bcf9d5b1d9ca6cca99c392a3d48b2848b344acff0554728a12669"
+  },
+  {
+    "id": "PRECIO-OPENAI",
+    "url": "https://developers.openai.com/api/docs/pricing.md",
+    "path": "PRECIO-OPENAI.md",
+    "bytes": 22634,
+    "retrieved_at": "2026-10-21T21:05:12.259Z",
+    "sha256": "129d6019819379a6f30edc0811d4631ddb085dcd4b3b1d0012a945cd1af1bfbf"
+  },
+  {
+    "id": "MODELO-LUNA",
+    "url": "https://developers.openai.com/api/docs/models/gpt-6-luna.md",
+    "path": "MODELO-LUNA.md",
+    "bytes": 3969,
+    "retrieved_at": "2026-10-21T21:05:12.388Z",
+    "sha256": "2e4861582095740f5ea84b14bb18fa476a49c426b397b779b964bc144397b451"
+  },
+  {
+    "id": "MODELO-SOL",
+    "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol.md",
+    "path": "MODELO-SOL.md",
+    "bytes": 4436,
+    "retrieved_at": "2026-10-21T21:05:12.388Z",
+    "sha256": "acfe91d19882aaf7bb52877898684614035a947de02f2955c9de905a7efb1362"
+  },
+  {
+    "id": "PRECIO-DEEPSEEK",
+    "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "path": "PRECIO-DEEPSEEK.html",
+    "bytes": 26043,
+    "retrieved_at": "2026-10-21T21:05:12.842Z",
+    "sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66"
+  },
+  {
+    "id": "PRECIO-GEMINI",
+    "url": "https://ai.google.dev/gemini-api/docs/pricing",
+    "path": "PRECIO-GEMINI.html",
+    "bytes": 286790,
+    "retrieved_at": "2026-10-21T21:05:13.305Z",
+    "sha256": "5e2d9b5ed75c01dadb4d0c16e26736e009d139918817e0295bafe860f5b91ca1"
+  },
+  {
+    "id": "LEY7663-PDF",
+    "url": "https://silpy.congreso.gov.py/web/descarga/ley-146583",
+    "path": "LEY7663.pdf",
+    "bytes": 3753955,
+    "status": 200,
+    "retrieved_at": "2026-10-21T21:07:43.802Z",
+    "sha256": "2f529243c422c9015fc671cdc87e5c71983bb6551681d555da93ec7512c3c795"
+  },
+  {
+    "id": "CPP-CSJ",
+    "url": "https://www.pj.gov.py/ebook/libros_files/codigo-procesal-penal.pdf",
+    "path": "CPP-CSJ.pdf",
+    "bytes": 1979826,
+    "status": 200,
+    "retrieved_at": "2026-10-21T21:07:44.793Z",
+    "sha256": "c33fd09d2368fd79b21a7a05e06db737e6457dfe5f930995f231f337e231bd7f"
+  },
+  {
+    "id": "EXP-VACACIONES",
+    "url": "https://silpy.congreso.gov.py/web/expediente/151932",
+    "path": "EXP-VACACIONES.html",
+    "bytes": 68776,
+    "status": 200,
+    "retrieved_at": "2026-10-21T21:07:45.089Z",
+    "sha256": "5134ecf52059c6b0515ec8070286b8fb53afff25fb8633395e77f008c4376d41"
+  },
+  {
+    "id": "EXP-PENAL7102",
+    "url": "https://silpy.congreso.gov.py/web/expediente/120609",
+    "path": "EXP-PENAL7102.html",
+    "bytes": 404508,
+    "status": 200,
+    "retrieved_at": "2026-10-21T21:07:46.746Z",
+    "sha256": "e01b843e9a31a0a185624eeb055c94c7f4f8de662c4b65c8d0e1b020e8b65fc4"
+  },
+  {
+    "id": "CSJ-NOTA7663",
+    "url": "https://www.pj.gov.py/notas/30287-decisiones-de-la-plenaria-de-la-corte-suprema-de-justicia",
+    "path": "CSJ-NOTA7663.html",
+    "bytes": 56432,
+    "status": 200,
+    "retrieved_at": "2026-10-21T21:16:48.269Z",
+    "sha256": "90797287e978322ccf41b346f71adfd102e4f16b20f59d02ae643fe815be719d"
+  },
+  {
+    "id": "CSJ-ACORDADAS",
+    "url": "https://www.pj.gov.py/acordadas-digitales/",
+    "path": "CSJ-ACORDADAS.html",
+    "bytes": 400707,
+    "status": 200,
+    "retrieved_at": "2026-10-21T21:16:48.461Z",
+    "sha256": "c3f7192bbacbfffc3fc206e5d0e5db314d762fb2f184ffe1c85d68281e56e13c"
+  },
+  {
+    "id": "EXP-CPP74",
+    "url": "https://silpy.congreso.gov.py/web/expediente/2696",
+    "path": "EXP-CPP74.html",
+    "bytes": 90392,
+    "status": 200,
+    "retrieved_at": "2026-10-21T21:16:49.254Z",
+    "sha256": "a7839a63a711d66548c64fb8e10566febedc4192c67f739a1fcf2e1e2d03a070"
+  },
+  {
+    "id": "LEY6470",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/9119/ley-n-6470-modifica-el-art-culo-9-de-la-ley-n-213-1993-que-establece-el-c-digo-del-trabajo-modificado-por-la-ley-n-496-1995",
+    "path": "LEY6470.html",
+    "bytes": 87633,
+    "status": 200,
+    "retrieved_at": "2026-10-21T21:16:50.348Z",
+    "sha256": "d47550231da18ac177d2efa41d0ff032db7fd34c1d1af19ab6fcd2be1342dbe0"
+  }
+]

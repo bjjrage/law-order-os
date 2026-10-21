@@ -1,0 +1,1583 @@
+{
+  "catalog_id": "law-order-specialist-capability-packs",
+  "schema_version": 1,
+  "pack_catalog_version": 1,
+  "as_of": "2026-10-15",
+  "reference_date": "2026-10-14",
+  "status": "EXPERIMENTAL_GENERATIVE_RUNTIME_CONNECTED",
+  "runtime_activation": true,
+  "activation_scope": "WORKSPACE_V4_SPECIALIST_RUNTIME",
+  "runtime_binding": {
+    "version": "workspace-specialists-v1",
+    "implementation": "scripts/workspace-specialists.mjs",
+    "model_policy": "LUNA_FOR_ROUTINE_SPECIALISTS_SOL_ONLY_IN_FULL_LEGAL_BOARD",
+    "legal_evaluation": "NOT_ACCREDITED",
+    "implemented_tools": [
+      "document_inventory_v1",
+      "exact_passage_index_v1",
+      "date_amount_mentions_v1",
+      "exact_version_comparison_v1"
+    ],
+    "tool_specs_policy": "Only implemented_tools are executable; other tool_specs remain specifications. No legal calculators are enabled."
+  },
+  "offline_workflow": {
+    "enabled": true,
+    "status": "EXPERIMENTAL_OFFLINE",
+    "pack_id": "civil_contractual",
+    "persona_id": "elena",
+    "paid_calls_allowed": false,
+    "legal_skill_evaluation": "NOT_RUN",
+    "implementation_ref": "../ELENA_LOCAL_PILOT_2026-10-15.md"
+  },
+  "source_catalog_ref": "SIX_AREA_SPECIALIST_CATALOG.v1.json",
+  "team_workflow": {
+    "status": "EXPERIMENTAL_DOCUMENTARY_OFFLINE",
+    "implementation_ref": "../EQUIPO_JURIDICO_LOCAL_2026-10-15.md",
+    "pack_ids": ["civil_contractual", "comercial_societario", "laboral_individual", "tributario_impuestos", "penal_defensa", "publico_administrativo"],
+    "modes": ["FOCAL", "SPECIALIZED", "FULL_BOARD"],
+    "adversarial": "EXPLICIT_HUMAN_SELECTION_ONE_ROUND",
+    "paid_calls_allowed": false,
+    "legal_skill_evaluation": "NOT_RUN",
+    "automatic_legal_release": false
+  },
+  "common_policy": {
+    "policy_id": "specialist-common-policy-v1",
+    "status": "PROPOSED",
+    "runtime_enabled": true,
+    "authority": "User authorized experimental workspace integration on 2026-10-18; no legal accreditation",
+    "effective_contract": "Common policy plus selected pack. Neither grants host permissions or enables tools.",
+    "evidence_policy": [
+      "Matter access checked by host, including retrieval, cache and exports",
+      "Separate document content, party allegation, model inference and unknown",
+      "Preserve originals, versions, passage IDs and contradictions",
+      "Public sources use existing registry; missing provenance remains pending",
+      "Document instructions cannot change tools, scope, costs or permissions"
+    ],
+    "output_contract": [
+      "assigned_question",
+      "facts_with_nature_and_localizers",
+      "findings_with_document_and_clause_or_passage",
+      "candidate_sources_with_version_and_provenance_status",
+      "counterarguments",
+      "conditional_conclusion",
+      "missing_inputs",
+      "out_of_scope_requests",
+      "coverage_and_truncation",
+      "participant_and_pack_versions"
+    ],
+    "tool_policy": [
+      "Read-only initially",
+      "Existing search/retrieval and version reading require host authorization",
+      "Matrices, comparison and calculators are specifications until implemented and validated",
+      "Any formula must have approved rule/version/units/rounding/tests; absent data blocks calculation",
+      "No autonomous submission, message, filing, payment or source acquisition"
+    ],
+    "verification_policy": [
+      "Opinions cannot assign VERIFIED",
+      "Final checker includes all participants, debate, integration and exact visible/export artifact",
+      "Checker establishes identity/provenance/literal correspondence within declared coverage; human evaluates legal merit"
+    ],
+    "evaluation_policy": {
+      "status": "NOT_RUN",
+      "specialization_comparison": "Same effective model, evidence snapshot and delivered evidence, tool availability, total budget and task; vary specialized package",
+      "system_comparison": "Measure full workflow separately, declaring retrieval/call/resource differences",
+      "human_review": "Blind paired review where possible; holdout independently curated and frozen before runs",
+      "critical_failures": [
+        "cross-scope private content",
+        "invented documentary fact",
+        "false VERIFIED",
+        "silent unauthorized call or model change",
+        "unapproved legal calculation"
+      ],
+      "activation": "Human accepts scope and predeclared thresholds after evaluation; no automatic promotion"
+    },
+    "budget_policy": [
+      "One central ceiling per authorized engagement, sublimits subordinate",
+      "Log real model only internally; public costs by persona/function",
+      "No silent escalation, fallback or rerun"
+    ]
+  },
+  "packs": [
+    {
+      "pack_id": "civil_contractual",
+      "version": 1,
+      "persona": "Elena",
+      "label": "Contrato y obligaciones",
+      "status": "PILOT_DESIGN_ONLY",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "partes y rol del cliente",
+        "versión firmada y anexos",
+        "objetivo y fecha de corte"
+      ],
+      "private_evidence": [
+        "contrato íntegro",
+        "anexos y modificaciones",
+        "comunicaciones relevantes"
+      ],
+      "source_requirements": [
+        "normativa contractual aplicable por fecha",
+        "jurisprudencia pertinente del registro existente"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Enumerar documentos y versiones",
+        "Extraer prestaciones, condiciones, excepciones y remisiones",
+        "Relacionar cláusulas y anexos, mostrando incompatibilidades",
+        "Separar cumplimiento alegado de evidencia documental",
+        "Recuperar respaldo de cada cuestión, buscar contraargumento y pedir faltantes"
+      ],
+      "output_columns": [
+        "cláusula",
+        "obligación/condición",
+        "evidencia",
+        "problema",
+        "alternativa",
+        "faltante"
+      ],
+      "tool_specs": [
+        "comparación textual de versiones",
+        "matriz de obligaciones y referencias cruzadas"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "Falta anexo decisivo o no se sabe qué versión rige",
+        "No inferir validez, nulidad o incumplimiento desde un resumen"
+      ],
+      "escalation": [
+        "Facultades societarias → Valeria",
+        "Carga fiscal de operación → Martín"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar importe incompatible entre cuerpo y anexo",
+          "Conservar excepción a una obligación aunque aparezca en otro documento"
+        ],
+        "negative_controls": [
+          "No convertir una obligación condicionada en incondicional",
+          "Cita contractual a un fallo inventado sigue pendiente"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "civil_responsabilidad",
+      "version": 1,
+      "persona": "Elena",
+      "label": "Responsabilidad y daños",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "hecho controvertido",
+        "sujetos y pretensión",
+        "fechas y rubros alegados"
+      ],
+      "private_evidence": [
+        "cronología documentada",
+        "informes y comprobantes",
+        "alegaciones de ambas partes"
+      ],
+      "source_requirements": [
+        "fuentes sobre responsabilidad y reparación seleccionadas por supuesto y fecha",
+        "antecedentes comparables"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Separar hechos, causalidad alegada y prueba",
+        "Construir hipótesis favorable y contraria",
+        "Vincular cada rubro con respaldo, monto y objeciones",
+        "Identificar causas alternativas y duplicaciones",
+        "Exponer condiciones pendientes sin atribuir responsabilidad"
+      ],
+      "output_columns": [
+        "hipótesis",
+        "hecho",
+        "evidencia favorable/contraria",
+        "rubro",
+        "incertidumbre"
+      ],
+      "tool_specs": [
+        "cronología con localizadores",
+        "conciliación aritmética de rubros documentados"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "Faltan bases del monto o conexión causal",
+        "No estimar indemnización por intuición"
+      ],
+      "escalation": [
+        "Relación de trabajo → Lucía",
+        "Hipótesis penal → Diego"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar un comprobante duplicado",
+          "Mantener causa alternativa respaldada"
+        ],
+        "negative_controls": [
+          "No tratar relato de parte como causalidad probada",
+          "No sumar monedas sin regla aprobada"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "civil_familia",
+      "version": 1,
+      "persona": "Elena",
+      "label": "Familia, niñez y adolescencia",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "vínculos y representación alegados",
+        "objetivo",
+        "resoluciones y fechas"
+      ],
+      "private_evidence": [
+        "documentación de vínculos autorizada",
+        "resoluciones y acuerdos",
+        "antecedentes pertinentes minimizados"
+      ],
+      "source_requirements": [
+        "fuentes de familia y protección de niñez por cuestión",
+        "resoluciones comparables autorizadas"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Minimizar datos sensibles",
+        "Diferenciar vínculos alegados y documentados",
+        "Ordenar decisiones previas y situación actual",
+        "Identificar documentos y cuestiones de representación pendientes",
+        "Presentar alternativas para revisión especializada"
+      ],
+      "output_columns": [
+        "cuestión",
+        "vínculo/rol",
+        "documento",
+        "decisión previa",
+        "faltante",
+        "revisión humana"
+      ],
+      "tool_specs": [
+        "cronología documental",
+        "matriz de decisiones y requisitos"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No resolver interés de persona menor desde datos incompletos",
+        "No asumir representación ni revelar datos innecesarios"
+      ],
+      "escalation": [
+        "Garantías/competencia → Camila",
+        "Posible violencia o cuestión penal → Diego y responsable humano"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar resolución posterior incompatible con acuerdo anterior",
+          "Identificar falta de documentación de representación"
+        ],
+        "negative_controls": [
+          "No divulgar identidad de menor en registro técnico",
+          "No recomendar medida automática"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "civil_sucesorio",
+      "version": 1,
+      "persona": "Elena",
+      "label": "Sucesiones",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "personas y vínculos alegados",
+        "objetivo",
+        "documentos patrimoniales y fechas"
+      ],
+      "private_evidence": [
+        "documentación de vínculos",
+        "instrumentos sucesorios aportados",
+        "inventario y pasivos"
+      ],
+      "source_requirements": [
+        "fuentes sucesorias aplicables por fecha y cuestión",
+        "antecedentes registrables pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Inventariar documentos y alegaciones",
+        "Construir mapa de vínculos sin declarar calidad hereditaria",
+        "Conciliar activos, pasivos y títulos aportados",
+        "Detectar instrumentos incompatibles o faltantes",
+        "Plantear cuestiones de participación y distribución para el abogado"
+      ],
+      "output_columns": [
+        "persona/vínculo",
+        "documento",
+        "activo/pasivo",
+        "conflicto",
+        "faltante"
+      ],
+      "tool_specs": [
+        "mapa de relaciones documentadas",
+        "inventario conciliado"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No asignar calidad o cuota hereditaria sin validación",
+        "No asumir exhaustividad del patrimonio"
+      ],
+      "escalation": [
+        "Empresa o participaciones → Valeria",
+        "Efectos tributarios → Martín"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar activo repetido bajo dos descripciones",
+          "Conservar conflicto entre instrumentos"
+        ],
+        "negative_controls": [
+          "No repartir con porcentajes inventados",
+          "No confundir tenedor y titular"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "civil_inmobiliario",
+      "version": 1,
+      "persona": "Elena",
+      "label": "Inmuebles y patrimonio",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "bien e identificadores",
+        "posición del cliente",
+        "operación y fecha de corte"
+      ],
+      "private_evidence": [
+        "títulos y certificados aportados",
+        "contratos y planos",
+        "gravámenes documentados"
+      ],
+      "source_requirements": [
+        "fuentes patrimoniales/registrales pertinentes",
+        "antecedentes por cuestión"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Resolver correspondencia entre identificadores documentales",
+        "Reconstruir cadena de instrumentos aportados",
+        "Separar dominio, posesión y alegaciones",
+        "Comparar gravámenes, superficies y fechas",
+        "Señalar verificaciones registrales pendientes"
+      ],
+      "output_columns": [
+        "bien/identificador",
+        "instrumento",
+        "fecha",
+        "discrepancia",
+        "limitación"
+      ],
+      "tool_specs": [
+        "comparación de identificadores y superficies",
+        "cadena documental"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No certificar dominio ni libertad de gravámenes",
+        "No presumir certificado actualizado"
+      ],
+      "escalation": [
+        "Operación societaria → Valeria",
+        "Acto administrativo/territorial → Camila"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar número registral diferente en anexo",
+          "Señalar certificado anterior al corte requerido"
+        ],
+        "negative_controls": [
+          "No usar similitud de dirección como identidad del inmueble",
+          "No anunciar estudio de títulos completo"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "comercial_societario",
+      "version": 1,
+      "persona": "Valeria",
+      "label": "Sociedades",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "tipo de entidad alegado",
+        "operación",
+        "personas y facultades invocadas"
+      ],
+      "private_evidence": [
+        "estatuto y modificaciones",
+        "actas",
+        "poderes y constancias aportadas"
+      ],
+      "source_requirements": [
+        "fuentes societarias por tipo/fecha",
+        "antecedentes de representación y gobierno pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Inventariar instrumentos y versiones",
+        "Relacionar órganos, actos y facultades documentadas",
+        "Comparar poder, autorización y operación",
+        "Detectar contradicciones y aprobaciones faltantes",
+        "Delimitar efecto pendiente de validación humana"
+      ],
+      "output_columns": [
+        "acto",
+        "órgano/persona",
+        "facultad documentada",
+        "respaldo",
+        "requisito pendiente"
+      ],
+      "tool_specs": [
+        "matriz de facultades y aprobaciones",
+        "comparación de estatutos/actas"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No validar representación por cargo o firma aislada",
+        "No asumir inscripción actual"
+      ],
+      "escalation": [
+        "Cláusulas contractuales → Elena",
+        "Efectos fiscales → Martín"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar poder con límite inferior a la operación",
+          "Distinguir proyecto de acta y acta aportada como definitiva"
+        ],
+        "negative_controls": [
+          "No inferir facultades universales del título de director",
+          "No completar órgano ausente"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "comercial_negocios",
+      "version": 1,
+      "persona": "Valeria",
+      "label": "Negocios y operaciones comerciales",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "estructura y objetivo de operación",
+        "participantes",
+        "hitos y documentos"
+      ],
+      "private_evidence": [
+        "contratos",
+        "anexos comerciales",
+        "autorizaciones y condiciones de cierre"
+      ],
+      "source_requirements": [
+        "fuentes de operaciones comerciales por estructura y fecha",
+        "antecedentes pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Descomponer operación y dependencias",
+        "Relacionar partes, documentos y prestaciones",
+        "Identificar condiciones de cierre y autorizaciones",
+        "Comparar riesgos y alternativas documentadas",
+        "Coordinar cuestiones asignadas a otras materias"
+      ],
+      "output_columns": [
+        "hito",
+        "dependencia",
+        "responsable alegado",
+        "respaldo",
+        "riesgo condicionado",
+        "faltante"
+      ],
+      "tool_specs": [
+        "mapa de operación y dependencias",
+        "checklist de cierre con evidencia"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No dar cierre por cumplido sin respaldo",
+        "No evaluar solvencia o rentabilidad desde narrativa"
+      ],
+      "escalation": [
+        "Obligaciones contractuales → Elena",
+        "Fiscalidad → Martín; personal → Lucía"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar condición de cierre omitida",
+          "Identificar dependencia entre dos contratos"
+        ],
+        "negative_controls": [
+          "No duplicar el encargo contractual del titular",
+          "No registrar cierre automático"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "comercial_bancario",
+      "version": 1,
+      "persona": "Valeria",
+      "label": "Banca y financiación",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "instrumento",
+        "partes",
+        "moneda y fechas",
+        "objetivo del análisis"
+      ],
+      "private_evidence": [
+        "contrato financiero",
+        "cronograma",
+        "garantías",
+        "modificaciones y comprobantes"
+      ],
+      "source_requirements": [
+        "fuentes financieras por instrumento/régimen/fecha",
+        "antecedentes sobre garantías pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Conciliar contrato y cronograma",
+        "Separar capital, interés, cargos y garantías",
+        "Localizar condiciones y eventos documentados",
+        "Revisar fórmulas solo bajo regla aprobada",
+        "Exponer escenarios y faltantes sin recomendar inversión"
+      ],
+      "output_columns": [
+        "componente",
+        "cláusula",
+        "entrada/fórmula aprobada",
+        "respaldo",
+        "discrepancia"
+      ],
+      "tool_specs": [
+        "conciliación aritmética",
+        "comparación de cronogramas y garantías"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "Fórmula, tasa, moneda o base temporal no documentadas",
+        "No inventar saldo exigible o tasa legal"
+      ],
+      "escalation": [
+        "Garantía patrimonial → Elena",
+        "Carga tributaria → Martín"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar cuota inconsistente con el cronograma",
+          "Conservar modificación de tasa como cambio de versión"
+        ],
+        "negative_controls": [
+          "No calcular con periodicidad presumida",
+          "No certificar exigibilidad de garantía"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "comercial_concursal",
+      "version": 1,
+      "persona": "Valeria",
+      "label": "Insolvencia y reestructuración",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "situación alegada",
+        "objetivo",
+        "fechas",
+        "acreedores/deudor"
+      ],
+      "private_evidence": [
+        "pasivos y vencimientos",
+        "garantías",
+        "instrumentos y actuaciones aportados"
+      ],
+      "source_requirements": [
+        "fuentes concursales/reestructuración por supuesto/fecha",
+        "antecedentes pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Separar situación financiera alegada de actuaciones documentadas",
+        "Conciliar acreencias y duplicados",
+        "Relacionar garantías, vencimientos y controversias",
+        "Identificar dependencias laborales/fiscales",
+        "Presentar opciones y cuestiones pendientes sin fijar prelación"
+      ],
+      "output_columns": [
+        "acreencia",
+        "respaldo",
+        "monto/moneda",
+        "garantía alegada",
+        "controversia",
+        "faltante"
+      ],
+      "tool_specs": [
+        "matriz de acreencias",
+        "conciliación sin conversión monetaria implícita"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No declarar insolvencia jurídica ni prelación sin validación",
+        "No prometer viabilidad de reestructuración"
+      ],
+      "escalation": [
+        "Créditos laborales → Lucía",
+        "Créditos fiscales → Martín"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar misma deuda en dos planillas",
+          "Conservar disputa sobre monto de acreencia"
+        ],
+        "negative_controls": [
+          "No confundir atraso y declaración formal",
+          "No sumar monedas diferentes"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "laboral_individual",
+      "version": 1,
+      "persona": "Lucía",
+      "label": "Relaciones individuales de trabajo",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "relación alegada",
+        "cuestión",
+        "fechas y componentes remunerativos"
+      ],
+      "private_evidence": [
+        "contratos y comunicaciones",
+        "recibos",
+        "registros y actuaciones aportados"
+      ],
+      "source_requirements": [
+        "fuentes laborales aplicables por régimen/fecha",
+        "antecedentes pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Construir cronología con procedencia",
+        "Separar relación alegada y documentos",
+        "Conciliar pagos, conceptos y períodos",
+        "Localizar controversias y prueba contraria",
+        "Calcular solo con fórmula/requisitos aprobados y entradas completas"
+      ],
+      "output_columns": [
+        "período",
+        "hecho/alegación",
+        "documento",
+        "concepto",
+        "controversia",
+        "faltante"
+      ],
+      "tool_specs": [
+        "cronología laboral",
+        "conciliación de recibos",
+        "calculador versionado pendiente de aprobación"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No determinar vínculo por etiqueta contractual",
+        "No inventar antigüedad, salario base o fórmula"
+      ],
+      "escalation": [
+        "Seguridad social → subperfil propio",
+        "Operación empresarial → Valeria"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar períodos sin recibos",
+          "Mostrar documento que contradice fecha alegada"
+        ],
+        "negative_controls": [
+          "No completar salario faltante con promedio inventado",
+          "No emitir liquidación sin regla aprobada"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "laboral_colectivo",
+      "version": 1,
+      "persona": "Lucía",
+      "label": "Relaciones colectivas de trabajo",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "actores y representación alegada",
+        "ámbito",
+        "instrumento y fechas"
+      ],
+      "private_evidence": [
+        "acuerdos y versiones",
+        "documentación de representación",
+        "comunicaciones y actuaciones"
+      ],
+      "source_requirements": [
+        "fuentes colectivas por ámbito/fecha",
+        "antecedentes pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Delimitar ámbito personal, territorial y temporal documentado",
+        "Comparar acuerdos y modificaciones",
+        "Relacionar actores y representación acreditada",
+        "Registrar cuestiones disputadas y faltantes",
+        "Separar propuesta, negociación y acuerdo aportado"
+      ],
+      "output_columns": [
+        "instrumento",
+        "ámbito",
+        "actor/representación",
+        "cláusula",
+        "controversia",
+        "faltante"
+      ],
+      "tool_specs": [
+        "comparación de instrumentos",
+        "matriz de ámbitos y representación"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No presumir representatividad ni extensión universal",
+        "No dar propuesta negociadora por acuerdo vigente"
+      ],
+      "escalation": [
+        "Gobierno empresarial → Valeria",
+        "Actuaciones administrativas → Camila"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar diferencia de ámbito entre acuerdos",
+          "Identificar modificación posterior de cláusula"
+        ],
+        "negative_controls": [
+          "No extender acuerdo a sujetos no documentados",
+          "No asumir firma autorizada"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "laboral_seguridad_social",
+      "version": 1,
+      "persona": "Lucía",
+      "label": "Seguridad social",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "régimen alegado",
+        "persona/rol",
+        "períodos",
+        "cuestión"
+      ],
+      "private_evidence": [
+        "constancias aportadas",
+        "aportes y declaraciones",
+        "actos y comunicaciones"
+      ],
+      "source_requirements": [
+        "fuentes de seguridad social por régimen/período",
+        "antecedentes pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Delimitar régimen y períodos sin inventarlos",
+        "Conciliar constancias y pagos",
+        "Detectar vacíos y superposiciones",
+        "Relacionar acto, requisito y respaldo",
+        "Separar cobertura acreditada de cobertura alegada"
+      ],
+      "output_columns": [
+        "período",
+        "requisito",
+        "constancia/aporte",
+        "diferencia",
+        "pendiente"
+      ],
+      "tool_specs": [
+        "conciliación por período",
+        "matriz documental de requisitos"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No garantizar cobertura o prestación",
+        "No calcular aporte sin base y regla aprobada"
+      ],
+      "escalation": [
+        "Relación individual → subperfil propio",
+        "Fiscalidad o acto público → Martín/Camila"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar período sin constancia",
+          "Identificar pago con período distinto"
+        ],
+        "negative_controls": [
+          "No convertir comprobante aislado en cobertura integral",
+          "No inferir afiliación actual"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "tributario_impuestos",
+      "version": 1,
+      "persona": "Martín",
+      "label": "Impuestos y obligaciones formales",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "operación",
+        "sujeto/régimen alegado",
+        "período",
+        "moneda y objetivo"
+      ],
+      "private_evidence": [
+        "comprobantes",
+        "declaraciones",
+        "registros y comunicaciones aportadas"
+      ],
+      "source_requirements": [
+        "fuentes tributarias por obligación/régimen/período y modificatorias",
+        "criterio administrativo identificado"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Construir matriz operación–sujeto–período",
+        "Separar norma publicada y temporalidad acreditada",
+        "Conciliar bases y comprobantes",
+        "Identificar régimen/documentación faltantes",
+        "Calcular solo bajo fórmula aprobada con entradas trazables"
+      ],
+      "output_columns": [
+        "obligación candidata",
+        "período",
+        "fuente/versionado",
+        "base documentada",
+        "diferencia",
+        "revisión"
+      ],
+      "tool_specs": [
+        "conciliación documental",
+        "calculador fiscal versionado pendiente"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No fijar obligación, tasa, exención o vencimiento por memoria",
+        "No extrapolar norma de otro período"
+      ],
+      "escalation": [
+        "Operación societaria → Valeria",
+        "Relación laboral → Lucía"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar documento de período incorrecto",
+          "Señalar base incompleta antes de calcular"
+        ],
+        "negative_controls": [
+          "No usar tasa sin fuente/versionado",
+          "No confundir proyecto normativo y norma aplicable"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "tributario_fiscalizaciones",
+      "version": 1,
+      "persona": "Martín",
+      "label": "Fiscalizaciones y controversias tributarias",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "acto/cuestionamiento",
+        "sujeto",
+        "períodos",
+        "comunicaciones y objetivo"
+      ],
+      "private_evidence": [
+        "requerimientos y notificaciones",
+        "descargos",
+        "respaldos y actos posteriores"
+      ],
+      "source_requirements": [
+        "fuentes de fiscalización/revisión por régimen/fecha",
+        "antecedentes y criterios identificados"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Ordenar actos y comunicaciones",
+        "Relacionar cada observación con evidencia favorable/contraria",
+        "Comparar períodos y montos",
+        "Identificar documentación solicitada y respuesta",
+        "Separar fecha observada y plazo pendiente de validación"
+      ],
+      "output_columns": [
+        "observación",
+        "acto",
+        "período/monto",
+        "prueba",
+        "respuesta",
+        "pendiente"
+      ],
+      "tool_specs": [
+        "cronología de actuaciones",
+        "matriz cargo–respaldo–descargo"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No confirmar plazo procesal desde lectura LLM",
+        "No presumir notificación válida"
+      ],
+      "escalation": [
+        "Competencia/procedimiento público → Camila",
+        "Cuestión penal → Diego"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar requerimiento respondido parcialmente",
+          "Conservar comprobante que contradice observación"
+        ],
+        "negative_controls": [
+          "No tratar silencio documental como deuda probada",
+          "No marcar plazo confirmado automáticamente"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "aduanero_comercio_exterior",
+      "version": 1,
+      "persona": "Martín",
+      "label": "Aduanas y comercio exterior",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "operación",
+        "mercancía descrita",
+        "fechas",
+        "rol de participantes"
+      ],
+      "private_evidence": [
+        "declaraciones",
+        "facturas y transporte",
+        "origen y actos aportados"
+      ],
+      "source_requirements": [
+        "fuentes aduaneras por operación/fecha",
+        "instrumentos de origen y clasificación pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Relacionar mercancía y documentos",
+        "Conciliar valor, cantidad, moneda y fechas",
+        "Identificar clasificación/origen alegados y respaldo",
+        "Registrar discrepancias y requisitos faltantes",
+        "Exponer cuestiones para especialista humano sin clasificar por intuición"
+      ],
+      "output_columns": [
+        "mercancía/operación",
+        "declaración",
+        "respaldo",
+        "diferencia",
+        "requisito",
+        "revisión"
+      ],
+      "tool_specs": [
+        "conciliación documental",
+        "matriz de origen y clasificación alegados"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No asignar clasificación/arancel sin fundamento validado",
+        "No presumir origen por proveedor o ruta"
+      ],
+      "escalation": [
+        "Contrato comercial → Valeria",
+        "Actos/recursos → Camila"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar cantidad inconsistente con transporte",
+          "Señalar certificado de origen ausente"
+        ],
+        "negative_controls": [
+          "No inferir clasificación de descripción breve",
+          "No calcular tributo sin regla y base aprobadas"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "penal_defensa",
+      "version": 1,
+      "persona": "Diego",
+      "label": "Defensa penal",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "hipótesis imputada",
+        "rol del cliente",
+        "etapa alegada",
+        "fechas"
+      ],
+      "private_evidence": [
+        "actos y elementos probatorios autorizados",
+        "versiones de partes",
+        "cadena documental disponible"
+      ],
+      "source_requirements": [
+        "fuentes penales/procesales según hipótesis/fecha",
+        "antecedentes de garantías pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Mapear hipótesis y elementos que deben revisar abogados",
+        "Separar imputación, prueba e inferencia",
+        "Registrar respaldo favorable y contrario",
+        "Detectar contradicciones y procedencia incierta",
+        "Presentar alternativas y diligencias pendientes sin completar hechos"
+      ],
+      "output_columns": [
+        "elemento/hipótesis",
+        "evidencia favorable/contraria",
+        "procedencia",
+        "inferencia",
+        "faltante"
+      ],
+      "tool_specs": [
+        "matriz de hipótesis y evidencia",
+        "cronología de contradicciones"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No afirmar culpabilidad ni resultado judicial",
+        "No fabricar explicación de evidencia faltante"
+      ],
+      "escalation": [
+        "Garantías constitucionales → Camila",
+        "Operación económica → Valeria/Martín"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Conservar evidencia exculpatoria contradictoria",
+          "Identificar procedencia no documentada"
+        ],
+        "negative_controls": [
+          "No promover imputación a hecho probado",
+          "No estimar probabilidad de condena"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "penal_querella",
+      "version": 1,
+      "persona": "Diego",
+      "label": "Querellas y representación de víctimas",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "hecho alegado",
+        "representación",
+        "objetivo",
+        "actuaciones y fechas"
+      ],
+      "private_evidence": [
+        "relato identificado como alegación",
+        "respaldos",
+        "instrumentos de representación y actos"
+      ],
+      "source_requirements": [
+        "fuentes penales/procesales por cuestión/fecha",
+        "antecedentes pertinentes autorizados"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Separar relato y respaldo",
+        "Delimitar representación documentada",
+        "Construir cronología y contradicciones",
+        "Relacionar pretensión y documentos faltantes",
+        "Proponer cuestiones de revisión sin redactar presentación aprobada"
+      ],
+      "output_columns": [
+        "hecho alegado",
+        "respaldo",
+        "contradicción",
+        "representación",
+        "revisión pendiente"
+      ],
+      "tool_specs": [
+        "cronología con origen",
+        "matriz documental de pretensiones"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No confirmar legitimación por relato",
+        "No exponer datos sensibles innecesarios"
+      ],
+      "escalation": [
+        "Reparación civil → Elena",
+        "Garantías/competencia → Camila"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar falta de poder o representación",
+          "Mostrar respaldo contrario a un hecho alegado"
+        ],
+        "negative_controls": [
+          "No presentar denuncia automáticamente",
+          "No atribuir delito a persona como hecho probado"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "penal_economico",
+      "version": 1,
+      "persona": "Diego",
+      "label": "Delitos económicos",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "hipótesis",
+        "sujetos/roles",
+        "operación y períodos",
+        "objetivo"
+      ],
+      "private_evidence": [
+        "registros de operaciones",
+        "contratos",
+        "actos y evidencia autorizada"
+      ],
+      "source_requirements": [
+        "fuentes penales económicas por supuesto/fecha",
+        "fuentes sectoriales aportadas por perfiles pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Reconstruir trazas documentales de operación",
+        "Separar anomalía contable, incumplimiento e hipótesis penal",
+        "Relacionar roles y actos acreditados",
+        "Conciliar movimientos sin inferir intención",
+        "Registrar hipótesis alternativas y faltantes"
+      ],
+      "output_columns": [
+        "operación",
+        "rol/acto",
+        "movimiento",
+        "respaldo",
+        "hipótesis alternativa",
+        "faltante"
+      ],
+      "tool_specs": [
+        "trazabilidad documental de movimientos",
+        "matriz de roles y evidencia"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No inferir dolo de discrepancia aritmética",
+        "No asegurar delito por incumplimiento fiscal"
+      ],
+      "escalation": [
+        "Fiscalidad → Martín",
+        "Facultades societarias → Valeria"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar movimiento duplicado en extractos",
+          "Conservar explicación documental alternativa"
+        ],
+        "negative_controls": [
+          "No convertir error de registro en intención",
+          "No rellenar beneficiario faltante"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "publico_constitucional",
+      "version": 1,
+      "persona": "Camila",
+      "label": "Constitucional y garantías",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "acto y afectación alegados",
+        "sujeto/rol",
+        "fechas",
+        "objetivo"
+      ],
+      "private_evidence": [
+        "acto cuestionado",
+        "antecedentes y actuaciones",
+        "respaldo de afectación alegada"
+      ],
+      "source_requirements": [
+        "fuentes constitucionales y de garantías por cuestión/fecha",
+        "jurisprudencia pertinente identificada"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Delimitar acto y afectación alegada",
+        "Vincular argumento con evidencia y texto fuente",
+        "Separar vía invocada y requisitos por verificar",
+        "Construir argumento contrario",
+        "Identificar revisión de competencia y temporalidad pendiente"
+      ],
+      "output_columns": [
+        "acto",
+        "afectación alegada",
+        "evidencia",
+        "fuente",
+        "contraargumento",
+        "requisito pendiente"
+      ],
+      "tool_specs": [
+        "matriz acto–garantía–respaldo",
+        "comparación de argumentos"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No afirmar procedencia de vía sin revisión",
+        "No presumir lesión por invocación de derecho"
+      ],
+      "escalation": [
+        "Cuestión penal → Diego",
+        "Acto administrativo → subperfil propio"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar falta del acto cuestionado",
+          "Preservar requisito sin respaldo"
+        ],
+        "negative_controls": [
+          "No prometer resultado de garantía",
+          "No inventar jurisprudencia favorable"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "publico_administrativo",
+      "version": 1,
+      "persona": "Camila",
+      "label": "Administrativo",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "acto/autoridad",
+        "rol",
+        "procedimiento alegado",
+        "fechas y objetivo"
+      ],
+      "private_evidence": [
+        "expediente aportado",
+        "acto y notificaciones",
+        "antecedentes y recursos"
+      ],
+      "source_requirements": [
+        "fuentes administrativas de competencia/procedimiento por sector/fecha",
+        "antecedentes pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Inventariar expediente y faltantes",
+        "Reconstruir competencia invocada y secuencia documental",
+        "Relacionar motivación con antecedentes",
+        "Detectar contradicciones y notificaciones pendientes",
+        "Delimitar vías/requisitos sujetos a validación humana"
+      ],
+      "output_columns": [
+        "acto",
+        "autoridad/competencia invocada",
+        "antecedente",
+        "fundamento",
+        "faltante"
+      ],
+      "tool_specs": [
+        "índice de expediente",
+        "matriz competencia–acto–procedimiento"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No certificar competencia o validez desde membrete",
+        "No calcular plazo legal sin reglas validadas"
+      ],
+      "escalation": [
+        "Fiscalización → Martín",
+        "Garantías → subperfil constitucional"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar fundamento que refiere a documento ausente",
+          "Identificar cambio de autoridad entre actos"
+        ],
+        "negative_controls": [
+          "No validar notificación por fecha impresa",
+          "No afirmar expediente íntegro"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "publico_contratacion",
+      "version": 1,
+      "persona": "Camila",
+      "label": "Contratación pública",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "procedimiento/etapa",
+        "rol del cliente",
+        "objeto",
+        "documentos y fechas"
+      ],
+      "private_evidence": [
+        "pliego y modificaciones",
+        "oferta",
+        "evaluaciones y actos aportados"
+      ],
+      "source_requirements": [
+        "fuentes de contratación pública por régimen/fecha",
+        "instrumentos específicos del procedimiento"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Reconstruir versiones de pliego y aclaraciones",
+        "Relacionar cada requisito con respaldo ofertado",
+        "Separar criterio publicado y criterio aplicado",
+        "Detectar contradicciones y documentación faltante",
+        "Presentar cuestiones de revisión sin certificar elegibilidad"
+      ],
+      "output_columns": [
+        "requisito",
+        "versión del pliego",
+        "respaldo",
+        "criterio aplicado",
+        "diferencia",
+        "pendiente"
+      ],
+      "tool_specs": [
+        "matriz de cumplimiento documental",
+        "comparación pliego–adenda–oferta"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No garantizar adjudicación o elegibilidad",
+        "No presumir que última carga es versión aplicable"
+      ],
+      "escalation": [
+        "Operación/representación → Valeria",
+        "Cuestión tributaria → Martín"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar requisito modificado por adenda",
+          "Señalar documento ofrecido pero no aportado"
+        ],
+        "negative_controls": [
+          "No dar oferta presentada por borrador completo",
+          "No ignorar versión del pliego"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    },
+    {
+      "pack_id": "publico_regulatorio",
+      "version": 1,
+      "persona": "Camila",
+      "label": "Regulación sectorial",
+      "status": "DRAFT",
+      "runtime_enabled": true,
+      "jurisdiction": "PY",
+      "common_policy_ref": "specialist-common-policy-v1",
+      "required_inputs": [
+        "sector y actividad",
+        "rol",
+        "territorio",
+        "acto/licencia y fecha"
+      ],
+      "private_evidence": [
+        "instrumentos regulatorios",
+        "licencias y actos",
+        "documentación operativa autorizada"
+      ],
+      "source_requirements": [
+        "fuentes del regulador competente por actividad/fecha",
+        "régimen sectorial y modificatorias pertinentes"
+      ],
+      "source_status": "CANDIDATE_REQUIRES_LEGAL_CURATOR",
+      "procedure": [
+        "Delimitar actividad y régimen alegado",
+        "Relacionar obligación candidata con instrumento y fecha",
+        "Comparar licencia y operación documentada",
+        "Detectar condiciones, exclusiones y cambios",
+        "Escalar cuestiones fuera del sector evaluado"
+      ],
+      "output_columns": [
+        "actividad",
+        "instrumento/versionado",
+        "condición",
+        "respaldo",
+        "diferencia",
+        "revisión"
+      ],
+      "tool_specs": [
+        "matriz de requisitos sectoriales",
+        "comparación licencia–actividad"
+      ],
+      "tool_status": "SEE_RUNTIME_BINDING_IMPLEMENTED_TOOLS_ONLY",
+      "abstention_conditions": [
+        "No extender habilitación entre sectores",
+        "No presumir licencia vigente por copia sin control"
+      ],
+      "escalation": [
+        "Operación comercial → Valeria",
+        "Fiscalidad/relaciones de trabajo → Martín/Lucía"
+      ],
+      "evaluation": {
+        "positive_controls": [
+          "Detectar actividad fuera del alcance de licencia aportada",
+          "Señalar modificatoria no recuperada"
+        ],
+        "negative_controls": [
+          "No presentar registro localizado como licencia válida",
+          "No asumir competencia regulatoria universal"
+        ],
+        "executed": false,
+        "reviewer": null,
+        "holdout_manifest": null,
+        "release_decision": null
+      }
+    }
+  ]
+}
+

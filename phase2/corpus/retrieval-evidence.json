@@ -1,0 +1,81 @@
+{
+  "public_sources_only": true,
+  "no_bypass": true,
+  "documents": [
+    {
+      "id": "csj-constitucional-1010-2015",
+      "url": "https://www.pj.gov.py/descargas/ID1-423_acuerdo_y_sentencia_1010.pdf",
+      "landing": {
+        "status": "DOWNLOADED",
+        "http_status": 200,
+        "final_url": "https://www.pj.gov.py/notas/11707-acuerdo-y-sentencia-n-1010-de-la-sala-constitucional",
+        "mime_type": "text/html; charset=utf-8",
+        "bytes": 46504,
+        "sha256": "f9291b956c06798d3b6315ec8c122a919b19d29f2b534a5ba2252203b0a55a66",
+        "etag": null,
+        "last_modified": null
+      },
+      "retrieved_at": "2026-10-13T09:52:49.974Z",
+      "original": {
+        "status": "DOWNLOADED",
+        "http_status": 200,
+        "final_url": "https://www.pj.gov.py/descargas/ID1-423_acuerdo_y_sentencia_1010.pdf",
+        "mime_type": "application/pdf",
+        "bytes": 4819396,
+        "sha256": "214e4e61a0e62d1b2a57c01c04b660b18ad6110e7dd78aca6d68a9a72f0d8f91",
+        "etag": "\"981e6f-4989c4-526dcda9da458\"",
+        "last_modified": "Mon, 14 Dec 2015 14:54:45 GMT"
+      }
+    },
+    {
+      "id": "csj-civil-1184-2013",
+      "url": "https://www.pj.gov.py/descargas/ID1-966_ays_1184.pdf",
+      "landing": {
+        "status": "DOWNLOADED",
+        "http_status": 200,
+        "final_url": "https://www.pj.gov.py/notas/9153-corte-sienta-precedente-en-caso-por-demanda-de-indemnizacion",
+        "mime_type": "text/html; charset=utf-8",
+        "bytes": 46125,
+        "sha256": "8923c79d0e1f56383e0549dcef53e506c369fdcf9b7fd41e322bf0e9a69abdb5",
+        "etag": null,
+        "last_modified": null
+      },
+      "retrieved_at": "2026-10-13T09:52:51.807Z",
+      "original": {
+        "status": "DOWNLOADED",
+        "http_status": 200,
+        "final_url": "https://www.pj.gov.py/descargas/ID1-966_ays_1184.pdf",
+        "mime_type": "application/pdf",
+        "bytes": 226566,
+        "sha256": "a59ef9e2258e92e3b076fdf37092f4013538d1f91dafea95e2ffdf46fa8d9de1",
+        "etag": "\"981a53-37506-4e9d138e2a643\"",
+        "last_modified": "Mon, 28 Oct 2013 18:25:18 GMT"
+      }
+    },
+    {
+      "id": "csj-penal-162-2023",
+      "url": "https://www.pj.gov.py/descargas/ID1-711_ays_162d.pdf",
+      "landing": {
+        "status": "DOWNLOADED",
+        "http_status": 200,
+        "final_url": "https://www.pj.gov.py/notas/24056-fallo-de-la-sala-penal-en-la-causa-paraguayo-cubas-colomes-s-perturbacion-de-la-paz-publica-y-otros",
+        "mime_type": "text/html; charset=utf-8",
+        "bytes": 47807,
+        "sha256": "3e8458c165ccf21afacf49610cad6f1dc325a77d5b3572f2fa152da401548520",
+        "etag": null,
+        "last_modified": null
+      },
+      "retrieved_at": "2026-10-13T09:52:52.274Z",
+      "original": {
+        "status": "DOWNLOADED",
+        "http_status": 200,
+        "final_url": "https://www.pj.gov.py/descargas/ID1-711_ays_162d.pdf",
+        "mime_type": "application/pdf",
+        "bytes": 516642,
+        "sha256": "e19fd055650eadb537285bce6c1ccdbd3128a0ad8fd94fd37616fc37aa9c5aeb",
+        "etag": "\"984653-7e222-5fc71e4c84c2f\"",
+        "last_modified": "Wed, 24 May 2023 15:09:43 GMT"
+      }
+    }
+  ]
+}

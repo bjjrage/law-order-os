@@ -1,0 +1,149 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Las matrices ML-1 y ML-2 no deben tratarse como activos propios de Ribera",
+      "explanation": "Distingue correctamente la titularidad del cliente, la estimación de reposición y el traslado autorizado, y evita proponer una reducción automática del precio."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La carta del cliente permite una transición potencial, pero no prueba que esté aprobada ni que el pedido del 12/11 esté financiado y correctamente asignado",
+      "explanation": "Reconoce una cesión aceptada bajo condiciones, no una aprobación incondicional ni un rechazo, y convierte esas condiciones en requisitos previos verificables."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "la continuidad de ambos también es condición técnica del cliente",
+      "explanation": "Vincula expresamente la continuidad de los operadores a la condición comercial y técnica, sin afirmar que ellos ya aceptaron términos definitivos."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Debe acordarse entre las tres sociedades quién produce y entrega, quién factura, qué efectivo o crédito pasa a Fresno",
+      "explanation": "Distingue anticipo cobrado por Ribera, prestación pendiente y saldo, y propone una solución tripartita que evita el doble cobro sin tratar la cuenta como ya transferida."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Los PYG 240.000.000 diferidos forman parte de los PYG 900.000.000; no son además una garantía en efectivo",
+      "explanation": "Identifica la duplicación del borrador y advierte que el mecanismo y el alcance de la retención no están acordados ni cubren automáticamente todos los riesgos."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El reclamo de PYG 40.000.000 por agosto-7 está controvertido, no aceptado y no documentado como nota de crédito",
+      "explanation": "Lo separa del anticipo de OP-44, conserva el procedimiento contractual de revisión y no lo trata como deuda reconocida ni compensación disponible."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "No hay base suficiente en el expediente para cuantificar el impuesto ni concluir el tratamiento de cada derecho o componente",
+      "explanation": "Es prudente sobre la falta de base, tasa y documentación, y aborda IVA y comprobantes; sin embargo, no analiza el artículo 13 de la Ley 6380 sobre transferencia de establecimientos comerciales y continuidad de valores fiscales."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El estimado de PYG 8.000.000 por vacaciones es grupal, incompleto y no una liquidación",
+      "explanation": "No convierte el estimado en deuda individual liquidada, pide legajos y conciliaciones y advierte que la retención no extingue derechos frente a trabajadores."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MATERIAL",
+      "category": "INCORRECT_SOURCE_APPLICATION",
+      "exact_output_quote": "El Código del Trabajo dispone que la sustitución del empleador no afecta contratos vigentes y establece responsabilidad solidaria del empleador sustituido y del nuevo por obligaciones anteriores durante seis meses",
+      "evidence_locator": "F02-L00118–F02-L00121; P03-D01-P01; P03-D02-P01/P04",
+      "explanation": "La norma invocada establece efectos cuando existe sustitución de empleador, pero el memo no delimita si una compra de activos de una unidad —con el vendedor subsistiendo y sin acciones transferidas— configura ese supuesto. Debía presentar la aplicación como cuestión a determinar según la estructura y continuidad efectiva, no como efecto ya establecido."
+    }
+  ],
+  "novel_valid_findings": [
+    "El memo omite analizar la regla específica del artículo 13 de la Ley 6380: si la operación califica como transferencia de establecimiento comercial, cierra el ejercicio económico del enajenante y exige al adquirente mantener los valores fiscales de los bienes adquiridos. La calificación y sus consecuencias deben investigarse antes de fijar precio y cuenta de cierre, pues el expediente describe la compra de una unidad productiva, pero no resuelve jurídicamente si entra en esa regla (F03-L00129–F00131)."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La conclusión sobre sustitución de empleador requiere calificación jurídica de la operación y análisis de la continuidad efectiva; los documentos no determinan por sí solos ese encuadre.",
+    "La fuente tributaria indica revisión temporal no acreditada, por lo que las reglas citadas requieren verificación de vigencia y reglamentación al corte.",
+    "La referencia a transferencia de establecimiento comercial del artículo 13 requiere confirmar que la compra de esta unidad productiva encuadre en esa categoría."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "e9448c92ba6a4647b276ab9ec77674f9",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H01",
+      "quote": "Las matrices ML-1 y ML-2 no deben tratarse como activos propios de Ribera",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H02",
+      "quote": "La carta del cliente permite una transición potencial, pero no prueba que esté aprobada ni que el pedido del 12/11 esté financiado y correctamente asignado",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H03",
+      "quote": "la continuidad de ambos también es condición técnica del cliente",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H04",
+      "quote": "Debe acordarse entre las tres sociedades quién produce y entrega, quién factura, qué efectivo o crédito pasa a Fresno",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H05",
+      "quote": "Los PYG 240.000.000 diferidos forman parte de los PYG 900.000.000; no son además una garantía en efectivo",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H06",
+      "quote": "El reclamo de PYG 40.000.000 por agosto-7 está controvertido, no aceptado y no documentado como nota de crédito",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H07",
+      "quote": "No hay base suficiente en el expediente para cuantificar el impuesto ni concluir el tratamiento de cada derecho o componente",
+      "treatment": "PARTIAL",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H08",
+      "quote": "El estimado de PYG 8.000.000 por vacaciones es grupal, incompleto y no una liquidación",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "ERROR",
+      "index": 0,
+      "quote": "El Código del Trabajo dispone que la sustitución del empleador no afecta contratos vigentes y establece responsabilidad solidaria del empleador sustituido y del nuevo por obligaciones anteriores durante seis meses",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 1,
+  "missing_required_quote_count": 0
+}

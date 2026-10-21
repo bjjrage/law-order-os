@@ -1,0 +1,78 @@
+{
+  "source_document_id": "csj-constitucional-1010-2015",
+  "original_sha256": "214e4e61a0e62d1b2a57c01c04b660b18ad6110e7dd78aca6d68a9a72f0d8f91",
+  "parser": "Mozilla PDF.js",
+  "parser_version": "6.4.299",
+  "page_count": 13,
+  "extraction_status": "IMAGE_ONLY_OCR_NOT_RUN",
+  "extraction_is_original": false,
+  "ocr_used": false,
+  "signature_validation": "NOT_RUN",
+  "pages": [
+    {
+      "page": 1,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 2,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 3,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 4,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 5,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 6,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 7,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 8,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 9,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 10,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 11,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 12,
+      "text": "",
+      "text_items": []
+    },
+    {
+      "page": 13,
+      "text": "",
+      "text_items": []
+    }
+  ]
+}

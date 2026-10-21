@@ -1,0 +1,19 @@
+{
+  "status": "PASS_INTEGRITY_AND_EXECUTION_ONLY",
+  "at": "2026-10-19T06:01:03.818Z",
+  "generations_completed": 18,
+  "generation_provider_calls": 376,
+  "second_pass_reviews_completed": 18,
+  "raw_grade_inventory_valid": 18,
+  "preparation_unchanged": true,
+  "all_memos_and_blind_copies_unchanged": true,
+  "runner_hashes_match_pre_execution_freezes": true,
+  "same_complete_metadata_in_second_review": true,
+  "combined_cost_accounted_upper_usd": 2.37386975,
+  "maximum_session_usd": 10.8,
+  "actual_invoice_cost_usd": null,
+  "human_legal_review": "NOT_RUN",
+  "human_correction_minutes": null,
+  "quality_superiority": "NOT_ESTABLISHED",
+  "errors": []
+}

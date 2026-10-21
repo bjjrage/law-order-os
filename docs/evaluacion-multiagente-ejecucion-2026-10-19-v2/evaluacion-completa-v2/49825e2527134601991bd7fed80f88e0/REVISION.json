@@ -1,0 +1,119 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P01-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El precio propuesto es PYG 600.000.000 netos para Naranjal, más los tributos que correspondan",
+      "explanation": "Distingue el precio neto de la oferta anterior con impuestos incluidos, calcula expresamente el costo de mudanza y condiciona cualquier exceso a aprobación del comité, sin tratar el borrador como aceptado."
+    },
+    {
+      "reference_id": "P01-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Maroma manifestó interés en estudiar la continuidad",
+      "explanation": "Explica que no hubo consentimiento ni contrato con Cedro, cita la restricción de cesión y conserva la alternativa de continuar sin suministro asegurado si se verifican márgenes."
+    },
+    {
+      "reference_id": "P01-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "la columna de pago vacía",
+      "explanation": "Diferencia los PYG 9.000.000 registrados de un pago probado y propone conciliación individual de comisiones, vacaciones y otras partidas sin presentar una liquidación definitiva."
+    },
+    {
+      "reference_id": "P01-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "riesgo material de sustitución patronal",
+      "explanation": "Aplica el artículo 28 del Código del Trabajo de forma condicionada, distingue la responsabilidad frente a trabajadores de la indemnidad contractual y no afirma terminación ni pérdida automática de antigüedad."
+    },
+    {
+      "reference_id": "P01-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No hay base en el expediente para afirmar que el IVA sea cero",
+      "explanation": "Rechaza la impresión no revisada del contador y condiciona la clasificación tributaria y el precio a un análisis por componentes, con límites explícitos sobre tasa y cuantificación."
+    },
+    {
+      "reference_id": "P01-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no se aportó análisis que habilite su traslado",
+      "explanation": "No trata los PYG 22.000.000 a nombre de Naranjal como activo o crédito de Cedro y exige fundamento documentado para reconocer cualquier efecto."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MATERIAL",
+      "category": "INCORRECT_SOURCE_APPLICATION",
+      "exact_output_quote": "La extracción disponible de la Ley 6380 contiene reglas sobre renta bruta y ventas netas (F03, art. 8, L00087-L00090), además de disposiciones de IVA sobre crédito y documentación (arts. 88-89 y 92, L00685-L00699 y L00717-L00721).",
+      "evidence_locator": "F03-L00604-L00614 y F03-L00605-L00612; F03-L00129-L00131",
+      "explanation": "El análisis no aborda que la Ley 6380 incluye expresamente las transferencias de empresas entre los hechos de enajenación para IVA y establece consecuencias IRE para la transferencia de establecimientos comerciales. Debía identificar si este paquete de activos y derechos constituye una transferencia de establecimiento y dejar pendiente esa calificación, en vez de limitar el análisis a referencias generales de renta, crédito y documentación."
+    }
+  ],
+  "novel_valid_findings": [
+    "Falta analizar de manera específica la posible calificación de la operación como transferencia de empresa o establecimiento comercial: el IVA incluye transferencias de empresas entre las enajenaciones (F03, art. 81, L00604-L00614) y el IRE prevé cierre del ejercicio económico del enajenante y mantenimiento del valor fiscal de los bienes por el adquirente en caso de transferencia de establecimientos (F03, art. 13, L00129-L00131). La ausencia de una calificación documentada como reorganización no resuelve por sí sola si esas reglas aplican."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El material jurídico indica que la revisión temporal no está acreditada; el memo reconoce que la normativa debe confirmarse, aunque esa cautela no sustituye el análisis específico de transferencia de establecimiento señalado."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "49825e2527134601991bd7fed80f88e0",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H01",
+      "quote": "El precio propuesto es PYG 600.000.000 netos para Naranjal, más los tributos que correspondan",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H02",
+      "quote": "Maroma manifestó interés en estudiar la continuidad",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H03",
+      "quote": "la columna de pago vacía",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H04",
+      "quote": "riesgo material de sustitución patronal",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H05",
+      "quote": "No hay base en el expediente para afirmar que el IVA sea cero",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P01-H06",
+      "quote": "no se aportó análisis que habilite su traslado",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "ERROR",
+      "index": 0,
+      "quote": "La extracción disponible de la Ley 6380 contiene reglas sobre renta bruta y ventas netas (F03, art. 8, L00087-L00090), además de disposiciones de IVA sobre crédito y documentación (arts. 88-89 y 92, L00685-L00699 y L00717-L00721).",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 2,
+  "missing_required_quote_count": 0
+}

@@ -1,0 +1,135 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P03-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No deben comprarse ni valorarse como bienes de Ribera",
+      "explanation": "Distingue las matrices de propiedad del cliente de los equipos propios y propone depurar el anexo y acordar expresamente cualquier ajuste, sin tratar el valor registrado como precio aceptado."
+    },
+    {
+      "reference_id": "P03-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La carta del cliente es una base útil, no prueba de cumplimiento",
+      "explanation": "Describe la aceptación como condicional, identifica sus requisitos pendientes y exige aprobación técnica final antes del cierre."
+    },
+    {
+      "reference_id": "P03-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La fecha de ingreso del 2 de noviembre en la planilla no debe sustituir la antigüedad registrada",
+      "explanation": "Relaciona antigüedad, técnicos y condiciones laborales con la transición, y no presenta el interés manifestado por dos empleados como aceptación de nuevas condiciones."
+    },
+    {
+      "reference_id": "P03-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "El anticipo permanece en tesorería de Ribera y no está acreditado que pase a Fresno",
+      "explanation": "Reconoce que el anticipo ya fue cobrado por Ribera y exige un acuerdo tripartito sobre efectivo o ajuste, prestación, facturación y saldo para evitar un doble cobro."
+    },
+    {
+      "reference_id": "P03-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "La retención no es garantía adicional",
+      "explanation": "Identifica la doble contabilización y distingue el precio diferido de una garantía, además de señalar que faltan procedimiento, cobertura y duración suficientes."
+    },
+    {
+      "reference_id": "P03-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Fresno no debería asumirlo sin acuerdo expreso",
+      "explanation": "Separa el reclamo controvertido del anticipo y conserva el procedimiento de revisión y la responsabilidad de Ribera por entregas anteriores, sin tratar la cifra como reconocida."
+    },
+    {
+      "reference_id": "P03-H07",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "Solicitar dictamen del contador tributario sobre IVA por categoría, facturación, créditos fiscales y reconocimiento de OP-44",
+      "explanation": "Evita aplicar una tasa única al precio y reconoce que la asignación comercial no es base fiscal aprobada. Sin embargo, no desarrolla el posible devengamiento de IVA por el anticipo ya percibido ni el cierre del ejercicio del vendedor previsto para transferencias de establecimientos comerciales."
+    },
+    {
+      "reference_id": "P03-H08",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "la estimación de PYG 8 millones de vacaciones no es liquidación individual",
+      "explanation": "Distingue la estimación de una liquidación y de prueba de pago, y recomienda revisar legajos y conciliar obligaciones laborales sin atribuirles un importe definitivo."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [
+    "Omisión tributaria material pendiente: la Ley 6380, art. 83.1(b) (F03-L00642–L00645), contempla el pago total o parcial como evento para el nacimiento de la obligación del IVA. El memo recomienda analizar la facturación y el reconocimiento de OP-44, pero no conecta expresamente esa regla con el anticipo de PYG 120.000.000 ya percibido por Ribera ni solicita verificar cuándo y por quién fue documentado el IVA.",
+    "Omisión tributaria adicional: la Ley 6380, art. 13 (F03-L00129–L00131), dispone que la transferencia de establecimientos comerciales implica el cierre del ejercicio económico del enajenante y que el adquirente mantenga el mismo valor fiscal de los bienes adquiridos. El memo no incluye esta regla entre las verificaciones fiscales pendientes; su aplicabilidad a la transferencia de esta unidad debe confirmarse antes de cuantificar."
+  ],
+  "recommendation_coherent": true,
+  "limitations": [
+    "Las fuentes jurídicas disponibles no acreditan consolidación normativa a la fecha de corte; el memo reconoce esta limitación y pide verificar vigencia y reglamentación antes de fijar importes.",
+    "El análisis tributario es preliminar y no resuelve la clasificación fiscal de cada activo, derecho, anticipo o prestación de OP-44; el corpus tampoco permite una liquidación definitiva.",
+    "La revisión se basa en documentos privados sintéticos y no acredita externamente firmas, titularidades, gravámenes ni cumplimiento de condiciones futuras."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "fda7cc4b03a3417d8e1bb177d5f93d69",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H01",
+      "quote": "No deben comprarse ni valorarse como bienes de Ribera",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H02",
+      "quote": "La carta del cliente es una base útil, no prueba de cumplimiento",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H03",
+      "quote": "La fecha de ingreso del 2 de noviembre en la planilla no debe sustituir la antigüedad registrada",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H04",
+      "quote": "El anticipo permanece en tesorería de Ribera y no está acreditado que pase a Fresno",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H05",
+      "quote": "La retención no es garantía adicional",
+      "treatment": "SUFFICIENT",
+      "literal": false,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H06",
+      "quote": "Fresno no debería asumirlo sin acuerdo expreso",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H07",
+      "quote": "Solicitar dictamen del contador tributario sobre IVA por categoría, facturación, créditos fiscales y reconocimiento de OP-44",
+      "treatment": "PARTIAL",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P03-H08",
+      "quote": "la estimación de PYG 8 millones de vacaciones no es liquidación individual",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 1,
+  "missing_required_quote_count": 0
+}

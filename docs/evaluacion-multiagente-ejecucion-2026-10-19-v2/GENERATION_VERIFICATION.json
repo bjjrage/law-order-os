@@ -1,0 +1,23 @@
+{
+  "status": "PASS_TECHNICAL_GENERATION_ONLY",
+  "at": "2026-10-19T05:39:46.666Z",
+  "runs": 18,
+  "memos": 18,
+  "requests": 376,
+  "responses": 376,
+  "unique_provider_response_ids": 376,
+  "same_initial_public_material_per_case": {
+    "P01": true,
+    "P02": true,
+    "P03": true
+  },
+  "paid_calls_real": true,
+  "all_output_hashes_match": true,
+  "all_generation_budgets_respected": true,
+  "credential_occurrences_in_archived_requests_and_responses": 0,
+  "original_preparation_modified": false,
+  "legal_quality_evaluation": "SEPARATE_PROVISIONAL_AUTOMATED_REVIEW",
+  "human_review": "NOT_RUN",
+  "errors": [],
+  "original_preparation_integrity_checked_at": "2026-10-19T05:40:27.625Z"
+}

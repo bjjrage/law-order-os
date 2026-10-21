@@ -1,0 +1,189 @@
+[
+  {
+    "id": "CC-II",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/5299/codigo-civil-ii-parte-libro-segundo",
+    "path": "CC-II.html",
+    "bytes": 292160,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.141Z",
+    "sha256": "0cb2466519ff727969ce04923dec6519ec6c4c2de3016e37fc58d82ef8649949",
+    "text_path": "CC-II.txt",
+    "text_sha256": "df417ffe2b5f54cf2a21cb805a02ec2c35659be06d91ab3b4d1559e1bf754243"
+  },
+  {
+    "id": "CC-III",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/522/codigo-civil-iii-parte-libro-tercero",
+    "path": "CC-III.html",
+    "bytes": 687375,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.221Z",
+    "sha256": "9b3c71288f5f31cfe35fb11026a04267e885b8ee00c560d2e1e647eff2840b4d",
+    "text_path": "CC-III.txt",
+    "text_sha256": "9681d8cb6eba2fdfdb24eaa3b8409b6046fa771099b67fd1db28fdbd44c7199a"
+  },
+  {
+    "id": "CPC",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/3038/ley-",
+    "path": "CPC.html",
+    "bytes": 517477,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.058Z",
+    "sha256": "0544afec337f41e9f29426e0a32a821fff51a6eb0e337aede5c65418bbdfdfb1",
+    "text_path": "CPC.txt",
+    "text_sha256": "856166368ef115e67284a8871e981817c46de5f58c028a1ac287f668aa0f25ff"
+  },
+  {
+    "id": "TRABAJO",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/2608/ley-n-213-",
+    "path": "TRABAJO.html",
+    "bytes": 410343,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.085Z",
+    "sha256": "2c43d49a578b9c16b1f66d01284f186e0af37ab222492c351bb48b848f6c5c20",
+    "text_path": "TRABAJO.txt",
+    "text_sha256": "39177c847d8c6d44b0f9af084bd93354e49a5c79427b5563f3adfee7053c9622"
+  },
+  {
+    "id": "TRABAJO-496",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/2514/modifica-amplia-y-deroga-articulos-de-la-ley-21393-codigo-del-trabajo",
+    "path": "TRABAJO-496.html",
+    "bytes": 130348,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.146Z",
+    "sha256": "4490420d3994b776242f4baab17b6c964638f171744e76bc1ea3b6caa1ecacf9",
+    "text_path": "TRABAJO-496.txt",
+    "text_sha256": "5f1b02a5e11e598d35747398c4220460214a1e4b07d1704aad12ff82bffeacdd"
+  },
+  {
+    "id": "ADMIN",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/10974/ley-n-6715-",
+    "path": "ADMIN.html",
+    "bytes": 190303,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:20.625Z",
+    "sha256": "d2e988d31d335eac21d3ad0907a97fb1bc070b6aee114c7febe0c47786918a06",
+    "text_path": "ADMIN.txt",
+    "text_sha256": "b06994bd276859aa7fad729a14c34a9459749ca56a5a461d3f86577704e26b92"
+  },
+  {
+    "id": "MUNICIPAL",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/969/organica-municipal",
+    "path": "MUNICIPAL.html",
+    "bytes": 375151,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.186Z",
+    "sha256": "c9e51a9bf27860add3225ce6445acee21ebb2947509ede09ecc2a3bfeb7b532b",
+    "text_path": "MUNICIPAL.txt",
+    "text_sha256": "4357bd8798ea3885195edbf75c1bcd28b1fa67c0e3c8876f190575255ec64af8"
+  },
+  {
+    "id": "NINEZ",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/5261/codigo-de-la-ninez-y-la-adolescencia",
+    "path": "NINEZ.html",
+    "bytes": 285041,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.246Z",
+    "sha256": "51b46b6287807a070814c4cd317d2f4365b8930f73354f826b8d34a6986dd471",
+    "text_path": "NINEZ.txt",
+    "text_sha256": "c73b3e748abcc58e74b366499a804718291d5d136ee160f5a1e1971ee74981a3"
+  },
+  {
+    "id": "CPP",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/203/ley-n-1286--cdigo-procesal-penal",
+    "path": "CPP.html",
+    "bytes": 558520,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:23.331Z",
+    "sha256": "a1cbeefcea58f6b3596b9a20fcfb08427654a4ad3f8fcc0cce137e71721b59e9",
+    "text_path": "CPP.txt",
+    "text_sha256": "9a55e5e7d96885e7f2144cacac10695bfe62c897bebb2569753898a85ea8b87d"
+  },
+  {
+    "id": "GACETA-2011-2",
+    "url": "https://www.pj.gov.py/ebook/libros_files/Gaceta_Judicial_2_2011.pdf",
+    "path": "GACETA-2011-2.pdf",
+    "bytes": 993384,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:20:19.239Z",
+    "sha256": "93fee19703c8c4a52e7e4a3ea90b12023cc0f7c6f18345c80b31b941470611fe"
+  },
+  {
+    "id": "NINEZ-6083",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/8441/ley-n-6083-modifica-la-ley-n-1-680-01-c-digo-de-la-ni-ez-y-la-adolescencia",
+    "path": "NINEZ-6083.html",
+    "bytes": 106425,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:21:10.543Z",
+    "sha256": "11c7e8adef361165321c20608fde215fcd0e412413a56ce1b951045fcfb84944",
+    "text_path": "NINEZ-6083.txt",
+    "text_sha256": "d3750103a064968586a6472140bb89a29f5e487b9be03be08b3c465f058f0e1c"
+  },
+  {
+    "id": "PENAL",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/3497/ley-n-11601997-codigo-penal",
+    "path": "PENAL.html",
+    "bytes": 598682,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:21:11.190Z",
+    "sha256": "6b35c7add7a82dd9eed9495fba9eb350dcd75175d70d24a70d364fafd3600646",
+    "text_path": "PENAL.txt",
+    "text_sha256": "5b4bedb7d28f983b807817229e96e092a7b4f65c970c6ded401bf63db9c190da"
+  },
+  {
+    "id": "PENAL-3440",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/3485/ley-n-3440-modifica-varias-disposiciones-de-la-ley-n-",
+    "path": "PENAL-3440.html",
+    "bytes": 191310,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:21:12.731Z",
+    "sha256": "85e107f879129953750119f3dd768a17ae3cd0e5e9834f35b3e0211a3055b69e",
+    "text_path": "PENAL-3440.txt",
+    "text_sha256": "1c5cc16572ceb7b198cc8dda255d1309137d3339876486f7b490ffaa43497a56"
+  },
+  {
+    "id": "FACTURA-6542",
+    "url": "https://www.bacn.gov.py/leyes-paraguayas/9277/ley-n-6542-de-factoraje-factura-cambiaria-y-sistema-electronico-de-operaciones-garantizada",
+    "path": "FACTURA-6542.html",
+    "bytes": 130581,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:26:08.926Z",
+    "sha256": "88b7df5b23e37581af075dcee784ab368980af72993ea18962a410bf3d09a0fe",
+    "text_path": "FACTURA-6542.txt",
+    "text_sha256": "78c63dd06d453dc0312753d00a618dad9f0d4b2ed7f890af2854a4c9fb5e76a5"
+  },
+  {
+    "id": "CONSTITUCION",
+    "url": "https://www.diputados.gov.py/pdf/ConstitucionNacional_2024.pdf",
+    "path": "CONSTITUCION.pdf",
+    "bytes": 7709861,
+    "status": 200,
+    "retrieved_at": "2026-10-21T16:26:11.402Z",
+    "sha256": "dda16d040a03cb5f20ad7ae8b091c79d1d288162400e8524e7b0c0efbfa575b4",
+    "text_path": "CONSTITUCION.txt",
+    "text_sha256": "896dc3af1fec3ee3ca09fb73368d30cff1d1509abd21ea87e024a61deabe0131"
+  },
+  {
+    "id": "CPC-7663",
+    "url": "https://silpy.congreso.gov.py/web/descarga/ley-146583",
+    "path": "CPC-7663.pdf",
+    "bytes": 3753955,
+    "status": 200,
+    "retrieved_at": "2026-10-21T21:07:43.802Z",
+    "sha256": "2f529243c422c9015fc671cdc87e5c71983bb6551681d555da93ec7512c3c795",
+    "note": "Art. 7 condiciona la entrada en vigencia a reglamentaci?n por acordada. Aplicabilidad temporal pendiente de validaci?n. Extracci?n PDF con errores OCR: cotejar original.",
+    "text_path": "CPC-7663.txt",
+    "text_sha256": "d1875725b00cd2f15a45c78ba189e4162d37832376cd8e047cd8599393e99499"
+  },
+  {
+    "id": "N06-AS318-2010",
+    "path": "N06-AS318-2010.txt",
+    "derived_from": "GACETA-2011-2",
+    "pdf_pages": [
+      84,
+      105
+    ],
+    "sha256": "a64dd6d0661d2341fde82f36854fa3c2f31340acada66e5bda86b5796c8c465d",
+    "status": "EXTRACTED_PUBLISHED_COMPLETE_DECISION",
+    "note": "Includes editorial headnotes, votes and disposition; not a signed original from the case file."
+  }
+]

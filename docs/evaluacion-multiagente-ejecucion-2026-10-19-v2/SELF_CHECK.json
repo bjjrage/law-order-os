@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "at": "2026-10-19T05:12:35.694Z",
+  "paid_calls": 0,
+  "checks": [
+    {
+      "name": "three_sources",
+      "pass": true
+    },
+    {
+      "name": "case_document_counts",
+      "pass": true
+    },
+    {
+      "name": "reserved_source_rejected",
+      "pass": true
+    },
+    {
+      "name": "other_case_document_rejected",
+      "pass": true
+    },
+    {
+      "name": "known_labor_article_retrievable",
+      "pass": true
+    },
+    {
+      "name": "invalid_range_rejected",
+      "pass": true
+    },
+    {
+      "name": "cost_reservation_enforced",
+      "pass": true
+    },
+    {
+      "name": "inflight_reservation_shared",
+      "pass": true
+    },
+    {
+      "name": "no_reserved_files_in_source_catalog",
+      "pass": true
+    }
+  ]
+}

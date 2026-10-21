@@ -1,0 +1,74 @@
+{
+  "run_id": "run:9b23f158562c0cba3e36fee47e5c1158",
+  "mode": "OFFLINE_SIMULATION",
+  "status": "HUMAN_REVIEW_PENDING",
+  "validity": "CURRENT",
+  "draft": true,
+  "human_approval": "PENDING",
+  "error_code": null,
+  "legal_analysis_untrusted_draft": "BORRADOR SINTÉTICO. Se requiere evaluar la constancia documental de notificación y la alegación contraria antes de formular una conclusión jurídica.",
+  "reference_verification": "PASS_IN_SCOPE",
+  "references": [
+    {
+      "reference": {
+        "reference_id": "ref-fixture",
+        "source_id": "synthetic-judgment",
+        "document_version_id": "synthetic-judgment:v1",
+        "passage_id": "synthetic-judgment:v1:p1",
+        "source_type": "OFFICIAL_CASELAW",
+        "jurisdiction": "PY",
+        "court": "Tribunal Sintético de Prueba",
+        "chamber": "Sala Ficticia",
+        "resolution_type": "Sentencia",
+        "number": "9001",
+        "date": "2024-01-15",
+        "official_id": "SYNTHETIC:9001",
+        "quote": "La notificación requiere constancia documental.",
+        "raw_text": null
+      },
+      "label": "SIMULATED_VERIFIED"
+    }
+  ],
+  "citation_extraction": {
+    "citations": [],
+    "unresolved_markers": [],
+    "detected_reference_count": 0,
+    "coverage_status": "COVERED_IN_GRAMMAR",
+    "extractor_version": "es-bibliography-v2"
+  },
+  "cost": {
+    "run_id": "run:9b23f158562c0cba3e36fee47e5c1158",
+    "mode": "OFFLINE_SIMULATION",
+    "status": "HUMAN_REVIEW_PENDING",
+    "input_tokens": 8792,
+    "output_tokens": 1379,
+    "token_count_kind": "SIMULATED",
+    "estimated_total_usd": 0.011550000000000001,
+    "actual_total_usd": 0,
+    "conservative_budget_used_usd": 0.011550000000000001,
+    "unknown_cost_attempts": 0,
+    "latency_ms": 244.57700000000295,
+    "by_model": {
+      "SIMULATED_JEV_1_13": {
+        "estimated_usd": 0.001572,
+        "attempts": 1
+      },
+      "SIMULATED_LUNA": {
+        "estimated_usd": 0.003226,
+        "attempts": 1
+      },
+      "SIMULATED_SOL_MEDIUM": {
+        "estimated_usd": 0.00352,
+        "attempts": 1
+      },
+      "SIMULATED_GEMINI": {
+        "estimated_usd": 0.003232,
+        "attempts": 1
+      },
+      "NONE": {
+        "estimated_usd": 0,
+        "attempts": 1
+      }
+    }
+  }
+}

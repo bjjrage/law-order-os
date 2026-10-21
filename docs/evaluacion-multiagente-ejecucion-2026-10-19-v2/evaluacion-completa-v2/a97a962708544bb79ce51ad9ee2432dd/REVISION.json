@@ -1,0 +1,117 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no hay aceptación de Laurel, pago ni entrega del taller",
+      "explanation": "El memo distingue las propuestas de una operación perfeccionada y cita tanto las bases no concluyentes como la falta de aprobación interna; reserva la posibilidad de revisar comunicaciones no aportadas."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No evita la intervención de Horizonte",
+      "explanation": "Explica que el contrato exige autorización escrita para el cambio de control y vincula esa condición con la continuidad del cliente y la decisión de invertir."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No hay decisión actual de terminar ni incumplimiento observado",
+      "explanation": "Distingue la ausencia actual de terminación de la falta de autorización, y aclara que la reunión posterior a la fecha de reserva no promete aprobación."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Recomendación: no aceptar ni transferirla",
+      "explanation": "Expone la asimetría, la cuenta personal no verificada, la falta de acuerdo y autorización, y recomienda no pagar sin imponer una única alternativa de protección."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "contratar nuevamente no debe presentarse como eliminación de antigüedad o derechos",
+      "explanation": "Contrasta la continuidad del empleador en A con la incorporación propuesta en B y aplica el artículo 28 del Código del Trabajo con la cautela de que la calificación depende de los hechos."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "No deben usarse esos importes como impuestos calculados",
+      "explanation": "Identifica las inconsistencias de las hojas fiscales y explica por qué las disposiciones citadas no bastan para liquidar la operación, dejando la conclusión sujeta a datos y análisis tributario adicionales."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no es liquidación ni prueba de pago",
+      "explanation": "Separa el estimado de PYG 16.000.000 de una obligación liquidada y propone conciliar jornadas, pagos y otras obligaciones laborales no cuantificadas."
+    }
+  ],
+  "errors": [],
+  "novel_valid_findings": [],
+  "recommendation_coherent": true,
+  "limitations": [
+    "La verificación de vigencia normativa y reglamentación queda pendiente, y el memo la identifica expresamente como límite de las fuentes disponibles.",
+    "No se acredita una liquidación tributaria de ninguna alternativa; el memo evita tratar los importes preliminares como exigibles y condiciona la comparación a una simulación documentada."
+  ],
+  "preliminary_usability": "POTENTIALLY_USABLE",
+  "blind_id": "a97a962708544bb79ce51ad9ee2432dd",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H01",
+      "quote": "no hay aceptación de Laurel, pago ni entrega del taller",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H02",
+      "quote": "No evita la intervención de Horizonte",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H03",
+      "quote": "No hay decisión actual de terminar ni incumplimiento observado",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H04",
+      "quote": "Recomendación: no aceptar ni transferirla",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H05",
+      "quote": "contratar nuevamente no debe presentarse como eliminación de antigüedad o derechos",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H06",
+      "quote": "No deben usarse esos importes como impuestos calculados",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H07",
+      "quote": "no es liquidación ni prueba de pago",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 0,
+  "missing_required_quote_count": 0
+}

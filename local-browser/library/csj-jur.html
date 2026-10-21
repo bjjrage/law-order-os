@@ -1,0 +1,487 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link href="App_Themes/default/apariencia.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/aplicaciones.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/grilla.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/img/formularios.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/informacion.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/inicio.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/login.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/mantenimiento.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/menu.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/presentacion.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/seguridad.css" type="text/css" rel="stylesheet" /><title>
+	Corte Suprema de Justicia
+</title>
+
+    <script type="text/javascript" src="funciones/comun.js"> </script>
+
+    <style type="text/css">
+        #frmEntradaPrincipal
+        {
+            height: 667px;
+        }
+        .style1
+        {
+            width: 13px;
+            height: 46px;
+        }
+        .style2
+        {
+            margin-top: 0px;
+            font-size: 13px;
+            text-align: justify;
+            display: block;
+            color: #000000;
+            width: 271px;
+            padding-top:7px;
+        }
+        .style3
+        {
+            height: 46px;
+            font-size: 13px;
+        }
+        .style4
+        {
+            text-align: right;
+        }
+        .style5
+        {
+            margin-top: 0px;
+            font-size: 13px;
+            text-align: justify;
+            display: block;
+            color: #000000;
+            width: 270px;
+            height: auto;
+            padding-top:7px;
+        }
+        .style6
+        {
+            width: 335px;
+        }
+        .style7
+        {
+            width: 331px;
+        }
+    </style>
+
+<link href="App_Themes/default/apariencia.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/aplicaciones.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/grilla.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/img/formularios.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/informacion.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/inicio.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/login.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/mantenimiento.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/menu.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/presentacion.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/seguridad.css" type="text/css" rel="stylesheet" /><link href="/app/jur/WebResource.axd?d=nM13nRS_NCxW_twguYFT7FBv_vDuWUPqXx4YewRTpGhYZ0LvJA79nIZDnyAwbCahYjB0EHjkxD89umg0p2TQcB_yPbI54XqQqXvLRIxeWmao_r4eDk7AAs7GeMJE_ApIJ1GgBM1C_QKGuigJkbdbf0UalIw1&amp;t=635272016600000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/app/jur/WebResource.axd?d=kdxMXxq5Ame_p593I5X2R5lVyHMK7z6-UB1ZZ6XaPDDkaQhttEOCUzrn621dNd9QZhsnWpVUpRtKLFyxTPoD2nv2Uc58UX4ADrGWiOPcmLHf3hmdincRpX5fufppqOE7FRuLqfoGHsIMM7tfxzWa-hZfLK41&amp;t=635272016600000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/app/jur/WebResource.axd?d=TiB3gazXmmtaH0Dk7yB9uEqaziENH-SDFM4bNEjItqOz-OsFx9y72VsJh3VGOdmeTKsQsBuLMP4aee0wcKWmDOxIMCsvjnlb0of4G7kojg1eEvH28HLR1vrveDm8po2zbM6Y-Vej4hR0fn-01T5c0UjJAWc1&amp;t=635272016600000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/app/jur/WebResource.axd?d=kAt2bkh-AZr_SiJL0e27PrU2KRn7c-COwgTAv8ckhEyFQQnqjwQkFFaI_jIIwo5bEmR-3fuokGKHXxQKYYRe1h9Tt0jd5_06WOB9-Jt0h8oToyglsp5ky1Fhp53fiHnFj9eTuw2&amp;t=635272016600000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+<body onload="startTimer();">
+    <form name="frmEntradaPrincipal" method="post" action="default.aspx?AspxAutoDetectCookieSupport=1" id="frmEntradaPrincipal">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0OTg1MzcxD2QWAgIDD2QWGAIHD2QWCgIDDw8WAh4EVGV4dAUaQ29uc3VsdGEgZGUgSnVyaXNwcnVkZW5jaWFkZAIFDw8WAh8ABTZVc3RlZCBlcyBudWVzdHJvIHZpc2l0YW50ZSBOby4gPHN0cm9uZz4zNjI5ODk8L3N0cm9uZz5kZAIJDw8WCh8ABQtJciBhIEluaWNpbx4LTmF2aWdhdGVVcmwFAn4vHglGb250X0JvbGRnHgRfIVNCAoAQHgdWaXNpYmxlaGRkAgsPDxYIHwBlHwEFAn4vHwJnHwMCgBBkZAINDw8WBB8CZx8DAoAQZGQCDQ8UKwAIDxYEHg1MYWJlbENzc0NsYXNzBRtyYWRMYWJlbENzc19HcmF5ICBpbnB1dENlbGweF0VuYWJsZUFqYXhTa2luUmVuZGVyaW5naGQWCB4GSGVpZ2h0GwAAAAAAADRAAQAAAB4FV2lkdGgbAAAAAACAcUABAAAAHghDc3NDbGFzcwUbcmFkSG92ZXJDc3NfR3JheSAgaW5wdXRDZWxsHwMCggMWCB8HGwAAAAAAADRAAQAAAB8IGwAAAAAAgHFAAQAAAB8JBR1yYWRJbnZhbGlkQ3NzX0dyYXkgIGlucHV0Q2VsbB8DAoIDFggfBxsAAAAAAAA0QAEAAAAfCBsAAAAAAIBxQAEAAAAfCQUdcmFkRm9jdXNlZENzc19HcmF5ICBpbnB1dENlbGwfAwKCAxYIHwcbAAAAAAAANEABAAAAHwgbAAAAAACAcUABAAAAHwkFHXJhZEVuYWJsZWRDc3NfR3JheSAgaW5wdXRDZWxsHwMCggMWCB8HGwAAAAAAADRAAQAAAB8IGwAAAAAAgHFAAQAAAB8JBR5yYWREaXNhYmxlZENzc19HcmF5ICBpbnB1dENlbGwfAwKCAxYIHwcbAAAAAAAANEABAAAAHwgbAAAAAACAcUABAAAAHwkFInJhZEVtcHR5TWVzc2FnZUNzc19HcmF5ICBpbnB1dENlbGwfAwKCAxYIHwcbAAAAAAAANEABAAAAHwgbAAAAAACAcUABAAAAHwkFHnJhZFJlYWRPbmx5Q3NzX0dyYXkgIGlucHV0Q2VsbB8DAoIDZAIPDxQrAAIPFggeDkRhdGFWYWx1ZUZpZWxkBQtjb2RpZ29fc2FsYR8GaB4NRGF0YVRleHRGaWVsZAUQZGVzY3JpcGNpb25fc2FsYR4LXyFEYXRhQm91bmRnZA8UKwATFCsAAg8WBB8ABVZKVVpHQURPIERFIFBSSU1FUkEgSU5TVEFOQ0lBIEVOIExPIExBQk9SQUwgREVMIFBSSU1FUiBUVVJOTywgU1JJQS4gTsKwIDEgLSBFTkNBUk5BQ0lPTh4FVmFsdWUFBDEyMzRkZBQrAAIPFgQfAAVDSlVaR0FETyBERSBQUklNRVJBIElOU1RBTkNJQSBFTiBMTyBMQUJPUkFMLCBTRUMuTsK6IDIgLSBFTkNBUk5BQ0lPTh8NBQQxMjM1ZGQUKwACDxYEHwAFJVBMRU5PIERFIExBIENPUlRFIFNVUFJFTUEgREUgSlVTVElDSUEfDQUEMTI4MWRkFCsAAg8WBB8ABQpTQUxBIENJVklMHw0FBDEyODBkZBQrAAIPFgQfAAUTU0FMQSBDT05TVElUVUNJT05BTB8NBQMyNDNkZBQrAAIPFgQfAAUKU0FMQSBQRU5BTB8NBQQxMjc5ZGQUKwACDxYEHwAFFlNFQ1JFVEFSSUEgSlVESUNJQUwgSVYfDQUEMjE0NmRkFCsAAg8WBB8ABTBUUklCVU5BTCBERSBBUEVMQUNJT04gREUgTEEgTknDkUVaIC0gRU5DQVJOQUNJT04fDQUEMTI4N2RkFCsAAg8WBB8ABTlUUklCVU5BTCBERSBBUEVMQUNJT04gRU4gTE8gQ0lWSUwgWSBDT01FUkNJQUwgQ1VBUlRBIFNBTEEfDQUDODQwZGQUKwACDxYEHwAFOlRSSUJVTkFMIERFIEFQRUxBQ0lPTiBFTiBMTyBDSVZJTCBZIENPTUVSQ0lBTCBQUklNRVJBIFNBTEEfDQUDODM0ZGQUKwACDxYEHwAFOVRSSUJVTkFMIERFIEFQRUxBQ0lPTiBFTiBMTyBDSVZJTCBZIENPTUVSQ0lBTCBRVUlOVEEgU0FMQR8NBQM4NDFkZBQrAAIPFgQfAAU6VFJJQlVOQUwgREUgQVBFTEFDSU9OIEVOIExPIENJVklMIFkgQ09NRVJDSUFMIFNFR1VOREEgU0FMQR8NBQM4MzhkZBQrAAIPFgQfAAU4VFJJQlVOQUwgREUgQVBFTEFDSU9OIEVOIExPIENJVklMIFkgQ09NRVJDSUFMIFNFWFRBIFNBTEEfDQUEMTI1MWRkFCsAAg8WBB8ABTpUUklCVU5BTCBERSBBUEVMQUNJT04gRU4gTE8gQ0lWSUwgWSBDT01FUkNJQUwgVEVSQ0VSQSBTQUxBHw0FAzgzOWRkFCsAAg8WBB8ABSlUUklCVU5BTCBERSBBUEVMQUNJT04gUEVOQUwgLSBFTkNBUk5BQ0lPTh8NBQQxMjg4ZGQUKwACDxYEHwAFMFRSSUJVTkFMIERFIEFQRUxBQ0lPTiBTRUdVTkRBIFNBTEEgLSBFTkNBUk5BQ0lPTh8NBQQxMjg1ZGQUKwACDxYEHwAFMFRSSUJVTkFMIERFIEFQRUxBQ0lPTiBURVJDRVJBIFNBTEEgLSBFTkNBUk5BQ0lPTh8NBQQxMjg2ZGQUKwACDxYEHwAFK1RSSUJVTkFMIGRlIENVRU5UQVMg4oCTIENPTlQuIEFETSAxUkEuIFNhbGEfDQUDODMxZGQUKwACDxYEHwAFK1RSSUJVTkFMIGRlIENVRU5UQVMg4oCTIENPTlQuIEFETSAyREEuIFNhbGEfDQUDODMyZGQPFCsBE2ZmZmZmZmZmZmZmZmZmZmZmZmYWAQV3VGVsZXJpay5XZWIuVUkuUmFkQ29tYm9Cb3hJdGVtLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDA4LjIuNzIzLjM1LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQWKmYPDxYEHwkFCXJjYkhlYWRlch8DAgJkZAIBDw8WBB8JBQlyY2JGb290ZXIfAwICZGQCAg8PFgQfAAVWSlVaR0FETyBERSBQUklNRVJBIElOU1RBTkNJQSBFTiBMTyBMQUJPUkFMIERFTCBQUklNRVIgVFVSTk8sIFNSSUEuIE7CsCAxIC0gRU5DQVJOQUNJT04fDQUEMTIzNGRkAgMPDxYEHwAFQ0pVWkdBRE8gREUgUFJJTUVSQSBJTlNUQU5DSUEgRU4gTE8gTEFCT1JBTCwgU0VDLk7CuiAyIC0gRU5DQVJOQUNJT04fDQUEMTIzNWRkAgQPDxYEHwAFJVBMRU5PIERFIExBIENPUlRFIFNVUFJFTUEgREUgSlVTVElDSUEfDQUEMTI4MWRkAgUPDxYEHwAFClNBTEEgQ0lWSUwfDQUEMTI4MGRkAgYPDxYEHwAFE1NBTEEgQ09OU1RJVFVDSU9OQUwfDQUDMjQzZGQCBw8PFgQfAAUKU0FMQSBQRU5BTB8NBQQxMjc5ZGQCCA8PFgQfAAUWU0VDUkVUQVJJQSBKVURJQ0lBTCBJVh8NBQQyMTQ2ZGQCCQ8PFgQfAAUwVFJJQlVOQUwgREUgQVBFTEFDSU9OIERFIExBIE5Jw5FFWiAtIEVOQ0FSTkFDSU9OHw0FBDEyODdkZAIKDw8WBB8ABTlUUklCVU5BTCBERSBBUEVMQUNJT04gRU4gTE8gQ0lWSUwgWSBDT01FUkNJQUwgQ1VBUlRBIFNBTEEfDQUDODQwZGQCCw8PFgQfAAU6VFJJQlVOQUwgREUgQVBFTEFDSU9OIEVOIExPIENJVklMIFkgQ09NRVJDSUFMIFBSSU1FUkEgU0FMQR8NBQM4MzRkZAIMDw8WBB8ABTlUUklCVU5BTCBERSBBUEVMQUNJT04gRU4gTE8gQ0lWSUwgWSBDT01FUkNJQUwgUVVJTlRBIFNBTEEfDQUDODQxZGQCDQ8PFgQfAAU6VFJJQlVOQUwgREUgQVBFTEFDSU9OIEVOIExPIENJVklMIFkgQ09NRVJDSUFMIFNFR1VOREEgU0FMQR8NBQM4MzhkZAIODw8WBB8ABThUUklCVU5BTCBERSBBUEVMQUNJT04gRU4gTE8gQ0lWSUwgWSBDT01FUkNJQUwgU0VYVEEgU0FMQR8NBQQxMjUxZGQCDw8PFgQfAAU6VFJJQlVOQUwgREUgQVBFTEFDSU9OIEVOIExPIENJVklMIFkgQ09NRVJDSUFMIFRFUkNFUkEgU0FMQR8NBQM4MzlkZAIQDw8WBB8ABSlUUklCVU5BTCBERSBBUEVMQUNJT04gUEVOQUwgLSBFTkNBUk5BQ0lPTh8NBQQxMjg4ZGQCEQ8PFgQfAAUwVFJJQlVOQUwgREUgQVBFTEFDSU9OIFNFR1VOREEgU0FMQSAtIEVOQ0FSTkFDSU9OHw0FBDEyODVkZAISDw8WBB8ABTBUUklCVU5BTCBERSBBUEVMQUNJT04gVEVSQ0VSQSBTQUxBIC0gRU5DQVJOQUNJT04fDQUEMTI4NmRkAhMPDxYEHwAFK1RSSUJVTkFMIGRlIENVRU5UQVMg4oCTIENPTlQuIEFETSAxUkEuIFNhbGEfDQUDODMxZGQCFA8PFgQfAAUrVFJJQlVOQUwgZGUg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" />
+
+
+<script src="/app/jur/ScriptResource.axd?d=Xn_zRsspJYJpyR9716sd1xN9-XJEwpIxHICzuxI72XnMGAcF88pe7tvaJOWBBZjmB13ANohZHSw74ydP1CD4EAViwLyXtLizb1hcoXRfjlcoXn9QITR4skaDB6sv0sWwUftWxuY1pw4bMqqy29rrPNrcBnMVaxVvnBQQFWXiomQbptlt0&amp;t=ffffffffb868b5f4" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('Error al cargar el marco de trabajo de cliente ASP.NET Ajax.');
+//]]>
+</script>
+
+<script src="/app/jur/ScriptResource.axd?d=hhMaJPqmybcAXtV7mY-RfRtMNprhwkJOp6FYdmA357out0JUbCSOfy6Yfh2xIsLL1fbvg_MuPsvXUJ2y524ZOBmcw867huwO_9VqZ5Uskefm6s1y2d7MeImxgi8MdeBMMkYyag2&amp;t=fffffffffcd71a3d" type="text/javascript"></script>
+<script src="/app/jur/ScriptResource.axd?d=2HchkXhE0eMBN4RLHRoglIEbih7CeN4FUF-NttbPAJfgfTR1XhwXUhXMgterjw1QCjpR-WJBJCn2jfApEq4LYI4CnjMK0DVAvqgsGMBlPX-iNY900f-VN0urNujnwrLJ5y4JcA2&amp;t=fffffffffcd71a3d" type="text/javascript"></script>
+<script src="/app/jur/ScriptResource.axd?d=QG31Efp9LeuYyCYutEoKboQIjqeW4iQt6xCDk-ufr5DJf6X3YUL7e_g8WU_fNy-FN7_iaszBFuMAAuzz0Pu7Yfr1-H6PIASjpxCasPpaUW2RmQuqwfwMjg0QLhVNAtLCTJ_v25K8wpYJlsJVoRBP8bjiyJo1&amp;t=fffffffffcd71a3d" type="text/javascript"></script>
+<script src="/app/jur/ScriptResource.axd?d=ELInEosJYlPH0xcWmIlA3gI47JWZFSsgJE002ImoAmDGB8XWpanzCD8MaPLRKxckb7NknV6pMKm8vOaPCCZYrAMfjUuSMKMi1dCkGw1j3L-8V365XshRHNc_mMn22nGHJcRkXqIcGoT-QpIN5NDXxx07DEg1&amp;t=fffffffffcd71a3d" type="text/javascript"></script>
+<script src="/app/jur/ScriptResource.axd?d=Qp9oD0sSwuABWpec8v2vGM7ha9QJEa7Z6GKClGHJRTNuiACfQEnT0EDUNMNWZCnaln6yqJ8jAYtuHOIX5d0GJP1NN7zaA-C9-4BArsi4WQvwaNrIaNsjNX11zStH9Y3pwsDBiH4x4gjoBSxC_XHwaVKOP9I1&amp;t=fffffffffcd71a3d" type="text/javascript"></script>
+<script src="/app/jur/ScriptResource.axd?d=Rd_8A97xLco6b24oiTP_dDjaz2T6xGWaYrceMuMHhuxyvSJvRqNaD-YwQ5_hGl8QfyQNY1HmQTchBMj_4RGql2uWx--XNUXdPhHv_MsFpG8_Sr-_mTjpqfN7oL5HFmd6ZoCmCYuTNHbAcnY6h71RnF_h7AI1&amp;t=fffffffffcd71a3d" type="text/javascript"></script>
+<script src="/app/jur/ScriptResource.axd?d=OKnxk5y-eQH2H6_bMf5YG6elve5IPZj1rVEN-iy48Rn8q3nYSOS2g-P5wzG8dA0MEN8xtxHCa5SGAlUzQfwXsngaogciTNdmiiIRyOVx_ycd2AeilyNvJGcYWRWcGsfz8hjnPEN5wvo_gnjd7KaTA5KZJ001&amp;t=fffffffffcd71a3d" type="text/javascript"></script>
+<script src="/app/jur/ScriptResource.axd?d=8b9-nKLX8RVy8XNTs-Q25lNBT8XWiUqim_yk_O3p-FDJfsohuObtXy55lNkNvcdGXzllxNY3tY1vCwwcBq_8u1E1xly0UZol-VwWQWY65J20XOila-WzKy3_H9qPSEMTZVlP_g2&amp;t=fffffffffcd71a3d" type="text/javascript"></script>
+<script src="/app/jur/ScriptResource.axd?d=Gnz3XDc8e3WFKB_HMkmcTRu857-tUyirUcnjEsmNL4yrrqQXFkVH47l644nxvm_Q1kQ_saIq-DpsM8dK5EWHGoaiYz5U-XKqTVn5249kU4r1pk0YjbDU5Uwdh0hDo58LBTJWaV6irJSinA6ManaSX0F_8SY1&amp;t=fffffffffcd71a3d" type="text/javascript"></script>
+    
+    
+
+        <script type="text/javascript">
+           function GetRadWindow() {
+                var oWindow = null;
+                if (window.radWindow) oWindow = window.radWindow;
+                else if (window.frameElement.radWindow) oWindow = window.frameElement.radWindow;
+                return oWindow;
+            }
+
+            function openWin2(id) {
+                var parentPage = GetRadWindow().BrowserWindow;
+                var parentRadWindowManager = parentPage.GetRadWindowManager();
+                var oWnd2 = parentRadWindowManager.open("../mantenimientos/relacion_resoluciones.aspx?codigo=" + id, "RadWindow2");
+                oWnd2.setSize(720, 450);
+            }
+
+
+            function resultadosBusqueda() {
+                window.radopen("../consulta/resultado_busqueda.aspx", "rsBusquedaSimple");
+                return false;
+            }
+
+            function openWin(id) {
+                var oWnd = radopen("../consulta/detalle_resolucion.aspx?ResolucionID=" + id, "RadWindow1");
+                //oWnd.setSize(700, 640);
+                //oWnd.add_close(OnClientClose);
+            }
+
+        </script>
+
+    
+    <!-- 2008.2.723.35 --><div id="ramPrincipalInicioSU">
+	<span id="ramPrincipalInicio" style="display:none;"></span>
+</div>
+    
+  
+
+
+ <div class="encabezadobg" align="left">
+   <div id="logo">
+            <div class="cssImagen">
+            </div>
+        </div>
+        <div class="cssContenedirInformacionUsuario">
+            
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<script type="text/javascript">
+    /* Show new window */
+    function ShowNewWindow() {
+        //Show new window
+        //not providing a name as a second parameter will create a new window
+        var url = location.href;
+
+            var oWindow = window.radopen("../cambioclave.aspx", "UserLogin");
+            //Using the reference to the window its clientside methods can be called
+            oWindow.SetSize(400, 560);
+            oWindow.SetTitle("Cambio Clave de Acceso");
+    }
+    
+
+</script>
+
+<div class="contenedorinformacion">
+  <div class="titulopais">
+  <span id="infoUsuarioActivo_lblTituloPais">Paraguay</span>
+  </div>
+  <div class="tituloprincipal">
+    <span id="infoUsuarioActivo_lblUsuarioActivo">Consulta de Jurisprudencia</span>
+  </div>
+  <div class="titulosecundario">
+    <span id="infoUsuarioActivo_lblCargoUsuarioActivo">Usted es nuestro visitante No. <strong>362989</strong></span>
+  </div>
+  <a id="infoUsuarioActivo_lnkLogin" href="componentes/Login.aspx"><b>Iniciar Sesión</b></a>&nbsp; 
+   &nbsp; <a id="infoUsuarioActivo_hlCambiarClave" href="./"><b></b></a> &nbsp;
+ <a id="infoUsuarioActivo_hlContactenos" href="mailto:iij.soporte@pj.gov.py"><b>Contáctenos</b></a></div>
+</div>
+</html>
+   
+
+        </div>
+    </div>
+   
+    <div id="principal">
+        <div class="cssInfoAplicacion">
+            <span id="Label1">CONSULTA DE JURISPRUDENCIA</span>
+        </div>
+        <div class="cssDivMenuLateral">
+            <div class="cssDivInformacion" style="background-color:#D9E6F2">
+              <a id="hlayudabasica" class="cssLinkImagenkAyuda" href="ayuda/jurisprudencia/index.htm" target="_blank" style="display:inline-block;"><img src="App_Themes/default/img/Ayuda_grande.png" alt="Ayuda" border="0" /></a>
+                <span class="style5"><strong>Busqueda Básica</strong></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+            </div>
+            
+            <table cellpadding="1" cellspacing="0" width="100%" style="height: 278px">
+                <tr>
+                    <td style="text-align: right">
+                        <strong>Palabra(s):
+                    </strong>
+                    </td>
+                    <td>
+                        <div id="rdtPalabrasPanel">
+	<span id="rdtPalabras_wrapper" class="radInput_Gray"><input type="text" size="20" id="rdtPalabras_text" name="rdtPalabras_text" class="radEnabledCss_Gray  inputCell" /><input id="rdtPalabras" name="rdtPalabras" style="visibility:hidden;margin:-18px 0 0 0;width:1px;height:1px;overflow:hidden;border:0;padding:0;" type="text" value="" /><input id="rdtPalabras_ClientState" name="rdtPalabras_ClientState" type="hidden" /></span>
+</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="middle" style="text-align: right">
+                        <strong>Sala:
+                    </strong>
+                    </td>
+                    <td>
+                        <div id="rcbOrigenPanel">
+	<div id="rcbOrigen" class="RadComboBox RadComboBox_Gray ">
+		<table cellpadding="0" cellspacing="0" summary="combobox" border="0" style="border-width:0;width:100%">
+			<tr>
+				<td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input class="rcbInput" type="text" id="rcbOrigen_Input" name="rcbOrigen_Input" value="" style="text-decoration:;"></input></td><td class="rcbArrowCell rcbArrowCellRight"><a id="rcbOrigen_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+			</tr>
+		</table><div class="rcbSlide" style="z-index:6000;"><div id="rcbOrigen_DropDown" class="RadComboBoxDropDown_Gray" style="display:none;"><div class="rcbScroll rcbWidth" style="width:100%;"><ul class="rcbList" style="list-style:none;margin:0;padding:0;zoom:1;"><li class="rcbItem ">JUZGADO DE PRIMERA INSTANCIA EN LO LABORAL DEL PRIMER TURNO, SRIA. N&#176; 1 - ENCARNACION</li><li class="rcbItem ">JUZGADO DE PRIMERA INSTANCIA EN LO LABORAL, SEC.N&#186; 2 - ENCARNACION</li><li class="rcbItem ">PLENO DE LA CORTE SUPREMA DE JUSTICIA</li><li class="rcbItem ">SALA CIVIL</li><li class="rcbItem ">SALA CONSTITUCIONAL</li><li class="rcbItem ">SALA PENAL</li><li class="rcbItem ">SECRETARIA JUDICIAL IV</li><li class="rcbItem ">TRIBUNAL DE APELACION DE LA NI&#209;EZ - ENCARNACION</li><li class="rcbItem ">TRIBUNAL DE APELACION EN LO CIVIL Y COMERCIAL CUARTA SALA</li><li class="rcbItem ">TRIBUNAL DE APELACION EN LO CIVIL Y COMERCIAL PRIMERA SALA</li><li class="rcbItem ">TRIBUNAL DE APELACION EN LO CIVIL Y COMERCIAL QUINTA SALA</li><li class="rcbItem ">TRIBUNAL DE APELACION EN LO CIVIL Y COMERCIAL SEGUNDA SALA</li><li class="rcbItem ">TRIBUNAL DE APELACION EN LO CIVIL Y COMERCIAL SEXTA SALA</li><li class="rcbItem ">TRIBUNAL DE APELACION EN LO CIVIL Y COMERCIAL TERCERA SALA</li><li class="rcbItem ">TRIBUNAL DE APELACION PENAL - ENCARNACION</li><li class="rcbItem ">TRIBUNAL DE APELACION SEGUNDA SALA - ENCARNACION</li><li class="rcbItem ">TRIBUNAL DE APELACION TERCERA SALA - ENCARNACION</li><li class="rcbItem ">TRIBUNAL de CUENTAS – CONT. ADM 1RA. Sala</li><li class="rcbItem ">TRIBUNAL de CUENTAS – CONT. ADM 2DA. Sala</li></ul></div></div></div><input id="rcbOrigen_ClientState" name="rcbOrigen_ClientState" type="hidden" />
+	</div>
+</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style4">
+                        <strong>No. Resol.:
+                    </strong>
+                    </td>
+                    <td>
+                    
+                            <div id="rdiNoResolucionPanel">
+	<span id="rdiNoResolucion_wrapper" class="radInput_Gray"><input type="text" size="20" id="rdiNoResolucion_text" name="rdiNoResolucion_text" class="radEnabledCss_Gray  inputCell" /><input id="rdiNoResolucion" name="rdiNoResolucion" style="visibility:hidden;margin:-18px 0 0 0;width:1px;height:1px;overflow:hidden;border:0;padding:0;" type="text" value="" /><input id="rdiNoResolucion_ClientState" name="rdiNoResolucion_ClientState" type="hidden" /></span>
+</div>
+                                            
+                        <tr>
+                          <td class="style4">
+                              <strong>Año:
+                              </strong>
+                        </td>
+                        <td>
+                            <div id="rcbAnnoPanel">
+	<div id="rcbAnno" class="RadComboBox RadComboBox_Gray ">
+		<table cellpadding="0" cellspacing="0" summary="combobox" border="0" style="border-width:0;width:100%">
+			<tr>
+				<td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input class="rcbInput" type="text" id="rcbAnno_Input" name="rcbAnno_Input" value="" style="text-decoration:;"></input></td><td class="rcbArrowCell rcbArrowCellRight"><a id="rcbAnno_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+			</tr>
+		</table><div class="rcbSlide" style="z-index:6000;"><div id="rcbAnno_DropDown" class="RadComboBoxDropDown_Gray" style="display:none;"><div class="rcbScroll rcbWidth" style="width:100%;"><ul class="rcbList" style="list-style:none;margin:0;padding:0;zoom:1;"><li class="rcbItem "></li><li class="rcbItem ">2026</li><li class="rcbItem ">2025</li><li class="rcbItem ">2024</li><li class="rcbItem ">2023</li><li class="rcbItem ">2022</li><li class="rcbItem ">2021</li><li class="rcbItem ">2020</li><li class="rcbItem ">2019</li><li class="rcbItem ">2018</li><li class="rcbItem ">2017</li><li class="rcbItem ">2016</li><li class="rcbItem ">2015</li><li class="rcbItem ">2014</li><li class="rcbItem ">2013</li><li class="rcbItem ">2012</li><li class="rcbItem ">2011</li><li class="rcbItem ">2010</li><li class="rcbItem ">2009</li><li class="rcbItem ">2008</li><li class="rcbItem ">2007</li><li class="rcbItem ">2006</li><li class="rcbItem ">2005</li><li class="rcbItem ">2004</li><li class="rcbItem ">2003</li><li class="rcbItem ">2002</li><li class="rcbItem ">2001</li><li class="rcbItem ">2000</li><li class="rcbItem ">1999</li><li class="rcbItem ">1998</li><li class="rcbItem ">1997</li><li class="rcbItem ">1996</li><li class="rcbItem ">1995</li><li class="rcbItem ">1993</li><li class="rcbItem ">1947</li></ul></div></div></div><input id="rcbAnno_ClientState" name="rcbAnno_ClientState" type="hidden" />
+	</div>
+</div>
+                        </td>
+                    </tr>
+                    
+                    </td>
+
+                    
+                </tr>
+             
+                <tr>
+                        <td class="style4">
+                                <strong>Instancia Originaria:</strong>
+                            </td>
+
+                            <td class="style6">
+                                <div id="ddlInstanaciaOriginariaPanel">
+	<div id="ddlInstanaciaOriginaria" class="RadComboBox RadComboBox_Gray ">
+		<table cellpadding="0" cellspacing="0" summary="combobox" border="0" style="border-width:0;width:100%">
+			<tr>
+				<td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input class="rcbInput" type="text" id="ddlInstanaciaOriginaria_Input" name="ddlInstanaciaOriginaria_Input" value="" style="text-decoration:;"></input></td><td class="rcbArrowCell rcbArrowCellRight"><a id="ddlInstanaciaOriginaria_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+			</tr>
+		</table><div class="rcbSlide" style="z-index:6000;"><div id="ddlInstanaciaOriginaria_DropDown" class="RadComboBoxDropDown_Gray" style="display:none;"><div class="rcbScroll rcbWidth" style="width:100%;"><ul class="rcbList" style="list-style:none;margin:0;padding:0;zoom:1;"><li class="rcbItem "></li><li class="rcbItem ">Hace Lugar</li><li class="rcbItem ">No Hace Lugar</li><li class="rcbItem ">Ver Observacion</li><li class="rcbItem ">Rechazar</li><li class="rcbItem ">Rechazo in limine</li><li class="rcbItem ">Ver Observaciones</li><li class="rcbItem ">Revocar parcialmente</li><li class="rcbItem ">Anular parcialmente</li><li class="rcbItem ">Archivar</li><li class="rcbItem ">Archivar la Acci&#243;n de Inconstitucionalidad</li><li class="rcbItem ">Confirmar parcialmente el Acuerdo y Sentencia</li><li class="rcbItem ">Declarar el Sobreseimiento Definitivo</li><li class="rcbItem ">Declarar Inoficioso</li><li class="rcbItem ">Declarar la Inconstitucionalidad</li><li class="rcbItem ">Declarar la Nulidad</li><li class="rcbItem ">Declarar la Nulidad Parcial</li><li class="rcbItem ">Declarar la Prescripci&#243;n</li><li class="rcbItem ">Declarar operada la caducidad</li><li class="rcbItem ">Desestimar</li><li class="rcbItem ">Disponer el Reenv&#237;o</li><li class="rcbItem ">Disponer la Anulaci&#243;n del Acuerdo y Sentencia</li><li class="rcbItem ">Modificar parcialmente el Acuerdo y Sentencia</li><li class="rcbItem ">No dar tr&#225;mite</li><li class="rcbItem ">Rechazar la Extinci&#243;n</li><li class="rcbItem ">Rechazar la Prescripci&#243;n</li><li class="rcbItem ">Regular los honorarios profesionales</li><li class="rcbItem ">Revocar Parcialmente el Acuerdo y Sentencia</li><li class="rcbItem ">Confirma</li><li class="rcbItem ">Declara la Nulidad</li><li class="rcbItem ">Declarar Desierto</li><li class="rcbItem ">Declarar Inadmisible</li><li class="rcbItem ">Declarar mal concedido</li><li class="rcbItem ">Hacer lugar parcialmente</li><li class="rcbItem ">Modifica</li><li class="rcbItem ">Revoca</li><li class="rcbItem ">Anula</li><li class="rcbItem ">Tener por desistido</li><li class="rcbItem ">Tener por evacuada la consulta</li><li class="rcbItem ">Aclarar</li><li class="rcbItem ">Dar tramite a la accion interpuesta</li><li class="rcbItem ">Hacer lugar a la suspension de efectos</li><li class="rcbItem ">Dar por decaido el derecho</li><li class="rcbItem ">Otorgar carta de naturalizaci&#243;n</li><li class="rcbItem ">Tener por NO evacuada la consulta</li></ul></div></div></div><input id="ddlInstanaciaOriginaria_ClientState" name="ddlInstanaciaOriginaria_ClientState" type="hidden" />
+	</div>
+</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style4">
+                                <strong>Instancia Previa:
+                            </strong>
+                            </td>
+
+                            <td class="style8">
+                                <div id="ddlInstanaciaPreviaPanel">
+	<div id="ddlInstanaciaPrevia" class="RadComboBox RadComboBox_Gray ">
+		<table cellpadding="0" cellspacing="0" summary="combobox" border="0" style="border-width:0;width:100%">
+			<tr>
+				<td class="rcbInputCell rcbInputCellLeft" style="width:100%;"><input class="rcbInput" type="text" id="ddlInstanaciaPrevia_Input" name="ddlInstanaciaPrevia_Input" value="" style="text-decoration:;"></input></td><td class="rcbArrowCell rcbArrowCellRight"><a id="ddlInstanaciaPrevia_Arrow" style="overflow: hidden;display: block;position: relative;outline: none;">select</a></td>
+			</tr>
+		</table><div class="rcbSlide" style="z-index:6000;"><div id="ddlInstanaciaPrevia_DropDown" class="RadComboBoxDropDown_Gray" style="display:none;"><div class="rcbScroll rcbWidth" style="width:100%;"><ul class="rcbList" style="list-style:none;margin:0;padding:0;zoom:1;"><li class="rcbItem "></li><li class="rcbItem ">Anula</li><li class="rcbItem ">Confirma</li><li class="rcbItem ">Declarar Inadmisible</li><li class="rcbItem ">Declarar mal concedido</li><li class="rcbItem ">Hace Lugar</li><li class="rcbItem ">Modifica</li><li class="rcbItem ">No Hace Lugar</li><li class="rcbItem ">Revoca</li><li class="rcbItem ">Ver Observaciones</li><li class="rcbItem ">Declarar Desierto</li><li class="rcbItem ">Declara la Nulidad</li><li class="rcbItem ">Hacer lugar parcialmente</li><li class="rcbItem ">Revocar parcialmente</li><li class="rcbItem ">Rechazar</li><li class="rcbItem ">Anular parcialmente</li><li class="rcbItem ">Archivar</li><li class="rcbItem ">Archivar la Acci&#243;n de Inconstitucionalidad</li><li class="rcbItem ">Confirmar parcialmente el Acuerdo y Sentencia</li><li class="rcbItem ">Declarar el Sobreseimiento Definitivo</li><li class="rcbItem ">Declarar Inoficioso</li><li class="rcbItem ">Declarar la Inconstitucionalidad</li><li class="rcbItem ">Declarar la Nulidad</li><li class="rcbItem ">Declarar la Nulidad Parcial</li><li class="rcbItem ">Declarar la Prescripci&#243;n</li><li class="rcbItem ">Declarar operada la caducidad</li><li class="rcbItem ">Desestimar</li><li class="rcbItem ">Disponer el Reenv&#237;o</li><li class="rcbItem ">Disponer la Anulaci&#243;n del Acuerdo y Sentencia</li><li class="rcbItem ">Modificar parcialmente el Acuerdo y Sentencia</li><li class="rcbItem ">No dar tr&#225;mite</li><li class="rcbItem ">Rechazar la Extinci&#243;n</li><li class="rcbItem ">Rechazar la Prescripci&#243;n</li><li class="rcbItem ">Regular los honorarios profesionales</li><li class="rcbItem ">Revocar Parcialmente el Acuerdo y Sentencia</li><li class="rcbItem ">Rechazo in limine</li><li class="rcbItem ">Tener por desistido</li><li class="rcbItem ">Tener por evacuada la consulta</li><li class="rcbItem ">No Aceptar</li><li class="rcbItem ">Rectificar</li><li class="rcbItem ">Declarar la falta de efecto</li><li class="rcbItem ">Dar por decaido el derecho</li><li class="rcbItem ">Otorgar carta de naturalizaci&#243;n</li><li class="rcbItem ">Tener por NO evacuada la consulta</li></ul></div></div></div><input id="ddlInstanaciaPrevia_ClientState" name="ddlInstanaciaPrevia_ClientState" type="hidden" />
+	</div>
+</div>
+                            </td>    
+                    </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td class="cssTdBotones">
+                        <input type="button" name="btBuscar" value="Buscar" onclick="javascript:__doPostBack('btBuscar','')" id="btBuscar" class="botones" />
+                        <input type="button" name="btLimpiar" value="Limpiar" onclick="javascript:__doPostBack('btLimpiar','')" id="btLimpiar" class="botones" />
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+             <div class="cssDivInformacion" style="background-color:#D9E6F2">
+              <a id="HyperLink1" class="cssLinkImagenkAyuda" href="ayuda/jurisprudencia/index.htm" target="_blank" style="display:inline-block;"><img src="App_Themes/default/img/Ayuda_grande.png" alt="Ayuda" border="0" /></a>
+                <span class="style2"><strong>Mas opciones Búsquedas</strong></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+            </div>
+        
+            <table cellpadding="1" cellspacing="0" class="cssTbMenuLateral">
+                <tr>
+                    <td class="style1" valign="middle">
+                        <img id="imgBusquedaAvanzada" src="App_Themes/default/img/busqueda.png" height="18" width="17" border="0" />
+                    </td>
+                    <td class="style3" valign="middle">
+
+                        <a id="hlBusquedaLibre" class="lnkInstancias" href="componentes/consulta/busqueda_libre.aspx" target="frameContenido">Búsqueda Avanzada</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style9" colspan="2" valign="top">
+                        &nbsp;</td>
+                </tr>
+            </table>
+        </div>
+         <div class="cssDivContenido" style="width: 62%; margin-bottom: 0px;">
+            <div id="ifContenidoPanel">
+	<iframe id="ifContenido" frameborder="0" src="entrada.aspx" class="cssIfContenido" scrolling="no" name="frameContenido" style="border: 1px solid #D9E6F2; padding: 1px;"></iframe>
+</div>
+                
+        
+    </div>
+        </div>
+        
+    </div>
+    <div id="rwmPrincipal" style="display:none;">
+	<div id="UserListDialog" style="display:none;">
+		<input id="UserListDialog_ClientState" name="UserListDialog_ClientState" type="hidden" />
+	</div><div id="DetalleResolucion" style="display:none;">
+		<input id="DetalleResolucion_ClientState" name="DetalleResolucion_ClientState" type="hidden" />
+	</div><div id="ListaResolucionesRelacion" style="display:none;">
+		<input id="ListaResolucionesRelacion_ClientState" name="ListaResolucionesRelacion_ClientState" type="hidden" />
+	</div><div id="UserLogin" style="display:none;">
+		<input id="UserLogin_ClientState" name="UserLogin_ClientState" type="hidden" />
+	</div><div id="rsBusquedaSimple" style="display:none;">
+		
+            <input id="rsBusquedaSimple_ClientState" name="rsBusquedaSimple_ClientState" type="hidden" />
+	</div><div id="rwmPrincipal_alerttemplate" style="display:none;">
+		<div class="windowpopup radalert">			
+			<div class="dialogtext">
+			{1}				
+			</div>
+			
+			<div>
+				<a  onclick="$find('{0}').close();"
+				class="radwindowbutton" href="javascript:void(0);">
+					<span class="outerspan">
+						<span class="innerspan">##LOC[OK]##</span>
+					</span>
+				</a>				
+			</div>
+		</div>
+		</div><div id="rwmPrincipal_prompttemplate" style="display:none;">
+		<div class="windowpopup radprompt">			
+			<div class="dialogtext">
+			{1}				
+			</div>		
+			<div>
+				<script>
+				function radwindowprompt_detectenter(id, ev)
+				{							
+					if (!ev) ev = window.event;                
+					if (ev.keyCode == 13)
+					{										
+					    var but = document.getElementById("OKbtn_"+id);                                                                           
+					    if (but)
+						{							
+							if (but.click) but.click();
+							else if (but.onclick)
+							{
+							    but.focus(); var click = but.onclick; but.onclick = null; if (click) click.call(but);							 
+							}
+						}
+					   return false;
+					} 
+					else return true;
+				}	 
+				</script>
+				<input  onkeydown="return radwindowprompt_detectenter('{0}', event);" type="text"  class="dialoginput" value="{2}" />
+			</div>
+			<div>
+				<a id="OKbtn_{0}" onclick="$find('{0}').callBack(this.parentNode.parentNode.getElementsByTagName('input')[0].value);"				
+					class="radwindowbutton" href="javascript:void(0);" ><span class="outerspan"><span class="innerspan">##LOC[OK]##</span></span></a>
+				<a onclick="$find('{0}').callBack('');" class="radwindowbutton"  href="javascript:void(0);"><span class="outerspan"><span class="innerspan">##LOC[Cancel]##</span></span></a>
+			</div>
+		</div>		
+		</div><div id="rwmPrincipal_confirmtemplate" style="display:none;">
+		<div class="windowpopup radconfirm">			
+			<div class="dialogtext">
+			{1}				
+			</div>						
+			<div>
+				<a onclick="$find('{0}').callBack(true);"  class="radwindowbutton" href="javascript:void(0);" ><span class="outerspan"><span class="innerspan">##LOC[OK]##</span></span></a>
+				<a onclick="$find('{0}').callBack(false);" class="radwindowbutton"  href="javascript:void(0);"><span class="outerspan"><span class="innerspan">##LOC[Cancel]##</span></span></a>
+			</div>
+		</div>		
+		</div><input id="rwmPrincipal_ClientState" name="rwmPrincipal_ClientState" type="hidden" />
+</div>
+
+                      <div class="contenedorpie">
+                      <div class="pie">
+                          <table style="position: static; margin-bottom: 5px; width: 98%; margin-left: 0px;">
+                              <tr>
+                                  <td align="left" class="style7">
+                                      <span id="Label2" style="color: #3366CC">Optimizado para Chrome V34+</span>
+                                  </td>
+                                  <td>
+                                      
+    <span>
+    <a id="pie_hlServiciosInformacion">Dirección de Tecnología de la Información</a>
+    <a id="pie_hlCondicionesUso"></a></span>
+    
+                              </tr>
+                          </table>
+            </div>
+     </div>
+                        <div id="rLoadPanelLogin" style="display:none;height:16px;width:16px;">
+	
+                <img alt="Loading..." 
+                    src='/app/jur/WebResource.axd?d=vw4TFnDYF7J7wF1_-MlRCu4owGCgeOebS2UjAf9LknPwFDDpdiszJefSeXmDf6r6opPjfGmAozEzzhmqV4CXrIMTEnpfLKiAp8T2ItYdGvqh6UL5rk6tJR7dANsLwkL5I6VUfl9IWY4XAdbaLZ0ECS88Lks1&amp;t=635272016600000000' 
+                    style="border:0px;" />
+                            
+                            <div id="rAjaxPrincipal" style="display:none;height:29px;width:75px;">
+		
+                                <img alt="Loading..." 
+                    src='/app/jur/WebResource.axd?d=a4dmW0yrSZrRsdJWvqqImxEHK9RycwoPFInWzlSz-ZMEyCGtdQirp7RoOINgzptU-N4QGlEDfOJi6f0OOwSFTigaFHR7WolgNOQBIaGHdZ15wGTtZ2vPzy6_XsinuZDgsc6bBu9_HvjPv_LFjI7AEHRQf5E1&amp;t=635272016600000000' 
+                    style="border:0px;" />
+                            
+	</div>
+            
+</div>
+
+     
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[{InitControlID : "btBuscar",UpdatedControls : [{ControlID:"ifContenido",PanelID:"rAjaxPrincipal"}]},{InitControlID : "btLimpiar",UpdatedControls : [{ControlID:"rdtPalabras",PanelID:""},{ControlID:"rcbOrigen",PanelID:""},{ControlID:"rdiNoResolucion",PanelID:""},{ControlID:"rcbAnno",PanelID:""},{ControlID:"ddlInstanaciaOriginaria",PanelID:""},{ControlID:"ddlInstanaciaPrevia",PanelID:""}]}],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"ramPrincipalInicio","updatePanelsRenderMode":0}, null, null, $get("ramPrincipalInicio"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"clientStateFieldID":"rdtPalabras_ClientState","enabled":true,"styles":{HoveredStyle: ["height:20px;width:280px;", "radHoverCss_Gray  inputCell"],InvalidStyle: ["height:20px;width:280px;", "radInvalidCss_Gray  inputCell"],DisabledStyle: ["height:20px;width:280px;", "radDisabledCss_Gray  inputCell"],FocusedStyle: ["height:20px;width:280px;", "radFocusedCss_Gray  inputCell"],EmptyMessageStyle: ["height:20px;width:280px;", "radEmptyMessageCss_Gray  inputCell"],ReadOnlyStyle: ["height:20px;width:280px;", "radReadOnlyCss_Gray  inputCell"],EnabledStyle: ["height:20px;width:280px;", "radEnabledCss_Gray  inputCell"]}}, null, null, $get("rdtPalabras"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_height":0,"_skin":"Gray","_text":"","_uniqueId":"rcbOrigen","_value":"","_virtualScroll":true,"allowCustomText":true,"clientStateFieldID":"rcbOrigen_ClientState","collapseAnimation":"{\"type\":12,\"duration\":200}","itemData":[{"value":"1234"},{"value":"1235"},{"value":"1281"},{"value":"1280"},{"value":"243"},{"value":"1279"},{"value":"2146"},{"value":"1287"},{"value":"840"},{"value":"834"},{"value":"841"},{"value":"838"},{"value":"1251"},{"value":"839"},{"value":"1288"},{"value":"1285"},{"value":"1286"},{"value":"831"},{"value":"832"}],"loadingMessage":"Cargando...","markFirstMatch":true}, null, null, $get("rcbOrigen"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"clientStateFieldID":"rdiNoResolucion_ClientState","enabled":true,"styles":{HoveredStyle: ["height:20px;width:100px;", "radHoverCss_Gray  inputCell"],InvalidStyle: ["height:20px;width:100px;", "radInvalidCss_Gray  inputCell"],DisabledStyle: ["height:20px;width:100px;", "radDisabledCss_Gray  inputCell"],FocusedStyle: ["height:20px;width:100px;", "radFocusedCss_Gray  inputCell"],EmptyMessageStyle: ["height:20px;width:100px;", "radEmptyMessageCss_Gray  inputCell"],ReadOnlyStyle: ["height:20px;width:100px;", "radReadOnlyCss_Gray  inputCell"],EnabledStyle: ["height:20px;width:100px;", "radEnabledCss_Gray  inputCell"]}}, null, null, $get("rdiNoResolucion"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_height":0,"_skin":"Gray","_text":"","_uniqueId":"rcbAnno","_value":"-1","_virtualScroll":false,"allowCustomText":true,"clientStateFieldID":"rcbAnno_ClientState","collapseAnimation":"{\"type\":12,\"duration\":200}","itemData":[{"value":"-1","selected":true},{"value":"2026"},{"value":"2025"},{"value":"2024"},{"value":"2023"},{"value":"2022"},{"value":"2021"},{"value":"2020"},{"value":"2019"},{"value":"2018"},{"value":"2017"},{"value":"2016"},{"value":"2015"},{"value":"2014"},{"value":"2013"},{"value":"2012"},{"value":"2011"},{"value":"2010"},{"value":"2009"},{"value":"2008"},{"value":"2007"},{"value":"2006"},{"value":"2005"},{"value":"2004"},{"value":"2003"},{"value":"2002"},{"value":"2001"},{"value":"2000"},{"value":"1999"},{"value":"1998"},{"value":"1997"},{"value":"1996"},{"value":"1995"},{"value":"1993"},{"value":"1947"}],"markFirstMatch":true,"selectedIndex":0}, null, null, $get("rcbAnno"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_height":0,"_skin":"Gray","_text":"","_uniqueId":"ddlInstanaciaOriginaria","_value":"-1","_virtualScroll":false,"allowCustomText":true,"clientStateFieldID":"ddlInstanaciaOriginaria_ClientState","collapseAnimation":"{\"type\":12,\"duration\":200}","itemData":[{"value":"-1","selected":true},{"value":"10"},{"value":"11"},{"value":"12"},{"value":"13"},{"value":"14"},{"value":"15"},{"value":"21"},{"value":"23"},{"value":"24"},{"value":"25"},{"value":"26"},{"value":"27"},{"value":"28"},{"value":"29"},{"value":"30"},{"value":"31"},{"value":"32"},{"value":"33"},{"value":"34"},{"value":"35"},{"value":"36"},{"value":"37"},{"value":"38"},{"value":"39"},{"value":"40"},{"value":"41"},{"value":"42"},{"value":"63"},{"value":"64"},{"value":"65"},{"value":"66"},{"value":"67"},{"value":"68"},{"value":"69"},{"value":"70"},{"value":"72"},{"value":"73"},{"value":"75"},{"value":"79"},{"value":"83"},{"value":"84"},{"value":"85"},{"value":"87"},{"value":"77"}],"loadingMessage":"Cargando...","markFirstMatch":true,"selectedIndex":0}, null, null, $get("ddlInstanaciaOriginaria"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_height":0,"_skin":"Gray","_text":"","_uniqueId":"ddlInstanaciaPrevia","_value":"-1","_virtualScroll":true,"allowCustomText":true,"clientStateFieldID":"ddlInstanaciaPrevia_ClientState","collapseAnimation":"{\"type\":12,\"duration\":200}","itemData":[{"value":"-1","selected":true},{"value":"1"},{"value":"2"},{"value":"3"},{"value":"4"},{"value":"5"},{"value":"6"},{"value":"7"},{"value":"8"},{"value":"9"},{"value":"17"},{"value":"18"},{"value":"19"},{"value":"20"},{"value":"22"},{"value":"43"},{"value":"44"},{"value":"45"},{"value":"46"},{"value":"47"},{"value":"48"},{"value":"49"},{"value":"50"},{"value":"51"},{"value":"52"},{"value":"53"},{"value":"54"},{"value":"55"},{"value":"56"},{"value":"57"},{"value":"58"},{"value":"59"},{"value":"60"},{"value":"61"},{"value":"62"},{"value":"71"},{"value":"74"},{"value":"76"},{"value":"80"},{"value":"81"},{"value":"82"},{"value":"86"},{"value":"88"},{"value":"78"}],"loadingMessage":"Cargando...","markFirstMatch":true,"selectedIndex":0}, null, null, $get("ddlInstanaciaPrevia"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"behaviors":4,"clientStateFieldID":"UserListDialog_ClientState","formID":"frmEntradaPrincipal","height":"410px","iconUrl":"","left":"150px","minimizeIconUrl":"","modal":true,"name":"UserListDialog","navigateUrl":"","reloadOnShow":true,"skin":"Vista","title":"User List Dialog","top":"","visibleStatusbar":false,"width":"500px"}, null, null, $get("UserListDialog"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"behaviors":4,"clientStateFieldID":"DetalleResolucion_ClientState","formID":"frmEntradaPrincipal","height":"640px","iconUrl":"","left":"150px","minimizeIconUrl":"","modal":true,"name":"DetalleResolucion","navigateUrl":"","reloadOnShow":true,"showContentDuringLoad":false,"skin":"Vista","title":"Detalle Resolución","top":"","visibleStatusbar":false,"width":"690px"}, null, null, $get("DetalleResolucion"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"behaviors":4,"clientStateFieldID":"ListaResolucionesRelacion_ClientState","formID":"frmEntradaPrincipal","height":"400px","iconUrl":"","left":"150px","minimizeIconUrl":"","modal":true,"name":"ListaResolucionesRelacion","navigateUrl":"","reloadOnShow":true,"skin":"Vista","title":"User List Dialog","top":"","visibleStatusbar":false,"width":"500px"}, null, null, $get("ListaResolucionesRelacion"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"behaviors":4,"clientStateFieldID":"UserLogin_ClientState","formID":"frmEntradaPrincipal","height":"550px","iconUrl":"","left":"150px","minimizeIconUrl":"","modal":true,"name":"UserLogin","navigateUrl":"","reloadOnShow":true,"skin":"Vista","title":"Cambio Clave de Acceso","top":"","visibleStatusbar":false,"width":"600px"}, null, null, $get("UserLogin"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"behaviors":4,"clientStateFieldID":"rsBusquedaSimple_ClientState","formID":"frmEntradaPrincipal","height":"480px","iconUrl":"","left":"","minimizeIconUrl":"","modal":true,"name":"rsBusquedaSimple","navigateUrl":"componentes/consulta/resultado_busqueda.aspx","reloadOnShow":true,"skin":"Vista","title":"Resultados de la Consulta","top":"","visibleStatusbar":false,"width":"680px"}, null, null, $get("rsBusquedaSimple"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"behaviors":4,"clientStateFieldID":"rwmPrincipal_ClientState","formID":"frmEntradaPrincipal","iconUrl":"","left":"","minimizeIconUrl":"","modal":true,"name":"rwmPrincipal","reloadOnShow":true,"skin":"Vista","top":"","visibleStatusbar":false,"windowControls":"['UserListDialog','DetalleResolucion','ListaResolucionesRelacion','UserLogin','rsBusquedaSimple']"}, null, null, $get("rwmPrincipal"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":false,"minDisplayTime":0,"transparency":0,"uniqueID":"rAjaxPrincipal","zIndex":90000}, null, null, $get("rAjaxPrincipal"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":false,"minDisplayTime":0,"transparency":0,"uniqueID":"rLoadPanelLogin","zIndex":90000}, null, null, $get("rLoadPanelLogin"));
+});
+//]]>
+</script>
+</form>
+                      </body>
+
+</html>

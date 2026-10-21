@@ -1,0 +1,626 @@
+[
+  {
+    "id": "F0-T01",
+    "phase": "F0",
+    "requirement": "Instalar blueprint, roadmap, ADR y dossier F1 en `docs/` sin borrar fuentes previas.",
+    "status": "DONE",
+    "evidence": "docs/**; canonical-installation.json",
+    "missing_or_decision": "Instalación de12 documentos preservada; auto-hash del manifiesto discrepante registrado D-01."
+  },
+  {
+    "id": "F0-T02",
+    "phase": "F0",
+    "requirement": "Registrar decisión de Junta propia y mapa de reemplazo 3→2→1 / Mussi sin arrastrar código.",
+    "status": "DONE",
+    "evidence": "junta-juridica/docs/ADR_JUNTA_JURIDICA_V2.md; DOCS_RECONCILIATION_REPORT.md",
+    "missing_or_decision": "Junta propia vigente; Mussi histórico no se ejecuta."
+  },
+  {
+    "id": "F0-T03",
+    "phase": "F0",
+    "requirement": "Inspeccionar repositorio y estado local (sin Git reportado) antes de crear tareas.",
+    "status": "DONE",
+    "evidence": "OS_CURRENT_STATE_AUDIT.md; f0-f1/reports/baseline.json",
+    "missing_or_decision": "483 archivos inventariados; Git ausente."
+  },
+  {
+    "id": "F0-T04",
+    "phase": "F0",
+    "requirement": "Aprobar/ajustar responsables y estudio piloto para flujos jurídicos reales.",
+    "status": "BLOCKED",
+    "evidence": "BLOCKERS_AND_DECISIONS.md / PROD-01",
+    "missing_or_decision": "Propietario debe designar estudio piloto, responsables jurídicos/operativos."
+  },
+  {
+    "id": "F0-T05",
+    "phase": "F0",
+    "requirement": "Conservar los reportes F1/F2 y hashes históricos como evidencia inmutable.",
+    "status": "DONE",
+    "evidence": "f0-f1/reports/final-verification.json; phase2/baseline",
+    "missing_or_decision": "Preservación SHA de todos archivos previos; informes/holdouts intactos."
+  },
+  {
+    "id": "F0-T06",
+    "phase": "F0",
+    "requirement": "Registrar decisiones pendientes, bloqueos y no negociables con dueño y fecha de cierre.",
+    "status": "PARTIAL",
+    "evidence": "BLOCKERS_AND_DECISIONS.md",
+    "missing_or_decision": "Dueños por función propuestos; personas/fechas de cierre no aprobadas."
+  },
+  {
+    "id": "F1-T01",
+    "phase": "F1",
+    "requirement": "Leer el `OS_CORE_ARCHITECTURE.md` real y comparar alternativas documentadas.",
+    "status": "DONE",
+    "evidence": "OS_CORE_ARCHITECTURE.md; ADR_OS_001_DECISION_PROPOSAL.md",
+    "missing_or_decision": "Lectura y comparación A/B/C completas, sin adopción."
+  },
+  {
+    "id": "F1-T02",
+    "phase": "F1",
+    "requirement": "Proponer y aprobar framework web, API/backend, PostgreSQL, auth, storage, jobs y región.",
+    "status": "BLOCKED",
+    "evidence": "ADR_OS_001_DECISION_PROPOSAL.md",
+    "missing_or_decision": "B propuesta; falta aceptación expresa del propietario."
+  },
+  {
+    "id": "F1-T03",
+    "phase": "F1",
+    "requirement": "Definir entornos dev/preview/prod, secrets, auditoría y responsabilidades de deploy.",
+    "status": "SPECIFIED",
+    "evidence": "ADR_OS_001_DECISION_PROPOSAL.md; OS_CORE_IMPLEMENTATION_PLAN.md",
+    "missing_or_decision": "Dev/preview/prod/secretos definidos; entornos no creados ni probados."
+  },
+  {
+    "id": "F1-T04",
+    "phase": "F1",
+    "requirement": "Definir frontera tenant y autorización por asunto en API/BD/storage/jobs.",
+    "status": "SPECIFIED",
+    "evidence": "OS_CORE_DATA_API_CONTRACTS.md; authorization.ts",
+    "missing_or_decision": "Fronteras propuestas, no RLS empresarial; cerrar política de directorio/roles."
+  },
+  {
+    "id": "F1-T05",
+    "phase": "F1",
+    "requirement": "Crear Git local y estrategia de rama protegida tras preservar baseline; remoto solo con autorización.",
+    "status": "BLOCKED",
+    "evidence": "OS_CORE_IMPLEMENTATION_PLAN.md / Git",
+    "missing_or_decision": "Baseline y estrategia listos; no se inicializó Git, ningún remoto autorizado."
+  },
+  {
+    "id": "F1-T06",
+    "phase": "F1",
+    "requirement": "Definir restauración, backup, logs seguros y plan mínimo de operación.",
+    "status": "SPECIFIED",
+    "evidence": "ADR_OS_001_DECISION_PROPOSAL.md / operación",
+    "missing_or_decision": "DB+objetos/RPO/RTO/logs propuestos; restore NOT_RUN."
+  },
+  {
+    "id": "F1-T07",
+    "phase": "F1",
+    "requirement": "Crear ADR aprobado y contratos API/datos compatibles con OS Core offline.",
+    "status": "BLOCKED",
+    "evidence": "OS_CORE_DATA_API_CONTRACTS.md; ADR propuesto",
+    "missing_or_decision": "Contratos preparados; falta ADR aceptado y pruebas básicas de infraestructura."
+  },
+  {
+    "id": "F2-T01",
+    "phase": "F2",
+    "requirement": "Implementar shell web navegable y autenticación real en dev.",
+    "status": "NOT_STARTED",
+    "evidence": "apps/web y apps/api inexistentes",
+    "missing_or_decision": "F1 aprobado; implementar sesión IdP real, no Authenticator sintético."
+  },
+  {
+    "id": "F2-T02",
+    "phase": "F2",
+    "requirement": "Implementar estudio, membresías y selector/contexto; denegación por defecto.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "os-core/src/service.ts; os-core/tests/core.test.ts",
+    "missing_or_decision": "Servicios firm/membership; faltan SQL/API/selector web."
+  },
+  {
+    "id": "F2-T03",
+    "phase": "F2",
+    "requirement": "Crear sidebar compacta y topbar 42–48px, tipografía 12.5–13.5px, tablas densas.",
+    "status": "SPECIFIED",
+    "evidence": "UI_COMPACT_DESIGN_SPEC.md / tokens",
+    "missing_or_decision": "Implementar CSS/shell real, sin zoom."
+  },
+  {
+    "id": "F2-T04",
+    "phase": "F2",
+    "requirement": "Crear panel «Mi día» para abogado, rol coordinador y administración con datos reales.",
+    "status": "SPECIFIED",
+    "evidence": "UI_COMPACT_DESIGN_SPEC.md; contrato GET my-day",
+    "missing_or_decision": "Query autorizada/vistas por rol y acciones reales pendientes."
+  },
+  {
+    "id": "F2-T05",
+    "phase": "F2",
+    "requirement": "QA negativo multiestudio, RLS/servidor, sesión/revocación y controles de storage.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "os-core/tests/core.test.ts; persistence.test.ts",
+    "missing_or_decision": "Aislamiento servicio probado; E2E/RLS/storage/sesión reales NOT_RUN."
+  },
+  {
+    "id": "F2-T06",
+    "phase": "F2",
+    "requirement": "Capturas desktop 1440×900 y 1366×768 al 100%; comparación visual 85% sin CSS zoom.",
+    "status": "NOT_RUN",
+    "evidence": "UI_COMPACT_DESIGN_SPEC.md / QA",
+    "missing_or_decision": "Falta UI; screenshots1440/1366 a100% y referencia85%."
+  },
+  {
+    "id": "F2-T07",
+    "phase": "F2",
+    "requirement": "Definir navegación teclado, focus visible y estados loading/empty/error.",
+    "status": "SPECIFIED",
+    "evidence": "UI_COMPACT_DESIGN_SPEC.md / accesibilidad",
+    "missing_or_decision": "Teclado/foco/estados/reflow especificados, browser QA NOT_RUN."
+  },
+  {
+    "id": "F3-T01",
+    "phase": "F3",
+    "requirement": "Reutilizar contrato de dominio OS Core ya probado offline; auditar cambios del servicio.",
+    "status": "PARTIAL",
+    "evidence": "os-core/src/**; OS_CURRENT_STATE_AUDIT.md",
+    "missing_or_decision": "Auditado y plan de reuso; adaptación async y app aún pendientes."
+  },
+  {
+    "id": "F3-T02",
+    "phase": "F3",
+    "requirement": "Persistir cliente/contacto/parte/estudio sin cruzar tenants.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "contracts.ts/service.ts; core.test.ts",
+    "missing_or_decision": "Client/contact/relatedParty separadas; falta persistencia SQL."
+  },
+  {
+    "id": "F3-T03",
+    "phase": "F3",
+    "requirement": "Crear asunto consultivo y asunto litigioso con responsables, participantes y estado.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "service.ts createMatter/grantParticipant; core.test.ts",
+    "missing_or_decision": "Tipos/responsable/participantes presentes; procedimiento nuevo, UI/SQL pendientes."
+  },
+  {
+    "id": "F3-T04",
+    "phase": "F3",
+    "requirement": "Implementar tareas y actividad auditada con asignación y vencimiento interno.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "service.ts createTask/matterActivity; core.test.ts",
+    "missing_or_decision": "Tarea/actividad de servicio; faltan queries Mi día/transporte durable."
+  },
+  {
+    "id": "F3-T05",
+    "phase": "F3",
+    "requirement": "Implementar vistas compactas de clientes/asuntos/tareas y filtros útiles.",
+    "status": "SPECIFIED",
+    "evidence": "UI_COMPACT_DESIGN_SPEC.md; contratos listados",
+    "missing_or_decision": "Clientes/asuntos/tareas con filtros no implementados web."
+  },
+  {
+    "id": "F3-T06",
+    "phase": "F3",
+    "requirement": "Verificar E2E permisos y persistencia tras recarga, con dos estudios y dos abogados.",
+    "status": "NOT_RUN",
+    "evidence": "OS_CORE_E2E_ACCEPTANCE.md S03–S11/TX03",
+    "missing_or_decision": "Ejecutar con2 estudios/usuarios IdP, reinicio y nueva sesión."
+  },
+  {
+    "id": "F3-T07",
+    "phase": "F3",
+    "requirement": "No confundir asunto con procedimiento judicial ni calcular plazos por LLM.",
+    "status": "PARTIAL",
+    "evidence": "MatterInputSchema; OS_CORE_DATA_API_CONTRACTS.md / proceeding",
+    "missing_or_decision": "Asunto consultivo sin expediente funciona offline; 0..N Proceeding y política plazos pendientes."
+  },
+  {
+    "id": "F4-T01",
+    "phase": "F4",
+    "requirement": "Subir originales sin sobrescritura; hash, extracción, versiones explícitas y permisos.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "service.ts add/publishDocumentVersion; persistence.test.ts",
+    "missing_or_decision": "Original/hash/publicación local; faltan Storage/staging/scan/SQL."
+  },
+  {
+    "id": "F4-T02",
+    "phase": "F4",
+    "requirement": "Relacionar documentos con asunto y responsables; registros inmutables de aprobación.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "contracts.ts; service.ts decideDraftReview; review.test.ts",
+    "missing_or_decision": "Vínculo de asunto/review+actividad; approval append-only SQL pendiente."
+  },
+  {
+    "id": "F4-T03",
+    "phase": "F4",
+    "requirement": "Implementar editor/borrador con versión y revisión interna, sin IA de producción.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "prepareDraft/reviseDraft; review.test.ts",
+    "missing_or_decision": "Workflow local; editor real no implementado."
+  },
+  {
+    "id": "F4-T04",
+    "phase": "F4",
+    "requirement": "Probar cambios de versión y prohibir aprobación implícita de una versión nueva.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "os-core/tests/review.test.ts",
+    "missing_or_decision": "Versión exacta/no herencia probado; repetir contra SQL/browser."
+  },
+  {
+    "id": "F4-T05",
+    "phase": "F4",
+    "requirement": "Diferenciar draft, revisión, aprobación, entrega y presentación con comprobante real.",
+    "status": "SPECIFIED",
+    "evidence": "OS_CORE_DATA_API_CONTRACTS.md / delivery,filing_receipt",
+    "missing_or_decision": "Estados reales/recibos nuevos; no inferir presentación de descarga."
+  },
+  {
+    "id": "F4-T06",
+    "phase": "F4",
+    "requirement": "QA acceso privado y descargas/exports; E2E del ciclo documental.",
+    "status": "NOT_RUN",
+    "evidence": "OS_CORE_E2E_ACCEPTANCE.md S08/S12–14/DOC01–08",
+    "missing_or_decision": "Descarga privada/session/RLS/E2E documental pendiente."
+  },
+  {
+    "id": "F4-T07",
+    "phase": "F4",
+    "requirement": "Construir índice de expediente y anexos reproducibles sin alterar originales.",
+    "status": "SPECIFIED",
+    "evidence": "OS_CORE_IMPLEMENTATION_PLAN.md P9; DOC08",
+    "missing_or_decision": "Índice/annex package reproducible aún no existe."
+  },
+  {
+    "id": "F5-T01",
+    "phase": "F5",
+    "requirement": "Conservar y verificar los tres originales de Constitucional/Civil/Penal y sus hashes.",
+    "status": "DONE",
+    "evidence": "phase2/corpus/originals; phase2/tests/corpus-integrity.test.ts",
+    "missing_or_decision": "Tres originales preservados/hash comprobado offline; DONE limitado a conservación."
+  },
+  {
+    "id": "F5-T02",
+    "phase": "F5",
+    "requirement": "Definir política de atestaciones institucionales autorizadas y registro confiable.",
+    "status": "BLOCKED",
+    "evidence": "ingestion/provenance.ts; PHASE2_BLOCKERS.md P2-TRUST",
+    "missing_or_decision": "Ed25519 local probado; falta política/emisor institucional autorizado."
+  },
+  {
+    "id": "F5-T03",
+    "phase": "F5",
+    "requirement": "Acordar permisos de ingestión/indexación comercial, alcance de portales y versión normativa.",
+    "status": "BLOCKED",
+    "evidence": "OFFICIAL_CORPUS_MANIFEST.json; docs/fuentes/**",
+    "missing_or_decision": "production_indexing_permitted=false; derechos/privacidad/versiones pendientes."
+  },
+  {
+    "id": "F5-T04",
+    "phase": "F5",
+    "requirement": "Cerrar OCR/QA de escaneos y anomalías de encabezados con revisión humana.",
+    "status": "BLOCKED",
+    "evidence": "phase2/tooling/review-pdfs.mjs; revisiones corpus",
+    "missing_or_decision": "PDF.js sin Python ya disponible; OCR constitucional/QA humana civil/penal pendientes."
+  },
+  {
+    "id": "F5-T05",
+    "phase": "F5",
+    "requirement": "Construir conector autorizado para corpus finito y manifiesto sala/año/versión.",
+    "status": "NOT_STARTED",
+    "evidence": "download-official-corpus.mjs (recuperación finita, no conector)",
+    "missing_or_decision": "Definir alcance/permiso y checkpoints de conector; no scraping masivo."
+  },
+  {
+    "id": "F5-T06",
+    "phase": "F5",
+    "requirement": "Conectar corpus verificado con resolver de referencias y RAG híbrido.",
+    "status": "BLOCKED",
+    "evidence": "retrieval/index.ts; citation-checker/index.ts",
+    "missing_or_decision": "RAG local existe; falta corpus verificado e importación PDF trazable."
+  },
+  {
+    "id": "F5-T07",
+    "phase": "F5",
+    "requirement": "Ampliar leyes, códigos, Constitución y Gaceta con trazabilidad y texto vigente solo si comprobado.",
+    "status": "NOT_STARTED",
+    "evidence": "docs/fuentes/FUENTES_Y_APIS_PARAGUAY_v1.1.*",
+    "missing_or_decision": "Inventario no es corpus vigente; ingesta normativa autorizada pendiente."
+  },
+  {
+    "id": "F5-T08",
+    "phase": "F5",
+    "requirement": "Benchmark externo independiente; registrar detección, extracción, ambigüedad, falso VERIFIED.",
+    "status": "BLOCKED",
+    "evidence": "BIBLIOGRAPHIC_BENCHMARK_REPORT.md; phase2/benchmark",
+    "missing_or_decision": "12/12 detección,11/12 extracción históricos; holdout externo/cotejo auténtico pendientes."
+  },
+  {
+    "id": "F6-T01",
+    "phase": "F6",
+    "requirement": "Reproducir 271 pruebas reportadas, typecheck, dos builds y smoke sobre código F2.",
+    "status": "DONE",
+    "evidence": "f0-f1/reports/vitest.json; smoke-check.json; checks.json",
+    "missing_or_decision": "271 tests/typecheck/2 builds/smoke reproducidos, solo offline."
+  },
+  {
+    "id": "F6-T02",
+    "phase": "F6",
+    "requirement": "Resolver el FAIL conocido de extracción 11/12 en development; congelar holdout externo nuevo.",
+    "status": "FAIL",
+    "evidence": "citation-checker/extraction.ts; bibliographic-first-evaluation.json",
+    "missing_or_decision": "Número civil en palabras conocido11/12; no cambiar engine/holdout en reconciliación."
+  },
+  {
+    "id": "F6-T03",
+    "phase": "F6",
+    "requirement": "Verificar accesos reales: Jev, Luna, Sol 6.1 Medium, Gemini 3.8 Flash; no fallback oculto.",
+    "status": "BLOCKED",
+    "evidence": "MODEL_CONNECTIVITY_REPORT.md; providers/live.ts",
+    "missing_or_decision": "Inferencia NOT_RUN; ningún modelo probado accesible en cuenta."
+  },
+  {
+    "id": "F6-T04",
+    "phase": "F6",
+    "requirement": "Solucionar Google HTTP 401 y configurar claves de forma segura; no imprimir secretos.",
+    "status": "BLOCKED",
+    "evidence": "phase2/reports/model-connectivity-metadata.json",
+    "missing_or_decision": "Google401 histórico, no reintentado; configuración fuera del gate documental."
+  },
+  {
+    "id": "F6-T05",
+    "phase": "F6",
+    "requirement": "Preflight GET no generativo donde esté documentado; diferenciar 401/403/404.",
+    "status": "PARTIAL",
+    "evidence": "providers/preflight.ts; metadata histórico; pruebas HTTP falsas",
+    "missing_or_decision": "GET Google401 es hecho previo; Jev/OpenAI sin consulta; no cuenta validada."
+  },
+  {
+    "id": "F6-T06",
+    "phase": "F6",
+    "requirement": "Ejecutar UNA Junta acotada solo con autorización expresa de gasto, techo y datos sintéticos.",
+    "status": "BLOCKED",
+    "evidence": "LIVE_SMOKE_PLAN.md; providers/preflight.ts",
+    "missing_or_decision": "Gasto no autorizado; plan/corpus/proofs insuficientes."
+  },
+  {
+    "id": "F6-T07",
+    "phase": "F6",
+    "requirement": "Medir tokens reales, costo final, P50/P90 cuando haya muestra, cobertura y checker.",
+    "status": "NOT_RUN",
+    "evidence": "telemetry/index.ts; LIVE_SMOKE_PLAN.md",
+    "missing_or_decision": "Contadores offline no son costo real ni p50/p90 de producción."
+  },
+  {
+    "id": "F6-T08",
+    "phase": "F6",
+    "requirement": "Marcar ejecución parcial y requerir revisión humana; no presentar result real si falla proveedor.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "orchestration/index.ts; tests e2e",
+    "missing_or_decision": "Run parcial/revisión humana local probado; ejecución real pendiente."
+  },
+  {
+    "id": "F7-T01",
+    "phase": "F7",
+    "requirement": "Desde un asunto autorizado crear cuestión jurídica y snapshot de evidencia.",
+    "status": "SPECIFIED",
+    "evidence": "OS_CORE_DATA_API_CONTRACTS.md / integración Junta",
+    "missing_or_decision": "Falta UI/API investigación autorizada y mapping AccessContext servidor."
+  },
+  {
+    "id": "F7-T02",
+    "phase": "F7",
+    "requirement": "Permitir abrir investigaciones pasadas y distinguir CURRENT/OUTDATED.",
+    "status": "PARTIAL",
+    "evidence": "Junta snapshots/versiones; OS_CURRENT_STATE_AUDIT.md",
+    "missing_or_decision": "Engine tiene scope/versiones; historial web CURRENT/OUTDATED no existe."
+  },
+  {
+    "id": "F7-T03",
+    "phase": "F7",
+    "requirement": "Recuperar originales en Sol/Gemini con presupuesto controlado y aislamiento tenant.",
+    "status": "TESTED_OFFLINE",
+    "evidence": "principal-analysis/adversarial-audit; unit budget",
+    "missing_or_decision": "Acceso originales acotado local; falta aislamiento OS real y proveedores."
+  },
+  {
+    "id": "F7-T04",
+    "phase": "F7",
+    "requirement": "Aplicar checker a citas del borrador exportado, no solo a la salida inicial.",
+    "status": "PARTIAL",
+    "evidence": "citation-checker; safeExport CLI",
+    "missing_or_decision": "Checker local/export Junta; borrador editable OS/export final sin integrar."
+  },
+  {
+    "id": "F7-T05",
+    "phase": "F7",
+    "requirement": "Enlazar análisis aprobado al documento y al responsable de revisión.",
+    "status": "SPECIFIED",
+    "evidence": "OS_CORE_DATA_API_CONTRACTS.md / integration",
+    "missing_or_decision": "No enlace durable análisis→documento/revisor aún."
+  },
+  {
+    "id": "F7-T06",
+    "phase": "F7",
+    "requirement": "QA E2E de citas manipuladas, documento nuevo, revoke de permisos y bloqueo de fuentes.",
+    "status": "NOT_RUN",
+    "evidence": "OS_CORE_E2E_ACCEPTANCE.md SEC/DOC; tests adversariales Junta",
+    "missing_or_decision": "E2E combinado real pendiente F4/F5/F6."
+  },
+  {
+    "id": "F7-T07",
+    "phase": "F7",
+    "requirement": "Verificar costo y latencia por trabajo sin presentar éxito de dictamen como validación de autenticidad.",
+    "status": "NOT_RUN",
+    "evidence": "telemetry/index.ts; MODEL_CONNECTIVITY_REPORT.md",
+    "missing_or_decision": "Costo/latencia por trabajo real sin muestra."
+  },
+  {
+    "id": "F8-T01",
+    "phase": "F8",
+    "requirement": "Agenda de audiencias/fechas internas con responsable y estados no ambiguos.",
+    "status": "SPECIFIED",
+    "evidence": "OS_CORE_DATA_API_CONTRACTS.md / agenda; UI spec",
+    "missing_or_decision": "Eventos/audiencias/estados nuevos, no confundir tarea con agenda."
+  },
+  {
+    "id": "F8-T02",
+    "phase": "F8",
+    "requirement": "Plazos procesales sugeridos ≠ confirmados; cálculo automático solo con reglas validadas.",
+    "status": "BLOCKED",
+    "evidence": "Contratos deadline; BLOCKERS_AND_DECISIONS.md LOCAL-01",
+    "missing_or_decision": "Reglas/calendarios jurídicos revisados y confirmación humana pendientes."
+  },
+  {
+    "id": "F8-T03",
+    "phase": "F8",
+    "requirement": "Solicitudes de documentación y comunicaciones con aprobación previa.",
+    "status": "SPECIFIED",
+    "evidence": "Contratos comunicaciones; Blueprint §14",
+    "missing_or_decision": "Conector/canal autorizado y aprobación de envío pendientes, nada enviado."
+  },
+  {
+    "id": "F8-T04",
+    "phase": "F8",
+    "requirement": "Portal de clientes para versiones explícitamente compartidas.",
+    "status": "SPECIFIED",
+    "evidence": "Contratos explicit_share; Blueprint §04/14",
+    "missing_or_decision": "Portal/roles nuevos sin implementación; compartir solo versión exacta."
+  },
+  {
+    "id": "F8-T05",
+    "phase": "F8",
+    "requirement": "Acuerdos de honorarios, gastos, anticipos, facturado y cobrado separados.",
+    "status": "SPECIFIED",
+    "evidence": "Contratos finanzas; Blueprint §15",
+    "missing_or_decision": "Acuerdos/gastos/anticipos/caja separados; ledger/allocations no implementados."
+  },
+  {
+    "id": "F8-T06",
+    "phase": "F8",
+    "requirement": "Conservar moneda/IVA/tributos sin inventar integración fiscal paraguaya.",
+    "status": "BLOCKED",
+    "evidence": "BLOCKERS_AND_DECISIONS.md LOCAL-01/FIN-01",
+    "missing_or_decision": "Moneda/tributos/localización fiscal por profesional; no inventar factura fiscal."
+  },
+  {
+    "id": "F8-T07",
+    "phase": "F8",
+    "requirement": "Panel de dirección con carga y economía reconciliable, sin KPIs decorativos.",
+    "status": "SPECIFIED",
+    "evidence": "UI spec Dirección; contratos finanzas",
+    "missing_or_decision": "Datos económicos/carga reconciliables futuros, sin KPIs ficticios."
+  },
+  {
+    "id": "F9-T01",
+    "phase": "F9",
+    "requirement": "Elegir estudio piloto y casos de práctica autorizados; convenio de confidencialidad.",
+    "status": "BLOCKED",
+    "evidence": "BLOCKERS_AND_DECISIONS.md PROD-01",
+    "missing_or_decision": "Propietario designa piloto/casos/consentimiento; no datos reales ahora."
+  },
+  {
+    "id": "F9-T02",
+    "phase": "F9",
+    "requirement": "Ejecutar ciclo completo con dos abogados, administración y responsable de revisión.",
+    "status": "NOT_RUN",
+    "evidence": "OS_CORE_E2E_ACCEPTANCE.md; dependencias F7/F8",
+    "missing_or_decision": "Ciclo completo con abogados/administración/revisor del piloto pendiente."
+  },
+  {
+    "id": "F9-T03",
+    "phase": "F9",
+    "requirement": "Probar aislamiento entre dos estudios, revocación, recuperaciones IA y exports.",
+    "status": "NOT_RUN",
+    "evidence": "SEC01–06; futuros F7/F8",
+    "missing_or_decision": "Aislamiento/IA/exports reales en piloto no probado."
+  },
+  {
+    "id": "F9-T04",
+    "phase": "F9",
+    "requirement": "Pruebas de carga de documentos y operación concurrente; fallos y restauración.",
+    "status": "NOT_RUN",
+    "evidence": "TX/DOC/OPS01; plan P10",
+    "missing_or_decision": "Carga/concurrencia/fallos/restore deben medirse en infra aprobada."
+  },
+  {
+    "id": "F9-T05",
+    "phase": "F9",
+    "requirement": "Auditar seguridad, backups, observabilidad, costos por asiento y límites de modelos.",
+    "status": "NOT_RUN",
+    "evidence": "ADR propuesta operación; OPS01",
+    "missing_or_decision": "Auditar permisos,backup,costos/límites antes de preproducción."
+  },
+  {
+    "id": "F9-T06",
+    "phase": "F9",
+    "requirement": "Benchmark legal independiente contra jurisprudencia verdadera/falsa y adversarial.",
+    "status": "BLOCKED",
+    "evidence": "PHASE2_BLOCKERS.md P2-BENCH",
+    "missing_or_decision": "Curaduría externa/ground truth y política confianza pendientes."
+  },
+  {
+    "id": "F9-T07",
+    "phase": "F9",
+    "requirement": "Cerrar defectos críticos y criterios de aceptación de UI compacta con capturas.",
+    "status": "NOT_RUN",
+    "evidence": "UI_COMPACT_DESIGN_SPEC.md / QA",
+    "missing_or_decision": "Cero críticos y capturas aceptadas por piloto aún sin evidencia."
+  },
+  {
+    "id": "F10-T01",
+    "phase": "F10",
+    "requirement": "Aprobar políticas de datos, retención y términos de fuentes comerciales.",
+    "status": "BLOCKED",
+    "evidence": "BLOCKERS_AND_DECISIONS.md GOV-01/DATA-01",
+    "missing_or_decision": "Políticas/términos/retención comerciales no aprobados."
+  },
+  {
+    "id": "F10-T02",
+    "phase": "F10",
+    "requirement": "Validar precios y márgenes medidos con frecuencia de uso real.",
+    "status": "NOT_RUN",
+    "evidence": "ADR propuesta costos; Blueprint §15/20",
+    "missing_or_decision": "Medir frecuencia/costo/margen, no prometer IA ilimitada."
+  },
+  {
+    "id": "F10-T03",
+    "phase": "F10",
+    "requirement": "Separar cambios preview/productivo con gates y rollback documentados.",
+    "status": "SPECIFIED",
+    "evidence": "Plan ambientes/rollback; ADR propuesta",
+    "missing_or_decision": "CI/deploy previews/productivo todavía no implementados/autorizados."
+  },
+  {
+    "id": "F10-T04",
+    "phase": "F10",
+    "requirement": "Publicar con monitoring, backups/restauración y soporte.",
+    "status": "BLOCKED",
+    "evidence": "Pedido propietario: sin despliegues",
+    "missing_or_decision": "Publicación requiere autorización futura, operación y rollback probados."
+  },
+  {
+    "id": "F10-T05",
+    "phase": "F10",
+    "requirement": "Activar clientes comerciales gradualmente sin prometer corpus total.",
+    "status": "NOT_STARTED",
+    "evidence": "Blueprint §21; F9 pendiente",
+    "missing_or_decision": "Clientes comerciales no activados."
+  },
+  {
+    "id": "F10-T06",
+    "phase": "F10",
+    "requirement": "Planificar nuevas salas/territorios y conectores según evidencia.",
+    "status": "NOT_STARTED",
+    "evidence": "docs/fuentes/** inventario histórico",
+    "missing_or_decision": "Expansión por evidencia/permiso; sin cobertura total declarada."
+  },
+  {
+    "id": "F10-T07",
+    "phase": "F10",
+    "requirement": "Actualizar blueprint, roadmap y ADRs con release real y trazabilidad.",
+    "status": "NOT_RUN",
+    "evidence": "DOCS_RECONCILIATION_REPORT.md (reconciliación, no release)",
+    "missing_or_decision": "Nueva edición/release aprobada futura; originales canónicos preservados."
+  }
+]

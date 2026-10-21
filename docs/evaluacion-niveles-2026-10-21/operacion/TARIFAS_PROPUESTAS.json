@@ -1,0 +1,25 @@
+{
+  "as_of_date": "2026-10-21",
+  "currency": "USD",
+  "unit": "per_million_billable_tokens",
+  "planning_only": true,
+  "active_runtime_prices_updated": true,
+  "runtime_update_scope": "OpenAI short/long tiers, reviewed 2026-10-21; no payment authorization",
+  "mode": "STANDARD",
+  "assumptions": ["Text only", "No cache discount assumed", "DeepSeek peak tariff", "No Batch/Flex/Fast", "No regional processing premium", "No billable external tools", "Output includes billable reasoning; do not add it twice", "Taxes and payment/FX fees excluded; obtain actual billing terms"],
+  "models": [
+    {"model_id": "gpt-6-luna", "input": 0.10, "output": 0.50,
+      "long_context": {"above_input_tokens": 272000, "input": 0.20, "output": 0.75, "applies_to": "full_request"},
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-luna", "archive": "MODELO-LUNA.md"},
+    {"model_id": "gpt-6.1-sol", "input": 2.00, "output": 10.00,
+      "long_context": {"above_input_tokens": 272000, "input": 4.00, "output": 15.00, "applies_to": "full_request"},
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol", "archive": "MODELO-SOL.md"},
+    {"model_id": "deepseek-flash", "input": 0.30, "output": 1.20,
+      "resolved_version_at_review": "DeepSeek-V4.1-Flash-1017",
+      "off_peak_not_assumed": {"input": 0.15, "output": 0.60},
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/", "archive": "PRECIO-DEEPSEEK.html"},
+    {"model_id": "gemini-3.8-flash", "input": 0.75, "output": 3.75,
+      "valid_through": "2026-12-31", "scheduled_from_2027_01_01": {"input": 1.50, "output": 7.50},
+      "source": "https://ai.google.dev/gemini-api/docs/pricing#gemini-3.8-flash", "archive": "PRECIO-GEMINI.html"}
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "reference_findings": [
+    {
+      "reference_id": "P02-H01",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no hay compromiso de compra documentado",
+      "explanation": "El memo distingue las propuestas alternativas de una aceptación y recoge que el comité no autorizó la compra ni la reserva. También reserva la conclusión sobre efectos externos y propone verificar comunicaciones y poderes."
+    },
+    {
+      "reference_id": "P02-H02",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "requiere autorización previa y escrita tanto para cesión/sustitución del prestador como para cambio directo o indirecto de control",
+      "explanation": "Aplica la cláusula a ambas estructuras, rechaza la tesis del vendedor sobre la compra de acciones y explica el riesgo contractual de implementar cualquiera sin autorización."
+    },
+    {
+      "reference_id": "P02-H03",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Horizonte pidió que se precise la estructura",
+      "explanation": "El memo trata la respuesta como evaluación pendiente, diferencia la reunión de una autorización y observa que la fecha propuesta es posterior a la reserva solicitada. No presenta la falta de autorización como rechazo o terminación actual."
+    },
+    {
+      "reference_id": "P02-H04",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "Recomiendo no pagar ni firmar reserva con esos términos",
+      "explanation": "Expone el carácter no reembolsable, la cuenta personal, la falta de excepciones y la necesidad de un acuerdo separado. Propone salvaguardas como opciones de negociación, sin afirmar que exista ya un pago o imponer una técnica única."
+    },
+    {
+      "reference_id": "P02-H05",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no debe asumirse que la antigüedad se elimina o que incorporar a los técnicos es un reinicio sin costo",
+      "explanation": "Distingue el escenario de acciones del de activos, advierte sobre la continuidad laboral y el período de responsabilidad solidaria que atribuye al artículo 28, y señala que el cambio concreto requiere análisis laboral."
+    },
+    {
+      "reference_id": "P02-H06",
+      "treatment": "PARTIAL",
+      "exact_output_quote": "la enajenación de acciones o cuotas partes de sociedades",
+      "explanation": "Identifica que las cifras de las hojas no son liquidaciones fiables y acierta al señalar la exoneración de IVA para acciones. Sin embargo, no desarrolla el tratamiento tributario de la venta de activos y atribuye la regla sobre ganancias de capital al artículo equivocado."
+    },
+    {
+      "reference_id": "P02-H07",
+      "treatment": "SUFFICIENT",
+      "exact_output_quote": "no es liquidación ni prueba de pago",
+      "explanation": "Distingue correctamente la estimación interna de PYG 16.000.000 de una liquidación y de prueba de pago, identifica la falta de registros completos y propone conciliar nómina y otras obligaciones pendientes."
+    }
+  ],
+  "errors": [
+    {
+      "severity": "MATERIAL",
+      "category": "INCORRECT_SOURCE_APPLICATION",
+      "exact_output_quote": "La ley incluye ganancias de capital derivadas de enajenación de acciones en los supuestos del art. 12.5",
+      "evidence_locator": "F03-L00127–F03-L00128; F03-L00087–F03-L00100; F03-L00417–F03-L00428",
+      "explanation": "El artículo 12 de la Ley 6380 trata la permuta, no ganancias de capital por acciones. El pasaje citado parece confundir disposiciones: la ley contempla resultados por transferencia de empresas o enajenación de acciones en el IRE (art. 8.7), y ganancias de capital por acciones en el IRP (art. 57.5), cuya aplicación concreta depende, entre otros datos, de quién sea el vendedor."
+    }
+  ],
+  "novel_valid_findings": [],
+  "recommendation_coherent": true,
+  "limitations": [
+    "El inventario identifica las fuentes normativas como no revisadas temporalmente y el memo reconoce que el corpus no acredita consolidación a la fecha de corte; la vigencia aplicable al cierre queda pendiente de verificación.",
+    "No se aportan contratos laborales individuales, libros completos de jornadas, registros íntegros de pasivos ni certificaciones oficiales; el memo evita tratarlos como hechos acreditados y pide diligencia.",
+    "El memo tiene una referencia legal errónea sobre ganancias por venta de acciones y deja pendiente el análisis tributario por estructura, vendedor y activos; corregirla antes de circularlo como base final de decisión."
+  ],
+  "preliminary_usability": "SUBSTANTIVE_CORRECTIONS_NEEDED",
+  "blind_id": "0bdfe5bcac5e433a92518ff8359a6fcb",
+  "status": "AUTOMATED_PROVISIONAL_NOT_HUMAN_ADJUDICATED",
+  "evaluation_pass": 2,
+  "quote_checks": [
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H01",
+      "quote": "no hay compromiso de compra documentado",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H02",
+      "quote": "requiere autorización previa y escrita tanto para cesión/sustitución del prestador como para cambio directo o indirecto de control",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H03",
+      "quote": "Horizonte pidió que se precise la estructura",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H04",
+      "quote": "Recomiendo no pagar ni firmar reserva con esos términos",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H05",
+      "quote": "no debe asumirse que la antigüedad se elimina o que incorporar a los técnicos es un reinicio sin costo",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H06",
+      "quote": "la enajenación de acciones o cuotas partes de sociedades",
+      "treatment": "PARTIAL",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "FINDING",
+      "reference_id": "P02-H07",
+      "quote": "no es liquidación ni prueba de pago",
+      "treatment": "SUFFICIENT",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    },
+    {
+      "kind": "ERROR",
+      "index": 0,
+      "quote": "La ley incluye ganancias de capital derivadas de enajenación de acciones en los supuestos del art. 12.5",
+      "literal": true,
+      "empty_when_evidence_expected": false
+    }
+  ],
+  "non_literal_quote_count": 0,
+  "missing_required_quote_count": 0
+}

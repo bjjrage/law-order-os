@@ -1,0 +1,30 @@
+[
+  {
+    "at": "2026-10-19T05:36:10.699Z",
+    "sender": "contractual",
+    "target": "titular",
+    "finding": "Frente contractual: NO tratar el borrador como cierre listo. Continuar solo condicionado a consentimiento/transición efectiva de Sur del Lago, aclarar propiedad de matrices (no son vendibles), cuenta OP-44/anticipo y responsabilidad por agosto-7; ajustar precio/anexos y sustituir la retención ambigua por mecanismos ejecutables. La cesión privada del 18/10 es condicionada, no aprobación técnica ni liberación de Ribera. Dependencia laboral crítica: dos operadores nombrados son condición del cliente y de Sur del Lago; transferir con ellos o lograr sustitución aprobada antes de cierre. También conciliar clasificación fiscal/contraprestación con tributario antes de fijar costo total; corpus tributario no revisado en este frente.",
+    "evidence": "P03-D01 v1 P01-P04 (objetivo, fondos máximos, continuidad pedido/técnicos, negociación); P03-D02 v3 P01-P05 (borrador no firmado, 900m, 660m+240m siendo saldo de precio, indemnidad/procedimiento sin definir, anticipos y personal no resueltos, impuestos sin definición); P03-D03 v1 P01-P04 (ML-1/2 de cliente, consentimiento escrito cesión/traslado, anticipo por pedido, reclamo no liquidado); P03-D04 v1 P01-P04 (consentimiento condicionado a acta, trazabilidad y técnicos, OP-44 y anticipo, no liberación Ribera, agosto-7 pendiente, inspección 29/10 sin aprobación); P03-D05 v1 P01-P04 (90m WIP OP-44; 60m matrices atribuibles a cliente; equipos propios no gravámenes verificados); P03-D06 v1 P01-P04 (200m orden, 120m anticipo en Ribera, 80m saldo, reclamo 40m disputado separado); P03-D07 v1 P01-P04 (seis, antigüedades, vacaciones estimadas 8m, técnicos sin renuncia ni sustituto); P03-D08 v1 P01-P04 (no agregar 240m al precio, cuenta/reconciliación y fiscalidad pendientes)."
+  },
+  {
+    "at": "2026-10-19T05:36:14.946Z",
+    "sender": "laboral",
+    "target": "titular",
+    "finding": "Frente laboral: no tratar el traslado como seis nuevos ingresos con fecha 02/11 ni aceptar «cerrar legajos y reabrirlos» como saneamiento. Si en los hechos hay sustitución patronal, el CT art. 28 preserva contratos vigentes y hace solidarios al sustituido y sustituto por obligaciones laborales preexistentes durante seis meses; vencido ese plazo queda responsabilidad del nuevo empleador. La retención de precio no extingue derechos de trabajadores. Antes de cierre: determinar alcance de transferencia/continuidad, conciliación individual de seis legajos (salarios, vacaciones, aportes, antigüedad/beneficios), documentar condiciones y comunicación/consentimiento donde corresponda, asignación indemnizatoria y fondos efectivos; resolver técnicamente continuidad de Leiva/Acosta o sustitución aprobada por cliente. El riesgo afecta condición comercial para OP-44 y caja, pero evidencia no prueba monto de deuda.",
+    "evidence": "P03-D07 v1 P01-P04 (seis, fechas, solo septiembre conciliado parcialmente, estimación vacaciones PYG 8m no liquidada, operadores interesados bajo condiciones, sin renuncias/acuerdos); P03-D02 v3 P04 (propuesta cerrar/reabrir, sin acuerdos); P03-D04 v1 P01 (cesión condicionada a permanencia o sustitución técnica aceptada); F02 Código del Trabajo, art. 3 [F02-L00076], art. 28 [F02-L00118-L00120]."
+  },
+  {
+    "at": "2026-10-19T05:36:17.375Z",
+    "sender": "tributario",
+    "target": "titular",
+    "finding": "Frente tributario: no aprobar cierre/precio fijo con el tratamiento actual indefinido. La venta de activos/derechos puede activar IVA; precio PYG 900m no permite liquidar impuesto ni presumir precio neto más IVA. Excluir matrices ajenas y estructurar separadamente OP-44/anticipo para evitar gravar/contabilizar dos veces. Exigir análisis fiscal firmado, factura/documentos y cuenta de cierre reconciliada antes de compromiso/cierre; importe fiscal pendiente.",
+    "evidence": "P03-D02-P01, P03-D02-P05; P03-D05-P02 (60m matrices propiedad cliente), P03-D06-P01-P04 (anticipo 120m para pedido 200m; no traslado acreditado; fabricación pendiente), P03-D08-P02-P04. Ley 6380 F03 art.81: enajenación incluye transferencias de empresas y derechos patrimoniales (F03-L00605-L00612); art.85 precio devengado e importes cargados (F03-L00664-L00668); art.90 tasas IVA 5% categorías específicas y 10% demás (F03-L00709-L00712). Corpus no acredita regla aplicable exacta a componentes/actualidad normativa."
+  },
+  {
+    "at": "2026-10-19T05:36:20.966Z",
+    "sender": "tributario",
+    "target": "contractual",
+    "finding": "Dependencia contractual-tributaria: no incluir PYG 60m ML-1/ML-2 como precio de activos propios: D05 dice propiedad de Sur del Lago, custodia, estimación reposición; D04 exige acta entrega como propiedad del cliente, cesión efectiva solo con condiciones y no compra matrices. Reconfigurar precio/base/documentos fiscales excluyendo valor transferido como venta; comprobar titularidad/equipos y soportar asignación fiscal razonable. El anticipo 120m no debe tratarse como crédito nuevo o deuda igual importe: traspaso/compensación con las tres partes, asignación de producción y factura, evitar cobro doble y doble base.",
+    "evidence": "P03-D05-P02-P04; P03-D04-P01-P04; P03-D06-P01-P04; P03-D02-P01,P03-P05; P03-D08-P02-P04. Ley 6380 F03 art.81 (F03-L00605-L00612), art.85 (F03-L00664-L00668)."
+  }
+]

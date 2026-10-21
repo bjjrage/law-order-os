@@ -1,0 +1,116 @@
+{
+  "status": "TECHNICAL_REVIEWER_AUDIT_NOT_HUMAN_LEGAL_ADJUDICATION",
+  "at": "2026-10-19T05:52:55.033Z",
+  "initial_successful_reviews": 14,
+  "unknown_review_outcomes": [
+    {
+      "blind_id": "49825e2527134601991bd7fed80f88e0",
+      "error": "TRANSPORT_OUTCOME_UNKNOWN",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 234563,
+        "output_tokens_including_reasoning": 8192,
+        "cost_accounted_upper_usd": 0.033416375,
+        "estimated_standard_no_cache_discount_usd": 0,
+        "unknown_usage": true,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      }
+    },
+    {
+      "blind_id": "db8f9e2685e042c49e5b90ac68f095e4",
+      "error": "TRANSPORT_OUTCOME_UNKNOWN",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 235345,
+        "output_tokens_including_reasoning": 8192,
+        "cost_accounted_upper_usd": 0.033514125,
+        "estimated_standard_no_cache_discount_usd": 0,
+        "unknown_usage": true,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      }
+    },
+    {
+      "blind_id": "dfa259867f844c18aaaaf78afb1f40a6",
+      "error": "TRANSPORT_OUTCOME_UNKNOWN",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 234464,
+        "output_tokens_including_reasoning": 8192,
+        "cost_accounted_upper_usd": 0.033404,
+        "estimated_standard_no_cache_discount_usd": 0,
+        "unknown_usage": true,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      }
+    },
+    {
+      "blind_id": "e6c4897a65ba4421a511370f3b761119",
+      "error": "TRANSPORT_OUTCOME_UNKNOWN",
+      "usage": {
+        "calls": 1,
+        "input_tokens": 234570,
+        "output_tokens_including_reasoning": 8192,
+        "cost_accounted_upper_usd": 0.03341725,
+        "estimated_standard_no_cache_discount_usd": 0,
+        "unknown_usage": true,
+        "actual_invoice_cost_usd": null,
+        "max_cost_usd": 0.08
+      }
+    }
+  ],
+  "non_literal_quote_count": 25,
+  "actual_metadata_catalog": [
+    {
+      "id": "F01",
+      "temporal_review": "NOT_ATTESTED"
+    },
+    {
+      "id": "F02",
+      "temporal_review": "NOT_ATTESTED"
+    },
+    {
+      "id": "F03",
+      "temporal_review": "NOT_ATTESTED"
+    }
+  ],
+  "metadata_false_objections": [
+    {
+      "blind_id": "97a870f505c9437d8d70524e7fc88ff7",
+      "errors": [
+        {
+          "severity": "MATERIAL",
+          "category": "UNSUPPORTED_CLAIM",
+          "exact_output_quote": "El inventario marca la revisión temporal de F01, F02 y F03 como NOT_ATTESTED.",
+          "evidence_locator": "Brief común: “El corpus es acotado y no acredita consolidación normativa a la fecha de corte”; inventario documental y fuentes suministradas en el expediente.",
+          "explanation": "El expediente advierte que no acredita consolidación normativa, pero el material aportado no indica que el inventario marque las fuentes como “NOT_ATTESTED”. La cautela sobre vigencia es razonable; atribuir esa etiqueta concreta al inventario no está respaldado."
+        }
+      ],
+      "technical_finding": "The temporal_review NOT_ATTESTED metadata was actually provided to all researchers; absence from reviewer context is not evidence that the memo invented it."
+    },
+    {
+      "blind_id": "d5e6ac8725e446aaa8d8b27ee7ea96e7",
+      "errors": [
+        {
+          "severity": "MINOR",
+          "category": "UNSUPPORTED_CLAIM",
+          "exact_output_quote": "“F01-F03, metadato `temporal_review: NOT_ATTESTED`.”",
+          "evidence_locator": "Brief, «Condiciones comunes»: “El corpus es acotado y no acredita consolidación normativa a la fecha de corte”; inventario de fuentes F01-F03 aportado, que no contiene el metadato citado.",
+          "explanation": "Es correcto advertir que el corpus no acredita consolidación normativa, pero el memo atribuye a las fuentes un metadato específico que no aparece en el material suministrado. Conviene formular la reserva directamente con base en las condiciones comunes, sin atribuir ese campo al expediente."
+        }
+      ],
+      "technical_finding": "The temporal_review NOT_ATTESTED metadata was actually provided to all researchers; absence from reviewer context is not evidence that the memo invented it."
+    }
+  ],
+  "verified_source_numbering": {
+    "source": "F03",
+    "article_heading": "F03-L00419",
+    "article_number": 57,
+    "numeral": 5,
+    "passage": "F03-L00426",
+    "memo_citation_art_12_5": "Does not match the article heading; bibliographic mismatch is observable independently of an automated severity label."
+  },
+  "correction_policy": "Uniform second review of all eighteen unchanged memos with the actual source metadata and longer timeout. Preserve every first-pass review and unknown-outcome cost provision. No grade is selected based on preferred modality.",
+  "human_legal_review": "NOT_RUN"
+}
